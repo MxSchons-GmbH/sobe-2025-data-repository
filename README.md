@@ -1,5 +1,7 @@
 # State of Brain Emulation Report 2025
 
+**📱 Phone Display Test - January 19, 2026 at 13:08 UTC**
+
 Data visualization pipeline and interactive figure library for the State of Brain Emulation Report 2025.
 
 ## Overview
