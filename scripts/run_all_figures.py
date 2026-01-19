@@ -25,14 +25,9 @@ import datetime as dt
 from style import (
     apply_style, save_figure, add_attribution,
     COLORS, PRIMARY_COLORS, CATEGORICAL_COLORS,
-    GOLD, TEAL, PURPLE,
+    GOLD, TEAL, PURPLE, GREEN,
     SPECIES_NEURONS, plot_species_hlines,
     EXTENDED_CATEGORICAL, HARDWARE_COLORS
-)
-from paths import (
-    DATA_DIR, DATA_FILES, OUTPUT_FIGURES,
-    OUTPUT_FIGURES_NEURO_SIM, OUTPUT_FIGURES_NEURO_REC,
-    ensure_output_dirs
 )
 from paths import (
     DATA_DIR, DATA_FILES, OUTPUT_FIGURES,
@@ -308,11 +303,11 @@ def generate_neuro_recordings():
         palette=[TEAL, GOLD], s=60, alpha=0.8, ax=ax
     )
 
-    # Regression lines
+    # Regression lines with labels for legend
     ax.plot(x_lin, y_lin_ephys, color=COLORS['text'], ls=(0, (5, 7)), lw=2)
     ax.plot(x_lin, y_lin_imag, color=COLORS['text'], ls=(0, (5, 7)), lw=2)
-    ax.plot(x_lin, y_lin_ephys, color=TEAL, ls=(6, (5, 7)), lw=2)
-    ax.plot(x_lin, y_lin_imag, color=GOLD, ls=(6, (5, 7)), lw=2)
+    ax.plot(x_lin, y_lin_ephys, color=TEAL, ls=(6, (5, 7)), lw=2, label='Electrophysiology trend')
+    ax.plot(x_lin, y_lin_imag, color=GOLD, ls=(6, (5, 7)), lw=2, label='Imaging trend')
 
     ax.set_yscale('log')
     plot_species_hlines(ax, min_year, max_year, 1958)
@@ -320,7 +315,9 @@ def generate_neuro_recordings():
     ax.set_xlabel(None)
     ax.set_ylim(0.2, 1e12)
     ax.set_title('Neural Recording Capacity Over Time')
-    ax.legend(frameon=True)
+    # Get existing handles and labels, then add our trend lines
+    handles, labels = ax.get_legend_handles_labels()
+    ax.legend(handles=handles, labels=labels, frameon=True)
     plt.tight_layout()
     save_figure(fig, 'neuro-recordings')
     plt.close()
@@ -508,7 +505,7 @@ def generate_cost_per_neuron():
     type_styles = {
         'Budget': {'color': GOLD, 'marker': 'o', 'edgecolor': COLORS['text']},
         'Estimate': {'color': TEAL, 'marker': 's', 'edgecolor': COLORS['text']},
-        'Illustration': {'color': '#2ECC71', 'marker': 'D', 'edgecolor': COLORS['text']},
+        'Illustration': {'color': GREEN, 'marker': 'D', 'edgecolor': COLORS['text']},
     }
 
     def dollar_formatter(x, pos):
@@ -596,7 +593,7 @@ def generate_cost_per_neuron():
 
         # Use adjustText to automatically position labels without overlap
         adjust_text(texts, x=x_points, y=y_points, ax=ax,
-                    arrowprops=dict(arrowstyle='-', color='gray', lw=0.5),
+                    arrowprops=dict(arrowstyle='-', color=COLORS['caption'], lw=0.5),
                     expand_points=(1.5, 1.5),
                     force_text=(0.5, 1.0),
                     force_points=(0.5, 0.5),
@@ -615,7 +612,7 @@ def generate_cost_per_neuron():
                        markeredgecolor=COLORS['text'], markersize=10, label='Budget'),
                 Line2D([0], [0], marker='s', color='w', markerfacecolor=TEAL,
                        markeredgecolor=COLORS['text'], markersize=10, label='Estimate'),
-                Line2D([0], [0], marker='D', color='w', markerfacecolor='#2ECC71',
+                Line2D([0], [0], marker='D', color='w', markerfacecolor=GREEN,
                        markeredgecolor=COLORS['text'], markersize=10, label='Illustration'),
             ]
         else:

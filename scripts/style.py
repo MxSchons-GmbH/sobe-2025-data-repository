@@ -27,6 +27,29 @@ SEQUENTIAL_COLORS = ['#F7F5F2', '#E5DFD8', '#C7BDDC', '#8B7A9E', '#5C5470']
 # Heatmap gradient
 HEATMAP_GRADIENT = {'low': '#F7F5F2', 'mid': '#D4A84B', 'high': '#8B5A2B'}
 
+# =============================================================================
+# COLORBLIND-FRIENDLY PALETTES (Okabe-Ito)
+# =============================================================================
+# These colors are distinguishable by people with all types of color vision
+# Reference: https://jfly.uni-koeln.de/color/
+
+COLORBLIND_CATEGORICAL = [
+    '#E69F00',  # orange
+    '#56B4E9',  # sky blue
+    '#009E73',  # bluish green
+    '#F0E442',  # yellow
+    '#0072B2',  # blue
+    '#D55E00',  # vermillion
+    '#CC79A7',  # reddish purple
+    '#000000',  # black
+]
+
+# Colorblind-safe sequential (luminance-based)
+COLORBLIND_SEQUENTIAL = ['#FFFFFF', '#D9D9D9', '#969696', '#525252', '#000000']
+
+# Colorblind-safe diverging
+COLORBLIND_DIVERGING = ['#D55E00', '#F0E442', '#FFFFFF', '#56B4E9', '#0072B2']
+
 # UI Colors
 COLORS = {
     'background': '#F7F5F2',      # warm off-white
@@ -46,6 +69,7 @@ COLORS = {
 GOLD = '#D4A84B'
 PURPLE = '#6B6080'
 TEAL = '#4A90A4'
+GREEN = '#2ECC71'  # illustration/highlight green
 
 # Extended palette for charts with many categories
 EXTENDED_CATEGORICAL = [
@@ -54,6 +78,7 @@ EXTENDED_CATEGORICAL = [
     '#6B6080',  # purple
     '#8B7355',  # brown
     '#5C8B6B',  # green
+    '#2ECC71',  # bright green (illustration)
     '#8c564b',  # rust brown
     '#e377c2',  # pink
     '#7f7f7f',  # gray
@@ -67,6 +92,22 @@ HARDWARE_COLORS = {
     'dram': '#2E8B57',        # sea green - memory bandwidth
     'interconnect': '#9370DB', # medium purple - interconnect bandwidth
 }
+
+# =============================================================================
+# HATCHING PATTERNS (for colorblind accessibility)
+# =============================================================================
+# Use these with color to provide redundant encoding
+
+HATCHING_PATTERNS = [
+    '',       # solid (no hatch)
+    '///',    # diagonal lines
+    '\\\\\\', # reverse diagonal
+    '|||',    # vertical lines
+    '---',    # horizontal lines
+    'xxx',    # crossed diagonals
+    '+++',    # crossed lines
+    'ooo',    # circles
+]
 
 # =============================================================================
 # TYPOGRAPHY
@@ -244,31 +285,74 @@ def apply_style():
     })
 
 
-def get_categorical_palette(n=None):
-    """Get categorical color palette, optionally limited to n colors."""
-    if n is None:
-        return CATEGORICAL_COLORS
-    return CATEGORICAL_COLORS[:n]
+def get_sequential_cmap(colorblind_safe=False):
+    """
+    Get sequential colormap for heatmaps.
 
-
-def get_primary_palette(n=None):
-    """Get primary color palette, optionally limited to n colors."""
-    if n is None:
-        return PRIMARY_COLORS
-    return PRIMARY_COLORS[:n]
-
-
-def get_sequential_cmap():
-    """Get sequential colormap for heatmaps."""
+    Parameters
+    ----------
+    colorblind_safe : bool
+        If True, use a luminance-based grayscale colormap
+    """
     from matplotlib.colors import LinearSegmentedColormap
+    if colorblind_safe:
+        return LinearSegmentedColormap.from_list('report_sequential_cb', COLORBLIND_SEQUENTIAL)
     return LinearSegmentedColormap.from_list('report_sequential', SEQUENTIAL_COLORS)
 
 
-def get_heatmap_cmap():
-    """Get heatmap colormap (low -> mid -> high)."""
+def get_heatmap_cmap(colorblind_safe=False):
+    """
+    Get heatmap colormap (low -> mid -> high).
+
+    Parameters
+    ----------
+    colorblind_safe : bool
+        If True, use viridis (perceptually uniform, colorblind-friendly)
+    """
     from matplotlib.colors import LinearSegmentedColormap
+    if colorblind_safe:
+        # Use matplotlib's built-in viridis which is colorblind-safe
+        return plt.cm.viridis
     colors = [HEATMAP_GRADIENT['low'], HEATMAP_GRADIENT['mid'], HEATMAP_GRADIENT['high']]
     return LinearSegmentedColormap.from_list('report_heatmap', colors)
+
+
+def get_categorical_palette(n=None, colorblind_safe=False):
+    """
+    Get categorical color palette.
+
+    Parameters
+    ----------
+    n : int, optional
+        Limit to n colors
+    colorblind_safe : bool
+        If True, use Okabe-Ito colorblind-friendly palette
+    """
+    palette = COLORBLIND_CATEGORICAL if colorblind_safe else CATEGORICAL_COLORS
+    if n is None:
+        return palette
+    return palette[:n]
+
+
+def get_primary_palette(n=None, colorblind_safe=False):
+    """
+    Get primary color palette.
+
+    Parameters
+    ----------
+    n : int, optional
+        Limit to n colors
+    colorblind_safe : bool
+        If True, use Okabe-Ito colorblind-friendly palette
+    """
+    if colorblind_safe:
+        # Use subset of Okabe-Ito that works well for sequential data
+        palette = ['#56B4E9', '#0072B2', '#009E73', '#000000']
+    else:
+        palette = PRIMARY_COLORS
+    if n is None:
+        return palette
+    return palette[:n]
 
 
 def style_legend(ax, loc='best', **kwargs):
@@ -283,6 +367,111 @@ def style_legend(ax, loc='best', **kwargs):
         **kwargs
     )
     return legend
+
+
+def place_legend(ax, fig=None, position='auto', **kwargs):
+    """
+    Intelligently place legend based on figure size and data density.
+
+    Parameters
+    ----------
+    ax : matplotlib.axes.Axes
+        The axes to add the legend to
+    fig : matplotlib.figure.Figure, optional
+        The figure (used for sizing calculations)
+    position : str
+        'auto' - automatically determine best placement
+        'outside_right' - place outside to the right
+        'outside_top' - place outside at top
+        'inside_best' - place inside at best location
+        'upper_left', 'upper_right', etc. - standard matplotlib locations
+    **kwargs : dict
+        Additional arguments passed to ax.legend()
+
+    Returns
+    -------
+    matplotlib.legend.Legend
+        The created legend
+    """
+    if fig is None:
+        fig = plt.gcf()
+
+    figwidth = fig.get_figwidth()
+
+    default_kwargs = {
+        'frameon': True,
+        'facecolor': COLORS['figure_bg'],
+        'edgecolor': COLORS['grid'],
+        'framealpha': 0.9,
+        'fontsize': FONT_SIZES['legend'],
+    }
+    default_kwargs.update(kwargs)
+
+    if position == 'auto':
+        # Use outside placement for wider figures, inside for narrow ones
+        if figwidth >= 10:
+            position = 'outside_right'
+        else:
+            position = 'inside_best'
+
+    if position == 'outside_right':
+        default_kwargs['bbox_to_anchor'] = (1.02, 1)
+        default_kwargs['loc'] = 'upper left'
+    elif position == 'outside_top':
+        default_kwargs['bbox_to_anchor'] = (0.5, 1.02)
+        default_kwargs['loc'] = 'lower center'
+        default_kwargs['ncol'] = default_kwargs.get('ncol', 3)
+    elif position == 'inside_best':
+        default_kwargs['loc'] = 'best'
+    else:
+        # Use position as matplotlib loc string
+        default_kwargs['loc'] = position
+
+    return ax.legend(**default_kwargs)
+
+
+def scale_fontsize(base_size, figsize=None, num_elements=None, min_size=6, max_size=14):
+    """
+    Scale font size based on figure dimensions and data density.
+
+    Parameters
+    ----------
+    base_size : int
+        The base font size (from FONT_SIZES)
+    figsize : tuple, optional
+        (width, height) of the figure in inches
+    num_elements : int, optional
+        Number of data elements (e.g., rows in heatmap)
+    min_size : int
+        Minimum font size to return
+    max_size : int
+        Maximum font size to return
+
+    Returns
+    -------
+    int
+        Scaled font size
+    """
+    scale = 1.0
+
+    # Scale based on figure size
+    if figsize is not None:
+        width, height = figsize
+        # Larger figures can use larger fonts
+        area_scale = (width * height) / (10 * 6)  # Relative to default 10x6
+        scale *= min(1.3, max(0.8, area_scale ** 0.3))
+
+    # Scale down for high data density
+    if num_elements is not None:
+        if num_elements > 50:
+            scale *= 0.7
+        elif num_elements > 30:
+            scale *= 0.8
+        elif num_elements > 20:
+            scale *= 0.9
+
+    scaled = int(base_size * scale)
+    return max(min_size, min(max_size, scaled))
 
 
 def annotate_point(ax, text, xy, xytext, **kwargs):
@@ -306,22 +495,47 @@ def annotate_point(ax, text, xy, xytext, **kwargs):
     return ax.annotate(text, xy=xy, xytext=xytext, **default_kwargs)
 
 
-def save_figure(fig, name, output_dir=None):
-    """Save figure in both SVG and PNG formats with attribution."""
+def save_figure(fig, name, output_dir=None, print_quality=False):
+    """
+    Save figure in both SVG and PNG formats with attribution.
+
+    Parameters
+    ----------
+    fig : matplotlib.figure.Figure
+        The figure to save
+    name : str
+        Base name for the output files (without extension)
+    output_dir : Path or str, optional
+        Output directory (defaults to OUTPUT_FIGURES)
+    print_quality : bool
+        If True, also save a high-DPI (300) PNG for print
+    """
     from pathlib import Path
     if output_dir is None:
         output_dir = OUTPUT_FIGURES
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     add_attribution(fig)
-    fig.savefig(output_dir / f'{name}.svg', format='svg', **{
+
+    save_kwargs = {
         'bbox_inches': EXPORT['bbox_inches'],
         'pad_inches': EXPORT['pad_inches'],
-    })
-    fig.savefig(output_dir / f'{name}.png', format='png', dpi=EXPORT['dpi'], **{
-        'bbox_inches': EXPORT['bbox_inches'],
-        'pad_inches': EXPORT['pad_inches'],
-    })
+    }
+
+    # Always save SVG (vector, resolution-independent)
+    fig.savefig(output_dir / f'{name}.svg', format='svg', **save_kwargs)
+
+    # Save standard PNG for web/screen
+    fig.savefig(output_dir / f'{name}.png', format='png', dpi=EXPORT['dpi'], **save_kwargs)
+
+    # Optionally save high-DPI PNG for print
+    if print_quality:
+        fig.savefig(
+            output_dir / f'{name}-print.png',
+            format='png',
+            dpi=EXPORT['dpi_print'],
+            **save_kwargs
+        )
 
 
 # Species reference data for neuron count lines
