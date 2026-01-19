@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from cycler import cycler
 
+from paths import OUTPUT_FIGURES
+
 # =============================================================================
 # COLOR SYSTEM
 # =============================================================================
@@ -44,6 +46,27 @@ COLORS = {
 GOLD = '#D4A84B'
 PURPLE = '#6B6080'
 TEAL = '#4A90A4'
+
+# Extended palette for charts with many categories
+EXTENDED_CATEGORICAL = [
+    '#D4A84B',  # gold
+    '#4A90A4',  # teal
+    '#6B6080',  # purple
+    '#8B7355',  # brown
+    '#5C8B6B',  # green
+    '#8c564b',  # rust brown
+    '#e377c2',  # pink
+    '#7f7f7f',  # gray
+    '#bcbd22',  # olive
+    '#17becf',  # cyan
+]
+
+# Hardware/technical chart colors
+HARDWARE_COLORS = {
+    'flops': '#4A4A4A',       # dark gray - compute performance
+    'dram': '#2E8B57',        # sea green - memory bandwidth
+    'interconnect': '#9370DB', # medium purple - interconnect bandwidth
+}
 
 # =============================================================================
 # TYPOGRAPHY
@@ -283,16 +306,19 @@ def annotate_point(ax, text, xy, xytext, **kwargs):
     return ax.annotate(text, xy=xy, xytext=xytext, **default_kwargs)
 
 
-def save_figure(fig, name, output_dir='../data-and-figures/figures/generated'):
+def save_figure(fig, name, output_dir=None):
     """Save figure in both SVG and PNG formats with attribution."""
-    import os
-    os.makedirs(output_dir, exist_ok=True)
+    from pathlib import Path
+    if output_dir is None:
+        output_dir = OUTPUT_FIGURES
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
     add_attribution(fig)
-    fig.savefig(f'{output_dir}/{name}.svg', format='svg', **{
+    fig.savefig(output_dir / f'{name}.svg', format='svg', **{
         'bbox_inches': EXPORT['bbox_inches'],
         'pad_inches': EXPORT['pad_inches'],
     })
-    fig.savefig(f'{output_dir}/{name}.png', format='png', dpi=EXPORT['dpi'], **{
+    fig.savefig(output_dir / f'{name}.png', format='png', dpi=EXPORT['dpi'], **{
         'bbox_inches': EXPORT['bbox_inches'],
         'pad_inches': EXPORT['pad_inches'],
     })
