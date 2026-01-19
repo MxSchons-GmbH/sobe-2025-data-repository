@@ -17,10 +17,10 @@ from datetime import datetime
 
 # Paths (relative to repository root)
 REPO_ROOT = Path(__file__).parent.parent
-OUTPUT_DIR = REPO_ROOT / "output"
-HAND_DRAWN_DIR = REPO_ROOT / "images" / "hand-drawn"
-DOWNLOADS_DIR = REPO_ROOT / "downloads"
-WEBSITE_DIR = REPO_ROOT / "website"
+OUTPUT_DIR = REPO_ROOT / "data-and-figures" / "figures" / "generated"
+HAND_DRAWN_DIR = REPO_ROOT / "data-and-figures" / "figures" / "hand-drawn"
+DOWNLOADS_DIR = REPO_ROOT / "data-and-figures" / "downloads"
+WEBSITE_DIR = REPO_ROOT / "data-and-figures"
 
 # License text
 LICENSE_TEXT = """Creative Commons Attribution 4.0 International (CC BY 4.0)

@@ -1143,7 +1143,7 @@ try:
     import os
 
     # Create output directory if it doesn't exist
-    os.makedirs('../output/neuro-sim', exist_ok=True)
+    os.makedirs('../data-and-figures/figures/generated/neuro-sim', exist_ok=True)
 
     # Load simulation data
     neuro_sim_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Computational Models of the Brain.csv')
@@ -1286,8 +1286,8 @@ try:
 
         plt.tight_layout()
         add_attribution(fig)
-        fig.savefig(f'../output/neuro-sim/{organism}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
-        fig.savefig(f'../output/neuro-sim/{organism}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
+        fig.savefig(f'../data-and-figures/figures/generated/neuro-sim/{organism}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
+        fig.savefig(f'../data-and-figures/figures/generated/neuro-sim/{organism}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
         plt.close()
 
     print("   Done!")
@@ -1303,7 +1303,7 @@ try:
     import os
 
     # Create output directory if it doesn't exist
-    os.makedirs('../output/neuro-rec', exist_ok=True)
+    os.makedirs('../data-and-figures/figures/generated/neuro-rec', exist_ok=True)
 
     # Load recording data from the original data files
     neuro_rec_df = pd.read_csv('../data/Neurodynamics recording papers - Papers.csv')
@@ -1656,13 +1656,13 @@ try:
             fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
             rec_fig(ax, sub_df, organism, individual_studies=None)
 
-            # Add title with extra padding to avoid overlap with top axis labels
-            ax.set_title(f'{organism} - Recording Characteristics', fontsize=14, pad=80, color=COLORS['title'])
+            # Add title
+            ax.set_title(f'{organism} - Recording Characteristics', fontsize=14, pad=20, color=COLORS['title'])
 
             plt.tight_layout()
             add_attribution(fig)
-            fig.savefig(f'../output/neuro-rec/{organism}-{fixmov}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
-            fig.savefig(f'../output/neuro-rec/{organism}-{fixmov}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
+            fig.savefig(f'../data-and-figures/figures/generated/neuro-rec/{organism}-{fixmov}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
+            fig.savefig(f'../data-and-figures/figures/generated/neuro-rec/{organism}-{fixmov}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
             plt.close()
 
     print("   Done!")
@@ -1799,8 +1799,8 @@ try:
 
     plt.tight_layout()
     add_attribution(fig)
-    fig.savefig('../output/all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
-    fig.savefig('../output/all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
+    fig.savefig('../data-and-figures/figures/generated/all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
+    fig.savefig('../data-and-figures/figures/generated/all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
     plt.close()
     print("   Done!")
 except Exception as e:
@@ -1935,7 +1935,7 @@ except Exception as e:
 print("\n" + "=" * 60)
 print("Figure generation complete!")
 print("=" * 60)
-print("\nOutput files saved to: ../output/")
+print("\nOutput files saved to: ../data-and-figures/figures/generated/")
 
 # =============================================================================
 # Build Download ZIPs

@@ -283,8 +283,10 @@ def annotate_point(ax, text, xy, xytext, **kwargs):
     return ax.annotate(text, xy=xy, xytext=xytext, **default_kwargs)
 
 
-def save_figure(fig, name, output_dir='../output'):
+def save_figure(fig, name, output_dir='../data-and-figures/figures/generated'):
     """Save figure in both SVG and PNG formats with attribution."""
+    import os
+    os.makedirs(output_dir, exist_ok=True)
     add_attribution(fig)
     fig.savefig(f'{output_dir}/{name}.svg', format='svg', **{
         'bbox_inches': EXPORT['bbox_inches'],
