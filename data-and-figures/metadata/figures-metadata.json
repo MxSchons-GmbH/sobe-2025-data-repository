@@ -5,7 +5,7 @@
       "title": "Neural Simulations & Recordings Overview",
       "description": "Combined visualization showing the landscape of neural simulations and recordings across different scales and organisms.",
       "filename": "all-sim-rec",
-      "path": "figures/generated/all-sim-rec",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["overview", "simulation", "recording"],
       "featured": true
@@ -15,7 +15,7 @@
       "title": "Number of Neurons",
       "description": "Comparison of neuron counts across different organisms and brain regions.",
       "filename": "num-neurons",
-      "path": "figures/generated/num-neurons",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["overview", "anatomy"]
     },
@@ -24,7 +24,7 @@
       "title": "Imaging Speed",
       "description": "Analysis of imaging speed capabilities across different neuroimaging technologies.",
       "filename": "imaging-speed",
-      "path": "figures/generated/imaging-speed",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["technology", "imaging"]
     },
@@ -33,7 +33,7 @@
       "title": "Compute Hardware Trends",
       "description": "Historical trends in computational hardware relevant to brain emulation.",
       "filename": "compute",
-      "path": "figures/generated/compute",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["technology", "compute"]
     },
@@ -42,7 +42,7 @@
       "title": "Storage Costs",
       "description": "Trends in data storage costs over time and implications for brain data storage.",
       "filename": "storage-costs",
-      "path": "figures/generated/storage-costs",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["technology", "storage", "cost"]
     },
@@ -51,7 +51,7 @@
       "title": "Neural Recordings",
       "description": "Overview of neural recording capabilities and progress over time.",
       "filename": "neuro-recordings",
-      "path": "figures/generated/neuro-recordings",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["recording", "overview"]
     },
@@ -60,7 +60,7 @@
       "title": "Scanned Brain Tissue",
       "description": "Progress in scanning and reconstructing brain tissue at various resolutions.",
       "filename": "scanned-brain-tissue",
-      "path": "figures/generated/scanned-brain-tissue",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["connectomics", "imaging"]
     },
@@ -69,7 +69,7 @@
       "title": "Recording Modalities Comparison",
       "description": "Comparison of different neural recording methods including EEG, fMRI, calcium imaging, and electrophysiology.",
       "filename": "recording-modalities",
-      "path": "figures/generated/recording-modalities",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["recording", "technology"]
     },
@@ -78,7 +78,7 @@
       "title": "Emulation Compute Requirements (Time-Based)",
       "description": "Computational requirements for time-based neural emulation approaches.",
       "filename": "emulation-compute-time-based",
-      "path": "figures/generated/emulation-compute-time-based",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["emulation", "compute"]
     },
@@ -87,7 +87,7 @@
       "title": "Emulation Compute Requirements (Event-Driven)",
       "description": "Computational requirements for event-driven neural emulation approaches.",
       "filename": "emulation-compute-event-driven",
-      "path": "figures/generated/emulation-compute-event-driven",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["emulation", "compute"]
     },
@@ -96,7 +96,7 @@
       "title": "Emulation Storage Requirements",
       "description": "Storage requirements for brain emulation across different organisms and detail levels.",
       "filename": "emulation-storage-requirements",
-      "path": "figures/generated/emulation-storage-requirements",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["emulation", "storage"]
     },
@@ -105,7 +105,7 @@
       "title": "Cost Per Neuron",
       "description": "Historical trends in the cost of reconstructing individual neurons, including budget data, estimates, and future illustrations.",
       "filename": "cost-per-neuron",
-      "path": "figures/generated/cost-per-neuron",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["cost", "connectomics"]
     },
@@ -114,7 +114,7 @@
       "title": "Cost Per Neuron (Budget & Estimates Only)",
       "description": "Historical trends in the cost of reconstructing individual neurons, showing only completed budgets and current estimates without future illustrations.",
       "filename": "cost-per-neuron-no-illust",
-      "path": "figures/generated/cost-per-neuron-no-illust",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["cost", "connectomics"]
     },
@@ -123,7 +123,7 @@
       "title": "Brain Initiative Funding",
       "description": "Overview of funding for major brain research initiatives worldwide.",
       "filename": "funding",
-      "path": "figures/generated/funding",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["funding", "initiatives"]
     },
@@ -132,7 +132,7 @@
       "title": "Organism Computational Demands",
       "description": "Computational demands for simulating brains of different organisms.",
       "filename": "organism-compute",
-      "path": "figures/generated/organism-compute",
+      "path": "figures/generated",
       "organism": ["c-elegans", "drosophila", "zebrafish", "mouse", "human"],
       "type": ["compute", "emulation"]
     },
@@ -141,7 +141,7 @@
       "title": "Bandwidth Scaling for Multiplexed Imaging",
       "description": "Scaling of bandwidth requirements for multiplexed imaging of whole human brain at different resolutions (10-100nm) and color channel counts (1-30 colors). Shows how data rates scale from terabits to petabits per second.",
       "filename": "bandwidth-scaling",
-      "path": "figures/generated/bandwidth-scaling",
+      "path": "figures/generated",
       "organism": ["human"],
       "type": ["imaging", "technology", "compute"]
     },
@@ -150,7 +150,7 @@
       "title": "Hardware Scaling Trends",
       "description": "Historical scaling trends for hardware FLOPS (~60,000x/20yrs), DRAM bandwidth (~100x/20yrs), and interconnect bandwidth (~30x/20yrs) from 2005-2025. Shows exponential growth with fitted trend lines for GPUs (Pentium 4 to B200), memory (GDDR4 to HBM3E), and interconnects (PCIe 2.0 to NVLink 4.0).",
       "filename": "hardware-scaling",
-      "path": "figures/generated/hardware-scaling",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["technology", "compute"]
     },
@@ -159,7 +159,7 @@
       "title": "Simulation Heatmap",
       "description": "Heatmap visualization of neural simulation capabilities across dimensions.",
       "filename": "sim-heatmap",
-      "path": "figures/generated/sim-heatmap",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["simulation", "heatmap"]
     },
@@ -168,7 +168,7 @@
       "title": "Recording Heatmap",
       "description": "Heatmap visualization of neural recording capabilities across dimensions.",
       "filename": "rec-heatmap",
-      "path": "figures/generated/rec-heatmap",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["recording", "heatmap"]
     },
@@ -177,7 +177,7 @@
       "title": "Brain Initiatives (1)",
       "description": "Overview of major brain research initiatives - Part 1.",
       "filename": "initiatives1",
-      "path": "figures/generated/initiatives1",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -186,7 +186,7 @@
       "title": "Brain Initiatives (2)",
       "description": "Overview of major brain research initiatives - Part 2.",
       "filename": "initiatives2",
-      "path": "figures/generated/initiatives2",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -195,7 +195,7 @@
       "title": "Brain Initiatives (3)",
       "description": "Overview of major brain research initiatives - Part 3.",
       "filename": "initiatives3",
-      "path": "figures/generated/initiatives3",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -204,7 +204,7 @@
       "title": "Brain Initiatives (4)",
       "description": "Overview of major brain research initiatives - Part 4.",
       "filename": "initiatives4",
-      "path": "figures/generated/initiatives4",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -213,7 +213,7 @@
       "title": "Brain Initiatives (5)",
       "description": "Overview of major brain research initiatives - Part 5.",
       "filename": "initiatives5",
-      "path": "figures/generated/initiatives5",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -222,7 +222,7 @@
       "title": "Brain Initiatives (6)",
       "description": "Overview of major brain research initiatives - Part 6.",
       "filename": "initiatives6",
-      "path": "figures/generated/initiatives6",
+      "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
     },
@@ -231,7 +231,7 @@
       "title": "C. elegans Neural Simulations",
       "description": "Neural simulation landscape for C. elegans (302 neurons).",
       "filename": "C. elegans",
-      "path": "figures/generated/neuro-sim/C. elegans",
+      "path": "figures/generated/neuro-sim",
       "organism": ["c-elegans"],
       "type": ["simulation", "organism-specific"]
     },
@@ -240,7 +240,7 @@
       "title": "Drosophila Neural Simulations",
       "description": "Neural simulation landscape for Drosophila (fruit fly).",
       "filename": "Drosophila",
-      "path": "figures/generated/neuro-sim/Drosophila",
+      "path": "figures/generated/neuro-sim",
       "organism": ["drosophila"],
       "type": ["simulation", "organism-specific"]
     },
@@ -249,7 +249,7 @@
       "title": "Zebrafish Neural Simulations",
       "description": "Neural simulation landscape for Zebrafish larvae.",
       "filename": "Zebrafish",
-      "path": "figures/generated/neuro-sim/Zebrafish",
+      "path": "figures/generated/neuro-sim",
       "organism": ["zebrafish"],
       "type": ["simulation", "organism-specific"]
     },
@@ -258,7 +258,7 @@
       "title": "Mouse Neural Simulations",
       "description": "Neural simulation landscape for Mouse brain.",
       "filename": "Mouse",
-      "path": "figures/generated/neuro-sim/Mouse",
+      "path": "figures/generated/neuro-sim",
       "organism": ["mouse"],
       "type": ["simulation", "organism-specific"]
     },
@@ -267,16 +267,25 @@
       "title": "Human Neural Simulations",
       "description": "Neural simulation landscape for Human brain.",
       "filename": "Human",
-      "path": "figures/generated/neuro-sim/Human",
+      "path": "figures/generated/neuro-sim",
       "organism": ["human"],
       "type": ["simulation", "organism-specific"]
     },
     {
-      "id": "neuro-rec-c-elegans",
-      "title": "C. elegans Neural Recordings",
-      "description": "Neural recording landscape for C. elegans.",
+      "id": "neuro-rec-c-elegans-fixated",
+      "title": "C. elegans Neural Recordings (Fixated)",
+      "description": "Neural recording landscape for C. elegans in fixated preparations.",
       "filename": "C. elegans-fixated",
-      "path": "figures/generated/neuro-rec/C. elegans-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": ["c-elegans"],
+      "type": ["recording", "organism-specific"]
+    },
+    {
+      "id": "neuro-rec-c-elegans-moving",
+      "title": "C. elegans Neural Recordings (Moving)",
+      "description": "Neural recording landscape for C. elegans in freely moving preparations.",
+      "filename": "C. elegans-moving",
+      "path": "figures/generated/neuro-rec",
       "organism": ["c-elegans"],
       "type": ["recording", "organism-specific"]
     },
@@ -285,7 +294,7 @@
       "title": "Drosophila Neural Recordings",
       "description": "Neural recording landscape for Drosophila.",
       "filename": "Drosophila-fixated",
-      "path": "figures/generated/neuro-rec/Drosophila-fixated",
+      "path": "figures/generated/neuro-rec",
       "organism": ["drosophila"],
       "type": ["recording", "organism-specific"]
     },
@@ -294,16 +303,25 @@
       "title": "Zebrafish Neural Recordings",
       "description": "Neural recording landscape for Zebrafish.",
       "filename": "Zebrafish-fixated",
-      "path": "figures/generated/neuro-rec/Zebrafish-fixated",
+      "path": "figures/generated/neuro-rec",
       "organism": ["zebrafish"],
       "type": ["recording", "organism-specific"]
     },
     {
-      "id": "neuro-rec-mouse",
-      "title": "Mouse Neural Recordings",
-      "description": "Neural recording landscape for Mouse.",
+      "id": "neuro-rec-mouse-fixated",
+      "title": "Mouse Neural Recordings (Fixated)",
+      "description": "Neural recording landscape for Mouse in fixated preparations.",
       "filename": "Mouse-fixated",
-      "path": "figures/generated/neuro-rec/Mouse-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": ["mouse"],
+      "type": ["recording", "organism-specific"]
+    },
+    {
+      "id": "neuro-rec-mouse-moving",
+      "title": "Mouse Neural Recordings (Moving)",
+      "description": "Neural recording landscape for Mouse in freely moving preparations.",
+      "filename": "Mouse-moving",
+      "path": "figures/generated/neuro-rec",
       "organism": ["mouse"],
       "type": ["recording", "organism-specific"]
     },
@@ -312,7 +330,7 @@
       "title": "Human Neural Recordings",
       "description": "Neural recording landscape for Human.",
       "filename": "Human-fixated",
-      "path": "figures/generated/neuro-rec/Human-fixated",
+      "path": "figures/generated/neuro-rec",
       "organism": ["human"],
       "type": ["recording", "organism-specific"]
     },
@@ -321,7 +339,7 @@
       "title": "Mouse Brain Radar Chart",
       "description": "Multi-dimensional comparison of mouse brain emulation parameters.",
       "filename": "Mouse",
-      "path": "figures/generated/radar-charts/Mouse",
+      "path": "figures/generated/radar-charts",
       "organism": ["mouse"],
       "type": ["radar-chart", "comparison"]
     },
@@ -330,7 +348,7 @@
       "title": "Human Brain Radar Chart",
       "description": "Multi-dimensional comparison of human brain emulation parameters.",
       "filename": "Human",
-      "path": "figures/generated/radar-charts/Human",
+      "path": "figures/generated/radar-charts",
       "organism": ["human"],
       "type": ["radar-chart", "comparison"]
     },
@@ -339,7 +357,7 @@
       "title": "C. elegans Radar Chart",
       "description": "Multi-dimensional comparison of C. elegans brain emulation parameters.",
       "filename": "C. elegans",
-      "path": "figures/generated/radar-charts/C. elegans",
+      "path": "figures/generated/radar-charts",
       "organism": ["c-elegans"],
       "type": ["radar-chart", "comparison"]
     },
@@ -348,7 +366,7 @@
       "title": "Rat Brain Radar Chart",
       "description": "Multi-dimensional comparison of rat brain emulation parameters.",
       "filename": "Rat",
-      "path": "figures/generated/radar-charts/Rat",
+      "path": "figures/generated/radar-charts",
       "organism": ["rat"],
       "type": ["radar-chart", "comparison"]
     },
@@ -357,7 +375,7 @@
       "title": "Mammalian Brain Radar Chart",
       "description": "Multi-dimensional comparison of general mammalian brain emulation parameters.",
       "filename": "Mammalian",
-      "path": "figures/generated/radar-charts/Mammalian",
+      "path": "figures/generated/radar-charts",
       "organism": ["mammalian"],
       "type": ["radar-chart", "comparison"]
     },
@@ -366,7 +384,7 @@
       "title": "Silicon Implementation Radar Chart",
       "description": "Multi-dimensional comparison of silicon-based neural implementation parameters.",
       "filename": "Silicon",
-      "path": "figures/generated/radar-charts/Silicon",
+      "path": "figures/generated/radar-charts",
       "organism": ["silicon"],
       "type": ["radar-chart", "comparison", "technology"]
     }

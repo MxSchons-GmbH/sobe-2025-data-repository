@@ -35,11 +35,12 @@
             metadata = generatedMeta;
 
             // Process generated figures
+            // path = directory, filename = base name (no extension)
             const generatedFigures = generatedMeta.figures.map(fig => ({
                 ...fig,
                 source: 'generated',
-                pngPath: `${fig.path.split('/').map(encodeURIComponent).join('/')}.png`,
-                svgPath: `${fig.path.split('/').map(encodeURIComponent).join('/')}.svg`
+                pngPath: `${fig.path}/${encodeURIComponent(fig.filename)}.png`,
+                svgPath: `${fig.path}/${encodeURIComponent(fig.filename)}.svg`
             }));
 
             // Process hand-drawn figures (filter out example/template entries)
