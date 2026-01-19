@@ -4,12 +4,6 @@ Generate a plot showing scaling of bandwidth requirements for multiplexed
 imaging of whole human brain at different resolutions and color channels.
 """
 
-import sys
-import os
-
-# Add scripts directory to path for style import
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np

@@ -4,12 +4,6 @@ Generate a plot showing hardware FLOPS, DRAM bandwidth, and interconnect
 bandwidth scaling over time (2005-2025).
 """
 
-import sys
-import os
-
-# Add scripts directory to path for style import
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np

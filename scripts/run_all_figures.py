@@ -19,6 +19,11 @@ from style import (
     GOLD, TEAL, PURPLE,
     SPECIES_NEURONS, plot_species_hlines
 )
+from paths import (
+    DATA_DIR, DATA_FILES, OUTPUT_FIGURES,
+    OUTPUT_FIGURES_NEURO_SIM, OUTPUT_FIGURES_NEURO_REC,
+    ensure_output_dirs
+)
 
 apply_style()
 
@@ -45,7 +50,7 @@ print("=" * 60)
 # =============================================================================
 print("\n[1/10] Generating: num-neurons.svg/png")
 try:
-    neurons_df = pd.read_csv('../data/Neuron Simulations - TASK 3 - Sheet1.csv')
+    neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"])
     neurons_df['Year'] = neurons_df['Simulation/Initiative'].str.extract(r'(\d{4})').apply(pd.to_datetime)
 
     min_year = neurons_df['Year'].min() - dt.timedelta(days=365)
@@ -84,7 +89,7 @@ except Exception as e:
 print("\n[2/10] Generating: imaging-speed.svg/png")
 try:
     imaging_speed_df = pd.read_excel(
-        '../data/cboschp-wtlandscape_mbc-ca8b379/0-data/maps_dates_230119.xlsx',
+        DATA_FILES["imaging_speed"],
         skiprows=[1],
         parse_dates=['released_year'],
     )
@@ -145,7 +150,7 @@ except Exception as e:
 print("\n[3/10] Generating: compute.svg/png")
 try:
     compute_df = pd.read_csv(
-        '../data/ai-compute/artificial-intelligence-training-computation.csv',
+        DATA_FILES["ai_compute"],
         parse_dates=['Day']
     )
 
@@ -184,7 +189,7 @@ except Exception as e:
 print("\n[4/10] Generating: storage-costs.svg/png")
 try:
     storage_df = pd.read_csv(
-        '../data/storage-costs/historical-cost-of-computer-memory-and-storage.csv',
+        DATA_FILES["storage_costs"],
         parse_dates=['Year']
     )
     storage_df.rename(columns={
@@ -237,7 +242,7 @@ print("\n[5/10] Generating: neuro-recordings.svg/png")
 try:
     import statsmodels.formula.api as smf
 
-    neuro_df = pd.read_csv('../data/Neural recordings - Neurons_year.csv')
+    neuro_df = pd.read_csv(DATA_FILES["neural_recordings"])
 
     # Fit models
     ephys_fit = smf.rlm('np.log(Neurons) ~ Year', data=neuro_df.query('Method == "Ephys"')).fit()
@@ -285,7 +290,7 @@ except Exception as e:
 print("\n[6/10] Generating: scanned-brain-tissue.svg/png")
 try:
     scans_df = pd.read_csv(
-        '../data/brain-scans/Copy of (best) Upwork_TASK 1 (2) - Sheet1.csv',
+        DATA_FILES["brain_scans"],
         parse_dates=['Year'],
     )
 
@@ -464,7 +469,7 @@ try:
     from matplotlib.ticker import FuncFormatter
     import textwrap
 
-    df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Cost estimates Neuron Reconstruction.csv')
+    df = pd.read_csv(DATA_FILES["cost_estimates"])
     df['CostPerNeuron'] = df['Cost / Neuron'].replace('[\\$,]', '', regex=True).astype(float)
 
     # Define style by Type (Budget, Estimate, Illustration)
@@ -621,7 +626,7 @@ try:
     from matplotlib.patches import Patch
 
     brain_proj_df = pd.read_csv(
-        '../data/initiatives/Overview of Brain Initiatives T4 v2.xlsx - Sheet1.csv',
+        DATA_FILES["initiatives_overview"],
         parse_dates=['Start Year (cleaned)', 'End Year (cleaned)']
     )
     brain_proj_df.dropna(subset=['Start Year (cleaned)', 'Budget (in million $) (cleaned)'], inplace=True)
@@ -629,7 +634,7 @@ try:
     brain_proj_df['End Year (cleaned)'] = brain_proj_df['End Year (cleaned)'].fillna(dt.datetime(2024, 12, 31))
 
     other_proj_df = pd.read_csv(
-        '../data/initiatives/Digital Human Intelligence Figures - Costs of different projects.csv',
+        DATA_FILES["initiatives_costs"],
         parse_dates=['StartYear', 'EndYear'],
         converters={'Adjusted2024_M': lambda s: 1e3 * float(s.replace('$', ''))}
     )
@@ -790,7 +795,7 @@ try:
     from matplotlib.colors import ListedColormap, BoundaryNorm
 
     # Load simulation data
-    neuro_sim_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Computational Models of the Brain.csv')
+    neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
 
     # Define organisms and data columns
     organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
@@ -964,7 +969,7 @@ try:
     from matplotlib.colors import LinearSegmentedColormap, BoundaryNorm
 
     # Load recording data
-    neuro_rec_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Neural Dynamics References.csv')
+    neuro_rec_df = pd.read_csv(DATA_FILES["neural_dynamics"])
 
     # Rename columns to match expected format
     neuro_rec_df = neuro_rec_df.copy()
@@ -1143,10 +1148,10 @@ try:
     import os
 
     # Create output directory if it doesn't exist
-    os.makedirs('../data-and-figures/figures/generated/neuro-sim', exist_ok=True)
+    OUTPUT_FIGURES_NEURO_SIM.mkdir(parents=True, exist_ok=True)
 
     # Load simulation data
-    neuro_sim_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Computational Models of the Brain.csv')
+    neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
 
     organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
     organism_map = {
@@ -1286,8 +1291,8 @@ try:
 
         plt.tight_layout()
         add_attribution(fig)
-        fig.savefig(f'../data-and-figures/figures/generated/neuro-sim/{organism}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
-        fig.savefig(f'../data-and-figures/figures/generated/neuro-sim/{organism}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
+        fig.savefig(OUTPUT_FIGURES_NEURO_SIM / f'{organism}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
+        fig.savefig(OUTPUT_FIGURES_NEURO_SIM / f'{organism}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
         plt.close()
 
     print("   Done!")
@@ -1303,11 +1308,11 @@ try:
     import os
 
     # Create output directory if it doesn't exist
-    os.makedirs('../data-and-figures/figures/generated/neuro-rec', exist_ok=True)
+    OUTPUT_FIGURES_NEURO_REC.mkdir(parents=True, exist_ok=True)
 
     # Load recording data from the original data files
-    neuro_rec_df = pd.read_csv('../data/Neurodynamics recording papers - Papers.csv')
-    organism_neuro_df = pd.read_csv('../data/Neurodynamics recording papers - Organisms.csv')
+    neuro_rec_df = pd.read_csv(DATA_FILES["neurodynamics_papers"])
+    organism_neuro_df = pd.read_csv(DATA_FILES["neurodynamics_organisms"])
 
     # Standardize organism names in organism_neuro_df
     organism_neuro_df.replace('Zebrafish Larvae', 'Zebrafish', inplace=True)
@@ -1661,8 +1666,8 @@ try:
 
             plt.tight_layout()
             add_attribution(fig)
-            fig.savefig(f'../data-and-figures/figures/generated/neuro-rec/{organism}-{fixmov}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
-            fig.savefig(f'../data-and-figures/figures/generated/neuro-rec/{organism}-{fixmov}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
+            fig.savefig(OUTPUT_FIGURES_NEURO_REC / f'{organism}-{fixmov}.svg', format='svg', bbox_inches='tight', pad_inches=0.2)
+            fig.savefig(OUTPUT_FIGURES_NEURO_REC / f'{organism}-{fixmov}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
             plt.close()
 
     print("   Done!")
@@ -1679,8 +1684,8 @@ try:
     import textwrap
 
     # Load both datasets
-    neuro_sim_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Computational Models of the Brain.csv')
-    neuro_rec_df = pd.read_csv('../data/State of Brain Emulation Report 2025 Data Repository - Neural Dynamics References.csv')
+    neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
+    neuro_rec_df = pd.read_csv(DATA_FILES["neural_dynamics"])
 
     organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
 
@@ -1799,8 +1804,8 @@ try:
 
     plt.tight_layout()
     add_attribution(fig)
-    fig.savefig('../data-and-figures/figures/generated/all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
-    fig.savefig('../data-and-figures/figures/generated/all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
+    fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
+    fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
     plt.close()
     print("   Done!")
 except Exception as e:
@@ -1813,10 +1818,10 @@ print("\n[16/16] Generating: funding.svg/png")
 try:
     # Load funding data from new data structure
     neuro_proj_df = pd.read_csv(
-        '../data/State of Brain Emulation Report 2025 Data Repository - Costs Neuroscience Megaprojects.csv'
+        DATA_FILES["costs_neuro_megaprojects"]
     )
     other_proj_df = pd.read_csv(
-        '../data/State of Brain Emulation Report 2025 Data Repository - Costs Non-Neuroscience Megaprojects.csv'
+        DATA_FILES["costs_non_neuro_megaprojects"]
     )
 
     # Clean neuroscience projects data
@@ -1883,7 +1888,7 @@ print("\n[17/17] Generating: organism-compute.svg/png")
 try:
     # Load computational demands data
     compute_df = pd.read_csv(
-        '../data/State of Brain Emulation Report 2025 Data Repository - Computational Demands Organisms.csv'
+        DATA_FILES["computational_demands"]
     )
 
     # Parse the data - it's in a wide format with organisms as columns
@@ -2110,7 +2115,7 @@ except Exception as e:
 print("\n" + "=" * 60)
 print("Figure generation complete!")
 print("=" * 60)
-print("\nOutput files saved to: ../data-and-figures/figures/generated/")
+print(f"\nOutput files saved to: {OUTPUT_FIGURES}/")
 
 # =============================================================================
 # Build Download ZIPs
