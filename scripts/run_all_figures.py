@@ -804,10 +804,9 @@ def generate_initiatives():
 # =============================================================================
 # Figure 11: Simulation Heatmap
 # =============================================================================
-print("\n[11/13] Generating: sim-heatmap.svg/png")
-try:
+@figure("sim-heatmap", "Computational models characteristics heatmap")
+def generate_sim_heatmap():
     import textwrap
-    import os
     from matplotlib.colors import ListedColormap, BoundaryNorm
 
     # Load simulation data
@@ -857,7 +856,7 @@ try:
     neuro_sim_df = neuro_sim_df.sort_values(['Organism_order', 'Year']).copy()
     neuro_sim_df = neuro_sim_df.reset_index(drop=True)
 
-    print(f"   Found {len(neuro_sim_df)} valid entries for heatmap")
+    logger.info(f"  Found {len(neuro_sim_df)} valid entries for heatmap")
 
     if len(neuro_sim_df) > 0:
         # Get the raw data with NaN preserved
@@ -970,17 +969,14 @@ try:
         plt.tight_layout()
         save_figure(fig, 'sim-heatmap')
         plt.close()
-        print("   Done!")
     else:
-        print("   Skipped - no valid data")
-except Exception as e:
-    print(f"   Error: {e}")
+        logger.info("  Skipped - no valid data")
 
 # =============================================================================
 # Figure 12: Recording Heatmap
 # =============================================================================
-print("\n[12/13] Generating: rec-heatmap.svg/png")
-try:
+@figure("rec-heatmap", "Neural dynamics recording data coverage heatmap")
+def generate_rec_heatmap():
     import textwrap
     from matplotlib.colors import LinearSegmentedColormap, BoundaryNorm
 
@@ -1024,7 +1020,7 @@ try:
     neuro_rec_df = neuro_rec_df.sort_values(['Organism_order', 'Year']).copy()
     neuro_rec_df = neuro_rec_df.reset_index(drop=True)
 
-    print(f"   Found {len(neuro_rec_df)} valid entries for recording heatmap")
+    logger.info(f"  Found {len(neuro_rec_df)} valid entries for recording heatmap")
 
     if len(neuro_rec_df) > 0:
         # Log-scale the data for visualization, keeping NaN as NaN
@@ -1147,21 +1143,15 @@ try:
         plt.tight_layout()
         save_figure(fig, 'rec-heatmap')
         plt.close()
-        print("   Done!")
     else:
-        print("   Skipped - no valid data")
-except Exception as e:
-    import traceback
-    print(f"   Error: {e}")
-    traceback.print_exc()
+        logger.info("  Skipped - no valid data")
 
 # =============================================================================
 # Figure 13: Neuro-sim radar charts (individual organisms) - WITH TICKS AND INFO BOXES
 # =============================================================================
-print("\n[13/13] Generating: neuro-sim/*.svg/png")
-try:
+@figure("neuro-sim", "Simulation characteristics radar charts per organism")
+def generate_neuro_sim_radar():
     import textwrap
-    import os
 
     # Create output directory if it doesn't exist
     OUTPUT_FIGURES_NEURO_SIM.mkdir(parents=True, exist_ok=True)
@@ -1212,7 +1202,7 @@ try:
         organism_df = organism_df.dropna(subset=data_columns)
 
         if organism_df.empty:
-            print(f"   No data for {organism}, skipping.")
+            logger.info(f"  No data for {organism}, skipping.")
             continue
 
         N = len(data_columns)
@@ -1311,17 +1301,12 @@ try:
         fig.savefig(OUTPUT_FIGURES_NEURO_SIM / f'{organism}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
         plt.close()
 
-    print("   Done!")
-except Exception as e:
-    print(f"   Error: {e}")
-
 # =============================================================================
 # Figure 14: Neuro-rec radar charts - PER ORGANISM with ticks and info boxes
 # =============================================================================
-print("\n[14/16] Generating: neuro-rec/*.svg/png")
-try:
+@figure("neuro-rec", "Recording characteristics radar charts per organism")
+def generate_neuro_rec_radar():
     import textwrap
-    import os
 
     # Create output directory if it doesn't exist
     OUTPUT_FIGURES_NEURO_REC.mkdir(parents=True, exist_ok=True)
@@ -1668,10 +1653,10 @@ try:
             sub_df = organism_df[organism_df['Fixated / moving'] == fixmov]
 
             if sub_df.empty:
-                print(f"   No data for {organism}/{fixmov}, skipping.")
+                logger.info(f"  No data for {organism}/{fixmov}, skipping.")
                 continue
 
-            print(f"   {organism}/{fixmov}")
+            logger.info(f"  {organism}/{fixmov}")
 
             # Set up polar bar chart
             fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
@@ -1686,17 +1671,11 @@ try:
             fig.savefig(OUTPUT_FIGURES_NEURO_REC / f'{organism}-{fixmov}.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.2)
             plt.close()
 
-    print("   Done!")
-except Exception as e:
-    import traceback
-    print(f"   Error: {e}")
-    traceback.print_exc()
-
 # =============================================================================
 # Figure 15: All sim-rec combined grid
 # =============================================================================
-print("\n[15/16] Generating: all-sim-rec.svg/png")
-try:
+@figure("all-sim-rec", "Combined simulation and recording grid")
+def generate_all_sim_rec():
     import textwrap
 
     # Load both datasets
@@ -1823,15 +1802,12 @@ try:
     fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
     fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
     plt.close()
-    print("   Done!")
-except Exception as e:
-    print(f"   Error: {e}")
 
 # =============================================================================
 # Figure 16: Funding figure
 # =============================================================================
-print("\n[16/16] Generating: funding.svg/png")
-try:
+@figure("funding", "Megaproject budgets comparison")
+def generate_funding():
     # Load funding data from new data structure
     neuro_proj_df = pd.read_csv(
         DATA_FILES["costs_neuro_megaprojects"]
@@ -1891,17 +1867,14 @@ try:
         plt.tight_layout()
         save_figure(fig, 'funding')
         plt.close()
-        print("   Done!")
     else:
-        print("   Skipped - no valid data")
-except Exception as e:
-    print(f"   Error: {e}")
+        logger.info("  Skipped - no valid data")
 
 # =============================================================================
 # Figure 17: Organism Compute Requirements
 # =============================================================================
-print("\n[17/17] Generating: organism-compute.svg/png")
-try:
+@figure("organism-compute", "Neuron and synapse counts by organism")
+def generate_organism_compute():
     # Load computational demands data
     compute_df = pd.read_csv(
         DATA_FILES["computational_demands"]
@@ -1947,11 +1920,8 @@ try:
         plt.tight_layout()
         save_figure(fig, 'organism-compute')
         plt.close()
-        print("   Done!")
     else:
-        print("   Skipped - no valid data")
-except Exception as e:
-    print(f"   Error: {e}")
+        logger.info("  Skipped - no valid data")
 
 # =============================================================================
 # Figure 18: Bandwidth Scaling for Multiplexed Imaging
