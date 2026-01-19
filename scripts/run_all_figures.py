@@ -27,7 +27,9 @@ from style import (
     COLORS, PRIMARY_COLORS, CATEGORICAL_COLORS,
     GOLD, TEAL, PURPLE, GREEN,
     SPECIES_NEURONS, plot_species_hlines,
-    EXTENDED_CATEGORICAL, HARDWARE_COLORS
+    EXTENDED_CATEGORICAL, HARDWARE_COLORS,
+    place_legend, scale_fontsize, get_categorical_palette,
+    FONT_SIZES
 )
 from paths import (
     DATA_DIR, DATA_FILES, OUTPUT_FIGURES,
@@ -115,13 +117,13 @@ def generate_num_neurons():
         y='# of Neurons',
         style='Category',
         hue='Organism (random)',
-        palette=CATEGORICAL_COLORS,
+        palette=EXTENDED_CATEGORICAL,
         s=60,
         alpha=0.8,
         ax=ax
     )
     plot_species_hlines(ax, min_year, max_year, label_year)
-    ax.legend(bbox_to_anchor=(1.03, 1.03), frameon=True)
+    place_legend(ax, fig, position='outside_right')
     ax.set_yscale('log')
     ax.set_xlim(min_year, max_year)
     ax.set_ylabel('Number of Neurons')
@@ -149,7 +151,7 @@ def generate_imaging_speed():
     max_date = dt.date(year=2024, month=1, day=1)
 
     fig, axes = plt.subplots(1, 3, figsize=(14, 5))
-    palette = CATEGORICAL_COLORS
+    palette = EXTENDED_CATEGORICAL
 
     # Subplot 1
     sns.scatterplot(
@@ -180,7 +182,7 @@ def generate_imaging_speed():
     )
     axes[2].set_yscale('log')
     axes[2].set_title('Dataset Size (TB)')
-    sns.move_legend(axes[2], "upper left", bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(axes[2], fig, position='outside_right')
     axes[2].set_xlim(min_date, max_date)
     axes[2].set_xlabel(None)
     axes[2].set_ylabel(None)
@@ -204,7 +206,7 @@ def generate_compute():
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.scatterplot(
         data=compute_df, x='Day', y='Training computation (petaFLOP)',
-        hue='Domain', palette=CATEGORICAL_COLORS, s=60, alpha=0.7, ax=ax
+        hue='Domain', palette=EXTENDED_CATEGORICAL, s=60, alpha=0.7, ax=ax
     )
 
     min_year = dt.datetime(year=1945, month=1, day=1)
@@ -215,7 +217,7 @@ def generate_compute():
         ax.axhline(y=val, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
         ax.text(label_year, val, f'  {name}', va='bottom', fontsize=10, color=COLORS['caption'])
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(ax, fig, position='outside_right')
     ax.set_yscale('log')
     ax.set_xlabel('Year')
     ax.set_ylabel('Training Computation (petaFLOP)')
@@ -336,7 +338,7 @@ def generate_scanned_brain_tissue():
     max_date = dt.date(year=2025, month=1, day=1)
 
     fig, axes = plt.subplots(1, 3, figsize=(14, 5))
-    palette = CATEGORICAL_COLORS
+    palette = EXTENDED_CATEGORICAL
 
     for i, (y_col, title) in enumerate([
         ('Resolution (claude)', 'Resolution (nm)'),
@@ -356,7 +358,7 @@ def generate_scanned_brain_tissue():
         axes[i].set_ylabel(None)
         axes[i].tick_params(axis='x', rotation=-30)
 
-    sns.move_legend(axes[2], "upper left", bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(axes[2], fig, position='outside_right')
     plt.tight_layout()
     save_figure(fig, 'scanned-brain-tissue')
     plt.close()
@@ -412,7 +414,7 @@ def generate_recording_modalities():
                 markeredgecolor='white', markeredgewidth=1.5, label=name)
 
     ax.set_title("Brain Tissue Recording Modalities Comparison", fontsize=14, pad=20)
-    ax.legend(title="Method", loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=True)
+    place_legend(ax, fig, position='outside_right', title="Method")
     plt.tight_layout()
     save_figure(fig, 'recording-modalities')
     plt.close()
@@ -674,8 +676,8 @@ def generate_initiatives():
     # Scatter plot
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.scatterplot(all_proj_df, x='StartYear', y='Budget_M', hue='Category',
-                    palette=CATEGORICAL_COLORS + PRIMARY_COLORS[:4], s=80, alpha=0.8, ax=ax)
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1), frameon=True)
+                    palette=EXTENDED_CATEGORICAL, s=80, alpha=0.8, ax=ax)
+    place_legend(ax, fig, position='outside_right')
     ax.set_yscale('log')
     ax.set_ylabel('Budget (Million $)')
     ax.set_xlabel(None)
@@ -689,8 +691,7 @@ def generate_initiatives():
     proj_midpoints = all_proj_df['StartYear'] + proj_durations / 2
 
     proj_categories = all_proj_df['Category'].unique()
-    all_colors = CATEGORICAL_COLORS + PRIMARY_COLORS
-    category_colors = [all_colors[i % len(all_colors)] for i in range(len(proj_categories))]
+    category_colors = [EXTENDED_CATEGORICAL[i % len(EXTENDED_CATEGORICAL)] for i in range(len(proj_categories))]
     category_colormap = dict(zip(proj_categories, category_colors))
     proj_colors = [category_colormap[cat] for cat in all_proj_df['Category']]
 
@@ -717,7 +718,7 @@ def generate_initiatives():
     for i, proj in all_proj_df.head(6).iterrows():
         ax.text(proj_midpoints[i], 1e6 * proj['Budget_M'], proj['Name'],
                 ha='center', va='bottom', fontsize=9, color=COLORS['text'])
-    ax.legend(handles=legend_handles, title="Category", loc='upper left', bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(ax, fig, position='outside_right', handles=legend_handles, title="Category")
     ax.set_title('Megaproject Budgets and Durations')
     plt.tight_layout()
     save_figure(fig, 'initiatives2')
@@ -754,7 +755,7 @@ def generate_initiatives():
     for i, proj in all_proj_df.head(6).iterrows():
         ax.text(proj_midpoints[i], proj['Budget_M'], proj['Name'],
                 ha='center', va='bottom', fontsize=9, color=COLORS['text'])
-    ax.legend(handles=legend_handles, title="Category", loc='upper left', bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(ax, fig, position='outside_right', handles=legend_handles, title="Category")
     ax.set_title('Megaproject Budgets')
     ax2 = ax.twiny()
     ax2.set_xticks([])
@@ -781,7 +782,7 @@ def generate_initiatives():
         warn_singular=False,
         ax=ax
     )
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1), frameon=True)
+    place_legend(ax, fig, position='outside_right')
     ax.set_ylim(1e0, 5e6)
     ax.set_xlim(dt.datetime(year=1950, month=1, day=1), dt.datetime(year=2035, month=1, day=1))
     ax.set_ylabel('Budget (Million $)')
@@ -907,12 +908,15 @@ def generate_sim_heatmap():
         cbar.set_ticklabels(['Unknown', '0', '1', '2', '3'])
         cbar.ax.tick_params(labelsize=9)
 
+        # Scale font size based on number of rows
+        label_fontsize = scale_fontsize(9, num_elements=len(neuro_sim_df))
+
         sim_ax.set_xticks(
             np.arange(len(data_columns)) + 0.5,
             [textwrap.fill(col, width=15) for col in data_columns],
             rotation=45,
             ha='right',
-            fontsize=9,
+            fontsize=label_fontsize,
         )
 
         # Add author labels on right side of heatmap
@@ -923,7 +927,7 @@ def generate_sim_heatmap():
                 for _, row in neuro_sim_df.iterrows()
             ],
             rotation=0,
-            fontsize=9,
+            fontsize=label_fontsize,
         )
         sim_ax.yaxis.tick_right()
 
@@ -1083,6 +1087,9 @@ def generate_rec_heatmap():
         cbar.ax.tick_params(labelsize=9)
         cbar.set_label('log10 scale', fontsize=10)
 
+        # Scale font size based on number of rows
+        label_fontsize = scale_fontsize(9, num_elements=len(neuro_rec_df))
+
         rec_ax.set_xticks(
             np.arange(len(rec_data_columns)) + 0.5,
             [textwrap.fill(col, width=12) for col in rec_data_columns],
@@ -1097,7 +1104,7 @@ def generate_rec_heatmap():
                 for _, row in neuro_rec_df.iterrows()
             ],
             rotation=0,
-            fontsize=9,
+            fontsize=label_fontsize,
         )
         rec_ax.yaxis.tick_right()
 
