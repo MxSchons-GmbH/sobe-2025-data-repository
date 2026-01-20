@@ -12,7 +12,7 @@
     },
     {
       "id": "num-neurons",
-      "title": "Number of Neurons",
+      "title": "Neuron Counts Across Species and Brain Regions",
       "description": "Comparison of neuron counts across different organisms and brain regions.",
       "filename": "num-neurons",
       "path": "figures/generated",
@@ -21,7 +21,7 @@
     },
     {
       "id": "imaging-speed",
-      "title": "Imaging Speed",
+      "title": "Neuroimaging Speed by Technology",
       "description": "Analysis of imaging speed capabilities across different neuroimaging technologies.",
       "filename": "imaging-speed",
       "path": "figures/generated",
@@ -39,7 +39,7 @@
     },
     {
       "id": "storage-costs",
-      "title": "Storage Costs",
+      "title": "Data Storage Cost Trends for Brain Emulation",
       "description": "Trends in data storage costs over time and implications for brain data storage.",
       "filename": "storage-costs",
       "path": "figures/generated",
@@ -48,7 +48,7 @@
     },
     {
       "id": "neuro-recordings",
-      "title": "Neural Recordings",
+      "title": "Neural Recording Technology Progress (1950-2025)",
       "description": "Overview of neural recording capabilities and progress over time.",
       "filename": "neuro-recordings",
       "path": "figures/generated",
@@ -57,7 +57,7 @@
     },
     {
       "id": "scanned-brain-tissue",
-      "title": "Scanned Brain Tissue",
+      "title": "Brain Tissue Scanning Resolution Progress",
       "description": "Progress in scanning and reconstructing brain tissue at various resolutions.",
       "filename": "scanned-brain-tissue",
       "path": "figures/generated",
@@ -156,7 +156,7 @@
     },
     {
       "id": "sim-heatmap",
-      "title": "Simulation Heatmap",
+      "title": "Neural Simulation Capabilities Heatmap",
       "description": "Heatmap visualization of neural simulation capabilities across dimensions.",
       "filename": "sim-heatmap",
       "path": "figures/generated",
@@ -165,7 +165,7 @@
     },
     {
       "id": "rec-heatmap",
-      "title": "Recording Heatmap",
+      "title": "Neural Recording Capabilities Heatmap",
       "description": "Heatmap visualization of neural recording capabilities across dimensions.",
       "filename": "rec-heatmap",
       "path": "figures/generated",
@@ -174,7 +174,7 @@
     },
     {
       "id": "initiatives1",
-      "title": "Brain Initiatives (1)",
+      "title": "Global Brain Research Initiatives Overview (Part 1)",
       "description": "Overview of major brain research initiatives - Part 1.",
       "filename": "initiatives1",
       "path": "figures/generated",
@@ -183,7 +183,7 @@
     },
     {
       "id": "initiatives2",
-      "title": "Brain Initiatives (2)",
+      "title": "Global Brain Research Initiatives Overview (Part 2)",
       "description": "Overview of major brain research initiatives - Part 2.",
       "filename": "initiatives2",
       "path": "figures/generated",
@@ -192,7 +192,7 @@
     },
     {
       "id": "initiatives3",
-      "title": "Brain Initiatives (3)",
+      "title": "Global Brain Research Initiatives Overview (Part 3)",
       "description": "Overview of major brain research initiatives - Part 3.",
       "filename": "initiatives3",
       "path": "figures/generated",
@@ -201,7 +201,7 @@
     },
     {
       "id": "initiatives4",
-      "title": "Brain Initiatives (4)",
+      "title": "Global Brain Research Initiatives Overview (Part 4)",
       "description": "Overview of major brain research initiatives - Part 4.",
       "filename": "initiatives4",
       "path": "figures/generated",
@@ -210,7 +210,7 @@
     },
     {
       "id": "initiatives5",
-      "title": "Brain Initiatives (5)",
+      "title": "Global Brain Research Initiatives Overview (Part 5)",
       "description": "Overview of major brain research initiatives - Part 5.",
       "filename": "initiatives5",
       "path": "figures/generated",
@@ -219,7 +219,7 @@
     },
     {
       "id": "initiatives6",
-      "title": "Brain Initiatives (6)",
+      "title": "Global Brain Research Initiatives Overview (Part 6)",
       "description": "Overview of major brain research initiatives - Part 6.",
       "filename": "initiatives6",
       "path": "figures/generated",
@@ -336,7 +336,7 @@
     },
     {
       "id": "radar-mouse",
-      "title": "Mouse Brain Radar Chart",
+      "title": "Mouse Brain Emulation Progress Radar Chart",
       "description": "Multi-dimensional comparison of mouse brain emulation parameters.",
       "filename": "Mouse",
       "path": "figures/generated/radar-charts",
@@ -345,7 +345,7 @@
     },
     {
       "id": "radar-human",
-      "title": "Human Brain Radar Chart",
+      "title": "Human Brain Emulation Progress Radar Chart",
       "description": "Multi-dimensional comparison of human brain emulation parameters.",
       "filename": "Human",
       "path": "figures/generated/radar-charts",
@@ -354,7 +354,7 @@
     },
     {
       "id": "radar-c-elegans",
-      "title": "C. elegans Radar Chart",
+      "title": "C. elegans Emulation Progress Radar Chart",
       "description": "Multi-dimensional comparison of C. elegans brain emulation parameters.",
       "filename": "C. elegans",
       "path": "figures/generated/radar-charts",
@@ -363,7 +363,7 @@
     },
     {
       "id": "radar-rat",
-      "title": "Rat Brain Radar Chart",
+      "title": "Rat Brain Emulation Progress Radar Chart",
       "description": "Multi-dimensional comparison of rat brain emulation parameters.",
       "filename": "Rat",
       "path": "figures/generated/radar-charts",
@@ -372,7 +372,7 @@
     },
     {
       "id": "radar-mammalian",
-      "title": "Mammalian Brain Radar Chart",
+      "title": "Mammalian Brain Emulation Progress Radar Chart",
       "description": "Multi-dimensional comparison of general mammalian brain emulation parameters.",
       "filename": "Mammalian",
       "path": "figures/generated/radar-charts",
@@ -381,7 +381,7 @@
     },
     {
       "id": "radar-silicon",
-      "title": "Silicon Implementation Radar Chart",
+      "title": "Silicon Neural Implementation Capabilities Radar Chart",
       "description": "Multi-dimensional comparison of silicon-based neural implementation parameters.",
       "filename": "Silicon",
       "path": "figures/generated/radar-charts",
