@@ -9,6 +9,10 @@ Runs comprehensive quality checks before major pushes to ensure:
 - Data files are valid and readable
 - Taxonomy values are correct
 - Naming conventions are followed
+- SEO meta tags are present in HTML files
+- Heading hierarchy is correct (H1 → H2 → H3)
+- External links have proper security attributes
+- Figure titles are descriptive enough for SEO/alt text
 
 Usage:
     python3 validate.py          # Run all checks
@@ -525,6 +529,199 @@ def check_hand_drawn_files(report: ValidationReport) -> CheckResult:
 
 
 # =============================================================================
+# TIER 5: SEO & Accessibility Checks
+# =============================================================================
+
+# Required meta tags for SEO compliance
+REQUIRED_META_TAGS = [
+    ("description", "meta[name='description']"),
+    ("og:title", "meta[property='og:title']"),
+    ("og:description", "meta[property='og:description']"),
+    ("og:image", "meta[property='og:image']"),
+    ("twitter:card", "meta[name='twitter:card']"),
+    ("robots", "meta[name='robots']"),
+]
+
+# Minimum acceptable title length for SEO
+MIN_TITLE_LENGTH = 15
+
+
+def check_html_meta_tags(report: ValidationReport) -> CheckResult:
+    """Verify HTML files have required SEO meta tags."""
+    import re
+
+    html_files = [
+        paths.OUTPUT_ROOT / "figures.html",
+        paths.OUTPUT_ROOT / "data.html",
+    ]
+
+    missing = []
+
+    for html_file in html_files:
+        if not html_file.exists():
+            missing.append(f"{html_file.name}: file not found")
+            continue
+
+        content = html_file.read_text(encoding="utf-8")
+        filename = html_file.name
+
+        # Check for required meta tags
+        for tag_name, _ in REQUIRED_META_TAGS:
+            if tag_name.startswith("og:"):
+                pattern = rf'<meta\s+property=["\']og:{tag_name[3:]}["\']'
+            else:
+                pattern = rf'<meta\s+name=["\']?{tag_name}["\']?'
+
+            if not re.search(pattern, content, re.IGNORECASE):
+                missing.append(f"{filename}: missing {tag_name}")
+
+    if missing:
+        return CheckResult("fail", f"{len(missing)} missing meta tags", missing)
+    return CheckResult("pass", f"All {len(html_files)} HTML files have required SEO tags")
+
+
+def check_html_lang_attribute(report: ValidationReport) -> CheckResult:
+    """Verify HTML files have lang attribute."""
+    import re
+
+    html_files = [
+        paths.OUTPUT_ROOT / "figures.html",
+        paths.OUTPUT_ROOT / "data.html",
+    ]
+
+    missing = []
+
+    for html_file in html_files:
+        if not html_file.exists():
+            continue
+
+        content = html_file.read_text(encoding="utf-8")
+        if not re.search(r'<html[^>]*\slang=["\'][a-z]{2}', content, re.IGNORECASE):
+            missing.append(html_file.name)
+
+    if missing:
+        return CheckResult("fail", f"{len(missing)} HTML files missing lang attribute", missing)
+    return CheckResult("pass", "All HTML files have lang attribute")
+
+
+def check_heading_hierarchy(report: ValidationReport) -> CheckResult:
+    """Verify proper heading hierarchy (H1 → H2 → H3, no skipping levels)."""
+    import re
+
+    html_files = [
+        paths.OUTPUT_ROOT / "figures.html",
+        paths.OUTPUT_ROOT / "data.html",
+    ]
+
+    issues = []
+
+    for html_file in html_files:
+        if not html_file.exists():
+            continue
+
+        content = html_file.read_text(encoding="utf-8")
+        filename = html_file.name
+
+        # Extract all heading tags in order (only static HTML, not JS)
+        # Split by <script to get only the HTML part
+        html_only = content.split("<script")[0]
+        headings = re.findall(r"<h([1-6])[^>]*>", html_only, re.IGNORECASE)
+        heading_levels = [int(h) for h in headings]
+
+        # Check for exactly one H1
+        h1_count = heading_levels.count(1)
+        if h1_count != 1:
+            issues.append(f"{filename}: {h1_count} H1 tags (should be 1)")
+
+        # Check for skipped levels (e.g., H1 → H3 without H2)
+        for i, level in enumerate(heading_levels[1:], 1):
+            prev_level = heading_levels[i - 1]
+            if level > prev_level + 1:
+                issues.append(f"{filename}: H{level} after H{prev_level} (skipped level)")
+                break  # Only report first issue per file
+
+    if issues:
+        return CheckResult("fail", f"{len(issues)} heading hierarchy issues", issues)
+    return CheckResult("pass", "Heading hierarchy is correct in all HTML files")
+
+
+def check_external_link_security(report: ValidationReport) -> CheckResult:
+    """Verify external links have rel='noopener noreferrer'."""
+    import re
+
+    html_files = [
+        paths.OUTPUT_ROOT / "figures.html",
+        paths.OUTPUT_ROOT / "data.html",
+    ]
+
+    insecure = []
+
+    for html_file in html_files:
+        if not html_file.exists():
+            continue
+
+        content = html_file.read_text(encoding="utf-8")
+        filename = html_file.name
+
+        # Find all links with target="_blank"
+        blank_links = re.findall(
+            r'<a\s+[^>]*target=["\']_blank["\'][^>]*>',
+            content,
+            re.IGNORECASE | re.DOTALL
+        )
+
+        for link in blank_links:
+            # Check if it has rel="noopener noreferrer" (or at least noopener)
+            if 'rel="noopener noreferrer"' not in link and "rel='noopener noreferrer'" not in link:
+                # Extract href for reporting
+                href_match = re.search(r'href=["\']([^"\']+)["\']', link)
+                href = href_match.group(1)[:40] + "..." if href_match else "unknown"
+                insecure.append(f"{filename}: {href}")
+
+    if insecure:
+        return CheckResult("fail", f"{len(insecure)} insecure external links", insecure)
+    return CheckResult("pass", "All external links have proper rel attributes")
+
+
+def check_title_quality(report: ValidationReport) -> CheckResult:
+    """Check figure titles are descriptive enough for SEO/alt text."""
+    poor_titles = []
+
+    # Check figures metadata
+    figures_meta = load_json(paths.OUTPUT_METADATA / "figures-metadata.json")
+    if figures_meta:
+        for fig in figures_meta.get("figures", []):
+            title = fig.get("title", "")
+            fig_id = fig.get("id", "unknown")
+
+            # Check minimum length
+            if len(title) < MIN_TITLE_LENGTH:
+                poor_titles.append(f"{fig_id}: title too short ({len(title)} chars)")
+
+            # Check for vague single-word titles (unless it's a proper noun)
+            words = title.split()
+            if len(words) <= 2 and not any(w[0].isupper() for w in words[1:] if w):
+                if title.lower() not in ["overview", "summary"]:
+                    poor_titles.append(f"{fig_id}: title may be too vague ('{title}')")
+
+    # Check hand-drawn metadata
+    hand_drawn_meta = load_json(paths.OUTPUT_METADATA / "hand-drawn-metadata.json")
+    if hand_drawn_meta:
+        for fig in hand_drawn_meta.get("figures", []):
+            if fig.get("id", "").startswith("_"):
+                continue  # Skip template entries
+            title = fig.get("title", "")
+            fig_id = fig.get("id", "unknown")
+
+            if len(title) < MIN_TITLE_LENGTH:
+                poor_titles.append(f"{fig_id}: title too short ({len(title)} chars)")
+
+    if poor_titles:
+        return CheckResult("warn", f"{len(poor_titles)} figures with poor titles for SEO", poor_titles)
+    return CheckResult("pass", f"All figure titles meet SEO requirements (min {MIN_TITLE_LENGTH} chars)")
+
+
+# =============================================================================
 # Main Execution
 # =============================================================================
 
@@ -590,6 +787,22 @@ def run_all_checks(strict: bool = False) -> int:
     ]
 
     for name, check_fn in checks_tier4:
+        result = check_fn(report)
+        report.add(name, result)
+        report.print_result(name, result)
+
+    # Tier 5: SEO & Accessibility
+    report.print_tier_header("TIER 5", "SEO & Accessibility Checks")
+
+    checks_tier5 = [
+        ("HTML meta tags", check_html_meta_tags),
+        ("HTML lang attribute", check_html_lang_attribute),
+        ("Heading hierarchy", check_heading_hierarchy),
+        ("External link security", check_external_link_security),
+        ("Title quality (SEO)", check_title_quality),
+    ]
+
+    for name, check_fn in checks_tier5:
         result = check_fn(report)
         report.add(name, result)
         report.print_result(name, result)

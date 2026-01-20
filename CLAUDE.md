@@ -151,6 +151,11 @@ The validation script checks:
 | **3 - Consistency** | License consistency | Missing license in metadata |
 | **4 - Reporting** | File sizes | Size metrics for monitoring |
 | **4 - Reporting** | Hand-drawn figures | PNG+SVG pairs for hand-drawn |
+| **5 - SEO** | HTML meta tags | Missing description, OG, Twitter tags |
+| **5 - SEO** | HTML lang attribute | Missing lang="en" on HTML elements |
+| **5 - SEO** | Heading hierarchy | H1→H3 skips, multiple H1s |
+| **5 - SEO** | External link security | Missing rel="noopener noreferrer" |
+| **5 - SEO** | Title quality | Titles too short for alt text/SEO |
 
 ### Known Exceptions
 

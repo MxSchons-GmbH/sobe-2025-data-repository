@@ -74,7 +74,7 @@
     },
     {
       "id": "human-brain",
-      "title": "Human Brain",
+      "title": "Human Brain Anatomical Illustration",
       "description": "Anatomical illustration of the human brain, representing the most complex known neural structure.",
       "filename": "human brain",
       "organism": ["human"],
@@ -98,7 +98,7 @@
     },
     {
       "id": "mouse-brain",
-      "title": "Mouse Brain",
+      "title": "Mouse Brain Anatomical Illustration",
       "description": "Anatomical illustration of the mouse brain, a primary mammalian model organism for neuroscience research.",
       "filename": "mouse brain",
       "organism": ["mouse"],
