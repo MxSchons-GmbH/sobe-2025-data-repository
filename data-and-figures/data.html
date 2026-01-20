@@ -759,6 +759,15 @@ button {
 /* ============================================================================
    RESPONSIVE
    ============================================================================ */
+
+/* Table scroll wrapper for mobile */
+.table-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: var(--space-md);
+}
+
 @media (max-width: 1024px) {
     .usage-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -770,13 +779,22 @@ button {
         padding: var(--space-2xl) 0;
     }
 
+    .data-page .container {
+        padding: 0 var(--space-md);
+    }
+
     .data-header h1 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .data-subtitle {
+        font-size: 16px;
     }
 
     .contribute-content {
         flex-direction: column;
         text-align: center;
+        padding: var(--space-lg);
     }
 
     .contribute-content .btn-primary {
@@ -784,18 +802,32 @@ button {
         justify-content: center;
     }
 
+    .contribute-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contribute-text h3 {
+        font-size: 18px;
+    }
+
     .stats-bar {
         flex-wrap: wrap;
-        gap: var(--space-xl);
+        gap: var(--space-lg);
+        padding: var(--space-lg) 0;
     }
 
     .stat-item {
         flex: 1;
-        min-width: 120px;
+        min-width: 80px;
     }
 
     .stat-value {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .stat-label {
+        font-size: 11px;
     }
 
     .view-toggle-section {
@@ -806,42 +838,149 @@ button {
         grid-template-columns: 1fr;
     }
 
-    /* Table responsive - hide description on mobile */
-    .datasets-table .dataset-desc {
-        display: none;
+    /* Table responsive */
+    .datasets-table {
+        font-size: 12px;
+        min-width: 500px; /* Force minimum width so it scrolls */
+    }
+
+    .datasets-table th,
+    .datasets-table td {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    /* Allow wrapping in cells */
+    .dataset-name {
+        white-space: normal;
     }
 
     .dataset-title-text {
-        max-width: 160px;
+        max-width: none;
+        white-space: normal;
+    }
+
+    .dataset-desc {
+        display: none;
     }
 
     .usage-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .usage-card {
+        padding: var(--space-md);
     }
 
     .license-card {
         flex-direction: column;
         text-align: center;
+        padding: var(--space-lg);
     }
 
     .license-icon {
         margin: 0 auto;
     }
+
+    /* Category header mobile */
+    .category-header {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+    }
+
+    .category-info h2 {
+        font-size: 20px;
+    }
+
+    .category-info p {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
+    .data-page .container {
+        padding: 0 var(--space-sm);
+    }
+
     .data-header h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .data-subtitle {
+        font-size: 14px;
+    }
+
+    .stats-bar {
+        gap: var(--space-md);
+    }
+
+    .stat-item {
+        min-width: 70px;
+    }
+
+    .stat-value {
+        font-size: 18px;
     }
 
     .category-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--space-sm);
     }
 
     .category-count {
         align-self: flex-start;
+    }
+
+    .category-info h2 {
+        font-size: 18px;
+    }
+
+    /* Card view mobile */
+    .dataset-card {
+        padding: var(--space-md);
+    }
+
+    .dataset-title {
+        font-size: 15px;
+    }
+
+    .dataset-description {
+        font-size: 12px;
+    }
+
+    .dataset-actions {
+        flex-direction: column;
+    }
+
+    .dataset-actions .btn {
+        width: 100%;
+    }
+
+    /* Usage section */
+    .usage-section h2 {
+        font-size: 22px;
+    }
+
+    .usage-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .usage-card h4 {
+        font-size: 14px;
+    }
+
+    .usage-card p {
+        font-size: 12px;
+    }
+
+    /* License */
+    .license-content h3 {
+        font-size: 16px;
+    }
+
+    .license-content p {
+        font-size: 13px;
     }
 }
 
@@ -1092,19 +1231,21 @@ button {
                     </div>
                     <span class="category-count">${category.datasets.length}</span>
                 </div>
-                <table class="datasets-table">
-                    <thead>
-                        <tr>
-                            <th>Dataset</th>
-                            <th>Description</th>
-                            <th>Rows</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${category.datasets.map(dataset => renderTableRow(dataset)).join('')}
-                    </tbody>
-                </table>
+                <div class="table-scroll-wrapper">
+                    <table class="datasets-table">
+                        <thead>
+                            <tr>
+                                <th>Dataset</th>
+                                <th>Description</th>
+                                <th>Rows</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${category.datasets.map(dataset => renderTableRow(dataset)).join('')}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         `).join('');
     }

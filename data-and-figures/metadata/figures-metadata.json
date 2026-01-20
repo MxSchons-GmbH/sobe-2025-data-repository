@@ -12,7 +12,7 @@
     },
     {
       "id": "num-neurons",
-      "title": "Neuron Counts Across Species and Brain Regions",
+      "title": "Number of Neurons",
       "description": "Comparison of neuron counts across different organisms and brain regions.",
       "filename": "num-neurons",
       "path": "figures/generated",
@@ -21,7 +21,7 @@
     },
     {
       "id": "imaging-speed",
-      "title": "Neuroimaging Speed by Technology",
+      "title": "Imaging Speed",
       "description": "Analysis of imaging speed capabilities across different neuroimaging technologies.",
       "filename": "imaging-speed",
       "path": "figures/generated",
@@ -39,7 +39,7 @@
     },
     {
       "id": "storage-costs",
-      "title": "Data Storage Cost Trends for Brain Emulation",
+      "title": "Storage Costs",
       "description": "Trends in data storage costs over time and implications for brain data storage.",
       "filename": "storage-costs",
       "path": "figures/generated",
@@ -47,8 +47,17 @@
       "type": ["technology", "storage", "cost"]
     },
     {
+      "id": "compute-storage-parallel",
+      "title": "Compute & Storage Parallel Trends",
+      "description": "Side-by-side comparison of compute hardware and storage cost trends for brain emulation.",
+      "filename": "compute-storage-parallel",
+      "path": "figures/generated",
+      "organism": ["all"],
+      "type": ["technology", "compute", "storage"]
+    },
+    {
       "id": "neuro-recordings",
-      "title": "Neural Recording Technology Progress (1950-2025)",
+      "title": "Neural Recordings",
       "description": "Overview of neural recording capabilities and progress over time.",
       "filename": "neuro-recordings",
       "path": "figures/generated",
@@ -57,7 +66,7 @@
     },
     {
       "id": "scanned-brain-tissue",
-      "title": "Brain Tissue Scanning Resolution Progress",
+      "title": "Scanned Brain Tissue",
       "description": "Progress in scanning and reconstructing brain tissue at various resolutions.",
       "filename": "scanned-brain-tissue",
       "path": "figures/generated",
@@ -155,17 +164,8 @@
       "type": ["technology", "compute"]
     },
     {
-      "id": "compute-storage-parallel",
-      "title": "Computer Systems vs Organism Simulation Requirements",
-      "description": "Parallel coordinates plot comparing modern computer systems (MacBook Pro M4, Mac Studio M2 Ultra, NVIDIA GPUs) against event-driven neural simulation requirements for different organisms (C. elegans, Drosophila, Mouse, Human). Shows compute (FLOP/s) and storage (bytes) on parallel axes with organism requirement bands.",
-      "filename": "compute-storage-parallel",
-      "path": "figures/generated",
-      "organism": ["c-elegans", "drosophila", "zebrafish", "mouse", "human"],
-      "type": ["emulation", "compute", "technology", "comparison"]
-    },
-    {
       "id": "sim-heatmap",
-      "title": "Neural Simulation Capabilities Heatmap",
+      "title": "Simulation Heatmap",
       "description": "Heatmap visualization of neural simulation capabilities across dimensions.",
       "filename": "sim-heatmap",
       "path": "figures/generated",
@@ -174,7 +174,7 @@
     },
     {
       "id": "rec-heatmap",
-      "title": "Neural Recording Capabilities Heatmap",
+      "title": "Recording Heatmap",
       "description": "Heatmap visualization of neural recording capabilities across dimensions.",
       "filename": "rec-heatmap",
       "path": "figures/generated",
@@ -183,8 +183,8 @@
     },
     {
       "id": "initiatives1",
-      "title": "Global Brain Research Initiatives Overview (Part 1)",
-      "description": "Overview of major brain research initiatives - Part 1.",
+      "title": "Brain Initiatives Timeline",
+      "description": "Timeline showing major brain research initiatives and their duration.",
       "filename": "initiatives1",
       "path": "figures/generated",
       "organism": ["all"],
@@ -192,8 +192,8 @@
     },
     {
       "id": "initiatives2",
-      "title": "Global Brain Research Initiatives Overview (Part 2)",
-      "description": "Overview of major brain research initiatives - Part 2.",
+      "title": "Brain Initiatives Funding",
+      "description": "Funding comparison across major brain research initiatives.",
       "filename": "initiatives2",
       "path": "figures/generated",
       "organism": ["all"],
@@ -201,8 +201,8 @@
     },
     {
       "id": "initiatives3",
-      "title": "Global Brain Research Initiatives Overview (Part 3)",
-      "description": "Overview of major brain research initiatives - Part 3.",
+      "title": "Budget Distributions by Category Over Time",
+      "description": "Stacked area chart showing budget distributions by category over time for major brain initiatives.",
       "filename": "initiatives3",
       "path": "figures/generated",
       "organism": ["all"],
@@ -210,27 +210,9 @@
     },
     {
       "id": "initiatives4",
-      "title": "Global Brain Research Initiatives Overview (Part 4)",
-      "description": "Overview of major brain research initiatives - Part 4.",
+      "title": "Budget Distributions by Category",
+      "description": "Bar chart showing budget distributions by category for major brain initiatives.",
       "filename": "initiatives4",
-      "path": "figures/generated",
-      "organism": ["all"],
-      "type": ["initiatives", "funding"]
-    },
-    {
-      "id": "initiatives5",
-      "title": "Global Brain Research Initiatives Overview (Part 5)",
-      "description": "Overview of major brain research initiatives - Part 5.",
-      "filename": "initiatives5",
-      "path": "figures/generated",
-      "organism": ["all"],
-      "type": ["initiatives", "funding"]
-    },
-    {
-      "id": "initiatives6",
-      "title": "Global Brain Research Initiatives Overview (Part 6)",
-      "description": "Overview of major brain research initiatives - Part 6.",
-      "filename": "initiatives6",
       "path": "figures/generated",
       "organism": ["all"],
       "type": ["initiatives", "funding"]
@@ -342,60 +324,6 @@
       "path": "figures/generated/neuro-rec",
       "organism": ["human"],
       "type": ["recording", "organism-specific"]
-    },
-    {
-      "id": "radar-mouse",
-      "title": "Mouse Brain Emulation Progress Radar Chart",
-      "description": "Multi-dimensional comparison of mouse brain emulation parameters.",
-      "filename": "Mouse",
-      "path": "figures/generated/radar-charts",
-      "organism": ["mouse"],
-      "type": ["radar-chart", "comparison"]
-    },
-    {
-      "id": "radar-human",
-      "title": "Human Brain Emulation Progress Radar Chart",
-      "description": "Multi-dimensional comparison of human brain emulation parameters.",
-      "filename": "Human",
-      "path": "figures/generated/radar-charts",
-      "organism": ["human"],
-      "type": ["radar-chart", "comparison"]
-    },
-    {
-      "id": "radar-c-elegans",
-      "title": "C. elegans Emulation Progress Radar Chart",
-      "description": "Multi-dimensional comparison of C. elegans brain emulation parameters.",
-      "filename": "C. elegans",
-      "path": "figures/generated/radar-charts",
-      "organism": ["c-elegans"],
-      "type": ["radar-chart", "comparison"]
-    },
-    {
-      "id": "radar-rat",
-      "title": "Rat Brain Emulation Progress Radar Chart",
-      "description": "Multi-dimensional comparison of rat brain emulation parameters.",
-      "filename": "Rat",
-      "path": "figures/generated/radar-charts",
-      "organism": ["rat"],
-      "type": ["radar-chart", "comparison"]
-    },
-    {
-      "id": "radar-mammalian",
-      "title": "Mammalian Brain Emulation Progress Radar Chart",
-      "description": "Multi-dimensional comparison of general mammalian brain emulation parameters.",
-      "filename": "Mammalian",
-      "path": "figures/generated/radar-charts",
-      "organism": ["mammalian"],
-      "type": ["radar-chart", "comparison"]
-    },
-    {
-      "id": "radar-silicon",
-      "title": "Silicon Neural Implementation Capabilities Radar Chart",
-      "description": "Multi-dimensional comparison of silicon-based neural implementation parameters.",
-      "filename": "Silicon",
-      "path": "figures/generated/radar-charts",
-      "organism": ["silicon"],
-      "type": ["radar-chart", "comparison", "technology"]
     }
   ],
   "organisms": [
@@ -404,10 +332,7 @@
     {"id": "drosophila", "label": "Drosophila"},
     {"id": "zebrafish", "label": "Zebrafish"},
     {"id": "mouse", "label": "Mouse"},
-    {"id": "rat", "label": "Rat"},
-    {"id": "human", "label": "Human"},
-    {"id": "mammalian", "label": "Mammalian"},
-    {"id": "silicon", "label": "Silicon"}
+    {"id": "human", "label": "Human"}
   ],
   "types": [
     {"id": "overview", "label": "Overview"},
@@ -422,10 +347,8 @@
     {"id": "connectomics", "label": "Connectomics"},
     {"id": "initiatives", "label": "Initiatives"},
     {"id": "funding", "label": "Funding"},
-    {"id": "radar-chart", "label": "Radar Chart"},
     {"id": "heatmap", "label": "Heatmap"},
     {"id": "organism-specific", "label": "Organism-Specific"},
-    {"id": "comparison", "label": "Comparison"},
     {"id": "anatomy", "label": "Anatomy"}
   ],
   "license": {

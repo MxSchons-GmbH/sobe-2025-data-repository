@@ -1,6 +1,14 @@
 {
   "figures": [
     {
+      "id": "brain-emulation-pipeline",
+      "title": "Brain Emulation Pipeline",
+      "description": "Overview of the brain emulation pipeline showing the key stages from neural data acquisition through to computational simulation and embodied behavior.",
+      "filename": "brain-emulation-pipeline",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "emulation"]
+    },
+    {
       "id": "llm-vs-bem-pipelines",
       "title": "LLM vs Brain Emulation Pipelines",
       "description": "Side-by-side comparison of Large Language Model training pipelines (data science, machine learning) versus Brain Emulation Model pipelines (neural dynamics, connectomics, computational neuroscience).",

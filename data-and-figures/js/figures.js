@@ -6,6 +6,28 @@
 (function() {
     'use strict';
 
+    // Configuration
+    const CONFIG = Object.assign({
+        fetchTimeout: 10000, // 10 seconds
+        metadataPath: 'metadata/figures-metadata.json',
+        handDrawnMetadataPath: 'metadata/hand-drawn-metadata.json'
+    }, window.FIGURES_CONFIG || {});
+
+    // Fetch with timeout helper
+    async function fetchWithTimeout(url, options = {}) {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), CONFIG.fetchTimeout);
+        try {
+            const response = await fetch(url, { ...options, signal: controller.signal });
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return response;
+        } finally {
+            clearTimeout(timeoutId);
+        }
+    }
+
     // State
     let allFigures = [];
     let metadata = null;
@@ -28,8 +50,8 @@
         try {
             // Load both metadata files
             const [generatedMeta, handDrawnMeta] = await Promise.all([
-                fetch('metadata/figures-metadata.json').then(r => r.json()),
-                fetch('metadata/hand-drawn-metadata.json').then(r => r.json()).catch(() => ({ figures: [] }))
+                fetchWithTimeout(CONFIG.metadataPath).then(r => r.json()),
+                fetchWithTimeout(CONFIG.handDrawnMetadataPath).then(r => r.json()).catch(() => ({ figures: [] }))
             ]);
 
             metadata = generatedMeta;

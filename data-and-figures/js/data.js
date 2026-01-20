@@ -6,6 +6,31 @@
 (function() {
     'use strict';
 
+    // Configuration - can be overridden by setting window.DATA_CONFIG before this script loads
+    const CONFIG = Object.assign({
+        githubRepo: 'mxschons/sobe-2025-data-repository',
+        githubBranch: 'main',
+        metadataPath: 'metadata/data-metadata.json',
+        fetchTimeout: 10000 // 10 seconds
+    }, window.DATA_CONFIG || {});
+
+    const GITHUB_BASE_URL = `https://github.com/${CONFIG.githubRepo}/blob/${CONFIG.githubBranch}`;
+
+    // Fetch with timeout helper
+    async function fetchWithTimeout(url, options = {}) {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), CONFIG.fetchTimeout);
+        try {
+            const response = await fetch(url, { ...options, signal: controller.signal });
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return response;
+        } finally {
+            clearTimeout(timeoutId);
+        }
+    }
+
     // State
     let currentView = 'table';
     let metadata = null;
@@ -34,7 +59,7 @@
     // Initialize
     async function init() {
         try {
-            const response = await fetch('metadata/data-metadata.json');
+            const response = await fetchWithTimeout(CONFIG.metadataPath);
             metadata = await response.json();
 
             // Update stats
@@ -113,7 +138,7 @@
     // Render a single table row
     function renderTableRow(dataset) {
         const downloadPath = `${dataset.path}/${encodeURIComponent(dataset.filename)}`;
-        const githubPath = `https://github.com/mxschons/sobe-2025-data-repository/blob/main/${dataset.path}/${encodeURIComponent(dataset.filename)}`;
+        const githubPath = `${GITHUB_BASE_URL}/${dataset.path}/${encodeURIComponent(dataset.filename)}`;
 
         return `
             <tr class="dataset-row">
@@ -158,7 +183,7 @@
     // Render a single dataset card
     function renderDatasetCard(dataset) {
         const downloadPath = `${dataset.path}/${encodeURIComponent(dataset.filename)}`;
-        const githubPath = `https://github.com/mxschons/sobe-2025-data-repository/blob/main/${dataset.path}/${encodeURIComponent(dataset.filename)}`;
+        const githubPath = `${GITHUB_BASE_URL}/${dataset.path}/${encodeURIComponent(dataset.filename)}`;
         const columnsPreview = dataset.columns.slice(0, 5).join(', ') + (dataset.columns.length > 5 ? '...' : '');
 
         return `

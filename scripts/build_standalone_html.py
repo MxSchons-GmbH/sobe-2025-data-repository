@@ -4,7 +4,8 @@ Build standalone HTML files for iframe embedding.
 Inlines all CSS (including base variables) and JS into the HTML files.
 """
 
-import os
+from pathlib import Path
+from paths import OUTPUT_ROOT, OUTPUT_CSS, OUTPUT_JS
 
 # Base CSS variables needed for all pages
 BASE_CSS_VARIABLES = """
@@ -145,24 +146,20 @@ def build_standalone_html(html_path, css_path, js_path, output_path):
     print(f"Built: {output_path}")
 
 def main():
-    # Paths
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    data_figures_dir = os.path.join(base_dir, 'data-and-figures')
-
     # Build figures.html
     build_standalone_html(
-        html_path=os.path.join(data_figures_dir, 'figures.html'),
-        css_path=os.path.join(data_figures_dir, 'css', 'figures.css'),
-        js_path=os.path.join(data_figures_dir, 'js', 'figures.js'),
-        output_path=os.path.join(data_figures_dir, 'figures.html')
+        html_path=OUTPUT_ROOT / 'figures.html',
+        css_path=OUTPUT_CSS / 'figures.css',
+        js_path=OUTPUT_JS / 'figures.js',
+        output_path=OUTPUT_ROOT / 'figures.html'
     )
 
     # Build data.html
     build_standalone_html(
-        html_path=os.path.join(data_figures_dir, 'data.html'),
-        css_path=os.path.join(data_figures_dir, 'css', 'data.css'),
-        js_path=os.path.join(data_figures_dir, 'js', 'data.js'),
-        output_path=os.path.join(data_figures_dir, 'data.html')
+        html_path=OUTPUT_ROOT / 'data.html',
+        css_path=OUTPUT_CSS / 'data.css',
+        js_path=OUTPUT_JS / 'data.js',
+        output_path=OUTPUT_ROOT / 'data.html'
     )
 
     print("\nStandalone HTML files built successfully!")

@@ -656,13 +656,30 @@ button {
         padding: var(--space-2xl) 0;
     }
 
+    .figures-page .container {
+        padding: 0 var(--space-md);
+    }
+
     .figures-header h1 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .figures-subtitle {
+        font-size: 15px;
     }
 
     .download-all-card {
         flex-direction: column;
         text-align: center;
+        padding: var(--space-lg);
+    }
+
+    .download-all-info h3 {
+        font-size: 18px;
+    }
+
+    .download-all-info p {
+        font-size: 13px;
     }
 
     .download-all-buttons {
@@ -676,10 +693,30 @@ button {
 
     .figures-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    /* Filter section mobile */
+    .filters-section {
+        padding: var(--space-md);
+    }
+
+    .filter-group {
+        margin-bottom: var(--space-md);
+    }
+
+    .filter-label {
+        font-size: 12px;
+    }
+
+    .filter-chips {
+        flex-wrap: wrap;
     }
 
     .modal-content {
         max-height: 95vh;
+        margin: var(--space-sm);
+        max-width: calc(100% - var(--space-md));
     }
 
     .modal-image-container {
@@ -691,6 +728,10 @@ button {
         padding: var(--space-lg);
     }
 
+    .modal-title {
+        font-size: 20px;
+    }
+
     .modal-downloads {
         flex-direction: column;
     }
@@ -698,6 +739,7 @@ button {
     .license-card {
         flex-direction: column;
         text-align: center;
+        padding: var(--space-lg);
     }
 
     .license-icon {
@@ -706,8 +748,16 @@ button {
 }
 
 @media (max-width: 480px) {
+    .figures-page .container {
+        padding: 0 var(--space-sm);
+    }
+
     .figures-header h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .figures-subtitle {
+        font-size: 14px;
     }
 
     .filter-chips {
@@ -715,8 +765,62 @@ button {
     }
 
     .filter-chip {
-        font-size: 12px;
+        font-size: 11px;
         padding: var(--space-xs) var(--space-sm);
+    }
+
+    /* Figure cards mobile */
+    .figure-card {
+        border-radius: 6px;
+    }
+
+    .figure-thumbnail {
+        height: 140px;
+    }
+
+    .figure-info {
+        padding: var(--space-sm);
+    }
+
+    .figure-title {
+        font-size: 14px;
+    }
+
+    .figure-description {
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+    }
+
+    .figure-tags {
+        gap: 4px;
+    }
+
+    .figure-tag {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    /* Modal mobile */
+    .modal-content {
+        margin: var(--space-xs);
+        max-width: calc(100% - var(--space-sm));
+    }
+
+    .modal-title {
+        font-size: 18px;
+    }
+
+    .modal-description {
+        font-size: 13px;
+    }
+
+    /* License */
+    .license-content h3 {
+        font-size: 16px;
+    }
+
+    .license-content p {
+        font-size: 13px;
     }
 }
 

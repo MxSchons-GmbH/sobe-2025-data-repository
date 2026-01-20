@@ -1,8 +1,19 @@
+# Core data science
+numpy
+pandas
+scipy
+
+# Visualization
 matplotlib
 seaborn
-pandas
-numpy
+adjustText
+
+# Statistical modeling
 statsmodels
+
+# File format support
 openpyxl
+
+# Jupyter
 nbconvert
 ipykernel
