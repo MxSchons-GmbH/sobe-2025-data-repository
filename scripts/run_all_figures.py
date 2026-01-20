@@ -101,7 +101,7 @@ mpl.rcParams.update({
 # =============================================================================
 # Figure 1: Number of Neurons in Simulations
 # =============================================================================
-@figure("num-neurons", "Neuron simulation counts over time")
+@figure("neuron-counts-organism-comparison", "Neuron simulation counts over time")
 def generate_num_neurons():
     neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"])
     neurons_df['Year'] = neurons_df['Simulation/Initiative'].str.extract(r'(\d{4})').apply(pd.to_datetime)
@@ -130,13 +130,13 @@ def generate_num_neurons():
     ax.set_xlabel(None)
     ax.set_title('Neuron Simulations Over Time')
     plt.tight_layout()
-    save_figure(fig, 'num-neurons')
+    save_figure(fig, 'neuron-counts-organism-comparison')
     plt.close()
 
 # =============================================================================
 # Figure 2: Imaging Speed
 # =============================================================================
-@figure("imaging-speed", "Neuroimaging technology progress")
+@figure("neuroimaging-speed-comparison", "Neuroimaging technology progress")
 def generate_imaging_speed():
     imaging_speed_df = pd.read_excel(
         DATA_FILES["imaging_speed"],
@@ -188,20 +188,20 @@ def generate_imaging_speed():
     axes[2].set_ylabel(None)
 
     plt.tight_layout()
-    save_figure(fig, 'imaging-speed')
+    save_figure(fig, 'neuroimaging-speed-comparison')
     plt.close()
 
 # =============================================================================
 # Figure 3: Compute
 # =============================================================================
-@figure("compute", "AI training compute vs species requirements")
+@figure("compute-hardware-trends-brain-emulation", "AI training compute vs species requirements")
 def generate_compute():
     compute_df = pd.read_csv(
         DATA_FILES["ai_compute"],
         parse_dates=['Day']
     )
 
-    species_pf = {'Human': 2000.0, 'Mouse': 10.0, 'Fly': 0.195}
+    species_pf = {'neural-simulation-human': 2000.0, 'neural-simulation-mouse': 10.0, 'Fly': 0.195}
 
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.scatterplot(
@@ -224,13 +224,13 @@ def generate_compute():
     ax.set_xlim(min_year, max_year)
     ax.set_title('AI Training Compute vs Species Requirements')
     plt.tight_layout()
-    save_figure(fig, 'compute')
+    save_figure(fig, 'compute-hardware-trends-brain-emulation')
     plt.close()
 
 # =============================================================================
 # Figure 4: Storage Costs
 # =============================================================================
-@figure("storage-costs", "Storage costs over time with species thresholds")
+@figure("storage-cost-trends-brain-data", "Storage costs over time with species thresholds")
 def generate_storage_costs():
     storage_df = pd.read_csv(
         DATA_FILES["storage_costs"],
@@ -249,7 +249,7 @@ def generate_storage_costs():
         value_name='Cost ($ / TB)', var_name='Storage type',
     )
 
-    species_storage_tb = {'Human': 6e3, 'Mouse': 2, 'Fruitfly': 2.5e-4, 'C. elegans': 1e-3}
+    species_storage_tb = {'neural-simulation-human': 6e3, 'neural-simulation-mouse': 2, 'Fruitfly': 2.5e-4, 'neural-simulation-celegans': 1e-3}
     species_cost = {k: 1e6 / v for k, v in species_storage_tb.items()}
 
     min_year = storage_dfl['Year'].min()
@@ -273,13 +273,13 @@ def generate_storage_costs():
     ax.set_title('Storage Costs Over Time (Species Thresholds at $1M Budget)')
     ax.legend(frameon=True)
     plt.tight_layout()
-    save_figure(fig, 'storage-costs')
+    save_figure(fig, 'storage-cost-trends-brain-data')
     plt.close()
 
 # =============================================================================
 # Figure 5: Neural Recordings
 # =============================================================================
-@figure("neuro-recordings", "Neural recording capacity over time")
+@figure("neural-recording-timeline-overview", "Neural recording capacity over time")
 def generate_neuro_recordings():
     import statsmodels.formula.api as smf
 
@@ -321,13 +321,13 @@ def generate_neuro_recordings():
     handles, labels = ax.get_legend_handles_labels()
     ax.legend(handles=handles, labels=labels, frameon=True)
     plt.tight_layout()
-    save_figure(fig, 'neuro-recordings')
+    save_figure(fig, 'neural-recording-timeline-overview')
     plt.close()
 
 # =============================================================================
 # Figure 6: Brain Scans
 # =============================================================================
-@figure("scanned-brain-tissue", "Brain scan resolution, volume, and dataset size")
+@figure("connectomics-tissue-scanning-progress", "Brain scan resolution, volume, and dataset size")
 def generate_scanned_brain_tissue():
     scans_df = pd.read_csv(
         DATA_FILES["brain_scans"],
@@ -360,13 +360,13 @@ def generate_scanned_brain_tissue():
 
     place_legend(axes[2], fig, position='outside_right')
     plt.tight_layout()
-    save_figure(fig, 'scanned-brain-tissue')
+    save_figure(fig, 'connectomics-tissue-scanning-progress')
     plt.close()
 
 # =============================================================================
 # Figure 7: Recording Modalities Comparison
 # =============================================================================
-@figure("recording-modalities", "Brain tissue recording modalities comparison")
+@figure("neural-recording-modalities-comparison", "Brain tissue recording modalities comparison")
 def generate_recording_modalities():
     categories = ["Resolution", "Speed", "Duration", "Volume"]
     x = np.arange(len(categories))
@@ -416,7 +416,7 @@ def generate_recording_modalities():
     ax.set_title("Brain Tissue Recording Modalities Comparison", fontsize=14, pad=20)
     place_legend(ax, fig, position='outside_right', title="Method")
     plt.tight_layout()
-    save_figure(fig, 'recording-modalities')
+    save_figure(fig, 'neural-recording-modalities-comparison')
     plt.close()
 
 # =============================================================================
@@ -424,7 +424,7 @@ def generate_recording_modalities():
 # =============================================================================
 @figure("emulation-requirements", "Emulation compute and storage requirements")
 def generate_emulation_requirements():
-    categories_organisms = ['C. elegans', 'Fly', 'Mouse', 'Human']
+    categories_organisms = ['neural-simulation-celegans', 'Fly', 'neural-simulation-mouse', 'neural-simulation-human']
     categories_full = categories_organisms + ['H100', 'xAI Colossus']
     x_pos_full = np.arange(len(categories_full))
     x_pos_org = np.arange(len(categories_organisms))
@@ -447,7 +447,7 @@ def generate_emulation_requirements():
     ax.legend(frameon=True)
     ax.set_ylim(1e8, 1e21)
     plt.tight_layout()
-    save_figure(fig, 'emulation-compute-time-based')
+    save_figure(fig, 'brain-emulation-compute-time-based')
     plt.close()
 
     # Storage
@@ -468,7 +468,7 @@ def generate_emulation_requirements():
     ax.legend(frameon=True)
     ax.set_ylim(1e5, 1e17)
     plt.tight_layout()
-    save_figure(fig, 'emulation-storage-requirements')
+    save_figure(fig, 'brain-emulation-storage-requirements')
     plt.close()
 
     # Event-driven compute
@@ -488,13 +488,13 @@ def generate_emulation_requirements():
     ax.legend(frameon=True)
     ax.set_ylim(1e6, 1e21)
     plt.tight_layout()
-    save_figure(fig, 'emulation-compute-event-driven')
+    save_figure(fig, 'brain-emulation-compute-event-driven')
     plt.close()
 
 # =============================================================================
 # Figure 9: Cost per Neuron (two versions: with and without illustrations)
 # =============================================================================
-@figure("cost-per-neuron", "Cost per neuron over time")
+@figure("connectomics-neuron-reconstruction-cost", "Cost per neuron over time")
 def generate_cost_per_neuron():
     from matplotlib.lines import Line2D
     from matplotlib.ticker import FuncFormatter
@@ -561,7 +561,7 @@ def generate_cost_per_neuron():
                 label = 'C. elegans (White et al 1986)'
             elif 'Fruitfly' in organism or 'Murthy' in organism:
                 label = 'Fruitfly Zheng et al, 2018\n(Murthy, Seung, et al., 2024)'
-            elif 'Zebrafish' in organism:
+            elif 'neural-simulation-zebrafish' in organism:
                 label = 'Zebrafish (Svara et al., 2022)'
             elif 'BRAIN CONNECTS' in organism or 'NIH' in organism:
                 label = 'Mouse (NIH, 2024)'
@@ -658,11 +658,11 @@ def generate_cost_per_neuron():
         plt.close()
 
     # Version 1: All data (Budget, Estimate, Illustration)
-    create_cost_per_neuron_figure(df, 'cost-per-neuron', include_illustration=True)
+    create_cost_per_neuron_figure(df, 'connectomics-neuron-reconstruction-cost', include_illustration=True)
 
     # Version 2: Only Budget and Estimate (no Illustration)
     df_no_illust = df[df['Type'] != 'Illustration'].copy()
-    create_cost_per_neuron_figure(df_no_illust, 'cost-per-neuron-no-illust', include_illustration=False)
+    create_cost_per_neuron_figure(df_no_illust, 'connectomics-neuron-cost-estimates', include_illustration=False)
 
 # =============================================================================
 # Figure 10: Initiatives
@@ -704,7 +704,7 @@ def generate_initiatives():
     ax.set_xlabel(None)
     ax.set_title('Megaproject Budgets by Start Year')
     plt.tight_layout()
-    save_figure(fig, 'initiatives1')
+    save_figure(fig, 'brain-initiatives-timeline-overview')
     plt.close()
 
     # Compute project durations and midpoints for initiatives2, 4, 5
@@ -742,7 +742,7 @@ def generate_initiatives():
     place_legend(ax, fig, position='outside_right', handles=legend_handles, title="Category")
     ax.set_title('Megaproject Budgets and Durations')
     plt.tight_layout()
-    save_figure(fig, 'initiatives2')
+    save_figure(fig, 'brain-initiatives-funding-comparison')
     plt.close()
 
     # initiatives3 - Budget Distributions by Category Over Time
@@ -766,7 +766,7 @@ def generate_initiatives():
     ax.set_xlabel(None)
     ax.set_title('Budget Distributions by Category Over Time')
     plt.tight_layout()
-    save_figure(fig, 'initiatives3')
+    save_figure(fig, 'brain-initiatives-budget-categories-timeline')
     plt.close()
 
     # initiatives4 - Budget Distributions by Category
@@ -779,13 +779,13 @@ def generate_initiatives():
     ax.set_xlabel('Budget (Million $)')
     ax.legend(frameon=True, loc='upper right')
     plt.tight_layout()
-    save_figure(fig, 'initiatives4')
+    save_figure(fig, 'brain-initiatives-budget-categories-bars')
     plt.close()
 
 # =============================================================================
 # Figure 11: Simulation Heatmap
 # =============================================================================
-@figure("sim-heatmap", "Computational models characteristics heatmap")
+@figure("neural-simulation-capabilities-heatmap", "Computational models characteristics heatmap")
 def generate_sim_heatmap():
     import textwrap
     from matplotlib.colors import ListedColormap, BoundaryNorm
@@ -794,10 +794,10 @@ def generate_sim_heatmap():
     neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
 
     # Define organisms and data columns
-    organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organisms = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
     # Map organism names
     organism_map = {
-        'Mammalian': 'Mouse',
+        'Mammalian': 'neural-simulation-mouse',
         'Silicon': None,  # Skip
     }
     neuro_sim_df = neuro_sim_df.copy()
@@ -830,7 +830,7 @@ def generate_sim_heatmap():
     neuro_sim_df = neuro_sim_df.dropna(subset=['First Author', 'Year']).copy()
 
     # Sort by organism to cluster entries
-    organism_order = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organism_order = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
     neuro_sim_df['Organism_order'] = neuro_sim_df['Organism_mapped'].apply(
         lambda x: organism_order.index(x) if x in organism_order else 999
     )
@@ -951,7 +951,7 @@ def generate_sim_heatmap():
         sim_ax.set_title('Computational Models of the Brain - Characteristics', fontsize=12, pad=10)
 
         plt.tight_layout()
-        save_figure(fig, 'sim-heatmap')
+        save_figure(fig, 'neural-simulation-capabilities-heatmap')
         plt.close()
     else:
         logger.info("  Skipped - no valid data")
@@ -959,7 +959,7 @@ def generate_sim_heatmap():
 # =============================================================================
 # Figure 12: Recording Heatmap
 # =============================================================================
-@figure("rec-heatmap", "Neural dynamics recording data coverage heatmap")
+@figure("neural-recording-capabilities-heatmap", "Neural dynamics recording data coverage heatmap")
 def generate_rec_heatmap():
     import textwrap
     from matplotlib.colors import LinearSegmentedColormap, BoundaryNorm
@@ -997,7 +997,7 @@ def generate_rec_heatmap():
     neuro_rec_df = neuro_rec_df.dropna(subset=['First Author', 'Year']).copy()
 
     # Sort by organism to cluster entries
-    organism_order = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organism_order = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
     neuro_rec_df['Organism_order'] = neuro_rec_df['Organism'].apply(
         lambda x: organism_order.index(x) if x in organism_order else 999
     )
@@ -1128,7 +1128,7 @@ def generate_rec_heatmap():
         rec_ax.set_title('Neural Dynamics Recording - Data Coverage', fontsize=12, pad=10)
 
         plt.tight_layout()
-        save_figure(fig, 'rec-heatmap')
+        save_figure(fig, 'neural-recording-capabilities-heatmap')
         plt.close()
     else:
         logger.info("  Skipped - no valid data")
@@ -1146,9 +1146,9 @@ def generate_neuro_sim_radar():
     # Load simulation data
     neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
 
-    organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organisms = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
     organism_map = {
-        'Mammalian': 'Mouse',
+        'Mammalian': 'neural-simulation-mouse',
         'Silicon': None,
     }
     neuro_sim_df['Organism_mapped'] = neuro_sim_df['Organism'].replace(organism_map)
@@ -1286,18 +1286,18 @@ def generate_neuro_rec_radar():
     organism_neuro_df = pd.read_csv(DATA_FILES["neurodynamics_organisms"])
 
     # Standardize organism names in organism_neuro_df
-    organism_neuro_df.replace('Zebrafish Larvae', 'Zebrafish', inplace=True)
-    organism_neuro_df.replace('C. Elegans', 'C. elegans', inplace=True)
+    organism_neuro_df.replace('Zebrafish Larvae', 'neural-simulation-zebrafish', inplace=True)
+    organism_neuro_df.replace('C. Elegans', 'neural-simulation-celegans', inplace=True)
     organism_neuro_df.index = organism_neuro_df.loc[:, 'Organism']
     organism_neuro_df.drop(columns=['Organism'], inplace=True)
 
     # Standardize organism names in recording data
     neuro_rec_df['Organism'] = neuro_rec_df['Organism'].replace({
-        'C. Elegans': 'C. elegans',
-        'Zebrafish Larvae': 'Zebrafish',
+        'C. Elegans': 'neural-simulation-celegans',
+        'Zebrafish Larvae': 'neural-simulation-zebrafish',
     })
 
-    organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organisms = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
 
     # Define the 5 data columns (matching the old code)
     neuro_rec_data_columns = [
@@ -1644,7 +1644,7 @@ def generate_neuro_rec_radar():
 # =============================================================================
 # Figure 15: All sim-rec combined grid
 # =============================================================================
-@figure("all-sim-rec", "Combined simulation and recording grid")
+@figure("neural-simulations-recordings-overview", "Combined simulation and recording grid")
 def generate_all_sim_rec():
     import textwrap
 
@@ -1652,16 +1652,16 @@ def generate_all_sim_rec():
     neuro_sim_df = pd.read_csv(DATA_FILES["computational_models"])
     neuro_rec_df = pd.read_csv(DATA_FILES["neural_dynamics"])
 
-    organisms = ['C. elegans', 'Drosophila', 'Zebrafish', 'Mouse', 'Human']
+    organisms = ['neural-simulation-celegans', 'neural-simulation-drosophila', 'neural-simulation-zebrafish', 'neural-simulation-mouse', 'neural-simulation-human']
 
     # Standardize organism names in sim data
-    organism_map = {'Mammalian': 'Mouse', 'Silicon': None}
+    organism_map = {'Mammalian': 'neural-simulation-mouse', 'Silicon': None}
     neuro_sim_df['Organism_mapped'] = neuro_sim_df['Organism'].replace(organism_map)
 
     # Standardize organism names in rec data
     neuro_rec_df['Organism'] = neuro_rec_df['Organism'].replace({
-        'C. Elegans': 'C. elegans',
-        'Zebrafish Larvae': 'Zebrafish',
+        'C. Elegans': 'neural-simulation-celegans',
+        'Zebrafish Larvae': 'neural-simulation-zebrafish',
     })
     neuro_rec_df = neuro_rec_df.rename(columns={'Fixated / moving': 'FixMov'})
 
@@ -1769,14 +1769,14 @@ def generate_all_sim_rec():
 
     plt.tight_layout()
     add_attribution(fig)
-    fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
-    fig.savefig(OUTPUT_FIGURES / 'all-sim-rec.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
+    fig.savefig(OUTPUT_FIGURES / 'neural-simulations-recordings-overview.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
+    fig.savefig(OUTPUT_FIGURES / 'neural-simulations-recordings-overview.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
     plt.close()
 
 # =============================================================================
 # Figure 16: Funding figure
 # =============================================================================
-@figure("funding", "Megaproject budgets comparison")
+@figure("brain-research-initiative-funding", "Megaproject budgets comparison")
 def generate_funding():
     # Load funding data from new data structure
     neuro_proj_df = pd.read_csv(
@@ -1835,7 +1835,7 @@ def generate_funding():
         ax.legend(handles=legend_elements, loc='lower right', frameon=True)
 
         plt.tight_layout()
-        save_figure(fig, 'funding')
+        save_figure(fig, 'brain-research-initiative-funding')
         plt.close()
     else:
         logger.info("  Skipped - no valid data")
@@ -1843,7 +1843,7 @@ def generate_funding():
 # =============================================================================
 # Figure 17: Organism Compute Requirements
 # =============================================================================
-@figure("organism-compute", "Neuron and synapse counts by organism")
+@figure("brain-simulation-compute-by-organism", "Neuron and synapse counts by organism")
 def generate_organism_compute():
     # Load computational demands data
     compute_df = pd.read_csv(
@@ -1855,7 +1855,7 @@ def generate_organism_compute():
     synapses_row = compute_df.iloc[1]   # synapses row
 
     # Extract organism data (skip the first column which is label)
-    organism_names = ['C. elegans', 'Fly', 'Mouse (cortex)', 'Mouse (brain)', 'Human (cortex)', 'Human (brain)']
+    organism_names = ['neural-simulation-celegans', 'Fly', 'Mouse (cortex)', 'Mouse (brain)', 'Human (cortex)', 'Human (brain)']
     organism_cols = ['C. elegans (body)', 'fly (brain)', 'mouse (cortex)', 'mouse (brain)', 'human (cortex)', 'human (brain)']
 
     neurons = []
@@ -1888,7 +1888,7 @@ def generate_organism_compute():
         axes[1].set_title('Synapse Count by Organism')
 
         plt.tight_layout()
-        save_figure(fig, 'organism-compute')
+        save_figure(fig, 'brain-simulation-compute-by-organism')
         plt.close()
     else:
         logger.info("  Skipped - no valid data")
@@ -1896,7 +1896,7 @@ def generate_organism_compute():
 # =============================================================================
 # Figure 18: Bandwidth Scaling for Multiplexed Imaging
 # =============================================================================
-@figure("bandwidth-scaling", "Bandwidth requirements for multiplexed imaging")
+@figure("brain-imaging-bandwidth-requirements", "Bandwidth requirements for multiplexed imaging")
 def generate_bandwidth_scaling():
     # Data extracted from original figure
     # Resolution in nm vs bandwidth in bits/s for different numbers of multiplexed colors
@@ -1956,13 +1956,13 @@ def generate_bandwidth_scaling():
     ax.set_axisbelow(True)
 
     plt.tight_layout()
-    save_figure(fig, 'bandwidth-scaling')
+    save_figure(fig, 'brain-imaging-bandwidth-requirements')
     plt.close()
 
 # =============================================================================
 # Figure 19: Hardware Scaling (FLOPS, DRAM BW, Interconnect BW)
 # =============================================================================
-@figure("hardware-scaling", "Hardware FLOPS and bandwidth scaling over time")
+@figure("gpu-memory-interconnect-scaling", "Hardware FLOPS and bandwidth scaling over time")
 def generate_hardware_scaling():
     from scipy import stats
 
@@ -2057,13 +2057,13 @@ def generate_hardware_scaling():
     ax.grid(True, which='major', axis='both', linestyle='-', alpha=0.3, color=COLORS['grid'])
 
     plt.tight_layout()
-    save_figure(fig, 'hardware-scaling')
+    save_figure(fig, 'gpu-memory-interconnect-scaling')
     plt.close()
 
 # =============================================================================
 # Figure 20: Compute vs Storage Parallel Coordinates (Event-Driven)
 # =============================================================================
-@figure("compute-storage-parallel", "Computer systems vs organism simulation requirements")
+@figure("compute-storage-trends-parallel", "Computer systems vs organism simulation requirements")
 def generate_compute_storage_parallel():
     """
     Parallel coordinates plot comparing computer system capabilities
@@ -2124,7 +2124,7 @@ def generate_compute_storage_parallel():
     # Map organisms for plotting with colors derived from our palette
     # Using lighter/pastel versions of our categorical colors for the bands
     organism_plot_config = {
-        "C. elegans": {
+        "neural-simulation-celegans": {
             "source": "C. elegans (body)",
             "color": "#C7BDDC",  # light purple (from PRIMARY_COLORS)
         },
@@ -2132,11 +2132,11 @@ def generate_compute_storage_parallel():
             "source": "fly (brain)",
             "color": "#E8D4A8",  # light gold (tinted from GOLD)
         },
-        "Mouse": {
+        "neural-simulation-mouse": {
             "source": "mouse (brain)",
             "color": "#A8C9D4",  # light teal (tinted from TEAL)
         },
-        "Human": {
+        "neural-simulation-human": {
             "source": "human (brain)",
             "color": "#D4B8A8",  # light brown (tinted from brown)
         },
@@ -2172,7 +2172,7 @@ def generate_compute_storage_parallel():
 
             systems_data.append({
                 "name": name,
-                "compute": compute_flops,
+                "compute-hardware-trends-brain-emulation": compute_flops,
                 "storage": memory_bytes,
                 "color": EXTENDED_CATEGORICAL[idx % len(EXTENDED_CATEGORICAL)],
             })
@@ -2237,13 +2237,13 @@ def generate_compute_storage_parallel():
             label_y = np.sqrt(ymin_plot * ymax_plot)
 
         # Adjust positions for readability
-        if name == "C. elegans":
+        if name == "neural-simulation-celegans":
             label_y = max(data['compute_min'] * 3.5, 1e6)
         elif name == "Drosophila & Zebrafish":
             label_y = data['compute_min'] * 20
-        elif name == "Mouse":
+        elif name == "neural-simulation-mouse":
             label_y = data['compute_max'] * 0.08
-        elif name == "Human":
+        elif name == "neural-simulation-human":
             label_y = data['compute_max'] * 0.2
 
         label_y = max(ymin_plot * 1.5, min(ymax_plot * 0.85, label_y))
@@ -2259,7 +2259,7 @@ def generate_compute_storage_parallel():
     # Plot computer system lines
     for sys_data in systems_data:
         ax.plot(
-            x_coords, [sys_data['compute'], sys_data['storage']],
+            x_coords, [sys_data['compute-hardware-trends-brain-emulation'], sys_data['storage']],
             label=sys_data['name'], color=sys_data['color'],
             marker='o', markersize=6, linewidth=2.5,
             markeredgecolor='white', markeredgewidth=1.5
@@ -2291,7 +2291,7 @@ def generate_compute_storage_parallel():
 
     plt.subplots_adjust(left=0.12, right=0.72, top=0.92, bottom=0.08)
 
-    save_figure(fig, 'compute-storage-parallel')
+    save_figure(fig, 'compute-storage-trends-parallel')
     plt.close()
 
 # =============================================================================

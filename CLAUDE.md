@@ -81,6 +81,50 @@ Path configuration for all data and output directories. Always use these paths i
 4. **Output Formats**: Generate both SVG and PNG (150 DPI) for each figure
 5. **Attribution**: All figures include "Zanichelli, Schons et al, State of Brain Emulation Report 2025"
 
+## File Naming Conventions
+
+All figure filenames follow SEO and data science best practices for discoverability and clarity.
+
+### Rules
+
+| Rule | Description | Example |
+|------|-------------|---------|
+| **Length** | 2-5 words per filename | `neural-simulation-mouse-brain` |
+| **Separators** | Use hyphens (`-`), never underscores | `brain-emulation-overview` |
+| **Case** | Always lowercase | `connectomics-cost-trends` |
+| **Keywords first** | Lead with the most important term | `neural-recording-capabilities` |
+| **Descriptive** | Describe what the image actually shows | `neuron-counts-organism-comparison` |
+| **No abbreviations** | Write full words for SEO | `simulation` not `sim` |
+| **No dates in filename** | Keep dates in metadata only | Avoids long-term SEO issues |
+| **No keyword stuffing** | Don't repeat terms unnecessarily | Natural, readable names |
+
+### Filename Structure
+
+```
+{primary-subject}-{specifics}-{context}.svg
+```
+
+**Examples:**
+- General figures: `brain-emulation-compute-requirements.svg`
+- Organism-specific: `neural-simulation-mouse-brain.svg`
+- Comparisons: `neuron-counts-organism-comparison.svg`
+- Technology: `neuroimaging-modalities-comparison.svg`
+
+### Organism-Specific Figures
+
+For figures focused on a single organism, include the organism name:
+- `neural-simulation-celegans-brain.svg`
+- `neural-recording-drosophila-brain.svg`
+- `neural-recording-mouse-moving.svg`
+- `connectomics-zebrafish-larval-brain.svg`
+
+### Hand-Drawn Figures
+
+Same conventions apply. Use descriptive names that explain the illustration:
+- `brain-emulation-pipeline-overview.svg`
+- `mouse-digital-twin-concept.svg`
+- `celegans-connectome-original.svg`
+
 ## Common Tasks
 
 ### Adding a New Figure
@@ -175,9 +219,6 @@ The validation script enforces platform-specific character limits:
 ### Known Exceptions
 
 Some legacy assets don't follow all conventions. These are documented in `scripts/validate.py` under `KNOWN_EXCEPTIONS`. If you need to add new exceptions, document them there with a comment explaining why.
-
-Current known exceptions:
-- `radar-charts/*.png` - Legacy figures without SVG source (from old codebase)
 
 ## Notes for Claude Instances
 

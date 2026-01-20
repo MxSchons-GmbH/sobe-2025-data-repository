@@ -32,16 +32,9 @@ import paths
 # These should be documented and ideally fixed over time
 KNOWN_EXCEPTIONS = {
     "svg_png_pairs": [
-        # Legacy radar charts from old code - PNG only, no SVG source available
-        "radar-charts/C. elegans.png",
-        "radar-charts/Human.png",
-        "radar-charts/Mammalian.png",
-        "radar-charts/Mouse.png",
-        "radar-charts/Rat.png",
-        "radar-charts/Silicon.png",
         # Hand-drawn figures - PNG only, no SVG source available
-        "hand-drawn/feature illustration.png",
-        "hand-drawn/neurorecording scale comparison.png",
+        "hand-drawn/brain-emulation-feature-illustration.png",
+        "hand-drawn/neural-recording-scale-comparison.png",
     ],
 }
 

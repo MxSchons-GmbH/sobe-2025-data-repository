@@ -4,153 +4,249 @@
       "id": "brain-emulation-pipeline",
       "title": "Brain Emulation Pipeline",
       "description": "Overview of the brain emulation pipeline showing the key stages from neural data acquisition through to computational simulation and embodied behavior.",
-      "filename": "brain-emulation-pipeline",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "emulation"]
+      "filename": "brain-emulation-pipeline-overview",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview",
+        "emulation"
+      ]
     },
     {
       "id": "llm-vs-bem-pipelines",
       "title": "LLM vs Brain Emulation Pipelines",
       "description": "Side-by-side comparison of Large Language Model training pipelines (data science, machine learning) versus Brain Emulation Model pipelines (neural dynamics, connectomics, computational neuroscience).",
-      "filename": "LLM vs BEM Pipelines",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "comparison"]
+      "filename": "llm-vs-brain-emulation-pipelines",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview",
+        "comparison"
+      ]
     },
     {
       "id": "mouse-to-digital",
       "title": "Mouse to Digital Twin",
       "description": "Conceptual illustration of transforming a biological mouse into its digital emulation, showing the transition from organic to computational representation.",
-      "filename": "mouse-to-digital",
-      "organism": ["mouse"],
-      "type": ["hand-drawn", "emulation", "overview"]
+      "filename": "mouse-digital-twin-concept",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "hand-drawn",
+        "emulation",
+        "overview"
+      ]
     },
     {
       "id": "structure-to-function",
       "title": "Structure to Function Pipeline",
       "description": "The brain emulation pipeline from neural dynamics and connectomics through to computational neuroscience, showing how structural data (connectome) combines with functional data to enable simulation, embodiment, and behavior.",
-      "filename": "structure-to-function",
-      "organism": ["mouse"],
-      "type": ["hand-drawn", "emulation", "connectomics", "overview"]
+      "filename": "structure-function-pipeline-brain",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "hand-drawn",
+        "emulation",
+        "connectomics",
+        "overview"
+      ]
     },
     {
       "id": "celegans-multiple",
       "title": "C. elegans Multiple Connectomes",
       "description": "Illustration of multiple C. elegans connectomes, showing the complete neural wiring diagrams of several individual nematodes.",
-      "filename": "celegans multiple",
-      "organism": ["c-elegans"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "celegans-multiple-connectomes",
+      "organism": [
+        "c-elegans"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "celegans-original",
       "title": "C. elegans Original Connectome",
       "description": "Illustration of the original C. elegans connectome, the first complete neural wiring diagram of any organism.",
-      "filename": "celegans original",
-      "organism": ["c-elegans"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "celegans-original-connectome",
+      "organism": [
+        "c-elegans"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "drosophila-brain-and-spine",
       "title": "Drosophila Brain and Ventral Nerve Cord",
       "description": "Anatomical illustration of the Drosophila melanogaster brain and ventral nerve cord (VNC), showing the complete central nervous system.",
-      "filename": "drosophila brain and spine",
-      "organism": ["drosophila"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "drosophila-brain-ventral-nerve-cord",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "drosophila-half-brain",
       "title": "Drosophila Half Brain",
       "description": "Anatomical illustration of one hemisphere of the Drosophila melanogaster brain.",
-      "filename": "drosophila half brain",
-      "organism": ["drosophila"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "drosophila-hemisphere-brain",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "drosophila-spine",
       "title": "Drosophila Ventral Nerve Cord",
       "description": "Anatomical illustration of the Drosophila melanogaster ventral nerve cord (VNC), the insect equivalent of the spinal cord.",
-      "filename": "drosophila spine",
-      "organism": ["drosophila"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "drosophila-ventral-nerve-cord",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "drosophila-whole-brain",
       "title": "Drosophila Whole Brain",
       "description": "Anatomical illustration of the complete Drosophila melanogaster brain, showing both hemispheres.",
-      "filename": "drosophila whole brain",
-      "organism": ["drosophila"],
-      "type": ["hand-drawn", "anatomy", "connectomics"]
+      "filename": "drosophila-whole-brain-anatomy",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy",
+        "connectomics"
+      ]
     },
     {
       "id": "human-brain",
       "title": "Human Brain Anatomical Illustration",
       "description": "Anatomical illustration of the human brain, representing the most complex known neural structure.",
-      "filename": "human brain",
-      "organism": ["human"],
-      "type": ["hand-drawn", "anatomy"]
+      "filename": "human-brain-anatomy",
+      "organism": [
+        "human"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy"
+      ]
     },
     {
       "id": "larval-zebrafish-brain",
       "title": "Larval Zebrafish Brain",
       "description": "Anatomical illustration of the larval zebrafish brain, a key model organism for whole-brain imaging studies.",
-      "filename": "larval zebrafish brain",
-      "organism": ["zebrafish"],
-      "type": ["hand-drawn", "anatomy"]
+      "filename": "zebrafish-larval-brain-anatomy",
+      "organism": [
+        "zebrafish"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy"
+      ]
     },
     {
       "id": "larval-zebrafish-spine",
       "title": "Larval Zebrafish Spinal Cord",
       "description": "Anatomical illustration of the larval zebrafish spinal cord.",
-      "filename": "larval zebrafish spine",
-      "organism": ["zebrafish"],
-      "type": ["hand-drawn", "anatomy"]
+      "filename": "zebrafish-larval-spinal-cord",
+      "organism": [
+        "zebrafish"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy"
+      ]
     },
     {
       "id": "mouse-brain",
       "title": "Mouse Brain Anatomical Illustration",
       "description": "Anatomical illustration of the mouse brain, a primary mammalian model organism for neuroscience research.",
-      "filename": "mouse brain",
-      "organism": ["mouse"],
-      "type": ["hand-drawn", "anatomy"]
+      "filename": "mouse-brain-anatomy",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "hand-drawn",
+        "anatomy"
+      ]
     },
     {
       "id": "neuron-count-scale-organisms",
       "title": "Neuron Count Scale Across Organisms",
       "description": "Visual comparison of neuron counts across different model organisms, from C. elegans to humans, illustrating the scale of neural complexity.",
-      "filename": "neuron count scale organisms",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "comparison"]
-    },
-    {
-      "id": "brain-emulation-pipeline",
-      "title": "Brain Emulation Pipeline Overview",
-      "description": "Conceptual diagram of the complete brain emulation pipeline, from biological tissue acquisition through to functional digital simulation.",
-      "filename": "brain-emulation-pipeline",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "emulation"]
+      "filename": "neuron-count-scale-comparison",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview",
+        "comparison"
+      ]
     },
     {
       "id": "brain-fab",
       "title": "Brain Fabrication Concept",
       "description": "Illustration of the brain fabrication concept, showing the theoretical process of constructing or reconstructing neural tissue.",
-      "filename": "brain-fab",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "emulation"]
+      "filename": "brain-fabrication-concept",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview",
+        "emulation"
+      ]
     },
     {
       "id": "neurorecording-scale-comparison",
       "title": "Neurorecording Scale Comparison",
       "description": "Visual comparison of neural recording capabilities across different scales and technologies, from single neurons to whole-brain recordings.",
-      "filename": "neurorecording scale comparison",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview", "recording"]
+      "filename": "neural-recording-scale-comparison",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview",
+        "recording"
+      ]
     },
     {
       "id": "feature-illustration",
       "title": "Brain Emulation Feature Illustration",
       "description": "Featured illustration for the State of Brain Emulation Report 2025, showcasing key concepts in brain emulation research.",
-      "filename": "feature illustration",
-      "organism": ["all"],
-      "type": ["hand-drawn", "overview"]
+      "filename": "brain-emulation-feature-illustration",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "hand-drawn",
+        "overview"
+      ]
     }
   ],
   "_instructions": {
