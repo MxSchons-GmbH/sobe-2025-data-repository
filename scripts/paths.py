@@ -48,6 +48,7 @@ DATA_FILES = {
     "costs_neuro_megaprojects": DATA_DIR / "State of Brain Emulation Report 2025 Data Repository - Costs Neuroscience Megaprojects.csv",
     "costs_non_neuro_megaprojects": DATA_DIR / "State of Brain Emulation Report 2025 Data Repository - Costs Non-Neuroscience Megaprojects.csv",
     "computational_demands": DATA_DIR / "State of Brain Emulation Report 2025 Data Repository - Computational Demands Organisms.csv",
+    "compute_hardware": DATA_DIR / "State of Brain Emulation Report 2025 Data Repository - Compute Hardware Characteristics.csv",
 }
 
 

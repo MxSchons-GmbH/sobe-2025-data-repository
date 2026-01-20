@@ -2092,6 +2092,240 @@ def generate_hardware_scaling():
     plt.close()
 
 # =============================================================================
+# Figure 20: Compute vs Storage Parallel Coordinates (Event-Driven)
+# =============================================================================
+@figure("compute-storage-parallel", "Computer systems vs organism simulation requirements")
+def generate_compute_storage_parallel():
+    """
+    Parallel coordinates plot comparing computer system capabilities
+    (compute FLOP/s and storage bytes) against organism simulation requirements.
+    Shows event-driven simulation bounds for different organisms.
+    """
+    import matplotlib.ticker as ticker
+    import matplotlib.transforms as transforms
+
+    # Load computer hardware data
+    hardware_df = pd.read_csv(DATA_FILES["compute_hardware"])
+
+    # Load computational demands data for organisms
+    demands_df = pd.read_csv(DATA_FILES["computational_demands"])
+
+    # Parse organism event-driven simulation requirements from the CSV
+    # The CSV has sections separated by empty rows
+    organism_data = {}
+    lines = demands_df.to_csv(index=False).splitlines()
+    current_section = None
+    section_headers = []
+
+    for line in lines:
+        parts = [p.strip() for p in line.split(',')]
+        if not parts or not parts[0]:
+            continue
+
+        first_col = parts[0]
+
+        if 'event-driven simulation cost' in first_col.lower():
+            current_section = 'event_compute'
+            # Headers are in the same row
+            section_headers = [h for h in parts[1:7] if h]
+        elif 'simulation storage requirements' in first_col.lower():
+            current_section = 'storage'
+            section_headers = [h for h in parts[1:7] if h]
+        elif 'lower bound' in first_col.lower():
+            for i, header in enumerate(section_headers):
+                if i + 1 < len(parts) and parts[i + 1]:
+                    if header not in organism_data:
+                        organism_data[header] = {}
+                    key = 'compute_min' if current_section == 'event_compute' else 'storage_min'
+                    try:
+                        organism_data[header][key] = float(parts[i + 1])
+                    except ValueError:
+                        pass
+        elif 'upper bound' in first_col.lower():
+            for i, header in enumerate(section_headers):
+                if i + 1 < len(parts) and parts[i + 1]:
+                    if header not in organism_data:
+                        organism_data[header] = {}
+                    key = 'compute_max' if current_section == 'event_compute' else 'storage_max'
+                    try:
+                        organism_data[header][key] = float(parts[i + 1])
+                    except ValueError:
+                        pass
+
+    # Map organisms for plotting with colors derived from our palette
+    # Using lighter/pastel versions of our categorical colors for the bands
+    organism_plot_config = {
+        "C. elegans": {
+            "source": "C. elegans (body)",
+            "color": "#C7BDDC",  # light purple (from PRIMARY_COLORS)
+        },
+        "Drosophila & Zebrafish": {
+            "source": "fly (brain)",
+            "color": "#E8D4A8",  # light gold (tinted from GOLD)
+        },
+        "Mouse": {
+            "source": "mouse (brain)",
+            "color": "#A8C9D4",  # light teal (tinted from TEAL)
+        },
+        "Human": {
+            "source": "human (brain)",
+            "color": "#D4B8A8",  # light brown (tinted from brown)
+        },
+    }
+
+    # Build organism plot data
+    organisms_plot_data = {}
+    for name, config in organism_plot_config.items():
+        source = config["source"]
+        if source in organism_data and all(
+            k in organism_data[source] for k in ['compute_min', 'compute_max', 'storage_min', 'storage_max']
+        ):
+            organisms_plot_data[name] = {
+                "compute_min": organism_data[source]['compute_min'],
+                "compute_max": organism_data[source]['compute_max'],
+                "storage_min": organism_data[source]['storage_min'],
+                "storage_max": organism_data[source]['storage_max'],
+                "color": config["color"],
+            }
+
+    # Parse hardware systems - use EXTENDED_CATEGORICAL palette
+    systems_data = []
+
+    for idx, row in hardware_df.iterrows():
+        try:
+            name = row['System']
+            # FP16_TFLOPs_Dense is in TFLOPS, convert to FLOPS
+            compute_tflops = float(row['FP16_TFLOPs_Dense'])
+            compute_flops = compute_tflops * 1e12
+            # Memory is in GB, convert to bytes
+            memory_gb = float(row['Memory_GB'])
+            memory_bytes = memory_gb * 1e9
+
+            systems_data.append({
+                "name": name,
+                "compute": compute_flops,
+                "storage": memory_bytes,
+                "color": EXTENDED_CATEGORICAL[idx % len(EXTENDED_CATEGORICAL)],
+            })
+        except (ValueError, KeyError):
+            continue
+
+    if not systems_data or not organisms_plot_data:
+        logger.warning("  Skipped - insufficient data for parallel coordinates plot")
+        return
+
+    # Create the parallel coordinates plot
+    fig, ax = plt.subplots(figsize=(12, 8))
+
+    x_coords = [0.3, 0.7]  # Two vertical axes
+    axis_labels = ["Compute (FLOP/s)", "Storage (bytes)"]
+
+    ax.set_xticks(x_coords)
+    ax.set_xticklabels(axis_labels, fontsize=12)
+    ax.set_yscale('log')
+
+    ymin_plot, ymax_plot = 1e5, 1e22
+    ax.set_ylim(ymin_plot, ymax_plot)
+
+    # Custom log tick formatter
+    def log_tick_formatter(val, pos=None):
+        fval = float(val)
+        if fval <= 0:
+            return ""
+        return f"$10^{{{int(np.round(np.log10(fval)))}}}$"
+
+    ax.yaxis.set_major_formatter(ticker.FuncFormatter(log_tick_formatter))
+
+    # Set tick positions
+    desired_powers = np.array([6.0, 9.0, 12.0, 15.0, 18.0, 21.0])
+    tick_values = [10**p for p in desired_powers if ymin_plot <= 10**p <= ymax_plot]
+    ax.set_yticks(tick_values)
+    ax.yaxis.set_minor_locator(ticker.NullLocator())
+
+    ax.tick_params(axis='y', labelsize=11, colors=COLORS['text'])
+    ax.tick_params(axis='x', colors=COLORS['text'])
+    ax.grid(True, axis='y', which='major', linestyle='-', linewidth=1,
+            alpha=0.8, color=COLORS['grid'])
+    ax.grid(False, axis='x')
+
+    # Transform for label positioning
+    trans = transforms.blended_transform_factory(ax.transAxes, ax.transData)
+
+    # Plot organism bands (parallelograms connecting compute and storage ranges)
+    for name, data in organisms_plot_data.items():
+        ax.fill(
+            [x_coords[0], x_coords[0], x_coords[1], x_coords[1]],
+            [data['compute_min'], data['compute_max'], data['storage_max'], data['storage_min']],
+            color=data['color'], alpha=0.6, edgecolor=COLORS['border'], linewidth=1
+        )
+
+        # Calculate label position (geometric mean of compute range, clamped to plot bounds)
+        clamped_cmin = max(data['compute_min'], ymin_plot)
+        clamped_cmax = min(data['compute_max'], ymax_plot)
+        if clamped_cmin < clamped_cmax:
+            label_y = np.exp((np.log(clamped_cmin) + np.log(clamped_cmax)) / 2)
+        else:
+            label_y = np.sqrt(ymin_plot * ymax_plot)
+
+        # Adjust positions for readability
+        if name == "C. elegans":
+            label_y = max(data['compute_min'] * 3.5, 1e6)
+        elif name == "Drosophila & Zebrafish":
+            label_y = data['compute_min'] * 20
+        elif name == "Mouse":
+            label_y = data['compute_max'] * 0.08
+        elif name == "Human":
+            label_y = data['compute_max'] * 0.2
+
+        label_y = max(ymin_plot * 1.5, min(ymax_plot * 0.85, label_y))
+
+        ax.text(
+            -0.045, label_y, name, transform=trans,
+            ha='right', va='center', fontsize=10, fontweight='500',
+            color=COLORS['text'],
+            bbox=dict(boxstyle="round,pad=0.35", fc=data['color'], alpha=0.85,
+                      ec=COLORS['border'], lw=1)
+        )
+
+    # Plot computer system lines
+    for sys_data in systems_data:
+        ax.plot(
+            x_coords, [sys_data['compute'], sys_data['storage']],
+            label=sys_data['name'], color=sys_data['color'],
+            marker='o', markersize=6, linewidth=2.5,
+            markeredgecolor='white', markeredgewidth=1.5
+        )
+
+    # Legend with proper styling
+    legend = ax.legend(
+        title="Computer Systems", loc='upper left', bbox_to_anchor=(1.02, 1.0),
+        fontsize=9, frameon=True, framealpha=0.95,
+        edgecolor=COLORS['grid'], borderpad=0.8,
+        facecolor=COLORS['figure_bg']
+    )
+
+    # Style legend title
+    legend.get_title().set_fontsize(10)
+    legend.get_title().set_color(COLORS['title'])
+
+    # Vertical axis lines
+    ax.axvline(x=x_coords[0], color=COLORS['border'], linestyle='-', linewidth=1.5)
+    ax.axvline(x=x_coords[1], color=COLORS['border'], linestyle='-', linewidth=1.5)
+
+    # Clean up spines
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.tick_params(axis='x', length=0)
+
+    ax.set_title('Computer Systems vs Organism Simulation Requirements (Event-Driven)',
+                 fontsize=14, pad=15, color=COLORS['title'], fontweight='600')
+
+    plt.subplots_adjust(left=0.12, right=0.72, top=0.92, bottom=0.08)
+
+    save_figure(fig, 'compute-storage-parallel')
+    plt.close()
+
+# =============================================================================
 # Main Entry Point
 # =============================================================================
 def list_figures():

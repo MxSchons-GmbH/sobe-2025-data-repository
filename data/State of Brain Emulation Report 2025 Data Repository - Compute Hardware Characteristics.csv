@@ -1,8 +1,8 @@
-System,Year,FLOPs_TFLOPs,Memory_GB,Interconnect_GB/s,Price_USD,References,Compute‑limit (neurons),Memory‑limit (neurons),Interconnect‑limit (neurons),Max neurons (all limits),Neurons per $
-MacBook Pro 2024 M4 Pro,2024,3.4E+01,1.3E+02,5.5E+11,"$4,700",https://www.apple.com/macbook-pro/specs/,https://www.cpu-monkey.com/en/igpu-apple_m4_max_40_core,,,,
-MacStudio M2 Ultra,2023,5.4E+01,1.9E+02,8.0E+11,"$5,600",https://www.apple.com/shop/buy-mac/mac-studio/24-core-cpu-60-core-gpu-32-core-neural-engine-64gb-memory-1tb,https://www.cpu-monkey.com/en/igpu-apple_m2_ultra_76_core,,,,
-NVIDIA A100 SXM,2020,6.2E+03,8.0E+01,6.0E+11,"$20,000",https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf,,,,,
-NVIDIA H100 NVL,2023,1.7E+03,9.4E+01,3.9E+12,"$25,000",https://www.nvidia.com/en-sg/data-center/h100/,,,,,
-NVIDA DGX GH200,2023,2.0E+06,1.4E+05,9.0E+11,"$30,000,000",https://nvidianews.nvidia.com/news/nvidia-announces-dgx-gh200-ai-supercomputer,,,,,
-NVIDIA HGX B200,2024,3.6E+04,1.5E+03,1.4E+13,"$350,000",https://www.nvidia.com/en-sg/data-center/hgx/,,https://smicro.eu/nvidia-umbriel-b200-baseboard-1-5tb-hbm3e-935-26287-00a0-000-1?srsltid=AfmBOoqSSx_jIx8yjNnO1IkWY5s5JhHmEKPdSKuK5WdjEozcR0qYy3W0&utm_source=chatgpt.com,,,
-NVIDIA Tesla C870,2007,3.46E-01,1.54E+00,,1500,"https://www.techpowerup.com/gpu-specs/tesla-c870.c1542#:~:text=Tesla%20C870%20is%20connected%20to,launch%20was%201499%20US%20Dollars.",,,,,
+System,Year,FP16_TFLOPs_Dense,Memory_GB,Interconnect_GB/s,Price_USD,References,Compute‑limit (neurons),Memory‑limit (neurons),Interconnect‑limit (neurons),Max neurons (all limits),Neurons per $
+MacBook Pro 2024 M4 Pro,2024,7.4E+00,4.8E+01,2.7E+02,"$2,499",https://www.apple.com/macbook-pro/specs/ https://www.cpu-monkey.com/en/igpu-apple_m4_pro_16_core,,,,
+Mac Studio M2 Ultra,2023,2.7E+01,1.9E+02,8.0E+02,"$3,999",https://www.apple.com/shop/buy-mac/mac-studio/ https://www.cpu-monkey.com/en/igpu-apple_m2_ultra_76_core,,,,
+NVIDIA A100 SXM 80GB,2020,3.1E+02,8.0E+01,6.0E+02,"$15,000",https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-nvidia-us-2188504-web.pdf,,,,
+NVIDIA H100 NVL,2023,8.4E+02,9.4E+01,9.0E+02,"$25,000",https://www.pny.com/file%20library/company/support/product%20brochures/nvidia%20data%20center%20gpus/english/h100-nvl-datasheet.pdf,,,,
+NVIDIA DGX GH200,2023,2.5E+05,1.4E+05,1.2E+05,"$500,000",https://developer.nvidia.com/blog/announcing-nvidia-dgx-gh200-first-100-terabyte-gpu-memory-system/,,,,
+NVIDIA HGX B200,2024,1.8E+04,1.4E+03,1.4E+04,"$350,000",https://lenovopress.lenovo.com/lp2226-thinksystem-nvidia-b200-180gb-1000w-gpu,,,,
+NVIDIA Tesla C870,2007,3.5E-01,1.5E+00,,"$1,500",https://www.techpowerup.com/gpu-specs/tesla-c870.c1542,,,,

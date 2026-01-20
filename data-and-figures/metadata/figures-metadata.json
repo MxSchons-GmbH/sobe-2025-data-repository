@@ -155,6 +155,15 @@
       "type": ["technology", "compute"]
     },
     {
+      "id": "compute-storage-parallel",
+      "title": "Computer Systems vs Organism Simulation Requirements",
+      "description": "Parallel coordinates plot comparing modern computer systems (MacBook Pro M4, Mac Studio M2 Ultra, NVIDIA GPUs) against event-driven neural simulation requirements for different organisms (C. elegans, Drosophila, Mouse, Human). Shows compute (FLOP/s) and storage (bytes) on parallel axes with organism requirement bands.",
+      "filename": "compute-storage-parallel",
+      "path": "figures/generated",
+      "organism": ["c-elegans", "drosophila", "zebrafish", "mouse", "human"],
+      "type": ["emulation", "compute", "technology", "comparison"]
+    },
+    {
       "id": "sim-heatmap",
       "title": "Neural Simulation Capabilities Heatmap",
       "description": "Heatmap visualization of neural simulation capabilities across dimensions.",
