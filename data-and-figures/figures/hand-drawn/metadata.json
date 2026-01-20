@@ -103,6 +103,46 @@
       "filename": "mouse brain",
       "organism": ["mouse"],
       "type": ["hand-drawn", "anatomy"]
+    },
+    {
+      "id": "brain-emulation-pipeline",
+      "title": "Brain Emulation Pipeline",
+      "description": "Overview of the brain emulation pipeline showing the key stages from biological brain to computational emulation.",
+      "filename": "brain-emulation-pipeline",
+      "organism": ["all"],
+      "type": ["hand-drawn", "emulation", "overview"]
+    },
+    {
+      "id": "brain-fab",
+      "title": "Brain Fabrication",
+      "description": "Conceptual illustration of brain fabrication processes and technologies.",
+      "filename": "brain-fab",
+      "organism": ["all"],
+      "type": ["hand-drawn", "technology", "overview"]
+    },
+    {
+      "id": "feature-illustration",
+      "title": "Feature Illustration",
+      "description": "Illustrative diagram of neural features and characteristics.",
+      "filename": "feature illustration",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview"]
+    },
+    {
+      "id": "neuron-count-scale-organisms",
+      "title": "Neuron Count Scale Across Organisms",
+      "description": "Visual comparison of neuron counts across different organisms, from simple invertebrates to humans.",
+      "filename": "neuron count scale organisms",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "anatomy", "comparison"]
+    },
+    {
+      "id": "neurorecording-scale-comparison",
+      "title": "Neurorecording Scale Comparison",
+      "description": "Visual comparison of neural recording capabilities and scales across different technologies and organisms.",
+      "filename": "neurorecording scale comparison",
+      "organism": ["all"],
+      "type": ["hand-drawn", "recording", "comparison"]
     }
   ],
   "_instructions": {

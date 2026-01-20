@@ -23,7 +23,7 @@ Usage:
 import json
 import sys
 from pathlib import Path
-from typing import NamedTuple
+from typing import NamedTuple, Optional, List, Tuple
 
 import paths
 
@@ -39,6 +39,9 @@ KNOWN_EXCEPTIONS = {
         "radar-charts/Mouse.png",
         "radar-charts/Rat.png",
         "radar-charts/Silicon.png",
+        # Hand-drawn figures - PNG only, no SVG source available
+        "hand-drawn/feature illustration.png",
+        "hand-drawn/neurorecording scale comparison.png",
     ],
 }
 
@@ -56,14 +59,14 @@ class CheckResult(NamedTuple):
     """Result of a single validation check."""
     status: str  # 'pass', 'fail', 'warn', 'skip'
     message: str
-    details: list[str] = []
+    details: List[str] = []
 
 
 class ValidationReport:
     """Aggregates validation results and provides summary."""
 
     def __init__(self):
-        self.results: list[tuple[str, CheckResult]] = []
+        self.results: List[Tuple[str, CheckResult]] = []
         self.current_tier = ""
 
     def add(self, check_name: str, result: CheckResult):
@@ -90,7 +93,7 @@ class ValidationReport:
         if len(result.details) > 10:
             print(f"       ... and {len(result.details) - 10} more")
 
-    def summary(self) -> tuple[int, int, int]:
+    def summary(self) -> Tuple[int, int, int]:
         """Returns (fail_count, warn_count, pass_count)."""
         fails = sum(1 for _, r in self.results if r.status == "fail")
         warns = sum(1 for _, r in self.results if r.status == "warn")
@@ -114,7 +117,7 @@ class ValidationReport:
         print("=" * 50)
 
 
-def load_json(filepath: Path) -> dict | None:
+def load_json(filepath: Path) -> Optional[dict]:
     """Safely load a JSON file."""
     try:
         with open(filepath, "r", encoding="utf-8") as f:
