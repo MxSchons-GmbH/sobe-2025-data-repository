@@ -545,6 +545,17 @@ REQUIRED_META_TAGS = [
 # Minimum acceptable title length for SEO
 MIN_TITLE_LENGTH = 15
 
+# SEO length limits for various fields
+SEO_LENGTH_LIMITS = {
+    "title": 60,              # Google SERP truncates after ~60 chars
+    "description": 160,       # Google SERP truncates after ~160 chars
+    "og:title": 90,           # Facebook/LinkedIn truncates after ~90 chars
+    "og:description": 200,    # Facebook truncates after ~200 chars
+    "twitter:title": 70,      # X/Twitter truncates after ~70 chars
+    "twitter:description": 200,  # X/Twitter truncates after ~200 chars
+    "alt": 125,               # Screen readers work best with ≤125 chars
+}
+
 
 def check_html_meta_tags(report: ValidationReport) -> CheckResult:
     """Verify HTML files have required SEO meta tags."""
@@ -721,6 +732,78 @@ def check_title_quality(report: ValidationReport) -> CheckResult:
     return CheckResult("pass", f"All figure titles meet SEO requirements (min {MIN_TITLE_LENGTH} chars)")
 
 
+def check_seo_length_limits(report: ValidationReport) -> CheckResult:
+    """Check that SEO tags don't exceed platform-specific length limits."""
+    import re
+
+    html_files = [
+        paths.OUTPUT_ROOT / "figures.html",
+        paths.OUTPUT_ROOT / "data.html",
+    ]
+
+    issues = []
+
+    for html_file in html_files:
+        if not html_file.exists():
+            continue
+
+        content = html_file.read_text(encoding="utf-8")
+        filename = html_file.name
+
+        # Check <title> tag (max 60 chars)
+        title_match = re.search(r"<title>([^<]+)</title>", content)
+        if title_match:
+            title = title_match.group(1)
+            if len(title) > SEO_LENGTH_LIMITS["title"]:
+                issues.append(f"{filename}: <title> too long ({len(title)}/{SEO_LENGTH_LIMITS['title']} chars)")
+
+        # Check meta description (max 160 chars)
+        desc_match = re.search(r'<meta\s+name=["\']description["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        if desc_match:
+            desc = desc_match.group(1)
+            if len(desc) > SEO_LENGTH_LIMITS["description"]:
+                issues.append(f"{filename}: meta description too long ({len(desc)}/{SEO_LENGTH_LIMITS['description']} chars)")
+
+        # Check og:title (max 90 chars)
+        og_title_match = re.search(r'<meta\s+property=["\']og:title["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        if og_title_match:
+            og_title = og_title_match.group(1)
+            if len(og_title) > SEO_LENGTH_LIMITS["og:title"]:
+                issues.append(f"{filename}: og:title too long ({len(og_title)}/{SEO_LENGTH_LIMITS['og:title']} chars)")
+
+        # Check og:description (max 200 chars)
+        og_desc_match = re.search(r'<meta\s+property=["\']og:description["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        if og_desc_match:
+            og_desc = og_desc_match.group(1)
+            if len(og_desc) > SEO_LENGTH_LIMITS["og:description"]:
+                issues.append(f"{filename}: og:description too long ({len(og_desc)}/{SEO_LENGTH_LIMITS['og:description']} chars)")
+
+        # Check twitter:title (max 70 chars)
+        tw_title_match = re.search(r'<meta\s+name=["\']twitter:title["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        if tw_title_match:
+            tw_title = tw_title_match.group(1)
+            if len(tw_title) > SEO_LENGTH_LIMITS["twitter:title"]:
+                issues.append(f"{filename}: twitter:title too long ({len(tw_title)}/{SEO_LENGTH_LIMITS['twitter:title']} chars)")
+
+        # Check twitter:description (max 200 chars)
+        tw_desc_match = re.search(r'<meta\s+name=["\']twitter:description["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        if tw_desc_match:
+            tw_desc = tw_desc_match.group(1)
+            if len(tw_desc) > SEO_LENGTH_LIMITS["twitter:description"]:
+                issues.append(f"{filename}: twitter:description too long ({len(tw_desc)}/{SEO_LENGTH_LIMITS['twitter:description']} chars)")
+
+        # Check alt text on images (max 125 chars)
+        alt_matches = re.findall(r'<img[^>]+alt=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        for alt_text in alt_matches:
+            if len(alt_text) > SEO_LENGTH_LIMITS["alt"]:
+                truncated_alt = alt_text[:30] + "..."
+                issues.append(f"{filename}: alt text too long ({len(alt_text)}/{SEO_LENGTH_LIMITS['alt']} chars): \"{truncated_alt}\"")
+
+    if issues:
+        return CheckResult("fail", f"{len(issues)} SEO length limit violations", issues)
+    return CheckResult("pass", "All SEO tags within length limits")
+
+
 # =============================================================================
 # Main Execution
 # =============================================================================
@@ -800,6 +883,7 @@ def run_all_checks(strict: bool = False) -> int:
         ("Heading hierarchy", check_heading_hierarchy),
         ("External link security", check_external_link_security),
         ("Title quality (SEO)", check_title_quality),
+        ("SEO length limits", check_seo_length_limits),
     ]
 
     for name, check_fn in checks_tier5:

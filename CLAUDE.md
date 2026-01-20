@@ -156,6 +156,21 @@ The validation script checks:
 | **5 - SEO** | Heading hierarchy | H1→H3 skips, multiple H1s |
 | **5 - SEO** | External link security | Missing rel="noopener noreferrer" |
 | **5 - SEO** | Title quality | Titles too short for alt text/SEO |
+| **5 - SEO** | SEO length limits | Tags exceeding platform character limits |
+
+### SEO Length Limits
+
+The validation script enforces platform-specific character limits:
+
+| Field | Max Length | Platform |
+|-------|------------|----------|
+| `<title>` | 60 chars | Google SERP |
+| meta description | 160 chars | Google SERP |
+| og:title | 90 chars | Facebook/LinkedIn |
+| og:description | 200 chars | Facebook |
+| twitter:title | 70 chars | X/Twitter |
+| twitter:description | 200 chars | X/Twitter |
+| alt text | 125 chars | Screen readers |
 
 ### Known Exceptions
 
