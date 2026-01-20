@@ -103,6 +103,46 @@
       "filename": "mouse brain",
       "organism": ["mouse"],
       "type": ["hand-drawn", "anatomy"]
+    },
+    {
+      "id": "neuron-count-scale-organisms",
+      "title": "Neuron Count Scale Across Organisms",
+      "description": "Visual comparison of neuron counts across different model organisms, from C. elegans to humans, illustrating the scale of neural complexity.",
+      "filename": "neuron count scale organisms",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "comparison"]
+    },
+    {
+      "id": "brain-emulation-pipeline",
+      "title": "Brain Emulation Pipeline Overview",
+      "description": "Conceptual diagram of the complete brain emulation pipeline, from biological tissue acquisition through to functional digital simulation.",
+      "filename": "brain-emulation-pipeline",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "emulation"]
+    },
+    {
+      "id": "brain-fab",
+      "title": "Brain Fabrication Concept",
+      "description": "Illustration of the brain fabrication concept, showing the theoretical process of constructing or reconstructing neural tissue.",
+      "filename": "brain-fab",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "emulation"]
+    },
+    {
+      "id": "neurorecording-scale-comparison",
+      "title": "Neurorecording Scale Comparison",
+      "description": "Visual comparison of neural recording capabilities across different scales and technologies, from single neurons to whole-brain recordings.",
+      "filename": "neurorecording scale comparison",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview", "recording"]
+    },
+    {
+      "id": "feature-illustration",
+      "title": "Brain Emulation Feature Illustration",
+      "description": "Featured illustration for the State of Brain Emulation Report 2025, showcasing key concepts in brain emulation research.",
+      "filename": "feature illustration",
+      "organism": ["all"],
+      "type": ["hand-drawn", "overview"]
     }
   ],
   "_instructions": {

@@ -531,6 +531,46 @@ def check_hand_drawn_files(report: ValidationReport) -> CheckResult:
     return CheckResult("pass", f"All {found} hand-drawn figures have PNG+SVG")
 
 
+def check_orphan_hand_drawn_figures(report: ValidationReport) -> CheckResult:
+    """Find hand-drawn figures not listed in metadata."""
+    metadata_path = paths.OUTPUT_METADATA / "hand-drawn-metadata.json"
+    data = load_json(metadata_path)
+    if not data:
+        return CheckResult("fail", "Could not load hand-drawn-metadata.json")
+
+    # Build set of expected filenames from metadata
+    expected_files = set()
+    for fig in data.get("figures", []):
+        if fig.get("id", "").startswith("_"):
+            continue  # Skip template entries
+        filename = fig.get("filename", "")
+        if filename:
+            expected_files.add(f"{filename}.png")
+            expected_files.add(f"{filename}.svg")
+
+    # Find all actual files in hand-drawn directory
+    hand_drawn_dir = paths.OUTPUT_FIGURES_HAND_DRAWN
+    orphans = []
+
+    # Skip non-figure files like metadata.json
+    skip_files = {"metadata.json"}
+
+    for f in hand_drawn_dir.iterdir():
+        if f.name in skip_files:
+            continue
+        if f.suffix.lower() in [".png", ".svg"]:
+            if f.name not in expected_files:
+                orphans.append(f.name)
+
+    if orphans:
+        return CheckResult(
+            "fail",
+            f"{len(orphans)} hand-drawn figures not in metadata",
+            orphans
+        )
+    return CheckResult("pass", "All hand-drawn figures are in metadata")
+
+
 # =============================================================================
 # TIER 5: SEO & Accessibility Checks
 # =============================================================================
@@ -870,6 +910,7 @@ def run_all_checks(strict: bool = False) -> int:
     checks_tier4 = [
         ("File sizes", check_file_sizes),
         ("Hand-drawn figures", check_hand_drawn_files),
+        ("Orphan hand-drawn", check_orphan_hand_drawn_figures),
     ]
 
     for name, check_fn in checks_tier4:
