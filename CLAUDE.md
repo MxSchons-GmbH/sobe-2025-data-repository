@@ -38,6 +38,7 @@ sobe-2025-data-repository/
 │   ├── style.py               # Style configuration (colors, fonts, chart specs)
 │   ├── paths.py               # Centralized path configuration
 │   ├── run_all_figures.py     # Main pipeline with figure registry
+│   ├── validate.py            # Quality validation (run before commits!)
 │   ├── build_downloads.py     # ZIP archive builder
 │   └── build_standalone_html.py # HTML inliner for embedding
 ├── data/                       # Source datasets (CSV files)
@@ -123,10 +124,47 @@ Key Python packages (see `requirements.txt`):
 - statsmodels - Statistical modeling
 - openpyxl - Excel file support
 
+## Quality Checks (IMPORTANT)
+
+**Always run validation before committing changes:**
+
+```bash
+cd scripts
+python3 validate.py          # Run all checks
+python3 validate.py --strict # Fail on warnings too
+```
+
+The validation script checks:
+
+| Tier | Check | What It Catches |
+|------|-------|-----------------|
+| **1 - Critical** | SVG/PNG pairs | Missing format pairs for figures |
+| **1 - Critical** | Zero-size files | Corrupt or failed generation |
+| **1 - Critical** | Metadata-file sync | Broken references in metadata |
+| **1 - Critical** | Orphan figures | Undocumented figures |
+| **2 - Data** | Data files exist | Missing CSV source files |
+| **2 - Data** | Data file content | Empty or truncated datasets |
+| **2 - Data** | Source data files | Missing files referenced in paths.py |
+| **3 - Consistency** | Organism taxonomy | Invalid organism tags |
+| **3 - Consistency** | Type taxonomy | Invalid type tags |
+| **3 - Consistency** | ID uniqueness | Duplicate IDs across metadata |
+| **3 - Consistency** | License consistency | Missing license in metadata |
+| **4 - Reporting** | File sizes | Size metrics for monitoring |
+| **4 - Reporting** | Hand-drawn figures | PNG+SVG pairs for hand-drawn |
+
+### Known Exceptions
+
+Some legacy assets don't follow all conventions. These are documented in `scripts/validate.py` under `KNOWN_EXCEPTIONS`. If you need to add new exceptions, document them there with a comment explaining why.
+
+Current known exceptions:
+- `radar-charts/*.png` - Legacy figures without SVG source (from old codebase)
+
 ## Notes for Claude Instances
 
-- No test suite exists - focus on visual inspection of generated figures
+- **Run `validate.py` before every commit** to catch issues early
+- No unit test suite exists - validation + visual inspection are the quality gates
 - The web interface is self-contained and can be embedded via iframes
 - All figures are licensed under CC BY 4.0
 - When modifying figures, regenerate using `run_all_figures.py`
 - JSON metadata files control the web interface display
+- If validation fails, fix the issues before committing

@@ -297,32 +297,6 @@
           "columns": ["Entity", "Day", "Training Computation (petaFLOP)", "Domain"]
         }
       ]
-    },
-    {
-      "id": "scaling",
-      "title": "Scaling & Hardware",
-      "description": "Data on bandwidth scaling and hardware performance trends.",
-      "icon": "trending-up",
-      "datasets": [
-        {
-          "id": "bandwidth-scaling",
-          "title": "Bandwidth Scaling - Multiplexed Imaging",
-          "description": "Bandwidth scaling data for multiplexed imaging techniques.",
-          "filename": "bandwidth-scaling-multiplexed-imaging.csv",
-          "path": "data",
-          "rows": "10+",
-          "columns": ["Year", "Technique", "Bandwidth", "Resolution"]
-        },
-        {
-          "id": "hardware-scaling",
-          "title": "Hardware Scaling - FLOPS & Bandwidth",
-          "description": "Historical hardware performance data showing FLOPS and bandwidth scaling.",
-          "filename": "hardware-scaling-flops-bandwidth.csv",
-          "path": "data",
-          "rows": "20+",
-          "columns": ["Year", "System", "FLOPS", "Bandwidth", "Memory"]
-        }
-      ]
     }
   ],
   "github": {

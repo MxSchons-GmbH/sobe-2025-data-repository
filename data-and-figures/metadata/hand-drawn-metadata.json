@@ -115,5 +115,11 @@
       "organism": "Array of organism tags: all, c-elegans, drosophila, zebrafish, mouse, rat, human, mammalian, silicon",
       "type": "Array of type tags: hand-drawn, plus any relevant: overview, simulation, recording, anatomy, etc."
     }
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "fullName": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Zanichelli, Schons et al., State of Brain Emulation Report 2025"
   }
 }
