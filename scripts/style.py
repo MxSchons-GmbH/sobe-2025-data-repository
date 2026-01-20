@@ -516,7 +516,6 @@ def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=Tru
     """
     from pathlib import Path
     from PIL import Image
-    import io
 
     if output_dir is None:
         output_dir = OUTPUT_FIGURES

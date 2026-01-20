@@ -921,8 +921,8 @@ button {
         <div class="modal-backdrop"></div>
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
-            <div class="modal-image-container">
-                <img src="" alt="" id="modal-image">
+            <div class="modal-image-container" id="modal-image-container">
+                <!-- Populated by JavaScript with picture element -->
             </div>
             <div class="modal-info">
                 <h2 id="modal-title"></h2>
@@ -992,10 +992,13 @@ button {
                 ...fig,
                 source: 'generated',
                 pngPath: `${fig.path}/${encodeURIComponent(fig.filename)}.png`,
-                svgPath: `${fig.path}/${encodeURIComponent(fig.filename)}.svg`
+                svgPath: `${fig.path}/${encodeURIComponent(fig.filename)}.svg`,
+                webpPath: `${fig.path}/${encodeURIComponent(fig.filename)}.webp`,
+                avifPath: `${fig.path}/${encodeURIComponent(fig.filename)}.avif`
             }));
 
             // Process hand-drawn figures (filter out example/template entries)
+            // Hand-drawn figures don't have WebP/AVIF versions
             const handDrawnFigures = handDrawnMeta.figures
                 .filter(fig => fig.id !== 'example-hand-drawn')
                 .map(fig => ({
@@ -1003,6 +1006,8 @@ button {
                     source: 'hand-drawn',
                     pngPath: `figures/hand-drawn/${encodeURIComponent(fig.filename)}.png`,
                     svgPath: `figures/hand-drawn/${encodeURIComponent(fig.filename)}.svg`,
+                    webpPath: null,
+                    avifPath: null,
                     type: [...(fig.type || []), 'hand-drawn']
                 }));
 
@@ -1152,11 +1157,20 @@ button {
             })
             .join('');
 
+        // Build picture element with optimized formats
+        const pictureElement = fig.avifPath && fig.webpPath
+            ? `<picture>
+                    <source srcset="${fig.avifPath}" type="image/avif">
+                    <source srcset="${fig.webpPath}" type="image/webp">
+                    <img src="${fig.pngPath}" alt="${fig.title}" loading="lazy">
+                </picture>`
+            : `<img src="${fig.pngPath}" alt="${fig.title}" loading="lazy">`;
+
         return `
             <article class="figure-card ${isHandDrawn ? 'hand-drawn' : ''}" data-id="${fig.id}">
                 <div class="figure-card-image">
                     ${isHandDrawn ? '<span class="figure-card-badge">Hand-Drawn</span>' : ''}
-                    <img src="${fig.pngPath}" alt="${fig.title}" loading="lazy">
+                    ${pictureElement}
                 </div>
                 <div class="figure-card-content">
                     <h3 class="figure-card-title">${fig.title}</h3>
@@ -1176,15 +1190,26 @@ button {
 
     // Modal functions
     function openModal(figure) {
-        const modalImage = document.getElementById('modal-image');
+        const modalImageContainer = document.getElementById('modal-image-container');
         const modalTitle = document.getElementById('modal-title');
         const modalDescription = document.getElementById('modal-description');
         const modalTags = document.getElementById('modal-tags');
         const modalDownloadPng = document.getElementById('modal-download-png');
         const modalDownloadSvg = document.getElementById('modal-download-svg');
 
-        modalImage.src = figure.pngPath;
-        modalImage.alt = figure.title;
+        // Build picture element with optimized formats for modal
+        if (figure.avifPath && figure.webpPath) {
+            modalImageContainer.innerHTML = `
+                <picture>
+                    <source srcset="${figure.avifPath}" type="image/avif">
+                    <source srcset="${figure.webpPath}" type="image/webp">
+                    <img src="${figure.pngPath}" alt="${figure.title}">
+                </picture>
+            `;
+        } else {
+            modalImageContainer.innerHTML = `<img src="${figure.pngPath}" alt="${figure.title}">`;
+        }
+
         modalTitle.textContent = figure.title;
         modalDescription.textContent = figure.description;
 

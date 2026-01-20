@@ -1786,9 +1786,7 @@ def generate_all_sim_rec():
         fig.text(0.17 + j/3, 1.01, label, ha='center', va='top', fontweight='bold', fontsize=14)
 
     plt.tight_layout()
-    add_attribution(fig)
-    fig.savefig(OUTPUT_FIGURES / 'neural-simulations-recordings-overview.svg', format='svg', bbox_inches='tight', pad_inches=0.1)
-    fig.savefig(OUTPUT_FIGURES / 'neural-simulations-recordings-overview.png', format='png', dpi=150, bbox_inches='tight', pad_inches=0.1)
+    save_figure(fig, 'neural-simulations-recordings-overview')
     plt.close()
 
 # =============================================================================

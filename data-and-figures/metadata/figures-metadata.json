@@ -32,7 +32,7 @@
     },
     {
       "id": "imaging-speed",
-      "title": "Imaging Speed",
+      "title": "Neuroimaging Speed Comparison",
       "description": "Analysis of imaging speed capabilities across different neuroimaging technologies.",
       "filename": "neuroimaging-speed-comparison",
       "path": "figures/generated",
@@ -60,7 +60,7 @@
     },
     {
       "id": "storage-costs",
-      "title": "Storage Costs",
+      "title": "Storage Cost Trends Over Time",
       "description": "Trends in data storage costs over time and implications for brain data storage.",
       "filename": "storage-cost-trends-brain-data",
       "path": "figures/generated",

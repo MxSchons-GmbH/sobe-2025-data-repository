@@ -465,8 +465,12 @@ def check_file_sizes(report: ValidationReport) -> CheckResult:
 
     total_png_size = 0
     total_svg_size = 0
+    total_webp_size = 0
+    total_avif_size = 0
     png_count = 0
     svg_count = 0
+    webp_count = 0
+    avif_count = 0
 
     for png in figures_dir.rglob("*.png"):
         total_png_size += png.stat().st_size
@@ -476,12 +480,74 @@ def check_file_sizes(report: ValidationReport) -> CheckResult:
         total_svg_size += svg.stat().st_size
         svg_count += 1
 
+    for webp in figures_dir.rglob("*.webp"):
+        total_webp_size += webp.stat().st_size
+        webp_count += 1
+
+    for avif in figures_dir.rglob("*.avif"):
+        total_avif_size += avif.stat().st_size
+        avif_count += 1
+
     png_mb = total_png_size / (1024 * 1024)
     svg_mb = total_svg_size / (1024 * 1024)
+    webp_mb = total_webp_size / (1024 * 1024)
+    avif_mb = total_avif_size / (1024 * 1024)
+
+    details = []
+    if webp_count > 0:
+        savings = (1 - webp_mb / png_mb) * 100 if png_mb > 0 else 0
+        details.append(f"WebP: {webp_count} files ({webp_mb:.1f}MB, {savings:.0f}% smaller than PNG)")
+    if avif_count > 0:
+        savings = (1 - avif_mb / png_mb) * 100 if png_mb > 0 else 0
+        details.append(f"AVIF: {avif_count} files ({avif_mb:.1f}MB, {savings:.0f}% smaller than PNG)")
 
     return CheckResult(
         "pass",
-        f"{png_count} PNGs ({png_mb:.1f}MB), {svg_count} SVGs ({svg_mb:.1f}MB)"
+        f"{png_count} PNGs ({png_mb:.1f}MB), {svg_count} SVGs ({svg_mb:.1f}MB)",
+        details
+    )
+
+
+def check_web_format_coverage(report: ValidationReport) -> CheckResult:
+    """Check that generated figures have WebP and AVIF versions."""
+    figures_dir = paths.OUTPUT_FIGURES
+
+    # Get all PNG files (the baseline)
+    png_files = list(figures_dir.rglob("*.png"))
+    missing_webp = []
+    missing_avif = []
+
+    for png in png_files:
+        webp_path = png.with_suffix(".webp")
+        avif_path = png.with_suffix(".avif")
+
+        rel_path = str(png.relative_to(figures_dir))
+
+        if not webp_path.exists():
+            missing_webp.append(rel_path)
+        if not avif_path.exists():
+            missing_avif.append(rel_path)
+
+    total_missing = len(missing_webp) + len(missing_avif)
+
+    if total_missing > 0:
+        details = []
+        if missing_webp:
+            details.append(f"{len(missing_webp)} missing WebP files")
+        if missing_avif:
+            details.append(f"{len(missing_avif)} missing AVIF files")
+        # Show first few missing files
+        details.extend(missing_webp[:3] + missing_avif[:3])
+
+        return CheckResult(
+            "warn",
+            f"{total_missing} web format files missing (run figure generation)",
+            details
+        )
+
+    return CheckResult(
+        "pass",
+        f"All {len(png_files)} figures have WebP and AVIF versions"
     )
 
 
@@ -902,6 +968,7 @@ def run_all_checks(strict: bool = False) -> int:
 
     checks_tier4 = [
         ("File sizes", check_file_sizes),
+        ("Web format coverage", check_web_format_coverage),
         ("Hand-drawn figures", check_hand_drawn_files),
         ("Orphan hand-drawn", check_orphan_hand_drawn_figures),
     ]
