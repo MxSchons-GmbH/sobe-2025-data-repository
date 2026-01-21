@@ -23,8 +23,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Claude
-.claude/
+# Claude Code - ignore private files, keep shared configs
+.claude/*
+!.claude/hooks/
+!.claude/settings.json
 
 # Generated downloads (can be rebuilt with scripts/build_downloads.py)
 data-and-figures/downloads/*.zip
