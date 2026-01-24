@@ -5,11 +5,18 @@ Centralized styling for all visualization notebooks.
 Import this module and call apply_style() before creating figures.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from cycler import cycler
 
 from paths import OUTPUT_FIGURES
+from data_loader import get_species_neurons
 
 # =============================================================================
 # COLOR SYSTEM
@@ -609,13 +616,8 @@ def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=Tru
 
 
 # Species reference data for neuron count lines
-SPECIES_NEURONS = {
-    'C. elegans': 302,
-    'Zebrafish (larva)': 100_000,
-    'Mouse': 67_873_741,
-    'Macaque': 6_376_160_000,
-    'Human': 86_060_000_000,
-}
+# Loaded from canonical organisms.tsv file via data_loader
+SPECIES_NEURONS = get_species_neurons()
 
 
 def plot_species_hlines(ax, xmin, xmax, label_x=None, species=None):

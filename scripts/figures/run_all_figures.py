@@ -14,7 +14,11 @@ matplotlib.use('Agg')  # Non-interactive backend for script execution
 
 import logging
 import sys
+from pathlib import Path
 from functools import wraps
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -36,6 +40,7 @@ from paths import (
     OUTPUT_FIGURES_NEURO_SIM, OUTPUT_FIGURES_NEURO_REC,
     ensure_output_dirs
 )
+from data_loader import get_compute_requirements, get_storage_requirements
 
 # =============================================================================
 # Logging Configuration
@@ -201,7 +206,8 @@ def generate_compute():
         parse_dates=['Day']
     )
 
-    species_pf = {'Human': 2000.0, 'Mouse': 10.0, 'Fly': 0.195}
+    # Get compute requirements from shared data
+    species_pf = get_compute_requirements()
 
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.scatterplot(
@@ -249,7 +255,8 @@ def generate_storage_costs():
         value_name='Cost ($ / TB)', var_name='Storage type',
     )
 
-    species_storage_tb = {'Human': 6e3, 'Mouse': 2, 'Fruitfly': 2.5e-4, 'C. elegans': 1e-3}
+    # Get storage requirements from shared data
+    species_storage_tb = get_storage_requirements()
     species_cost = {k: 1e6 / v for k, v in species_storage_tb.items()}
 
     min_year = storage_dfl['Year'].min()
