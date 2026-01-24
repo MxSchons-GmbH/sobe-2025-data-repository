@@ -39,17 +39,19 @@ sobe-2025-data-repository/
 │   ├── paths.py               # Centralized path configuration
 │   ├── run_all_figures.py     # Main pipeline with figure registry
 │   ├── validate.py            # Quality validation (run before commits!)
-│   ├── build_downloads.py     # ZIP archive builder
-│   └── build_standalone_html.py # HTML inliner for embedding
+│   └── build_downloads.py     # ZIP archive builder
 ├── data/                       # Source datasets (CSV files)
 │   ├── ai-compute/            # AI training compute data
 │   ├── brain-scans/           # Connectomics scanning data
 │   ├── initiatives/           # Research initiatives data
 │   └── storage-costs/         # Storage cost trends
-├── data-and-figures/          # Self-contained web interface
-│   ├── figures/generated/     # Output SVG and PNG figures
-│   ├── metadata/              # JSON metadata for web interface
-│   └── *.html                 # Interactive web pages
+├── data-and-figures/          # Data assets for website
+│   ├── data/                  # CSV datasets
+│   ├── figures/               # Generated + hand-drawn images
+│   │   ├── generated/         # Output SVG, PNG, WebP, AVIF figures
+│   │   └── hand-drawn/        # Hand-drawn illustrations
+│   ├── metadata/              # JSON metadata catalogs
+│   └── downloads/             # ZIP archives for bulk download
 └── requirements.txt           # Python dependencies
 ```
 
@@ -154,19 +156,12 @@ Same conventions apply. Use descriptive names that explain the illustration:
 3. Save to `paths.GENERATED_FIGURES_DIR`
 4. Update `data-and-figures/metadata/figures-metadata.json` if needed
 
-### Viewing the Web Interface
+### Serving Data Locally
 
 ```bash
 cd data-and-figures
 python3 -m http.server 8000
-# Open http://localhost:8000/figures.html
-```
-
-### Building Standalone HTML
-
-```bash
-cd scripts
-python3 build_standalone_html.py
+# Access metadata at http://localhost:8000/metadata/
 ```
 
 ## Data Categories

@@ -978,16 +978,11 @@ def run_all_checks(strict: bool = False) -> int:
         report.add(name, result)
         report.print_result(name, result)
 
-    # Tier 5: SEO & Accessibility
+    # Tier 5: SEO & Accessibility (metadata quality)
     report.print_tier_header("TIER 5", "SEO & Accessibility Checks")
 
     checks_tier5 = [
-        ("HTML meta tags", check_html_meta_tags),
-        ("HTML lang attribute", check_html_lang_attribute),
-        ("Heading hierarchy", check_heading_hierarchy),
-        ("External link security", check_external_link_security),
         ("Title quality (SEO)", check_title_quality),
-        ("SEO length limits", check_seo_length_limits),
     ]
 
     for name, check_fn in checks_tier5:

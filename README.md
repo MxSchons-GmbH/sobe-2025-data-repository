@@ -40,27 +40,25 @@ sobe25-scripts/
 │   ├── style.py                      # Centralized style configuration
 │   ├── run_all_figures.py            # Main pipeline (generates all figures)
 │   ├── build_downloads.py            # Creates ZIP archives
-│   ├── build_standalone_html.py      # Inlines CSS/JS into HTML
+│   ├── validate.py                   # Quality validation checks
 │   └── *.ipynb                       # Analysis notebooks
 ├── data/                             # Source datasets (CSV, Excel)
-└── data-and-figures/                 # All outputs (self-contained)
+└── data-and-figures/                 # Data assets for website
     ├── figures/
-    │   ├── generated/                # Programmatic figures (SVG + PNG)
+    │   ├── generated/                # Programmatic figures (SVG, PNG, WebP, AVIF)
     │   │   ├── neuro-sim/            # Per-organism simulation figures
-    │   │   ├── neuro-rec/            # Per-organism recording figures
-    │   │   └── radar-charts/         # Comparative radar charts
+    │   │   └── neuro-rec/            # Per-organism recording figures
     │   └── hand-drawn/               # Anatomical illustrations
-    ├── data/                         # Dataset copies for web interface
-    ├── metadata/                     # JSON metadata for web interface
-    │   ├── figures-metadata.json
-    │   ├── data-metadata.json
-    │   └── hand-drawn-metadata.json
-    ├── downloads/                    # ZIP archives
-    ├── css/                          # Stylesheets
-    ├── js/                           # JavaScript
-    ├── figures.html                  # Interactive figure library
-    └── data.html                     # Interactive data repository
+    ├── data/                         # CSV datasets
+    ├── metadata/                     # JSON metadata catalogs
+    │   ├── figures-metadata.json     # Generated figures catalog
+    │   ├── data-metadata.json        # Datasets catalog
+    │   └── hand-drawn-metadata.json  # Hand-drawn figures catalog
+    └── downloads/                    # ZIP archives for bulk download
 ```
+
+> **Note**: The web interface (HTML/CSS/JS) has been moved to the main website repository.
+> This repo now provides only raw data, figures, and metadata JSON catalogs that the website consumes.
 
 ## Style System
 
@@ -100,7 +98,7 @@ save_figure(fig, 'my-figure')  # Saves both .svg and .png
 |--------|-------------|
 | `run_all_figures.py` | Generates all 25+ figures from source data |
 | `build_downloads.py` | Creates ZIP archives with CC BY 4.0 license |
-| `build_standalone_html.py` | Makes HTML pages self-contained for iframe embedding |
+| `validate.py` | Runs quality checks on figures and metadata |
 
 ### Jupyter Notebooks
 
@@ -140,39 +138,31 @@ The pipeline produces 38+ figures across categories:
 
 All figures are saved in both **SVG** (vector) and **PNG** (150 DPI) formats.
 
-## Interactive Web Interface
+## Data Assets
 
-The `data-and-figures/` directory contains a complete, self-contained web interface:
+The `data-and-figures/` directory provides assets for the main website:
 
-### Figure Library (`figures.html`)
+### What This Repo Provides
 
-- Filter by **organism** (C. elegans, Zebrafish, Mouse, Human, etc.)
-- Filter by **type** (Simulation, Recording, Emulation, etc.)
-- Filter by **source** (Generated vs Hand-Drawn)
-- Download individual figures as PNG or SVG
-- Download all figures as ZIP archives
+| Asset | Location | Format |
+|-------|----------|--------|
+| Generated figures | `figures/generated/` | SVG, PNG, WebP, AVIF |
+| Hand-drawn figures | `figures/hand-drawn/` | SVG, PNG, WebP, AVIF |
+| Datasets | `data/` | CSV |
+| Figure metadata | `metadata/figures-metadata.json` | JSON |
+| Dataset metadata | `metadata/data-metadata.json` | JSON |
+| Hand-drawn metadata | `metadata/hand-drawn-metadata.json` | JSON |
+| Bulk downloads | `downloads/` | ZIP |
 
-### Data Repository (`data.html`)
+### How the Website Uses This Data
 
-- 24 datasets organized into 8 categories
-- Direct CSV download links
-- Table and card view options
+The main website repository reads the metadata JSON files and renders the UI natively.
+When you add new figures or datasets:
 
-### Serving Locally
-
-```bash
-cd data-and-figures
-python3 -m http.server 8000
-# Open http://localhost:8000/figures.html
-```
-
-### Embedding
-
-The HTML files are self-contained (CSS/JS inlined) for easy iframe embedding:
-
-```html
-<iframe src="figures.html" width="100%" height="800"></iframe>
-```
+1. Add the actual files (CSV, PNG, SVG)
+2. Update the relevant metadata JSON
+3. Regenerate ZIP archives if needed
+4. The website will automatically display the new content
 
 ## Datasets
 
