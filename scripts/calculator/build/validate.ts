@@ -21,7 +21,7 @@ const FORMULAS_DIR = join(DATA_ROOT, 'formulas');
 
 // Parameter files are now spread across multiple directories
 const PARAM_FILES = [
-  join(DATA_ROOT, 'formulas', 'shared.tsv'),
+  join(DATA_ROOT, 'parameters', 'shared.tsv'),
   join(DATA_ROOT, 'organisms', 'organisms.tsv'),
   join(DATA_ROOT, 'imaging', 'imaging-modalities.tsv'),
   join(DATA_ROOT, 'recordings', 'neural-recording.tsv'),

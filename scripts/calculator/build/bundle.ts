@@ -12,6 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // Data directories (relative to repo root, which is 3 levels up from build/)
 const DATA_ROOT = join(__dirname, '..', '..', '..', 'data');
 const FORMULAS_DIR = join(DATA_ROOT, 'formulas');
+const PARAMS_DIR = join(DATA_ROOT, 'parameters');
 const ORGANISMS_DIR = join(DATA_ROOT, 'organisms');
 const IMAGING_DIR = join(DATA_ROOT, 'imaging');
 const RECORDINGS_DIR = join(DATA_ROOT, 'recordings');
@@ -37,7 +38,7 @@ async function bundle(): Promise<void> {
   console.log('Bundling data into JSON...\n');
 
   // Load shared parameters
-  const sharedRows = readTSV<ParameterRow>(join(FORMULAS_DIR, 'shared.tsv'));
+  const sharedRows = readTSV<ParameterRow>(join(PARAMS_DIR, 'shared.tsv'));
   const shared: Record<string, number | string> = {};
   for (const row of sharedRows) {
     const value = row.value;

@@ -60,6 +60,7 @@ def get_species_neurons() -> Dict[str, int]:
     # Map organism IDs to display names used in figures
     name_mapping = {
         'c_elegans': 'C. elegans',
+        'drosophila': 'Drosophila',
         'zebrafish_larva': 'Zebrafish (larva)',
         'mouse': 'Mouse',
         'macaque': 'Macaque',
@@ -77,18 +78,16 @@ def get_compute_requirements() -> Dict[str, float]:
     """
     Get compute requirements in petaFLOPS by organism.
 
-    These are rough estimates for real-time brain emulation.
-    Values derived from computational demands analysis.
+    Loaded from data/compute/compute-requirements.tsv.
 
     Returns dict with display names as keys.
     """
-    # These values are derived from computational demands analysis
-    # Time-based simulation upper bounds, converted to petaFLOPS
+    filepath = DATA_DIR / "compute" / "compute-requirements.tsv"
+    rows = load_tsv(filepath)
+
     return {
-        'Human': 2000.0,      # ~1.4e19 FLOPS/s → 2000 PFLOPS
-        'Mouse': 10.0,        # ~1.1e16 FLOPS/s → 10 PFLOPS
-        'Fly': 0.195,         # ~4.8e12 FLOPS/s → 0.2 PFLOPS
-        'C. elegans': 0.003,  # ~2.7e9 FLOPS/s → 0.003 PFLOPS
+        row['name']: float(row['compute_pflops'])
+        for row in rows
     }
 
 
@@ -96,17 +95,16 @@ def get_storage_requirements() -> Dict[str, float]:
     """
     Get storage requirements in TB by organism.
 
-    These are estimates for storing neural state during emulation.
+    Loaded from data/compute/storage-requirements.tsv.
 
     Returns dict with display names as keys.
     """
-    # Values derived from computational demands analysis (bytes upper bounds)
-    # Converted to TB (divide by 1e12)
+    filepath = DATA_DIR / "compute" / "storage-requirements.tsv"
+    rows = load_tsv(filepath)
+
     return {
-        'Human': 6000.0,       # ~2.7e15 bytes → 6000 TB
-        'Mouse': 2.0,          # ~2.2e12 bytes → 2 TB
-        'Fruitfly': 0.00025,   # ~8.8e8 bytes → 0.00025 TB
-        'C. elegans': 0.001,   # ~3.5e5 bytes → 0.001 TB
+        row['name']: float(row['storage_tb'])
+        for row in rows
     }
 
 
@@ -159,7 +157,7 @@ def load_shared_params() -> Dict[str, Dict[str, Any]]:
 
     Returns dict keyed by parameter ID.
     """
-    filepath = DATA_DIR / "formulas" / "shared.tsv"
+    filepath = DATA_DIR / "parameters" / "shared.tsv"
     rows = load_tsv(filepath)
 
     params = {}

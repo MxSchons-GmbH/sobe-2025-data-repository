@@ -15,6 +15,7 @@ const FORMULAS_DIR = join(DATA_ROOT, 'formulas');
 const ORGANISMS_DIR = join(DATA_ROOT, 'organisms');
 const IMAGING_DIR = join(DATA_ROOT, 'imaging');
 const COSTS_DIR = join(DATA_ROOT, 'costs');
+const PARAMS_DIR = join(DATA_ROOT, 'parameters');
 const DOCS_DIR = join(__dirname, '..', 'docs');
 
 interface ParameterRow {
@@ -50,7 +51,7 @@ These values can be edited in the TSV files under the \`data/\` directory.
 `;
 
   // Shared parameters
-  const shared = readTSV<ParameterRow>(join(FORMULAS_DIR, 'shared.tsv'));
+  const shared = readTSV<ParameterRow>(join(PARAMS_DIR, 'shared.tsv'));
   paramsMd += `## Shared Parameters
 
 Project-level parameters that apply across all calculations.
