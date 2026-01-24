@@ -208,10 +208,10 @@
       ]
     },
     {
-      "id": "brain-fab",
+      "id": "brain-fab-prototype-illustration",
       "title": "Brain Fabrication Concept",
       "description": "Illustration of the brain fabrication concept, showing the theoretical process of constructing or reconstructing neural tissue.",
-      "filename": "brain-fabrication-concept",
+      "filename": "brain-fab-prototype-illustration",
       "organism": [
         "all"
       ],
@@ -264,6 +264,6 @@
     "name": "CC BY 4.0",
     "fullName": "Creative Commons Attribution 4.0 International",
     "url": "https://creativecommons.org/licenses/by/4.0/",
-    "attribution": "Zanichelli, Schons et al., State of Brain Emulation Report 2025"
+    "attribution": "Zanichelli & Schons et al., State of Brain Emulation Report 2025"
   }
 }

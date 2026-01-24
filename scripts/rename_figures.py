@@ -115,7 +115,7 @@ HAND_DRAWN_MAPPING = {
     "larval zebrafish spine": "zebrafish-larval-spinal-cord",
     "mouse brain": "mouse-brain-anatomy",
     "neuron count scale organisms": "neuron-count-scale-comparison",
-    "brain-fab": "brain-fabrication-concept",
+    "brain-fab": "brain-fab-prototype-illustration",
     "neurorecording scale comparison": "neural-recording-scale-comparison",
     "feature illustration": "brain-emulation-feature-illustration",
 }

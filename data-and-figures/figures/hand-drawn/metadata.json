@@ -113,10 +113,10 @@
       "type": ["hand-drawn", "emulation", "overview"]
     },
     {
-      "id": "brain-fab",
+      "id": "brain-fab-prototype-illustration",
       "title": "Brain Fabrication",
       "description": "Conceptual illustration of brain fabrication processes and technologies.",
-      "filename": "brain-fab",
+      "filename": "brain-fab-prototype-illustration",
       "organism": ["all"],
       "type": ["hand-drawn", "technology", "overview"]
     },

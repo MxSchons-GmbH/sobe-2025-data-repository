@@ -137,12 +137,12 @@ LINE_CHART = {
     'linewidth': 2,
     'markersize': 6,
     'markeredgewidth': 1.5,
-    'markeredgecolor': '#FFFFFF',
+    'markeredgecolor': '#4A4A5A',  # COLORS['text'] - visible on gray backgrounds
 }
 
 BAR_CHART = {
     'width': 0.7,
-    'edgecolor': '#FFFFFF',
+    'edgecolor': '#4A4A5A',  # COLORS['text'] - visible on gray backgrounds
     'linewidth': 1,
 }
 

@@ -436,9 +436,10 @@ def generate_emulation_requirements():
 
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.bar(x_pos_org, compute_mids, yerr=compute_errs, alpha=0.85, color=GOLD,
-           ecolor=COLORS['text'], capsize=5, label='Organisms', edgecolor='white')
+           capsize=5, label='Organisms', edgecolor=COLORS['text'],
+           error_kw={'ecolor': COLORS['text'], 'capthick': 1.5, 'markeredgecolor': COLORS['text']})
     ax.bar(x_pos_full, ref_compute, alpha=0.7, color=COLORS['caption'],
-           label='Reference', edgecolor='white')
+           label='Reference', edgecolor=COLORS['text'])
     ax.set_yscale('log')
     ax.set_xticks(x_pos_full)
     ax.set_xticklabels(categories_full, rotation=30, ha='right')
@@ -457,9 +458,10 @@ def generate_emulation_requirements():
 
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.bar(x_pos_org, storage_mids, yerr=storage_errs, alpha=0.85, color=TEAL,
-           ecolor=COLORS['text'], capsize=5, label='Organisms', edgecolor='white')
+           capsize=5, label='Organisms', edgecolor=COLORS['text'],
+           error_kw={'ecolor': COLORS['text'], 'capthick': 1.5, 'markeredgecolor': COLORS['text']})
     ax.bar(x_pos_full, ref_storage, alpha=0.7, color=COLORS['caption'],
-           label='Reference', edgecolor='white')
+           label='Reference', edgecolor=COLORS['text'])
     ax.set_yscale('log')
     ax.set_xticks(x_pos_full)
     ax.set_xticklabels(categories_full, rotation=30, ha='right')
@@ -477,9 +479,10 @@ def generate_emulation_requirements():
 
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.bar(x_pos_org, event_mids, yerr=event_errs, alpha=0.85, color=PURPLE,
-           ecolor=COLORS['text'], capsize=5, label='Organisms', edgecolor='white')
+           capsize=5, label='Organisms', edgecolor=COLORS['text'],
+           error_kw={'ecolor': COLORS['text'], 'capthick': 1.5, 'markeredgecolor': COLORS['text']})
     ax.bar(x_pos_full, ref_compute, alpha=0.7, color=COLORS['caption'],
-           label='Reference', edgecolor='white')
+           label='Reference', edgecolor=COLORS['text'])
     ax.set_yscale('log')
     ax.set_xticks(x_pos_full)
     ax.set_xticklabels(categories_full, rotation=30, ha='right')
@@ -1888,7 +1891,7 @@ def generate_organism_compute():
         width = 0.6
 
         # Plot neurons
-        axes[0].bar(x, neurons, width, color=TEAL, alpha=0.8, edgecolor='white')
+        axes[0].bar(x, neurons, width, color=TEAL, alpha=0.8, edgecolor=COLORS['text'])
         axes[0].set_yscale('log')
         axes[0].set_xticks(x)
         axes[0].set_xticklabels(organism_names, rotation=30, ha='right')
@@ -1896,7 +1899,7 @@ def generate_organism_compute():
         axes[0].set_title('Neuron Count by Organism')
 
         # Plot synapses
-        axes[1].bar(x, synapses, width, color=GOLD, alpha=0.8, edgecolor='white')
+        axes[1].bar(x, synapses, width, color=GOLD, alpha=0.8, edgecolor=COLORS['text'])
         axes[1].set_yscale('log')
         axes[1].set_xticks(x)
         axes[1].set_xticklabels(organism_names, rotation=30, ha='right')
@@ -2186,10 +2189,20 @@ def generate_compute_storage_parallel():
             memory_gb = float(row['Memory_GB'])
             memory_bytes = memory_gb * 1e9
 
+            # Interconnect is in GB/s, convert to bytes/s
+            interconnect_bytes = None
+            if 'Interconnect_GB/s' in row and pd.notna(row['Interconnect_GB/s']):
+                try:
+                    interconnect_gb = float(row['Interconnect_GB/s'])
+                    interconnect_bytes = interconnect_gb * 1e9
+                except (ValueError, TypeError):
+                    pass
+
             systems_data.append({
                 "name": name,
                 "compute-hardware-trends-brain-emulation": compute_flops,
                 "storage": memory_bytes,
+                "interconnect": interconnect_bytes,
                 "color": EXTENDED_CATEGORICAL[idx % len(EXTENDED_CATEGORICAL)],
             })
         except (ValueError, KeyError):
@@ -2200,10 +2213,10 @@ def generate_compute_storage_parallel():
         return
 
     # Create the parallel coordinates plot
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(14, 8))
 
-    x_coords = [0.3, 0.7]  # Two vertical axes
-    axis_labels = ["Compute (FLOP/s)", "Storage (bytes)"]
+    x_coords = [0.25, 0.55, 0.85]  # Three vertical axes
+    axis_labels = ["Compute (FLOP/s)", "Storage (bytes)", "Interconnect (bytes/s)"]
 
     ax.set_xticks(x_coords)
     ax.set_xticklabels(axis_labels, fontsize=12)
@@ -2237,6 +2250,7 @@ def generate_compute_storage_parallel():
     trans = transforms.blended_transform_factory(ax.transAxes, ax.transData)
 
     # Plot organism bands (parallelograms connecting compute and storage ranges)
+    # Only draw between compute and storage axes (interconnect is unknown)
     for name, data in organisms_plot_data.items():
         ax.fill(
             [x_coords[0], x_coords[0], x_coords[1], x_coords[1]],
@@ -2272,14 +2286,23 @@ def generate_compute_storage_parallel():
                       ec=COLORS['border'], lw=1)
         )
 
-    # Plot computer system lines
+    # Plot computer system lines (compute to storage, and storage to interconnect if available)
     for sys_data in systems_data:
+        # Always plot compute to storage
         ax.plot(
-            x_coords, [sys_data['compute-hardware-trends-brain-emulation'], sys_data['storage']],
+            x_coords[:2], [sys_data['compute-hardware-trends-brain-emulation'], sys_data['storage']],
             label=sys_data['name'], color=sys_data['color'],
             marker='o', markersize=6, linewidth=2.5,
             markeredgecolor='white', markeredgewidth=1.5
         )
+        # If interconnect data available, extend line to third axis
+        if sys_data['interconnect'] is not None:
+            ax.plot(
+                x_coords[1:3], [sys_data['storage'], sys_data['interconnect']],
+                color=sys_data['color'],
+                marker='o', markersize=6, linewidth=2.5,
+                markeredgecolor='white', markeredgewidth=1.5
+            )
 
     # Legend with proper styling
     legend = ax.legend(
@@ -2296,6 +2319,39 @@ def generate_compute_storage_parallel():
     # Vertical axis lines
     ax.axvline(x=x_coords[0], color=COLORS['border'], linestyle='-', linewidth=1.5)
     ax.axvline(x=x_coords[1], color=COLORS['border'], linestyle='-', linewidth=1.5)
+    # Third axis is dashed to indicate uncertainty
+    ax.axvline(x=x_coords[2], color=COLORS['border'], linestyle='--', linewidth=1.5)
+
+    # Add large question mark for interconnect axis to indicate unknown requirements
+    # Position between lowest interconnect data point (~2.7e11) and explainer box (~1e7)
+    ax.text(
+        x_coords[2], 1e9,
+        '?', fontsize=72, fontweight='bold',
+        ha='center', va='center',
+        color=COLORS['caption'], alpha=0.5
+    )
+
+    # Add explanatory note for interconnect uncertainty (positioned below the question mark)
+    interconnect_note = (
+        "Interconnect requirements depend on compute\n"
+        "network topology and precise synaptic connectome\n"
+        "data, which remain largely unknown.\n"
+        "Experts agree that interconnect is a considerable bottleneck."
+    )
+    ax.text(
+        x_coords[2], ymin_plot * 100,
+        interconnect_note,
+        ha='center', va='top',
+        fontsize=10, fontstyle='italic',
+        color=COLORS['caption'],
+        bbox=dict(
+            boxstyle='round,pad=0.5',
+            facecolor=COLORS['figure_bg'],
+            edgecolor=COLORS['grid'],
+            alpha=0.9
+        ),
+        linespacing=1.4
+    )
 
     # Clean up spines
     for spine in ax.spines.values():
@@ -2305,7 +2361,7 @@ def generate_compute_storage_parallel():
     ax.set_title('Computer Systems vs Organism Simulation Requirements (Event-Driven)',
                  fontsize=14, pad=15, color=COLORS['title'], fontweight='600')
 
-    plt.subplots_adjust(left=0.12, right=0.72, top=0.92, bottom=0.08)
+    plt.subplots_adjust(left=0.10, right=0.78, top=0.92, bottom=0.08)
 
     save_figure(fig, 'compute-storage-trends-parallel')
     plt.close()
@@ -2368,19 +2424,6 @@ def build_all():
     except Exception as e:
         logger.error(f"Error building downloads: {e}")
         logger.info("You can run 'python build_downloads.py' separately to generate ZIPs.")
-
-    # Build Standalone HTML Files
-    logger.info("")
-    logger.info("=" * 60)
-    logger.info("Building standalone HTML files for iframe embedding...")
-    logger.info("=" * 60)
-
-    try:
-        from build_standalone_html import main as build_standalone_html
-        build_standalone_html()
-    except Exception as e:
-        logger.error(f"Error building standalone HTML: {e}")
-        logger.info("You can run 'python build_standalone_html.py' separately.")
 
 
 def main():

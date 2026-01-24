@@ -1,7 +1,7 @@
 # Brain Emulation Report 2025 - Makefile
 # Common tasks for figure generation and build pipeline
 
-.PHONY: help install figures downloads html serve clean all
+.PHONY: help install figures downloads validate serve clean all
 
 PYTHON ?= python3
 SCRIPTS_DIR = scripts
@@ -16,10 +16,10 @@ help:
 	@echo "  install     Install Python dependencies"
 	@echo "  figures     Generate all figures"
 	@echo "  downloads   Build ZIP archives for download"
-	@echo "  html        Build standalone HTML files for embedding"
+	@echo "  validate    Run quality checks"
 	@echo "  serve       Start local development server"
 	@echo "  clean       Remove generated files"
-	@echo "  all         Run full pipeline (figures + downloads + html)"
+	@echo "  all         Run full pipeline (figures + downloads)"
 	@echo ""
 
 install:
@@ -31,23 +31,24 @@ figures:
 downloads:
 	cd $(SCRIPTS_DIR) && $(PYTHON) build_downloads.py
 
-html:
-	cd $(SCRIPTS_DIR) && $(PYTHON) build_standalone_html.py
+validate:
+	cd $(SCRIPTS_DIR) && $(PYTHON) validate.py
 
 serve:
 	@echo "Starting server at http://localhost:8000"
-	@echo "Open http://localhost:8000/figures.html or http://localhost:8000/data.html"
 	cd $(OUTPUT_DIR) && $(PYTHON) -m http.server 8000
 
 clean:
 	rm -rf $(OUTPUT_DIR)/figures/generated/*.png
 	rm -rf $(OUTPUT_DIR)/figures/generated/*.svg
+	rm -rf $(OUTPUT_DIR)/figures/generated/*.webp
+	rm -rf $(OUTPUT_DIR)/figures/generated/*.avif
 	rm -rf $(OUTPUT_DIR)/figures/generated/neuro-sim/*
 	rm -rf $(OUTPUT_DIR)/figures/generated/neuro-rec/*
 	rm -rf $(OUTPUT_DIR)/figures/generated/radar-charts/*
 	rm -rf $(OUTPUT_DIR)/downloads/*.zip
 
-all: figures downloads html
+all: figures downloads
 	@echo ""
 	@echo "Build complete!"
 	@echo "Output in: $(OUTPUT_DIR)/"
