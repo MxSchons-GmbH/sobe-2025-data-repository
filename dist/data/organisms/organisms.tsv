@@ -1,0 +1,7 @@
+id	name	neurons	volume_mm3	synapses	source
+c_elegans	C. elegans	302	0.001	7500	WormAtlas
+drosophila	Drosophila (fruit fly)	135000	0.5	50000000	FlyWire
+zebrafish_larva	Zebrafish larva	100000	0.1	10000000	Literature
+mouse	Mouse	70000000	500	700000000000	Literature
+macaque	Macaque	6400000000	87000	6.4e+13	Literature
+human	Human	86000000000	1200000	1.5e+14	Literature

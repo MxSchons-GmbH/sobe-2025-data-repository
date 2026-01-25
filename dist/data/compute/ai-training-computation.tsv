@@ -1,0 +1,905 @@
+Entity	Code	Day	Training computation (petaFLOP)	Domain
+(ensemble): AWD-LSTM-DOC (fin) × 5 (WT2)		2018-08-30	693.0	Language
+2-layer-LSTM+Deep-Gradient-Compression		2017-12-05	1.34	Language
+3D city reconstruction		2009-09-29		Other
+4 layer QRNN (h=2500)		2018-03-22	240.00002	Language
+6-Act Tether		2021-08-03		Other
+6-layer MLP (MNIST)		2010-03-01	0.130788	Vision
+A3C FF hs		2016-02-04		Games
+ADALINE		1960-06-30	9.9e-12	Vision
+ADAM (CIFAR-10)		2014-12-22	60.48	Vision
+ADAPTIVE NLPM		2008-12-08		Language
+ADM		2021-05-11	6200000.0	Image generation
+AFM-on-device		2024-07-29	451260000.0	Language
+AFM-server		2024-07-29		Language
+ALBERT		2019-09-26		Language
+ALBERT-xxlarge		2020-02-09	2390000.0	Language
+ALIGN		2021-06-11	25986700.0	Multiple domains
+ALM 1.0		2022-11-28		Language
+ALVINN		1989-12-01	1.0548576e-05	Other
+AMDIM		2019-06-03		Multiple domains
+ANN Eye Tracker		1993-11-29	1.7534401e-05	Vision
+AR-LDM		2022-11-20	510000.0	Image generation
+ASE+ACE		1983-09-01	3.24e-07	Other
+ATLAS		2020-05-02	38257.92	Language
+AWD-LSTM		2017-07-18		Language
+AWD-LSTM + MoS + Partial Shuffled		2019-06-10	328.0	Language
+AWD-LSTM - 3-layer LSTM (tied) + continuous cache pointer (WT2)		2017-08-07	309.00003	Language
+AWD-LSTM+WT+Cache+IOG (WT2)		2017-09-26	3.3100002	Language
+AWD-LSTM-DRILL + dynamic evaluation† (WT2)		2019-05-14	424.0	Language
+AWD-LSTM-MoS + dynamic evaluation (WT2, 2017)		2017-11-10	437.0	Language
+AWD-LSTM-MoS + dynamic evaluation (WT2, 2018)		2018-09-18		Language
+AWD-LSTM-MoS+PDR + dynamic evaluation (WT2)		2018-08-14		Language
+AbLang (heavy sequences)		2022-01-22		Biology
+AdaBoost.M2 Digit Recognition		1996-07-03		Vision
+AdaRNN		2014-06-01		Language
+Adaptive Input Transformer + RD		2021-06-28	82000.0	Language
+Adaptive Inputs + LayerDrop		2019-09-25		Language
+Adaptive Subgrad		2011-10-03		Language
+Advantage Learning		2015-12-15		Games
+Adversarial Joint Adaptation Network (ResNet)		2017-08-17		Vision
+Agent57		2020-03-30		Games
+Agile Soccer Robot		2023-04-26		Other
+AlexNet		2012-09-30	470.0	Vision
+AlexaTM 20B		2022-08-02	204374020.0	Language
+AlphaCode		2022-02-02	163944000.0	Language
+AlphaFold		2020-01-15	100000.0	Biology
+AlphaFold 2		2020-11-30	2990000.0	Biology
+AlphaFold-Multimer		2021-10-04	4350000.0	Biology
+AlphaGeometry		2024-01-17		Other
+AlphaGo Fan		2015-10-01	380000.03	Games
+AlphaGo Lee		2016-01-27	1900000.0	Games
+AlphaGo Master		2017-01-01	200010000.0	Games
+AlphaGo Zero		2017-10-18	341000000.0	Games
+AlphaMissense		2023-09-22		Biology
+AlphaStar		2019-10-30	59250000.0	Games
+AlphaX-1		2019-10-02	7600.0	Vision
+AlphaZero		2017-12-05	36679270.0	Games
+AltCLIP_M9		2022-11-12		Multiple domains
+Amazon Titan		2023-09-28	4800000000.0	Multiple domains
+AmoebaNet-A (F=190)		2018-02-05		Vision
+AmoebaNet-A (F=448)		2018-02-05	385296.9	Vision
+Ankh_large		2023-01-16	6500000.0	Biology
+AudioGen		2023-03-05	9500000.0	Other
+AudioLM		2023-07-26	3900.0	Other
+Aya		2024-02-12		Language
+BART-large		2019-10-29		Language
+BASIC-L		2021-11-19	41200000.0	Vision
+BASIC-L + Lion		2023-02-13		Vision
+BEIT-3		2022-08-22	70000.0	Multiple domains
+BERT-Large		2018-10-11	285000.0	Language
+BERT-Large-CAS (PTB+WT2+WT103)		2019-04-20	521000.03	Language
+BERT-RBP		2022-04-07	140000.0	Biology
+BIDAF		2016-11-05	3468.6145	Language
+BLIP-2 (Q-Former)		2023-01-30	1200000.0	Multiple domains
+BLOOM-176B		2022-07-11	365664000.0	Language
+BLOOMZ-176B		2022-11-03		Language
+BLSTM for handwriting (1)		2007-09-23		Vision
+BLSTM for handwriting (2)		2007-12-03		Vision
+BLUUMI		2023-11-03		Language
+BOXES		1968-07-01		Games
+BPE		2015-08-31		Language
+BPL		2015-12-11		Image generation
+Back-propagation		1986-10-01	1.24416e-07	Other
+Bankruptcy-NN		1990-06-17	3.0593378e-06	Other
+Base LM + kNN LM + Continuous Cache		2019-11-01	7300.0005	Language
+BatchNorm		2015-06-15		Vision
+Bayesian automated hyperparameter tuning		2012-12-02		Other
+BellKor 2007		2009-09-21		Other
+BellKor 2008		2009-08-01		Other
+BellKor 2009		2009-08-01		Other
+BiLSTM for Speech		2005-08-01	0.024124576	Speech
+Bidirectional RNN		1997-11-01		Speech
+Big Transfer (BiT-L)		2019-12-24		Vision
+Big Transformer for Back-Translation		2018-08-28	478080.0	Language
+Big-Little Net		2018-07-10	246.048	Vision
+Big-Little Net (speech)		2018-07-10	429.00482	Speech
+BigBiGAN		2019-07-04		Multiple domains
+BigChaos 2008		2008-11-25		Other
+BigChaos OptiBlend		2009-08-01		Other
+BigGAN-deep 512x512		2018-09-28	1800000.0	Image generation
+BigSSL		2021-01-10		Speech
+Binarized Neural Network (MNIST)		2016-03-17		Vision
+BlenderBot 3		2022-08-10	430000030.0	Language
+BloombergGPT		2023-03-30	236000020.0	Language
+Boosting		1992-11-30		Vision
+Boss (DARPA Urban Challenge)		2008-07-23		Other
+ByT5-XXL		2021-05-28	81000000.0	Language
+CICERO		2022-11-22		Games
+CLIP (ResNet-50)		2021-01-05		Multiple domains
+CLIP (ViT L/14@336px)		2021-01-05	10500000.0	Multiple domains
+CNN Best Practices		2003-08-06		Vision
+CODEFUSION (Python)		2023-10-26	7920.0	Language
+CPC v2		2019-05-22		Multiple domains
+CPM-Large		2020-12-01	1800000.0	Language
+CRF-RNN		2015-02-11		Vision
+CT-MoS (WT2)		2020-12-25	562.0	Language
+CTC-Trained LSTM		2006-06-25		Speech
+CTM (CIFAR-10)		2023-10-01		Image generation
+CURL		2020-04-08		Games
+CaLM		2022-12-19	29000.0	Biology
+CamemBERT		2019-11-10	830000.0	Language
+Cancer drug mechanism prediction		1992-10-16	5.346e-08	Other
+CapsNet (MNIST)		2017-10-26		Vision
+CapsNet (MultiMNIST)		2017-10-26		Vision
+Cascaded LNet-ANet		2014-11-28		Vision
+Ceramic-MLP		1994-01-01	4.5312e-06	Other
+Char-CNN-BiLSTM		2019-06-13		Language
+Character-enriched word2vec		2016-07-15		Language
+ChatGLM3-6B		2023-10-27	50400000.0	Multiple domains
+Chinchilla		2022-03-29	576000000.0	Language
+Chinese - English translation		2018-03-01		Language
+Claude		2023-03-14		Language
+Claude 2		2023-07-11	3866000100.0	Language
+Claude 2.1		2023-11-21		Language
+Claude 3 Opus		2024-03-04		Multiple domains
+Claude 3.5 Sonnet		2024-06-20		Multiple domains
+CoAtNet		2021-06-09	42700004.0	Vision
+CoCa		2022-06-14	73000000.0	Vision
+CoEdiT-xxl		2023-05-17		Language
+CoRe		2023-12-29		Multiple domains
+CodeT5+		2023-05-20		Language
+CodeT5-base		2021-11-01	1560000.1	Language
+CodeT5-large		2022-07-05	2720000.0	Language
+Codex		2021-07-07	73440000.0	Language
+CogAgent		2023-12-14	67070004.0	Multiple domains
+CogVLM-17B		2023-11-06	63310000.0	Multiple domains
+CogVideo		2022-05-29		Multiple domains
+CogView		2021-05-26	26800000.0	Image generation
+Cognitron		1975-09-01	5.76e-09	Other
+Cohere Embed		2023-11-02		Language
+Conformer		2020-05-16		Speech
+Conformer + Wav2vec 2.0 + Noisy Student		2020-10-20	7600000.0	Speech
+Constituency-Tree LSTM		2015-02-28		Language
+Context-dependent RNN		2012-07-27		Language
+ContextNet		2020-05-07		Speech
+ContextNet + Noisy Student		2020-01-19	8160000.0	Speech
+Contriever		2021-12-16	157000.0	Language
+Conv-DBN		2009-06-14		Vision
+ConvNet similarity metric		2005-06-20		Vision
+ConvS2S (ensemble of 8 models)		2017-07-25	56400.0	Language
+Convolutional Pose Machines		2016-01-30		Vision
+Cross-Lingual POS Tagger		2011-06-19		Language
+Cross-lingual alignment		2019-04-04	2560.0	Language
+Cutout-regularized net		2017-08-15		Vision
+DALL-E		2021-01-05	47000000.0	Image generation
+DALL·E 2		2022-04-06		Image generation
+DALL·E 3		2023-10-19		Image generation
+DANet		2019-04-21		Vision
+DARTS		2018-06-24	11.0	Language
+DBLSTM		2013-12-08		Speech
+DCN+		2017-10-31		Language
+DD-PPO		2019-12-19	780000.06	Other
+DDPM-IP (CelebA)		2023-01-27	350000.0	Image generation
+DETR		2020-05-26	400000.0	Vision
+DINOv2		2023-04-14	7418511.0	Vision
+DITTO		2022-06-06	11000.0	Language
+DLRM-2020		2019-05-31	4000.0	Other
+DMN		2016-06-20		Language
+DNABERT		2021-08-15	107000.01	Biology
+DOT(S)-RNN		2013-12-20		Language
+DQN		2013-12-19	2.3000002	Games
+DQN-2015		2015-02-25		Games
+DeBERTa		2021-06-10	25880000.0	Language
+DeBERTaV3-large + KEAR		2021-12-06		Language
+DeLighT		2020-08-03	24000.0	Language
+DeViSE		2013-12-05		Vision
+Decision tree (classification)		2001-12-08	0.063	Vision
+Decision tree adaline		1969-05-01		Other
+Deconvolutional Network		2010-06-13		Vision
+Decoupled weight decay regularization		2019-01-04	2470.0002	Vision
+Deep Autoencoders		2011-01-01	36.72864	Vision
+Deep Belief Nets		2006-07-18		Vision
+Deep Blue		1997-05-01		Games
+Deep Boltzmann Machines		2009-04-16		Other
+Deep Deterministic Policy Gradients		2015-09-09		Other
+Deep LSTM video classifier		2015-05-01		Other
+Deep Multitask NLP Network		2008-07-05		Language
+Deep rectifier networks		2011-04-13		Vision
+DeepFace		2014-06-23		Vision
+DeepLab		2014-12-22		Vision
+DeepLab (2017)		2017-04-27		Vision
+DeepLabV3		2017-06-17		Vision
+DeepLabV3+		2018-02-07		Vision
+DeepNash		2022-12-01		Games
+DeepNet		2022-03-01		Language
+DeepSeek-Coder-V2 236B		2024-06-17	1285200000.0	Language
+DeepSpeech2 (English)		2015-12-08	26000.0	Speech
+DeepStack		2017-01-06	14463.36	Games
+Deeply-recursive ConvNet		2016-11-11		Multiple domains
+Deeply-supervised nets		2014-09-18		Vision
+DeiT-B		2021-01-15	78840.0	Vision
+Denoising Autoencoders		2008-07-05		Other
+Denoising Diffusion Probabilistic Models (LSUN Bedroom)		2021-06-11	380000.03	Vision
+DenseNet-264		2016-08-25		Vision
+DensePhrases		2020-12-23	2099.52	Language
+Detic		2022-01-07	23439.975	Vision
+DiT-XL/2		2023-03-02	600000.0	Image generation
+DiT-XL/2 + CADS		2023-10-26		Image generation
+DiT-XL/2 + Discriminator Guidance		2022-11-28		Image generation
+Diabetic Retinopathy Detection Net		2016-12-13		Vision
+DiffDock		2022-10-04	72000.0	Biology
+Differentiable neural computer		2016-10-12		Language
+Diffractive Deep Neural Network		2018-04-14		Vision
+Diffusion-GAN		2022-06-05		Image generation
+Dimensionality Reduction		2006-07-18		Vision
+Diplodocus		2022-10-11		Games
+Discriminator Guidance		2022-11-28	215700.0	Image generation
+DistBelief NNLM		2013-01-16	2612.736	Language
+DistBelief Speech		2012-12-03	311.40002	Speech
+DistBelief Vision		2012-12-03		Vision
+DistilBERT		2019-10-02	12441.6	Language
+Distributed representation NN		1986-01-01	3.888e-07	Other
+DnCNN		2017-02-01		Multiple domains
+Domain Adaptation		2011-11-06		Vision
+DrLIM		2006-06-17		Other
+Dropout (CIFAR)		2012-06-03	4.2687	Vision
+Dropout (ImageNet)		2012-06-03	273.1968	Vision
+Dropout (MNIST)		2012-06-03	6.039371	Vision
+Dropout (TIMIT)		2012-06-03		Speech
+Dropout-LSTM+Noise(Bernoulli) (WT2)		2018-05-03	127.0	Language
+EDSR		2017-06-10		Multiple domains
+EI-REHN-1000D		2017-08-14	10.599999	Language
+ELECTRA		2020-03-23	3100000.0	Language
+ELMo		2018-02-01		Language
+EMDR		2021-06-09	1910000.0	Language
+ENAS		2018-02-09	20.1	Language
+EN^2AS with performance reward		2019-07-22		Language
+ERNIE 3.0		2021-07-05	22500000.0	Language
+ERNIE 3.0 Titan		2021-12-23	1042100030.0	Language
+ERNIE 3.5		2023-06-27		Language
+ERNIE 4.0		2023-10-17		Multiple domains
+ERNIE-Doc (247M)		2020-12-31	29100.0	Language
+ERNIE-GEN (large)		2020-08-06	200000.0	Language
+ERNIE-ViLG		2021-12-31		Multiple domains
+ESM1b		2020-12-15	5100000.0	Biology
+ESM2-15B		2022-07-21	73500000.0	Biology
+ESM3 (98B)		2024-06-25	1070000000.0	Biology
+ESRGAN		2018-09-01		Multiple domains
+EVA-01		2022-11-14	15010000.0	Vision
+EfficientDet		2020-07-27		Vision
+EfficientNet-L2		2019-05-28		Vision
+EfficientNetV2-XL		2021-06-23	95600.01	Vision
+EfficientZero		2021-10-30		Games
+Elastic weight consolidation		2016-12-02		Multiple domains
+Empirical evaluation of deep architectures		2007-06-01		Other
+EnCodec		2022-10-24		Other
+Enhanced Neighborhood-Based Filtering		2007-10-28		Other
+Error Propagation		1986-01-03		Other
+Eve		2021-10-27		Biology
+FAIRSEQ Adaptive Inputs		2019-04-01	7300.0005	Language
+FAST		2006-05-07		Other
+FLAN 137B		2021-09-03	2047000000.0	Language
+Falcon-180B		2023-09-06	3760000300.0	Language
+Falcon-40B		2023-03-15	240000000.0	Language
+Fast R-CNN		2015-04-30		Vision
+Faster R-CNN		2015-06-04		Vision
+Feedback Transformer		2020-02-21	44100.0	Language
+Feedforward NN		2010-05-13	0.35000002	Vision
+Ferret (13B)		2023-10-11		Multiple domains
+FinGPT-13B		2023-10-07	160000000.0	Language
+Fine-tuned-AWD-LSTM-DOC (fin)		2018-11-12	51.88	Language
+Firefly		2023-03-21		Image generation
+Fisher Kernel GMM		2007-07-16		Vision
+Fisher Vector image classifier		2013-06-12	0.0908424	Vision
+Fisher-Boost		2010-09-05		Vision
+FixRes ResNeXt-101 WSL		2019-06-14		Vision
+Flamingo		2022-04-29	218972000.0	Multiple domains
+Flan T5-XXL + BLIP-2		2023-01-30		Multiple domains
+Flan-PaLM 540B		2022-10-20	2500000000.0	Language
+Flan-T5 11B		2022-10-20	33000000.0	Language
+Florence		2021-11-22	48310000.0	Vision
+Fractional Max-Pooling		2014-12-18	100.0	Vision
+Fragment embedding		2014-06-21		Other
+FrameNet role labeling		2000-09-01		Language
+Fraternal dropout + AWD-LSTM 3-layer (WT2)		2017-10-31	98.5	Language
+Fully Convolutional Networks		2014-11-14		Vision
+FunSearch		2023-12-14	387000000.0	Multiple domains
+Fusion in Encoder		2022-11-18	130000.0	Language
+Fuzzy NN		1992-09-01	1.4031178e-06	Speech
+GAN-Advancer		2016-12-05		Vision
+GANs		2014-06-10	518.4	Image generation
+GBERT-Large		2020-10-21	2244464.5	Language
+GCNN-14		2016-12-23		Language
+GGNN		2023-08-05	7560000.5	Biology
+GL-LWGC-AWD-MoS-LSTM + dynamic evaluation (WT2)		2017-08-29	474.00003	Language
+GLEE		1968-07-01		Games
+GLIDE		2021-12-20	47000000.0	Image generation
+GLM-130B		2022-08-04	354900540.0	Language
+GLM-4 (0520)		2024-06-18	12000000000.0	Language
+GLaM		2021-12-13	363631140.0	Language
+GNMT		2016-09-26	6620000.0	Language
+GOAT		2021-07-27	24120000.0	Games
+GPT-1		2018-06-01	17578.125	Language
+GPT-2 (1.5B)		2019-02-14	1920000.1	Language
+GPT-3 175B (davinci)		2020-05-28	314000000.0	Language
+GPT-3.5 (text-davinci-003)		2022-11-28	2578000000.0	Language
+GPT-3.5 Turbo		2022-11-30		Language
+GPT-4		2023-03-15	21000000000.0	Multiple domains
+GPT-4 Turbo		2023-11-06		Multiple domains
+GPT-4V		2023-09-25		Multiple domains
+GPT-4o		2024-05-13		Multiple domains
+GPT-NeoX-20B		2022-02-09	93162700.0	Language
+GPU DBNs		2009-06-15	1.0	Other
+GPipe (Amoeba)		2018-11-16		Vision
+GPipe (Transformer)		2018-11-16		Language
+GRUs		2014-06-03		Language
+GSM		2017-07-30		Language
+GShard (dense)		2020-06-30	47650000.0	Language
+Galactica		2022-11-16	324000000.0	Multiple domains
+Gated HORNN (3rd order)		2016-04-30		Language
+Gato		2022-05-12	4020000.0	Multiple domains
+Gemini 1.0 Pro		2023-12-06		Multiple domains
+Gemini 1.0 Ultra		2023-12-06	50000003000.0	Multiple domains
+Gemini 1.5 Pro		2024-02-15		Multiple domains
+Gemini Nano-1		2023-12-19		Multiple domains
+Gemini Nano-2		2023-12-19		Multiple domains
+Gen-1		2023-02-06		Other
+Gen-2		2023-03-20		Other
+GenSLM		2022-10-11	1420000.0	Biology
+Generative BST		2021-03-05	14490000.0	Language
+Genetic algorithm		1954-07-02		Other
+German ELECTRA Large		2020-10-21	1428295.6	Language
+GloVe (32B)		2014-01-01		Language
+GloVe (6B)		2014-01-01		Language
+Go-explore		2020-04-27		Games
+Goat-7B		2023-05-23		Language
+Golem		1992-10-01		Biology
+GoogLeNet / InceptionV1		2014-09-17	1510.0	Vision
+Gopher (280B)		2021-12-08	631000000.0	Language
+Gradient Boosting Machine		2001-10-01		Other
+Graph-based structural reasoning		1970-09-01		Vision
+GraphCast		2023-11-14	21000000.0	Other
+Greedy layer-wise DNN training		2006-12-04		Other
+GroupLens		1994-10-22		Other
+HLBL		2008-12-08		Language
+HMM Word Alignment		1996-08-05		Language
+HOGWILD!		2011-11-11		Other
+HRA		2017-06-13		Games
+Hanabi 4 player		2019-02-01	4300.0	Games
+Handwritten Digit Recognition System		1989-01-01	0.00018144	Vision
+Heuristic Reinforcement Learning		1965-10-01	1.08e-09	Other
+Hierarchical Cognitron		1984-04-01		Other
+Hierarchical LM		2005-01-01	0.115848005	Language
+Hiero		2005-06-01		Language
+Histograms of Oriented Gradients		2005-06-25		Vision
+Hopfield Networks (2020)		2020-07-16		Multiple domains
+Hopfield network		1982-04-01		Other
+HuBERT		2021-07-27	5540000.0	Speech
+Hybrid H3-2.7B		2022-12-28	849000.06	Language
+HyenaDNA		2023-06-27	1811000.0	Biology
+HyperCLOVA 204B		2021-09-10		Language
+HyperNEAT		2014-03-05		Games
+IBM Model 4		1999-07-02		Language
+IBM-5		1993-06-15		Language
+IMPALA		2018-02-05	168000.0	Games
+ISR network		1990-10-01		Vision
+ISS		2017-09-15	3.4	Language
+Image generation		2013-12-20	0.47520003	Vision
+Image-to-image cGAN		2016-11-21		Multiple domains
+ImageBind		2023-05-09		Multiple domains
+Imagen		2022-05-23	14600000.0	Image generation
+Immediate trihead		2001-07-06		Language
+Inception v3		2015-12-02		Vision
+Inception-ResNet-V2		2016-02-23		Vision
+Inceptionv4		2016-02-23		Vision
+Incoder-6.7B		2023-04-09	3000010.2	Language
+Inflated 3D ConvNet		2017-06-01		Other
+Inflection-2		2023-11-22	10010000000.0	Language
+Inflection-2.5		2024-03-07	10001000000.0	Language
+Innervator		1989-01-01	1.2e-07	Other
+InstructBLIP		2023-05-11	194000.0	Multiple domains
+InstructGPT		2022-01-27		Language
+InternImage		2022-11-10	2408000.2	Vision
+InternLM		2023-07-06		Language
+Internal functionality of visual invariants		1979-05-02		Vision
+Invariant CNN		2004-06-27	0.00097423	Vision
+Invariant image recognition		1989-06-18	2.7e-05	Vision
+Iterative Bootstrapping WSD		1995-06-26		Language
+JFT		2017-07-10	843000.06	Vision
+JPMAX		1994-01-01	8.082828e-08	Vision
+Jais		2023-08-29	30800002.0	Language
+Jurassic-1-Jumbo		2021-08-11	370000000.0	Language
+KEPLER		2020-11-23	124000.0	Language
+KN-LM		2007-06-22	773.03815	Language
+KataGo		2019-02-27	23200.002	Games
+Kohonen network		1981-07-25		Other
+LDA		2003-02-02		Language
+LDM-1.45B		2021-12-20		Image generation
+LEP-AD		2023-03-15		Biology
+LISSOM		1995-11-27	0.0001955448	Vision
+LLaMA-65B		2023-02-24	550000000.0	Language
+LLaVA		2023-04-17	78049000.0	Multiple domains
+LLaVA 1.5		2023-11-05	78070000.0	Multiple domains
+LMICA		2004-12-01	2.7820802	Vision
+LMS		1960-06-30		Multiple domains
+LMSI-Palm		2022-10-20		Language
+LRCN		2014-11-07		Other
+LRSO-GAN		2017-10-22		Vision
+LSTM		1997-11-15	0.021008	Language
+LSTM (2018)		2018-03-04		Language
+LSTM (Hebbian, Cache, MbPA)		2018-03-27	33300.0	Language
+LSTM + dynamic eval		2017-09-21		Language
+LSTM LM		2012-01-01	16.6	Language
+LSTM with forget gates		1999-01-02		Language
+LSTM+NeuralCache		2018-09-24	1.02	Language
+LSTM-300units		2012-09-01		Language
+LSTM-Char-Large		2015-08-26	2.6499999	Language
+LTE speaker verification system		1966-11-01	1.0591706e-07	Speech
+LTM-1		2023-06-06		Language
+LUKE		2020-10-02	18144000.0	Language
+LaMDA		2022-02-10	355000000.0	Language
+LaNet-L (CIFAR-10)		2019-06-17		Vision
+Large regularized LSTM		2014-09-08	91.0	Language
+LeNet-5		1998-11-01	0.0028109376	Vision
+Learnability theory of language development		1984-07-01		Language
+Libratus		2017-01-01	551000.0	Games
+Linear Decision Functions		1962-06-01	1.5592501e-09	Other
+Listen, Attend and Spell		2015-08-20		Speech
+Llama 2-70B		2023-07-18	810000000.0	Language
+Llama 2-7B		2023-07-18	84000000.0	Language
+Llama 3-70B		2024-04-18	7861000000.0	Language
+Llama 3.1-405B		2024-07-23	38000000000.0	Language
+Llama Guard		2023-12-07	160000000.0	Language
+Local Binary Patterns for facial recognition		2006-12-01		Vision
+LongT5		2021-12-15		Language
+M4-50B		2019-10-11		Language
+M6-T		2021-03-05	5500000.5	Multiple domains
+MADALINE I		1962-07-01		Other
+MCDNN (MNIST)		2012-02-13	3.726979	Vision
+MEB		2021-09-04		Multiple domains
+MLN-ASR		1988-08-01	2.96425e-07	Speech
+MLP baggage detector		1989-01-01		Vision
+MM1-30B		2024-03-14	486000000.0	Multiple domains
+MMLSTM		2019-12-05	2320.0	Language
+MS-CNN		2016-09-17		Vision
+MSA Transformer		2021-02-13	5490000.0	Biology
+MSRA (C, PReLU)		2015-02-06	23974.031	Vision
+MT-DNN		2019-01-31		Language
+MUSIC perceptron		1996-06-03	0.0008817336	Vision
+MV-RNN		2012-07-12		Language
+Make-A-Video		2022-09-29		Other
+Mamba-24M (SC09)		2023-12-01		Speech
+Mask R-CNN		2017-03-30		Vision
+Masked Autoencoders ViT-H		2021-11-11	460000.0	Vision
+MatrixFac for Recommenders		2009-08-07		Other
+Max-Margin Markov Networks		2004-03-01		Multiple domains
+Maximum Entropy Models for machine translation		2002-07-06		Language
+Maximum compute		1950-07-02	4e-14	Other
+Maximum compute		1957-01-01	6.948949e-10	Other
+Maximum compute		1959-02-01	6e-07	Language
+Maximum compute		1960-03-30	7.2e-07	Vision
+Maximum compute		1987-06-06	2.8328002e-05	Speech
+Maximum compute		1989-01-01	0.00018144	Vision
+Maximum compute		1992-05-01	0.018232157	Games
+Maximum compute		1994-01-01	0.018621901	Language
+Maximum compute		1997-11-15	0.021008	Language
+Maximum compute		2000-01-01	6.339	Language
+Maximum compute		2007-06-22	1449.4465	Language
+Maximum compute		2013-01-16	2612.736	Language
+Maximum compute		2014-12-03	297600.0	Language
+Maximum compute		2015-10-01	380000.03	Games
+Maximum compute		2016-09-26	6620000.0	Language
+Maximum compute		2017-10-18	341000000.0	Games
+Maximum compute		2021-09-03	2047000000.0	Language
+Maximum compute		2022-06-29	2741500200.0	Language
+Maximum compute		2023-12-06	50000003000.0	Multiple domains
+Maximum data		1950-07-02	4e-14	Other
+Maximum data		1959-07-01	4.284e-07	Games
+Maximum data		1983-09-01	3.24e-07	Other
+Maximum data		1992-05-01	0.018232157	Games
+Maximum data		2007-06-22	1449.4465	Language
+Maximum data		2021-02-13	5490000.0	Biology
+Maximum data		2024-09-19	7800000000.0	Language
+Maximum data		1955-03-01		Other
+Maximum data		1993-06-15		Language
+Maximum data		1994-10-22		Other
+Maximum data		1995-06-26		Language
+Maximum parameters		1950-07-02	4e-14	Other
+Maximum parameters		1957-01-01	6.948949e-10	Other
+Maximum parameters		1975-09-01	5.76e-09	Other
+Maximum parameters		1980-04-01	2.281152e-07	Vision
+Maximum parameters		2001-12-08	0.063	Vision
+Maximum parameters		2007-06-22	1449.4465	Language
+Maximum parameters		2021-01-11	82200000.0	Language
+Maximum parameters		1955-03-01		Other
+Maximum parameters		1959-12-01		Vision
+Maximum parameters		1993-06-15		Language
+Maximum parameters		1995-09-01		Vision
+Maximum parameters		2023-10-25		Language
+Maxout Networks		2013-02-18		Vision
+MedBERT		2021-05-20	9470.0	Other
+Meena		2020-01-28	112000000.0	Language
+MegaScale (Production)		2024-02-23	12000000000.0	Language
+MegaSyn		2022-03-07		Other
+Megatron-BERT		2019-09-17	22000002.0	Language
+Megatron-LM (8.3B)		2019-09-17	9100000.0	Language
+Megatron-Turing NLG 530B		2021-10-11	1170000000.0	Language
+MemoReader		2018-10-31		Language
+Mesh-TensorFlow Transformer 2.9B (translation)		2018-11-05	68428.805	Language
+Mesh-TensorFlow Transformer 4.9B (language)		2018-11-05	161740.8	Language
+MetNet		2020-03-24		Other
+Meta Movie Gen Video		2024-10-04	1650000000.0	Other
+Meta Pseudo Labels		2021-03-01	47900004.0	Vision
+MetaLM		2022-06-13		Multiple domains
+MetaMimic		2018-10-11		Other
+Mid-level Features		2010-06-13		Vision
+Midjourney V1		2022-02-15		Image generation
+Minerva (540B)		2022-06-29	2741500200.0	Language
+Mistral Large		2024-02-26	11200000000.0	Language
+Mistral Large 2		2024-07-24	21300000000.0	Language
+Mitosis		2013-09-22	137.0	Multiple domains
+Mixtral 8x7B		2023-12-11		Language
+Mixture of linear models		1994-01-01	0.0004536	Vision
+MnasNet-A1 + SSDLite		2019-05-29	1500000.0	Vision
+MnasNet-A3		2019-05-29	1500000.0	Vision
+Mnemonic Reader		2017-05-08		Language
+MoCo		2019-11-13		Multiple domains
+MoE-Multi		2017-01-23	93939.055	Language
+MobileNet		2017-04-17		Vision
+MobileNetV2		2018-06-18		Vision
+Mogrifier (d2, MoS2, MC) + dynamic eval		2019-09-04		Language
+Mogrifier RLSTM (WT2)		2022-11-03	140.0	Language
+Monocular Depth Prediction		2005-12-05		Vision
+Motion-Driven 3D Feature Tracking		1988-07-01		Other
+MuZero		2019-11-19	48000.0	Games
+Multi-cell LSTM		2018-11-15	2.01	Language
+Multi-scale Dilated CNN		2015-11-23		Vision
+Multi-task Cascaded CNN		2016-08-26		Vision
+MultiBand Diffusion		2023-11-08	26000.0	Multiple domains
+Multilingual DNN		2013-05-26		Speech
+Multiresolution CNN		2014-06-23		Other
+Multiscale deformable part model		2008-06-23		Vision
+MusicGen		2023-06-08		Other
+MusicLM		2023-01-26		Other
+NAS with base 8 and shared embeddings		2016-11-05	10.5	Language
+NAS+ESS (156M)		2020-05-06	2890.0	Language
+NASNet-A		2017-07-21		Vision
+NASv3 (CIFAR-10)		2016-11-05	2200000.0	Vision
+NEAT		2002-06-01		Other
+NLLB		2022-07-06	17511138.0	Language
+NLP from scratch		2011-11-08		Language
+NMT Transformer 437M		2019-02-28		Language
+NPLM		2003-03-15	1.3038988	Language
+NTM		2014-12-10		Multiple domains
+Named Entity Recognition model		2016-05-29	96.940796	Language
+Nemotron-3-8B		2023-11-15	180000000.0	Language
+Nemotron-4 340B		2024-06-14	18000000000.0	Language
+Neocognitron		1980-04-01	2.281152e-07	Vision
+NetTalk (dictionary)		1987-06-06	2.7664064e-05	Speech
+NetTalk (transcription)		1987-06-06	2.8328002e-05	Speech
+Netflix Recommender System		2015-12-01		Other
+Network in Network		2013-12-16		Vision
+NeuMF (Pinterest)		2017-08-16		Other
+Neural LM		2000-01-01	6.339	Language
+Neuro-Symbolic Concept Learner		2019-04-26		Multiple domains
+NeuroChess		1994-01-01	0.0008587308	Games
+Noisy Student (L2)		2019-11-11	26120000.0	Vision
+NoisyNet-Dueling		2017-06-30		Games
+Nucleotide Transformer		2023-01-15	8080000.0	Biology
+NÜWA		2021-11-24	4838400.0	Multiple domains
+ONE-PEACE		2023-05-18	180000.0	Multiple domains
+OPT-175B		2022-05-02	430000030.0	Language
+OR-WideResNet		2017-01-07		Vision
+OmegaPLM		2022-07-22	10351411.0	Biology
+OmniVec		2023-11-07		Multiple domains
+Once for All		2020-04-29	1784281.0	Vision
+OntoProtein		2022-01-23		Multiple domains
+OpenAI Five		2019-12-13	67000004.0	Games
+OpenAI Five Rerun		2019-12-13	13000000.0	Games
+OpenAI TI7 DOTA 1v1		2017-08-11	604609.5	Games
+OpenVLA		2024-06-13	110000000.0	Multiple domains
+Optimized Multi-Scale Edge Detection		1986-11-01		Vision
+Optimized Single-layer Net		2011-04-11		Vision
+OverFeat		2013-12-21		Vision
+PDP model for serial order		1986-01-05		Speech
+PG-SWGAN		2019-06-15		Image generation
+PLATO-XL		2021-09-20	9900000.0	Language
+PLUG		2021-04-19	35997696.0	Language
+PNAS-net		2017-12-02		Vision
+PNASNet-5		2017-12-02	66290.4	Vision
+PPLX-70B-Online		2023-11-29		Language
+PSPNet		2017-07-21		Vision
+PaLI		2022-09-14	169000020.0	Multiple domains
+PaLI-X		2023-05-29		Multiple domains
+PaLM (540B)		2022-04-04	2527200000.0	Language
+PaLM 2		2023-05-10	7339999700.0	Language
+PaLM-E		2023-03-06		Multiple domains
+PanGu-Σ		2023-03-20	467000000.0	Language
+Pandemonium (morse)		1959-02-01	6e-07	Language
+Pangu-Weather		2023-07-05	39800000.0	Other
+Paragraph Vector		2014-05-14		Language
+Part-of-sentence tagging model		2016-05-29	145.41121	Language
+Parti		2022-06-22	396289540.0	Image generation
+Pattern recognition and reading by machine		1959-12-01		Vision
+PeptideBERT		2023-08-28	49.000004	Biology
+Perceiver IO (optical flow)		2020-02-08		Multiple domains
+Perceptron (1960)		1960-03-30	7.2e-07	Vision
+Perceptron Mark I		1957-01-01	6.948949e-10	Other
+Perceptron for Large Margin Classification		1999-12-01		Vision
+PermuteFormer		2021-09-06	2775.0	Language
+Phenaki		2022-10-05		Other
+Photo-Geometric Autoencoder		2019-11-25		Multiple domains
+Phrase-based translation		2003-05-01		Language
+PhraseCond		2017-10-28		Language
+Piecewise linear model		1973-11-01		Vision
+Pluribus		2019-07-11	66.0	Games
+PoE MNIST		2000-01-01	0.051810004	Vision
+PointNet		2016-12-02		Other
+PointNet++		2017-06-07		Other
+Pointer Sentinel-LSTM (medium)		2016-09-26	7.49	Language
+PolyCoder		2022-02-26	1100000.0	Language
+PolyNet		2016-11-17	64000.0	Vision
+Population-based DRL		2018-07-03	34900.0	Games
+Pragmatic Theory solution (Netflix 2009)		2009-08-01		Other
+PreTrans-3L-250H		2013-03-22		Speech
+Predictive Coding NN		1994-01-01	0.018621901	Language
+Print Recognition Logic		1963-01-01	2.25e-08	Vision
+ProBERTa		2020-09-01	9720.001	Biology
+ProGen2-xlarge		2022-06-27	13500001.0	Biology
+ProgressiveGAN		2017-10-27		Vision
+Projected GAN		2021-11-01	10500.0	Image generation
+ProtBERT-BFD		2021-05-04	39000004.0	Biology
+ProtT5-XXL		2021-05-04	73700000.0	Biology
+ProtT5-XXL-BFD		2021-05-04	37000000.0	Biology
+ProteinBERT		2022-02-10	65000.0	Biology
+ProteinDT		2023-02-09		Multiple domains
+Prototypical networks		2017-03-15		Vision
+ProxylessNAS		2019-02-23	37065.6	Vision
+PyramidNet		2017-09-06	2.34	Vision
+Q-learning		1989-01-01		Multiple domains
+QMoE: compressed 1T model		2023-10-25		Language
+QRNN		2018-02-01	360.0	Language
+QT-Opt		2018-06-27	34875.0	Multiple domains
+Qwen-72B		2023-11-30	1300000000.0	Language
+Qwen-Audio-Chat		2023-11-14		Multiple domains
+Qwen-VL		2023-08-24		Multiple domains
+Qwen-VL-Max		2024-01-25		Multiple domains
+Qwen1.5 72B		2024-02-04	1300000000.0	Language
+Qwen2-72B		2024-06-07	3020000000.0	Language
+Qwen2.5-72B		2024-09-19	7800000000.0	Language
+R-CNN (T-net)		2013-11-11		Vision
+R-FCN		2016-06-21	61.492943	Vision
+RAAM		1990-11-01		Other
+RBM Image Classifier		2009-04-08		Vision
+RCAN		2018-07-08		Multiple domains
+RCTM		2013-10-01	9.3312	Language
+RETRO-7B		2022-02-07	16800000.0	Language
+RNN LM		2010-01-01	53.960003	Language
+RNN for 1B words		2013-12-11		Language
+RNN+LDA+KN5+cache		2012-12-01		Language
+RNN+weight noise+dynamic eval		2013-08-04	4.21	Language
+RNN-SpeedUp		2011-05-22		Language
+RNN-WER		2014-06-22		Speech
+RNNsearch-50*		2014-09-01	1555.2	Language
+RNTN		2013-10-01	14.22	Language
+RT-1		2022-12-13		Other
+RT-2		2023-07-28		Other
+RT-2-X		2023-10-13		Other
+RT-Trajectory		2023-11-03		Other
+Random Decision Forests		1995-08-14		Other
+RankNet		2005-08-07	0.0034820817	Other
+Rational DQN Average		2021-02-18		Games
+ReALM		2024-03-29		Language
+ReLU (LFW)		2010-06-15		Vision
+ReLU (NORB)		2010-06-15		Vision
+ReLU-Speech		2013-05-26	127.733765	Speech
+Reading Twice for NLU		2017-06-08		Language
+Recursive Neural Network		2011-06-28		Multiple domains
+Recursive sentiment autoencoder		2011-07-01		Language
+RefineNet		2016-11-20		Vision
+Refined Part Pooling		2018-01-09		Vision
+Regularized SVD for Collaborative Filtering		2007-08-12		Other
+Relational Memory Core		2018-06-05		Language
+ResNeXt-101 32x48d		2018-05-02	8743950.0	Vision
+ResNeXt-101 Billion-scale		2019-05-02		Vision
+ResNeXt-50		2016-11-16		Vision
+ResNet-1001		2016-09-17		Vision
+ResNet-110 (CIFAR-10)		2015-12-10		Vision
+ResNet-152 (ImageNet)		2015-12-10	10414.081	Vision
+ResNet-152 + ObjectNet		2019-09-06	19400.002	Vision
+ResNet-200		2016-09-17	29741.645	Vision
+ResNet-50 Billion-scale		2019-05-02		Vision
+Residual Dense Network		2018-02-24		Multiple domains
+Restricted Bolzmann machines		2007-06-20		Other
+RetinaNet-R101		2017-08-07	2065.392	Vision
+RetinaNet-R50		2017-08-07		Vision
+Retrieval-Augmented Generator		2020-05-22		Language
+RoBERTa Large		2019-07-01	8506700.0	Language
+RoboCat		2023-06-20		Other
+Robot Parkour		2023-09-12		Other
+Rotation		2018-03-21		Multiple domains
+Routing Transformer (WT-103)		2020-03-12		Language
+S-Norm		2017-10-29		Language
+S4		2021-10-31	600000.0	Language
+SACHS		2005-04-22		Biology
+SB-LM		2007-06-22	1449.4465	Language
+SC-NLM		2014-11-10		Multiple domains
+SEER		2021-07-29	18000000.0	Vision
+SENet (ImageNet)		2017-09-05		Vision
+SNARC		1952-01-08		Other
+SNM-skip		2014-12-03	297600.0	Language
+SPHINX (Llama 2 13B)		2023-11-13	30400000.0	Multiple domains
+SPIDER2		2016-10-28	18.220001	Biology
+SPN-4+KN5		2014-01-01	44.0	Language
+SPPNet		2014-06-18	3411.072	Vision
+SRGAN		2017-05-25		Multiple domains
+SRN-Encoded Grammatical Structures		1991-09-01		Language
+SRU++ Large		2021-02-24	11000.0	Language
+SSD		2015-12-08		Vision
+ST-MoE		2022-02-17	290000000.0	Language
+SVD in recommender systems		2000-07-14		Other
+SVM for face detection		1997-06-17		Vision
+Samuel Neural Checkers		1959-07-01	4.284e-07	Games
+Sandwich Transformer		2019-11-10	158000.0	Language
+SciBERT		2019-03-26	89268.48	Language
+SeamlessM4T		2023-12-08		Multiple domains
+Search-Proven Best LSTM		2015-07-06	3.3400002	Language
+Segatron-XL large, M=384 + HCP		2022-03-21	26500.0	Language
+Segment Anything Model		2023-04-05	7800000.0	Vision
+Selective Search		2013-04-02		Vision
+Self Organizing System		1955-03-01		Other
+SemExp		2020-07-02		Other
+SemVec		2013-06-09		Language
+Semantic Hashing		2008-12-10		Language
+Semi-Supervised Embedding for DL		2008-07-05		Other
+Seq2Seq LSTM		2014-09-10	56000.0	Language
+Sequence-based pattern recognition		1955-03-01		Vision
+SexNet classification		1990-10-01		Vision
+SexNet compression		1990-10-01	7.87752e-05	Vision
+Show-1		2023-09-27		Other
+ShuffleNet v1		2017-07-03		Vision
+ShuffleNet v2		2018-06-30		Vision
+Siamese-TDNN		1993-08-01	0.01286957	Vision
+SimCLR		2020-02-13		Vision
+SimCLRv2		2020-10-26		Vision
+SimCSE		2022-05-18		Language
+SimpleNet		2016-08-22		Vision
+Skywork-13B		2023-10-30	250000000.0	Language
+SmooCT		2014-07-01	69.0	Games
+Social and content-based classification		1998-07-01		Other
+Sora		2024-02-15		Other
+Sparse Energy-Based Model		2006-12-04		Vision
+Sparse Vision Encoding		2006-11-01	0.0096048005	Vision
+Sparse all-MLP		2022-04-14	60770.305	Language
+Sparse coding model for V1 receptive fields		1997-12-01		Vision
+Sparse digit recognition SVM		2008-11-19		Vision
+Spatial Pyramid Matching		2006-06-17		Vision
+Spatially-Sparse CNN		2014-09-23		Vision
+Spatiotemporal fusion ConvNet		2016-06-01		Other
+Speaker-independent vowel classification		1989-01-01	7.485696e-06	Speech
+SpecAugment		2019-04-18		Language
+Spectrally Normalized GAN		2018-02-16		Image generation
+SqueezeNet		2016-02-24		Vision
+Stable Diffusion (LDM-KL-8-G)		2022-04-13	50000000.0	Image generation
+Stable Diffusion XL		2023-07-04		Image generation
+Stacked Denoising Autoencoders		2010-01-03		Other
+Stacked hourglass network		2016-09-17		Vision
+Stanley (DARPA Grand Challenge 2)		2006-01-01		Other
+StarCoder		2023-05-09	84600000.0	Language
+StarGAN v2		2019-12-04		Multiple domains
+Statement Curriculum Learning		2022-03-02		Multiple domains
+Statistical Shape Constellations		2003-01-01		Vision
+Statistical continuous speech recognizer		1976-04-30		Speech
+Student of Games		2021-12-06	36679270.0	Games
+Super-vector coding		2010-01-01		Vision
+Support Vector Machines		1995-09-01		Vision
+Swift		2023-08-30	53.37	Other
+Swin Transformer V2		2021-11-18	1100000.0	Multiple domains
+Switch		2021-01-11	82200000.0	Language
+Symmetric Residual Encoder-Decoder Net		2016-03-30		Multiple domains
+System 11		1996-06-18	1.293e-05	Vision
+T0-XXL		2021-10-15	918190.06	Language
+T5-11B		2019-10-23	33000000.0	Language
+T5-3B		2019-10-23	865865.44	Language
+TCAN (WT2)		2020-02-28		Language
+TCN (P-MNIST)		2018-02-15		Language
+TD(0)		1977-08-01		Other
+TD-Gammon		1992-05-01	0.018232157	Games
+TFE SVM		2006-02-02		Vision
+TRPO		2015-02-19		Games
+TSN		2016-09-17		Other
+TaLK Convolution		2020-02-08	27800.0	Language
+Table Tennis Agent		2024-08-07		Other
+Tacotron 2		2017-12-19		Speech
+Tagging via Viterbi Decoding		2002-06-01		Language
+Tensor-Transformer(1core)+PN (WT103)		2020-03-17	1580.0	Language
+TensorReasoner		2013-12-01		Language
+Tensorized Transformer (257M)		2019-06-24	4760.0005	Language
+Textual Imager		2013-01-16		Vision
+Theseus		1950-07-02	4e-14	Other
+Theseus 6/768		2020-02-07		Language
+Thumbs Up?		2002-05-28		Language
+Time-delay neural networks		1989-03-03		Speech
+TrOCR		2021-09-21		Vision
+Trajectory-pooled conv nets		2015-05-19		Other
+TranceptEve		2022-12-10		Biology
+Tranception		2022-05-27	7240000.5	Biology
+TransE		2013-12-05	1340.928	Language
+Transformer		2017-06-12	7424.525	Language
+Transformer (Adaptive Input Embeddings) WT103		2018-09-28	44700.0	Language
+Transformer + Simple Recurrent Unit		2018-09-17	11000.0	Language
+Transformer - LibriVox + Decoding/Rescoring		2019-11-19		Speech
+Transformer ELMo		2019-01-01		Language
+Transformer local-attention (NesT-B)		2021-05-26	24057.602	Vision
+Transformer-XL (257M)		2019-01-09	10900.0	Language
+Transformer-XL + RMS dynamic eval		2019-04-17		Language
+Transformer-XL DeFINE (141M)		2019-11-27	6200.0	Language
+Transformer-XL Large + Phrase Induction		2019-06-04	7300.0005	Language
+TransformerXL + spectrum control		2020-03-11	460.0	Language
+TrellisNet		2018-10-15	2780.0	Language
+TriNet		2017-11-21		Other
+Truck backer-upper		1989-06-18		Other
+True-Regularization+Finetune+Dynamic-Eval		2019-04-08		Language
+Turing-NLG		2020-02-13	15700000.0	Language
+Two-stream ConvNets for action recognition		2014-06-09		Other
+U-PaLM (540B)		2022-10-20	2530000100.0	Language
+UDSMProt		2019-09-04	637.0	Biology
+UL2		2022-05-10	120000000.0	Language
+ULM-FiT		2018-01-18	272.538	Language
+UnifiedQA		2020-05-02	16500.0	Language
+Unsupervised High-level Feature Learner		2012-07-12	600.0	Vision
+Unsupervised Scale-Invariant Learning		2003-06-18		Vision
+VALL-E		2023-01-05	10100.0	Multiple domains
+VD-LSTM+REAL Large		2016-11-04	21.3	Language
+VD-RHN		2016-07-12	3.57	Language
+VGG16		2014-09-04	12291.0	Vision
+VGG19		2014-09-04		Vision
+VQGAN + CLIP		2020-12-17		Image generation
+Variational (untied weights, MC) LSTM (Large)		2015-12-16	5.6200004	Language
+Vector Space Model		2011-06-19		Language
+ViT + DINO		2021-04-29	210000.0	Vision
+ViT-22B		2023-02-10	193248000.0	Vision
+ViT-Base/32		2020-10-22		Vision
+ViT-G (model soup)		2022-03-10	3400000.2	Vision
+ViT-G/14		2021-06-08	58500000.0	Vision
+ViT-G/14 (LiT)		2021-11-15		Vision
+ViT-Huge/14		2020-10-22	4262000.0	Vision
+VideoMAE V2		2023-03-29	9700000.0	Other
+Visualizing CNNs		2013-11-12	532.0	Vision
+Volcano 13B		2023-11-13	45600000.0	Multiple domains
+W2v-BERT		2021-08-07		Speech
+WGAN-GP		2017-03-31		Image generation
+Walking Minotaur robot		2019-06-19		Other
+WaveNet		2016-09-12		Speech
+WeNet (Penn Treebank)		2019-04-08	730.0	Language
+Weight Decay		1991-12-02	7.5474e-05	Speech
+Whisper		2022-09-21	4207266.5	Speech
+Wide & Deep		2016-06-24		Other
+Wide Residual Network		2016-09-19		Vision
+Word Representations		2010-06-01		Language
+Word2Vec (large)		2013-10-16	38.879997	Language
+Word2Vec (small)		2013-10-16		Language
+XGLM-7.5B		2021-12-20	22500000.0	Language
+XLM		2019-06-01		Language
+XLM-RoBERTa		2019-11-05		Language
+XLMR-XXL		2021-08-17	33660000.0	Language
+XLNet		2019-06-01	6190000.0	Language
+Xception		2016-10-07	436000.0	Vision
+YOLO		2015-06-08		Vision
+YOLOX-X		2021-08-06	634275.0	Vision
+YOLOv2		2016-12-25		Vision
+YOLOv3		2018-04-08	50939.2	Vision
+Yi-34B		2023-11-02	610000060.0	Language
+YouTube Video Recommendation System		2010-09-26		Other
+Youtube recommendation model		2016-09-15		Other
+Yuan 1.0		2021-10-12	353800030.0	Language
+Zidong Taichu		2021-08-11		Multiple domains
+Zoneout + Variational LSTM (WT2)		2016-09-26	16.8	Language
+aLSTM(depth-2)+RecurrentPolicy (WT2)		2018-05-22	75.9	Language
+base LM+GNN+kNN		2021-10-17	7300.0005	Language
+data2vec (language)		2022-01-20		Language
+data2vec (speech)		2022-01-20		Speech
+data2vec (vision)		2022-01-20		Vision
+eDiff-I		2022-11-02	54600.004	Image generation
+fastText		2016-07-06		Language
+genCNN + dyn eval		2015-03-17	73.0	Language
+iGPT-L		2020-06-17	8910000.0	Multiple domains
+iGPT-XL		2020-06-17	33000000.0	Multiple domains
+mPLUG-Owl2		2023-11-07		Multiple domains
+mT0-13B		2022-11-03		Language
+mT5-XXL		2020-10-20	82000000.0	Language
+top-down frozen classifier		2021-02-09		Speech
+wave2vec 2.0 LARGE		2020-10-22	1900000.0	Speech
+xTrimoPGLM -100B		2023-07-06	620000000.0	Biology
+λ-WASP		2007-06-01		Language

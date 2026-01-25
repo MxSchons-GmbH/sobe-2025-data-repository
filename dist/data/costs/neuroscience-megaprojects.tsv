@@ -1,0 +1,43 @@
+project name	category	start year	end year	Neuroscience funding ($M)	funding within BRAIN ($M)	status	ref
+BlackRock Neurotech	commercial	2008.0		250.00		Active	https://tether.io/news/tether-takes-strategic-stake-in-leading-brain-computer-interface-company-blackrock-neurotech/ (+50M funding before that)
+Synchron	commercial	2012.0		145.00		Active	https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws#funding-and-investors
+BrainCo	commercial	2015.0		200.00		Active	https://pandaily.com/brain-machine-interface-firm-braincos-brainrobotics-hand-obtains-fda-certification/
+Paradromics	commercial	2015.0		87.00		Active	https://www.cnbc.com/2024/06/21/paradromics-gears-up-to-test-its-brain-implant-on-humans.html
+Numenta	commercial	2015.0		23.60		Active	https://tracxn.com/d/companies/numenta/__RsSigVedmX41LBWmdVLEf1d54Fw_3PLfPE6EBVQBcX8#about-the-company
+Neuralink	commercial	2016.0		838.00		Active	https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws#funding-and-investors, https://archive.ph/gMXHy (initial investment)
+Kernel	commercial	2016.0		158.00		Active	https://tracxn.com/d/companies/kernel/__bEqbH0XvufpPQs77gjahFGC0clRZLVIs7rUyKmA6BFY/funding-and-investors#summary
+Cognito Therapeutics	commercial	2016.0		226.00		Active	https://tracxn.com/d/companies/cognito-therapeutics/__eF8Jht4lDbLpU1Pdu3lwCPRzf177aNGjxaFbKys2zd4#about-the-company
+Science Corporation	commercial	2021.0		186.00		Active	https://pitchbook.com/profiles/company/471975-49#funding
+NeuroXess	commercial	2021.0		15.20		Active	https://pitchbook.com/profiles/company/489944-26#investors
+Precision Neuroscience	commercial	2021.0		174.00		Active	https://tracxn.com/d/companies/precision-neuroscience/__z4shNX_DBChmW-jgz7QGVN85zzpOfTP5Qj_vMlA1o7M
+Canada Brain Research Fund & Brain Canada Foundation	governmental	1998.0		280.00		Active	https://braincanada.ca/about/what-we-do/
+UK Biobank Brain Imaging	governmental	2004.0		39.60		Active	https://www.ukbiobank.ac.uk/media/wgsfd0qg/uk-biobank-funding-details-summary.pdf (counting imaging only)
+Synapse (DARPA)	governmental	2008.0	2016.0	100.00		Concluded	https://www.nextbigfuture.com/2012/06/darpa-synapse-project-status.html
+Human Connectome Project	governmental	2009.0	2014.0	38.50		Concluded	https://journals.sagepub.com/doi/10.2310/JIM.0b013e3182025955
+Brain Research Through Advancing Innovative Neurotechnologies (BRAIN) Initiative	governmental	2013.0		4,000.00		Active	https://braininitiative.nih.gov/funding/understanding-brain-initiative-budget
+Human Brain Project (HBP)	governmental	2013.0	2023.0	607.00		Concluded	https://www.humanbrainproject.eu/en/about-hbp/human-brain-project-ebrains/
+Blue Brain Project	governmental	2013.0	2024.0	242.00		Active	https://www.epfl.ch/research/domains/bluebrain/frequently_asked_questions/ (no. 8, not counting HBP-sourced funding)
+China Brain Project (CBP)	governmental	2021.0		446.00		Active	https://www.nature.com/articles/d41586-023-03954-y. https://archive.ph/fTyVn, but https://www.sciencedirect.com/science/article/abs/pii/S2095927323001214?via=ihub has 3.2B RMB = $460M, https://www.scmp.com/news/china/science/article/3164585/rare-public-row-erupts-over-funding-us16-billion-china-brain has $16B (???), https://www.nature.com/articles/d41586-024-03044-7 has 1.66B (???). gotta check the grant directly (2021.12-2026.12)
+Korea Brain Initiative	governmental			657.00		Proposed	https://shs.cairn.info/journal-revue-internationale-de-politique-comparee-2022-1-page-151?lang=en#re9no9
+Australian Brain Initiative	governmental			500.00		Proposed	https://www.science.org.au/supporting-science/other-initiatives/ausbrain/why-australia-needs-brain-initiative
+BRAIN Initiative Cell Atlas Network (BICAN)	governmental				500
+BRAIN Initiative Cell Census Network (BICCN)	governmental				375		https://www.nature.com/articles/d41586-023-03954-y
+BRAIN Initiative Connectivity Across Scales (BRAIN CONNECTS) 	governmental				150		https://www.ninds.nih.gov/news-events/news/highlights-announcements/nih-brain-initiative-launches-projects-develop-innovative-technologies-map-brain-incredible-detail
+Machine Intelligence from Cortical Networks (MICrONS)	governmental				100
+Child Mind Institute	governmental	2009.0		55.00		Active	at least 55M: https://childmind.org/blog/child-mind-institute-receives-55-million-stavros-niarchos-foundation-grant-for-global-childrens-mental-health/
+Neuropixels 1.0	governmental	2013.0	2017.0	5.50		Concluded	https://www.hhmi.org/news/new-silicon-probes-record-activity-hundreds-neurons-simultaneously
+Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/MINDS) project	governmental	2014.0		350.00		Active	https://www.riken.jp/en/news_pubs/research_news/rr/20211223_1/index.html
+Adolescent Brain Development (ABCD) study	governmental	2016.0		350.00		Active	calculated based on NIH reporter data (sourced from https://reporter.nih.gov/search/BACA3Kafx0Cc0ByVH3VkkA/projects?sort_field=fiscal_year&sort_order=desc#)
+International Brain Laboratory (IBL)	governmental	2017.0		20.00		Active	https://en.wikipedia.org/wiki/International_Brain_Laboratory
+Courtois NeuroMod	governmental	2018.0		4.50		Active	https://docs.cneuromod.ca/en/2020-alpha/AUTHORS.html
+Natural Scenes Dataset	governmental	2018.0	2023.0	0.40		Concluded	https://www.nsf.gov/awardsearch/showAward?AWD_ID=1822929&HistoricalAwards=false
+International Center for Primate Brain Research (ICPBR)	governmental	2020.0		106.00		Active	https://www.nature.com/articles/d41586-019-00292-w
+Precision Neurotechnologies	governmental	2024.0		88.00		Active	https://www.aria.org.uk/precision-neurotechnologies/
+Allen Institute for Brain Science	philanthropic	2016.0		300.00		Active	https://www.nbcnews.com/science/cosmic-log/billionaire-paul-allen-kicks-brain-observatory-effort-300-million-flna513473
+Forest Neurotech	philanthropic	2024.0		14.00		Active	https://www.businesswire.com/news/home/20240311581698/en/Convergent-Research-Announces-Major-New-Funding-Commitment-to-Forest-Neurotech
+Wellcome Trust	philantrhopic	1929.0		100	unkown (likely 100M+)	Active	Estimates
+Simons Foundation	philantrhopic	1994.0		100	unkown, likely 100M+	Active	Estimates
+Chan Zuckerberg Initiative	philantrhopic	2015.0		120.50		Active	https://chanzuckerberg.com/science/programs-resources/neuroscience/
+Tianqiao and Chrissy Chen Institute	philantrhopic	2017.0		1,000.00		Active	https://en.wikipedia.org/wiki/Tianqiao_and_Chrissy_Chen_Institute
+E11 Bio	philantrhopic	2022.0		10.00		Active	using convergent's Form 990 data (2M/year for E11 Bio) and assuming a 5 year FRO duration
+Howard Hughes Medical Institute	philantrhopic			1000	unkown, likely 1B+	Active	Estimates

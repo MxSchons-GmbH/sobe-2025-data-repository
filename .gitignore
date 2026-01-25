@@ -39,14 +39,4 @@ coverage/
 .env
 .env.local
 
-# Distribution folder - track metadata, ignore generated assets
-dist/calculator/
-dist/downloads/*.zip
-dist/figures/generated/*.png
-dist/figures/generated/*.svg
-dist/figures/generated/*.webp
-dist/figures/generated/*.avif
-dist/figures/generated/neuro-sim/
-dist/figures/generated/neuro-rec/
-# Ignore data TSV files (copies of source data/) but keep the catalog
-dist/data/**/*.tsv
+# Distribution folder - track all generated assets

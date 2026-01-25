@@ -1,0 +1,87 @@
+First author	Year	DOI/Link	Organism	Notes	Subexperiment Index	Individuals studied	Fixated / moving	Method	Temporal resolution: Hz	Duration single session min per Individual	Duration total repeated sessions per individual min	Resolution in µm isotropic	Number of neurons	Volume dimensions	Brain Volume in µm	Calculated information Value
+Lin	2023.0	 [11]	C. elegans		1	577	fixated	Calcium					8.0			#DIV/0!
+Atanas	2023.0	 [5]	C. elegans		1	42	moving	Calcium	1.7	8.0	16.0	0.5	136.0			7398.4
+Kato	2015.0	[10]	C. elegans		1	12	fixated	Calcium					127.0			#DIV/0!
+Nichols	2017.0	[12]	C. elegans		1	44	fixated	Calcium					108.0			#DIV/0!
+Dag	2023.0	[13]	C. elegans		1	7	fixated	Calcium					143.0			#DIV/0!
+Leifer	2023.0	[14]	C. elegans		1	103	fixated	Calcium					122.0			#DIV/0!
+Skora	2018.0	[15]	C. elegans		1	12	fixated	Calcium					129.0			#DIV/0!
+Uzel	2022.0	[18]	C. elegans		1	6	fixated	Calcium					138.0			#DIV/0!
+Venkatachalam	2024.0	[32]	C. elegans		1	22	moving	Calcium					187.0			#DIV/0!
+Kaplan	2020.0	[9]	C. elegans		1	19	fixated	Calcium					114.0			#DIV/0!
+Javer		10.1038/s41592-018-0112-1	C. elegans		1	14,874 single-worm tracking experiments representing 386 genotypes (building on 9,203 experiments and 305 genotypes in a previous publication2) and includes data from several larval stages as well as data from ageing experiments consisting of over 2,700 videos of animals tracked daily from the L4 stage to death (see Life Sciences Reporting Summary
+Deserno		10.1038/s41598-023-38213-7	C. elegans		1	56 videos with a length of 1.5 minutes
+Barlow		10.1038/s42003-022-03206-1	C. elegans		1
+Chew		10.1038/sdata.2017.156	C. elegans		1	~300 video recordings representing the locomotor behaviour of animals carrying single-cell ablations of 5 different motorneurons
+Preusser		10.1186/s12915-022-01471-4	C. elegans		1
+Churgin		10.7554/eLife.26652	C. elegans		1
+Perni		https://doi.org/10.1016/j.jneumeth.2018.02.005	C. elegans		1
+López-Cruz		https://doi.org/10.1016/j.neuron.2019.01.053	C. elegans		1	114 worms; 45 minutes
+Tokunaga	2024.0	https://doi.org/10.1038/s42003-024-06778-2	C. elegans		1	100	fixated	Voltage	250.0	1.0	1.0		1.0			#DIV/0!
+Butler		https://doi.org/10.1098/rsif.2014.0963	C. elegans		1
+Zhan		https://doi.org/10.1371/journal.pcbi.1004194	C. elegans		1
+Martineau		https://doi.org/10.1371/journal.pcbi.1008002	C. elegans		1	we tracked 151 wild-type worms (strain N2 obtained from the C. elegans Genetics Center) every day of their lives from the last larval stage before adulthood (L4) to death
+Kerr		https://doi.org/10.3389/fragi.2022.932656	C. elegans		1
+Thomas		https://doi.org/10.3389/frai.2021.668395	C. elegans		1
+Broekmans		https://doi.org/10.7554/eLife.17227	C. elegans		1
+Liu		https://elifesciences.org/articles/36419#data	C. elegans		1
+Hallinen		https://elifesciences.org/articles/66135	C. elegans		1	11
+Susoy		https://www.cell.com/cell/fulltext/S0092-8674(21)00998-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421009983%3Fshowall%3Dtrue	C. elegans	For comprehensive analysis, we selected datasets of continuous 5–10 min recordings from eight animals with the broadest range of behavioral dynamics	1	8
+Schrödel		https://www.nature.com/articles/nmeth.2637	C. elegans		1	5
+Nguyen		https://www.pnas.org/doi/full/10.1073/pnas.1507110112	C. elegans	we recorded the neural activity and behavior of four individual worms (strain AML14) crawling freely on agarose pads for up to 5 min.	1	4
+Nichols		https://www.science.org/doi/10.1126/science.aam6851	C. elegans		1	44
+Yemini	2021.0	https://www.sciencedirect.com/science/article/pii/S0092867420316822	C. elegans		1	49	fixated	Calcium					125.0			#DIV/0!
+Cury		10.1038/s41593-023-01332-5	Drosophila		1	Large
+Oliveira-Ferreira		10.1038/s41598-023-48109-1	Drosophila		1
+Robie		https://doi.org/10.1016/j.cell.2017.06.032	Drosophila		1	We measured effects of activating 2,204 genetically targeted neuronal populations; 400,000 flies
+Schnell	2017.0	https://doi.org/10.1016/j.cub.2017.03.004	Drosophila		1		fixated	Calcium					10.0			#DIV/0!
+Li Guo		https://doi.org/10.1016/j.cub.2021.12.055	Drosophila		1	Medium
+Gaspar		https://doi.org/10.1016/j.cub.2022.09.009	Drosophila		1
+Brezovec	2024.0	https://doi.org/10.1016/j.cub.2023.12.063	Drosophila		1		fixated	Calcium	1.8				95200.0			#DIV/0!
+Bidaye		https://doi.org/10.1016/j.neuron.2020.07.032	Drosophila		1	156 lines that targeted potential DNs
+Schaffer	2023.0	https://doi.org/10.1038/s41467-023-41261-2	Drosophila		1		fixated	Calcium	10.0				40600.0			#DIV/0!
+Calhoun		https://doi.org/10.1038/s41593-019-0533-x	Drosophila		1
+Berman		https://doi.org/10.1073/pnas.1607601113	Drosophila		1	59 male flies using a custom-built tracking setup, producing more than 21 million images
+Aimon	2019.0	https://doi.org/10.1371/journal.pbio.2006732	Drosophila	58 total; only 12 whole brain	1		fixated	Calcium	100.0				63000.0			#DIV/0!
+Aimon	2019.0	https://doi.org/10.1371/journal.pbio.2006732	Drosophila		1		fixated	Voltage	200.0				7500.0			#DIV/0!
+Wu		https://doi.org/10.1371/journal.pbio.3000346	Drosophila		1	At least 30 flies; high frequency
+Mueller		https://doi.org/10.1371/journal.pcbi.1007105	Drosophila		1	In this paper, we leverage advances in machine vision to automatically annotate over 40 hours of video data of flies covered in dust and develop mathematical models that reveal the existence of syntax in D. melanogaster grooming.
+Geurten		https://doi.org/10.3389/fnbeh.2014.00365	Drosophila		1	56 male and 57 female adult Canton S wild-type flies were released one by one into circular arenas (43 mm diameter, 3.5 mm height). The total recording time was about 16 min, yielding half a million frames.
+Katsov		https://doi.org/10.7554/eLife.26410	Drosophila		1	well-fed 2–3 day-old flies (n = 7364) walking on a glass surface under dim illumination were tracked alone or in groups, in 10 minute trials during 2 hours of peak circadian activity. In aggregate, our datasets comprised over 1000 fly-hours of behavior, and contained over 106 trajectories
+Cande		https://doi.org/10.7554/eLife.34275	Drosophila		1
+Tao		https://doi.org/10.7554/eLife.41235	Drosophila		1	Briefly, locomotion of each of the 34 flies in our dataset was measured 3 min before an odor (apple cider vinegar or ACV) was turned on, and 3 min during the presence of ACV.
+Brian D DeAngelis		https://doi.org/10.7554/eLife.46409	Drosophila		1	Large
+DeAngelis		https://doi.org/10.7554/eLife.46409	Drosophila		1	Data from seven separate recordings, with a total of 96 flies, were merged to generate the aggregate dataset analyzed in this manuscript.
+Günel		https://doi.org/10.7554/eLife.48571	Drosophila		1
+Brian D DeAngelis		https://doi.org/10.7554/eLife.54183	Drosophila		1	Large
+Werkhoven		https://doi.org/10.7554/eLife.64988	Drosophila		1	115 flies completed the first Decathlon, and 176 the second
+Aragon	2022.0	https://doi.org/10.7554/eLife.69094	Drosophila		1		fixated	Calcium	1.0	720.0	720.0	1.0	7500.0			5400000
+Florian Aymanns		https://doi.org/10.7554/eLife.81527	Drosophila		1
+Aimon		https://elifesciences.org/articles/85202	Drosophila		1	58
+Pacheco		https://www.nature.com/articles/s41593-020-00743-y	Drosophila	We extracted 19,036 auditory ROIs from 33 female and male brains (Fig. 2a and Extended Data Fig. 3a).	1	33
+Mann		https://www.sciencedirect.com/science/article/pii/S0960982217308138	Drosophila	We performed this analysis on 18 flies, each imaged for 17 min (2,000 time points).	1	18
+Kupers	2024.0	https://doi.org/10.1016/j.tins.2024.09.011	Human		1		fixated	fMRI			12000.0	1000.0	86000000000.0			0
+Leonard	2025.0	https://doi.org/10.1038/s41586-023-06839-2	Human		1
+Khanna	2024.0	https://doi.org/10.1038/s41586-023-06982-w	Human		1
+Tang	2022.0	https://www.biorxiv.org/content/10.1101/2022.09.29.509744v1.full.pdf	Human		1		fixated	fMRI			960.0	1000.0	86000000000.0			0
+Allen	2021.0	https://www.nature.com/articles/s41593-021-00962-x	Human		1		fixated	fMRI				1000.0	86000000000.0			0
+Zong	2022.0	https://doi.org/10.1016/j.cell.2022.02.017	Mouse		1		moving	Calcium								#DIV/0!
+Kim	2016.0	https://doi.org/10.1016/j.celrep.2016.12.004	Mouse		1		fixated	Calcium		5.0			40000.0			#DIV/0!
+Manley	2024.0	https://doi.org/10.1016/j.neuron.2024.02.011	Mouse		1		fixated	Calcium					1000000.0			#DIV/0!
+Microns Consortium	2024.0	https://doi.org/10.1101/2021.07.28.454025	Mouse		1		fixated	Calcium	9.6	84.0	1120.0	0.4	75909.0			2040433920
+Garrett	2023.0	https://www.biorxiv.org/content/10.1101/2023.02.14.528085v2	Mouse		1
+International Brain Laboratory,	2024.0	https://www.biorxiv.org/content/10.1101/2023.07.04.547681v4	Mouse		1
+Piet	2024.0	https://www.cell.com/neuron/fulltext/S0896-6273(24)00092-8	Mouse		1
+Bai	2024.0	https://www.nature.com/articles/s41592-024-02458-5	Mouse		1		fixated	Voltage	400.0	20.0			300.0			#DIV/0!
+Vries	2020.0	https://www.nature.com/articles/s41593-019-0550-9	Mouse		1
+Lueckmann	2025.0	https://arxiv.org/abs/2503.02618	Zebrafish Larvae		1
+Favre-Bulle	2018.0	https://doi.org/10.1016/j.cub.2018.09.060	Zebrafish Larvae		1		fixated	Calcium	4.0				80000.0			#DIV/0!
+Ahrens	2013.0	https://doi.org/10.1038/nmeth.2434	Zebrafish Larvae		1		fixiated	Calcium	1.0				80000.0			#DIV/0!
+Voleti	2019.0	https://doi.org/10.1038/s41592-019-0579-4	Zebrafish Larvae		1		fixated	Calcium	25.75				6000.0			#DIV/0!
+Yang	2022.0	https://doi.org/10.1038/s41592-022-01417-2	Zebrafish Larvae		1		fixated	Calcium	3.3				40000.0			#DIV/0!
+Bruzzone	2021.0	https://doi.org/10.1038/s41598-021-90335-y	Zebrafish Larvae		1		fixated	Calcium	1.0				52000.0			#DIV/0!
+Vladimirov		https://pubmed.ncbi.nlm.nih.gov/25068735/	Zebrafish Larvae		1
+Wang	2023.0	https://www.biorxiv.org/content/10.1101/2023.12.15.571964v1	Zebrafish Larvae		1		fixated	Voltage	200.0				25000.0			#DIV/0!
+Marques	2019.0	https://www.nature.com/articles/s41586-019-1858-z	Zebrafish Larvae		1
+Fores-Valle	2022.0	https://doi.org/10.1016/j.jneumeth.2021.109432	Drosophila		1		fixated	Calcium	1.0	0.5	900.0		7500.0			#DIV/0!
+Siegle	2021.0	https://www.nature.com/articles/s41586-020-03171-x	Mouse		1

@@ -1,0 +1,124 @@
+project	cost ($B, 2024 dollars)	field	source	notes (mostly inflation adjustments)
+TAT-8	0.885	communications	https://en.wikipedia.org/wiki/TAT-8
+B-21 Raider program	250.0	military	https://www.stimson.org/2024/current-defense-plans-require-unsustainable-future-spending/	converted 2019 dollars to 2024
+Columbia-class submarine program	132.0	military	https://nationalinterest.org/blog/buzz/navys-132000000000-columbia-class-submarine-has-problem-211960
+President's Emergency Plan for AIDS Relief	120.0	medicine	https://www.kff.org/global-health-policy/fact-sheet/the-u-s-presidents-emergency-plan-for-aids-relief-pepfar/
+Ford-class aircraft carrier program	120.0	military	https://nationalinterest.org/blog/buzz/120000000000-ford-class-aircraft-carrier-navy-nightmare-209857
+F-22 program	93.53	military	https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#:~:text=As%20production%20wound%20down%20in,MILCON)%20in%20then%20year%20dollars.
+B-2 program	87.16	military	https://en.wikipedia.org/wiki/Northrop_B-2_Spirit
+LCS program	73.37	military	https://www.gao.gov/assets/gao-22-105387.pdf
+2014 Sochi Olympics	67.35	sports	https://en.wikipedia.org/wiki/1996_Summer_Olympics#:~:text=Development%20and%20preparation-,Budget,be%20around%20US%241.7%20billion.
+Polio Eradication Initiative	66.0	medicine	https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.13665	2019->2024
+Abrams M1 program	64.0	military	https://www.gao.gov/assets/masad-82-7.pdf
+High Speed 2 (UK)	64.0	transport	https://edition.cnn.com/travel/hs2-britain-expensive-high-speed-railway/index.html
+NIH funding (2008-) for HIV/AIDS	63.88	medicine	https://report.nih.gov/funding/categorical-spending#/	adjusted programmatically
+2008 Beijing Olympics	61.0	sports	https://en.wikipedia.org/wiki/1996_Summer_Olympics#:~:text=Development%20and%20preparation-,Budget,be%20around%20US%241.7%20billion.
+Vogtle Electric Generating Plant	55.8	energy	https://en.wikipedia.org/wiki/Vogtle_Electric_Generating_Plant
+Private funding for Alzheimer's	49.51	medicine	https://pmc.ncbi.nlm.nih.gov/articles/PMC8940715/	2021->2024
+Hinkley Point C nuclear power plant	41.43	energy	https://www.world-nuclear-news.org/Articles/EDF-announces-Hinkley-Point-C-delay-and-big-rise-i	2015 GBP->2024 USD
+Itaipu Dam	41.34	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Airbus A380	39.49	transport	https://www.dw.com/en/airbus-a380-the-end-of-a-multibillion-dollar-dream/a-60124995	2021->2024
+NIH funding (2008-) for Alzheimer's	37.17	medicine	https://report.nih.gov/funding/categorical-spending#/	adjusted programmatically
+La Grande	33.98	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+2020 Tokyo Olympics	33.82	sports	https://en.wikipedia.org/wiki/Cost_of_the_Olympic_Games
+Nurek	33.02	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Texas Instruments Sherman fab	32.05	semiconductors	https://www.constructiondive.com/news/amid-domestic-semiconductor-wave-texas-instruments-begins-30b-build/625430/
+SLS	32.0	space	https://en.wikipedia.org/wiki/Space_Launch_System#Budget	spent so far
+Darlington	31.39	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Sayano–Shushenskaya	30.71	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Fukushima	30.62	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Zumwalt-class destroyer program	30.0	military	https://www.gao.gov/assets/gao-15-342sp.pdf#page=81	converted 2015 dollars to 2024
+Intel Arizona fab	30.0	semiconductors	https://www.theregister.com/2024/04/16/intel_foundry_vision/
+Atlas ICBM program	29.0	military	https://www.afgsc.af.mil/News/Commentaries/Display/Article/2006393/the-icbm-turns-60/
+Orion	28.37	space	https://en.wikipedia.org/wiki/Orion_(spacecraft)	converted FY2022 to 2024 dollars. also, spent so far.
+Intel Ohio fab	28.0	semiconductors	https://www.theregister.com/2024/04/16/intel_foundry_vision/
+Woodside Louisiana LNG terminal	27.0	energy	https://www.constructiondive.com/news/bechtel-louisiana-lng-woodside-driftwood-construction/735097/
+Samsung Taylor (TX) fab	25.65	semiconductors	https://www.constructiondive.com/news/samsung-picks-builder-yates-construction-17b-chip-plant-taylor-texas/625884/
+2004 Athens Olympics	24.82	sports	https://en.wikipedia.org/wiki/Cost_of_the_Olympic_Games
+Australia-Asia Power Link	24.0	energy	https://www.bloomberg.com/news/articles/2024-10-22/singapore-clears-20-billion-power-link-to-australian-renewables
+Tucuruí Dam Stage	22.61	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010936	2016->2024
+Boeing 787	22.18	transport	https://transportgeography.org/contents/chapter5/air-transport/aircraft-development-costs/
+TSMC Fab 18	21.2	semiconductors	https://www.construction-physics.com/p/how-to-build-a-20-billion-semiconductor
+V-22 Osprey R&D	19.15	military	https://www.gao.gov/assets/gao-09-692t.pdf
+2016 Rio Olympics	17.0	sports	https://en.wikipedia.org/wiki/Cost_of_the_Olympic_Games
+Palo Verde	15.5	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Civaux	14.58	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Diablo Canyon	14.56	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Boeing 777	14.36	transport	https://transportgeography.org/contents/chapter5/air-transport/aircraft-development-costs/
+Guri	14.15	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+TSMC Fab 15	13.4	semiconductors	https://www.construction-physics.com/p/how-to-build-a-20-billion-semiconductor
+PW1000G turbo-fan engine	13.03	transport	https://www.americanmachinist.com/news/article/21899121/pratt-whitney-cuts-forecast-for-2016-engine-deliveries
+San Onofre	12.97	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Cattenom	12.96	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+XB-70 Valkyrie program	12.78	military	https://ntrs.nasa.gov/api/citations/19950002358/downloads/19950002358.pdf
+Nine Mile Point	12.64	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Beaver Valley	12.62	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+1957 California water plan	12.61	infrastructure	https://cawaterlibrary.net/wp-content/uploads/2019/11/Part-Two-B3-The_Califonia_Water_Plan-May_1957-reduced-size.pdf
+Millstone	11.81	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Susquehanna	11.79	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010929	2016->2024
+Robert-Bourassa	11.77	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Golden Pass LNG terminal	11.6	energy	https://www.constructiondive.com/news/texas-lng-golden-pass-dispute-contractor/722620/
+Starship	11.54	space	https://qz.com/how-much-more-money-can-spacex-spend-on-starship-1850395274
+Sardar Sarovar Dam	11.2	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Hope Creek	11.0	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Panama Canal	11.0	infrastructure	https://www.insightcruises.com/pdf/PanamaCanalDetails_NL2.pdf
+Byron	10.98	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Paluel	10.84	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Shoreham	9.91	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010927	2016->2024
+River Bend	9.79	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Takahama	9.77	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010930	2016->2024
+WPPSS	9.59	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010938	2016->2024
+Shearon Harris	9.57	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Limerick	9.52	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Tarbela Stage	9.51	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010931	2016->2024
+Chooz B	9.45	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Gravelines	9.42	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Hamaoka	9.32	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Leibstadt	9.28	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Fermi	9.05	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Sendai	8.97	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Perry	8.92	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Bay Bridge east span	8.81	infrastructure	https://www.bloomberg.com/news/articles/2015-10-13/how-the-cost-of-remaking-the-san-francisco-bay-bridge-soared-to-6-5-billion
+Grand Gulf	8.31	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Kashiwazai-Kariwa	8.3	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Salem	7.96	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Tsuruga	7.9	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010935	2016->2024
+Waterford	7.9	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010939	2016->2024
+LaSalle	7.59	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Cruas	7.52	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Chinon B	7.51	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Penly	7.4	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Golfech	7.34	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+St. Lucie	7.19	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010928	2016->2024
+Callaway	7.18	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Sequoyah	6.79	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Prairie State	6.78	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Wolf Creek	6.78	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010940	2016->2024
+Grand Ethiopian Renaissance Dam	6.67	energy	https://www.tandfonline.com/doi/full/10.1080/14678802.2023.2257137	2014->2024
+Blayais	6.65	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Joseph M. Farley	6.44	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Nogent	6.24	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Longtan Dam	6.2	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+McGuire	6.15	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+W.A.C. Bennet	6.09	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010937	2016->2024
+Belleville	6.01	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Yacyreta	5.96	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010941	2016->2024
+North Anna	5.95	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Flamanville	5.74	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Dampierre	5.51	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+SoFi stadium	5.5	sports	https://www.dazn.com/en-US/news/american-football/los-angeles-rams-chargers-stadium-what-is-sofi-stadiumss-capacity-and-how-much-did-it-cost/njseve2ipd4t1skh8632hyclk
+Three Mile Island	5.49	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010933	2016->2024
+Tricastin	5.47	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010934	2016->2024
+Churchill Falls	5.41	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Ohi	5.41	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+National Igniftion Facility	5.1	physics	https://lasers.llnl.gov/about/faqs#:~:text=and%20economic%20competitiveness.-,How%20much%20did%20NIF%20cost%3F,commissioning%20was%20about%20%243.5%20billion.
+Bugey	5.02	energy	https://www.sciencedirect.com/science/article/pii/S0301421513010926	2016->2024
+Superconducting Supercollider	4.33	physics	https://en.wikipedia.org/wiki/Superconducting_Super_Collider
+Chandra X-Ray observatory	4.13	physics	https://www.washingtonpost.com/science/2024/04/14/nasa-budget-mars-artemis/
+1939 New York World Fair	3.6	infrastructure	https://jdpecon.com/expo/wfnewyork1939.html
+1996 Atlanta Olympics	3.39	sports	https://en.wikipedia.org/wiki/1996_Summer_Olympics#:~:text=Development%20and%20preparation-,Budget,be%20around%20US%241.7%20billion.
+Exascale Computing Initiative	2.87	computing	https://www.gao.gov/assets/720/716924.pdf
+TAT-14	2.47	communications	https://www.lightwaveonline.com/home/article/16659094/tat-14-undersea-cable-system-completes-final-phase
+NIH funding (2008-) for multiple sclerosis	2.44	medicine	https://report.nih.gov/funding/categorical-spending#/	adjusted programmatically
+Utah data center	1.6	computing	https://www.npr.org/2013/06/10/190160772/amid-data-controversy-nsa-builds-its-biggest-data-farm
+Dracunculiasis eradication	0.58	medicine	https://pmc.ncbi.nlm.nih.gov/articles/PMC8643430/
