@@ -681,19 +681,34 @@ def generate_cost_per_neuron():
 def generate_initiatives():
     from matplotlib.patches import Patch
 
+    def year_to_datetime(year_val):
+        """Convert year value (int, float, or string) to datetime."""
+        if pd.isna(year_val):
+            return pd.NaT
+        try:
+            year_int = int(float(year_val))
+            return dt.datetime(year_int, 1, 1)
+        except (ValueError, TypeError):
+            return pd.NaT
+
     brain_proj_df = pd.read_csv(
-        DATA_FILES["initiatives_overview"], sep='\t',
-        parse_dates=['Start Year (cleaned)', 'End Year (cleaned)']
+        DATA_FILES["initiatives_overview"], sep='\t'
     )
+    # Convert year columns to datetime (values are floats like "2016.0")
+    brain_proj_df['Start Year (cleaned)'] = brain_proj_df['Start Year (cleaned)'].apply(year_to_datetime)
+    brain_proj_df['End Year (cleaned)'] = brain_proj_df['End Year (cleaned)'].apply(year_to_datetime)
+
     brain_proj_df.dropna(subset=['Start Year (cleaned)', 'Budget (in million $) (cleaned)'], inplace=True)
     brain_proj_df['Category'] = 'Brain'
     brain_proj_df['End Year (cleaned)'] = brain_proj_df['End Year (cleaned)'].fillna(dt.datetime(2024, 12, 31))
 
     other_proj_df = pd.read_csv(
         DATA_FILES["initiatives_costs"], sep='\t',
-        parse_dates=['StartYear', 'EndYear'],
         converters={'Adjusted2024_M': lambda s: 1e3 * float(s.replace('$', ''))}
     )
+    # Convert year columns to datetime (values are integers like "2021")
+    other_proj_df['StartYear'] = other_proj_df['StartYear'].apply(year_to_datetime)
+    other_proj_df['EndYear'] = other_proj_df['EndYear'].apply(year_to_datetime)
 
     all_proj_df = pd.concat([
         other_proj_df[['Name', 'Adjusted2024_M', 'Category', 'StartYear', 'EndYear']].rename(
@@ -827,9 +842,9 @@ def generate_sim_heatmap():
         'Learning',
     ]
 
-    # Convert to numeric
+    # Convert to numeric (use direct assignment for pandas 3.0 compatibility)
     for col in data_columns:
-        neuro_sim_df.loc[:, col] = pd.to_numeric(neuro_sim_df[col], errors='coerce')
+        neuro_sim_df[col] = pd.to_numeric(neuro_sim_df[col], errors='coerce')
 
     # Filter to rows that have at least half of the data columns filled
     min_valid_columns = len(data_columns) // 2
