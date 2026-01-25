@@ -23,6 +23,4 @@
  */
 
 export { Calculator, createCalculator, createCalculatorSync } from './engine/index.js';
-
-// Types are exported from the Calculator class and engine module
-// For full type definitions, see dist/calculator/types.ts (generated)
+export type { FormulaDefinition, OrganismData, CalculatorData } from './engine/index.js';

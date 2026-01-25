@@ -18,7 +18,7 @@ math.import({
   }
 }, { override: true });
 
-interface FormulaDefinition {
+export interface FormulaDefinition {
   id: string;
   formula: string;
   inputs: string[];
@@ -28,18 +28,20 @@ interface FormulaDefinition {
   description: string;
 }
 
-interface CalculatorData {
+export interface OrganismData {
+  id: string;
+  name: string;
+  neurons: number;
+  volumeMm3: number;
+  synapses: number;
+  source: string;
+}
+
+export interface CalculatorData {
   parameters: {
     shared: Record<string, number | string>;
     modalities: Record<string, Record<string, number>>;
-    organisms: Record<string, {
-      id: string;
-      name: string;
-      neurons: number;
-      volumeMm3: number;
-      synapses: number;
-      source: string;
-    }>;
+    organisms: Record<string, OrganismData>;
     proofreading: Record<string, Record<string, number>>;
   };
   formulas: FormulaDefinition[];

@@ -252,7 +252,27 @@ Key Python packages (see `requirements.txt`):
 cd scripts
 python3 validate.py          # Run all checks
 python3 validate.py --strict # Fail on warnings too
+python3 validate.py --ci     # Skip checks requiring generated content
 ```
+
+### Validation Modes
+
+| Mode | Use Case |
+|------|----------|
+| Default | Full validation - requires figures to be generated first |
+| `--strict` | Treats warnings as failures |
+| `--ci` | Skips checks that require generated content (figures, dist/data/) |
+
+**Important**: Full validation (without `--ci`) requires figures to be generated first:
+
+```bash
+cd scripts/figures
+python3 run_all_figures.py   # Generate figures to dist/
+cd ..
+python3 validate.py          # Now run full validation
+```
+
+The CI pipeline uses `--ci` mode since figure generation is a separate step.
 
 The validation script checks:
 
@@ -299,9 +319,11 @@ Some legacy assets don't follow all conventions. These are documented in `script
 ## Notes for Claude Instances
 
 - **Run `validate.py` before every commit** to catch issues early
+- **Regenerate figures before full validation**: Run `run_all_figures.py` before `validate.py` (without `--ci`)
 - No unit test suite exists - validation + visual inspection are the quality gates
 - The web interface is self-contained and can be embedded via iframes
 - All figures are licensed under CC BY 4.0
 - When modifying figures, regenerate using `run_all_figures.py`
 - JSON metadata files control the web interface display
 - If validation fails, fix the issues before committing
+- Use `validate.py --ci` if you only changed source data/code (not figures)
