@@ -1,0 +1,21 @@
+id	formula	inputs	unit	section	row	description
+voxels_per_mm3	1e18 / (voxel_x * voxel_y * voxel_z)	voxel_x,voxel_y,voxel_z	voxels/mm³	imaging	100	Number of voxels in one cubic millimeter at acquisition resolution
+effective_volume	biological_volume * expansion_factor^3 * (1 + reacquisition_rate)	biological_volume,expansion_factor,reacquisition_rate	mm³	imaging	99	Total volume to image after tissue expansion
+petavoxels_per_mm3	voxels_per_mm3 / 1e15	voxels_per_mm3	PV/mm³	imaging	101	Petavoxels per cubic millimeter
+petavoxels_total	petavoxels_per_mm3 * effective_volume	petavoxels_per_mm3,effective_volume	PV	imaging	102	Total petavoxels to image
+net_imaging_rate	sustained_imaging_rate / (total_channels / parallel_channels) * microscope_uptime	sustained_imaging_rate,total_channels,parallel_channels,microscope_uptime	Mvox/s	imaging	72	Effective imaging speed accounting for channel rounds and uptime
+mm3_per_day_per_scope	(net_imaging_rate * 1e6 * 86400) / voxels_per_mm3	net_imaging_rate,voxels_per_mm3	mm³/day	imaging	73	Volume one microscope can image per day
+num_microscopes	floor(microscope_budget / microscope_capital_cost)	microscope_budget,microscope_capital_cost	count	imaging	69	Number of microscopes affordable within budget
+scope_operating_cost_per_year	technician_salary / microscope_technician_ratio + scope_annual_service	technician_salary,microscope_technician_ratio,scope_annual_service	$/year	imaging	70	Annual operating cost per microscope
+imaging_days	if(mm3_per_day_per_scope * num_microscopes == 0, 0, effective_volume / (mm3_per_day_per_scope * num_microscopes) + initial_prep_days)	effective_volume,mm3_per_day_per_scope,num_microscopes,initial_prep_days	days	timeline	121	Total days to complete all imaging
+imaging_years	imaging_days / 365	imaging_days	years	timeline	151	Imaging time in years
+registration_days	biological_volume / (registration_rate_pv_per_day * max_parallel_gpus)	biological_volume,registration_rate_pv_per_day,max_parallel_gpus	days	timeline	122	Days for image registration/alignment
+segmentation_days	biological_volume / (segmentation_rate_pv_per_day * max_parallel_gpus)	biological_volume,segmentation_rate_pv_per_day,max_parallel_gpus	days	timeline	123	Days for neural segmentation
+processing_days	registration_days + segmentation_days	registration_days,segmentation_days	days	timeline	124	Total GPU processing time
+processing_years	processing_days / 365	processing_days	years	timeline	152	Processing time in years
+proofreading_days	neuron_count * hours_per_neuron / (num_proofreaders * hours_per_day)	neuron_count,hours_per_neuron,num_proofreaders,hours_per_day	days	timeline	125	Total human proofreading time
+proofreading_years	proofreading_days / 365	proofreading_days	years	timeline	153	Proofreading time in years
+buffer_years	(imaging_years + processing_years + proofreading_years) * risk_buffer_first	imaging_years,processing_years,proofreading_years,risk_buffer_first	years	timeline	154	Risk buffer time for first connectome
+time_to_first_years	imaging_years + processing_years + proofreading_years + buffer_years	imaging_years,processing_years,proofreading_years,buffer_years	years	timeline	155	Total years until first connectome complete
+time_to_marginal_years	max(imaging_years, processing_years, proofreading_years)	imaging_years,processing_years,proofreading_years	years	timeline	156	Years between subsequent connectomes (bottleneck)
+total_connectomes	round(project_duration / max(time_to_first_years, time_to_marginal_years))	project_duration,time_to_first_years,time_to_marginal_years	count	summary	148	Number of connectomes achievable in project duration

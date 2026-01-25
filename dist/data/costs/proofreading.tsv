@@ -1,0 +1,5 @@
+id	name	definition	unit	source	current	improved_1000x
+hours_per_neuron	Human proofreading hours per neuron	Human proofreading hours per neuron	hours	FlyWire estimates, assumptions	5.0	0.005
+hourly_rate	Hourly rate of proof-reader	Hourly rate of proofreader	$/hour	FlyWire estimates, assumptions	50.0	50.0
+hours_per_day	Proofreading hours per day	Proofreading hours per day	hours/day	FlyWire estimates, assumptions	6.0	6.0
+num_proofreaders	Number of proofreaders	Number of proofreaders	count	FlyWire estimates, assumptions	25000.0	1000.0

@@ -1,0 +1,6 @@
+Organism	Total Neuron Count	Maximum Neuron Firing Rate (Hz)	Average Liftime in Minutes	Isotropic resolution Single Neuron recording in µm
+C. Elegans	302	10	21600	1
+Zebrafish Larvae	100000	80	14400	1
+Drosophila	140000	200	57600	1
+Mouse	70000000	200	1576800	1
+Human	87000000000	415	39420000	1

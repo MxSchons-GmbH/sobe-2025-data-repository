@@ -1,0 +1,7 @@
+id	name	storage_tb	unit	description	source
+c_elegans	C. elegans	0.001	TB	Neural state storage requirement	Computational demands analysis
+drosophila	Drosophila	0.00025	TB	Neural state storage requirement	Computational demands analysis
+zebrafish_larva	Zebrafish (larva)	0.0001	TB	Neural state storage requirement	Estimated
+mouse	Mouse	2.0	TB	Neural state storage requirement	Computational demands analysis
+macaque	Macaque	100.0	TB	Neural state storage requirement	Estimated
+human	Human	6000.0	TB	Neural state storage requirement	Computational demands analysis

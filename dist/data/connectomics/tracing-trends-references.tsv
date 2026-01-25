@@ -1,0 +1,31 @@
+Year Reported	Method	Source	Notes
+1986	Manual	https://pmc.ncbi.nlm.nih.gov/articles/PMC3546938&sa=D&source=editors&ust=1748185701304439&usg=AOvVaw3Gr4LUX4tUbt2RdZ5wPosb
+2011	Volume Annotation	High-accuracy neurite reconstruction for high-throughput neuroanatomy
+2011	Skeleton Annotation	High-accuracy neurite reconstruction for high-throughput neuroanatomy
+2013	Semi-Automatic?	https://pmc.ncbi.nlm.nih.gov/articles/PMC3546938/#pone.0054050-Hall1
+2013	Skeleton Annotation	https://www.nature.com/articles/nature12346
+2015	Semi-Automated Segmentation & Proofreading	https://www.cell.com/cell/fulltext/S0092-8674(15)00824-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415008247%3Fshowall%3Dtrue
+2016	Skeleton tracing	https://www.nature.com/articles/nn.4290#Sec24
+2016	Skeleton tracing	https://pmc.ncbi.nlm.nih.gov/articles/PMC5100684/
+2018	Iterative reconstruction	https://pmc.ncbi.nlm.nih.gov/articles/PMC5806122/
+2019	Dense Connectomic Reconstruction	https://www.science.org/doi/10.1126/science.aay3134
+2020	Full Manual Tracing	https://www.biorxiv.org/content/biorxiv/early/2020/10/07/605634.full.pdf
+2020	FFN concatenation	https://www.biorxiv.org/content/biorxiv/early/2020/10/07/605634.full.pdf
+2011	Manual error correction	https://www.biorxiv.org/content/10.1101/2023.03.14.532674v4.full
+2023	NEURD-guided error correction	https://www.biorxiv.org/content/10.1101/2023.03.14.532674v4.full
+2018	Skeleton Tracing	https://www.nature.com/articles/s41592-018-0049-4
+2018	FFN	https://arxiv.org/pdf/1611.00421
+2018	CNNs + affinity graphs	https://arxiv.org/pdf/1611.00421
+2022	LSDs	https://localshapedescriptors.github.io/
+2022	FFN	https://localshapedescriptors.github.io/
+2022	CNNs + affinity graphs	https://www.nature.com/articles/s41592-022-01711-z
+2022	CNNs + long range affinity graphs	https://www.nature.com/articles/s41592-022-01711-z
+2022	CNNs + MALIS loss	https://www.nature.com/articles/s41592-022-01711-z
+2022	FFN	https://www.science.org/doi/full/10.1126/science.adk4858#supplementary-materials
+2024	FFN	https://www.nature.com/articles/s41592-024-02226-5#Sec18	Proofreading only
+2024	Dense Reconstruction	https://www.nature.com/articles/s41592-024-02226-5#Sec18	Proofreading only
+2024	LSDs	https://www.nature.com/articles/s41592-024-02226-5#Sec18	Proofreading only
+2024	RoboEM	https://www.nature.com/articles/s41592-024-02226-5#Sec18	Proofreading only
+2024	Manual	https://www.nature.com/articles/s41592-024-02226-5#Sec18	Proofreading only
+2023	Manual	https://www.biorxiv.org/content/10.1101/2023.03.14.532674v4.full	NEURD
+2023	NEURD guided	https://www.biorxiv.org/content/10.1101/2023.03.14.532674v4.full

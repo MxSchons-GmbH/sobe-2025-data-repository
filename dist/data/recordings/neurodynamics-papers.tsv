@@ -1,0 +1,33 @@
+First author	Year	DOI/Link	Organism	Fixated / moving	Method	Number of neurons	Temporal resolution: Hz	Duration single session min	Duration total repeated sessions min	Resolution in µm isotropic	Individuals studied	Brain volume dimensions	SNR	Perturbation
+Kato	2015	[10]	C. elegans	fixated	Calcium	127	1.0	15.0	120.0	1	12.0
+Nichols	2017	[12]	C. elegans	fixated	Calcium	108	1.0	15.0	120.0	1	44.0
+Skora	2018	[15]	C. elegans	fixated	Calcium	129	1.0	15.0	120.0	1	12.0
+Kaplan	2020	[9]	C. elegans	fixated	Calcium	114	1.0	15.0	120.0	1	19.0
+Yemini	2021	 [37]	C. elegans	fixated	Calcium	125	1.0	15.0	120.0	1	49.0
+Uzel	2022	[18]	C. elegans	fixated	Calcium	138	1.0	15.0	120.0	1	6.0
+Dag	2023	[13]	C. elegans	fixated	Calcium	143	1.0	15.0	120.0	1	7.0
+Atanas	2023	 [5]	C. elegans	moving	Calcium	136	1.0	15.0	120.0	1	42.0
+Leifer	2023	[14]	C. elegans	fixated	Calcium	122	1.0	15.0	120.0	1	103.0
+Lin	2023	 [11]	C. elegans	fixated	Calcium	8	1.0	15.0	120.0	1	577.0
+Venkatachalam	2024	[32]	C. elegans	moving	Calcium	187	1.0	15.0	120.0	1	22.0
+Ahrens	2013	https://doi.org/10.1038/nmeth.2434	Zebrafish Larvae	fixiated	Calcium	80000	1.0	25.0	150.0	1
+Favre-Bulle	2018	https://doi.org/10.1016/j.cub.2018.09.060	Zebrafish Larvae	fixated	Calcium	80000	4.0	25.0	150.0	1
+Yang	2022	https://doi.org/10.1038/s41592-022-01417-2	Zebrafish Larvae	fixated	Calcium	40000	3.3	25.0	150.0	1
+Voleti	2019	https://doi.org/10.1038/s41592-019-0579-4	Zebrafish Larvae	fixated	Calcium	6000	25.75	25.0	150.0	1
+Bruzzone	2021	https://doi.org/10.1038/s41598-021-90335-y	Zebrafish Larvae	fixated	Calcium	52000	1.0	25.0	150.0	1
+Wang	2023	https://www.biorxiv.org/content/10.1101/2023.12.15.571964v1	Zebrafish Larvae	fixated	Voltage	25000	200.0	25.0	150.0	1
+Aimon	2019	https://doi.org/10.1371/journal.pbio.2006732	Drosophila	fixated	Calcium	63000	100.0	60.0	80.0	1
+Schaffer	2023	https://doi.org/10.1038/s41467-023-41261-2	Drosophila	fixated	Calcium	40600	10.0	60.0	80.0	1
+Brezovec	2024	https://doi.org/10.1016/j.cub.2023.12.063	Drosophila	fixated	Calcium	95200	1.8	60.0	80.0	1
+Schnell	2017	https://doi.org/10.1016/j.cub.2017.03.004	Drosophila	fixated	Calcium	10	1.0	60.0	80.0	1
+Aragon	2022	https://doi.org/10.7554/eLife.69094	Drosophila	fixated	Calcium	7500	1.0	720.0	720.0	1
+Fores-Valle	2022	https://doi.org/10.1016/j.jneumeth.2021.109432		fixated	Calcium	7500	1.0	0.5	900.0	1
+Aimon	2019	https://doi.org/10.1371/journal.pbio.2006732	Drosophila	fixated	Voltage	7500	200.0			1
+Microns Consortium	2024	https://doi.org/10.1101/2021.07.28.454025	Mouse	fixated	Calcium	75000	1.0	80.0	480.0	1
+Manley	2024	https://doi.org/10.1016/j.neuron.2024.02.011	Mouse	fixated	Calcium	1000000	1.0	60.0	120.0	1
+Kim	2016	https://doi.org/10.1016/j.celrep.2016.12.004	Mouse	fixated	Calcium	40000	1.0	5.0	30.0	1
+Zong	2022	https://doi.org/10.1016/j.cell.2022.02.017	Mouse	moving	Calcium	1000	30.0	10.0	40.0	1
+Bai	2024	https://www.nature.com/articles/s41592-024-02458-5	Mouse	fixated	Voltage	300	400.0	20.0	20.0	1
+Kupers	2024	https://doi.org/10.1016/j.tins.2024.09.011	Human	fixated	fMRI	86000000000	0.3	60.0	12000.0	1000
+Tang	2022	https://www.biorxiv.org/content/10.1101/2022.09.29.509744v1.full.pdf	Human	fixated	fMRI	86000000000	0.3	60.0	960.0	1000
+Allen	2021	https://www.nature.com/articles/s41593-021-00962-x	Human	fixated	fMRI	86000000000	0.3	60.0	2100.0	1000
