@@ -1,0 +1,611 @@
+{
+  "figures": [
+    {
+      "id": "all-sim-rec",
+      "title": "Neural Simulations & Recordings Overview",
+      "description": "Combined visualization showing the landscape of neural simulations and recordings across different scales and organisms.",
+      "filename": "neural-simulations-recordings-overview",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "overview",
+        "simulation",
+        "recording"
+      ],
+      "featured": true
+    },
+    {
+      "id": "num-neurons",
+      "title": "Number of Neurons",
+      "description": "Comparison of neuron counts across different organisms and brain regions.",
+      "filename": "neuron-counts-organism-comparison",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "overview",
+        "anatomy"
+      ]
+    },
+    {
+      "id": "imaging-speed",
+      "title": "Neuroimaging Speed Comparison",
+      "description": "Analysis of imaging speed capabilities across different neuroimaging technologies.",
+      "filename": "neuroimaging-speed-comparison",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "technology",
+        "imaging"
+      ]
+    },
+    {
+      "id": "compute",
+      "title": "Compute Hardware Trends",
+      "description": "Historical trends in computational hardware relevant to brain emulation.",
+      "filename": "compute-hardware-trends-brain-emulation",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "technology",
+        "compute"
+      ]
+    },
+    {
+      "id": "storage-costs",
+      "title": "Storage Cost Trends Over Time",
+      "description": "Trends in data storage costs over time and implications for brain data storage.",
+      "filename": "storage-cost-trends-brain-data",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "technology",
+        "storage",
+        "cost"
+      ]
+    },
+    {
+      "id": "compute-storage-parallel",
+      "title": "Compute & Storage Parallel Trends",
+      "description": "Side-by-side comparison of compute hardware and storage cost trends for brain emulation.",
+      "filename": "compute-storage-trends-parallel",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "technology",
+        "compute",
+        "storage"
+      ]
+    },
+    {
+      "id": "neuro-recordings",
+      "title": "Neural Recordings",
+      "description": "Overview of neural recording capabilities and progress over time.",
+      "filename": "neural-recording-timeline-overview",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "recording",
+        "overview"
+      ]
+    },
+    {
+      "id": "scanned-brain-tissue",
+      "title": "Scanned Brain Tissue",
+      "description": "Progress in scanning and reconstructing brain tissue at various resolutions.",
+      "filename": "connectomics-tissue-scanning-progress",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "connectomics",
+        "imaging"
+      ]
+    },
+    {
+      "id": "recording-modalities",
+      "title": "Recording Modalities Comparison",
+      "description": "Comparison of different neural recording methods including EEG, fMRI, calcium imaging, and electrophysiology.",
+      "filename": "neural-recording-modalities-comparison",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "recording",
+        "technology"
+      ]
+    },
+    {
+      "id": "emulation-compute-time-based",
+      "title": "Emulation Compute Requirements (Time-Based)",
+      "description": "Computational requirements for time-based neural emulation approaches.",
+      "filename": "brain-emulation-compute-time-based",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "emulation",
+        "compute"
+      ]
+    },
+    {
+      "id": "emulation-compute-event-driven",
+      "title": "Emulation Compute Requirements (Event-Driven)",
+      "description": "Computational requirements for event-driven neural emulation approaches.",
+      "filename": "brain-emulation-compute-event-driven",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "emulation",
+        "compute"
+      ]
+    },
+    {
+      "id": "emulation-storage-requirements",
+      "title": "Emulation Storage Requirements",
+      "description": "Storage requirements for brain emulation across different organisms and detail levels.",
+      "filename": "brain-emulation-storage-requirements",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "emulation",
+        "storage"
+      ]
+    },
+    {
+      "id": "cost-per-neuron",
+      "title": "Cost Per Neuron",
+      "description": "Historical trends in the cost of reconstructing individual neurons, including budget data, estimates, and future illustrations.",
+      "filename": "connectomics-neuron-reconstruction-cost",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "cost",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "cost-per-neuron-no-illust",
+      "title": "Cost Per Neuron (Budget & Estimates Only)",
+      "description": "Historical trends in the cost of reconstructing individual neurons, showing only completed budgets and current estimates without future illustrations.",
+      "filename": "connectomics-neuron-cost-estimates",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "cost",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "funding",
+      "title": "Brain Initiative Funding",
+      "description": "Overview of funding for major brain research initiatives worldwide.",
+      "filename": "brain-research-initiative-funding",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "funding",
+        "initiatives"
+      ]
+    },
+    {
+      "id": "organism-compute",
+      "title": "Organism Computational Demands",
+      "description": "Computational demands for simulating brains of different organisms.",
+      "filename": "brain-simulation-compute-by-organism",
+      "path": "figures/generated",
+      "organism": [
+        "c-elegans",
+        "drosophila",
+        "zebrafish",
+        "mouse",
+        "human"
+      ],
+      "type": [
+        "compute",
+        "emulation"
+      ]
+    },
+    {
+      "id": "bandwidth-scaling",
+      "title": "Bandwidth Scaling for Multiplexed Imaging",
+      "description": "Scaling of bandwidth requirements for multiplexed imaging of whole human brain at different resolutions (10-100nm) and color channel counts (1-30 colors). Shows how data rates scale from terabits to petabits per second.",
+      "filename": "brain-imaging-bandwidth-requirements",
+      "path": "figures/generated",
+      "organism": [
+        "human"
+      ],
+      "type": [
+        "imaging",
+        "technology",
+        "compute"
+      ]
+    },
+    {
+      "id": "hardware-scaling",
+      "title": "Hardware Scaling Trends",
+      "description": "Historical scaling trends for hardware FLOPS (~60,000x/20yrs), DRAM bandwidth (~100x/20yrs), and interconnect bandwidth (~30x/20yrs) from 2005-2025. Shows exponential growth with fitted trend lines for GPUs (Pentium 4 to B200), memory (GDDR4 to HBM3E), and interconnects (PCIe 2.0 to NVLink 4.0).",
+      "filename": "gpu-memory-interconnect-scaling",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "technology",
+        "compute"
+      ]
+    },
+    {
+      "id": "sim-heatmap",
+      "title": "Simulation Heatmap",
+      "description": "Heatmap visualization of neural simulation capabilities across dimensions.",
+      "filename": "neural-simulation-capabilities-heatmap",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "simulation",
+        "heatmap"
+      ]
+    },
+    {
+      "id": "rec-heatmap",
+      "title": "Recording Heatmap",
+      "description": "Heatmap visualization of neural recording capabilities across dimensions.",
+      "filename": "neural-recording-capabilities-heatmap",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "recording",
+        "heatmap"
+      ]
+    },
+    {
+      "id": "initiatives1",
+      "title": "Brain Initiatives Timeline",
+      "description": "Timeline showing major brain research initiatives and their duration.",
+      "filename": "brain-initiatives-timeline-overview",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "initiatives",
+        "funding"
+      ]
+    },
+    {
+      "id": "initiatives2",
+      "title": "Brain Initiatives Funding",
+      "description": "Funding comparison across major brain research initiatives.",
+      "filename": "brain-initiatives-funding-comparison",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "initiatives",
+        "funding"
+      ]
+    },
+    {
+      "id": "initiatives3",
+      "title": "Budget Distributions by Category Over Time",
+      "description": "Stacked area chart showing budget distributions by category over time for major brain initiatives.",
+      "filename": "brain-initiatives-budget-categories-timeline",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "initiatives",
+        "funding"
+      ]
+    },
+    {
+      "id": "initiatives4",
+      "title": "Budget Distributions by Category",
+      "description": "Bar chart showing budget distributions by category for major brain initiatives.",
+      "filename": "brain-initiatives-budget-categories-bars",
+      "path": "figures/generated",
+      "organism": [
+        "all"
+      ],
+      "type": [
+        "initiatives",
+        "funding"
+      ]
+    },
+    {
+      "id": "neuro-sim-c-elegans",
+      "title": "C. elegans Neural Simulations",
+      "description": "Neural simulation landscape for C. elegans (302 neurons).",
+      "filename": "neural-simulation-celegans",
+      "path": "figures/generated/neuro-sim",
+      "organism": [
+        "c-elegans"
+      ],
+      "type": [
+        "simulation",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-sim-drosophila",
+      "title": "Drosophila Neural Simulations",
+      "description": "Neural simulation landscape for Drosophila (fruit fly).",
+      "filename": "neural-simulation-drosophila",
+      "path": "figures/generated/neuro-sim",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "simulation",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-sim-zebrafish",
+      "title": "Zebrafish Neural Simulations",
+      "description": "Neural simulation landscape for Zebrafish larvae.",
+      "filename": "neural-simulation-zebrafish",
+      "path": "figures/generated/neuro-sim",
+      "organism": [
+        "zebrafish"
+      ],
+      "type": [
+        "simulation",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-sim-mouse",
+      "title": "Mouse Neural Simulations",
+      "description": "Neural simulation landscape for Mouse brain.",
+      "filename": "neural-simulation-mouse",
+      "path": "figures/generated/neuro-sim",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "simulation",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-sim-human",
+      "title": "Human Neural Simulations",
+      "description": "Neural simulation landscape for Human brain.",
+      "filename": "neural-simulation-human",
+      "path": "figures/generated/neuro-sim",
+      "organism": [
+        "human"
+      ],
+      "type": [
+        "simulation",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-c-elegans-fixated",
+      "title": "C. elegans Neural Recordings (Fixated)",
+      "description": "Neural recording landscape for C. elegans in fixated preparations.",
+      "filename": "neural-recording-celegans-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "c-elegans"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-c-elegans-moving",
+      "title": "C. elegans Neural Recordings (Moving)",
+      "description": "Neural recording landscape for C. elegans in freely moving preparations.",
+      "filename": "neural-recording-celegans-moving",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "c-elegans"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-drosophila",
+      "title": "Drosophila Neural Recordings",
+      "description": "Neural recording landscape for Drosophila.",
+      "filename": "neural-recording-drosophila-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "drosophila"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-zebrafish",
+      "title": "Zebrafish Neural Recordings",
+      "description": "Neural recording landscape for Zebrafish.",
+      "filename": "neural-recording-zebrafish-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "zebrafish"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-mouse-fixated",
+      "title": "Mouse Neural Recordings (Fixated)",
+      "description": "Neural recording landscape for Mouse in fixated preparations.",
+      "filename": "neural-recording-mouse-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-mouse-moving",
+      "title": "Mouse Neural Recordings (Moving)",
+      "description": "Neural recording landscape for Mouse in freely moving preparations.",
+      "filename": "neural-recording-mouse-moving",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "mouse"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    },
+    {
+      "id": "neuro-rec-human",
+      "title": "Human Neural Recordings",
+      "description": "Neural recording landscape for Human.",
+      "filename": "neural-recording-human-fixated",
+      "path": "figures/generated/neuro-rec",
+      "organism": [
+        "human"
+      ],
+      "type": [
+        "recording",
+        "organism-specific"
+      ]
+    }
+  ],
+  "organisms": [
+    {
+      "id": "all",
+      "label": "All Organisms"
+    },
+    {
+      "id": "c-elegans",
+      "label": "C. elegans"
+    },
+    {
+      "id": "drosophila",
+      "label": "Drosophila"
+    },
+    {
+      "id": "zebrafish",
+      "label": "Zebrafish"
+    },
+    {
+      "id": "mouse",
+      "label": "Mouse"
+    },
+    {
+      "id": "human",
+      "label": "Human"
+    }
+  ],
+  "types": [
+    {
+      "id": "overview",
+      "label": "Overview"
+    },
+    {
+      "id": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "id": "recording",
+      "label": "Recording"
+    },
+    {
+      "id": "emulation",
+      "label": "Emulation"
+    },
+    {
+      "id": "compute",
+      "label": "Compute"
+    },
+    {
+      "id": "storage",
+      "label": "Storage"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "technology",
+      "label": "Technology"
+    },
+    {
+      "id": "imaging",
+      "label": "Imaging"
+    },
+    {
+      "id": "connectomics",
+      "label": "Connectomics"
+    },
+    {
+      "id": "initiatives",
+      "label": "Initiatives"
+    },
+    {
+      "id": "funding",
+      "label": "Funding"
+    },
+    {
+      "id": "heatmap",
+      "label": "Heatmap"
+    },
+    {
+      "id": "organism-specific",
+      "label": "Organism-Specific"
+    },
+    {
+      "id": "anatomy",
+      "label": "Anatomy"
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "fullName": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Zanichelli & Schons et al., State of Brain Emulation Report 2025"
+  }
+}

@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import { join } from 'path';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 
 /**
  * Parse a TSV file into an array of objects
@@ -41,9 +41,10 @@ export function writeTSV(filepath: string, data: Record<string, unknown>[], colu
 }
 
 /**
- * Write content to a file
+ * Write content to a file (creates parent directories if needed)
  */
 export function writeFile(filepath: string, content: string): void {
+  mkdirSync(dirname(filepath), { recursive: true });
   writeFileSync(filepath, content);
 }
 
