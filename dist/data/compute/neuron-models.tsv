@@ -1,0 +1,5 @@
+id	name	short_name	flops_per_sec	flops_per_spike	bytes	description
+lif	Leaky Integrate-and-Fire	LIF	40000	15	4	Simple point neuron with exponential leak
+hh5	5-Compartment Hodgkin-Huxley	5-comp HH	3450000	0	80	Biophysically detailed with soma, dendrites, and axon
+izhikevich	Izhikevich	Izhikevich	130000	25	16	Efficient spiking model capturing many firing patterns
+adex	Adaptive Exponential	AdEx	200000	30	24	Two-variable model with adaptation and exponential spike

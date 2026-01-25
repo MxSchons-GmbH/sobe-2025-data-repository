@@ -368,6 +368,40 @@
             "Format",
             "Notes"
           ]
+        },
+        {
+          "id": "neuron-models",
+          "title": "Neuron Models",
+          "description": "Computational neuron models with FLOPS requirements, spike costs, and memory usage for brain simulation.",
+          "filename": "neuron-models.tsv",
+          "path": "data/compute",
+          "rows": "4",
+          "columns": [
+            "ID",
+            "Name",
+            "Short Name",
+            "FLOPS/sec",
+            "FLOPS/spike",
+            "Bytes",
+            "Description"
+          ]
+        },
+        {
+          "id": "synapse-models",
+          "title": "Synapse Models",
+          "description": "Computational synapse models with FLOPS requirements, event costs, and memory usage for brain simulation.",
+          "filename": "synapse-models.tsv",
+          "path": "data/compute",
+          "rows": "4",
+          "columns": [
+            "ID",
+            "Name",
+            "Short Name",
+            "FLOPS/sec",
+            "FLOPS/event",
+            "Bytes",
+            "Description"
+          ]
         }
       ]
     },
@@ -662,6 +696,41 @@
             "Mouse",
             "Macaque",
             "Human"
+          ]
+        },
+        {
+          "id": "recording-capabilities",
+          "title": "Recording Capabilities",
+          "description": "State-of-the-art neural recording capabilities per organism, including experiment parameters and data volumes.",
+          "filename": "recording-capabilities.tsv",
+          "path": "data/parameters",
+          "rows": "6",
+          "columns": [
+            "Parameter",
+            "Name",
+            "Definition",
+            "Unit",
+            "C. elegans",
+            "Drosophila",
+            "Zebrafish larva",
+            "Mouse",
+            "Macaque",
+            "Human"
+          ]
+        },
+        {
+          "id": "recording-parameters",
+          "title": "Recording Parameters",
+          "description": "General parameters for neural recording calculations.",
+          "filename": "recording-parameters.tsv",
+          "path": "data/parameters",
+          "rows": "1",
+          "columns": [
+            "Parameter",
+            "Name",
+            "Definition",
+            "Unit",
+            "Value"
           ]
         }
       ]
