@@ -195,7 +195,7 @@ def check_zero_size_files(report: ValidationReport) -> CheckResult:
 
 def check_figures_metadata_sync(report: ValidationReport) -> CheckResult:
     """Verify every metadata entry has a corresponding file."""
-    metadata_path = paths.OUTPUT_METADATA / "figures-metadata.json"
+    metadata_path = paths.OUTPUT_FIGURES_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load figures-metadata.json")
@@ -228,7 +228,7 @@ def check_figures_metadata_sync(report: ValidationReport) -> CheckResult:
 
 def check_orphan_figures(report: ValidationReport) -> CheckResult:
     """Find generated figures not listed in metadata."""
-    metadata_path = paths.OUTPUT_METADATA / "figures-metadata.json"
+    metadata_path = paths.OUTPUT_FIGURES_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load figures-metadata.json")
@@ -266,7 +266,7 @@ def check_orphan_figures(report: ValidationReport) -> CheckResult:
 
 def check_data_files_exist(report: ValidationReport) -> CheckResult:
     """Verify all referenced CSV files exist and are readable."""
-    metadata_path = paths.OUTPUT_METADATA / "data-metadata.json"
+    metadata_path = paths.OUTPUT_DATA_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load data-metadata.json")
@@ -383,7 +383,7 @@ def check_data_metadata_files(report: ValidationReport) -> CheckResult:
 
 def check_organism_taxonomy(report: ValidationReport) -> CheckResult:
     """Verify all organism tags are valid."""
-    metadata_path = paths.OUTPUT_METADATA / "figures-metadata.json"
+    metadata_path = paths.OUTPUT_FIGURES_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load figures-metadata.json")
@@ -404,7 +404,7 @@ def check_organism_taxonomy(report: ValidationReport) -> CheckResult:
 
 def check_type_taxonomy(report: ValidationReport) -> CheckResult:
     """Verify all type tags are valid."""
-    metadata_path = paths.OUTPUT_METADATA / "figures-metadata.json"
+    metadata_path = paths.OUTPUT_FIGURES_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load figures-metadata.json")
@@ -428,12 +428,12 @@ def check_id_uniqueness(report: ValidationReport) -> CheckResult:
     all_ids = []
 
     # Figures metadata
-    figures_meta = load_json(paths.OUTPUT_METADATA / "figures-metadata.json")
+    figures_meta = load_json(paths.OUTPUT_FIGURES_METADATA)
     if figures_meta:
         all_ids.extend((f["id"], "figures") for f in figures_meta.get("figures", []))
 
     # Hand-drawn metadata
-    hand_drawn_meta = load_json(paths.OUTPUT_METADATA / "hand-drawn-metadata.json")
+    hand_drawn_meta = load_json(paths.OUTPUT_HAND_DRAWN_METADATA)
     if hand_drawn_meta:
         all_ids.extend((f["id"], "hand-drawn") for f in hand_drawn_meta.get("figures", []))
 
@@ -454,18 +454,17 @@ def check_id_uniqueness(report: ValidationReport) -> CheckResult:
 def check_license_consistency(report: ValidationReport) -> CheckResult:
     """Verify all metadata files have license information."""
     files_to_check = [
-        ("figures-metadata.json", True),
-        ("data-metadata.json", True),
-        ("hand-drawn-metadata.json", True),
+        ("figures", paths.OUTPUT_FIGURES_METADATA),
+        ("data", paths.OUTPUT_DATA_METADATA),
+        ("hand-drawn", paths.OUTPUT_HAND_DRAWN_METADATA),
     ]
 
     missing_license = []
 
-    for filename, required in files_to_check:
-        filepath = paths.OUTPUT_METADATA / filename
+    for name, filepath in files_to_check:
         data = load_json(filepath)
         if data and "license" not in data:
-            missing_license.append(filename)
+            missing_license.append(name)
 
     if missing_license:
         return CheckResult("warn", f"{len(missing_license)} files missing license", missing_license)
@@ -477,7 +476,7 @@ def check_description_quality(report: ValidationReport) -> CheckResult:
     poor_descriptions = []
 
     # Check figures metadata
-    figures_meta = load_json(paths.OUTPUT_METADATA / "figures-metadata.json")
+    figures_meta = load_json(paths.OUTPUT_FIGURES_METADATA)
     if figures_meta:
         for fig in figures_meta.get("figures", []):
             desc = fig.get("description", "")
@@ -587,7 +586,7 @@ def check_web_format_coverage(report: ValidationReport) -> CheckResult:
 
 def check_hand_drawn_files(report: ValidationReport) -> CheckResult:
     """Check hand-drawn figures have both PNG and SVG."""
-    metadata_path = paths.OUTPUT_METADATA / "hand-drawn-metadata.json"
+    metadata_path = paths.OUTPUT_HAND_DRAWN_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load hand-drawn-metadata.json")
@@ -626,7 +625,7 @@ def check_hand_drawn_files(report: ValidationReport) -> CheckResult:
 
 def check_orphan_hand_drawn_figures(report: ValidationReport) -> CheckResult:
     """Find hand-drawn figures not listed in metadata."""
-    metadata_path = paths.OUTPUT_METADATA / "hand-drawn-metadata.json"
+    metadata_path = paths.OUTPUT_HAND_DRAWN_METADATA
     data = load_json(metadata_path)
     if not data:
         return CheckResult("fail", "Could not load hand-drawn-metadata.json")
@@ -645,8 +644,8 @@ def check_orphan_hand_drawn_figures(report: ValidationReport) -> CheckResult:
     hand_drawn_dir = paths.OUTPUT_FIGURES_HAND_DRAWN
     orphans = []
 
-    # Skip non-figure files like metadata.json
-    skip_files = {"metadata.json"}
+    # Skip non-figure files like _metadata.json
+    skip_files = {"_metadata.json"}
 
     for f in hand_drawn_dir.iterdir():
         if f.name in skip_files:
@@ -835,7 +834,7 @@ def check_title_quality(report: ValidationReport) -> CheckResult:
     poor_titles = []
 
     # Check figures metadata
-    figures_meta = load_json(paths.OUTPUT_METADATA / "figures-metadata.json")
+    figures_meta = load_json(paths.OUTPUT_FIGURES_METADATA)
     if figures_meta:
         for fig in figures_meta.get("figures", []):
             title = fig.get("title", "")
@@ -852,7 +851,7 @@ def check_title_quality(report: ValidationReport) -> CheckResult:
                     poor_titles.append(f"{fig_id}: title may be too vague ('{title}')")
 
     # Check hand-drawn metadata
-    hand_drawn_meta = load_json(paths.OUTPUT_METADATA / "hand-drawn-metadata.json")
+    hand_drawn_meta = load_json(paths.OUTPUT_HAND_DRAWN_METADATA)
     if hand_drawn_meta:
         for fig in hand_drawn_meta.get("figures", []):
             if fig.get("id", "").startswith("_"):

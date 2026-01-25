@@ -56,14 +56,13 @@ sobe-2025-data-repository/
 └── data-and-figures/                 # Data assets for website
     ├── figures/
     │   ├── generated/                # Programmatic figures (SVG, PNG, WebP, AVIF)
+    │   │   ├── _metadata.json        # Generated figures catalog
     │   │   ├── neuro-sim/            # Per-organism simulation figures
     │   │   └── neuro-rec/            # Per-organism recording figures
     │   └── hand-drawn/               # Anatomical illustrations
-    ├── data/                         # TSV datasets
-    ├── metadata/                     # JSON metadata catalogs
-    │   ├── figures-metadata.json     # Generated figures catalog
-    │   ├── data-metadata.json        # Datasets catalog
-    │   └── hand-drawn-metadata.json  # Hand-drawn figures catalog
+    │       └── _metadata.json        # Hand-drawn figures catalog
+    ├── data/                         # TSV datasets (mirrors data/ structure)
+    │   └── _metadata.json            # Datasets catalog
     └── downloads/                    # ZIP archives for bulk download
 ```
 
@@ -145,11 +144,11 @@ The `data-and-figures/` directory provides assets for the main website:
 | Asset | Location | Format |
 |-------|----------|--------|
 | Generated figures | `figures/generated/` | SVG, PNG, WebP, AVIF |
+| Figure metadata | `figures/generated/_metadata.json` | JSON |
 | Hand-drawn figures | `figures/hand-drawn/` | SVG, PNG, WebP, AVIF |
+| Hand-drawn metadata | `figures/hand-drawn/_metadata.json` | JSON |
 | Datasets | `data/` | TSV |
-| Figure metadata | `metadata/figures-metadata.json` | JSON |
-| Dataset metadata | `metadata/data-metadata.json` | JSON |
-| Hand-drawn metadata | `metadata/hand-drawn-metadata.json` | JSON |
+| Dataset metadata | `data/_metadata.json` | JSON |
 | Bulk downloads | `downloads/` | ZIP |
 
 ### How the Website Uses This Data
@@ -157,7 +156,7 @@ The `data-and-figures/` directory provides assets for the main website:
 The main website repository reads the metadata JSON files and renders the UI natively.
 When you add new figures or datasets:
 
-1. Add the actual files (CSV, PNG, SVG)
+1. Add the actual files (TSV, PNG, SVG)
 2. Update the relevant metadata JSON
 3. Regenerate ZIP archives if needed
 4. The website will automatically display the new content
