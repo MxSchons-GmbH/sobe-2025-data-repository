@@ -1,0 +1,10 @@
+id	name	definition	unit	c_elegans	drosophila	zebrafish_larva	mouse	macaque	human	source
+recording_samples	Recording samples	Number of recording experiments to run	count	10	20	20	50	100	200	Estimated from literature
+brain_fraction	Brain fraction coverage	Percentage of total brain volume to record	fraction	1.0	1.0	1.0	0.1	0.01	0.001	Practical limits
+microscope_fleet	Microscope fleet size	Number of microscopes in imaging fleet	count	1	2	2	10	50	100	Scaled by brain volume
+gpu_cluster	GPU cluster size	Number of GPUs for processing	count	10	50	100	1000	5000	10000	Scaled by data volume
+proofreading_team	Proofreading team size	Number of proofreaders for connectome reconstruction	FTE	2	10	20	100	500	1000	Scaled by synapse count
+neuron_model	Default neuron model	Neuron simulation model complexity	id	lif	lif	izhikevich	izhikevich	adex	hh5	Model complexity scaling
+synapse_model	Default synapse model	Synapse simulation model complexity	id	alpha	alpha	exponential	tsodyks_markram	tsodyks_markram	stdp	Model complexity scaling
+imaging_modality	Default imaging modality	Imaging technology for connectomics	id	em	em	exm	exm	exm	exm	EM for small, ExM for large
+storage_preset	Default storage preset	Storage configuration preset	id	minimal	standard	standard	standard	high_availability	high_availability	Scaled by data criticality

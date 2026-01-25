@@ -643,6 +643,26 @@
             "Unit",
             "Description"
           ]
+        },
+        {
+          "id": "organism-defaults",
+          "title": "Organism Defaults",
+          "description": "Default calculator parameters per organism, including resource requirements, computational models, and imaging modalities.",
+          "filename": "organism-defaults.tsv",
+          "path": "data/parameters",
+          "rows": "9",
+          "columns": [
+            "Parameter",
+            "Name",
+            "Definition",
+            "Unit",
+            "C. elegans",
+            "Drosophila",
+            "Zebrafish larva",
+            "Mouse",
+            "Macaque",
+            "Human"
+          ]
         }
       ]
     }
