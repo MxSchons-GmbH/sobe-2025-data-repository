@@ -53,7 +53,7 @@ sobe-2025-data-repository/
 │   ├── recordings/                   # Neural recording data
 │   ├── simulations/                  # Simulation history data
 │   └── _metadata/                    # Attribution metadata (mirrors data/ structure)
-└── data-and-figures/                 # Data assets for website
+└── dist/                 # Data assets for website
     ├── figures/
     │   ├── generated/                # Programmatic figures (SVG, PNG, WebP, AVIF)
     │   │   ├── _metadata.json        # Generated figures catalog
@@ -137,7 +137,7 @@ All figures are saved in both **SVG** (vector) and **PNG** (150 DPI) formats.
 
 ## Data Assets
 
-The `data-and-figures/` directory provides assets for the main website:
+The `dist/` directory provides assets for the main website:
 
 ### What This Repo Provides
 
@@ -178,8 +178,8 @@ Source data is organized by topic:
 
 ## Adding Hand-Drawn Figures
 
-1. Add PNG and SVG files to `data-and-figures/figures/hand-drawn/`
-2. Update `data-and-figures/metadata/hand-drawn-metadata.json`:
+1. Add PNG and SVG files to `dist/figures/hand-drawn/`
+2. Update `dist/metadata/hand-drawn-metadata.json`:
 
 ```json
 {

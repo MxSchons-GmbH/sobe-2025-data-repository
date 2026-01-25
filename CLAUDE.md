@@ -40,18 +40,27 @@ sobe-2025-data-repository/
 │   ├── run_all_figures.py     # Main pipeline with figure registry
 │   ├── validate.py            # Quality validation (run before commits!)
 │   └── build_downloads.py     # ZIP archive builder
-├── data/                       # Source datasets (CSV files)
-│   ├── ai-compute/            # AI training compute data
-│   ├── brain-scans/           # Connectomics scanning data
-│   ├── initiatives/           # Research initiatives data
-│   └── storage-costs/         # Storage cost trends
-├── data-and-figures/          # Data assets for website
+├── data/                       # Source datasets (TSV files)
+│   ├── compute/               # AI training, hardware data
+│   ├── connectomics/          # Brain scanning data
+│   ├── costs/                 # Cost estimates, megaprojects
+│   ├── formulas/              # Calculator formulas
+│   ├── imaging/               # Imaging modalities
+│   ├── initiatives/           # Brain research programs
+│   ├── organisms/             # Organism reference data
+│   ├── parameters/            # Shared calculation parameters
+│   ├── recordings/            # Neural recording data
+│   ├── simulations/           # Simulation history data
+│   └── _metadata/             # Attribution metadata (mirrors data/ structure)
+├── dist/                       # Distribution output for website
 │   ├── calculator/            # Calculator outputs (data.json, types.ts, docs/)
-│   ├── data/                  # CSV datasets
-│   ├── figures/               # Generated + hand-drawn images
+│   ├── data/                  # TSV datasets (mirrors data/ structure)
+│   │   └── _metadata.json     # Datasets catalog
+│   ├── figures/
 │   │   ├── generated/         # Output SVG, PNG, WebP, AVIF figures
+│   │   │   └── _metadata.json # Generated figures catalog
 │   │   └── hand-drawn/        # Hand-drawn illustrations
-│   ├── metadata/              # JSON metadata catalogs
+│   │       └── _metadata.json # Hand-drawn figures catalog
 │   └── downloads/             # ZIP archives for bulk download
 └── requirements.txt           # Python dependencies
 ```
@@ -102,7 +111,7 @@ scripts/calculator/
 
 ### Calculator Outputs
 
-Outputs are generated in `data-and-figures/calculator/`:
+Outputs are generated in `dist/calculator/` (distribution folder):
 
 | File | Purpose |
 |------|---------|
@@ -199,14 +208,14 @@ Same conventions apply. Use descriptive names that explain the illustration:
 1. Add a function in `scripts/run_all_figures.py` with the `@figure()` decorator
 2. Use styling from `style.py`
 3. Save to `paths.GENERATED_FIGURES_DIR`
-4. Update `data-and-figures/metadata/figures-metadata.json` if needed
+4. Update `dist/figures/generated/_metadata.json` if needed
 
 ### Serving Data Locally
 
 ```bash
-cd data-and-figures
+cd dist
 python3 -m http.server 8000
-# Access metadata at http://localhost:8000/metadata/
+# Access figures metadata at http://localhost:8000/figures/generated/_metadata.json
 ```
 
 ## Data Categories

@@ -24,8 +24,8 @@ DATA_IMAGING = DATA_DIR / "imaging"
 DATA_INITIATIVES = DATA_DIR / "initiatives"
 DATA_METADATA = DATA_DIR / "_metadata"
 
-# Output directories (the embeddable web interface)
-OUTPUT_ROOT = REPO_ROOT / "data-and-figures"
+# Output directories (distribution-ready assets for website)
+OUTPUT_ROOT = REPO_ROOT / "dist"
 OUTPUT_FIGURES = OUTPUT_ROOT / "figures" / "generated"
 OUTPUT_FIGURES_NEURO_SIM = OUTPUT_FIGURES / "neuro-sim"
 OUTPUT_FIGURES_NEURO_REC = OUTPUT_FIGURES / "neuro-rec"
