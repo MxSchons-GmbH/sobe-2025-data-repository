@@ -381,6 +381,7 @@ The validation script checks:
 | **5 - Bibliography** | Bibliography schema | Missing required fields in entries |
 | **5 - Bibliography** | Bibliography duplicates | Duplicate DOIs or URLs |
 | **5 - Bibliography** | Ref ID format | Invalid ref_id naming convention |
+| **5 - Bibliography** | TSV column values | Invalid confidence/validated_by values |
 | **6 - SEO** | Title quality | Titles too short for alt text/SEO |
 
 ### SEO Length Limits

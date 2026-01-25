@@ -22,6 +22,7 @@ Usage:
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 from typing import NamedTuple, Optional, List, Tuple
@@ -872,8 +873,6 @@ def check_bibliography_duplicates(report: ValidationReport) -> CheckResult:
 
 def check_ref_id_format(report: ValidationReport) -> CheckResult:
     """Check that ref_ids follow the author2024 naming convention."""
-    import re
-
     bib_path = paths.DATA_REFERENCES / "bibliography.json"
     data = load_json(bib_path)
     if not data:
@@ -925,6 +924,61 @@ def check_dist_bibliography_sync(report: ValidationReport) -> CheckResult:
     return CheckResult("pass", "dist/references/bibliography.json in sync with source")
 
 
+# Valid values for reference tracking columns
+VALID_CONFIDENCE_VALUES = {"measured", "derived", "estimated", "assumed", "none", ""}
+VALID_VALIDATED_BY_VALUES = {"human", "ai", "human+ai", "none", ""}
+
+# TSV files with reference tracking columns
+REFERENCE_TRACKING_FILES = [
+    paths.DATA_DIR / "parameters" / "shared.tsv",
+    paths.DATA_DIR / "formulas" / "costs.tsv",
+    paths.DATA_DIR / "formulas" / "storage.tsv",
+    paths.DATA_DIR / "formulas" / "connectomics.tsv",
+]
+
+
+def check_tsv_column_values(report: ValidationReport) -> CheckResult:
+    """Validate that confidence and validated_by columns have valid values."""
+    import csv
+
+    issues = []
+
+    for filepath in REFERENCE_TRACKING_FILES:
+        if not filepath.exists():
+            continue
+
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f, delimiter='\t')
+                filename = filepath.name
+
+                for row_num, row in enumerate(reader, start=2):  # +2 for 1-indexed + header
+                    # Check confidence column
+                    if "confidence" in row:
+                        val = (row["confidence"] or "").strip()
+                        if val not in VALID_CONFIDENCE_VALUES:
+                            issues.append(
+                                f"{filename}:{row_num}: Invalid confidence value '{val}' "
+                                f"(valid: {', '.join(sorted(VALID_CONFIDENCE_VALUES - {''}))})"
+                            )
+
+                    # Check validated_by column
+                    if "validated_by" in row:
+                        val = (row["validated_by"] or "").strip()
+                        if val not in VALID_VALIDATED_BY_VALUES:
+                            issues.append(
+                                f"{filename}:{row_num}: Invalid validated_by value '{val}' "
+                                f"(valid: {', '.join(sorted(VALID_VALIDATED_BY_VALUES - {''}))})"
+                            )
+        except Exception as e:
+            issues.append(f"{filepath.name}: Could not read file - {e}")
+
+    if issues:
+        return CheckResult("fail", f"{len(issues)} invalid column values found", issues)
+
+    return CheckResult("pass", "All confidence and validated_by values are valid")
+
+
 # =============================================================================
 # TIER 6: SEO & Accessibility Checks
 # =============================================================================
@@ -956,8 +1010,6 @@ SEO_LENGTH_LIMITS = {
 
 def check_html_meta_tags(report: ValidationReport) -> CheckResult:
     """Verify HTML files have required SEO meta tags."""
-    import re
-
     html_files = [
         paths.OUTPUT_ROOT / "figures.html",
         paths.OUTPUT_ROOT / "data.html",
@@ -990,8 +1042,6 @@ def check_html_meta_tags(report: ValidationReport) -> CheckResult:
 
 def check_html_lang_attribute(report: ValidationReport) -> CheckResult:
     """Verify HTML files have lang attribute."""
-    import re
-
     html_files = [
         paths.OUTPUT_ROOT / "figures.html",
         paths.OUTPUT_ROOT / "data.html",
@@ -1014,8 +1064,6 @@ def check_html_lang_attribute(report: ValidationReport) -> CheckResult:
 
 def check_heading_hierarchy(report: ValidationReport) -> CheckResult:
     """Verify proper heading hierarchy (H1 → H2 → H3, no skipping levels)."""
-    import re
-
     html_files = [
         paths.OUTPUT_ROOT / "figures.html",
         paths.OUTPUT_ROOT / "data.html",
@@ -1055,8 +1103,6 @@ def check_heading_hierarchy(report: ValidationReport) -> CheckResult:
 
 def check_external_link_security(report: ValidationReport) -> CheckResult:
     """Verify external links have rel='noopener noreferrer'."""
-    import re
-
     html_files = [
         paths.OUTPUT_ROOT / "figures.html",
         paths.OUTPUT_ROOT / "data.html",
@@ -1131,8 +1177,6 @@ def check_title_quality(report: ValidationReport) -> CheckResult:
 
 def check_seo_length_limits(report: ValidationReport) -> CheckResult:
     """Check that SEO tags don't exceed platform-specific length limits."""
-    import re
-
     html_files = [
         paths.OUTPUT_ROOT / "figures.html",
         paths.OUTPUT_ROOT / "data.html",
@@ -1299,6 +1343,7 @@ def run_all_checks(strict: bool = False, ci_mode: bool = False) -> int:
         ("Bibliography duplicates", check_bibliography_duplicates),
         ("Ref ID format", check_ref_id_format),
         ("Dist bibliography sync", check_dist_bibliography_sync),
+        ("TSV column values", check_tsv_column_values),
     ]
 
     for name, check_fn in checks_tier5:

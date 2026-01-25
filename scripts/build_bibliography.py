@@ -50,7 +50,7 @@ AUDIT_LOG_FILE = REFERENCES_DIR / "extraction_audit.json"
 
 # CrossRef API settings
 CROSSREF_API_URL = "https://api.crossref.org/works/"
-CROSSREF_MAILTO = "sobe-report@example.com"  # Polite pool access
+CROSSREF_MAILTO = "sobe25-data-repository@mxschons.com"  # Polite pool access
 API_RATE_LIMIT_SECONDS = 0.1  # Be nice to CrossRef
 
 # Source column names to look for (case-insensitive)
