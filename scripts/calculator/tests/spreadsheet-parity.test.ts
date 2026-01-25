@@ -9,7 +9,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 import { Calculator } from '../src/engine/calculator.js';
-import data from '../../../data-and-figures/calculator/data.json';
+import data from '../../../dist/calculator/data.json';
 
 describe('Spreadsheet Parity', () => {
   let calc: Calculator;
