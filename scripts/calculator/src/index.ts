@@ -24,5 +24,5 @@
 
 export { Calculator, createCalculator, createCalculatorSync } from './engine/index.js';
 
-// Re-export types (these will be generated)
-export type * from '../../../dist/calculator/types.js';
+// Types are exported from the Calculator class and engine module
+// For full type definitions, see dist/calculator/types.ts (generated)
