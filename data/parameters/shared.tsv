@@ -1,40 +1,40 @@
-id	name	definition	unit	value
-biological_volume	Volume (biological)	Physical brain volume to be mapped	mm³	500
-neuron_count	Number of neurons	Number of neurons in the given volume	count	70000000
-risk_buffer_first	Risk buffer first connectome	Budget and schedule contingency fraction	fraction	0.2
-risk_buffer_marginal	Risk buffer marginal connectomes	Budget and schedule contingency fraction	fraction	0.05
-years_until_start	Years until start	Years from now when initial purchases are made	years	0
-project_duration	Project duration	Time span for overall project	years	5
-microscope_budget	Microscope budget	Upfront investment in microscopes	$	50000000
-max_parallel_gpus	Max parallel GPUs	Number of GPUs dedicated during processing	count	1000
-facility_cost_per_year	Facility per year	Cleanroom, isolation, HVAC, racks	$/year	2000000
-avg_staff_salary	Average staff salary	Average salary with all overheads	$/year	150000
-project_mgmt_staff	Project management staff	Staff for project oversight	FTE	10
-technical_staff	Technical staff	Beyond sample and microscope operations	FTE	15
-misc_staff	Misc staff	Operations, assistants, PR, etc	FTE	10
-other_costs_per_connectome	Other costs per connectome	Shipping, permits, biosafety, IP, pubs	$	250000
-data_science_cost	Data science development	Pipelines, data mgmt, viewers, model training	$	2000000
-capital_base	Capital base	Scopes + facility + core SW + initial training	$	55000000
-peak_flops_gpu	Peak FLOPs/s GPU	Maximum FP16 FLOP/s for GPU	TFLOPs/s	1979
-gpu_utilization	GPU utilization	Continuous GPU usage across time	fraction	0.8
-gpu_cost_per_hour	GPU cost per hour	Costs for access to 1h of GPU	$/hour	2
-cost_drop_compute_per_year	Cost drop compute/year	Cost drop compute per year	fraction	0.1
-cost_drop_storage_per_year	Cost drop storage/year	Cost drop storage per year	fraction	0.05
-active_storage_cost_pb_month	Active storage cost	Storage for working files	$/PB-month	2625
-archive_storage_cost_pb_month	Archive storage cost	Storage for backup files	$/PB-month	2000
-bytes_per_voxel	Bytes per voxel	Assuming 8-bits per voxel	bytes	1
-lossless_compression	Lossless compression	Raw to lossless ratio	×	1.5
-lossy_compression	Lossy compression	Raw to lossy ratio	×	120
-label_overhead	Label overhead	Labels + meshes + skeletons + graphs	fraction	0.05
-replicas_active_first	Replicas active (first)	Hot copies lossless online first	count	3
-replicas_archive_first	Replicas archive (first)	Cold copies retained first	count	2
-replicas_active_marginal	Replicas active (marginal)	Hot copies lossless online marginal	count	1
-replicas_archive_marginal	Replicas archive (marginal)	Cold copies retained marginal	count	0
-active_retention_years	Active retention	How long active copies are kept	years	5
-archive_retention_years	Archive retention	How long archive copies are kept	years	10
-active_cost_pb_year	Active storage cost/PB-year	Online storage price	$/PB-year	31500
-archive_cost_pb_year	Archive storage cost/PB-year	Archive storage price	$/PB-year	24000
-flops_registration_per_tile	FLOPs registration/tile	FP32-equivalent per tile	TFLOP/tile	450
-segmentation_flops_per_voxel	Segmentation FLOPs/voxel	FP32-equivalent per voxel	TFLOP/voxel	2.4e-06
-registration_rate_pv_per_day	Registration rate	PV processed per day per GPU	PV/day/GPU	10
-segmentation_rate_pv_per_day	Segmentation rate	PV processed per day per GPU	PV/day/GPU	5
+id	name	definition	unit	value	ref_id	supporting_refs	ref_note	confidence	validated_by
+biological_volume	Volume (biological)	Physical brain volume to be mapped	mm³	500				none	none
+neuron_count	Number of neurons	Number of neurons in the given volume	count	70000000				none	none
+risk_buffer_first	Risk buffer first connectome	Budget and schedule contingency fraction	fraction	0.2				none	none
+risk_buffer_marginal	Risk buffer marginal connectomes	Budget and schedule contingency fraction	fraction	0.05				none	none
+years_until_start	Years until start	Years from now when initial purchases are made	years	0				none	none
+project_duration	Project duration	Time span for overall project	years	5				none	none
+microscope_budget	Microscope budget	Upfront investment in microscopes	$	50000000				none	none
+max_parallel_gpus	Max parallel GPUs	Number of GPUs dedicated during processing	count	1000				none	none
+facility_cost_per_year	Facility per year	Cleanroom, isolation, HVAC, racks	$/year	2000000				none	none
+avg_staff_salary	Average staff salary	Average salary with all overheads	$/year	150000				none	none
+project_mgmt_staff	Project management staff	Staff for project oversight	FTE	10				none	none
+technical_staff	Technical staff	Beyond sample and microscope operations	FTE	15				none	none
+misc_staff	Misc staff	Operations, assistants, PR, etc	FTE	10				none	none
+other_costs_per_connectome	Other costs per connectome	Shipping, permits, biosafety, IP, pubs	$	250000				none	none
+data_science_cost	Data science development	Pipelines, data mgmt, viewers, model training	$	2000000				none	none
+capital_base	Capital base	Scopes + facility + core SW + initial training	$	55000000				none	none
+peak_flops_gpu	Peak FLOPs/s GPU	Maximum FP16 FLOP/s for GPU	TFLOPs/s	1979				none	none
+gpu_utilization	GPU utilization	Continuous GPU usage across time	fraction	0.8				none	none
+gpu_cost_per_hour	GPU cost per hour	Costs for access to 1h of GPU	$/hour	2				none	none
+cost_drop_compute_per_year	Cost drop compute/year	Cost drop compute per year	fraction	0.1				none	none
+cost_drop_storage_per_year	Cost drop storage/year	Cost drop storage per year	fraction	0.05				none	none
+active_storage_cost_pb_month	Active storage cost	Storage for working files	$/PB-month	2625				none	none
+archive_storage_cost_pb_month	Archive storage cost	Storage for backup files	$/PB-month	2000				none	none
+bytes_per_voxel	Bytes per voxel	Assuming 8-bits per voxel	bytes	1				none	none
+lossless_compression	Lossless compression	Raw to lossless ratio	×	1.5				none	none
+lossy_compression	Lossy compression	Raw to lossy ratio	×	120				none	none
+label_overhead	Label overhead	Labels + meshes + skeletons + graphs	fraction	0.05				none	none
+replicas_active_first	Replicas active (first)	Hot copies lossless online first	count	3				none	none
+replicas_archive_first	Replicas archive (first)	Cold copies retained first	count	2				none	none
+replicas_active_marginal	Replicas active (marginal)	Hot copies lossless online marginal	count	1				none	none
+replicas_archive_marginal	Replicas archive (marginal)	Cold copies retained marginal	count	0				none	none
+active_retention_years	Active retention	How long active copies are kept	years	5				none	none
+archive_retention_years	Archive retention	How long archive copies are kept	years	10				none	none
+active_cost_pb_year	Active storage cost/PB-year	Online storage price	$/PB-year	31500				none	none
+archive_cost_pb_year	Archive storage cost/PB-year	Archive storage price	$/PB-year	24000				none	none
+flops_registration_per_tile	FLOPs registration/tile	FP32-equivalent per tile	TFLOP/tile	450				none	none
+segmentation_flops_per_voxel	Segmentation FLOPs/voxel	FP32-equivalent per voxel	TFLOP/voxel	2.4e-06				none	none
+registration_rate_pv_per_day	Registration rate	PV processed per day per GPU	PV/day/GPU	10				none	none
+segmentation_rate_pv_per_day	Segmentation rate	PV processed per day per GPU	PV/day/GPU	5				none	none

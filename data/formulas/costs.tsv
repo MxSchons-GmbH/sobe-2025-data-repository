@@ -1,20 +1,20 @@
-id	formula	inputs	unit	section	row	description
-consumables_cost	biological_volume * (consumables_per_mm3 + labor_cost_per_mm3 + antibody_cost_per_mm3 * (total_channels - 1))	biological_volume,consumables_per_mm3,labor_cost_per_mm3,antibody_cost_per_mm3,total_channels	$	costs	129	Sample preparation and consumables cost
-scanning_cost	scope_operating_cost_per_year * num_microscopes * imaging_years	scope_operating_cost_per_year,num_microscopes,imaging_years	$	costs	130	Microscope operating costs during imaging
-imaging_cost_total	consumables_cost + scanning_cost	consumables_cost,scanning_cost	$	costs	131	Total imaging costs
-processing_cost_registration	max_parallel_gpus * registration_days * 24 * gpu_cost_per_hour / biological_volume	max_parallel_gpus,registration_days,gpu_cost_per_hour,biological_volume	$/PV	costs	117	Registration compute cost per petavoxel
-processing_cost_segmentation	max_parallel_gpus * segmentation_days * gpu_cost_per_hour * 24 / petavoxels_total	max_parallel_gpus,segmentation_days,gpu_cost_per_hour,petavoxels_total	$/PV	costs	118	Segmentation compute cost per petavoxel
-processing_cost_total	petavoxels_total * (processing_cost_registration + processing_cost_segmentation)	petavoxels_total,processing_cost_registration,processing_cost_segmentation	$	costs	140	Total processing compute cost
-proofreading_cost	neuron_count * hours_per_neuron * hourly_rate	neuron_count,hours_per_neuron,hourly_rate	$	costs	141	Total proofreading labor cost
-personnel_cost	(project_mgmt_staff + technical_staff + misc_staff) * avg_staff_salary * project_duration / total_connectomes	project_mgmt_staff,technical_staff,misc_staff,avg_staff_salary,project_duration,total_connectomes	$	costs	142	Personnel costs per connectome
-other_costs	other_costs_per_connectome	other_costs_per_connectome	$	costs	143	Miscellaneous costs (shipping, permits, etc.)
-first_subtotal	imaging_cost_total + total_storage_cost_first + processing_cost_total + proofreading_cost + personnel_cost + other_costs + data_science_cost + capital_base	imaging_cost_total,total_storage_cost_first,processing_cost_total,proofreading_cost,personnel_cost,other_costs,data_science_cost,capital_base	$	costs	167-171	First connectome costs before buffer
-first_buffer	first_subtotal * risk_buffer_first	first_subtotal,risk_buffer_first	$	costs	172	Risk buffer for first connectome
-first_total	first_subtotal + first_buffer	first_subtotal,first_buffer	$	costs	173	Total cost for first connectome
-first_cost_per_neuron	first_total / neuron_count	first_total,neuron_count	$/neuron	costs	174	First connectome cost per neuron
-marginal_subtotal	imaging_cost_total + total_storage_cost_marginal + processing_cost_total + proofreading_cost + personnel_cost + other_costs	imaging_cost_total,total_storage_cost_marginal,processing_cost_total,proofreading_cost,personnel_cost,other_costs	$	costs	176-180	Marginal connectome costs before buffer
-marginal_buffer	marginal_subtotal * risk_buffer_marginal	marginal_subtotal,risk_buffer_marginal	$	costs	181	Risk buffer for marginal connectomes
-marginal_total	marginal_subtotal + marginal_buffer	marginal_subtotal,marginal_buffer	$	costs	182	Total cost for marginal connectome
-marginal_cost_per_neuron	marginal_total / neuron_count	marginal_total,neuron_count	$/neuron	costs	183	Marginal connectome cost per neuron
-avg_total	if(total_connectomes > 1, (first_total + marginal_total * (total_connectomes - 1)) / total_connectomes, first_total)	total_connectomes,first_total,marginal_total	$	costs	164	Average cost per connectome
-avg_cost_per_neuron	if(total_connectomes > 1, (first_cost_per_neuron + marginal_cost_per_neuron * (total_connectomes - 1)) / total_connectomes, first_cost_per_neuron)	total_connectomes,first_cost_per_neuron,marginal_cost_per_neuron	$/neuron	costs	165	Average cost per neuron across all connectomes
+id	formula	inputs	unit	section	row	description	ref_id	supporting_refs	ref_note	confidence	validated_by
+consumables_cost	biological_volume * (consumables_per_mm3 + labor_cost_per_mm3 + antibody_cost_per_mm3 * (total_channels - 1))	biological_volume,consumables_per_mm3,labor_cost_per_mm3,antibody_cost_per_mm3,total_channels	$	costs	129	Sample preparation and consumables cost				none	none
+scanning_cost	scope_operating_cost_per_year * num_microscopes * imaging_years	scope_operating_cost_per_year,num_microscopes,imaging_years	$	costs	130	Microscope operating costs during imaging				none	none
+imaging_cost_total	consumables_cost + scanning_cost	consumables_cost,scanning_cost	$	costs	131	Total imaging costs				none	none
+processing_cost_registration	max_parallel_gpus * registration_days * 24 * gpu_cost_per_hour / biological_volume	max_parallel_gpus,registration_days,gpu_cost_per_hour,biological_volume	$/PV	costs	117	Registration compute cost per petavoxel				none	none
+processing_cost_segmentation	max_parallel_gpus * segmentation_days * gpu_cost_per_hour * 24 / petavoxels_total	max_parallel_gpus,segmentation_days,gpu_cost_per_hour,petavoxels_total	$/PV	costs	118	Segmentation compute cost per petavoxel				none	none
+processing_cost_total	petavoxels_total * (processing_cost_registration + processing_cost_segmentation)	petavoxels_total,processing_cost_registration,processing_cost_segmentation	$	costs	140	Total processing compute cost				none	none
+proofreading_cost	neuron_count * hours_per_neuron * hourly_rate	neuron_count,hours_per_neuron,hourly_rate	$	costs	141	Total proofreading labor cost				none	none
+personnel_cost	(project_mgmt_staff + technical_staff + misc_staff) * avg_staff_salary * project_duration / total_connectomes	project_mgmt_staff,technical_staff,misc_staff,avg_staff_salary,project_duration,total_connectomes	$	costs	142	Personnel costs per connectome				none	none
+other_costs	other_costs_per_connectome	other_costs_per_connectome	$	costs	143	Miscellaneous costs (shipping, permits, etc.)				none	none
+first_subtotal	imaging_cost_total + total_storage_cost_first + processing_cost_total + proofreading_cost + personnel_cost + other_costs + data_science_cost + capital_base	imaging_cost_total,total_storage_cost_first,processing_cost_total,proofreading_cost,personnel_cost,other_costs,data_science_cost,capital_base	$	costs	167-171	First connectome costs before buffer				none	none
+first_buffer	first_subtotal * risk_buffer_first	first_subtotal,risk_buffer_first	$	costs	172	Risk buffer for first connectome				none	none
+first_total	first_subtotal + first_buffer	first_subtotal,first_buffer	$	costs	173	Total cost for first connectome				none	none
+first_cost_per_neuron	first_total / neuron_count	first_total,neuron_count	$/neuron	costs	174	First connectome cost per neuron				none	none
+marginal_subtotal	imaging_cost_total + total_storage_cost_marginal + processing_cost_total + proofreading_cost + personnel_cost + other_costs	imaging_cost_total,total_storage_cost_marginal,processing_cost_total,proofreading_cost,personnel_cost,other_costs	$	costs	176-180	Marginal connectome costs before buffer				none	none
+marginal_buffer	marginal_subtotal * risk_buffer_marginal	marginal_subtotal,risk_buffer_marginal	$	costs	181	Risk buffer for marginal connectomes				none	none
+marginal_total	marginal_subtotal + marginal_buffer	marginal_subtotal,marginal_buffer	$	costs	182	Total cost for marginal connectome				none	none
+marginal_cost_per_neuron	marginal_total / neuron_count	marginal_total,neuron_count	$/neuron	costs	183	Marginal connectome cost per neuron				none	none
+avg_total	if(total_connectomes > 1, (first_total + marginal_total * (total_connectomes - 1)) / total_connectomes, first_total)	total_connectomes,first_total,marginal_total	$	costs	164	Average cost per connectome				none	none
+avg_cost_per_neuron	if(total_connectomes > 1, (first_cost_per_neuron + marginal_cost_per_neuron * (total_connectomes - 1)) / total_connectomes, first_cost_per_neuron)	total_connectomes,first_cost_per_neuron,marginal_cost_per_neuron	$/neuron	costs	165	Average cost per neuron across all connectomes				none	none
