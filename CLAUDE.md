@@ -236,6 +236,75 @@ python3 -m http.server 8000
 All data files in `data/` have corresponding metadata in `data/_metadata/` (mirrored structure).
 See README.md "Data Attribution Guidelines" for the metadata schema and contributor guidelines.
 
+## Reference Management
+
+The repository uses a centralized bibliography system for tracking sources and citations.
+
+### Bibliography Location
+
+```
+data/references/
+└── bibliography.json    # CSL-JSON format bibliography (auto-generated)
+```
+
+### Building the Bibliography
+
+The bibliography is extracted programmatically from existing source columns in TSV files:
+
+```bash
+cd scripts
+python3 build_bibliography.py           # Extract sources and build bibliography
+python3 build_bibliography.py --dry-run # Preview without writing files
+python3 build_bibliography.py --no-api  # Skip CrossRef API lookups (faster)
+```
+
+The script:
+1. Scans all TSV files for source columns (`source`, `ref`, `References`, `DOI`, `Link`)
+2. Extracts DOIs and fetches metadata from CrossRef API
+3. Generates ref_ids in `author2024` format
+4. Creates CSL-JSON bibliography entries
+5. Produces an audit log at `data/references/extraction_audit.json`
+
+### Reference ID Convention
+
+| Source Type | Pattern | Examples |
+|-------------|---------|----------|
+| Paper (single author) | `author2024` | `stevenson2011`, `herculano2009` |
+| Paper (multi-author) | `firstauthor2024` | `dorkenwald2024` |
+| Same author, same year | `author2024a`, `author2024b` | `koch2024a`, `koch2024b` |
+| Organization/Website | `org_name_2024` | `aws_pricing_2024`, `wikipedia_tat8_2024` |
+| Internal estimate | `internal_estimate_2024` | For values without external source |
+
+### Adding Sources to Parameters (Future)
+
+When the parameter schema is extended, use these columns:
+
+| Column | Required | Values |
+|--------|----------|--------|
+| `ref_id` | Yes | ID from bibliography.json |
+| `supporting_refs` | No | Semicolon-separated additional ref_ids |
+| `ref_note` | No | Specific location: "Table 2", "Section 4.2" |
+| `confidence` | Yes | `measured`, `derived`, `estimated`, `assumed` |
+| `validated_by` | Yes | `human`, `ai`, `human+ai`, `none` |
+
+### Confidence Levels
+
+| Value | Definition |
+|-------|------------|
+| `measured` | Direct measurement from source |
+| `derived` | Calculated from source data |
+| `estimated` | Informed estimate with methodology |
+| `assumed` | Assumption without direct evidence |
+
+### Validation Levels
+
+| Value | Definition |
+|-------|------------|
+| `human` | Human verified the value |
+| `ai` | AI extracted, not human-verified |
+| `human+ai` | AI-assisted, human-confirmed |
+| `none` | Not validated (legacy data) |
+
 ## Dependencies
 
 Key Python packages (see `requirements.txt`):
@@ -308,12 +377,12 @@ The validation script checks:
 | **4 - Reporting** | File sizes | Size metrics for monitoring |
 | **4 - Reporting** | Hand-drawn figures | PNG+SVG pairs for hand-drawn |
 | **4 - Reporting** | Stale figures | Source data newer than generated figures |
-| **5 - SEO** | HTML meta tags | Missing description, OG, Twitter tags |
-| **5 - SEO** | HTML lang attribute | Missing lang="en" on HTML elements |
-| **5 - SEO** | Heading hierarchy | H1→H3 skips, multiple H1s |
-| **5 - SEO** | External link security | Missing rel="noopener noreferrer" |
-| **5 - SEO** | Title quality | Titles too short for alt text/SEO |
-| **5 - SEO** | SEO length limits | Tags exceeding platform character limits |
+| **5 - Bibliography** | Bibliography exists | Missing or invalid bibliography.json |
+| **5 - Bibliography** | Bibliography schema | Missing required fields in entries |
+| **5 - Bibliography** | Bibliography duplicates | Duplicate DOIs or URLs |
+| **5 - Bibliography** | Ref ID format | Invalid ref_id naming convention |
+| **5 - Bibliography** | TSV column values | Invalid confidence/validated_by values |
+| **6 - SEO** | Title quality | Titles too short for alt text/SEO |
 
 ### SEO Length Limits
 

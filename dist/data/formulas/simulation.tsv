@@ -1,17 +1,17 @@
-id	formula	inputs	unit	section	description
-simulation_total_memory_bytes	storage_bytes_lower	storage_bytes_lower	bytes	simulation	Total memory footprint (using lower bound)
-simulation_total_memory_gb	simulation_total_memory_bytes / 1e9	simulation_total_memory_bytes	GB	simulation	Total memory in gigabytes
-simulation_flops_per_sec	flops_time_based_lower	flops_time_based_lower	FLOPS	simulation	FLOPS required per second (time-based, lower bound)
-simulation_gpus_for_memory	ceil(simulation_total_memory_gb / gpu_memory_gb)	simulation_total_memory_gb,gpu_memory_gb	count	simulation	GPUs needed for memory
-simulation_gpus_for_compute	ceil(simulation_flops_per_sec / (gpu_tflops * 1e12))	simulation_flops_per_sec,gpu_tflops	count	simulation	GPUs needed for compute
-simulation_total_gpus	max(simulation_gpus_for_memory, simulation_gpus_for_compute)	simulation_gpus_for_memory,simulation_gpus_for_compute	count	simulation	Total GPUs required
-simulation_runtime_cost	simulation_total_gpus * gpu_cost_per_hour * simulation_hours	simulation_total_gpus,gpu_cost_per_hour,simulation_hours	$	simulation	Simulation runtime cost
-simulation_training_infrastructure_cost	10000000		$	simulation	Training infrastructure cost (fixed)
-simulation_training_compute_cost	simulation_runtime_cost * 0.1	simulation_runtime_cost	$	simulation	Training compute cost (10% of simulation)
-simulation_validation_cost	simulation_runtime_cost * 0.05	simulation_runtime_cost	$	simulation	Validation cost (5% of simulation)
-simulation_total_cost_first	(simulation_runtime_cost + simulation_training_infrastructure_cost + simulation_training_compute_cost + simulation_validation_cost) * 1.2	simulation_runtime_cost,simulation_training_infrastructure_cost,simulation_training_compute_cost,simulation_validation_cost	$	simulation	Total first project cost with 20% buffer
-simulation_total_time_years_first	(simulation_hours / (24 * 365)) * 1.2	simulation_hours	years	simulation	Total first project time with buffer
-simulation_retraining_cost	simulation_training_compute_cost * 0.1	simulation_training_compute_cost	$	simulation	Marginal retraining cost (10%)
-simulation_finetuning_cost	simulation_validation_cost * 0.02	simulation_validation_cost	$	simulation	Marginal finetuning cost (2%)
-simulation_total_cost_marginal	simulation_runtime_cost + simulation_retraining_cost + simulation_finetuning_cost	simulation_runtime_cost,simulation_retraining_cost,simulation_finetuning_cost	$	simulation	Total marginal project cost
-simulation_total_time_years_marginal	simulation_hours / (24 * 365)	simulation_hours	years	simulation	Total marginal project time
+id	formula	inputs	unit	section	description	ref_id	supporting_refs	ref_note	confidence	validated_by
+simulation_total_memory_bytes	storage_bytes_lower	storage_bytes_lower	bytes	simulation	Total memory footprint (using lower bound)				none	none
+simulation_total_memory_gb	simulation_total_memory_bytes / 1e9	simulation_total_memory_bytes	GB	simulation	Total memory in gigabytes				none	none
+simulation_flops_per_sec	flops_time_based_lower	flops_time_based_lower	FLOPS	simulation	FLOPS required per second (time-based, lower bound)				none	none
+simulation_gpus_for_memory	ceil(simulation_total_memory_gb / gpu_memory_gb)	simulation_total_memory_gb,gpu_memory_gb	count	simulation	GPUs needed for memory				none	none
+simulation_gpus_for_compute	ceil(simulation_flops_per_sec / (gpu_tflops * 1e12))	simulation_flops_per_sec,gpu_tflops	count	simulation	GPUs needed for compute				none	none
+simulation_total_gpus	max(simulation_gpus_for_memory, simulation_gpus_for_compute)	simulation_gpus_for_memory,simulation_gpus_for_compute	count	simulation	Total GPUs required				none	none
+simulation_runtime_cost	simulation_total_gpus * gpu_cost_per_hour * simulation_hours	simulation_total_gpus,gpu_cost_per_hour,simulation_hours	$	simulation	Simulation runtime cost				none	none
+simulation_training_infrastructure_cost	10000000		$	simulation	Training infrastructure cost (fixed)				none	none
+simulation_training_compute_cost	simulation_runtime_cost * 0.1	simulation_runtime_cost	$	simulation	Training compute cost (10% of simulation)				none	none
+simulation_validation_cost	simulation_runtime_cost * 0.05	simulation_runtime_cost	$	simulation	Validation cost (5% of simulation)				none	none
+simulation_total_cost_first	(simulation_runtime_cost + simulation_training_infrastructure_cost + simulation_training_compute_cost + simulation_validation_cost) * 1.2	simulation_runtime_cost,simulation_training_infrastructure_cost,simulation_training_compute_cost,simulation_validation_cost	$	simulation	Total first project cost with 20% buffer				none	none
+simulation_total_time_years_first	(simulation_hours / (24 * 365)) * 1.2	simulation_hours	years	simulation	Total first project time with buffer				none	none
+simulation_retraining_cost	simulation_training_compute_cost * 0.1	simulation_training_compute_cost	$	simulation	Marginal retraining cost (10%)				none	none
+simulation_finetuning_cost	simulation_validation_cost * 0.02	simulation_validation_cost	$	simulation	Marginal finetuning cost (2%)				none	none
+simulation_total_cost_marginal	simulation_runtime_cost + simulation_retraining_cost + simulation_finetuning_cost	simulation_runtime_cost,simulation_retraining_cost,simulation_finetuning_cost	$	simulation	Total marginal project cost				none	none
+simulation_total_time_years_marginal	simulation_hours / (24 * 365)	simulation_hours	years	simulation	Total marginal project time				none	none

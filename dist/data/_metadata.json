@@ -586,7 +586,12 @@
             "flops_per_sec",
             "flops_per_spike",
             "bytes",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -619,7 +624,12 @@
             "flops_per_sec",
             "flops_per_event",
             "bytes",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -898,7 +908,12 @@
             "unit",
             "section",
             "row",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -915,7 +930,12 @@
             "unit",
             "section",
             "row",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -931,7 +951,12 @@
             "inputs",
             "unit",
             "section",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -947,7 +972,12 @@
             "inputs",
             "unit",
             "section",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -964,7 +994,12 @@
             "unit",
             "section",
             "row",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -993,7 +1028,12 @@
             "mouse",
             "macaque",
             "human",
-            "source"
+            "source",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -1014,7 +1054,12 @@
             "mouse",
             "macaque",
             "human",
-            "source"
+            "source",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -1029,7 +1074,12 @@
             "name",
             "value",
             "unit",
-            "definition"
+            "definition",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -1044,7 +1094,12 @@
             "name",
             "definition",
             "unit",
-            "value"
+            "value",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -1063,7 +1118,12 @@
             "active_replicas",
             "archive_replicas",
             "active_retention_years",
-            "archive_retention_years"
+            "archive_retention_years",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]

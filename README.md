@@ -52,6 +52,7 @@ sobe-2025-data-repository/
 │   ├── parameters/                   # Shared calculation parameters
 │   ├── recordings/                   # Neural recording data
 │   ├── simulations/                  # Simulation history data
+│   ├── references/                   # Centralized bibliography (CSL-JSON)
 │   └── _metadata/                    # Attribution metadata (mirrors data/ structure)
 └── dist/                 # Data assets for website
     ├── figures/
@@ -63,6 +64,8 @@ sobe-2025-data-repository/
     │       └── _metadata.json        # Hand-drawn figures catalog
     ├── data/                         # TSV datasets (mirrors data/ structure)
     │   └── _metadata.json            # Datasets catalog
+    ├── references/                   # Bibliography for web access
+    │   └── bibliography.json         # CSL-JSON format (mirrors data/references/)
     └── downloads/                    # ZIP archives for bulk download
 ```
 
@@ -107,6 +110,7 @@ save_figure(fig, 'my-figure')  # Saves both .svg and .png
 |--------|-------------|
 | `run_all_figures.py` | Generates all 25+ figures from source data |
 | `build_downloads.py` | Creates ZIP archives with CC BY 4.0 license |
+| `build_bibliography.py` | Extracts sources from TSVs, builds CSL-JSON bibliography |
 | `validate.py` | Runs quality checks on figures and metadata |
 
 ## Generated Figures
@@ -260,6 +264,37 @@ Each `.json` metadata file contains:
 | `ai-training-computation.tsv` | Epoch via Our World in Data | CC BY 4.0 |
 | `storage-historical.tsv` | John C. McCallum via Our World in Data | CC BY 4.0 |
 | `neuroimaging-speed.tsv` | Carles Bosch | MIT |
+
+## Reference Management
+
+The repository uses a centralized bibliography for tracking data sources.
+
+### Bibliography
+
+The bibliography is stored in CSL-JSON format at `data/references/bibliography.json` (1,130+ references). It is also distributed at `dist/references/bibliography.json` for web access.
+
+### Building the Bibliography
+
+```bash
+cd scripts
+python3 build_bibliography.py           # Extract sources and build bibliography
+python3 build_bibliography.py --dry-run # Preview without writing
+python3 build_bibliography.py --no-api  # Skip CrossRef API lookups (faster)
+```
+
+The script extracts DOIs and URLs from TSV source columns, fetches metadata from CrossRef, and generates ref_ids in `author2024` format.
+
+### Reference Columns in TSV Files
+
+Parameter and formula files include columns for source tracking:
+
+| Column | Description |
+|--------|-------------|
+| `ref_id` | ID linking to bibliography.json entry |
+| `supporting_refs` | Additional reference IDs (semicolon-separated) |
+| `ref_note` | Specific location: "Table 2", "Section 4.2" |
+| `confidence` | `measured`, `derived`, `estimated`, or `assumed` |
+| `validated_by` | `human`, `ai`, `human+ai`, or `none` |
 
 ## License
 

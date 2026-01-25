@@ -3,6 +3,9 @@ numpy
 pandas
 scipy
 
+# HTTP client (for CrossRef API)
+requests
+
 # Visualization
 matplotlib
 seaborn

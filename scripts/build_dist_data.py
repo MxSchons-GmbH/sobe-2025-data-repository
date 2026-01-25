@@ -18,7 +18,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent.resolve()
 DATA_DIR = REPO_ROOT / "data"
 METADATA_DIR = DATA_DIR / "_metadata"
+REFERENCES_DIR = DATA_DIR / "references"
 DIST_DATA_DIR = REPO_ROOT / "dist" / "data"
+DIST_REFERENCES_DIR = REPO_ROOT / "dist" / "references"
 OUTPUT_METADATA = DIST_DATA_DIR / "_metadata.json"
 
 # Category configuration - maps directory names to display info
@@ -223,6 +225,22 @@ def build_metadata(copied_files: dict[str, list[Path]]) -> dict:
     }
 
 
+def copy_references() -> int:
+    """
+    Copy bibliography.json from data/references/ to dist/references/.
+    Returns the number of files copied.
+    """
+    DIST_REFERENCES_DIR.mkdir(parents=True, exist_ok=True)
+    copied = 0
+
+    bibliography_src = REFERENCES_DIR / "bibliography.json"
+    if bibliography_src.exists():
+        shutil.copy2(bibliography_src, DIST_REFERENCES_DIR / "bibliography.json")
+        copied += 1
+
+    return copied
+
+
 def main():
     """Main entry point."""
     print("Building dist/data/ from source data files...\n")
@@ -235,6 +253,11 @@ def main():
     copied_files = copy_data_files()
     total_files = sum(len(files) for files in copied_files.values())
     print(f"  Copied {total_files} files across {len(copied_files)} categories\n")
+
+    # Copy references
+    print("Copying bibliography...")
+    refs_copied = copy_references()
+    print(f"  Copied {refs_copied} reference files\n")
 
     # Generate metadata
     print("Generating _metadata.json...")
@@ -250,6 +273,7 @@ def main():
     print("Summary:")
     for category_id, files in sorted(copied_files.items()):
         print(f"  {category_id}: {len(files)} files")
+    print(f"  references: {refs_copied} files")
     print("=" * 50)
     print("\n✅ Build complete!")
 

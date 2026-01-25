@@ -23,6 +23,7 @@ DATA_PARAMETERS = DATA_DIR / "parameters"
 DATA_IMAGING = DATA_DIR / "imaging"
 DATA_INITIATIVES = DATA_DIR / "initiatives"
 DATA_METADATA = DATA_DIR / "_metadata"
+DATA_REFERENCES = DATA_DIR / "references"
 
 # Output directories (distribution-ready assets for website)
 OUTPUT_ROOT = REPO_ROOT / "dist"
@@ -37,6 +38,7 @@ OUTPUT_HAND_DRAWN_METADATA = OUTPUT_FIGURES_HAND_DRAWN / "_metadata.json"
 OUTPUT_DOWNLOADS = OUTPUT_ROOT / "downloads"
 OUTPUT_CSS = OUTPUT_ROOT / "css"
 OUTPUT_JS = OUTPUT_ROOT / "js"
+OUTPUT_REFERENCES = OUTPUT_ROOT / "references"
 
 # Calculator outputs
 OUTPUT_CALCULATOR = OUTPUT_ROOT / "calculator"
@@ -106,6 +108,9 @@ DATA_FILES = {
 
     # Proofreading costs
     "proofreading": DATA_COSTS / "proofreading.tsv",
+
+    # References/Bibliography
+    "bibliography": DATA_REFERENCES / "bibliography.json",
 }
 
 
