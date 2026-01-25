@@ -284,7 +284,7 @@ export class Calculator {
 export async function createCalculator(): Promise<Calculator> {
   // In a real app, this would load from the generated JSON
   // For now, we'll import it directly
-  const data = await import('../../../../data-and-figures/calculator/data.json', { assert: { type: 'json' } });
+  const data = await import('../../../../dist/calculator/data.json', { assert: { type: 'json' } });
   return new Calculator(data.default as CalculatorData);
 }
 

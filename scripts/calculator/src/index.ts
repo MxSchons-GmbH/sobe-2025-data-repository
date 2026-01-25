@@ -25,4 +25,4 @@
 export { Calculator, createCalculator, createCalculatorSync } from './engine/index.js';
 
 // Re-export types (these will be generated)
-export type * from '../../../data-and-figures/calculator/types.js';
+export type * from '../../../dist/calculator/types.js';
