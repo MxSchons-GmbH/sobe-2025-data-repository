@@ -52,3 +52,21 @@ jobs:
         run: |
           git diff --exit-code dist/calculator/ || \
           (echo "Calculator outputs out of date. Run 'cd scripts/calculator && npm run build:data' and commit." && exit 1)
+
+  data-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build dist/data
+        run: python scripts/build_dist_data.py
+
+      - name: Check outputs are up-to-date
+        run: |
+          git diff --exit-code dist/data/ || \
+          (echo "dist/data/ out of date. Run 'python scripts/build_dist_data.py' and commit." && exit 1)

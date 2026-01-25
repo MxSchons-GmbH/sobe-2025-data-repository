@@ -1,0 +1,22 @@
+id	formula	inputs	unit	section	description
+recording_experiment_duration_seconds	experiment_length * 3600	experiment_length	seconds	recording	Experiment duration in seconds
+recording_samples_per_experiment	floor(recording_experiment_duration_seconds / sample_duration)	recording_experiment_duration_seconds,sample_duration	count	recording	Number of samples per experiment given user-defined sample duration
+recording_brain_volume_to_record	biological_volume * brain_volume_coverage	biological_volume,brain_volume_coverage	mm³	recording	Brain volume to record based on user-defined coverage percentage
+recording_experiments_for_volume_coverage	ceil(recording_brain_volume_to_record / experiment_brain_volume)	recording_brain_volume_to_record,experiment_brain_volume	count	recording	Experiments needed for brain volume coverage (assuming non-overlapping)
+recording_total_experiments	recording_experiments_for_volume_coverage * brain_area_repetitions	recording_experiments_for_volume_coverage,brain_area_repetitions	count	recording	Total experiments accounting for repeated scans of same area (e.g., different brain states)
+recording_samples_per_brain_area	recording_samples_per_experiment * brain_area_repetitions	recording_samples_per_experiment,brain_area_repetitions	count	recording	Average samples per brain volume area
+recording_total_samples	recording_total_experiments * recording_samples_per_experiment	recording_total_experiments,recording_samples_per_experiment	count	recording	Total samples across all experiments
+recording_total_data_volume_tb	recording_total_experiments * experiment_data_volume	recording_total_experiments,experiment_data_volume	TB	recording	Total uncompressed data volume in TB
+recording_total_data_volume_pb	recording_total_data_volume_tb / 1000	recording_total_data_volume_tb	PB	recording	Total uncompressed data volume in PB
+recording_neurons_covered	min(recording_total_experiments * neurons_at_single_resolution, neuron_count * brain_volume_coverage)	recording_total_experiments,neurons_at_single_resolution,neuron_count,brain_volume_coverage	count	recording	Total neurons covered by recordings
+recording_coverage_percent	(recording_neurons_covered / neuron_count) * 100	recording_neurons_covered,neuron_count	%	recording	Percentage of brain neurons covered
+recording_total_experiment_cost	recording_total_experiments * experiment_cost	recording_total_experiments,experiment_cost	$	recording	Total experiment costs (excluding storage)
+recording_connectomics_volume	recording_brain_volume_to_record * connectomics_scan_percentage	recording_brain_volume_to_record,connectomics_scan_percentage	mm³	recording	Brain volume for aligned structural/functional datasets
+recording_total_recording_hours	recording_total_experiments * experiment_length	recording_total_experiments,experiment_length	hours	recording	Total recording time
+recording_infrastructure_cost_first	500000		$	recording	Equipment setup cost (fixed)
+recording_personnel_cost_first	5 * 150000 * min(recording_total_recording_hours / (24 * 365), 3)	recording_total_recording_hours	$	recording	Personnel cost for team (up to 3 years)
+recording_total_cost_first	(recording_total_experiment_cost + recording_infrastructure_cost_first + recording_personnel_cost_first) * (1 + risk_buffer_first)	recording_total_experiment_cost,recording_infrastructure_cost_first,recording_personnel_cost_first,risk_buffer_first	$	recording	Total first project cost with buffer
+recording_total_time_years_first	(recording_total_recording_hours / (24 * 365)) * (1 + risk_buffer_first)	recording_total_recording_hours,risk_buffer_first	years	recording	Total first project time with buffer
+recording_marginal_experiment_cost	experiment_cost * 0.8	experiment_cost	$	recording	Marginal cost per experiment (80% of first)
+recording_total_cost_marginal	(recording_total_experiments * recording_marginal_experiment_cost) * (1 + risk_buffer_marginal)	recording_total_experiments,recording_marginal_experiment_cost,risk_buffer_marginal	$	recording	Total marginal project cost
+recording_total_time_years_marginal	(recording_total_recording_hours * 0.7 / (24 * 365)) * (1 + risk_buffer_marginal)	recording_total_recording_hours,risk_buffer_marginal	years	recording	Total marginal project time (30% faster)
