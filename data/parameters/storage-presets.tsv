@@ -1,0 +1,4 @@
+id	name	description	lossy_compression	lossless_compression	active_replicas	archive_replicas	active_retention_years	archive_retention_years
+minimal	Minimal	Single copy, lossy only	120	1.5	1	0	3	0
+standard	Standard	3 active + 2 archive copies	120	1.5	3	2	5	10
+archival	Archival	Maximum redundancy, longer retention	120	1.5	3	3	10	20

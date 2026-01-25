@@ -1,0 +1,1334 @@
+{
+  "parameters": {
+    "shared": {
+      "biological_volume": 500,
+      "neuron_count": 70000000,
+      "risk_buffer_first": 0.2,
+      "risk_buffer_marginal": 0.05,
+      "years_until_start": 0,
+      "project_duration": 5,
+      "microscope_budget": 50000000,
+      "max_parallel_gpus": 1000,
+      "facility_cost_per_year": 2000000,
+      "avg_staff_salary": 150000,
+      "project_mgmt_staff": 10,
+      "technical_staff": 15,
+      "misc_staff": 10,
+      "other_costs_per_connectome": 250000,
+      "data_science_cost": 2000000,
+      "capital_base": 55000000,
+      "peak_flops_gpu": 1979,
+      "gpu_utilization": 0.8,
+      "gpu_cost_per_hour": 2,
+      "cost_drop_compute_per_year": 0.1,
+      "cost_drop_storage_per_year": 0.05,
+      "active_storage_cost_pb_month": 2625,
+      "archive_storage_cost_pb_month": 2000,
+      "bytes_per_voxel": 1,
+      "lossless_compression": 1.5,
+      "lossy_compression": 120,
+      "label_overhead": 0.05,
+      "replicas_active_first": 3,
+      "replicas_archive_first": 2,
+      "replicas_active_marginal": 1,
+      "replicas_archive_marginal": 0,
+      "active_retention_years": 5,
+      "archive_retention_years": 10,
+      "active_cost_pb_year": 31500,
+      "archive_cost_pb_year": 24000,
+      "flops_registration_per_tile": 450,
+      "segmentation_flops_per_voxel": 0.0000024,
+      "registration_rate_pv_per_day": 10,
+      "segmentation_rate_pv_per_day": 5,
+      "sample_duration": 0.1,
+      "brain_area_repetitions": 1,
+      "connectomics_scan_percentage": 0.1,
+      "neurons_at_single_resolution": 5000,
+      "experiment_cost": 500000,
+      "simulation_hours": 1000,
+      "storage_bytes_lower": 1080000000000,
+      "flops_time_based_lower": 6750000000000000,
+      "gpu_memory_gb": 80,
+      "gpu_tflops": 310,
+      "experiment_length": 0.5,
+      "brain_volume_coverage": 1,
+      "experiment_brain_volume": 10,
+      "experiment_data_volume": 0.09
+    },
+    "modalities": {
+      "em": {
+        "microscope_capital_cost": 500000,
+        "microscope_depreciation_years": 10,
+        "sustained_imaging_rate": 225,
+        "parallel_channels": 1,
+        "total_channels": 1,
+        "scope_annual_service": 50000,
+        "technician_salary": 120000,
+        "microscope_technician_ratio": 2,
+        "microscope_uptime": 1,
+        "reacquisition_rate": 0,
+        "sample_yield": 1,
+        "expansion_factor": 1,
+        "consumables_per_mm3": 100000,
+        "antibody_cost_per_mm3": 2,
+        "labor_cost_per_mm3": 2850,
+        "initial_prep_days": 15,
+        "voxel_x": 15,
+        "voxel_y": 15,
+        "voxel_z": 15,
+        "sample_depth": 1,
+        "tile_x": 6000,
+        "tile_y": 6000,
+        "tile_overlap": 0.1
+      },
+      "exm": {
+        "microscope_capital_cost": 500000,
+        "microscope_depreciation_years": 5,
+        "sustained_imaging_rate": 1100,
+        "parallel_channels": 3,
+        "total_channels": 1,
+        "scope_annual_service": 15000,
+        "technician_salary": 120000,
+        "microscope_technician_ratio": 5,
+        "microscope_uptime": 1,
+        "reacquisition_rate": 0,
+        "sample_yield": 1,
+        "expansion_factor": 16,
+        "consumables_per_mm3": 2,
+        "antibody_cost_per_mm3": 2,
+        "labor_cost_per_mm3": 2850,
+        "initial_prep_days": 15,
+        "voxel_x": 250,
+        "voxel_y": 250,
+        "voxel_z": 400,
+        "sample_depth": 10000,
+        "tile_x": 2048,
+        "tile_y": 2048,
+        "tile_overlap": 0.1
+      },
+      "exm_molecular": {
+        "microscope_capital_cost": 500000,
+        "microscope_depreciation_years": 5,
+        "sustained_imaging_rate": 1100,
+        "parallel_channels": 8,
+        "total_channels": 800,
+        "scope_annual_service": 15000,
+        "technician_salary": 120000,
+        "microscope_technician_ratio": 5,
+        "microscope_uptime": 1,
+        "reacquisition_rate": 0,
+        "sample_yield": 1,
+        "expansion_factor": 16,
+        "consumables_per_mm3": 2,
+        "antibody_cost_per_mm3": 2,
+        "labor_cost_per_mm3": 2850,
+        "initial_prep_days": 15,
+        "voxel_x": 250,
+        "voxel_y": 250,
+        "voxel_z": 400,
+        "sample_depth": 10000,
+        "tile_x": 5000,
+        "tile_y": 5000,
+        "tile_overlap": 0.1
+      },
+      "wellcome": {
+        "microscope_capital_cost": 5000000,
+        "microscope_depreciation_years": 10,
+        "sustained_imaging_rate": 250,
+        "parallel_channels": 1,
+        "total_channels": 1,
+        "scope_annual_service": 250000,
+        "technician_salary": 120000,
+        "microscope_technician_ratio": 0.5,
+        "microscope_uptime": 1,
+        "reacquisition_rate": 0,
+        "sample_yield": 1,
+        "expansion_factor": 1,
+        "consumables_per_mm3": 200000,
+        "antibody_cost_per_mm3": 2,
+        "labor_cost_per_mm3": 2850,
+        "initial_prep_days": 15,
+        "voxel_x": 10,
+        "voxel_y": 10,
+        "voxel_z": 10,
+        "sample_depth": 1,
+        "tile_x": 6000,
+        "tile_y": 6000,
+        "tile_overlap": 0.1
+      }
+    },
+    "organisms": {
+      "c_elegans": {
+        "id": "c_elegans",
+        "name": "C. elegans",
+        "neurons": 302,
+        "volumeMm3": 0.001,
+        "synapses": 7500,
+        "source": "WormAtlas"
+      },
+      "drosophila": {
+        "id": "drosophila",
+        "name": "Drosophila (fruit fly)",
+        "neurons": 135000,
+        "volumeMm3": 0.5,
+        "synapses": 50000000,
+        "source": "FlyWire"
+      },
+      "zebrafish_larva": {
+        "id": "zebrafish_larva",
+        "name": "Zebrafish larva",
+        "neurons": 100000,
+        "volumeMm3": 0.1,
+        "synapses": 10000000,
+        "source": "Literature"
+      },
+      "mouse": {
+        "id": "mouse",
+        "name": "Mouse",
+        "neurons": 70000000,
+        "volumeMm3": 500,
+        "synapses": 700000000000,
+        "source": "Literature"
+      },
+      "macaque": {
+        "id": "macaque",
+        "name": "Macaque",
+        "neurons": 6400000000,
+        "volumeMm3": 87000,
+        "synapses": 64000000000000,
+        "source": "Literature"
+      },
+      "human": {
+        "id": "human",
+        "name": "Human",
+        "neurons": 86000000000,
+        "volumeMm3": 1200000,
+        "synapses": 150000000000000,
+        "source": "Literature"
+      }
+    },
+    "proofreading": {
+      "current": {
+        "hours_per_neuron": 5,
+        "hourly_rate": 50,
+        "hours_per_day": 6,
+        "num_proofreaders": 25000
+      },
+      "improved_1000x": {
+        "hours_per_neuron": 0.005,
+        "hourly_rate": 50,
+        "hours_per_day": 6,
+        "num_proofreaders": 1000
+      }
+    },
+    "neuralRecording": {
+      "ref_experiment_length": 10,
+      "ref_experiment_neurons_at_single_resolution": 60000,
+      "ref_experiment_sampling_rate": 200,
+      "ref_experiment_costs": 25000,
+      "ref_experiment_brain_volume": 0.5,
+      "ref_experiment_data_volume": 500,
+      "ref_brain_volume_coverage": "",
+      "ref_percentage_of_consecutive_connectomic_scans": "",
+      "ref_number_of_experiments": "",
+      "ref_number_of_experiments_per_brain_area_coverage": "",
+      "ref_number_of_samples_per_experiment": "",
+      "ref_number_of_samples_per_brain_area": ""
+    }
+  },
+  "formulas": [
+    {
+      "id": "voxels_per_mm3",
+      "formula": "1e18 / (voxel_x * voxel_y * voxel_z)",
+      "inputs": [
+        "voxel_x",
+        "voxel_y",
+        "voxel_z"
+      ],
+      "unit": "voxels/mm³",
+      "section": "imaging",
+      "row": 100,
+      "description": "Number of voxels in one cubic millimeter at acquisition resolution"
+    },
+    {
+      "id": "effective_volume",
+      "formula": "biological_volume * expansion_factor^3 * (1 + reacquisition_rate)",
+      "inputs": [
+        "biological_volume",
+        "expansion_factor",
+        "reacquisition_rate"
+      ],
+      "unit": "mm³",
+      "section": "imaging",
+      "row": 99,
+      "description": "Total volume to image after tissue expansion"
+    },
+    {
+      "id": "petavoxels_per_mm3",
+      "formula": "voxels_per_mm3 / 1e15",
+      "inputs": [
+        "voxels_per_mm3"
+      ],
+      "unit": "PV/mm³",
+      "section": "imaging",
+      "row": 101,
+      "description": "Petavoxels per cubic millimeter"
+    },
+    {
+      "id": "petavoxels_total",
+      "formula": "petavoxels_per_mm3 * effective_volume",
+      "inputs": [
+        "petavoxels_per_mm3",
+        "effective_volume"
+      ],
+      "unit": "PV",
+      "section": "imaging",
+      "row": 102,
+      "description": "Total petavoxels to image"
+    },
+    {
+      "id": "net_imaging_rate",
+      "formula": "sustained_imaging_rate / (total_channels / parallel_channels) * microscope_uptime",
+      "inputs": [
+        "sustained_imaging_rate",
+        "total_channels",
+        "parallel_channels",
+        "microscope_uptime"
+      ],
+      "unit": "Mvox/s",
+      "section": "imaging",
+      "row": 72,
+      "description": "Effective imaging speed accounting for channel rounds and uptime"
+    },
+    {
+      "id": "mm3_per_day_per_scope",
+      "formula": "(net_imaging_rate * 1e6 * 86400) / voxels_per_mm3",
+      "inputs": [
+        "net_imaging_rate",
+        "voxels_per_mm3"
+      ],
+      "unit": "mm³/day",
+      "section": "imaging",
+      "row": 73,
+      "description": "Volume one microscope can image per day"
+    },
+    {
+      "id": "num_microscopes",
+      "formula": "floor(microscope_budget / microscope_capital_cost)",
+      "inputs": [
+        "microscope_budget",
+        "microscope_capital_cost"
+      ],
+      "unit": "count",
+      "section": "imaging",
+      "row": 69,
+      "description": "Number of microscopes affordable within budget"
+    },
+    {
+      "id": "scope_operating_cost_per_year",
+      "formula": "technician_salary / microscope_technician_ratio + scope_annual_service",
+      "inputs": [
+        "technician_salary",
+        "microscope_technician_ratio",
+        "scope_annual_service"
+      ],
+      "unit": "$/year",
+      "section": "imaging",
+      "row": 70,
+      "description": "Annual operating cost per microscope"
+    },
+    {
+      "id": "imaging_days",
+      "formula": "if(mm3_per_day_per_scope * num_microscopes == 0, 0, effective_volume / (mm3_per_day_per_scope * num_microscopes) + initial_prep_days)",
+      "inputs": [
+        "effective_volume",
+        "mm3_per_day_per_scope",
+        "num_microscopes",
+        "initial_prep_days"
+      ],
+      "unit": "days",
+      "section": "timeline",
+      "row": 121,
+      "description": "Total days to complete all imaging"
+    },
+    {
+      "id": "imaging_years",
+      "formula": "imaging_days / 365",
+      "inputs": [
+        "imaging_days"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 151,
+      "description": "Imaging time in years"
+    },
+    {
+      "id": "registration_days",
+      "formula": "biological_volume / (registration_rate_pv_per_day * max_parallel_gpus)",
+      "inputs": [
+        "biological_volume",
+        "registration_rate_pv_per_day",
+        "max_parallel_gpus"
+      ],
+      "unit": "days",
+      "section": "timeline",
+      "row": 122,
+      "description": "Days for image registration/alignment"
+    },
+    {
+      "id": "segmentation_days",
+      "formula": "biological_volume / (segmentation_rate_pv_per_day * max_parallel_gpus)",
+      "inputs": [
+        "biological_volume",
+        "segmentation_rate_pv_per_day",
+        "max_parallel_gpus"
+      ],
+      "unit": "days",
+      "section": "timeline",
+      "row": 123,
+      "description": "Days for neural segmentation"
+    },
+    {
+      "id": "processing_days",
+      "formula": "registration_days + segmentation_days",
+      "inputs": [
+        "registration_days",
+        "segmentation_days"
+      ],
+      "unit": "days",
+      "section": "timeline",
+      "row": 124,
+      "description": "Total GPU processing time"
+    },
+    {
+      "id": "processing_years",
+      "formula": "processing_days / 365",
+      "inputs": [
+        "processing_days"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 152,
+      "description": "Processing time in years"
+    },
+    {
+      "id": "proofreading_days",
+      "formula": "neuron_count * hours_per_neuron / (num_proofreaders * hours_per_day)",
+      "inputs": [
+        "neuron_count",
+        "hours_per_neuron",
+        "num_proofreaders",
+        "hours_per_day"
+      ],
+      "unit": "days",
+      "section": "timeline",
+      "row": 125,
+      "description": "Total human proofreading time"
+    },
+    {
+      "id": "proofreading_years",
+      "formula": "proofreading_days / 365",
+      "inputs": [
+        "proofreading_days"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 153,
+      "description": "Proofreading time in years"
+    },
+    {
+      "id": "buffer_years",
+      "formula": "(imaging_years + processing_years + proofreading_years) * risk_buffer_first",
+      "inputs": [
+        "imaging_years",
+        "processing_years",
+        "proofreading_years",
+        "risk_buffer_first"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 154,
+      "description": "Risk buffer time for first connectome"
+    },
+    {
+      "id": "time_to_first_years",
+      "formula": "imaging_years + processing_years + proofreading_years + buffer_years",
+      "inputs": [
+        "imaging_years",
+        "processing_years",
+        "proofreading_years",
+        "buffer_years"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 155,
+      "description": "Total years until first connectome complete"
+    },
+    {
+      "id": "time_to_marginal_years",
+      "formula": "max(imaging_years, processing_years, proofreading_years)",
+      "inputs": [
+        "imaging_years",
+        "processing_years",
+        "proofreading_years"
+      ],
+      "unit": "years",
+      "section": "timeline",
+      "row": 156,
+      "description": "Years between subsequent connectomes (bottleneck)"
+    },
+    {
+      "id": "total_connectomes",
+      "formula": "round(project_duration / max(time_to_first_years, time_to_marginal_years))",
+      "inputs": [
+        "project_duration",
+        "time_to_first_years",
+        "time_to_marginal_years"
+      ],
+      "unit": "count",
+      "section": "summary",
+      "row": 148,
+      "description": "Number of connectomes achievable in project duration"
+    },
+    {
+      "id": "consumables_cost",
+      "formula": "biological_volume * (consumables_per_mm3 + labor_cost_per_mm3 + antibody_cost_per_mm3 * (total_channels - 1))",
+      "inputs": [
+        "biological_volume",
+        "consumables_per_mm3",
+        "labor_cost_per_mm3",
+        "antibody_cost_per_mm3",
+        "total_channels"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 129,
+      "description": "Sample preparation and consumables cost"
+    },
+    {
+      "id": "scanning_cost",
+      "formula": "scope_operating_cost_per_year * num_microscopes * imaging_years",
+      "inputs": [
+        "scope_operating_cost_per_year",
+        "num_microscopes",
+        "imaging_years"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 130,
+      "description": "Microscope operating costs during imaging"
+    },
+    {
+      "id": "imaging_cost_total",
+      "formula": "consumables_cost + scanning_cost",
+      "inputs": [
+        "consumables_cost",
+        "scanning_cost"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 131,
+      "description": "Total imaging costs"
+    },
+    {
+      "id": "processing_cost_registration",
+      "formula": "max_parallel_gpus * registration_days * 24 * gpu_cost_per_hour / biological_volume",
+      "inputs": [
+        "max_parallel_gpus",
+        "registration_days",
+        "gpu_cost_per_hour",
+        "biological_volume"
+      ],
+      "unit": "$/PV",
+      "section": "costs",
+      "row": 117,
+      "description": "Registration compute cost per petavoxel"
+    },
+    {
+      "id": "processing_cost_segmentation",
+      "formula": "max_parallel_gpus * segmentation_days * gpu_cost_per_hour * 24 / petavoxels_total",
+      "inputs": [
+        "max_parallel_gpus",
+        "segmentation_days",
+        "gpu_cost_per_hour",
+        "petavoxels_total"
+      ],
+      "unit": "$/PV",
+      "section": "costs",
+      "row": 118,
+      "description": "Segmentation compute cost per petavoxel"
+    },
+    {
+      "id": "processing_cost_total",
+      "formula": "petavoxels_total * (processing_cost_registration + processing_cost_segmentation)",
+      "inputs": [
+        "petavoxels_total",
+        "processing_cost_registration",
+        "processing_cost_segmentation"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 140,
+      "description": "Total processing compute cost"
+    },
+    {
+      "id": "proofreading_cost",
+      "formula": "neuron_count * hours_per_neuron * hourly_rate",
+      "inputs": [
+        "neuron_count",
+        "hours_per_neuron",
+        "hourly_rate"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 141,
+      "description": "Total proofreading labor cost"
+    },
+    {
+      "id": "personnel_cost",
+      "formula": "(project_mgmt_staff + technical_staff + misc_staff) * avg_staff_salary * project_duration / total_connectomes",
+      "inputs": [
+        "project_mgmt_staff",
+        "technical_staff",
+        "misc_staff",
+        "avg_staff_salary",
+        "project_duration",
+        "total_connectomes"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 142,
+      "description": "Personnel costs per connectome"
+    },
+    {
+      "id": "other_costs",
+      "formula": "other_costs_per_connectome",
+      "inputs": [
+        "other_costs_per_connectome"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 143,
+      "description": "Miscellaneous costs (shipping, permits, etc.)"
+    },
+    {
+      "id": "first_subtotal",
+      "formula": "imaging_cost_total + total_storage_cost_first + processing_cost_total + proofreading_cost + personnel_cost + other_costs + data_science_cost + capital_base",
+      "inputs": [
+        "imaging_cost_total",
+        "total_storage_cost_first",
+        "processing_cost_total",
+        "proofreading_cost",
+        "personnel_cost",
+        "other_costs",
+        "data_science_cost",
+        "capital_base"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 0,
+      "description": "First connectome costs before buffer"
+    },
+    {
+      "id": "first_buffer",
+      "formula": "first_subtotal * risk_buffer_first",
+      "inputs": [
+        "first_subtotal",
+        "risk_buffer_first"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 172,
+      "description": "Risk buffer for first connectome"
+    },
+    {
+      "id": "first_total",
+      "formula": "first_subtotal + first_buffer",
+      "inputs": [
+        "first_subtotal",
+        "first_buffer"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 173,
+      "description": "Total cost for first connectome"
+    },
+    {
+      "id": "first_cost_per_neuron",
+      "formula": "first_total / neuron_count",
+      "inputs": [
+        "first_total",
+        "neuron_count"
+      ],
+      "unit": "$/neuron",
+      "section": "costs",
+      "row": 174,
+      "description": "First connectome cost per neuron"
+    },
+    {
+      "id": "marginal_subtotal",
+      "formula": "imaging_cost_total + total_storage_cost_marginal + processing_cost_total + proofreading_cost + personnel_cost + other_costs",
+      "inputs": [
+        "imaging_cost_total",
+        "total_storage_cost_marginal",
+        "processing_cost_total",
+        "proofreading_cost",
+        "personnel_cost",
+        "other_costs"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 0,
+      "description": "Marginal connectome costs before buffer"
+    },
+    {
+      "id": "marginal_buffer",
+      "formula": "marginal_subtotal * risk_buffer_marginal",
+      "inputs": [
+        "marginal_subtotal",
+        "risk_buffer_marginal"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 181,
+      "description": "Risk buffer for marginal connectomes"
+    },
+    {
+      "id": "marginal_total",
+      "formula": "marginal_subtotal + marginal_buffer",
+      "inputs": [
+        "marginal_subtotal",
+        "marginal_buffer"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 182,
+      "description": "Total cost for marginal connectome"
+    },
+    {
+      "id": "marginal_cost_per_neuron",
+      "formula": "marginal_total / neuron_count",
+      "inputs": [
+        "marginal_total",
+        "neuron_count"
+      ],
+      "unit": "$/neuron",
+      "section": "costs",
+      "row": 183,
+      "description": "Marginal connectome cost per neuron"
+    },
+    {
+      "id": "avg_total",
+      "formula": "if(total_connectomes > 1, (first_total + marginal_total * (total_connectomes - 1)) / total_connectomes, first_total)",
+      "inputs": [
+        "total_connectomes",
+        "first_total",
+        "marginal_total"
+      ],
+      "unit": "$",
+      "section": "costs",
+      "row": 164,
+      "description": "Average cost per connectome"
+    },
+    {
+      "id": "avg_cost_per_neuron",
+      "formula": "if(total_connectomes > 1, (first_cost_per_neuron + marginal_cost_per_neuron * (total_connectomes - 1)) / total_connectomes, first_cost_per_neuron)",
+      "inputs": [
+        "total_connectomes",
+        "first_cost_per_neuron",
+        "marginal_cost_per_neuron"
+      ],
+      "unit": "$/neuron",
+      "section": "costs",
+      "row": 165,
+      "description": "Average cost per neuron across all connectomes"
+    },
+    {
+      "id": "recording_experiment_duration_seconds",
+      "formula": "experiment_length * 3600",
+      "inputs": [
+        "experiment_length"
+      ],
+      "unit": "seconds",
+      "section": "recording",
+      "row": 0,
+      "description": "Experiment duration in seconds"
+    },
+    {
+      "id": "recording_samples_per_experiment",
+      "formula": "floor(recording_experiment_duration_seconds / sample_duration)",
+      "inputs": [
+        "recording_experiment_duration_seconds",
+        "sample_duration"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Number of samples per experiment given user-defined sample duration"
+    },
+    {
+      "id": "recording_brain_volume_to_record",
+      "formula": "biological_volume * brain_volume_coverage",
+      "inputs": [
+        "biological_volume",
+        "brain_volume_coverage"
+      ],
+      "unit": "mm³",
+      "section": "recording",
+      "row": 0,
+      "description": "Brain volume to record based on user-defined coverage percentage"
+    },
+    {
+      "id": "recording_experiments_for_volume_coverage",
+      "formula": "ceil(recording_brain_volume_to_record / experiment_brain_volume)",
+      "inputs": [
+        "recording_brain_volume_to_record",
+        "experiment_brain_volume"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Experiments needed for brain volume coverage (assuming non-overlapping)"
+    },
+    {
+      "id": "recording_total_experiments",
+      "formula": "recording_experiments_for_volume_coverage * brain_area_repetitions",
+      "inputs": [
+        "recording_experiments_for_volume_coverage",
+        "brain_area_repetitions"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Total experiments accounting for repeated scans of same area (e.g., different brain states)"
+    },
+    {
+      "id": "recording_samples_per_brain_area",
+      "formula": "recording_samples_per_experiment * brain_area_repetitions",
+      "inputs": [
+        "recording_samples_per_experiment",
+        "brain_area_repetitions"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Average samples per brain volume area"
+    },
+    {
+      "id": "recording_total_samples",
+      "formula": "recording_total_experiments * recording_samples_per_experiment",
+      "inputs": [
+        "recording_total_experiments",
+        "recording_samples_per_experiment"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Total samples across all experiments"
+    },
+    {
+      "id": "recording_total_data_volume_tb",
+      "formula": "recording_total_experiments * experiment_data_volume",
+      "inputs": [
+        "recording_total_experiments",
+        "experiment_data_volume"
+      ],
+      "unit": "TB",
+      "section": "recording",
+      "row": 0,
+      "description": "Total uncompressed data volume in TB"
+    },
+    {
+      "id": "recording_total_data_volume_pb",
+      "formula": "recording_total_data_volume_tb / 1000",
+      "inputs": [
+        "recording_total_data_volume_tb"
+      ],
+      "unit": "PB",
+      "section": "recording",
+      "row": 0,
+      "description": "Total uncompressed data volume in PB"
+    },
+    {
+      "id": "recording_neurons_covered",
+      "formula": "min(recording_total_experiments * neurons_at_single_resolution, neuron_count * brain_volume_coverage)",
+      "inputs": [
+        "recording_total_experiments",
+        "neurons_at_single_resolution",
+        "neuron_count",
+        "brain_volume_coverage"
+      ],
+      "unit": "count",
+      "section": "recording",
+      "row": 0,
+      "description": "Total neurons covered by recordings"
+    },
+    {
+      "id": "recording_coverage_percent",
+      "formula": "(recording_neurons_covered / neuron_count) * 100",
+      "inputs": [
+        "recording_neurons_covered",
+        "neuron_count"
+      ],
+      "unit": "%",
+      "section": "recording",
+      "row": 0,
+      "description": "Percentage of brain neurons covered"
+    },
+    {
+      "id": "recording_total_experiment_cost",
+      "formula": "recording_total_experiments * experiment_cost",
+      "inputs": [
+        "recording_total_experiments",
+        "experiment_cost"
+      ],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Total experiment costs (excluding storage)"
+    },
+    {
+      "id": "recording_connectomics_volume",
+      "formula": "recording_brain_volume_to_record * connectomics_scan_percentage",
+      "inputs": [
+        "recording_brain_volume_to_record",
+        "connectomics_scan_percentage"
+      ],
+      "unit": "mm³",
+      "section": "recording",
+      "row": 0,
+      "description": "Brain volume for aligned structural/functional datasets"
+    },
+    {
+      "id": "recording_total_recording_hours",
+      "formula": "recording_total_experiments * experiment_length",
+      "inputs": [
+        "recording_total_experiments",
+        "experiment_length"
+      ],
+      "unit": "hours",
+      "section": "recording",
+      "row": 0,
+      "description": "Total recording time"
+    },
+    {
+      "id": "recording_infrastructure_cost_first",
+      "formula": "500000",
+      "inputs": [],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Equipment setup cost (fixed)"
+    },
+    {
+      "id": "recording_personnel_cost_first",
+      "formula": "5 * 150000 * min(recording_total_recording_hours / (24 * 365), 3)",
+      "inputs": [
+        "recording_total_recording_hours"
+      ],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Personnel cost for team (up to 3 years)"
+    },
+    {
+      "id": "recording_total_cost_first",
+      "formula": "(recording_total_experiment_cost + recording_infrastructure_cost_first + recording_personnel_cost_first) * (1 + risk_buffer_first)",
+      "inputs": [
+        "recording_total_experiment_cost",
+        "recording_infrastructure_cost_first",
+        "recording_personnel_cost_first",
+        "risk_buffer_first"
+      ],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Total first project cost with buffer"
+    },
+    {
+      "id": "recording_total_time_years_first",
+      "formula": "(recording_total_recording_hours / (24 * 365)) * (1 + risk_buffer_first)",
+      "inputs": [
+        "recording_total_recording_hours",
+        "risk_buffer_first"
+      ],
+      "unit": "years",
+      "section": "recording",
+      "row": 0,
+      "description": "Total first project time with buffer"
+    },
+    {
+      "id": "recording_marginal_experiment_cost",
+      "formula": "experiment_cost * 0.8",
+      "inputs": [
+        "experiment_cost"
+      ],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Marginal cost per experiment (80% of first)"
+    },
+    {
+      "id": "recording_total_cost_marginal",
+      "formula": "(recording_total_experiments * recording_marginal_experiment_cost) * (1 + risk_buffer_marginal)",
+      "inputs": [
+        "recording_total_experiments",
+        "recording_marginal_experiment_cost",
+        "risk_buffer_marginal"
+      ],
+      "unit": "$",
+      "section": "recording",
+      "row": 0,
+      "description": "Total marginal project cost"
+    },
+    {
+      "id": "recording_total_time_years_marginal",
+      "formula": "(recording_total_recording_hours * 0.7 / (24 * 365)) * (1 + risk_buffer_marginal)",
+      "inputs": [
+        "recording_total_recording_hours",
+        "risk_buffer_marginal"
+      ],
+      "unit": "years",
+      "section": "recording",
+      "row": 0,
+      "description": "Total marginal project time (30% faster)"
+    },
+    {
+      "id": "simulation_total_memory_bytes",
+      "formula": "storage_bytes_lower",
+      "inputs": [
+        "storage_bytes_lower"
+      ],
+      "unit": "bytes",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total memory footprint (using lower bound)"
+    },
+    {
+      "id": "simulation_total_memory_gb",
+      "formula": "simulation_total_memory_bytes / 1e9",
+      "inputs": [
+        "simulation_total_memory_bytes"
+      ],
+      "unit": "GB",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total memory in gigabytes"
+    },
+    {
+      "id": "simulation_flops_per_sec",
+      "formula": "flops_time_based_lower",
+      "inputs": [
+        "flops_time_based_lower"
+      ],
+      "unit": "FLOPS",
+      "section": "simulation",
+      "row": 0,
+      "description": "FLOPS required per second (time-based, lower bound)"
+    },
+    {
+      "id": "simulation_gpus_for_memory",
+      "formula": "ceil(simulation_total_memory_gb / gpu_memory_gb)",
+      "inputs": [
+        "simulation_total_memory_gb",
+        "gpu_memory_gb"
+      ],
+      "unit": "count",
+      "section": "simulation",
+      "row": 0,
+      "description": "GPUs needed for memory"
+    },
+    {
+      "id": "simulation_gpus_for_compute",
+      "formula": "ceil(simulation_flops_per_sec / (gpu_tflops * 1e12))",
+      "inputs": [
+        "simulation_flops_per_sec",
+        "gpu_tflops"
+      ],
+      "unit": "count",
+      "section": "simulation",
+      "row": 0,
+      "description": "GPUs needed for compute"
+    },
+    {
+      "id": "simulation_total_gpus",
+      "formula": "max(simulation_gpus_for_memory, simulation_gpus_for_compute)",
+      "inputs": [
+        "simulation_gpus_for_memory",
+        "simulation_gpus_for_compute"
+      ],
+      "unit": "count",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total GPUs required"
+    },
+    {
+      "id": "simulation_runtime_cost",
+      "formula": "simulation_total_gpus * gpu_cost_per_hour * simulation_hours",
+      "inputs": [
+        "simulation_total_gpus",
+        "gpu_cost_per_hour",
+        "simulation_hours"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Simulation runtime cost"
+    },
+    {
+      "id": "simulation_training_infrastructure_cost",
+      "formula": "10000000",
+      "inputs": [],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Training infrastructure cost (fixed)"
+    },
+    {
+      "id": "simulation_training_compute_cost",
+      "formula": "simulation_runtime_cost * 0.1",
+      "inputs": [
+        "simulation_runtime_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Training compute cost (10% of simulation)"
+    },
+    {
+      "id": "simulation_validation_cost",
+      "formula": "simulation_runtime_cost * 0.05",
+      "inputs": [
+        "simulation_runtime_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Validation cost (5% of simulation)"
+    },
+    {
+      "id": "simulation_total_cost_first",
+      "formula": "(simulation_runtime_cost + simulation_training_infrastructure_cost + simulation_training_compute_cost + simulation_validation_cost) * 1.2",
+      "inputs": [
+        "simulation_runtime_cost",
+        "simulation_training_infrastructure_cost",
+        "simulation_training_compute_cost",
+        "simulation_validation_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total first project cost with 20% buffer"
+    },
+    {
+      "id": "simulation_total_time_years_first",
+      "formula": "(simulation_hours / (24 * 365)) * 1.2",
+      "inputs": [
+        "simulation_hours"
+      ],
+      "unit": "years",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total first project time with buffer"
+    },
+    {
+      "id": "simulation_retraining_cost",
+      "formula": "simulation_training_compute_cost * 0.1",
+      "inputs": [
+        "simulation_training_compute_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Marginal retraining cost (10%)"
+    },
+    {
+      "id": "simulation_finetuning_cost",
+      "formula": "simulation_validation_cost * 0.02",
+      "inputs": [
+        "simulation_validation_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Marginal finetuning cost (2%)"
+    },
+    {
+      "id": "simulation_total_cost_marginal",
+      "formula": "simulation_runtime_cost + simulation_retraining_cost + simulation_finetuning_cost",
+      "inputs": [
+        "simulation_runtime_cost",
+        "simulation_retraining_cost",
+        "simulation_finetuning_cost"
+      ],
+      "unit": "$",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total marginal project cost"
+    },
+    {
+      "id": "simulation_total_time_years_marginal",
+      "formula": "simulation_hours / (24 * 365)",
+      "inputs": [
+        "simulation_hours"
+      ],
+      "unit": "years",
+      "section": "simulation",
+      "row": 0,
+      "description": "Total marginal project time"
+    },
+    {
+      "id": "raw_bytes_per_mm3",
+      "formula": "voxels_per_mm3 * bytes_per_voxel",
+      "inputs": [
+        "voxels_per_mm3",
+        "bytes_per_voxel"
+      ],
+      "unit": "bytes/mm³",
+      "section": "storage",
+      "row": 109,
+      "description": "Uncompressed bytes per cubic millimeter"
+    },
+    {
+      "id": "raw_pb_total",
+      "formula": "raw_bytes_per_mm3 * effective_volume / 1e15",
+      "inputs": [
+        "raw_bytes_per_mm3",
+        "effective_volume"
+      ],
+      "unit": "PB",
+      "section": "storage",
+      "row": 111,
+      "description": "Total raw uncompressed data size"
+    },
+    {
+      "id": "active_pb",
+      "formula": "if(lossy_compression == 0, 0, (raw_pb_total / lossy_compression) + (raw_pb_total * label_overhead))",
+      "inputs": [
+        "raw_pb_total",
+        "lossy_compression",
+        "label_overhead"
+      ],
+      "unit": "PB",
+      "section": "storage",
+      "row": 112,
+      "description": "Active storage size (lossy compressed + labels)"
+    },
+    {
+      "id": "archive_pb",
+      "formula": "if(lossless_compression == 0, 0, (raw_pb_total / lossless_compression) + (raw_pb_total * label_overhead))",
+      "inputs": [
+        "raw_pb_total",
+        "lossless_compression",
+        "label_overhead"
+      ],
+      "unit": "PB",
+      "section": "storage",
+      "row": 113,
+      "description": "Archive storage size (lossless compressed + labels)"
+    },
+    {
+      "id": "active_storage_cost_first",
+      "formula": "active_pb * replicas_active_first * active_retention_years * active_cost_pb_year",
+      "inputs": [
+        "active_pb",
+        "replicas_active_first",
+        "active_retention_years",
+        "active_cost_pb_year"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 132,
+      "description": "Active storage cost for first connectome"
+    },
+    {
+      "id": "archive_storage_cost_first",
+      "formula": "archive_pb * replicas_archive_first * archive_retention_years * archive_cost_pb_year",
+      "inputs": [
+        "archive_pb",
+        "replicas_archive_first",
+        "archive_retention_years",
+        "archive_cost_pb_year"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 133,
+      "description": "Archive storage cost for first connectome"
+    },
+    {
+      "id": "total_storage_cost_first",
+      "formula": "active_storage_cost_first + archive_storage_cost_first",
+      "inputs": [
+        "active_storage_cost_first",
+        "archive_storage_cost_first"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 134,
+      "description": "Total storage cost for first connectome"
+    },
+    {
+      "id": "active_storage_cost_marginal",
+      "formula": "active_pb * replicas_active_marginal * active_retention_years * active_cost_pb_year",
+      "inputs": [
+        "active_pb",
+        "replicas_active_marginal",
+        "active_retention_years",
+        "active_cost_pb_year"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 135,
+      "description": "Active storage cost for marginal connectomes"
+    },
+    {
+      "id": "archive_storage_cost_marginal",
+      "formula": "archive_pb * replicas_archive_marginal * archive_retention_years * archive_cost_pb_year",
+      "inputs": [
+        "archive_pb",
+        "replicas_archive_marginal",
+        "archive_retention_years",
+        "archive_cost_pb_year"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 136,
+      "description": "Archive storage cost for marginal connectomes"
+    },
+    {
+      "id": "total_storage_cost_marginal",
+      "formula": "active_storage_cost_marginal + archive_storage_cost_marginal",
+      "inputs": [
+        "active_storage_cost_marginal",
+        "archive_storage_cost_marginal"
+      ],
+      "unit": "$",
+      "section": "storage",
+      "row": 137,
+      "description": "Total storage cost for marginal connectomes"
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-25T09:10:38.580Z",
+    "parameterCount": 159,
+    "formulaCount": 86,
+    "modalityIds": [
+      "em",
+      "exm",
+      "exm_molecular",
+      "wellcome"
+    ],
+    "organismIds": [
+      "c_elegans",
+      "drosophila",
+      "zebrafish_larva",
+      "mouse",
+      "macaque",
+      "human"
+    ],
+    "proofreadingScenarios": [
+      "current",
+      "improved_1000x"
+    ]
+  }
+}
