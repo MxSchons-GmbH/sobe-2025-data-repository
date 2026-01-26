@@ -59,18 +59,18 @@
       ]
     },
     {
-      "id": "storage-costs",
-      "title": "Storage Cost Trends Over Time",
-      "description": "Trends in data storage costs over time and implications for brain data storage.",
-      "filename": "storage-cost-trends-brain-data",
+      "id": "gpu-memory",
+      "title": "GPU Memory vs Brain Emulation Requirements",
+      "description": "Historical GPU memory capacity compared to the memory requirements for brain emulation across different organisms.",
+      "filename": "gpu-memory-brain-emulation",
       "path": "figures/generated",
       "organism": [
         "all"
       ],
       "type": [
         "technology",
-        "storage",
-        "cost"
+        "compute",
+        "emulation"
       ]
     },
     {

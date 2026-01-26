@@ -17,6 +17,9 @@ statsmodels
 # File format support
 openpyxl
 
+# GPU database
+dbgpu[fuzz]
+
 # Jupyter
 nbconvert
 ipykernel

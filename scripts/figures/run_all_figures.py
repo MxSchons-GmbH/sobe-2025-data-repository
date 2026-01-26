@@ -234,53 +234,87 @@ def generate_compute():
     plt.close()
 
 # =============================================================================
-# Figure 4: Storage Costs
+# Figure 4: GPU Memory vs Brain Emulation Requirements
 # =============================================================================
-@figure("storage-cost-trends-brain-data", "Storage costs over time with species thresholds")
-def generate_storage_costs():
-    storage_df = pd.read_csv(
-        DATA_FILES["storage_costs"], sep='\t',
-        parse_dates=['Year']
-    )
-    storage_df.rename(columns={
-        'Historical price of memory': 'Memory',
-        'Historical price of flash memory': 'Flash',
-        'Historical price of disk drives': 'Disk',
-        'Historical price of solid-state drives': 'Solid state',
-    }, inplace=True)
+@figure("gpu-memory-brain-emulation", "GPU memory capacity vs brain emulation requirements")
+def generate_gpu_memory_brain_emulation():
+    """
+    Generate figure showing GPU memory capacity over time compared to
+    brain emulation storage requirements for different organisms.
+    """
+    from dbgpu import GPUDatabase
 
-    storage_dfl = pd.melt(
-        storage_df, ['Year'],
-        value_vars=['Memory', 'Flash', 'Disk', 'Solid state'],
-        value_name='Cost ($ / TB)', var_name='Storage type',
-    )
+    # Load GPU database
+    db = GPUDatabase.default()
+    gpu_df = db.dataframe.copy()
 
-    # Get storage requirements from shared data
+    # Filter to GPUs with valid memory and release date
+    gpu_df = gpu_df[gpu_df['memory_size_gb'].notna() & gpu_df['release_date'].notna()].copy()
+    gpu_df['year'] = pd.to_datetime(gpu_df['release_date']).dt.year
+
+    # Filter to flagship GPUs (datacenter + high-end consumer)
+    # Include: NVIDIA (various), AMD Radeon Instinct, Intel Data Center
+    flagship_patterns = [
+        # NVIDIA datacenter/workstation
+        'Server', 'Tesla', 'Quadro', 'Data Center',
+        # NVIDIA consumer flagship
+        'GeForce RTX', 'GeForce GTX',
+        # AMD datacenter
+        'Radeon Instinct', 'Radeon Pro',
+        # AMD consumer flagship
+        'Radeon RX',
+        # Intel datacenter
+        'Data Center GPU',
+    ]
+
+    def is_flagship(row):
+        gen = str(row.get('generation', ''))
+        name = str(row.get('name', ''))
+        for pattern in flagship_patterns:
+            if pattern in gen or pattern in name:
+                return True
+        return False
+
+    gpu_df['is_flagship'] = gpu_df.apply(is_flagship, axis=1)
+    flagship_df = gpu_df[gpu_df['is_flagship']].copy()
+
+    # Get storage requirements (convert TB to GB for comparison)
     species_storage_tb = get_storage_requirements()
-    species_cost = {k: 1e6 / v for k, v in species_storage_tb.items()}
+    species_storage_gb = {k: v * 1000 for k, v in species_storage_tb.items()}
 
-    min_year = storage_dfl['Year'].min()
-    max_year = storage_dfl['Year'].max()
-    label_year = dt.datetime(year=1958, month=1, day=1)
+    fig, ax = plt.subplots(figsize=(12, 6))
 
-    fig, ax = plt.subplots(figsize=(10, 5))
-    sns.lineplot(
-        data=storage_dfl, x='Year', y='Cost ($ / TB)',
-        hue='Storage type', palette=PRIMARY_COLORS, linewidth=2.5, ax=ax
-    )
+    # Plot GPU memory over time, colored by manufacturer
+    manufacturers = flagship_df['manufacturer'].unique()
+    mfr_colors = {'NVIDIA': TEAL, 'AMD': GOLD, 'Intel': PURPLE, 'ATI': GOLD}
 
-    for name, val in species_cost.items():
-        ax.axhline(y=val, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
-        ax.text(label_year, val, f'  {name}', va='bottom', fontsize=10, color=COLORS['caption'])
+    for mfr in manufacturers:
+        if mfr in mfr_colors:
+            mfr_df = flagship_df[flagship_df['manufacturer'] == mfr]
+            ax.scatter(
+                mfr_df['year'], mfr_df['memory_size_gb'],
+                label=mfr, color=mfr_colors[mfr], s=40, alpha=0.6
+            )
+
+    # Add organism reference lines for memory requirements
+    for name, mem_gb in species_storage_gb.items():
+        ax.axhline(y=mem_gb, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
+        ax.text(
+            2030 + 0.5, mem_gb, f' {name}',
+            va='center', fontsize=FONT_SIZES['annotation'] - 1,
+            color=COLORS['caption'], clip_on=False
+        )
 
     ax.set_yscale('log')
-    ax.set_xlim(min_year, max_year)
-    ax.set_ylabel('Cost ($ / TB)')
+    ax.set_xlim(1995, 2030)
+    ax.set_ylim(0.01, 1e7)  # 10 MB to 10 PB range
+    ax.set_ylabel('GPU Memory (GB)')
     ax.set_xlabel(None)
-    ax.set_title('Storage Costs Over Time (Species Thresholds at $1M Budget)')
-    ax.legend(frameon=True)
-    plt.tight_layout()
-    save_figure(fig, 'storage-cost-trends-brain-data')
+    ax.set_title('GPU Memory vs Brain Emulation Requirements')
+    ax.legend(frameon=True, loc='upper left')
+
+    plt.subplots_adjust(right=0.82)
+    save_figure(fig, 'gpu-memory-brain-emulation', attribution_position='axes')
     plt.close()
 
 # =============================================================================
