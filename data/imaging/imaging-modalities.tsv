@@ -1,24 +1,24 @@
-id	name	definition	unit	em	exm	exm_molecular	wellcome
-microscope_capital_cost	Microscope capital cost	Acquisition price per scope	$/scope	500000	500000	500000	5000000
-microscope_depreciation_years	Depreciation horizon	Straight-line depreciation years	years	10	5	5	10
-sustained_imaging_rate	Sustained imaging rate	Imaging rate at given resolution per microscope	Mvox/s	225	1100	1100	250
-parallel_channels	Parallel channels	Simultaneous channel readouts	count	1	3	8	1
-total_channels	Total channels	Imaging channels per voxel	count	1	1	800	1
-scope_annual_service	Annual service	Electricity, licenses, maintenance	$/scope/year	50000	15000	15000	250000
-technician_salary	Technician salary	Total salary incl benefits for microscopist	$/year	120000	120000	120000	120000
-microscope_technician_ratio	Technician ratio	Microscopes per technician	count	2	5	5	0.5
-microscope_uptime	Microscope uptime	Fraction of calendar time producing good data	fraction	1.0	1.0	1.0	1.0
-reacquisition_rate	Reacquisition rate	Expected fraction of volume to re-image	fraction	0	0	0	0
-sample_yield	Sample yield	Fraction of samples that pass QC	fraction	1.0	1.0	1.0	1.0
-expansion_factor	Expansion factor	Linear expansion factor E; volume scales as E³	×	1	16	16	1
-consumables_per_mm3	Consumables per mm³	Sample prep, expanding, staining per tissue volume	$/mm³	100000	2	2	200000
-antibody_cost_per_mm3	Antibody cost per mm³	Antibody costs per original tissue	$/mm³	2	2	2	2
-labor_cost_per_mm3	Labor cost per mm³	Human labor costs per original mm³	$/mm³	2850	2850	2850	2850
-initial_prep_days	Initial preparation days	From tissue to ready-to-image	days	15	15	15	15
-voxel_x	Voxel size X	Acquisition resolution X	nm	15	250	250	10
-voxel_y	Voxel size Y	Acquisition resolution Y	nm	15	250	250	10
-voxel_z	Voxel size Z	Acquisition resolution Z	nm	15	400	400	10
-sample_depth	Sample depth	Layers of Z in one sample	count	1	10000	10000	1
-tile_x	Tile width	Tile width in pixels	pixels	6000	2048	5000	6000
-tile_y	Tile height	Tile height in pixels	pixels	6000	2048	5000	6000
-tile_overlap	Tile overlap	Lateral overlap for stitching	fraction	0.1	0.1	0.1	0.1
+id	name	definition	unit	em	exm	exm_molecular	wellcome	ref_id	supporting_refs	ref_note	confidence	validated_by
+microscope_capital_cost	Microscope capital cost	Acquisition price per scope	$/scope	500000	500000	500000	5000000				none	none
+microscope_depreciation_years	Depreciation horizon	Straight-line depreciation years	years	10	5	5	10				none	none
+sustained_imaging_rate	Sustained imaging rate	Imaging rate at given resolution per microscope	Mvox/s	225	1100	1100	250				none	none
+parallel_channels	Parallel channels	Simultaneous channel readouts	count	1	3	8	1				none	none
+total_channels	Total channels	Imaging channels per voxel	count	1	1	800	1				none	none
+scope_annual_service	Annual service	Electricity, licenses, maintenance	$/scope/year	50000	15000	15000	250000				none	none
+technician_salary	Technician salary	Total salary incl benefits for microscopist	$/year	120000	120000	120000	120000				none	none
+microscope_technician_ratio	Technician ratio	Microscopes per technician	count	2	5	5	0.5				none	none
+microscope_uptime	Microscope uptime	Fraction of calendar time producing good data	fraction	1.0	1.0	1.0	1.0				none	none
+reacquisition_rate	Reacquisition rate	Expected fraction of volume to re-image	fraction	0	0	0	0				none	none
+sample_yield	Sample yield	Fraction of samples that pass QC	fraction	1.0	1.0	1.0	1.0				none	none
+expansion_factor	Expansion factor	Linear expansion factor E; volume scales as E³	×	1	16	16	1				none	none
+consumables_per_mm3	Consumables per mm³	Sample prep, expanding, staining per tissue volume	$/mm³	100000	2	2	200000				none	none
+antibody_cost_per_mm3	Antibody cost per mm³	Antibody costs per original tissue	$/mm³	2	2	2	2				none	none
+labor_cost_per_mm3	Labor cost per mm³	Human labor costs per original mm³	$/mm³	2850	2850	2850	2850				none	none
+initial_prep_days	Initial preparation days	From tissue to ready-to-image	days	15	15	15	15				none	none
+voxel_x	Voxel size X	Acquisition resolution X	nm	15	250	250	10				none	none
+voxel_y	Voxel size Y	Acquisition resolution Y	nm	15	250	250	10				none	none
+voxel_z	Voxel size Z	Acquisition resolution Z	nm	15	400	400	10				none	none
+sample_depth	Sample depth	Layers of Z in one sample	count	1	10000	10000	1				none	none
+tile_x	Tile width	Tile width in pixels	pixels	6000	2048	5000	6000				none	none
+tile_y	Tile height	Tile height in pixels	pixels	6000	2048	5000	6000				none	none
+tile_overlap	Tile overlap	Lateral overlap for stitching	fraction	0.1	0.1	0.1	0.1				none	none

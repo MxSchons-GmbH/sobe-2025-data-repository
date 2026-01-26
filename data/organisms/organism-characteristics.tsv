@@ -1,6 +1,6 @@
-Organism	Brainvolume in mm^3	Total Neuron Count	Maximum Neuron Firing Rate (Hz)	Average Liftime in Minutes	Isotropic resolution Single Neuron recording in µm
-C. Elegans	0.002	302	10	21600	1
-Zebrafish Larvae	0.08	100000	80	14400	1
-Drosophila	0.08	140000	200	57600	1
-Mouse	450.0	70000000	200	1576800	1
-Human	1200000.0	87000000000	415	39420000	1
+Organism	Brainvolume in mm^3	Total Neuron Count	Maximum Neuron Firing Rate (Hz)	Average Liftime in Minutes	Isotropic resolution Single Neuron recording in µm	ref_id	supporting_refs	ref_note	confidence	validated_by
+C. Elegans	0.002	302	10	21600	1				none	none
+Zebrafish Larvae	0.08	100000	80	14400	1				none	none
+Drosophila	0.08	140000	200	57600	1				none	none
+Mouse	450.0	70000000	200	1576800	1				none	none
+Human	1200000.0	87000000000	415	39420000	1				none	none

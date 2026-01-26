@@ -1,411 +1,370 @@
-Simulation/Initiative	Type of Simulation	Neurons	# of Neurons	Synapses	Hardware and Software	Slowdown time (required for one biological second)	Timestep	Notes	Link	Category	Organism (random)
-Enigma Project	Multi-modal neural networks								https://enigmaproject.ai/	Specialized/Hybrid	Human
-(Schepper et al., 2022)	Integrate-and-fire point neurons, cerebellar network scaffold; single compartment no short-term plasticity	29230 neurons	29230.0	1.5 million chemical synapses, 2100 electrical synapses	NEURON simulation environment				https://www.nature.com/articles/s42003-022-04213-y	Integrate-and-Fire	Other
-(Shiu et al., 2024)	Leaky integrate-and-fire	125,000	125000.0	50 million	Spiking Neural Network Simulator Brian2				https://www.nature.com/articles/s41586-024-07763-9	Integrate-and-Fire	Human
-(Simeon et al. 2024)	Varying neural network architecture for processing of calcium fluorescence data	300	300.0		Pytorch Deep Learning Framework				https://www.biorxiv.org/content/biorxiv/early/2024/03/06/2024.02.13.580186.full.pdf	Simple Abstract	C. elegans
-(Romani et al., 2024)	Electrical features (e-features) which were used in combination with curated morphologies to produce and validate 36 single-cell e-models	456380	456380.0	821 million	Electrophysiological Feature Extraction Library or the Blue Brain Python E-feature extraction, Blue Brain python optimization library				https://www.biorxiv.org/content/10.1101/2023.05.17.541167v2.full	Detailed Biophysical	Mouse
-(Rhodes et al., 2019)	Single-compartment leaky integrate-and-fire unit, with current-based exponentially decaying synapses	77000	77000.0	300 million	"Heterogenous parallelization scheme and SpiNNaker neuormorphic hardware
-
-PyNN modeling language"	1x	10 seconds, 12 hours		https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0160	Integrate-and-Fire	Mouse
-Human Brain Project (Markram et al. 2011)	unkown								https://www.sciencedirect.com/science/article/pii/S1877050911006806	Unknown	C. elegans
-(Merolla et al. 2014)	Self-contained neural network with 256-by-256 directed, programmable synaptic connections	1 million	1000000.0	256 million	Self contained neuromorphic hardware	1x			https://www.science.org/doi/10.1126/science.1254642	Simple Abstract	Rhesus Monkey
-(Sharp et al., 2014)	Leaky integrate-and-fire model	50000 neurons	50000.0	50 million synapses	PyNN modeling language, 200 processors on 13 chips				https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2014.00131/epub?isPublishedV2=false	Integrate-and-Fire	Rhesus Monkey
-Izhikevich, E. M., and Edelman, G. M. (2008).	Multicompartment model with each dendritic compartment simulated by Izhikevich model	1 million	1000000.0	500 million	C programming language with MPI and it is run on a Beowulf cluster of 60 3GHz processors with 1.5 GB of RAM each	60x			https://www.pnas.org/doi/full/10.1073/pnas.0712231105	Intermediate Complexity	Zebrafish
-(Djurfeldt et al,, 2008)	Hodgkin-Hucley model	22 million	22000000.0	11 billion	Blue Gene/L supercomputer up to 8192 processors	1205x	1 second		https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5388638	Detailed Biophysical	Drosophila
-(Yu, Cauwenberghs, 2010 )	Hodgkin-Huxley neural dynamics in 3 channel variables, each with 16 variables, and 12 synaptic variables	4	4.0	12	Programmable analog VLSI chip (NeuroDyn), 0.5 CMOS chip	Variable speed output exceeding real time			https://ieeexplore.ieee.org/document/5471736	Detailed Biophysical	Other
-(Vogelstein et al., 2007; Park et al., 2011)	"Integrate and-fire neuron with conductance-like synapses
-
-
-
-
-
-
-Analog integrate-and-fire array transceivers"	"4800
-
-
-
-
-
-
-
-
-
-
-
-262000"	262000.0	"4.2 million
-
-
-
-
-
-
-
-
-
-
-
-262 million"	"VLSI system 80 × 60 pixel neuromorphic retina
-
-
-
-
-
-
-
-
-Five Xilinx Spartan-6 field-programmable gate arrays and four custom analog neuromophic integrated circuits and HiAER protocol"				"https://direct.mit.edu/neco/article-abstract/19/9/2281/7259/A-Multichip-Neuromorphic-System-for-Spike-Based?redirectedFrom=fulltext
-
-https://ieeexplore.ieee.org/document/7526444"	Integrate-and-Fire	Rhesus Monkey
-(Schemmel et al., 2010)	Exponential integrate-and-fire neuron models	180000	180000.0	40 million	Very large analog neuromorphic hardware system developed within FACETS, neural system description language PyNN	1000-100000 times faster than biological time			https://ieeexplore.ieee.org/document/5536970	Integrate-and-Fire	Common Marmoset
-(Modha et al.; Merolla et al., 2011)	Integrate-and-fire neuron models	256	256.0	256000 binary synapses	256 digital integrate-and-fire neurons and a 1024×256 bit SRAM crossbar memory for synapses using IBM's 45nm SOI process				"https://dl.acm.org/doi/abs/10.1145/1978542.1978559
-
-https://ieeexplore.ieee.org/document/6055294"	Integrate-and-Fire	Drosophila
-(Furber et al., 2008)	unkown								https://link.springer.com/chapter/10.1007/978-3-540-78293-3_18	Unknown	Rhesus Monkey
-(Potjans et al., 2014)	Leaky integrate-and-fire	80000	80000.0	300 million	NEST simulation tool and a compute cluster with 24 nodes each equipped with 2 quad core AMD Opteron 2834 processors and interconnected by a 24-port Voltaire InfiniBand switch ISR9024D-M	"~1x
-
-(close to real time)"			https://academic.oup.com/cercor/article/24/3/785/398560	Integrate-and-Fire	Other
-(Plesser, Eppler et al., 2007)	Integrate-and-fire	12500	12500.0	15.6 million	Sun X4100 cluster, 2.4Ghz AMD Opteron, 8GB ram, MPI, NEST	2	0.1		https://link.springer.com/chapter/10.1007/978-3-540-74466-5_71	Integrate-and-Fire	Rat
-(Djurfeldt, Lundqvist et al., 2006)	6-compartment neurons	22 million	22000000.0	11 billion						Detailed Biophysical	Human
-(Izhikevich, 2005)	Izhikevich neurons, Random synaptic connectivity generated on the fly.	100 billion	100000000000.0	1 quadrillion	27-processor Beowulf cluster machine	50 days	1		https://www.izhikevich.org/human_brain_simulation/Blue_Brain.htm	Intermediate Complexity	Drosophila
-(Howell, Dyhrfjeld-Johnsen et al., 2000)	Compartment (Purkinje 4,500 comp./granule 1 comp.)	16 Purkinje, 244,000 granule cells	244000.0		128- processor Cray 3TE, PGENESIS	4500			https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Detailed Biophysical	Drosophila
-(Howell, Dyhrfjeld-Johnsen et al., 2000)	unkown	60,000 granule cells, 300 mossy fibers, 300 Golgi cells, 300 stellate cells, 1 Purkinje cell	60000.0		Single workstation 1GB memory, GENESIS	79200	20 µs		https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Unknown	Human
-(Kozlov, Lansner et al., 2007)	5 compartment model	900	900.0	10% per hemisegment	SPLIT		100 µs		https://link.springer.com/article/10.1007/s00422-006-0132-2	Detailed Biophysical	C. elegans
-(Frye, Ananthanarayanan et al., 2007)	Low complexity spiking like Izhikevich neurons, STDP synapses	8 million	8000000.0	50.4 billion	4096 processor BlueGene/L 256 Mb per CPU	10	1 ms		https://modha.org/2007/02/towards-real-time-mouse-scale-cortical-simulations/	Intermediate Complexity	C. elegans
-(Brette, Rudolph et al., 2007)	14 cell types, conductance and compartment model	3560	3560.0	3500 gap junctions, 1.1 million synapses	Cray XT3 2.4 Ghz, 800 CPUs	200?	Event driven		https://link.springer.com/article/10.1007/s10827-007-0038-6	Detailed Biophysical	Zebrafish
-(Traub, Contreras et al., 2005)	14 cell types, conductance and compartment model, 11 active conductances	3560	3560.0	3500 gap junctions, 1.1 million synapses	14 cpu Linux cluster, an IBM e1350, dualprocessor Intel P4Xeon 2 µs 102 2.4-GHz, 512 Kbytes of L2 cache; or, e1350 Blade 1, at 2.8 GHz		2 µs		https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Detailed Biophysical	Human
-(Goodman, Courtenay Wilson et al., 2001)	3 layer cortical column, 25% GABAergic, conductance models, synapse reversal pot., conductance, abs. str., mean prob. release, time const. recover depress facilitation,	5150 per node, max 103000	103000.0	In columns 192585 per node, max 3.9 million, intercolumn 1.4 million	NCS, 30 dualPentium III 1GHz processor nodes, with 4 GB of RAM per node	165000			http://brain.unr.edu/publications/gwm.largescalecortex_01.pdf	Detailed Biophysical	Rhesus Monkey
-(Frye, 2004)	Four cell types. Km, Ka, Kahp channels	2.5 million	2500000.0	676 million	BlueGene, 1024 CPUs	3000?			http://brain.unr.edu/publications/NCS_BlugGene_report_07Nov04.pdf	Detailed Biophysical	Human
-(Aberdeen, Baxter et al., 2000)	ANN feedforward network trained with iterative gradient descent	4083	4083.0	1.73 million	Cluster 196 pentium III processors, 550 MHz, 384Mb					Simple Abstract	Zebrafish
-(Kondo, Koshiba et al., 1996)	Hopfield network	1536	1536.0	2.4 million	Special purpose chips				https://ieeexplore.ieee.org/document/509875	Simple Abstract	Rat
-(Ccortex, 2003)	Layered distribution of neural nets, detailed synaptic interconnections, spiking dynamics	20 billion	20000000000.0	20 trillion	500 nodes, 1,000 processors, 1 Tb RAM. Theoretical peak of 4,800 Gflops.					Simple Abstract	Other
-(Harris, Baurick et al., 2002)	Point neurons, spikes, AHP, A & M potassium channels, synaptic adaptation, Spike shape and postsynaptic conductance specified by templates.	35000 cells per node	35000.0	6.1 million synapses per node	Cluster, 128 Xeon 2.2 GHz processors with 256GB, 1Tb disk				https://www.cse.unr.edu/~fredh/papers/conf/052-anphassfalsbrcs/paper.pdf	Intermediate Complexity	Drosophila
-(Mehrtash, Jung et al., 2003)	Integrate and fire, event driven pulse connections with STDP plasticity. 1-8 dendritic segments.	256000	256000.0	1 million	Special purpose chip, connected UltraSparc processor 500 Mhz, 640 Mb	1012.21 timesteps/ ms			https://ieeexplore.ieee.org/document/1243704	Integrate-and-Fire	Drosophila
-(Shaojuan and Hammarstrom, 2002)	Palm binary network	256000	256000.0	32 billion	512 processors, 192 GB, 250 Mhz mips 12K processorr	Execution time 4 min 7 sec, -13% MPI calls for retrieving 180K training vectors, ~O(10) iterations			https://ieeexplore.ieee.org/document/1198953	Simple Abstract	Rat
-(Johansson and Lansner, 2007)	BCPNN spiking, minicolumns hypercolumns	1.6 million	1600000.0	200 billion	256 node, 512 processors, Dell Xeon cluster, 3.4GHz 8 Gb memory, peak performance 13.6 Gflop	9% real-time = 11.1			https://direct.mit.edu/neco/article/19/7/1871/7203/Imposing-Biological-Constraints-onto-an-Abstract	Simple Abstract	Other
-Blue Brain Project (Markram, 2006; Markram et al. 2015)	Morphologically complex compartment models	10000	10000.0	100 million	BlueGene/L, 4096 nodes, 8192 cpus, peak performances 22.4 TFLOPS				"https://www.nature.com/articles/nrn1848
-
-https://www.cell.com/fulltext/S0092-8674(15)01191-5"	Detailed Biophysical	Common Marmoset
-(Traub and Wong, 1982)	unkown	100	100.0						https://www.science.org/doi/10.1126/science.7079735	Unknown	Common Marmoset
-(Traub, Miles et al., 1992)	19 compartment cells, ionic currents	1200	1200.0	70000	IBM3090 computer	325 min/1.5 s bio time = 13000	0.05 ms		https://physoc.onlinelibrary.wiley.com/doi/10.1113/jphysiol.1992.sp019184	Detailed Biophysical	Rat
-(Moll and Miikkulainen, 1997)	Binary units with binary weights	79500	79500.0	782 million	Cray Y-MP 8/864	0.006 s (retrieval of 550000 patterns; assuming human retrieval speed = 1 s)			https://www.sciencedirect.com/science/article/abs/pii/S0893608097000166?via%3Dihub	Simple Abstract	Human
-"(Traub and Wong,
-1982)"	unkown	100	100.0							Unknown	Zebrafish
-"(Traub, Miles et al.,
-1992)"	"19 compartment
-cells, ionic
-currents"	1200	1200.0	70000	"IBM3090
-computer"	"325 min/1.5 s
-bio time =
-13,000"	0.05 ms			Detailed Biophysical	Mouse
-"(Kondo, Koshiba et
-al., 1996)"	"Hopfield
-network"	1,536	1536.0	2.4*106	"Special
-purpose
-chips"					Simple Abstract	Rat
-(Moll and Miikkulainen, 1997)	Binary units with binary weights	79,500	79500.0	7.82*108	Cray Y-MP 8/864	0.006 s (retrieval of 550,000 patterns; assuming human retrieval speed = 1 s)				Simple Abstract	Human
-"(Howell,
-Dyhrfjeld-Johnsen
-et al., 2000)"	"Compartment
-(Purkinje 4,500
-comp./granule 1
-comp.)"	"16 Purkinje,
-244,000
-granule cells"	244000.0		"128-
-processor
-Cray 3TE,
-PGENESIS"	4500		"Computing
-requirements:
-76.8 GFLOPS"		Detailed Biophysical	Mouse
-"(Howell,
-Dyhrfjeld-Johnsen
-et al., 2000)"	unkown	"60,000
-granule cells,
-300 mossy
-fibers, 300
-Golgi cells,
-300 stellate
-cells, 1
-Purkinje cell"	60000.0		"Single
-workstation
-1GB
-memory,
-GENESIS"	79200	20μS			Unknown	Human
-"(Aberdeen, Baxter
-et al., 2000)"	"ANN
-feedforward
-network trained
-with iterative
-gradient descent"	4083	4083.0	1.73*106	"Cluster 196
-pentium III
-processors,
-550 MHz,
-384Mb"					Simple Abstract	Other
-"(Goodman,
-Courtenay Wilson
-et al., 2001)"	"3 layer cortical
-column, 25%
-GABAergic,
-conductance
-models, synapse
-reversal pot.,
-conductance,
-abs. str., mean
-prob. release,
-time const.
-recover depress
-facilitation,"	"5,150 per
-node, max
-20*5,150=103,000"	103000.0	"In columns
-192,585 per
-node, max 20
-=
-3.85*106,
-intercolumn
-1.4*106"	"NCS, 30
-dualPentium III
-1GHz
-processor
-nodes, with 4
-GB of RAM
-per node"	165000				Detailed Biophysical	Other
-"(Harris, Baurick et
-al., 2002"	"Point neurons,
-spikes, AHP, A
-& M potassium
-channels,
-synaptic
-adaptation,
-Spike shape and
-postsynaptic
-conductance
-specified by
-templates."	"35,000 cells
-per node"	35000.0	"6.1*106synapses per
-node"	"Cluster, 128
-Xeon 2.2
-GHz
-processors
-with 256GB,
-1Tb disk"					Intermediate Complexity	Drosophila
-(Terman et al., 2002)	Single-Compartment Hodgkin-Huxley	8-20 neurons per type	20.0	Sparse connections	XPPAUT simulation software	Not explicitly stated	Not explicitly stated	Conductance-based model of STN and GPe		Detailed Biophysical	Zebrafish
-"(Shaojuan and
-Hammarstrom,
-2002)"	"Palm binary
-network"	256000	256000.0	"Order of
-3.2*1010"	"512
-processors,
-192 GB, 250
-Mhz mips
-12K
-processorr"	"Execution
-time 4 min 7
-sec, -13% MPI
-calls for
-retrieving
-180K training
-vectors,
-~O(10)
-iterations"				Simple Abstract	Drosophila
-"(Mehrtash, Jung et
-al., 2003)"	"Integrate and
-fire, event
-driven pulse
-connections with
-STDP plasticity.
-1-8 dendritic
-segments."	256000	256000.0	106	"Special
-purpose
-chip,
-connected
-UltraSparc
-processor 500
-Mhz, 640 Mb"	"1012.21
-timessteps/
-ms"				Integrate-and-Fire	Mouse
-(Ccortex, 2003)	"Layered
-distribution of
-neural nets,
-detailed synaptic
-interconnections,
-spiking
-dynamics"	2*1010	2020.0	2*1013	"500 nodes,
-1,000
-processors, 1
-Tb RAM.
-Theoretical
-peak of 4,800
-Gflops."			"Claimed
-performance,
-not
-documented."		Simple Abstract	Other
-(Prinz et al., 2003)	Hodgkin-Huxley-based conductance model database	1.7 million	1700000.0	Not explicitly stated	C++, Dell Beowulf cluster	Approx. 1 week for classification, 1 month for injection studies	50 µs	Generated a database of single-compartment model neurons by varying 8 maximal conductances independently		Detailed Biophysical	Drosophila
-(Grillner, 2003)	Hodgkin-Huxley based compartmental Models	~100 excitatory and inhibitory neurons	100.0	~500 synapses	Custom software on parallel computational platforms	Not explicitly stated	Not explicitly stated	Biophysically realistic model of lamprey CPGs		Detailed Biophysical	Zebrafish
-(Frye, 2004)	"Four cell types.
-Km, Ka, Kahp
-channels"	"1,000/cells
-column,
-2,501
-columns =
-2.5*106"	265.0	"250K per
-column, total
-6.763*108"	"BlueGene,
-1024 CPUs"	3000?		"2.338*1010spikes per
-processor.
-Memory
-requirement
-110 Mb per
-processor"		Detailed Biophysical	Drosophila
-"(Traub, Contreras
-et al., 2005)"	"14 cell types,
-conductance and
-compartment
-model, 11 active
-conductance"	3560	3560.0	"3,500 gap
-junctions,
-1,122,520
-synapses"	"14 cpu Linux
-cluster, an
-IBM e1350,
-dualprocessor
-Intel P4Xeon"		2 μS			Detailed Biophysical	Drosophila
-"(Brette, Rudolph et
-al., 2007; Traub,
-Contreras et al.,
-2005)"	"14 cell types,
-conductance and
-compartment
-model"	3560	3560.0	"3,500 gap
-junctions,
-1,122,520
-synapses"	"Cray XT3 2.4
-Ghz, 800
-CPUs"	200?	Event-driven	"5954-8516
-equations/CPU
-Gives #
-compartments"		Detailed Biophysical	Other
-(Izhikevich, 2005	"Izhikevich
-neurons,
-Random
-synaptic
-connectivity
-generated on the
-fly"	1011	1011.0	1015	"Beowulf
-cluster, 27
-3GHz
-processors"	4.2*106				Intermediate Complexity	Human
-(Markram, 2006	"Morphologically
-complex
-compartment
-models"	104	104.0	108	"BlueGene/L,
-4096 nodes,
-8192 cpus,
-peak
-performances
-22.4 TFLOPS"			"Not
-documented?"		Detailed Biophysical	C. elegans
-"(Djurfeldt,
-Lundqvist et al.,
-2006)"	"6-compartment
-neurons"	2.2*107	235.0	1.1*1010	"IBM Warson
-Research
-Blue Gene,
-SPLIT"	5942		"Computing
-requirements:
-11.5 TFLOPS.
-Spatial delays
-corresponding
-16 cm2 cortex
-surface."		Detailed Biophysical	Mouse
-"(Plesser, Eppler et
-al., 2007)"	Integrate-and fire	12500	12500.0	1.56*107	"Sun X4100
-cluster,
-2.4Ghz AMD
-Opteron,
-8GB ram,
-MPI, NEST"	2	0.1 ms	"Supralinear
-scaling until 80
-virtual
-processes for
-105 neuron/
-109
-synapses."		Integrate-and-Fire	Rhesus Monkey
-"(Kozlov, Lansner
-et al., 2007)"	"5 compartment
-model"	900	900.0	"10% per
-hemisegment"	SPLIT		100μS			Detailed Biophysical	Human
-"(Frye,
-Ananthanarayanan
-et al., 2007)"	"Low complexity
-spiking like
-Izhikevich
-neurons, STDP
-synapses"	8*106	848.0	"6300*
-8*106=
-5.04*1010"	"4096
-processor
-BlueGene/L
-256 Mb per
-CPU"	10	1 ms			Intermediate Complexity	Rat
-(Molyneaux et al., 2007)	Subtype-specific projection neuron modeling	~100 per cortical layer	100.0	Not stated	Not stated	Not stated	Not stated			Specialized/Hybrid	Rat
-"(Johansson and
-Lansner, 2007)"	"BCPNN spiking,
-minicolumns
-hypercolumns"	1.6*106	170.0	2*1011	"256 node, 512
-processors,
-Dell Xeon
-cluster, 3.4GHz 8 Gb
-memory,
-peak
-performance
-13.6 Gflop"	"9% real-time
-= 11.1"		"Weight
-updates 47 ms,
-update
-activities 59 ms, 120 kW usage.
-Computational
-demand
-256*13.6 Gflops"		Simple Abstract	Rhesus Monkey
-(Dumoulin & Wandell, 2008)	Gaussian Population Receptive Fields	Voxels (~100,000)	100000.0	Not stated	T GE Signa MRI scanner with custom surface coil; MATLAB-based PsychToolbox for stimuli	Not stated	Not stated	Population Receptive Field (pRF) modeling in human visual cortex		Simple Abstract	Rhesus Monkey
-(Lytton, 2008)	Hodgkin-Huxley and  Wilson-Cowan models	100-1,000 neurons per region	1000.0	~1,000 synapses per neuron	NEURON simulation	Not specified	Not specified			Detailed Biophysical	Drosophila
-(Gertler et al., 2008)	Biophysical modeling of D1 and D2 medium spiny neurons	Single-neuron models	1.0	~500 per neuron	NEURON simulation	Not specified	Not specified			Detailed Biophysical	Zebrafish
-(Izhikevich & Edelman, 2008)	Large-scale model of mammalian thalamocortical systems	~1 million multicompartments	1000000.0	~0.5 billion	Beowulf cluster (60 × 3 GHz CPUs, 1.5 GB RAM each), C/MPI for implementation	~1 min for 1 simulated second	Sub-millisecond	Modeled cortical and thalamic dynamics, integrating spiking neuron models, synaptic plasticity, and functional connectivity.		Specialized/Hybrid	Zebrafish
-(Chelaru & Dragoi, 2008)	Integrate-and-fire network modeling	1,008 excitatory, 252 inhibitory neurons	1260.0	~1,260 synapses per neuron	Not explicitly stated	Not explicitly stated	0.1–1 ms			Integrate-and-Fire	Human
-(Ghosh-Dastidar & Adeli, 2009)	Multi-Spiking Neural Network	~37	37.0	4 synapses/neuron	MATLAB and XPPAUT	Simulation times are problem-dependent (e.g., 25–35 ms per run)	1 ms			Simple Abstract	C. elegans
-(Taylor et al., 2009)	Hodgkin-Huxley-based multicompartment LP neuron model	~600,000	600000.0	3 synaptic currents	NEURON simulator, MATLAB	Not explicitly stated	25 µs			Detailed Biophysical	Drosophila
-(Burak & Fiete, 2009)	Rate-Based Neurons	~16,384 neurons (128² network)	16384.0	Sparse connectivity	Custom simulations implemented in MATLAB	Simulations performed for up to 20 minutes of biological time	0.5 ms	Continuous attractor models of grid cell path integration		Simple Abstract	Rat
-(Jin et al., n.d.)	Population coding and perceptron modeling of time in cortico-basal ganglia circuits	5,699 neurons (DLPFC: 2,496; CN: 3,203)	5699.0	Not stated	MATLAB	Not stated	10 ms			Simple Abstract	Rat
-(Breakspear et al., 2010)	Kuramoto model of coupled oscillators with spatial embedding	1,024 oscillators	1024.0	Not stated	Not stated	Not stated	Not stated	Explores cortical oscillations using simplified Kuramoto models		Intermediate Complexity	Common Marmoset
-(Silver, 2010)	Biophysically detailed model of synaptic integration:  Leaky Integrate-and-Fire as well as  Hodgkin-Huxley-Based	Single neuron models (~10 neurons for different scenarios)	10.0	~10-100	NEURON software; standard multi-core workstation (unspecified)	Not stated	10-100 µs	Focused on input-output transformation		Detailed Biophysical	Rhesus Monkey
-(Long et al., 2010)	Synaptic chain model of sequential neuronal bursts in songbird HVC	70 groups of 30 neurons (~2,100 neurons total)	2100.0	~300 interneurons for inhibition	MATLAB simulations	Not explicitly stated	0.1 ms			Specialized/Hybrid	C. elegans
-(Simen et al., 2011)	Non-homogeneous Poisson Neurons	Not specified		Not specified	MATLAB for drift-diffusion and Poisson process simulation	Not specified	Microseconds	Focused on interval timing using stochastic neural integration with predictions about behavior and timing skewness.		Simple Abstract	Human
-(Marder & Taylor, 2011)	Hodgkin-Huxley	~20M	20000000.0	Not specified	Computational clusters for large-scale modeling	Variable	Variable	Population-based conductance models for neuronal variability		Detailed Biophysical	Drosophila
-(Einevoll et al., 2013)	Biophysical modeling of local field potentials (LFPs)	Multicompartment neurons (e.g., pyramidal neurons)		Dense synaptic connections	Multicompartmental modeling using NEURON; LFPy software for forward modeling	Not explicitly stated	Not explicitly stated			Detailed Biophysical	Rhesus Monkey
-(Bekolay et al., 2014)	Leaky Integrate-and-Fire	2.5M	2500000.0	Sparse connectivity based on NEF principles	Nengo 2.0 (Python); GPU acceleration with OpenCL; commodity GPUs (Radeon 7970) and CPUs	real-time or faster for Spaun on GPU	1 ms	Large-scale functional brain modeling with the NEF and Nengo		Integrate-and-Fire	Common Marmoset
-(Kasabov, 2014)	Leaky Integrate-and-Fire	1,471 to 2.4M neurons (scalable)	2400000.0	Not stated	MATLAB-based NeuCube framework; GPU acceleration for large networks	Not stated	Not stated	NeuCube spiking neural network model for spatio-temporal brain data		Integrate-and-Fire	C. elegans
-(Benjamin et al., 2014)	dimensionless form of common biological neuronal models	Up to 1M	1000000.0	Billions of synapses	16 Neurocores on a 3W board; GUI for visualization; USB communication	Real-time simulation for 1M neurons	~1 ms	Mixed analog-digital simulation of large-scale networks		Specialized/Hybrid	Rat
-(Rybak et al., 2015)	Hodgkin-Huxley-based multicompartmental model for spinal circuits	200 per population (flexor/extensor RG centers); ~50 in others	200.0	Sparse local connections; inhibitory and excitatory CINs	Hodgkin-Huxley neuron model implemented on computational clusters	Not stated	0.1 ms			Detailed Biophysical	Rhesus Monkey
-(Markram et al., 2015)	Hodgkin-Huxley-based	~31,000 neurons (6 layers of juvenile rat somatosensory cortex)	31000.0	~37 million	Blue Brain Project's HPC cluster; NEURON simulator	Variable, dependent on network state	0.025 ms	Validated against in vitro and in vivo experiments. Digital reconstruction and simulation of neocortical microcircuitry		Detailed Biophysical	Common Marmoset
-(Yavuz et al., 2016)	Hodgkin-Huxley neurons	Up to 1M	1000000.0	Sparse and dense configurations supported	NVIDIA GPUs (e.g., Tesla C2070, K40) with CUDA support	Real-time for smaller networks; up to 85× slower for 16M neurons	Variable; common use at 0.04 ms			Detailed Biophysical	Other
-(Hayati et al., 2016)	FitzHugh-Nagumo coupled with astrocyte dynamics	Single neurons and astrocyte coupled model	1.0	Dynamic feedback synapses	FPGA-based implementation on Xilinx Virtex-II Pro; MATLAB for initial modeling	Not stated	~10 ms per step	Digital simulation of neuron-astrocyte interactions		Specialized/Hybrid	Drosophila
-(Falotico et al., 2017)	Leaky Integrate-and-Fire	Variable (use-case dependent)		Variable (use-case dependent)	NEST simulator, Gazebo for physics, Python APIs, and ROS middleware	Dependent on model complexity	Not stated	Developed the Neurorobotics Platform (NRP) for closed-loop experiments.		Integrate-and-Fire	Common Marmoset
-(Schwalger et al., 2017)	Generalized Integrate-and-Fire (GIF)	50–2000 per population	2000.0	Sparse, connectivity patterns modeled for 8 populations	Simulations on MATLAB	Mesoscopic integration: ~6.6 s; Microscopic: ~13.5 min (for 10 s biological time)	~0.5 ms			Integrate-and-Fire	Common Marmoset
-(Schmidt et al., 2018)	Leaky Integrate-and-Fire	~2 million per hemisphere (density varies by region)	4000000.0	~9800 synapses per neuron on average	Custom computational framework based on CoCoMac database, MATLAB, and Python	Variable	1 ms			Integrate-and-Fire	Common Marmoset
-(Davies et al., 2018.)	Leaky Integrate-and-Fire	Up to 128,000 neurons per chip	128000.0	Millions (dense synaptic matrices)	Intel’s 14-nm Loihi processor with 128 cores and asynchronous architecture	Real-time for most applications; 3.5 ns per synaptic operation	1 ms or less			Integrate-and-Fire	Rat
-(Verhulst et al., 2018)	A biophysical model of inner hair cell (IHC) transduction	Population-level (ABR, EFR)		N/A (cochlear stage simulated)	MATLAB for computational implementation	Not explicitly stated	~1 ms			Detailed Biophysical	Mouse
-(Zerlaut et al., 2018)	Mean-field model of neocortical dynamics using AdEx integrate-and-fire neurons	10,000 neurons (8,000 excitatory, 2,000 inhibitory)	10000.0	Randomly connected (5% probability)	Simulated using Brian2 in Python;	Not explicitly stated	0.1 ms			Integrate-and-Fire	C. elegans
-(Pei et al., 2019)	Hybrid ANN-SNN simulation with the Tianjic chip architecture	~40,000	40000.0	~10 million	Tianjic chip (28nm), Python, Custom Compiler	Not explicitly stated	1 ms			Specialized/Hybrid	Zebrafish
-(Kim et al., 2019)	Graded potential neuron model	302	302.0	279 gap, 639 chemical synapses	Python, Neural Interactome framework, Flask-SocketIO	10 ms simulation, 100 ms visualization	Not explicitly stated	Simulates C. elegans neuronal dynamics with real-time user interaction and dynamic neural ablation.		Simple Abstract	Rat
-(Poirazi & Papoutsi, 2020)	Hodgkin-Huxley based	Multicompartmental neuron models		Variable	NEURON, LFPy, and custom Python-based implementations	Not stated	Not stated			Detailed Biophysical	Mouse
-(Dai et al., 2020)	Multiscale modeling (BioNet, PointNet)	Up to 230,000	230000.0	~15 million	BMTK with NEURON and NEST; cluster/supercomputing	~1 hour for 1 second (BioNet, 384 cores); 3 minutes for 1 second (PointNet, single core)	Variable			Specialized/Hybrid	Mouse
-(Yamazaki et al., 2021)	Leaky Integrate-and-Fire	68 billion	68000000000.0	5.4 trillion	K computer (82,944 CPUs), MONET simulator	1 min simulated in 10 hours	Not specified	Resting state activity, benchmark for supercomputer capability, models human-scale cerebellum		Integrate-and-Fire	Rhesus Monkey
-(Gordleeva et al., 2021)	Spiking Neuron Network with Astrocytes (Izhikevich model)	6,241	6241.0	Random synapses (40 per neuron)	Custom software, Izhikevich neuron models; Runge-Kutta integration	Not specified	0.1 ms			Intermediate Complexity	Mouse
-(Ratliff et al., 2021)	Mathematical model of a three-neuron pacemaker circuit	3	3.0	Multiple	Julia DifferentialEquations.jl, MATLAB	Not explicitly stated	Variable	Explored robustness of a neuronal oscillator in the crab STG		Simple Abstract	Rat
-(Kumarasinghe et al., 2021)	Leaky Integrate-and-Fire	Simulated on spiking neuron populations		Not specified	MATLAB and NeuCube framework, run on a standard 2.6 GHz CPU with 16 GB RAM	~3.5 ms for single prediction; real-time feasible for 100 Hz EEG data	10 ms	Brain-inspired spiking neural network (BI-SNN) model for decoding and prediction of muscle activity and kinematics from EEG		Integrate-and-Fire	Human
-(Timofeev et al., n.d.)	Hodgkin-Huxley-based multi-channel neuron model	Not stated		Not stated	Python, SciPy (BDF and LSODA solvers)	24-48 hours runtime for MCMC sampling per setup	Not stated			Detailed Biophysical	Rhesus Monkey
-(Yang et al., 2022)	Multiple models: Leaky Integrate-and-Fire,  Izhikevich Model and  Hodgkin-Huxley	4 million	40000000.0	Dense and multigranular connectivity	BiCoSS platform with 35 Intel Cyclone IV FPGA chips, BFT-based topology	Real-time (high computational efficiency)	1 ms			Specialized/Hybrid	C. elegans
-(Shiu et al., 2023)	Leaky Integrate-and-Fire	125,000	125000.0	50 million	Brian2 simulator, Python	Not explicitly stated	Not specified	Models the entire adult Drosophila brain		Integrate-and-Fire	Rhesus Monkey
-Click or tap here to enter text.	Multi-compartmental model (NEURON)	302	302.0	6702	Python, NEURON	Not explicitly stated	0.5 ms			Detailed Biophysical	Zebrafish
-(Rosen et al., 2023)	Universal cell embedding model	36 million	36000000.0	Not explicitly stated	PyTorch, ESM2, 24 NVIDIA A100 GPUs	Not explicitly stated	Variable	Developed Universal Cell Embedding (UCE) for mapping cellular gene expression into a shared embedding space across species.		Simple Abstract	Mouse
-(Lappalainen et al., 2024)	Connectome-constrained task-optimized DMNs	45,669	45669.0	1,513,231	PyTorch	Not explicitly stated	Not specified	Modeled fruit fly visual motion pathways		Simple Abstract	C. elegans
-(Simeon et al., 2024)	ANN-based neural activity prediction in C	302	302.0	Not explicitly stated	Python, NVIDIA A100 GPUs	Not explicitly stated	0.667s	Investigates the scaling properties of ANN models for predicting neural activity dynamics		Simple Abstract	Mouse
-(Gambosi et al., 2024)	Multiscale spiking neural network model of BG and cerebellum	96,767	96767.0	4,151,182	NEST Simulator	Variable based on resolution (1–10 ms)	Not explicitly stated	Explores dopamine depletion in BG and cerebellum to simulate Parkinsonian beta oscillations and motor learning deficits.		Specialized/Hybrid	Rhesus Monkey
+Simulation/Initiative	Type of Simulation	Neurons	# of Neurons	Synapses	Hardware and Software	Slowdown time (required for one biological second)	Timestep	Notes	Link	Category	Organism (random)	ref_id	supporting_refs	ref_note	confidence	validated_by
+Enigma Project	Multi-modal neural networks								https://enigmaproject.ai/	Specialized/Hybrid	Human				none	none
+(Schepper et al., 2022)	Integrate-and-fire point neurons, cerebellar network scaffold; single compartment no short-term plasticity	29230 neurons	29230.0	1.5 million chemical synapses, 2100 electrical synapses	NEURON simulation environment				https://www.nature.com/articles/s42003-022-04213-y	Integrate-and-Fire	Other				none	none
+(Shiu et al., 2024)	Leaky integrate-and-fire	125,000	125000.0	50 million	Spiking Neural Network Simulator Brian2				https://www.nature.com/articles/s41586-024-07763-9	Integrate-and-Fire	Human				none	none
+(Simeon et al. 2024)	Varying neural network architecture for processing of calcium fluorescence data	300	300.0		Pytorch Deep Learning Framework				https://www.biorxiv.org/content/biorxiv/early/2024/03/06/2024.02.13.580186.full.pdf	Simple Abstract	C. elegans				none	none
+(Romani et al., 2024)	Electrical features (e-features) which were used in combination with curated morphologies to produce and validate 36 single-cell e-models	456380	456380.0	821 million	Electrophysiological Feature Extraction Library or the Blue Brain Python E-feature extraction, Blue Brain python optimization library				https://www.biorxiv.org/content/10.1101/2023.05.17.541167v2.full	Detailed Biophysical	Mouse				none	none
+(Rhodes et al., 2019)	Single-compartment leaky integrate-and-fire unit, with current-based exponentially decaying synapses	77000	77000.0	300 million	"Heterogenous parallelization scheme and SpiNNaker neuormorphic hardware				none	none
+PyNN modeling language"	1x	10 seconds, 12 hours		https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0160	Integrate-and-Fire	Mouse				none	none
+Human Brain Project (Markram et al. 2011)	unkown								https://www.sciencedirect.com/science/article/pii/S1877050911006806	Unknown	C. elegans				none	none
+(Merolla et al. 2014)	Self-contained neural network with 256-by-256 directed, programmable synaptic connections	1 million	1000000.0	256 million	Self contained neuromorphic hardware	1x			https://www.science.org/doi/10.1126/science.1254642	Simple Abstract	Rhesus Monkey				none	none
+(Sharp et al., 2014)	Leaky integrate-and-fire model	50000 neurons	50000.0	50 million synapses	PyNN modeling language, 200 processors on 13 chips				https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2014.00131/epub?isPublishedV2=false	Integrate-and-Fire	Rhesus Monkey				none	none
+Izhikevich, E. M., and Edelman, G. M. (2008).	Multicompartment model with each dendritic compartment simulated by Izhikevich model	1 million	1000000.0	500 million	C programming language with MPI and it is run on a Beowulf cluster of 60 3GHz processors with 1.5 GB of RAM each	60x			https://www.pnas.org/doi/full/10.1073/pnas.0712231105	Intermediate Complexity	Zebrafish				none	none
+(Djurfeldt et al,, 2008)	Hodgkin-Hucley model	22 million	22000000.0	11 billion	Blue Gene/L supercomputer up to 8192 processors	1205x	1 second		https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5388638	Detailed Biophysical	Drosophila				none	none
+(Yu, Cauwenberghs, 2010 )	Hodgkin-Huxley neural dynamics in 3 channel variables, each with 16 variables, and 12 synaptic variables	4	4.0	12	Programmable analog VLSI chip (NeuroDyn), 0.5 CMOS chip	Variable speed output exceeding real time			https://ieeexplore.ieee.org/document/5471736	Detailed Biophysical	Other				none	none
+(Vogelstein et al., 2007; Park et al., 2011)	"Integrate and-fire neuron with conductance-like synapses				none	none
+Analog integrate-and-fire array transceivers"	"4800				none	none
+262000"	262000.0	"4.2 million				none	none
+262 million"	"VLSI system 80 × 60 pixel neuromorphic retina				none	none
+Five Xilinx Spartan-6 field-programmable gate arrays and four custom analog neuromophic integrated circuits and HiAER protocol"				"https://direct.mit.edu/neco/article-abstract/19/9/2281/7259/A-Multichip-Neuromorphic-System-for-Spike-Based?redirectedFrom=fulltext				none	none
+https://ieeexplore.ieee.org/document/7526444"	Integrate-and-Fire	Rhesus Monkey				none	none
+(Schemmel et al., 2010)	Exponential integrate-and-fire neuron models	180000	180000.0	40 million	Very large analog neuromorphic hardware system developed within FACETS, neural system description language PyNN	1000-100000 times faster than biological time			https://ieeexplore.ieee.org/document/5536970	Integrate-and-Fire	Common Marmoset				none	none
+(Modha et al.; Merolla et al., 2011)	Integrate-and-fire neuron models	256	256.0	256000 binary synapses	256 digital integrate-and-fire neurons and a 1024×256 bit SRAM crossbar memory for synapses using IBM's 45nm SOI process				"https://dl.acm.org/doi/abs/10.1145/1978542.1978559				none	none
+https://ieeexplore.ieee.org/document/6055294"	Integrate-and-Fire	Drosophila				none	none
+(Furber et al., 2008)	unkown								https://link.springer.com/chapter/10.1007/978-3-540-78293-3_18	Unknown	Rhesus Monkey				none	none
+(Potjans et al., 2014)	Leaky integrate-and-fire	80000	80000.0	300 million	NEST simulation tool and a compute cluster with 24 nodes each equipped with 2 quad core AMD Opteron 2834 processors and interconnected by a 24-port Voltaire InfiniBand switch ISR9024D-M	"~1x				none	none
+(close to real time)"			https://academic.oup.com/cercor/article/24/3/785/398560	Integrate-and-Fire	Other				none	none
+(Plesser, Eppler et al., 2007)	Integrate-and-fire	12500	12500.0	15.6 million	Sun X4100 cluster, 2.4Ghz AMD Opteron, 8GB ram, MPI, NEST	2	0.1		https://link.springer.com/chapter/10.1007/978-3-540-74466-5_71	Integrate-and-Fire	Rat				none	none
+(Djurfeldt, Lundqvist et al., 2006)	6-compartment neurons	22 million	22000000.0	11 billion						Detailed Biophysical	Human				none	none
+(Izhikevich, 2005)	Izhikevich neurons, Random synaptic connectivity generated on the fly.	100 billion	100000000000.0	1 quadrillion	27-processor Beowulf cluster machine	50 days	1		https://www.izhikevich.org/human_brain_simulation/Blue_Brain.htm	Intermediate Complexity	Drosophila				none	none
+(Howell, Dyhrfjeld-Johnsen et al., 2000)	Compartment (Purkinje 4,500 comp./granule 1 comp.)	16 Purkinje, 244,000 granule cells	244000.0		128- processor Cray 3TE, PGENESIS	4500			https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Detailed Biophysical	Drosophila				none	none
+(Howell, Dyhrfjeld-Johnsen et al., 2000)	unkown	60,000 granule cells, 300 mossy fibers, 300 Golgi cells, 300 stellate cells, 1 Purkinje cell	60000.0		Single workstation 1GB memory, GENESIS	79200	20 µs		https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Unknown	Human				none	none
+(Kozlov, Lansner et al., 2007)	5 compartment model	900	900.0	10% per hemisegment	SPLIT		100 µs		https://link.springer.com/article/10.1007/s00422-006-0132-2	Detailed Biophysical	C. elegans				none	none
+(Frye, Ananthanarayanan et al., 2007)	Low complexity spiking like Izhikevich neurons, STDP synapses	8 million	8000000.0	50.4 billion	4096 processor BlueGene/L 256 Mb per CPU	10	1 ms		https://modha.org/2007/02/towards-real-time-mouse-scale-cortical-simulations/	Intermediate Complexity	C. elegans				none	none
+(Brette, Rudolph et al., 2007)	14 cell types, conductance and compartment model	3560	3560.0	3500 gap junctions, 1.1 million synapses	Cray XT3 2.4 Ghz, 800 CPUs	200?	Event driven		https://link.springer.com/article/10.1007/s10827-007-0038-6	Detailed Biophysical	Zebrafish				none	none
+(Traub, Contreras et al., 2005)	14 cell types, conductance and compartment model, 11 active conductances	3560	3560.0	3500 gap junctions, 1.1 million synapses	14 cpu Linux cluster, an IBM e1350, dualprocessor Intel P4Xeon 2 µs 102 2.4-GHz, 512 Kbytes of L2 cache; or, e1350 Blade 1, at 2.8 GHz		2 µs		https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Detailed Biophysical	Human				none	none
+(Goodman, Courtenay Wilson et al., 2001)	3 layer cortical column, 25% GABAergic, conductance models, synapse reversal pot., conductance, abs. str., mean prob. release, time const. recover depress facilitation,	5150 per node, max 103000	103000.0	In columns 192585 per node, max 3.9 million, intercolumn 1.4 million	NCS, 30 dualPentium III 1GHz processor nodes, with 4 GB of RAM per node	165000			http://brain.unr.edu/publications/gwm.largescalecortex_01.pdf	Detailed Biophysical	Rhesus Monkey				none	none
+(Frye, 2004)	Four cell types. Km, Ka, Kahp channels	2.5 million	2500000.0	676 million	BlueGene, 1024 CPUs	3000?			http://brain.unr.edu/publications/NCS_BlugGene_report_07Nov04.pdf	Detailed Biophysical	Human				none	none
+(Aberdeen, Baxter et al., 2000)	ANN feedforward network trained with iterative gradient descent	4083	4083.0	1.73 million	Cluster 196 pentium III processors, 550 MHz, 384Mb					Simple Abstract	Zebrafish				none	none
+(Kondo, Koshiba et al., 1996)	Hopfield network	1536	1536.0	2.4 million	Special purpose chips				https://ieeexplore.ieee.org/document/509875	Simple Abstract	Rat				none	none
+(Ccortex, 2003)	Layered distribution of neural nets, detailed synaptic interconnections, spiking dynamics	20 billion	20000000000.0	20 trillion	500 nodes, 1,000 processors, 1 Tb RAM. Theoretical peak of 4,800 Gflops.					Simple Abstract	Other				none	none
+(Harris, Baurick et al., 2002)	Point neurons, spikes, AHP, A & M potassium channels, synaptic adaptation, Spike shape and postsynaptic conductance specified by templates.	35000 cells per node	35000.0	6.1 million synapses per node	Cluster, 128 Xeon 2.2 GHz processors with 256GB, 1Tb disk				https://www.cse.unr.edu/~fredh/papers/conf/052-anphassfalsbrcs/paper.pdf	Intermediate Complexity	Drosophila				none	none
+(Mehrtash, Jung et al., 2003)	Integrate and fire, event driven pulse connections with STDP plasticity. 1-8 dendritic segments.	256000	256000.0	1 million	Special purpose chip, connected UltraSparc processor 500 Mhz, 640 Mb	1012.21 timesteps/ ms			https://ieeexplore.ieee.org/document/1243704	Integrate-and-Fire	Drosophila				none	none
+(Shaojuan and Hammarstrom, 2002)	Palm binary network	256000	256000.0	32 billion	512 processors, 192 GB, 250 Mhz mips 12K processorr	Execution time 4 min 7 sec, -13% MPI calls for retrieving 180K training vectors, ~O(10) iterations			https://ieeexplore.ieee.org/document/1198953	Simple Abstract	Rat				none	none
+(Johansson and Lansner, 2007)	BCPNN spiking, minicolumns hypercolumns	1.6 million	1600000.0	200 billion	256 node, 512 processors, Dell Xeon cluster, 3.4GHz 8 Gb memory, peak performance 13.6 Gflop	9% real-time = 11.1			https://direct.mit.edu/neco/article/19/7/1871/7203/Imposing-Biological-Constraints-onto-an-Abstract	Simple Abstract	Other				none	none
+Blue Brain Project (Markram, 2006; Markram et al. 2015)	Morphologically complex compartment models	10000	10000.0	100 million	BlueGene/L, 4096 nodes, 8192 cpus, peak performances 22.4 TFLOPS				"https://www.nature.com/articles/nrn1848				none	none
+https://www.cell.com/fulltext/S0092-8674(15)01191-5"	Detailed Biophysical	Common Marmoset				none	none
+(Traub and Wong, 1982)	unkown	100	100.0						https://www.science.org/doi/10.1126/science.7079735	Unknown	Common Marmoset				none	none
+(Traub, Miles et al., 1992)	19 compartment cells, ionic currents	1200	1200.0	70000	IBM3090 computer	325 min/1.5 s bio time = 13000	0.05 ms		https://physoc.onlinelibrary.wiley.com/doi/10.1113/jphysiol.1992.sp019184	Detailed Biophysical	Rat				none	none
+(Moll and Miikkulainen, 1997)	Binary units with binary weights	79500	79500.0	782 million	Cray Y-MP 8/864	0.006 s (retrieval of 550000 patterns; assuming human retrieval speed = 1 s)			https://www.sciencedirect.com/science/article/abs/pii/S0893608097000166?via%3Dihub	Simple Abstract	Human				none	none
+"(Traub and Wong,				none	none
+1982)"	unkown	100	100.0							Unknown	Zebrafish				none	none
+"(Traub, Miles et al.,				none	none
+1992)"	"19 compartment				none	none
+cells, ionic				none	none
+currents"	1200	1200.0	70000	"IBM3090				none	none
+computer"	"325 min/1.5 s				none	none
+bio time =				none	none
+13,000"	0.05 ms			Detailed Biophysical	Mouse				none	none
+"(Kondo, Koshiba et				none	none
+al., 1996)"	"Hopfield				none	none
+network"	1,536	1536.0	2.4*106	"Special				none	none
+purpose				none	none
+chips"					Simple Abstract	Rat				none	none
+(Moll and Miikkulainen, 1997)	Binary units with binary weights	79,500	79500.0	7.82*108	Cray Y-MP 8/864	0.006 s (retrieval of 550,000 patterns; assuming human retrieval speed = 1 s)				Simple Abstract	Human				none	none
+"(Howell,				none	none
+Dyhrfjeld-Johnsen				none	none
+et al., 2000)"	"Compartment				none	none
+(Purkinje 4,500				none	none
+comp./granule 1				none	none
+comp.)"	"16 Purkinje,				none	none
+244,000				none	none
+granule cells"	244000.0		"128-				none	none
+processor				none	none
+Cray 3TE,				none	none
+PGENESIS"	4500		"Computing				none	none
+requirements:				none	none
+76.8 GFLOPS"		Detailed Biophysical	Mouse				none	none
+"(Howell,				none	none
+Dyhrfjeld-Johnsen				none	none
+et al., 2000)"	unkown	"60,000				none	none
+granule cells,				none	none
+300 mossy				none	none
+fibers, 300				none	none
+Golgi cells,				none	none
+300 stellate				none	none
+cells, 1				none	none
+Purkinje cell"	60000.0		"Single				none	none
+workstation				none	none
+1GB				none	none
+memory,				none	none
+GENESIS"	79200	20μS			Unknown	Human				none	none
+"(Aberdeen, Baxter				none	none
+et al., 2000)"	"ANN				none	none
+feedforward				none	none
+network trained				none	none
+with iterative				none	none
+gradient descent"	4083	4083.0	1.73*106	"Cluster 196				none	none
+pentium III				none	none
+processors,				none	none
+550 MHz,				none	none
+384Mb"					Simple Abstract	Other				none	none
+"(Goodman,				none	none
+Courtenay Wilson				none	none
+et al., 2001)"	"3 layer cortical				none	none
+column, 25%				none	none
+GABAergic,				none	none
+conductance				none	none
+models, synapse				none	none
+reversal pot.,				none	none
+conductance,				none	none
+abs. str., mean				none	none
+prob. release,				none	none
+time const.				none	none
+recover depress				none	none
+facilitation,"	"5,150 per				none	none
+node, max				none	none
+20*5,150=103,000"	103000.0	"In columns				none	none
+192,585 per				none	none
+node, max 20				none	none
+=				none	none
+3.85*106,				none	none
+intercolumn				none	none
+1.4*106"	"NCS, 30				none	none
+dualPentium III				none	none
+1GHz				none	none
+processor				none	none
+nodes, with 4				none	none
+GB of RAM				none	none
+per node"	165000				Detailed Biophysical	Other				none	none
+"(Harris, Baurick et				none	none
+al., 2002"	"Point neurons,				none	none
+spikes, AHP, A				none	none
+& M potassium				none	none
+channels,				none	none
+synaptic				none	none
+adaptation,				none	none
+Spike shape and				none	none
+postsynaptic				none	none
+conductance				none	none
+specified by				none	none
+templates."	"35,000 cells				none	none
+per node"	35000.0	"6.1*106synapses per				none	none
+node"	"Cluster, 128				none	none
+Xeon 2.2				none	none
+GHz				none	none
+processors				none	none
+with 256GB,				none	none
+1Tb disk"					Intermediate Complexity	Drosophila				none	none
+(Terman et al., 2002)	Single-Compartment Hodgkin-Huxley	8-20 neurons per type	20.0	Sparse connections	XPPAUT simulation software	Not explicitly stated	Not explicitly stated	Conductance-based model of STN and GPe		Detailed Biophysical	Zebrafish				none	none
+"(Shaojuan and				none	none
+Hammarstrom,				none	none
+2002)"	"Palm binary				none	none
+network"	256000	256000.0	"Order of				none	none
+3.2*1010"	"512				none	none
+processors,				none	none
+192 GB, 250				none	none
+Mhz mips				none	none
+12K				none	none
+processorr"	"Execution				none	none
+time 4 min 7				none	none
+sec, -13% MPI				none	none
+calls for				none	none
+retrieving				none	none
+180K training				none	none
+vectors,				none	none
+~O(10)				none	none
+iterations"				Simple Abstract	Drosophila				none	none
+"(Mehrtash, Jung et				none	none
+al., 2003)"	"Integrate and				none	none
+fire, event				none	none
+driven pulse				none	none
+connections with				none	none
+STDP plasticity.				none	none
+1-8 dendritic				none	none
+segments."	256000	256000.0	106	"Special				none	none
+purpose				none	none
+chip,				none	none
+connected				none	none
+UltraSparc				none	none
+processor 500				none	none
+Mhz, 640 Mb"	"1012.21				none	none
+timessteps/				none	none
+ms"				Integrate-and-Fire	Mouse				none	none
+(Ccortex, 2003)	"Layered				none	none
+distribution of				none	none
+neural nets,				none	none
+detailed synaptic				none	none
+interconnections,				none	none
+spiking				none	none
+dynamics"	2*1010	2020.0	2*1013	"500 nodes,				none	none
+1,000				none	none
+processors, 1				none	none
+Tb RAM.				none	none
+Theoretical				none	none
+peak of 4,800				none	none
+Gflops."			"Claimed				none	none
+performance,				none	none
+not				none	none
+documented."		Simple Abstract	Other				none	none
+(Prinz et al., 2003)	Hodgkin-Huxley-based conductance model database	1.7 million	1700000.0	Not explicitly stated	C++, Dell Beowulf cluster	Approx. 1 week for classification, 1 month for injection studies	50 µs	Generated a database of single-compartment model neurons by varying 8 maximal conductances independently		Detailed Biophysical	Drosophila				none	none
+(Grillner, 2003)	Hodgkin-Huxley based compartmental Models	~100 excitatory and inhibitory neurons	100.0	~500 synapses	Custom software on parallel computational platforms	Not explicitly stated	Not explicitly stated	Biophysically realistic model of lamprey CPGs		Detailed Biophysical	Zebrafish				none	none
+(Frye, 2004)	"Four cell types.				none	none
+Km, Ka, Kahp				none	none
+channels"	"1,000/cells				none	none
+column,				none	none
+2,501				none	none
+columns =				none	none
+2.5*106"	265.0	"250K per				none	none
+column, total				none	none
+6.763*108"	"BlueGene,				none	none
+1024 CPUs"	3000?		"2.338*1010spikes per				none	none
+processor.				none	none
+Memory				none	none
+requirement				none	none
+110 Mb per				none	none
+processor"		Detailed Biophysical	Drosophila				none	none
+"(Traub, Contreras				none	none
+et al., 2005)"	"14 cell types,				none	none
+conductance and				none	none
+compartment				none	none
+model, 11 active				none	none
+conductance"	3560	3560.0	"3,500 gap				none	none
+junctions,				none	none
+1,122,520				none	none
+synapses"	"14 cpu Linux				none	none
+cluster, an				none	none
+IBM e1350,				none	none
+dualprocessor				none	none
+Intel P4Xeon"		2 μS			Detailed Biophysical	Drosophila				none	none
+"(Brette, Rudolph et				none	none
+al., 2007; Traub,				none	none
+Contreras et al.,				none	none
+2005)"	"14 cell types,				none	none
+conductance and				none	none
+compartment				none	none
+model"	3560	3560.0	"3,500 gap				none	none
+junctions,				none	none
+1,122,520				none	none
+synapses"	"Cray XT3 2.4				none	none
+Ghz, 800				none	none
+CPUs"	200?	Event-driven	"5954-8516				none	none
+equations/CPU				none	none
+Gives #				none	none
+compartments"		Detailed Biophysical	Other				none	none
+(Izhikevich, 2005	"Izhikevich				none	none
+neurons,				none	none
+Random				none	none
+synaptic				none	none
+connectivity				none	none
+generated on the				none	none
+fly"	1011	1011.0	1015	"Beowulf				none	none
+cluster, 27				none	none
+3GHz				none	none
+processors"	4.2*106				Intermediate Complexity	Human				none	none
+(Markram, 2006	"Morphologically				none	none
+complex				none	none
+compartment				none	none
+models"	104	104.0	108	"BlueGene/L,				none	none
+4096 nodes,				none	none
+8192 cpus,				none	none
+peak				none	none
+performances				none	none
+22.4 TFLOPS"			"Not				none	none
+documented?"		Detailed Biophysical	C. elegans				none	none
+"(Djurfeldt,				none	none
+Lundqvist et al.,				none	none
+2006)"	"6-compartment				none	none
+neurons"	2.2*107	235.0	1.1*1010	"IBM Warson				none	none
+Research				none	none
+Blue Gene,				none	none
+SPLIT"	5942		"Computing				none	none
+requirements:				none	none
+11.5 TFLOPS.				none	none
+Spatial delays				none	none
+corresponding				none	none
+16 cm2 cortex				none	none
+surface."		Detailed Biophysical	Mouse				none	none
+"(Plesser, Eppler et				none	none
+al., 2007)"	Integrate-and fire	12500	12500.0	1.56*107	"Sun X4100				none	none
+cluster,				none	none
+2.4Ghz AMD				none	none
+Opteron,				none	none
+8GB ram,				none	none
+MPI, NEST"	2	0.1 ms	"Supralinear				none	none
+scaling until 80				none	none
+virtual				none	none
+processes for				none	none
+105 neuron/				none	none
+109				none	none
+synapses."		Integrate-and-Fire	Rhesus Monkey				none	none
+"(Kozlov, Lansner				none	none
+et al., 2007)"	"5 compartment				none	none
+model"	900	900.0	"10% per				none	none
+hemisegment"	SPLIT		100μS			Detailed Biophysical	Human				none	none
+"(Frye,				none	none
+Ananthanarayanan				none	none
+et al., 2007)"	"Low complexity				none	none
+spiking like				none	none
+Izhikevich				none	none
+neurons, STDP				none	none
+synapses"	8*106	848.0	"6300*				none	none
+8*106=				none	none
+5.04*1010"	"4096				none	none
+processor				none	none
+BlueGene/L				none	none
+256 Mb per				none	none
+CPU"	10	1 ms			Intermediate Complexity	Rat				none	none
+(Molyneaux et al., 2007)	Subtype-specific projection neuron modeling	~100 per cortical layer	100.0	Not stated	Not stated	Not stated	Not stated			Specialized/Hybrid	Rat				none	none
+"(Johansson and				none	none
+Lansner, 2007)"	"BCPNN spiking,				none	none
+minicolumns				none	none
+hypercolumns"	1.6*106	170.0	2*1011	"256 node, 512				none	none
+processors,				none	none
+Dell Xeon				none	none
+cluster, 3.4GHz 8 Gb				none	none
+memory,				none	none
+peak				none	none
+performance				none	none
+13.6 Gflop"	"9% real-time				none	none
+= 11.1"		"Weight				none	none
+updates 47 ms,				none	none
+update				none	none
+activities 59 ms, 120 kW usage.				none	none
+Computational				none	none
+demand				none	none
+256*13.6 Gflops"		Simple Abstract	Rhesus Monkey				none	none
+(Dumoulin & Wandell, 2008)	Gaussian Population Receptive Fields	Voxels (~100,000)	100000.0	Not stated	T GE Signa MRI scanner with custom surface coil; MATLAB-based PsychToolbox for stimuli	Not stated	Not stated	Population Receptive Field (pRF) modeling in human visual cortex		Simple Abstract	Rhesus Monkey				none	none
+(Lytton, 2008)	Hodgkin-Huxley and  Wilson-Cowan models	100-1,000 neurons per region	1000.0	~1,000 synapses per neuron	NEURON simulation	Not specified	Not specified			Detailed Biophysical	Drosophila				none	none
+(Gertler et al., 2008)	Biophysical modeling of D1 and D2 medium spiny neurons	Single-neuron models	1.0	~500 per neuron	NEURON simulation	Not specified	Not specified			Detailed Biophysical	Zebrafish				none	none
+(Izhikevich & Edelman, 2008)	Large-scale model of mammalian thalamocortical systems	~1 million multicompartments	1000000.0	~0.5 billion	Beowulf cluster (60 × 3 GHz CPUs, 1.5 GB RAM each), C/MPI for implementation	~1 min for 1 simulated second	Sub-millisecond	Modeled cortical and thalamic dynamics, integrating spiking neuron models, synaptic plasticity, and functional connectivity.		Specialized/Hybrid	Zebrafish				none	none
+(Chelaru & Dragoi, 2008)	Integrate-and-fire network modeling	1,008 excitatory, 252 inhibitory neurons	1260.0	~1,260 synapses per neuron	Not explicitly stated	Not explicitly stated	0.1–1 ms			Integrate-and-Fire	Human				none	none
+(Ghosh-Dastidar & Adeli, 2009)	Multi-Spiking Neural Network	~37	37.0	4 synapses/neuron	MATLAB and XPPAUT	Simulation times are problem-dependent (e.g., 25–35 ms per run)	1 ms			Simple Abstract	C. elegans				none	none
+(Taylor et al., 2009)	Hodgkin-Huxley-based multicompartment LP neuron model	~600,000	600000.0	3 synaptic currents	NEURON simulator, MATLAB	Not explicitly stated	25 µs			Detailed Biophysical	Drosophila				none	none
+(Burak & Fiete, 2009)	Rate-Based Neurons	~16,384 neurons (128² network)	16384.0	Sparse connectivity	Custom simulations implemented in MATLAB	Simulations performed for up to 20 minutes of biological time	0.5 ms	Continuous attractor models of grid cell path integration		Simple Abstract	Rat				none	none
+(Jin et al., n.d.)	Population coding and perceptron modeling of time in cortico-basal ganglia circuits	5,699 neurons (DLPFC: 2,496; CN: 3,203)	5699.0	Not stated	MATLAB	Not stated	10 ms			Simple Abstract	Rat				none	none
+(Breakspear et al., 2010)	Kuramoto model of coupled oscillators with spatial embedding	1,024 oscillators	1024.0	Not stated	Not stated	Not stated	Not stated	Explores cortical oscillations using simplified Kuramoto models		Intermediate Complexity	Common Marmoset				none	none
+(Silver, 2010)	Biophysically detailed model of synaptic integration:  Leaky Integrate-and-Fire as well as  Hodgkin-Huxley-Based	Single neuron models (~10 neurons for different scenarios)	10.0	~10-100	NEURON software; standard multi-core workstation (unspecified)	Not stated	10-100 µs	Focused on input-output transformation		Detailed Biophysical	Rhesus Monkey				none	none
+(Long et al., 2010)	Synaptic chain model of sequential neuronal bursts in songbird HVC	70 groups of 30 neurons (~2,100 neurons total)	2100.0	~300 interneurons for inhibition	MATLAB simulations	Not explicitly stated	0.1 ms			Specialized/Hybrid	C. elegans				none	none
+(Simen et al., 2011)	Non-homogeneous Poisson Neurons	Not specified		Not specified	MATLAB for drift-diffusion and Poisson process simulation	Not specified	Microseconds	Focused on interval timing using stochastic neural integration with predictions about behavior and timing skewness.		Simple Abstract	Human				none	none
+(Marder & Taylor, 2011)	Hodgkin-Huxley	~20M	20000000.0	Not specified	Computational clusters for large-scale modeling	Variable	Variable	Population-based conductance models for neuronal variability		Detailed Biophysical	Drosophila				none	none
+(Einevoll et al., 2013)	Biophysical modeling of local field potentials (LFPs)	Multicompartment neurons (e.g., pyramidal neurons)		Dense synaptic connections	Multicompartmental modeling using NEURON; LFPy software for forward modeling	Not explicitly stated	Not explicitly stated			Detailed Biophysical	Rhesus Monkey				none	none
+(Bekolay et al., 2014)	Leaky Integrate-and-Fire	2.5M	2500000.0	Sparse connectivity based on NEF principles	Nengo 2.0 (Python); GPU acceleration with OpenCL; commodity GPUs (Radeon 7970) and CPUs	real-time or faster for Spaun on GPU	1 ms	Large-scale functional brain modeling with the NEF and Nengo		Integrate-and-Fire	Common Marmoset				none	none
+(Kasabov, 2014)	Leaky Integrate-and-Fire	1,471 to 2.4M neurons (scalable)	2400000.0	Not stated	MATLAB-based NeuCube framework; GPU acceleration for large networks	Not stated	Not stated	NeuCube spiking neural network model for spatio-temporal brain data		Integrate-and-Fire	C. elegans				none	none
+(Benjamin et al., 2014)	dimensionless form of common biological neuronal models	Up to 1M	1000000.0	Billions of synapses	16 Neurocores on a 3W board; GUI for visualization; USB communication	Real-time simulation for 1M neurons	~1 ms	Mixed analog-digital simulation of large-scale networks		Specialized/Hybrid	Rat				none	none
+(Rybak et al., 2015)	Hodgkin-Huxley-based multicompartmental model for spinal circuits	200 per population (flexor/extensor RG centers); ~50 in others	200.0	Sparse local connections; inhibitory and excitatory CINs	Hodgkin-Huxley neuron model implemented on computational clusters	Not stated	0.1 ms			Detailed Biophysical	Rhesus Monkey				none	none
+(Markram et al., 2015)	Hodgkin-Huxley-based	~31,000 neurons (6 layers of juvenile rat somatosensory cortex)	31000.0	~37 million	Blue Brain Project's HPC cluster; NEURON simulator	Variable, dependent on network state	0.025 ms	Validated against in vitro and in vivo experiments. Digital reconstruction and simulation of neocortical microcircuitry		Detailed Biophysical	Common Marmoset				none	none
+(Yavuz et al., 2016)	Hodgkin-Huxley neurons	Up to 1M	1000000.0	Sparse and dense configurations supported	NVIDIA GPUs (e.g., Tesla C2070, K40) with CUDA support	Real-time for smaller networks; up to 85× slower for 16M neurons	Variable; common use at 0.04 ms			Detailed Biophysical	Other				none	none
+(Hayati et al., 2016)	FitzHugh-Nagumo coupled with astrocyte dynamics	Single neurons and astrocyte coupled model	1.0	Dynamic feedback synapses	FPGA-based implementation on Xilinx Virtex-II Pro; MATLAB for initial modeling	Not stated	~10 ms per step	Digital simulation of neuron-astrocyte interactions		Specialized/Hybrid	Drosophila				none	none
+(Falotico et al., 2017)	Leaky Integrate-and-Fire	Variable (use-case dependent)		Variable (use-case dependent)	NEST simulator, Gazebo for physics, Python APIs, and ROS middleware	Dependent on model complexity	Not stated	Developed the Neurorobotics Platform (NRP) for closed-loop experiments.		Integrate-and-Fire	Common Marmoset				none	none
+(Schwalger et al., 2017)	Generalized Integrate-and-Fire (GIF)	50–2000 per population	2000.0	Sparse, connectivity patterns modeled for 8 populations	Simulations on MATLAB	Mesoscopic integration: ~6.6 s; Microscopic: ~13.5 min (for 10 s biological time)	~0.5 ms			Integrate-and-Fire	Common Marmoset				none	none
+(Schmidt et al., 2018)	Leaky Integrate-and-Fire	~2 million per hemisphere (density varies by region)	4000000.0	~9800 synapses per neuron on average	Custom computational framework based on CoCoMac database, MATLAB, and Python	Variable	1 ms			Integrate-and-Fire	Common Marmoset				none	none
+(Davies et al., 2018.)	Leaky Integrate-and-Fire	Up to 128,000 neurons per chip	128000.0	Millions (dense synaptic matrices)	Intel’s 14-nm Loihi processor with 128 cores and asynchronous architecture	Real-time for most applications; 3.5 ns per synaptic operation	1 ms or less			Integrate-and-Fire	Rat				none	none
+(Verhulst et al., 2018)	A biophysical model of inner hair cell (IHC) transduction	Population-level (ABR, EFR)		N/A (cochlear stage simulated)	MATLAB for computational implementation	Not explicitly stated	~1 ms			Detailed Biophysical	Mouse				none	none
+(Zerlaut et al., 2018)	Mean-field model of neocortical dynamics using AdEx integrate-and-fire neurons	10,000 neurons (8,000 excitatory, 2,000 inhibitory)	10000.0	Randomly connected (5% probability)	Simulated using Brian2 in Python;	Not explicitly stated	0.1 ms			Integrate-and-Fire	C. elegans				none	none
+(Pei et al., 2019)	Hybrid ANN-SNN simulation with the Tianjic chip architecture	~40,000	40000.0	~10 million	Tianjic chip (28nm), Python, Custom Compiler	Not explicitly stated	1 ms			Specialized/Hybrid	Zebrafish				none	none
+(Kim et al., 2019)	Graded potential neuron model	302	302.0	279 gap, 639 chemical synapses	Python, Neural Interactome framework, Flask-SocketIO	10 ms simulation, 100 ms visualization	Not explicitly stated	Simulates C. elegans neuronal dynamics with real-time user interaction and dynamic neural ablation.		Simple Abstract	Rat				none	none
+(Poirazi & Papoutsi, 2020)	Hodgkin-Huxley based	Multicompartmental neuron models		Variable	NEURON, LFPy, and custom Python-based implementations	Not stated	Not stated			Detailed Biophysical	Mouse				none	none
+(Dai et al., 2020)	Multiscale modeling (BioNet, PointNet)	Up to 230,000	230000.0	~15 million	BMTK with NEURON and NEST; cluster/supercomputing	~1 hour for 1 second (BioNet, 384 cores); 3 minutes for 1 second (PointNet, single core)	Variable			Specialized/Hybrid	Mouse				none	none
+(Yamazaki et al., 2021)	Leaky Integrate-and-Fire	68 billion	68000000000.0	5.4 trillion	K computer (82,944 CPUs), MONET simulator	1 min simulated in 10 hours	Not specified	Resting state activity, benchmark for supercomputer capability, models human-scale cerebellum		Integrate-and-Fire	Rhesus Monkey				none	none
+(Gordleeva et al., 2021)	Spiking Neuron Network with Astrocytes (Izhikevich model)	6,241	6241.0	Random synapses (40 per neuron)	Custom software, Izhikevich neuron models; Runge-Kutta integration	Not specified	0.1 ms			Intermediate Complexity	Mouse				none	none
+(Ratliff et al., 2021)	Mathematical model of a three-neuron pacemaker circuit	3	3.0	Multiple	Julia DifferentialEquations.jl, MATLAB	Not explicitly stated	Variable	Explored robustness of a neuronal oscillator in the crab STG		Simple Abstract	Rat				none	none
+(Kumarasinghe et al., 2021)	Leaky Integrate-and-Fire	Simulated on spiking neuron populations		Not specified	MATLAB and NeuCube framework, run on a standard 2.6 GHz CPU with 16 GB RAM	~3.5 ms for single prediction; real-time feasible for 100 Hz EEG data	10 ms	Brain-inspired spiking neural network (BI-SNN) model for decoding and prediction of muscle activity and kinematics from EEG		Integrate-and-Fire	Human				none	none
+(Timofeev et al., n.d.)	Hodgkin-Huxley-based multi-channel neuron model	Not stated		Not stated	Python, SciPy (BDF and LSODA solvers)	24-48 hours runtime for MCMC sampling per setup	Not stated			Detailed Biophysical	Rhesus Monkey				none	none
+(Yang et al., 2022)	Multiple models: Leaky Integrate-and-Fire,  Izhikevich Model and  Hodgkin-Huxley	4 million	40000000.0	Dense and multigranular connectivity	BiCoSS platform with 35 Intel Cyclone IV FPGA chips, BFT-based topology	Real-time (high computational efficiency)	1 ms			Specialized/Hybrid	C. elegans				none	none
+(Shiu et al., 2023)	Leaky Integrate-and-Fire	125,000	125000.0	50 million	Brian2 simulator, Python	Not explicitly stated	Not specified	Models the entire adult Drosophila brain		Integrate-and-Fire	Rhesus Monkey				none	none
+Click or tap here to enter text.	Multi-compartmental model (NEURON)	302	302.0	6702	Python, NEURON	Not explicitly stated	0.5 ms			Detailed Biophysical	Zebrafish				none	none
+(Rosen et al., 2023)	Universal cell embedding model	36 million	36000000.0	Not explicitly stated	PyTorch, ESM2, 24 NVIDIA A100 GPUs	Not explicitly stated	Variable	Developed Universal Cell Embedding (UCE) for mapping cellular gene expression into a shared embedding space across species.		Simple Abstract	Mouse				none	none
+(Lappalainen et al., 2024)	Connectome-constrained task-optimized DMNs	45,669	45669.0	1,513,231	PyTorch	Not explicitly stated	Not specified	Modeled fruit fly visual motion pathways		Simple Abstract	C. elegans				none	none
+(Simeon et al., 2024)	ANN-based neural activity prediction in C	302	302.0	Not explicitly stated	Python, NVIDIA A100 GPUs	Not explicitly stated	0.667s	Investigates the scaling properties of ANN models for predicting neural activity dynamics		Simple Abstract	Mouse				none	none
+(Gambosi et al., 2024)	Multiscale spiking neural network model of BG and cerebellum	96,767	96767.0	4,151,182	NEST Simulator	Variable based on resolution (1–10 ms)	Not explicitly stated	Explores dopamine depletion in BG and cerebellum to simulate Parkinsonian beta oscillations and motor learning deficits.		Specialized/Hybrid	Rhesus Monkey				none	none

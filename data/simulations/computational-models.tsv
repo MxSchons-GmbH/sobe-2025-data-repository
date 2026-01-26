@@ -1,179 +1,171 @@
-First Author	Year	Link	Organism	Unnamed: 4	Connectivity accuracy	Percentage of neurons	Neurontypes	Plasticity	Functional Accuracy	Neuromodulation	Temporal resolution	Behavior	Personality-defining Characteristics	Learning	Previous notes	Type of Simulation	Category	Neurons (cited)	Neurons cleaned	Synapses	Synapses Cleaned	Timestep	Timestep Cleaned	Hardware and Software	Slowdown time (required for one biological second)	Notes	Filter
-Traub, Miles et al.	1992	https://physoc.onlinelibrary.wiley.com/doi/10.1113/jphysiol.1992.sp019184	Mammalian													19 compartment cells, ionic currents	Detailed Biophysical	1200		70000		0.05 ms		IBM3090 computer	325 min/1.5 s bio time = 13000
-Kondo, Koshiba et al.	1996	https://ieeexplore.ieee.org/document/509875	Silicon		3	0	2	1	2	3	3	0	1			Hopfield network		1536		2.4 million				Special purpose chips
-Aberdeen, Baxter et al.	2000	https://ieeexplore.ieee.org/document/1592757	Silicon		1	2	0	0	1	1	2	2	0			"ANN
-feedforward
-network trained
-with iterative
-gradient descent"		4083		1.73*106				"Cluster 196
-pentium III
-processors,
-550 MHz,
-384Mb"
-Howell, Dyhrfjeld-Johnsen et al.	2000	https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Rat													Compartment (Purkinje 4,500 comp./granule 1 comp.)	Detailed Biophysical	16 Purkinje, 244,000 granule cells				20μS		128- processor Cray 3TE, PGENESIS	4500	"Computing
-requirements:
-76.8 GFLOPS"
-Harris, Baurick et al.	2002	https://www.cse.unr.edu/~fredh/papers/conf/052-anphassfalsbrcs/paper.pdf	Rat													"Point neurons,
-spikes, AHP, A
-& M potassium
-channels,
-synaptic
-adaptation,
-Spike shape and
-postsynaptic
-conductance
-specified by
-templates."		"35,000 cells
-per node"		"6.1*106synapses per
-node"				"Cluster, 128
-Xeon 2.2
-GHz
-processors
-with 256GB,
-1Tb disk"
-Shaojuan and Hammarstrom	2002	https://ieeexplore.ieee.org/document/1198953	Silicon		0	1	2	1	0	0	1	2	0			Palm binary network		256,000		32 billion				512 processors, 192 GB, 250 Mhz mips 12K processorr	Execution time 4 min 7 sec, -13% MPI calls for retrieving 180K training vectors, ~O(10) iterations
-Shaojuan and Hammarstrom	2002	https://ieeexplore.ieee.org/abstract/document/1198953	Silicon		1	0	2	0	1	2	2	1	1			"Palm binary
-network"		256,000		"Order of
-3.2*1010"				"512
-processors,
-192 GB, 250
-Mhz mips
-12K
-processorr"	"Execution
-time 4 min 7
-sec, -13% MPI
-calls for
-retrieving
-180K training
-vectors,
-~O(10)
-iterations"
-Terman et al.	2002	https://pmc.ncbi.nlm.nih.gov/articles/PMC6758326/	Rat													Single-Compartment Hodgkin-Huxley	Detailed Biophysical	8-20 neurons per type		Sparse connections		Not explicitly stated		XPPAUT simulation software	Not explicitly stated	Conductance-based model of STN and GPe
-Mehrtash, Jung et al.	2003	https://ieeexplore.ieee.org/document/1243704	Silicon		0	0	0	1	1	0	3	0	1			Integrate and fire, event driven pulse connections with STDP plasticity. 1-8 dendritic segments.		256,000		1 million				Special purpose chip, connected UltraSparc processor 500 Mhz, 640 Mb	1012.21 timesteps/ ms
-Prinz et al.	2003	https://journals.physiology.org/doi/full/10.1152/jn.00641.2003	Lobster													Hodgkin-Huxley-based conductance model database	LIF	1.7 million		Not explicitly stated		50 µs		C++, Dell Beowulf cluster	Approx. 1 week for classification, 1 month for injection studies	Generated a database of single-compartment model neurons by varying 8 maximal conductances independently
-Djurfeldt	2005	https://www.diva-portal.org/smash/get/diva2:220701/FULLTEXT01.pdf	Rat														Detailed Biophysical	8000000		4 Billion		5400x slower
-Traub, Contreras et al.	2005	https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Rat													14 cell types, conductance and compartment model, 11 active conductances	Detailed Biophysical	3560		3500 gap junctions, 1.1 million synapses		2 µs		14 cpu Linux cluster, an IBM e1350, dualprocessor Intel P4Xeon 2 µs 102 2.4-GHz, 512 Kbytes of L2 cache; or, e1350 Blade 1, at 2.8 GHz
-Djurfeldt, Lundqvist et al.	2006	https://www.tandfonline.com/doi/full/10.1080/09548980600774619?scroll=top&needAccess=true	Mammalian													"6-compartment
-neurons"		2.2*107		1.1*1010				"IBM Warson
-Research
-Blue Gene,
-SPLIT"	5942	"Computing
-requirements:
-11.5 TFLOPS.
-Spatial delays
-corresponding
-16 cm2 cortex
-surface."
-Markram	2006	https://www.nature.com/articles/nrn1848	Rat													"Morphologically
-complex
-compartment
-models"		104		108				"BlueGene/L,
-4096 nodes,
-8192 cpus,
-peak
-performances
-22.4 TFLOPS"		"Not
-documented?"
-Johansson and Lansner	2007	https://direct.mit.edu/neco/article/19/7/1871/7203/Imposing-Biological-Constraints-onto-an-Abstract	Mammalian													BCPNN spiking, minicolumns hypercolumns		1.6 million		200 billion				256 node, 512 processors, Dell Xeon cluster, 3.4GHz 8 Gb memory, peak performance 13.6 Gflop	9% real-time = 11.1
-Kozlov, Lansner et al.	2007	https://link.springer.com/article/10.1007/s00422-006-0132-2	Lamprey													5 compartment model		900		10% per hemisegment		100 µs		SPLIT
-Plesser, Eppler et al.	2007	https://link.springer.com/chapter/10.1007/978-3-540-74466-5_71	Silicon		2	2	3	3	3	0	3	0	3			Integrate-and fire		12500		1.56*107		0.1 ms		"Sun X4100
-cluster,
-2.4Ghz AMD
-Opteron,
-8GB ram,
-MPI, NEST"	2	"Supralinear
-scaling until 80
-virtual
-processes for
-105 neuron/
-109
-synapses."
-Chelaru & Dragoi	2008	https://www.pnas.org/doi/10.1073/pnas.0807744105	Cat													Integrate-and-fire network modeling	Detailed Biophysical	1,008 excitatory, 252 inhibitory neurons		~1,260 synapses per neuron		0.1–1 ms		Not explicitly stated	Not explicitly stated
-Djurfeldt et al.	2008	https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5388638	Rat													Hodgkin-Hucley model		22 million		11 billion		1 second		Blue Gene/L supercomputer up to 8192 processors	1205x
-Gertler et al.	2008	https://doi.org/10.1523/JNEUROSCI.2660-08.2008	Mouse		0	0	2	0	3	1	2	0	0	0		Biophysical modeling of D1 and D2 medium spiny neurons	Detailed Biophysical	Single-neuron models		~500 per neuron		Not specified		NEURON simulation	Not specified
-Anonymous	2024	https://openreview.net/forum?id=oCHsDpyawq	Zebrafish		0	2	0	0	1	0	1	0	0	0
-Wang	2023	https://www.biorxiv.org/content/10.1101/2023.03.21.533548v1	Mouse		1	1	0	0	1	0	1	0	0	0
-Huang	2019	https://doi.org/10.3389/fninf.2018.00099	Drosophila		2	1	2	1	2	0	2	0	0	0
-Higuchi	2022	https://doi.org/10.1101/2022.11.01.512969	Drosophila		2	1	2	2	3	1	2	1	0	1
-Izhikevich & Edelman	2008	https://www.pnas.org/doi/full/10.1073/pnas.0712231105	Mammalian													Large-scale model of mammalian thalamocortical systems	LIF	~1 million multicompartments		~0.5 billion		Sub-millisecond		Beowulf cluster (60 × 3 GHz CPUs, 1.5 GB RAM each), C/MPI for implementation	~1 min for 1 simulated second	Modeled cortical and thalamic dynamics, integrating spiking neuron models, synaptic plasticity, and functional connectivity.
-Burak & Fiete	2009	https://doi.org/10.1371/journal.pcbi.1000291	Rat													Rate-Based Neurons	Detailed Biophysical	~16,384 neurons (128² network)		Sparse connectivity		0.5 ms		Custom simulations implemented in MATLAB	Simulations performed for up to 20 minutes of biological time	Continuous attractor models of grid cell path integration
-Ghosh-Dastidar & Adeli	2009	https://doi.org/10.1016/j.neunet.2009.04.003	Generic													Multi-Spiking Neural Network	ML	~37		4 synapses/neuron		1 ms		MATLAB and XPPAUT	Simulation times are problem-dependent (e.g., 25–35 ms per run)
-Jin	2009	https://www.pnas.org/doi/10.1073/pnas.0909881106	Macaque													Population coding and perceptron modeling of time in cortico-basal ganglia circuits	LIF	5,699 neurons (DLPFC: 2,496; CN: 3,203)		Not stated		10 ms		MATLAB	Not stated
-Taylor et al.	2009	https://doi.org/10.1523/JNEUROSCI.4438-08.2009	Crab													Hodgkin-Huxley-based multicompartment LP neuron model	Detailed Biophysical	~600,000		3 synaptic currents		25 µs		NEURON simulator, MATLAB	Not explicitly stated
-Long et al.	2010	https://doi.org/10.1038/nature09514	Songbird													Synaptic chain model of sequential neuronal bursts in songbird HVC		2100		~300 interneurons for inhibition		0.1 ms		MATLAB simulations	Not explicitly stated
-Schemmel et al.	2010	https://ieeexplore.ieee.org/document/5536970	Silicon		3	0	2	2	2	3	3	0	2			Exponential integrate-and-fire neuron models		180000		40 million				Very large analog neuromorphic hardware system developed within FACETS, neural system description language PyNN	1000-100000 times faster than biological time
-Silver	2010	https://doi.org/10.1038/nrn2864	Unkown													Biophysically detailed model of synaptic integration:  Leaky Integrate-and-Fire as well as  Hodgkin-Huxley-Based	Detailed Biophysical	Single neuron models (~10 neurons for different scenarios)		~10-100		10-100 µs		NEURON software; standard multi-core workstation (unspecified)	Not stated	Focused on input-output transformation
-Yu, Cauwenberghs	2010	https://ieeexplore.ieee.org/document/5471736	Silicon		2	0	3	2	2	2	2	3	3			Hodgkin-Huxley neural dynamics in 3 channel variables, each with 16 variables, and 12 synaptic variables		4		12				Programmable analog VLSI chip (NeuroDyn), 0.5 CMOS chip	Variable speed output exceeding real time
-Marder & Taylor	2011	https://doi.org/10.1038/nn.2735	Lobster													Hodgkin-Huxley		~20M		Not specified		Variable		Computational clusters for large-scale modeling	Variable	Population-based conductance models for neuronal variability
-Simen et al.	2011	https://doi.org/10.1523/JNEUROSCI.3121-10.2011	Mammalian													Non-homogeneous Poisson Neurons		Not specified		Not specified		Microseconds		MATLAB for drift-diffusion and Poisson process simulation	Not specified	Focused on interval timing using stochastic neural integration with predictions about behavior and timing skewness.
-Preissl	2012	https://www.researchgate.net/profile/Horst-Simon/publication/260869600_Compass_A_scalable_simulator_for_an_architecture_for_cognitive_computing/links/54b928530cf269d8cbf73438/Compass-A-scalable-simulator-for-an-architecture-for-cognitive-computing.pdf	Macaque														LIF	65B		16T		388x slower
-Bekolay et al.	2014	https://doi.org/10.3389/fninf.2013.00048	Silicon		2	3	1	1	2	0	0	0	1			Leaky Integrate-and-Fire		2.5M		Sparse connectivity based on NEF principles		1 ms		Nengo 2.0 (Python); GPU acceleration with OpenCL; commodity GPUs (Radeon 7970) and CPUs	real-time or faster for Spaun on GPU	Large-scale functional brain modeling with the NEF and Nengo
-Merolla et al.	2014	https://www.science.org/doi/10.1126/science.1254642	Silicon		1	3	0	0	3	3	0	2	0			Self-contained neural network with 256-by-256 directed, programmable synaptic connections		1 million		256 million				Self contained neuromorphic hardware	1x
-Potjans et al.	2014	https://academic.oup.com/cercor/article/24/3/785/398560	Mammalian													Leaky integrate-and-fire	LIF	80000		300 million				NEST simulation tool and a compute cluster with 24 nodes each equipped with 2 quad core AMD Opteron 2834 processors and interconnected by a 24-port Voltaire InfiniBand switch ISR9024D-M	"~1x
-
-(close to real time)"
-Sharp et al.	2014	https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2014.00131/epub?isPublishedV2=false	Rat													Leaky integrate-and-fire model	LIF	50000 neurons		50 million synapses				PyNN modeling language, 200 processors on 13 chips
-Markram et al.	2015	https://www.cell.com/fulltext/S0092-8674(15)01191-5	Rat													Hodgkin-Huxley-based	Detailed Biophysical	~31,000 neurons (6 layers of juvenile rat somatosensory cortex)		~37 million		0.025 ms		BlueGene/L, 4096 nodes, 8192 cpus, peak performances 22.4 TFLOPS	Variable, dependent on network state	Validated against in vitro and in vivo experiments. Digital reconstruction and simulation of neocortical microcircuitry
-Joglekar	2018	https://doi.org/10.1016/j.neuron.2018.02.031	Macaque														LIF
-Verhulst et al.	2018	https://www.sciencedirect.com/science/article/pii/S0378595517303477?via%3Dihub	Human	Hearing system only	1	1	1	1	1	0	2	0	0	1		A biophysical model of inner hair cell (IHC) transduction	Detailed Biophysical	20000		N/A (cochlear stage simulated)		~1 ms		MATLAB for computational implementation	Not explicitly stated
-Schmidt et al.	2018	https://doi.org/10.1007/s00429-017-1554-4	Macaque													Leaky Integrate-and-Fire	Detailed Biophysical	~2 million per hemisphere (density varies by region)		~9800 synapses per neuron on average		1 ms		Custom computational framework based on CoCoMac database, MATLAB, and Python	Variable
-Yamazaki et al.	2021	https://doi.org/10.1016/j.neuroscience.2021.01.014	Human		1	2	2	0	2	0	2	0	0	0		Leaky Integrate-and-Fire	LIF	68 billion		5.4 trillion		Not specified		K computer (82,944 CPUs), MONET simulator	1 min simulated in 10 hours	Resting state activity, benchmark for supercomputer capability, models human-scale cerebellum
-Zerlaut et al.	2018	https://doi.org/10.1007/s10827-017-0668-2	Macaque													Mean-field model of neocortical dynamics using AdEx integrate-and-fire neurons		10000		Randomly connected (5% probability)		0.1 ms		Simulated using Brian2 in Python;	Not explicitly stated
-Rodarie	2022	https://infoscience.epfl.ch/record/297317	Mouse		2	1	2	1	2	0	2	1	0	0			Detailed Biophysical
-Igarashi	2019	https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2019.00071/full	mouse		2	2	2	0	2	0	2	0	0	0			LIF	6.04 Billion		24.5 Trillion		350x slower		MONET (Millefeuille-like Organization NEural neTwork simulator)
-Rhodes et al.	2019	https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0160	Generic													Single-compartment leaky integrate-and-fire unit, with current-based exponentially decaying synapses	LIF	77000		300 million		10 seconds, 12 hours		"Heterogenous parallelization scheme and SpiNNaker neuormorphic hardware
-
-PyNN modeling language"	1x
-Billeh	2020	https://www.cell.com/neuron/fulltext/S0896-6273(20)30067-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627320300672%3Fshowall%3Dtrue	Mouse		2	1	2	0	3	0	2	1	0	0			Detailed Biophysical
-Gordleeva et al.	2021	https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2021.631485/full	Generic													Spiking Neuron Network with Astrocytes (Izhikevich model)	LIF	6,241		Random synapses (40 per neuron)		0.1 ms		Custom software, Izhikevich neuron models; Runge-Kutta integration	Not specified
-Liu	2024	https://doi.org/10.1101/2024.12.19.629427	Zebrafish		2	1	2	0	1	0	2	2	0	0
-Lu	2024	https://doi.org/10.1038/s43588-024-00731-3	Human		1	2	1	0	2	0	2	1	0	0			LIF	86B		47.8T		80x slower		Custom code in PyTorch
-Cowley	2024	https://www.nature.com/articles/s41586-024-07451-8	Drosophila		2	0	2	0	1	0	1	2	0	0
-Yang et al.	2022	https://doi.org/10.1109/TNNLS.2020.3045492	Silicon		3	3	0	0	1	0	3	1	0			Multiple models: Leaky Integrate-and-Fire,  Izhikevich Model and  Hodgkin-Huxley		4 million		Dense and multigranular connectivity		1 ms		BiCoSS platform with 35 Intel Cyclone IV FPGA chips, BFT-based topology	Real-time (high computational efficiency)
-Gambosi et al.	2024	https://www.worldscientific.com/doi/10.1142/S012906572450045X	Mouse		2	1	2	2	2	1	2	2	0	1		Multiscale spiking neural network model of BG and cerebellum	LIF	96,767		4,151,182		Not explicitly stated		NEST Simulator	Variable based on resolution (1–10 ms)	Explores dopamine depletion in BG and cerebellum to simulate Parkinsonian beta oscillations and motor learning deficits.
-Kim et al.	2019	https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2019.00008/full	C. elegans		3	2	2	0	1	0	2	1	0	0		Graded potential neuron model	Detailed Biophysical	302		279 gap, 639 chemical synapses		Not explicitly stated		Python, Neural Interactome framework, Flask-SocketIO	10 ms simulation, 100 ms visualization	Simulates C. elegans neuronal dynamics with real-time user interaction and dynamic neural ablation.
-Simeon et al.	2024	https://www.biorxiv.org/content/biorxiv/early/2024/03/06/2024.02.13.580186.full.pdf	C. elegans		3	3	0	0	1	0	1	0	0	0		ANN-based neural activity prediction in C	ML	302		Not explicitly stated		0.667s		Python, NVIDIA A100 GPUs	Not explicitly stated	Investigates the scaling properties of ANN models for predicting neural activity dynamics
-Sarma	2018	https://pubmed.ncbi.nlm.nih.gov/30201845/	C. elegans		3	3	3	0	3	1	2	2	0	0
-Lappalainen et al.	2024	https://www.nature.com/articles/s41586-024-07939-3	Drosophila		3	1	2	0	1	0	1	1	0	0		Connectome-constrained task-optimized DMNs	LIF	45,669		1,513,231		Not specified		PyTorch	Not explicitly stated	Modeled fruit fly visual motion pathways
-Shiu et al.	2024	https://www.nature.com/articles/s41586-024-07763-9	Drosophila		3	2	1	0	2	0	2	1	0	0		Leaky Integrate-and-Fire	LIF	125,000		50 million		Not specified		Brian2 simulator, Python	Not explicitly stated	Models the entire adult Drosophila brain
-Zhao	2024	https://www.nature.com/articles/s43588-024-00738-w	C. elegans		3	1	3	0	3	0	2	2	0	0
-Romani et al.	2024	https://www.biorxiv.org/content/10.1101/2023.05.17.541167v2.full	Rat													Electrical features (e-features) which were used in combination with curated morphologies to produce and validate 36 single-cell e-models	Detailed Biophysical	456380		821 million				Electrophysiological Feature Extraction Library or the Blue Brain Python E-feature extraction, Blue Brain python optimization library
-Frye, Ananthanarayanan et al.	2007	https://modha.org/2007/02/towards-real-time-mouse-scale-cortical-simulations/	Mouse		-	-	-	-	-	-	-	-	-	-		Low complexity spiking like Izhikevich neurons, STDP synapses	LIF	8 million		50.4 billion		1 ms		4096 processor BlueGene/L 256 Mb per CPU	10
-Pronold	2024	https://academic.oup.com/cercor/article/34/10/bhae409/7826014	Human		1	1	1	0	2	0	2	0	0	0			LIF	3M
-Schepper et al.	2022	https://www.nature.com/articles/s42003-022-04213-y	Mouse		2	0	2	2	3	0	2	2	0	0		Integrate-and-fire point neurons, cerebellar network scaffold; single compartment no short-term plasticity	Detailed Biophysical	29230 neurons		1.5 million chemical synapses, 2100 electrical synapses				NEURON simulation environment
-Jiang	2024	https://academic.oup.com/cercor/article/34/9/bhae378/7779257	Mouse		2	0	2	1	2	0	2	1	0	0			LIF									qualifies for level 1 for plasticity
-Vishwanathan	2024	https://www.nature.com/articles/s41593-024-01784-3	Zebrafish		3	1	2	0	1	0	1	2	0	0
-Traub	2005	https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Rat													"14 cell types,
-conductance and
-compartment
-model"		3560		"3,500 gap
-junctions,
-1,122,520
-synapses"		Event-driven		"Cray XT3 2.4
-Ghz, 800
-CPUs"	200?	"5954-8516
-equations/CPU
-Gives #
-compartments"
-Park et al.	2017	https://ieeexplore.ieee.org/document/7526444	Silicon		0	0	0	1	0	0	0	1	3			"Integrate and-fire neuron with conductance-like synapses
-
-
-
-
-
-
-Analog integrate-and-fire array transceivers"		262000		262 million				Five Xilinx Spartan-6 field-programmable gate arrays and four custom analog neuromophic integrated circuits and HiAER protocol
-Vogelstein	2007	https://direct.mit.edu/neco/article-abstract/19/9/2281/7259/A-Multichip-Neuromorphic-System-for-Spike-Based?redirectedFrom=fulltext	Silicon															4800		4.2 million				VLSI system 80 × 60 pixel neuromorphic retina
-Anton		checking the work from the lab of Xiao-Jing Wang
-Anton		Vish 24
-Anton		https://academic.oup.com/cercor/article/34/9/bhae378/7779257?login=false
-Anton		https://www.nature.com/articles/s41586-024-07982-0
-Anton	Remove	Dumoulin & Wandell, 2008 – that is not a simulation paper, is it? I think they are just analyzing experimental data there.
-Anton	Remove	Lytton, 2008 – wrong link. And which paper are you thinking about here? Is it this one? That is a review article, and not original research. Does it really have results from a simulation of a piece of human brain that gets such high scores on the various aspects in your table?
-Anton	Probably Remove	Kasabov, 2014 – wrong link. Is it this paper? Where does it do a simulation of a piece of human brain?
-Anton	Auditory still brain?	Verhulst et al., 2018 – wrong link. Is it this paper? But it seems to be simulating auditory processing outside of the brain proper.
-Anton	Corrected	Pronold et al, 2024 – if I recall correctly, they simulate 3.5 million neurons, which is 0.004% of neurons in the human brain. That is minuscule compared to what Yamazaki et al. and Lu et al. did (complete or near-complete coverage of all the brain’s neurons), and yet the “Percentage of Neurons” are scored at 2 for all these papers. It certainly should be 1 for Pronold et al.
-Anton		On a similar note, “Connectivity Accuracy” is scored at 2 for all human papers except the first two. However, the connectivity accuracy of all these studies is, of course, by far less than what we did for the mouse in Billeh et al. (these data are simply not available for human), and yet the score is the same. I would recommend lowering it for all the human papers. And it’s probably best to do the same for Functional Accuracy too!
-Anton	Deep dive	And at least some of the mouse papers are not simulation papers. I think I left some detailed comments on that previously, maybe in an earlier version of the doc or in the poster? Please try to find them – I remember looking carefully into these papers and finding some issues that needed to be addressed. One example that I do remember is that Rodarie et al. is not a simulation paper.
-Izhikevich and Edelman	2008	https://doi.org/10.1073/pnas.0712231105	Human		1	1	1			0		0	0	0
-Kunkel	2014	https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2014.00078/full	Human	TODO
+First Author	Year	Link	Organism	Unnamed: 4	Connectivity accuracy	Percentage of neurons	Neurontypes	Plasticity	Functional Accuracy	Neuromodulation	Temporal resolution	Behavior	Personality-defining Characteristics	Learning	Previous notes	Type of Simulation	Category	Neurons (cited)	Neurons cleaned	Synapses	Synapses Cleaned	Timestep	Timestep Cleaned	Hardware and Software	Slowdown time (required for one biological second)	Notes	Filter	ref_id	supporting_refs	ref_note	confidence	validated_by
+Traub, Miles et al.	1992	https://physoc.onlinelibrary.wiley.com/doi/10.1113/jphysiol.1992.sp019184	Mammalian													19 compartment cells, ionic currents	Detailed Biophysical	1200		70000		0.05 ms		IBM3090 computer	325 min/1.5 s bio time = 13000				none	none
+Kondo, Koshiba et al.	1996	https://ieeexplore.ieee.org/document/509875	Silicon		3	0	2	1	2	3	3	0	1			Hopfield network		1536		2.4 million				Special purpose chips				none	none
+Aberdeen, Baxter et al.	2000	https://ieeexplore.ieee.org/document/1592757	Silicon		1	2	0	0	1	1	2	2	0			"ANN				none	none
+feedforward				none	none
+network trained				none	none
+with iterative				none	none
+gradient descent"		4083		1.73*106				"Cluster 196				none	none
+pentium III				none	none
+processors,				none	none
+550 MHz,				none	none
+384Mb"				none	none
+Howell, Dyhrfjeld-Johnsen et al.	2000	https://www.sciencedirect.com/science/article/pii/S0925231200002770?via%3Dihub	Rat													Compartment (Purkinje 4,500 comp./granule 1 comp.)	Detailed Biophysical	16 Purkinje, 244,000 granule cells				20μS		128- processor Cray 3TE, PGENESIS	4500	"Computing				none	none
+requirements:				none	none
+76.8 GFLOPS"				none	none
+Harris, Baurick et al.	2002	https://www.cse.unr.edu/~fredh/papers/conf/052-anphassfalsbrcs/paper.pdf	Rat													"Point neurons,				none	none
+spikes, AHP, A				none	none
+& M potassium				none	none
+channels,				none	none
+synaptic				none	none
+adaptation,				none	none
+Spike shape and				none	none
+postsynaptic				none	none
+conductance				none	none
+specified by				none	none
+templates."		"35,000 cells				none	none
+per node"		"6.1*106synapses per				none	none
+node"				"Cluster, 128				none	none
+Xeon 2.2				none	none
+GHz				none	none
+processors				none	none
+with 256GB,				none	none
+1Tb disk"				none	none
+Shaojuan and Hammarstrom	2002	https://ieeexplore.ieee.org/document/1198953	Silicon		0	1	2	1	0	0	1	2	0			Palm binary network		256,000		32 billion				512 processors, 192 GB, 250 Mhz mips 12K processorr	Execution time 4 min 7 sec, -13% MPI calls for retrieving 180K training vectors, ~O(10) iterations				none	none
+Shaojuan and Hammarstrom	2002	https://ieeexplore.ieee.org/abstract/document/1198953	Silicon		1	0	2	0	1	2	2	1	1			"Palm binary				none	none
+network"		256,000		"Order of				none	none
+3.2*1010"				"512				none	none
+processors,				none	none
+192 GB, 250				none	none
+Mhz mips				none	none
+12K				none	none
+processorr"	"Execution				none	none
+time 4 min 7				none	none
+sec, -13% MPI				none	none
+calls for				none	none
+retrieving				none	none
+180K training				none	none
+vectors,				none	none
+~O(10)				none	none
+iterations"				none	none
+Terman et al.	2002	https://pmc.ncbi.nlm.nih.gov/articles/PMC6758326/	Rat													Single-Compartment Hodgkin-Huxley	Detailed Biophysical	8-20 neurons per type		Sparse connections		Not explicitly stated		XPPAUT simulation software	Not explicitly stated	Conductance-based model of STN and GPe				none	none
+Mehrtash, Jung et al.	2003	https://ieeexplore.ieee.org/document/1243704	Silicon		0	0	0	1	1	0	3	0	1			Integrate and fire, event driven pulse connections with STDP plasticity. 1-8 dendritic segments.		256,000		1 million				Special purpose chip, connected UltraSparc processor 500 Mhz, 640 Mb	1012.21 timesteps/ ms				none	none
+Prinz et al.	2003	https://journals.physiology.org/doi/full/10.1152/jn.00641.2003	Lobster													Hodgkin-Huxley-based conductance model database	LIF	1.7 million		Not explicitly stated		50 µs		C++, Dell Beowulf cluster	Approx. 1 week for classification, 1 month for injection studies	Generated a database of single-compartment model neurons by varying 8 maximal conductances independently				none	none
+Djurfeldt	2005	https://www.diva-portal.org/smash/get/diva2:220701/FULLTEXT01.pdf	Rat														Detailed Biophysical	8000000		4 Billion		5400x slower				none	none
+Traub, Contreras et al.	2005	https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Rat													14 cell types, conductance and compartment model, 11 active conductances	Detailed Biophysical	3560		3500 gap junctions, 1.1 million synapses		2 µs		14 cpu Linux cluster, an IBM e1350, dualprocessor Intel P4Xeon 2 µs 102 2.4-GHz, 512 Kbytes of L2 cache; or, e1350 Blade 1, at 2.8 GHz				none	none
+Djurfeldt, Lundqvist et al.	2006	https://www.tandfonline.com/doi/full/10.1080/09548980600774619?scroll=top&needAccess=true	Mammalian													"6-compartment				none	none
+neurons"		2.2*107		1.1*1010				"IBM Warson				none	none
+Research				none	none
+Blue Gene,				none	none
+SPLIT"	5942	"Computing				none	none
+requirements:				none	none
+11.5 TFLOPS.				none	none
+Spatial delays				none	none
+corresponding				none	none
+16 cm2 cortex				none	none
+surface."				none	none
+Markram	2006	https://www.nature.com/articles/nrn1848	Rat													"Morphologically				none	none
+complex				none	none
+compartment				none	none
+models"		104		108				"BlueGene/L,				none	none
+4096 nodes,				none	none
+8192 cpus,				none	none
+peak				none	none
+performances				none	none
+22.4 TFLOPS"		"Not				none	none
+documented?"				none	none
+Johansson and Lansner	2007	https://direct.mit.edu/neco/article/19/7/1871/7203/Imposing-Biological-Constraints-onto-an-Abstract	Mammalian													BCPNN spiking, minicolumns hypercolumns		1.6 million		200 billion				256 node, 512 processors, Dell Xeon cluster, 3.4GHz 8 Gb memory, peak performance 13.6 Gflop	9% real-time = 11.1				none	none
+Kozlov, Lansner et al.	2007	https://link.springer.com/article/10.1007/s00422-006-0132-2	Lamprey													5 compartment model		900		10% per hemisegment		100 µs		SPLIT				none	none
+Plesser, Eppler et al.	2007	https://link.springer.com/chapter/10.1007/978-3-540-74466-5_71	Silicon		2	2	3	3	3	0	3	0	3			Integrate-and fire		12500		1.56*107		0.1 ms		"Sun X4100				none	none
+cluster,				none	none
+2.4Ghz AMD				none	none
+Opteron,				none	none
+8GB ram,				none	none
+MPI, NEST"	2	"Supralinear				none	none
+scaling until 80				none	none
+virtual				none	none
+processes for				none	none
+105 neuron/				none	none
+109				none	none
+synapses."				none	none
+Chelaru & Dragoi	2008	https://www.pnas.org/doi/10.1073/pnas.0807744105	Cat													Integrate-and-fire network modeling	Detailed Biophysical	1,008 excitatory, 252 inhibitory neurons		~1,260 synapses per neuron		0.1–1 ms		Not explicitly stated	Not explicitly stated				none	none
+Djurfeldt et al.	2008	https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5388638	Rat													Hodgkin-Hucley model		22 million		11 billion		1 second		Blue Gene/L supercomputer up to 8192 processors	1205x				none	none
+Gertler et al.	2008	https://doi.org/10.1523/JNEUROSCI.2660-08.2008	Mouse		0	0	2	0	3	1	2	0	0	0		Biophysical modeling of D1 and D2 medium spiny neurons	Detailed Biophysical	Single-neuron models		~500 per neuron		Not specified		NEURON simulation	Not specified				none	none
+Anonymous	2024	https://openreview.net/forum?id=oCHsDpyawq	Zebrafish		0	2	0	0	1	0	1	0	0	0				none	none
+Wang	2023	https://www.biorxiv.org/content/10.1101/2023.03.21.533548v1	Mouse		1	1	0	0	1	0	1	0	0	0				none	none
+Huang	2019	https://doi.org/10.3389/fninf.2018.00099	Drosophila		2	1	2	1	2	0	2	0	0	0				none	none
+Higuchi	2022	https://doi.org/10.1101/2022.11.01.512969	Drosophila		2	1	2	2	3	1	2	1	0	1				none	none
+Izhikevich & Edelman	2008	https://www.pnas.org/doi/full/10.1073/pnas.0712231105	Mammalian													Large-scale model of mammalian thalamocortical systems	LIF	~1 million multicompartments		~0.5 billion		Sub-millisecond		Beowulf cluster (60 × 3 GHz CPUs, 1.5 GB RAM each), C/MPI for implementation	~1 min for 1 simulated second	Modeled cortical and thalamic dynamics, integrating spiking neuron models, synaptic plasticity, and functional connectivity.				none	none
+Burak & Fiete	2009	https://doi.org/10.1371/journal.pcbi.1000291	Rat													Rate-Based Neurons	Detailed Biophysical	~16,384 neurons (128² network)		Sparse connectivity		0.5 ms		Custom simulations implemented in MATLAB	Simulations performed for up to 20 minutes of biological time	Continuous attractor models of grid cell path integration				none	none
+Ghosh-Dastidar & Adeli	2009	https://doi.org/10.1016/j.neunet.2009.04.003	Generic													Multi-Spiking Neural Network	ML	~37		4 synapses/neuron		1 ms		MATLAB and XPPAUT	Simulation times are problem-dependent (e.g., 25–35 ms per run)				none	none
+Jin	2009	https://www.pnas.org/doi/10.1073/pnas.0909881106	Macaque													Population coding and perceptron modeling of time in cortico-basal ganglia circuits	LIF	5,699 neurons (DLPFC: 2,496; CN: 3,203)		Not stated		10 ms		MATLAB	Not stated				none	none
+Taylor et al.	2009	https://doi.org/10.1523/JNEUROSCI.4438-08.2009	Crab													Hodgkin-Huxley-based multicompartment LP neuron model	Detailed Biophysical	~600,000		3 synaptic currents		25 µs		NEURON simulator, MATLAB	Not explicitly stated				none	none
+Long et al.	2010	https://doi.org/10.1038/nature09514	Songbird													Synaptic chain model of sequential neuronal bursts in songbird HVC		2100		~300 interneurons for inhibition		0.1 ms		MATLAB simulations	Not explicitly stated				none	none
+Schemmel et al.	2010	https://ieeexplore.ieee.org/document/5536970	Silicon		3	0	2	2	2	3	3	0	2			Exponential integrate-and-fire neuron models		180000		40 million				Very large analog neuromorphic hardware system developed within FACETS, neural system description language PyNN	1000-100000 times faster than biological time				none	none
+Silver	2010	https://doi.org/10.1038/nrn2864	Unkown													Biophysically detailed model of synaptic integration:  Leaky Integrate-and-Fire as well as  Hodgkin-Huxley-Based	Detailed Biophysical	Single neuron models (~10 neurons for different scenarios)		~10-100		10-100 µs		NEURON software; standard multi-core workstation (unspecified)	Not stated	Focused on input-output transformation				none	none
+Yu, Cauwenberghs	2010	https://ieeexplore.ieee.org/document/5471736	Silicon		2	0	3	2	2	2	2	3	3			Hodgkin-Huxley neural dynamics in 3 channel variables, each with 16 variables, and 12 synaptic variables		4		12				Programmable analog VLSI chip (NeuroDyn), 0.5 CMOS chip	Variable speed output exceeding real time				none	none
+Marder & Taylor	2011	https://doi.org/10.1038/nn.2735	Lobster													Hodgkin-Huxley		~20M		Not specified		Variable		Computational clusters for large-scale modeling	Variable	Population-based conductance models for neuronal variability				none	none
+Simen et al.	2011	https://doi.org/10.1523/JNEUROSCI.3121-10.2011	Mammalian													Non-homogeneous Poisson Neurons		Not specified		Not specified		Microseconds		MATLAB for drift-diffusion and Poisson process simulation	Not specified	Focused on interval timing using stochastic neural integration with predictions about behavior and timing skewness.				none	none
+Preissl	2012	https://www.researchgate.net/profile/Horst-Simon/publication/260869600_Compass_A_scalable_simulator_for_an_architecture_for_cognitive_computing/links/54b928530cf269d8cbf73438/Compass-A-scalable-simulator-for-an-architecture-for-cognitive-computing.pdf	Macaque														LIF	65B		16T		388x slower				none	none
+Bekolay et al.	2014	https://doi.org/10.3389/fninf.2013.00048	Silicon		2	3	1	1	2	0	0	0	1			Leaky Integrate-and-Fire		2.5M		Sparse connectivity based on NEF principles		1 ms		Nengo 2.0 (Python); GPU acceleration with OpenCL; commodity GPUs (Radeon 7970) and CPUs	real-time or faster for Spaun on GPU	Large-scale functional brain modeling with the NEF and Nengo				none	none
+Merolla et al.	2014	https://www.science.org/doi/10.1126/science.1254642	Silicon		1	3	0	0	3	3	0	2	0			Self-contained neural network with 256-by-256 directed, programmable synaptic connections		1 million		256 million				Self contained neuromorphic hardware	1x				none	none
+Potjans et al.	2014	https://academic.oup.com/cercor/article/24/3/785/398560	Mammalian													Leaky integrate-and-fire	LIF	80000		300 million				NEST simulation tool and a compute cluster with 24 nodes each equipped with 2 quad core AMD Opteron 2834 processors and interconnected by a 24-port Voltaire InfiniBand switch ISR9024D-M	"~1x				none	none
+(close to real time)"				none	none
+Sharp et al.	2014	https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2014.00131/epub?isPublishedV2=false	Rat													Leaky integrate-and-fire model	LIF	50000 neurons		50 million synapses				PyNN modeling language, 200 processors on 13 chips				none	none
+Markram et al.	2015	https://www.cell.com/fulltext/S0092-8674(15)01191-5	Rat													Hodgkin-Huxley-based	Detailed Biophysical	~31,000 neurons (6 layers of juvenile rat somatosensory cortex)		~37 million		0.025 ms		BlueGene/L, 4096 nodes, 8192 cpus, peak performances 22.4 TFLOPS	Variable, dependent on network state	Validated against in vitro and in vivo experiments. Digital reconstruction and simulation of neocortical microcircuitry				none	none
+Joglekar	2018	https://doi.org/10.1016/j.neuron.2018.02.031	Macaque														LIF				none	none
+Verhulst et al.	2018	https://www.sciencedirect.com/science/article/pii/S0378595517303477?via%3Dihub	Human	Hearing system only	1	1	1	1	1	0	2	0	0	1		A biophysical model of inner hair cell (IHC) transduction	Detailed Biophysical	20000		N/A (cochlear stage simulated)		~1 ms		MATLAB for computational implementation	Not explicitly stated				none	none
+Schmidt et al.	2018	https://doi.org/10.1007/s00429-017-1554-4	Macaque													Leaky Integrate-and-Fire	Detailed Biophysical	~2 million per hemisphere (density varies by region)		~9800 synapses per neuron on average		1 ms		Custom computational framework based on CoCoMac database, MATLAB, and Python	Variable				none	none
+Yamazaki et al.	2021	https://doi.org/10.1016/j.neuroscience.2021.01.014	Human		1	2	2	0	2	0	2	0	0	0		Leaky Integrate-and-Fire	LIF	68 billion		5.4 trillion		Not specified		K computer (82,944 CPUs), MONET simulator	1 min simulated in 10 hours	Resting state activity, benchmark for supercomputer capability, models human-scale cerebellum				none	none
+Zerlaut et al.	2018	https://doi.org/10.1007/s10827-017-0668-2	Macaque													Mean-field model of neocortical dynamics using AdEx integrate-and-fire neurons		10000		Randomly connected (5% probability)		0.1 ms		Simulated using Brian2 in Python;	Not explicitly stated				none	none
+Rodarie	2022	https://infoscience.epfl.ch/record/297317	Mouse		2	1	2	1	2	0	2	1	0	0			Detailed Biophysical				none	none
+Igarashi	2019	https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2019.00071/full	mouse		2	2	2	0	2	0	2	0	0	0			LIF	6.04 Billion		24.5 Trillion		350x slower		MONET (Millefeuille-like Organization NEural neTwork simulator)				none	none
+Rhodes et al.	2019	https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0160	Generic													Single-compartment leaky integrate-and-fire unit, with current-based exponentially decaying synapses	LIF	77000		300 million		10 seconds, 12 hours		"Heterogenous parallelization scheme and SpiNNaker neuormorphic hardware				none	none
+PyNN modeling language"	1x				none	none
+Billeh	2020	https://www.cell.com/neuron/fulltext/S0896-6273(20)30067-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627320300672%3Fshowall%3Dtrue	Mouse		2	1	2	0	3	0	2	1	0	0			Detailed Biophysical				none	none
+Gordleeva et al.	2021	https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2021.631485/full	Generic													Spiking Neuron Network with Astrocytes (Izhikevich model)	LIF	6,241		Random synapses (40 per neuron)		0.1 ms		Custom software, Izhikevich neuron models; Runge-Kutta integration	Not specified				none	none
+Liu	2024	https://doi.org/10.1101/2024.12.19.629427	Zebrafish		2	1	2	0	1	0	2	2	0	0				none	none
+Lu	2024	https://doi.org/10.1038/s43588-024-00731-3	Human		1	2	1	0	2	0	2	1	0	0			LIF	86B		47.8T		80x slower		Custom code in PyTorch				none	none
+Cowley	2024	https://www.nature.com/articles/s41586-024-07451-8	Drosophila		2	0	2	0	1	0	1	2	0	0				none	none
+Yang et al.	2022	https://doi.org/10.1109/TNNLS.2020.3045492	Silicon		3	3	0	0	1	0	3	1	0			Multiple models: Leaky Integrate-and-Fire,  Izhikevich Model and  Hodgkin-Huxley		4 million		Dense and multigranular connectivity		1 ms		BiCoSS platform with 35 Intel Cyclone IV FPGA chips, BFT-based topology	Real-time (high computational efficiency)				none	none
+Gambosi et al.	2024	https://www.worldscientific.com/doi/10.1142/S012906572450045X	Mouse		2	1	2	2	2	1	2	2	0	1		Multiscale spiking neural network model of BG and cerebellum	LIF	96,767		4,151,182		Not explicitly stated		NEST Simulator	Variable based on resolution (1–10 ms)	Explores dopamine depletion in BG and cerebellum to simulate Parkinsonian beta oscillations and motor learning deficits.				none	none
+Kim et al.	2019	https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2019.00008/full	C. elegans		3	2	2	0	1	0	2	1	0	0		Graded potential neuron model	Detailed Biophysical	302		279 gap, 639 chemical synapses		Not explicitly stated		Python, Neural Interactome framework, Flask-SocketIO	10 ms simulation, 100 ms visualization	Simulates C. elegans neuronal dynamics with real-time user interaction and dynamic neural ablation.				none	none
+Simeon et al.	2024	https://www.biorxiv.org/content/biorxiv/early/2024/03/06/2024.02.13.580186.full.pdf	C. elegans		3	3	0	0	1	0	1	0	0	0		ANN-based neural activity prediction in C	ML	302		Not explicitly stated		0.667s		Python, NVIDIA A100 GPUs	Not explicitly stated	Investigates the scaling properties of ANN models for predicting neural activity dynamics				none	none
+Sarma	2018	https://pubmed.ncbi.nlm.nih.gov/30201845/	C. elegans		3	3	3	0	3	1	2	2	0	0				none	none
+Lappalainen et al.	2024	https://www.nature.com/articles/s41586-024-07939-3	Drosophila		3	1	2	0	1	0	1	1	0	0		Connectome-constrained task-optimized DMNs	LIF	45,669		1,513,231		Not specified		PyTorch	Not explicitly stated	Modeled fruit fly visual motion pathways				none	none
+Shiu et al.	2024	https://www.nature.com/articles/s41586-024-07763-9	Drosophila		3	2	1	0	2	0	2	1	0	0		Leaky Integrate-and-Fire	LIF	125,000		50 million		Not specified		Brian2 simulator, Python	Not explicitly stated	Models the entire adult Drosophila brain				none	none
+Zhao	2024	https://www.nature.com/articles/s43588-024-00738-w	C. elegans		3	1	3	0	3	0	2	2	0	0				none	none
+Romani et al.	2024	https://www.biorxiv.org/content/10.1101/2023.05.17.541167v2.full	Rat													Electrical features (e-features) which were used in combination with curated morphologies to produce and validate 36 single-cell e-models	Detailed Biophysical	456380		821 million				Electrophysiological Feature Extraction Library or the Blue Brain Python E-feature extraction, Blue Brain python optimization library				none	none
+Frye, Ananthanarayanan et al.	2007	https://modha.org/2007/02/towards-real-time-mouse-scale-cortical-simulations/	Mouse		-	-	-	-	-	-	-	-	-	-		Low complexity spiking like Izhikevich neurons, STDP synapses	LIF	8 million		50.4 billion		1 ms		4096 processor BlueGene/L 256 Mb per CPU	10				none	none
+Pronold	2024	https://academic.oup.com/cercor/article/34/10/bhae409/7826014	Human		1	1	1	0	2	0	2	0	0	0			LIF	3M				none	none
+Schepper et al.	2022	https://www.nature.com/articles/s42003-022-04213-y	Mouse		2	0	2	2	3	0	2	2	0	0		Integrate-and-fire point neurons, cerebellar network scaffold; single compartment no short-term plasticity	Detailed Biophysical	29230 neurons		1.5 million chemical synapses, 2100 electrical synapses				NEURON simulation environment				none	none
+Jiang	2024	https://academic.oup.com/cercor/article/34/9/bhae378/7779257	Mouse		2	0	2	1	2	0	2	1	0	0			LIF									qualifies for level 1 for plasticity				none	none
+Vishwanathan	2024	https://www.nature.com/articles/s41593-024-01784-3	Zebrafish		3	1	2	0	1	0	1	2	0	0				none	none
+Traub	2005	https://journals.physiology.org/doi/full/10.1152/jn.00983.2004	Rat													"14 cell types,				none	none
+conductance and				none	none
+compartment				none	none
+model"		3560		"3,500 gap				none	none
+junctions,				none	none
+1,122,520				none	none
+synapses"		Event-driven		"Cray XT3 2.4				none	none
+Ghz, 800				none	none
+CPUs"	200?	"5954-8516				none	none
+equations/CPU				none	none
+Gives #				none	none
+compartments"				none	none
+Park et al.	2017	https://ieeexplore.ieee.org/document/7526444	Silicon		0	0	0	1	0	0	0	1	3			"Integrate and-fire neuron with conductance-like synapses				none	none
+Analog integrate-and-fire array transceivers"		262000		262 million				Five Xilinx Spartan-6 field-programmable gate arrays and four custom analog neuromophic integrated circuits and HiAER protocol				none	none
+Vogelstein	2007	https://direct.mit.edu/neco/article-abstract/19/9/2281/7259/A-Multichip-Neuromorphic-System-for-Spike-Based?redirectedFrom=fulltext	Silicon															4800		4.2 million				VLSI system 80 × 60 pixel neuromorphic retina				none	none
+Anton		checking the work from the lab of Xiao-Jing Wang				none	none
+Anton		Vish 24				none	none
+Anton		https://academic.oup.com/cercor/article/34/9/bhae378/7779257?login=false				none	none
+Anton		https://www.nature.com/articles/s41586-024-07982-0				none	none
+Anton	Remove	Dumoulin & Wandell, 2008 – that is not a simulation paper, is it? I think they are just analyzing experimental data there.				none	none
+Anton	Remove	Lytton, 2008 – wrong link. And which paper are you thinking about here? Is it this one? That is a review article, and not original research. Does it really have results from a simulation of a piece of human brain that gets such high scores on the various aspects in your table?				none	none
+Anton	Probably Remove	Kasabov, 2014 – wrong link. Is it this paper? Where does it do a simulation of a piece of human brain?				none	none
+Anton	Auditory still brain?	Verhulst et al., 2018 – wrong link. Is it this paper? But it seems to be simulating auditory processing outside of the brain proper.				none	none
+Anton	Corrected	Pronold et al, 2024 – if I recall correctly, they simulate 3.5 million neurons, which is 0.004% of neurons in the human brain. That is minuscule compared to what Yamazaki et al. and Lu et al. did (complete or near-complete coverage of all the brain’s neurons), and yet the “Percentage of Neurons” are scored at 2 for all these papers. It certainly should be 1 for Pronold et al.				none	none
+Anton		On a similar note, “Connectivity Accuracy” is scored at 2 for all human papers except the first two. However, the connectivity accuracy of all these studies is, of course, by far less than what we did for the mouse in Billeh et al. (these data are simply not available for human), and yet the score is the same. I would recommend lowering it for all the human papers. And it’s probably best to do the same for Functional Accuracy too!				none	none
+Anton	Deep dive	And at least some of the mouse papers are not simulation papers. I think I left some detailed comments on that previously, maybe in an earlier version of the doc or in the poster? Please try to find them – I remember looking carefully into these papers and finding some issues that needed to be addressed. One example that I do remember is that Rodarie et al. is not a simulation paper.				none	none
+Izhikevich and Edelman	2008	https://doi.org/10.1073/pnas.0712231105	Human		1	1	1			0		0	0	0				none	none
+Kunkel	2014	https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2014.00078/full	Human	TODO				none	none

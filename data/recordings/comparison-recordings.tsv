@@ -1,24 +1,22 @@
-Categories	Unnamed: 1	Unnamed: 2	Unnamed: 3	Unnamed: 4	Unnamed: 5	Unnamed: 6
-Resolution	> Millions of Cells
-Resolution	10s of thousands of Cells
-Resolution	100s of Cells
-Resolution	Single Cell
-Speed	1 Hz
-Speed	10Hz
-Speed	100Hz
-Speed	1000Hz
-Duration single session	Seconds
-Duration single session	Minutes
-Duration single session	Hours
-Duration single session	Days
-Total Volume Imaged	1 µm
-Total Volume Imaged	1 mm
-Total Volume Imaged	1 cm
-Total Volume Imaged	1 liter
-
-
-	EEG	fMRI	fUS	Calcium Imaging	Voltage Imaging	MEA
-Resolution	1	2	3	4	4	4
-Speed	4	1	3	2	3.25	4
-Duration	3	3	4	2	1.5	4
-Volume	3.5	4	3	2	1.75	1.5
+Categories	Unnamed: 1	Unnamed: 2	Unnamed: 3	Unnamed: 4	Unnamed: 5	Unnamed: 6	ref_id	supporting_refs	ref_note	confidence	validated_by
+Resolution	> Millions of Cells				none	none
+Resolution	10s of thousands of Cells				none	none
+Resolution	100s of Cells				none	none
+Resolution	Single Cell				none	none
+Speed	1 Hz				none	none
+Speed	10Hz				none	none
+Speed	100Hz				none	none
+Speed	1000Hz				none	none
+Duration single session	Seconds				none	none
+Duration single session	Minutes				none	none
+Duration single session	Hours				none	none
+Duration single session	Days				none	none
+Total Volume Imaged	1 µm				none	none
+Total Volume Imaged	1 mm				none	none
+Total Volume Imaged	1 cm				none	none
+Total Volume Imaged	1 liter				none	none
+	EEG	fMRI	fUS	Calcium Imaging	Voltage Imaging	MEA				none	none
+Resolution	1	2	3	4	4	4				none	none
+Speed	4	1	3	2	3.25	4				none	none
+Duration	3	3	4	2	1.5	4				none	none
+Volume	3.5	4	3	2	1.75	1.5				none	none

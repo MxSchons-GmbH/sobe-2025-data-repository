@@ -1,7 +1,7 @@
-id	name	compute_pflops	unit	description	source
-c_elegans	C. elegans	0.003	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis
-drosophila	Drosophila	0.195	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis
-zebrafish_larva	Zebrafish (larva)	0.1	PFLOPS	Real-time brain emulation compute requirement	Estimated
-mouse	Mouse	10.0	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis
-macaque	Macaque	200.0	PFLOPS	Real-time brain emulation compute requirement	Estimated
-human	Human	2000.0	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis
+id	name	compute_pflops	unit	description	source	ref_id	supporting_refs	ref_note	confidence	validated_by
+c_elegans	C. elegans	0.003	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis				none	none
+drosophila	Drosophila	0.195	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis				none	none
+zebrafish_larva	Zebrafish (larva)	0.1	PFLOPS	Real-time brain emulation compute requirement	Estimated				none	none
+mouse	Mouse	10.0	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis				none	none
+macaque	Macaque	200.0	PFLOPS	Real-time brain emulation compute requirement	Estimated				none	none
+human	Human	2000.0	PFLOPS	Real-time brain emulation compute requirement	Computational demands analysis				none	none
