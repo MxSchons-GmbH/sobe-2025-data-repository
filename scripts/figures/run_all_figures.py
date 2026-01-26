@@ -278,9 +278,12 @@ def generate_gpu_memory_brain_emulation():
     gpu_df['is_flagship'] = gpu_df.apply(is_flagship, axis=1)
     flagship_df = gpu_df[gpu_df['is_flagship']].copy()
 
-    # Get storage requirements (convert TB to GB for comparison)
+    # Convert GPU memory from GB to bytes for plotting
+    flagship_df['memory_bytes'] = flagship_df['memory_size_gb'] * 1e9
+
+    # Get storage requirements (convert TB to bytes)
     species_storage_tb = get_storage_requirements()
-    species_storage_gb = {k: v * 1000 for k, v in species_storage_tb.items()}
+    species_storage_bytes = {k: v * 1e12 for k, v in species_storage_tb.items()}
 
     fig, ax = plt.subplots(figsize=(12, 6))
 
@@ -292,23 +295,42 @@ def generate_gpu_memory_brain_emulation():
         if mfr in mfr_colors:
             mfr_df = flagship_df[flagship_df['manufacturer'] == mfr]
             ax.scatter(
-                mfr_df['year'], mfr_df['memory_size_gb'],
+                mfr_df['year'], mfr_df['memory_bytes'],
                 label=mfr, color=mfr_colors[mfr], s=40, alpha=0.6
             )
 
     # Add organism reference lines for memory requirements
-    for name, mem_gb in species_storage_gb.items():
-        ax.axhline(y=mem_gb, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
+    for name, mem_bytes in species_storage_bytes.items():
+        ax.axhline(y=mem_bytes, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
         ax.text(
-            2030 + 0.5, mem_gb, f' {name}',
+            2030 + 0.5, mem_bytes, f' {name}',
             va='center', fontsize=FONT_SIZES['annotation'] - 1,
             color=COLORS['caption'], clip_on=False
         )
 
     ax.set_yscale('log')
     ax.set_xlim(1995, 2030)
-    ax.set_ylim(0.01, 1e7)  # 10 MB to 10 PB range
-    ax.set_ylabel('Single GPU Memory (GB)')
+    ax.set_ylim(1e7, 1e19)  # 10 MB to 10 EB range
+
+    # Custom formatter for bytes with SI prefixes
+    def bytes_formatter(x, pos):
+        if x >= 1e18:
+            return f'{x/1e18:.0f} EB'
+        elif x >= 1e15:
+            return f'{x/1e15:.0f} PB'
+        elif x >= 1e12:
+            return f'{x/1e12:.0f} TB'
+        elif x >= 1e9:
+            return f'{x/1e9:.0f} GB'
+        elif x >= 1e6:
+            return f'{x/1e6:.0f} MB'
+        else:
+            return f'{x:.0f} B'
+
+    from matplotlib.ticker import FuncFormatter
+    ax.yaxis.set_major_formatter(FuncFormatter(bytes_formatter))
+
+    ax.set_ylabel('Single GPU Memory')
     ax.set_xlabel(None)
     ax.set_title('Single GPU Memory vs Brain Emulation Requirements')
     ax.legend(frameon=True, loc='upper left')
