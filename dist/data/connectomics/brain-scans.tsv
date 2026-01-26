@@ -1,334 +1,318 @@
-First Author	Year	Organism	Organism (cleaned)	Dataset name	Volume(as quoted)	Volume (μm³)	Volume (claude)	Resolution (nm)	Resolution (claude)	Dataset Size (TB)	Dataset Size (Claude)	Acquisition Time (days)	Scanning Costs ($)	Method	Method (claude)	Completion %	References	Notes
-Antonio Jimenez-Marin	2024	Human	Human	LEMON						n/a (given 40,000 healthy individuals)		not given	not given	fMRI, diffusion MRI	Tractography	not given	https://www.nature.com/articles/s41597-024-03060-2#Sec8
-Zing	2024	Mouse	Mouse	ALCEM	1 mm³	1x10⁹	1000000000.0	4 x 4 x 40	8000.0	2,500	2.5	200	6,000,000	ATUM-SEM	Electron Microscopy	100%	https://pmc.ncbi.nlm.nih.gov/articles/PMC10054929/ 	"Using the MICrONS dataset, this study reveals a universal ""like-to-like"" connectivity rule in the mouse visual cortex, where neurons
-with similar features preferentially connect. These principles, mirrored in artificial networks, highlight their role in sensory processing and learning."
-Nanfang Pan	2024	Human (College students)	Human	"Behavioral and neuroimaging data collected pre-pandemic and
-during the pandemic from a cohort of university students"				"Spatial: 3.0 Tesla fMRI with
-~2 mm³ voxel size;
-Temporal: TR = 2s"	2.0	not mentioned		"Neuroimaging data collected over multiple sessions pre-pandemic
-(October 2019–January 2020) and follow-up assessments during
-March–April 2021"	not given	"Resting-state functional MRI (rs-fMRI), Regularized Canonical Correlation Analysis
-(rCCA), nested cross-validation, machine learning pipeline (linear SVM)"	Neuronal Circuit Mapping	100%	https://www.nature.com/articles/s41398-024-02741-1 	"The study highlights functional connectivity patterns predictive of stress and anxiety during the COVID-19
-pandemic and suggests implications for targeted psychological interventions."
-Qiang Ma	2024	Human (Neonates)	Human	Developing Human Connectome Project (dHCP)	"Not explicitly quoted;
-dataset contains 879 neonatal brain scans"	"Not explicitly calculated;
-dataset includes the entire neonatal brain
-at isotropic 0.5mm3 resolution"		500,000nm3	500000.0	2-3 TB per cohort for neuroimaging data	2.5	"DL-based pipeline ~24 seconds per scan;
-original pipeline - 6.5 hours per scan"	"not specified
-(mentions high cost)"	"Deep Learning-based cortical surface reconstruction using GPU acceleration
-and multi-scale deformation networks"	Neuronal Circuit Mapping	90%	https://arxiv.org/pdf/2405.08783v2 	"The study introduced a GPU-accelerated pipeline for reconstructing neonatal brain surfaces, achieving 995x speed improvements
-over the original method with superior accuracy."
-Beets Isabel	2023	Caenorhabditis elegans	C. elegans	Peptide-GPCR Interaction Dataset	not given 	not applicable		not applicable		not given( includes sample size 55,384 peptide-GPCR pairs)		not given	not given	Reverse pharmacology, calcium mobilization assays	Cellular Imaging	87%	https://doi.org/10.1016/j.celrep.2023.113058	"Identified 461 peptide-GPCR pairs using a comprehensive screening of synthetic peptides. Found evolutionary conservation of 14 bilaterian
-peptidergic systems in C. elegans."
-Haocheng Dai,	2023	Human	Human	DWI dataset	not specified			DWI voxel scale (~1–2 mm³)		not specified		not applicable used earlier dataset of HCP	not given	"Diffusion-weighted imaging (DWI), geodesic tractography, Riemannian
-manifold modeling, CEDNN"	Tractography	100%	https://arxiv.org/pdf/2203.06122 	"Demonstrates the utility of convolutional encoder-decoder neural networks (CEDNN) for brain connectome modelling
-and improved alignment of fiber tracts."
-Shang Mu	2023	Mouse	Mouse	e2198 Dataset	0.3mm² ×23μm	103,500μm³ 	103500.0	16.5×16.5×23nm	19.33	approx 2-3 TB	2.5	several months	not specified	"Serial Block-Face Electron Microscopy (SBFSEM), automated and manual
-segmentation using Eyewire, convolutional neural network-based reconstruction"	Electron Microscopy	"Partial -199 starburst cells reconstructed
-and analyzed, but dataset boundary and
-incomplete nuclear layer reconstruction
-limit full completion"	"https://www.frontiersin.org/journals/ophthalmology/articles/10.3389
-/fopht.2023.1129463/full "	"The study identified novel perisomatic contacts between starburst amacrine cells, challenging prior assumptions about their
-stratification and connectivity."
-Fabian Svara	2022	Lavaral Zebrafish	Zebrafish	EM dataset of larval zebrafish brain	0.058 mm³ (approx)	58,000	58000.0	14 × 14 × 25 nm³	14.333333333333334	12.5	12.5	66	not given	Serial block-face scanning EM (SEBM)	Electron Microscopy	high accuracy mentioned	doi: 10.1038/s41592-022-01621-0	"Dense synaptic connectivity reconstruction using SBEM, paired with 2P calcium imaging. Synapse-level analysis was validated by
-SyConn, and a digital neuron address book was created for circuit mapping."
-Dorkenwald	2022	Mouse	Mouse	not specific	not mentioned			250 × 140 × 90 μm	148000.0	not given (it mentions that it's a big dataset)			1,000,000	Serial Section Electron Microscopy, Automated Image Analysis, Statistical Modeling	Electron Microscopy	not mentioned	https://pubmed.ncbi.nlm.nih.gov/36382887/ 	"This study maps L2/3 pyramidal cell connectivity in the mouse visual cortex using electron microscopy, revealing synapse size as a combination of
-binary and analogue variables. Binary variation aligns with uniform activity-dependent plasticity, while analogue variation reflects spontaneous
-fluctuations, supporting the hypothesis of bistable synaptic states in learning."
-Joan Rué-Queralt	2022	Human	Human	VEPCON Dataset	" 1,130 cm3 (estimated but not
-specified in the paper)"			"not specified (high-resolution
-stated)"		not mentioned		not mentioned	not specified	"Compressed sensing, connectome spectrum-based tomographic
-reconstruction of EEG sources; integration of fMRI, diffusion MRI,
-and graph signal processing"	Neuronal Circuit Mapping	100%	https://www.biorxiv.org/content/10.1101/2022.07.26.501544v1.full 	The study introduced Connectome Spectrum Electromagnetic Tomography (CSET) to enhance EEG source reconstruction by leveraging sparse representations of brain connectivity.
-Zhihui Yang	2021	Rats (Sprague–Dawley)	Rat	not mentioned	not specified			"fMRI spatial resolution 0.9 mm
-slice thickness (approx)
-functional resolution TR = 2s"	900000.0	just specifies a lower TB range of data	1.0	Longitudinal study with imaging at 2 days and 30 days post-injury	"$50,000–$150,000
-(approx)"	"Resting-state functional MRI (11.1 T), graph theory-based connectivity analysis,
-modularity analysis, Pearson correlation matrices"	Neuronal Circuit Mapping	100%	https://watermark.silverchair.com/fcab244.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA2QwggNgBgkqhkiG9w0BBwagggNRMIIDTQIBADCCA0YGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMue-7EFvGCFVGoHsHAgEQgIIDF1CdEKe95LG4pOVFNF5gErh4iv2BNpXhKAklW6lTS12BGqCCWlM_8kejdaIs7Lv0mpPI0EfldNqNw3S20AKLgs5yDtJ2x7l2-v03O6M7o2J44HMx-HgBNEnrUNI5XQk7OS-B0Abx7HsfrwyUCCFxEpxzUpw3_QS_NTl9_uN-aLIaYRqF3EhqPoapRGG52l04oxLmVPpXsuHjh7kILbDtLzXLHOZmZGZtKxAoQYYdKSorgj48YdcTmXO2tL0dQr6Jj5bOixucCSJxX94mlblCDo9BcLapTMnXINC3_9hyaY-oT0NsONvQ8GHxrTgFe6nAhNrZxgHPdIvcB6ZZAhuEl62XMFlFYxyBMUCryqr0uhHL3vSpPrW7Bs-7SFb7NkGBFCHkrZPLHIUq4eCLLwpoK5s4uHnnMIYhjy5xO83wq2f_yzKZLZ6G4qDU2vsXcELZrdlgqQf4KpeR9knl42W3zre9oEWQNoWxMB13f-r4XaniVSMSLKbp7SQ3W10FtxYhMOIiSSRw4wyQUKaPAoYLGU39i2WjHAerYyHLn3xQJyFMByc6BO1P1ilLa70rawAyV7mSeg4ld40bJiALO9jxw2nq4JFz22PWBWo2zHJIywm-wAqoXrKEydxk6Pall_wflz8DwbWX5COoLIKv3pmlyXRr-tR8lY8-DUw98s2C6MRfakk9rFMMLyXIl-Sct0biMEd02M4ep9xPCaSMGfiHF76IukrDZqiji5xLdxytRRAgv8tJ8aPq4NjURz6iaPOljHgFeVhU9sGRMddacrPF1kP5YG7JPkfZnL-4kLmHpVbO46qRqBhji0zU8m8x5Azk86S00t-Mop03UCoQWrXcA5c3STUyun4w7j9lfeJ1ISNBCjgzh6dxktWBantTXl91-kiFHBbFMSiUjrQzi4onxrAzet8Ve8akRwHF-dWGi2nrg_ahqDNdf_CS-ROPa957KGnrediF_7vmwQf2TQtGKOlO3_vpatE-5Pr7EgnKHf7RodY9NJCqpMQSvq-8L4efqMJk4JED62EX9isyqYlaf9wHoWNj4vkZ 	"The study demonstrates compensatory functional connectivity reorganization in response to controlled cortical impact. Graph-theory metrics
-were used to analyze connectivity patterns and recovery trends post-TBI."
-Sina Mansour	2021	Human	Human	Human Connectome Project (HCP)	not specified			1.25 mm 	1250.0	30TB	30.0	18–343 days for retest sessions; original acquisition took years	not specified	"Structural, functional, and diffusion-weighted MRI; probabilistic tractography;
-sparse matrix representations; high-resolution cortical maps and connectome computation"	Tractography	100%	https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811921X0002X/1-s2.0-S1053811920311800/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJHMEUCIQDVDNRk3JgBr59wMY8W4QelQrZY%2FKTuyPcj9UHGYeTxDQIgCDUhd%2Bthwpu6o1o3A%2Fe%2FXa0nzrjlkym3%2BNZLpmmI1%2BYqvAUI1f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDB4EQ9Rl%2B%2F%2FcUcjbSSqQBcBstVSuNMZ0IgccKTLYeXuae7zpFQKTKjCas8D8W1Z9xT8mA0B%2B891y7%2FQcyxuJEPaiFGMOJT4LcCsKlxgDRSUre59fhIP0oWMZjTI2jHd9JFLQW0AndQaFhgFloF1JWEyZ8zSgXn7M9w387YI3xTDh6SdSZQUTOVHNN6MGC%2BVmqcT6o%2F%2BPt9TL%2FwJRmRu4Lz3Uqrtm7fARWtqRWLTNpZ3aC9Yj86kXXS9wmL0ua9HqR0MAl4o8mPIdRTscFmhvuz66soEYn9nmWMg6LE9zBslwHphlRohtNFjShaO3YhTbp64eQTU0%2FW1G8cPwT4bvvcY%2FXCbNH%2Fvkidhrtwl7TGgTF4EfIo%2Fppd9tQvewh5kojtYKXZ7HGaXmztCB%2BWmfF58oqTo3Ta%2FS%2BNS8qzO%2BshUn9CPzPND2KoLbuGqmPdHK1BcTw%2FDPfOImKra4VFiRkKxK9teng8RYjbf5Lh4lAWxayFh6D%2F8WfIyhlEaWvQ0O5jUc5lpJD5qd0kNx98aA9zq5Nlsrje8G1VzMMEVq5OXl7H8AxhOGPfM0YCP%2BI2MBHj1v4VVliwsQLEH9dkHCP%2FRhazVP%2FsaamQPcVnDcrCMMCBidX4NvQ1ttz8biDZ9r0ajdTkzWEYiIGaicflmkYsjQeO6izB%2Bj4ssRMXH00vbIwpqF9foYK%2FGhPG2zcaegkWSOTME8qJrtWM23c3r7%2BF1247WU7JNaCTM1vNxYCyV3NQC6KI2hJJfNl7a6VBmLQIXsBXF0C5GQh2U1UL2JK8OaqWz8QSAxedgG0pVi74Q6R8uc8iZcO2jPFwpj%2BmVQVbZ6LF1wLj5xYggP0SN%2BTDz84uTZyN5zCi1GktEp0GUcgpvUtIR0yH4xNmBk3avzMIuLh7oGOrEB%2FVJZcvMMuiQ3J4fTsXWTjT4AoT7gVFRGf%2Brl0piiuDRXUjjLzJ6M7gDz77Ah%2B9kOKQKMlrT0l3Yn%2F%2BGSABb8UC%2BmKYQpPqKAISMhn8fUghS8SeqspLEr6FBCuqpIjea7Q6xY7cuDokpZMNBHOWFwdNFq2CDY6qRr8nB32bE3kYqw2OeX8Y81U3ilXGSO4cOHa3JiKSKLzTNei0gi4xiOxwNUnGNxYZaVSgXtWTxafVUo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241123T121537Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYU36RWRTV%2F20241123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=956d79856f1b0c8b042fe4363aaec22e4f52ac4ba18cd59aae58ae0fe5cae673&hash=ed7599726d5cefac9a2b71466c8c18d43033d064f42e7bdea8a732e936e1944c&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811920311800&tid=spdf-0abda4d5-3836-4ff0-ae87-532592adf11d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a54565e5b005f06&rr=8e7115f0c8c6cd11&cc=gb	"This study developed high-resolution connectomic methods to predict behaviour and identity, emphasizing individual
-differences in cortical and connectomic properties."
-Fang Xu	2021	Rhesus Monkey (Macaca mulatta)	Rhesus Monkey	Not explicitly named; data acquired using the SMART pipeline	80.5 to 97.6 cm3	Approx. 1.5×1015μm3	1500000000000000.0	1 × 1 × 2.5 µm³ voxel resolution	1000.0	750TB	750.0	3.9 days (94 hours of imaging time)	not specified	"Serial sectioning, PuClear tissue clearing, VISoR2 fluorescence microscopy, and
-semiautomated volume reconstruction using the SMART pipeline"	Neuronal Circuit Mapping	95%	https://www.nature.com/articles/s41587-021-00986-5	"This study established a scalable workflow for mesoscale mapping of the monkey brain, revealing cortical and thalamic projection pathways.
-Significant improvements in imaging speed and dataset handling were demonstrated."
-Fred Shen	2020	Mouse	Mouse	multichannel LM dataset	590 × 404 × 160 μm3	38,137,600	38137600.0	150 × 150 × 350 nm3	250.0	not given		18		Light microscopy with immunostaining and molecular specificity	Microscopy Techniques	100%	 https://www.nature.com/articles/s41467-020-18422-8	Uses a novel multiplexed antigen detection strategy involving multiple rounds of immunostaining, imaging, and stripping
-Wei Yin et al.	2020	Human	Human		1 mm³	1,000,000,000	1000000000.0	4 x 4 x 30	12000.0	150	150.0	90	~2,000,000	FIB-SEM	Electron Microscopy	85%	https://doi.org/10.1038/s41592-020-0935-4	First large-scale human tissue study
-Eviatar Yemini	2020	Caenorhabditis elegans	C. elegans	NeuroPAL				~10 nm	10.0			not given	not given	Confocal Microscopy	Microscopy Techniques	94%	https://doi.org/10.1101/676312	"Data acquisition time not mentioned- Individual experiments involved a 2-minute waiting period, followed by a 4-minute recording.
-Additional waiting times between stimuli and preparations are mentioned."
-Ons M’Saad	2020	HeLa cells and U-2OS cells (human cell lines)	Human	pan-ExM processed datasets (referred as this but no specific name)	not applicable	not applicable		~20–30 nm	25.0			not specifically mentioned, but a few minutes per participant over a few days	not given	Confocal Microscopy,Expansion microscopy (pan-ExM), fluorescence microscopy, and STED	Microscopy Techniques	100%	DOI: 10.1038/s41467-020-17523-8	"Developed pan-ExM, enabling 13- to 21-fold expansion of samples, retaining ultrastructure while achieving nanoscale resolution.
-Process compatible with immunolabeling and fluorescent dyes."
-Scheffer L.K.	2020	Drosophila	Drosophila	not mentioned	8 × 8 × 8 nm3	"5.12×10 −7
-
- ."	5.12e-07	<10 nm	10.0	1,000,000	1.0	not specifically mentioned		FIB-SEM	Electron Microscopy	49.35	https://elifesciences.org/articles/57443#table2	"New methods, including advanced tissue preparation, high-resolution imaging, data alignment, automated segmentation,
-synapse detection, and proofreading tools, enabled the mapping of a large portion of the Drosophila melanogaster
-central brain. The publicly accessible dataset simplifies circuit analysis, linking neurons to genetic tools and offering
-insights into brain organization and evolutionary packing efficiency."
-Philip M. Hubbard	2020	Drosophila melanogaster	Drosophila	FlyEM Dataset	not explicitly stated			not mentioned (high resolution mention)		10 TB	10.0	not mentioned	not specified	"Electron microscopy (EM), semi-automated 3D segmentation,
-Neu3 software for proofreading"	Electron Microscopy	85%	https://www.biorxiv.org/content/10.1101/2020.01.17.909572v1.full 	"The study introduced Neu3, a tool combining 3D visualization and graph-based segmentation, to enhance proofreading workflows and
-scalability for large connectomic datasets."
-Louis K. Scheffer	2020	Drosophila melanogaster	Drosophila	FlyEM Connectome	Half-brain reconstruction	Approximately 100,000,000μm3	100000000.0	8 x 8 x 8 nm	8.0	20 TB raw data	20.0	Data collection and processing spanned 50+ person-years	not specified	"Serial-section electron microscopy (ssEM), automated segmentation with
-machine learning, manual proofreading"	Neuronal Circuit Mapping	95%	https://elifesciences.org/articles/62451 	"The study represents the largest and most detailed connectome reconstruction to date, revealing 25,000 neurons and 20 million synapses
- in the fruit fly's central brain."
-Longyu Ma	2019	Rats	Rat	not mentioned	not mentioned			"not specific
-but low and high both
-resolution used"		Likely in gigabytes (GB) to low terabytes (TB)	0.001	9-12 days	"Estimated in the
-range of
-$50,000–$150,000."	"Longitudinal in vivo electrophysiological recording, chemogenomics,
-optogenetics, behavioral testing, BDNF overexpression"	Neuronal Circuit Mapping	100%	https://www.cell.com/action/showPdf?pii=S2211-1247%2819%2931295-1	"Findings- Persistent spontaneous pain disrupts vCA1-IL connectivity, which can be rescued via genetic interventions (BDNF overexpression,
-chemogenetics)."
-Alessandro Motta	2019	Mouse (C57BL/6 strain)	Mouse	L4dense Dataset 	61.8μm×94.8μm×92.6μm	541084μm³ 	541084.0	11.24×11.24×28nm	15.92	194 GB raw data; post processing not specified	0.194	Approximately 30–40 days	not specified	"Serial Block-Face Electron Microscopy (SBEM); AI-driven segmentation and manual
-proofing"	Electron Microscopy	97%	https://www.science.org/doi/10.1126/science.aay3134 	Achieved the largest dense reconstruction of cortical connectomes, introducing scalable annotation strategies. Provided insights into Hebbian plasticity and connectomic cell-type definitions.
-Jerome J. Maller	2019	Human	Human	CDCP Hippocampal Connectome (CDCP-HC)	not explicitly stated			"2 mm isotropic voxel size
-(300 µm super-resolution for specific analyses)"	2000000.0	1TB	1.0	Several Months (25 minutes per subject)	not specified	"1150-direction diffusion MRI, super-resolution track density imaging (TDI),
-connectomic analysis"	Tractography	100%	https://www.nature.com/articles/s41598-018-37905-9 	"The study mapped hippocampal connectivity using ultra-high angular resolution diffusion MRI, identifying six dominant pathways and
-quantifying age- and gender-related effects."
-Meng Kuan Lin	2019	Common Marmoset (Callithrix jacchus)	Common Marmoset	Not explicitly named; generated under the Brain/MINDS project	"8,222 mm³ (median brain volume
-across samples)"	Approx. 8.22×1012μm3	8220000000000.0	20,000 × 20,000 × 20,000 nm (20 μm slices)	20000.0	8TB per brain x 49 marmosets = 392 TB	392.0	14 days (processing and imaging for a single brain)= 720 days	"not specified
-(mentions high cost)"	"Integrated neuro histological pipeline using tracer injections, cryo-sectioning, histological
-staining (Nissl, myelin), and high-throughput computational processing"	Neuronal Circuit Mapping	50%	https://elifesciences.org/articles/40042	"This study established a systematic methodology for mesoscale mapping, integrating imaging, staining, and computational approaches to produce
-a connectivity matrix."
-Johan Winnubst	2019	Mouse	Mouse	MouseLight	1,300 × 2,000 × 600 µm³ per region	Approx. 1.56×109μm3 per region	1560000000.0	300 × 300 × 1,000 nm	300000.0	15 TB per brain, 20 mice = 15 x 20= 300 TB	300.0	7 days per brain, 20 mice = 7 x 20 = 140 days	"not specified
-(mentions high cost)"	"Viral labeling, two-photon block-face imaging, semi-automated reconstruction, and
-manual proofreading"	Neuronal Circuit Mapping	90%	https://www.cell.com/action/showPdf?pii=S0092-8674%2819%2930842-6	Generated a database of over 1,000 fully reconstructed neurons with detailed axonal projections, revealing new cell types and connectivity patterns.
-Zheng	2018	Drosophila	Drosophila	FAFB	1 mm³	1,000,000,000	1000000000.0	4 x 4 x 40	8000.0	100	100.0	60	~1,000,000	ssTEM	Electron Microscopy	95%	DOI: 10.1016/j.cell.2018.06.019	First complete fruit fly brain connectome
-Zheng Z	2018	Mouse	Mouse	MICrONS		1.2 x 10⁹	1200000000.0	3.58	3580.0	not given 		not given	not given	Serial section SEM	Electron Microscopy	100%	https://www.microns-explorer.org/cortical-mm3	"Zheng et al. mapped the mouse visual cortex using serial section electron microscopy, creating the
-largest mesoscale connectome, revealing connectivity patterns and neuronal circuits across cortical layers and regions."
-Robert S. C. Amaral	2018	Human	Human	OASIS (healthy aging) and ADNI (pathological aging) datasets	not explicitly stated			High-resolution MRI voxel size: 0.3 mm isotropic	300000.0	1 TB	1.0	several weeks	not specified	"Manual segmentation of fornix, fimbria, and alveus; 3T MRI acquisition;
-MAGeT-Brain automated labeling for analysis"	Manual Tracing	100%	https://www.sciencedirect.com/science/article/pii/S105381191630581X?via%3Dihub 	"The study provides detailed protocols for manual and automated segmentation of hippocampal white matter regions,
-emphasizing their role in healthy and pathological aging."
-D. C. Essen	2017	Human	Human	HCP datsets	not given	not given		MRI:3T, 7T		Processed- 63 , Unprocessed-15.2 , Both Analyzed- 81.2 	38.13	1906 days	not given	MRI, fMRI and MEG	Neuronal Circuit Mapping	100%	doi: 10.1016/j.neuroimage.2012.02.018	Recruitment Criteria-Age 22-35 years. Uses various NIH tools to see cognition, motor, emotional, sensory skills
-Klaus H. Maier-Hein	2017	Human	Human	Simulated Diffusion Phantom Dataset	not explicitly stated			2 mm	2000.0	mentions greater than 1TB	1.0	not mentioned	not specified	"Diffusion-weighted MRI (DWI), synthetic phantom data, tractography simulations
- with 25 major tracts"	Tractography	85%	https://www.nature.com/articles/s41467-017-01285-x 	"The study highlighted challenges in tractography with phantom data, emphasizing false-positive connections and the need for methodological
-improvements in brain connectivity mapping."
-Katharina Eichler	2017	Drosophila melanogaster	Drosophila	not specified	Entire mushroom body of a first-instar larva	Approximately 1.5×106μm3	1500000.0	8 x 8 x 8 nm 	8.0	25 TB raw data	25.0	not mentioned	not specified	Serial-section electron microscopy, manual proofreading, and graph-based modeling	Electron Microscopy	100%	https://www.nature.com/articles/nature23455 	"This study mapped the entire mushroom body connectome at synaptic resolution, identifying 223 Kenyon cells, modulatory neurons, and extensive
-connectivity motifs."
-Jan Funke	2017	Drosophila melanogaster, mouse	Drosophila	CREMI, FIB-25, SEGEM	"CREMI: 1250×1250×125μm³
- FIB-25: 520×520×520μm³
-SEGEM: 100×100×100μm³
-"	"CREMI: ~195,312,500μm3;
-FIB-25: ~140,608,000μm3;
-SEGEM: ~1,000,000μm3"	445640500.0	"CREMI: 4×4×40nm;
-FIB-25: 8×8×8nm;
-SEGEM: 11×11×26nm"	16.0	"CREMI: ~2 TB;
-FIB-25: ~10 TB;
-SEGEM: ~1 TB"	2.0	"CREMI: ~weeks;
-FIB-25: months;
-SEGEM: months"	not specified	"Serial Section Electron Microscopy (ssTEM), Focused Ion Beam Scanning Electron
-Microscopy (FIBSEM), Serial Block-Face Scanning Electron Microscopy (SBEM);
-automated segmentation using 3D U-NET with MALIS loss"	Electron Microscopy	85%	https://export.arxiv.org/pdf/1709.02974v3.pdf 	"This study improved automated connectome reconstruction by integrating deep structured learning with large-scale graph-based segmentation
-techniques."
-Y. Shi and A.W. Toga	2017	Human	Human	Human Connectome Project	not specified(spans whole brain)			"Multi-resolution diffusion imaging:
- b-values (1000, 2000, 3000 s/mm²)"		2-3TB	2.5	not mentioned	"not specified
-(mentions high cost)"	Diffusion Magnetic Resonance Imaging (dMRI), multi-shell acquisition, tractography	Tractography	90%	https://www.nature.com/articles/mp201792	"Advances in multi-shell imaging improved angular, spatial, and temporal resolution, enabling the reconstruction of challenging brain
-pathways like retinofugal and brainstem."
-Antonios Makropoulos	2017	Human (Neonates)	Human	Developing Human Connectome Project (dHCP)	"not specified--
-453 neonatal brain scans covering 28-45
-weeks post-menstrual age (PMA)"	"Approx. 100mm3 per brain,
-or 100,000,000μm3 per subject"	100000000.0	800,000nm3 isotropic resolution	800000.0	3 TB approx	3.0	several weeks	"not specified
-(mentions high cost)"	"Multi-shell High Angular Resolution Diffusion Imaging (HARDI), Draw-EM
-segmentation, and cortical surface inflation modelling,structural and functional MRI"	Tractography	97%	https://www.biorxiv.org/content/10.1101/125526v1 	"The study introduced a neonatal brain MRI processing pipeline, addressing challenges in neonatal brain imaging, segmentation, and cortical surface
- reconstruction."
-Kasthuri	2015	Mouse	Mouse	RCI	40 x 40 x 50 μm	80,000	80000.0	3 x 3 x 30	9.0	2	2.0	14	~250,000	ssTEM	Electron Microscopy	100%	DOI: 10.1016/j.cell.2015.06.054	Landmark cortical reconstruction
-Manuel Berning	2015	Mouse	Mouse	"Retina Dataset (ek563) and
-Cortex Dataset (2012-09-28_ex145_07x2)"	"Retina: 44×60×141μm³
-Cortex: 93×60×93μm³"	"Retina: 372,240μm³
-Cortex : 518,940 μm³"	445590.0	"Retina: 12×12×25nm
-
-Cortex:11.24×11.24×28nm"	17.12	"Retina: ~0.5 TB;
-Cortex: ~1 TB"	0.75	"Imaging: Retina ~30 days
-Cortex ~60 days"	not specified	"Serial Block-Face Electron Microscopy (SBEM), semi-automated SegEM segmentation
-workflow with convolutional neural networks (CNNs) for volume reconstruction"	Electron Microscopy	95%	https://www.cell.com/neuron/fulltext/S0896-6273(15)00760-6	"The study introduced SegEM, a workflow for efficient 3D connectomics. It achieved significant reductions in manual labour and accelerated
-reconstruction of neural circuits."
-Ulrika Roine	2015	Human (autistic)	Human	"data based on constrained spherical deconvolution (CSD)
-tractography"	not explicitly stated	"Not explicitly stated; approximate standard
-adult human brain volume 1.3×10^12μm³
-  "	1300000000000.0	1.875 mm × 1.875 mm × 3.0 mm	1875000.0	Not explicitly stated; estimated < 1 TB for processed data		20 minutes per session; took several weeks	not specified	"Constrained spherical deconvolution (CSD)-based whole-brain tractography, graph
-theoretical analysis of weighted and unweighted structural brain networks"	Tractography	95%	https://molecularautism.biomedcentral.com/articles/10.1186/s13229-015-0058-4 	"This study highlighted reduced global efficiency and increased normalized characteristic path length in subjects with autism spectrum
-disorder (ASD) compared to controls."
-Oh S.W.	2014	Mouse	Mouse		28 x 35 x 49 μm			"not specified
-(High Resolution)"						EGFP, Serial Two-Photon Tomography, Virtual Tractography	Neuronal Circuit Mapping		https://www.nature.com/articles/nature13186
-Plaza S.M.	2014	"Multiple (e.g., C. elegans, Drosophila
-melanogaster, Mouse, and Human)"	Multiple	FlyEM, C. elegans connectome and Drosophila medulla connectome	"- C. elegans: 0.0003 mm³
-- Drosophila medulla column: 0.0001 mm³
-- Mouse cortical column: ~1 mm³"	"- C. elegans: 300 μm³
-- Drosophila medulla column: 100 μm³
-- Mouse cortical column: 1,000,000 μm³"	133333.33	"Varies by dataset:
-- C. elegans: 5x5x70 nm
-- Drosophila medulla: ~8 nm
-- Mouse retina: 16x16x25 nm"	19.6	not specific		Ranges from weeks to months	"$50,000 to $500,000
-per dataset."	"Serial Electron Microscopy (sEM), FIB-SEM, and advanced reconstruction techniques
-involving automated segmentation and human proofreading."	Electron Microscopy	"- C. elegans: 100%
-- Drosophila medulla column: Near-complete
-- Mammalian cortical column and whole
-brain: Incomplete"	https://www.sciencedirect.com/science/article/pii/S095943881400035X 	"Highlights advances in imaging, segmentation, and connectome analysis but acknowledges challenges in scaling methods to
-larger brains like mouse and human."
-Helmstaedter M.	2013	Mouse	Mouse	e2006 dataset	"132×114×80 μm³
-"	1204800μm³	1204800.0	"16.5×16.5×25nm³
-"	19.5	not specific		"Not mentioned specifically; estimated to take several weeks to
-months for imaging and annotation"	"Not specified; costs
-likely exceeded
-$10 million
-"	"Serial Block-Face Electron Microscopy (SBEM), crowd-sourced manual annotation,
-machine learning-based segmentation, and convolutional neural networks for boundary
-detection"	Electron Microscopy	100%	https://www.nature.com/articles/nature12346 	"The study reconstructed 950 neurons in the IPL, characterized a new bipolar cell type, and identified circuit motifs predicting
-motion sensitivity. Data was validated with known circuits and is publicly accessible."
-"Nuno Maçarico da
-Costa"	2013	Monkey, Cats	Other	not specified	not specified	not specified		~20–50 nm voxel sizes	35.0	not mentioned		"~10 days per neuron for light microscopy reconstruction; months
- for electron microscopy of smaller dendritic or axonal regions"	"not specified(high
-costs"	"Sparse reconstruction using light microscopy (LM) for large-scale dendritic/
-axonal arborization, electron microscopy (EM) for synaptic profiles, and computational
-modelling to link physiology and anatomy"	Neuronal Circuit Mapping	50%	https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811913X00151/1-s2.0-S1053811913004011/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJHMEUCIGVlYmSYhmPAJnvM24fdWG%2FF8DuRQcx8aJtAU0QazKkKAiEApEcuRiIULXh%2FLHk%2FURErIGHf70WCIbo%2FE1EiSvKHZoQqvAUIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDECO2Q7ah1PRYqyv1iqQBY96ESHAMlUWYODxH3xk%2FbWtHQkEECeF3ixcps5sbeuPW%2B4Ikgw27vyKTf7yLRzwgIhFE5RnXW2Kp1HC8FUUowE8Jf8jLwg5f6sNq9eG3ixJpVwN%2FzjeknGqrvqOZ64guhUOiC0DG698GPyybPhn6mlhTn8jXN0Q9dpXlqyrOz%2FZUkBJoOZb3ErX5FJDTfzjjCLztORulWgbU5mQ0nDTra9HvzlbzG%2FB74SeMcXb7qlKH6Nmn00v73Ieze9Mw9A2YtJtROk7EuBvxGIXWxsMMTfJcRHlwIbvSmhBzDBzHNogwWF6Gg1XRC%2BS4mS%2B3pufEwO0DRtUX9QAc0CabW9FVt17MtTyDTIwWjdgmMSUcvrqZoO3FJ23%2F5ueAKZFUuzRSgbt3G%2BZ20n0leu5CPOx24y0HdrBNBSOa%2B9vA0LngkVwdMfjdPcZq%2FK0CSMJpJzkNA6yUSHOeGmS6jLecjXgdgb4Zkv7B8zmfbCtpmguBRIB1dSI1ueJ9wwfW2VDEEOrNvcgHmsroJYH2qsvTyzfRkkeRjZajxnI%2BxZqgP8vPymTQ0XYCR1kG9YtaQx4qi1SRPDoAtm0Px8fdMhuyJD0XuKY832R0cexX3oeyjfFoQKva%2FUwG4fVRYTxkkqtOm%2Fh6uwfUiclqDZtPmBFLAz256iykypuozfPKuqUR7OdFbh8re0Ru9wanunolpchP4bWfl9laylpql1fPx%2FOgLqR05G7oAduXhLYHeCEkBh4rI%2BgXquvoQRTr83fNXcH2ysAO4vLb03Q%2F%2Bo2RUUXjc4%2BM2K%2FjUYmri2KEfN6%2BWsGObtFrtJwVKaMPqKcdXnDbfQ1IBL5woNq7CerSFr%2FB64r5kS6SUeosVKcI8E4XA12crKuMK2Sg7oGOrEBt7Vlg4zDf8HxHIeCppiTNxezDp55J0lFN2TpPvAL%2BCRC94zHf40GBNKnAc56jnoQaP%2BKpm%2BVyBA1%2BBWY6wB4IUpXyYF9h4ZvpBMa3u7VK1haFwRzMiPVzbxaYlenKTofqdoG9B65l3b7FplZ8hB3RMvOVbsgrsNDrGOAPtmZtuuDnxoTgqZuH1GSV6YlREDOOZd1WMD6JYIlYELZpvBkuTut8h4cS0kyCYAY50iVNSNN&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T181522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQDRA6VN6%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2c8c394d4fcb26b7ae15a1024788e8b7e499dacb52a0af49c68804835f4ead27&hash=0b48d3fff68b91ef53ab26b5107864689617293eb3131312775ed00845e97c0d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811913004011&tid=spdf-cfb17129-0a98-493b-92b8-af1d83fa1439&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060a595e5756&rr=8e6ae7883f429475&cc=gb	"The study emphasizes the limitations of current methods for large-scale connectomics and advocates for a sparse reconstruction strategy to
-address key questions about neural circuit organization and computation."
-Shin-ya Takemura	2013	Drosophila melanogaster	Drosophila	Medulla Connectome Reconstruction	"37×37×10μm³
-"	13960μm³	13960.0	"40nm (slice thickness),
-35,000× magnification for
-TEM imaging"	40.0	Not explicitly stated		took approximately 12,940 person-hours	not specified	"High-pressure freezing, transmission electron microscopy (TEM), semi-
-automated segmentation, manual proofreading, neuron classification via Golgi impregnation
- and genetic labelling."	Microscopy Techniques	80%	https://www.nature.com/articles/nature12450 	"The study reconstructed a motion detection circuit, identifying key neurons (e.g., Mi1, Tm3, T4) involved in detecting directional motion in the fly
-visual system. Data includes dense synaptic connectivity for the medulla."
-Stephen M. Plaza	2012	"Drosophila melanogaster (larva, medulla, lobula)
-and mammalian retina"	Drosophila	Janelia FlyEM Dataset	not specified			4×4nm in X/Y, 50nm in Z	20.0	2–5 TB	3.5	not specified- required several months	not specified	"Electron Microscopy (EM), probabilistic segmentation graphs,
-GPR metric for evaluating segmentation quality, and manual correction prioritization."	Electron Microscopy	"Partial; segmentation of key regions reached
- >90% adjusted Rand index (ARI) accuracy
-but did not fully reconstruct all regions due
-to manual correction limits."	"https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.
-0044448&type=printable "	"The study introduced GPR (Generalized Probabilistic Rand Index) to evaluate segmentation quality without ground truth,
-significantly reducing manual segmentation time while maintaining high accuracy in reconstructions."
-Leila Cammoun	2012	Human	Human	uses multi-resolution connectome mapping	"Approximately 1.2×10^12 μm³
-"	not specified		"approx
-2 mm isotropic;
-cortical regions subdivided to ~1.5 cm²"		~2 TB for raw data 	2.0	several weeks	not specified	"Diffusion Spectrum Imaging (DSI), high-resolution structural MRI, multi-scale cortical
-parcellations, and tractography algorithms"	Tractography	95%	https://www.sciencedirect.com/science/article/pii/S0165027011005991	"This study introduced a multi-scale, normalized approach to human connectome mapping, focusing on reproducibility and robustness across
-individuals and resolutions."
-Hai Li	2012	Human (children autistic)	Human	not specified	whole brain	Approx. 1.3×10^12μm³ per brain	1300000000000.0	1.875mm×1.875mm×3.0mm	1875000.0	<1TB	0.5	Each scan lasted ~20 minutes per participant; took several weeks	not specified	"Diffusion Tensor Imaging (DTI), fast marching algorithm for connectivity, graph
-theoretical analysis of weighted networks"	Tractography	95%	https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.22185 	"This study showed increased local connectivity in ASD, particularly in language and visual processing regions, correlating stronger connectivity
-with better language performance in ASD."
-Moritz Helmstaedter	2011	Rats, Mouse	Rat	E1088, E2006, K0563 datasets	"E1088: 45×39×60μm³
-
-E2006: 135×117×80μm³
-
-K0563: 50×65×145μm³"	"E1088: 105,300 μm³
- 
-E2006: 1,263,000μm³
-
-K0563: 471,250μm³"	609850.0	"E1088: 22×22×30 nm³
-
-E2006: 16.5×16.5×25nm³
-
-K0563: 12×12×25 nm³"	24.17	2–4 TB	3.0	Estimated several months per dataset	Not explicitly stated	"Serial Block-Face Electron Microscopy (SBEM), KNOSSOS software,
-Redundant Skeleton Consensus Procedure (RESCOP)"	Electron Microscopy	"E1088: ~100% for a specified volume
-
-E2006: ongoing
-
-K0563: partial completion"	https://hal.science/hal-00658165/file/PEER_stage2_10.1038%252Fnn.2868.pdf  	"The study introduced RESCOP, enabling high-accuracy neurite reconstruction, and analyzed the challenges of annotating
-dense and complex neural tissue volumes."
-Ann-Shyn Chiang	2011	Drosophila melanogaster	Drosophila	Flycircuit	135×117×80μm³ (aprrox) per image	1,263,000 μm³	1263000.0	"
-0.32×0.32×1μm"	320.0	multiple years		not mentioned	not specified	"Genetic mosaic analysis with a repressible cell marker (MARCM), high-resolution
-confocal imaging, image stitching, 3D reconstruction, automated and semi-automated
-segmentation"	Microscopy Techniques	"~10–20% of the brain's ~100,000 neurons
-were fully reconstructed; coverage estimated
-as sufficient to approximate interregional
-connectivity patterns"	https://pdf.sciencedirectassets.com/272099/1-s2.0-S0960982210X00240/1-s2.0-S0960982210015228/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJIMEYCIQCI8F7ENsNEnlXPrDMSQmkXW3%2Bm%2FHiL55%2FXO%2FhtGwWIDwIhAIWq5a949ZOBCztTTh8CaM4UfiL0zgj6Z4XGOKcNBF66KrwFCMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgwAELHAY0ik52CqbLQqkAVDvocQkYKAsTxJppcHKxcJg%2FmNAV2WbmnQ5UHQct4T422juSu5i%2BRYK6sBZgNU21%2Fxv7JHQdGT%2Bz9HyigXkvVrZpsiOV4YP%2F8EONaAChld3zrEB1Vzxo4Vy8zEQPYO6kB2o8P3KYs3GqenSlpT0S1WRsDWP4L8ikPXIRH5xBuwh%2BEb4OPfGtLGfG1wLSCyNFa4M9m%2FSZ%2BiJE8qpc4G2vUOvWBUO0RcuVi4PgYG3uNV%2FPWZE8xUaUoJqNWoiWfk%2BhdpdxgWPdMOgReysjZVyJFASWj3S7Sj0r3EJ8G97wpzF9kdptR2yo1N4f%2FZvvBSuVvrdm06upHaL2r%2BZqr1BHAWthBNAe3k0pTw4TtxHK%2BjzQkeIDGotqfgqH91ZPY4agF4xdnZGFyBzf5YKHXGQdTqAHGg8WoQveN4BE3prHURnvE4oW7osXq2P1a2REZb09VJBpcQaxwEdE5JuCrmTEC6QL29y%2FWSN67YElcxb2sR4gafKPhd2MupCCDePCnKrS76Xy9oS4%2FDQaCWAKXUGyBVr9GGWiHIgtfWHv%2F%2BqCtgWOGeUPCzR8dMF%2FXBAiIu30uN0LfHmxZnpvNXtE6lvKCaDbtX9eRtT6Z6YQ6yf0l6%2Fz9TviyXObOVNw0N4qBYc7TZQ6EMhDzAK4oeZNpajwW0zZGmzNsG7BZPrhGuH3Pqgz37GnJw4RfkH8EE6n2elQJ0yvAjzCR%2B7YZWj%2Bp5RkLYk1Q5xw0OI0MH2X2EwxmG%2FQgv%2FyO59Ut0DW5utYhNP%2BpzgsyYNbMCfJtaSv6J4bXtbpewGITc8WYT6sHldRHUQlzHFOGNe7RwVwMkItJPy1CttZEhg5PTrMGtr8r4bUqNjEfvJ5fbDLg1ORRvIIwRJzDE3YK6BjqwAdtsKrxiiXL6dbsjdzT21v6WY%2Feffw38y9jC%2B7iM28ATkGh4n1RSyAW2jGNvLUqomBtOxis4kGVIUoLZtDUMRSKmxnXaBG%2FbxnKI8d0pK7dASQJIGbFcF36%2BIPcJ6EPq3FfO2HIrn1Bi51A062PwmtUHBJWUz%2FH3Hqtuj%2Fwk56pH9LuDWuq7rgt5c%2B3W0tpKPSKn%2BOP88k%2FXb41taLB3Jo1CSYnXksQ%2F%2BjKBcIqhlAAa&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T175543Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3LONXKIZ%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3f9895afd5f357dca68e951ffd1b496a6a044f71ee5a504829752aac6b231738&hash=1f514528df7909ba8784f8678d928004b9ae73be7c59863759b0d701d21b42c5&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0960982210015228&tid=spdf-ba3e033f-0e0f-4f36-a137-34de693beb53&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060c0f040900&rr=8e6acabfed569418&cc=gb	"The study introduced FlyCircuit, an open-access resource for neuron data, and developed a mesoscopic map of Drosophila brain circuits,
-laying the groundwork for understanding neural connectivity and information flow."
-Deepak Ropireddy	2011	Rat (Long–Evans strain)	Rat	based on NeuroMorpho.Org reconstructions	1212.89 x 300.72 x 1139.13 mm³ (approx)	"10^9μm³
-
-"	1000000000.0	"~16 μm for hippocampal
-reconstruction"	16000.0	1TB	1.0	several months	not specified	"High-resolution histological imaging, manual segmentation, and computational embedding
-of digital reconstructions to analyse potential synaptic connectivity."	Neuronal Circuit Mapping	80%	https://doi.org/10.3389/fninf.2011.00005	"This study developed a computational framework for estimating potential synaptic connectivity based on the proximity of axons and
-dendrites, providing insights into hippocampal circuits."
-Huei-Fang Yang	2011	Drosophila melanogaster, Zebrafish	Drosophila	not specified	"VNC: 512×512pixels
-
-Tectum: 631×539pixels
-
-"	"VNC: ~3.2×10^6μm³
-Tectum: ~ 6.4×10^6 μm³
-
- "	5800000.0	"VNC: 4×4×50nm;
-Tectum: 10×10×30nm"	48.0	0.5 TB~1 TB	0.75	several months	not specified	"Serial Section Transmission Electron Microscopy (ssTEM), Serial Block-Face Scanning
-Electron Microscopy (SBFSEM); segmentation via graph cuts, interactive editing, and
-topology validation"	Electron Microscopy	85%	https://www.semanticscholar.org/paper/Reconstruction-of-3d-neuronal-structures-from-data-Choe-Yang/1c7a0174bfe049e7e57d389df3e582f6ced47dd9	"The study introduced algorithms for 3D neuronal structure reconstruction from EM data, focusing on segmentation, manual correction, and
-validation methods for topological accuracy."
-Markus Axer	2011	Human	Human	"Not explicitly named; dataset based on
-3D-PLI imaging of postmortem human brains"	"Whole brain with specific focus areas
-(2 mm × 2 mm × 1 mm for tract
-models, extended whole-brain slices)"	"Estimated ~10^9μm ³
- "	1000000000.0	"Large-area polarimeter:100 μm voxel size;
-polarizing microscope: ~1.6 μm voxel size"	850.0	0.5–1 TB	0.75	several months	not specified	"3D Polarized Light Imaging (3D-PLI) using a large-area polarimeter with a tilting stage and a
-polarizing microscope for high-resolution imaging"	Microscopy Techniques	85%	"https://www.frontiersin.org/journals/neuroinformatics/articles/
-10.3389/fninf.2011.00034/full"	"The study pioneered 3D-PLI for mapping fibre orientations and connectivity. Introduced scalable workflows for cross-validating
-mesoscale and microscale connectomic datasets."
-Markus Axer	2011	Human	Human	3D-Polarized Light Imaging (3D-PLI) dataset	"5 mm × 5 mm × 1 mm for pons
-reconstruction"	25×10^6μm ³	25000000.0	100 μm	100000.0	1TB	1.0	several months	not specified	"3D-Polarized Light Imaging (3D-PLI), independent component analysis (ICA),
-Fourier analysis, high-resolution tractography pipeline"	Tractography	90%	https://www.sciencedirect.com/science/article/pii/S105381191001178X?via%3Dihub	"The study introduced 3D-PLI as a novel method for mapping white matter tracts in unprecedented detail, highlighting regions
-of fiber crossing and intermingling in the pons."
-Dmitri B. Chklovskii	2010	Drosophila melanogaster	Drosophila	Janelia FlyEM Project	90×90×80μm³ 	648,000μm³	648000.0	3×3×40nm³	45.0	Estimated 2–5 TB	3.5	Lamina: 22 days; Medulla: 65 days	not specified	"Serial-section Transmission Electron Microscopy (ssTEM),
-Semi-automated segmentation pipeline with Raveler for proofreading and annotation."	Electron Microscopy	"Partial; lamina cartridges reconstructed
-(1 column complete), medulla
-reconstruction in progress (~1 column
-complete, surrounding 6 columns ongoing)."	https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438810X0006X/1-s2.0-S0959438810001224/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJHMEUCIQCrdi2rUu%2Bjvp75oAOv3qYthpeYsj8ZiKF3%2FKUPaQWjewIgJfpLNHyIA%2FUUya8uvyL00TOvOBijBK%2F0IYJnaR2fyckquwUIwv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDIRGYLSmiHmJmoNhlCqPBVZ3qXJcTpFGQ79Otmsf%2BglOx6W5Mo9zY2mHDTrWWBqWGvUk84WCD6ZKQVX61nTW193%2FD4Bj3yf88vT4%2FlwCNaiXJ0Bnh8KqCPOrq%2FAqz5FJe7EpKqFOivXB49vT3gSiYZY2oBq1e6aybGganse2Dik3aa6tPWdEixVUFu8yxcO0002iw3ivnwzUHr48APDaoqjQLds7fj7nto%2FeMF3%2BNs6t5JJAYPRA8dkgLn%2Fm%2F7Yf44hk7eO3gTB3S2mjCDHJRHjPieg%2FsVSQvp8xo3msy4EsQiQvYDZkQ2Q1hWSC4iHGkto2olVoiC%2BAXQzYH0zj5lnzwOHj8knkg2pdAXKWkmPSS6BHGogR%2BqA3T6plHwkHQmmWRGc5y8UobNOJW3aH6Is2hMAwisQC73U8yeAa%2F7diK05mTrMn%2FrhnfZAX5vTfRIEDvWlYdJh5d%2B0cYWLJA1YuQJTlaMxncujfog5hTZZmuKp5j68klCfapfMokB6WhP88ffoUOW2rnl686wU2VxRMzSzfAFjS9Bx6kh7oQVgSwn6vDWwvy3kGBWnNEgmAwVTeOAyywoXVLIC081mYIqbLVxxvomiAfQ8oWAOsU9O7cBD5UU4Owe02BwGXfobJmowm6oxlG8i5OIwExZdBm1sQQ%2FlJm0SO6qYyvu4RxVa%2BiU0PBIAWnIJzKiLg2kyvvqGbXRWYuzNkTmopfMWCPBv%2FmrWOtqcJoEP0TcZGVhRnlt2wHW%2BeQ2mDlleHhHbLy%2Bb9iSJ3gnRwQ5mMeadxdZVo%2Fiyl4fV1UFnC0hTabR2qF13QUP%2BYeBTJVoc5VUc8SGDZN3qjuq%2FlnLhCYdL2Rb8bfe%2Bw%2FqNeMEYIny5ImWTojMX8L1X%2BnkIuei3mz58w0uuCugY6sQGAbJqLrgcZ6bFp1rWs0oMVPVPVM6SkNwukFrv5gxnXcGhiqASYtbXDxatwrlWfrP6k6hT0cLEMXdb8rZygGrbys3wFr5pj%2Ftzbv9dUTwiXRCudLk7PKnFlG2j5NqaG1GQ66q0VClc49Kxd703i4aqMI%2Fa13%2FP0gkGqCCmol0KkGmAZCaOHGAO075zEXVE4n0w08tuLuijJeEvwIsJ6zXI3WHBaSwcY3vayIn0B4LoNUDo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T183024Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQBFQ5KRM%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8338bbb5818e35b9c0295e421ee0fa04921d13d1849fbcfbb30fbd7279055ce2&hash=a394cf5f8d41f84b952ac45da83514de19b188d7133c25d0764adf0846302d18&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438810001224&tid=spdf-1eddc1ea-00aa-4b30-a171-4e86cb9e7590&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5506090a5e095d&rr=8e6afd8f8e9e772c&cc=gb	"The study developed a semi-automated pipeline for large-scale circuit reconstruction, demonstrating connectomics's
- feasibility but highlighting scaling challenges."
-Yuriy Mishchenko	2010	C. elegans	C. elegans	GRASP-derived connectome data	100 x 100 x 1000 µm	10^7μm³ 	10000000.0	~500 nm 	500.0	not mentioned		1-7 days	not specified	"Fluorescent synaptic markers (GRASP), stochastically expressed with recombinase systems,
-combined with Compressive Sensing for neural connectivity reconstruction"	Neuronal Circuit Mapping	100%	https://www.semanticscholar.org/paper/Reconstruction-of-complete-connectivity-matrix-for-Mishchenko/8c48df1c84f94ff681f2a3fe6f28f3482d4ae3f1 	"Introduced GRASP and Compressive Sensing as tools for high-speed, low-cost reconstruction of neural connectivity; experimental work
-was simulated rather than executed."
-Jeff W. Lichtman	2008	Mouse	Mouse	Brainbow Dataset	"Neuromuscular Junction: Individual motor
- unit maps; Hippocampus:
-Dentate gyrus section ~1mm^2"	"Neuromuscular junctions: ~
-10^4−10^6𝜇𝑚³
- Dentate gyrus section: ~
-10^6𝜇𝑚³
-"	500000.0	~50−100nm	75.0	0.1-1TB	0.55	several months	not specified	"Multicolor fluorescent protein labeling (Brainbow), light microscopy, automated image
-analysis"	Microscopy Techniques	Partial	"https://www.researchgate.net/publication/5406603_A_technicolor_
-approach_to_the_connectome "	"Brainbow revolutionized neural circuit visualization by enabling multicolor labelling of neurons, improving resolution,
-and reducing ambiguity in dense tissue regions."
-Bo Huang	2008	Green monkey kidney epithelial cells (BS-C-1)	Other	not specified	~600 nm	"1,000μm ³
-"	1000.0	20–30 nm (lateral) and 50–60 nm (axial)	40.0	not mentioned		several months	not specified	"3D Stochastic Optical Reconstruction Microscopy (STORM), using photo-switchable
-fluorophores and iterative stochastic activation"	Microscopy Techniques	100%	"https://www.researchgate.net/publication/5676397_Three-Dimensional_
-Super-Resolution_Imaging_by_Stochastic_Optical_Reconstruction_
-Microscopy "	"Achieved sub-diffraction-limit resolution for 3D imaging, allowing detailed visualization of nanoscale cellular structures.
-Demonstrated applicability for structural biology."
-Moritz Helmstaedter	2007	Rat	Rat	"Not specified (derived from anatomical and functional recordings in
-vitro and in vivo)"	"the volume of cortical column 120,000μm
-cross-sectional area and ~2 mm height
- 
-"	240000000 μm³	240000000.0	not specified		not specified		not specified	not specified	"Pair recordings, anatomical reconstructions, and in silico simulations of cortical
-column activity"	Neuronal Circuit Mapping	50%	https://pdf.sciencedirectassets.com/271081/1-s2.0-S0165017307X01401/1-s2.0-S0165017307001361/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLWVhc3QtMSJIMEYCIQC1sHm575u4vMt1fIHxXPVrvEV%2Fm%2FSTocMoyy39nJizKQIhAIdGRQjIv9%2BNc5q%2BP8QRsbszSQF22e1%2BTzi2TOe4ty%2FFKrsFCMP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgywYIf8xRKaIkNkZL0qjwWKlzsJfGu69vxYI0Bhx7s6hOJK6dNGXbIG%2Bqh6RXcqc3ynmHDWUgsGAsVtKst4ehd14v%2BLb6JRSDzVDhCTX3FjIS9e5z0nWCw4vi2cf0ogCet%2Futnvln4ruV%2FDz1KHP7LlDz3lToQO6xcMgVmD3h7lFQHShQMsBI9omAGf%2FsOwZ2dB1R5tGbXEL92i9XadgVzsXix0nXf82TI3C7zaA2vwgi2XxmPK8dpWO9u9UG2bwyo7tXNqA1u87YVK%2F%2Fs5nxW2bR90uzpCoUkhhSdAZIhwh07r3z%2BEcC%2B6YqZ9yK6U%2BKGjXClv%2B80KpbSRYGuHpJZatkBfJ1%2FJLNkszwPAu2cj4xkWzr8KN4mwGUF9Yi0rBy3tjOYJEAPz2xjNARP0qyK6Uoi6nTMZAdOvQCbpEWSivjR1tHnBDv1lzn2wxMoWnensGx8t1BTpi%2F9L387VzIwIPTuiG8Dn82g5w%2FSGBX%2FNdTYn%2B8Hla3RIzX%2BiP689P7ZSsLKuSqRM1aeA3dp4SEbzJlH0OymYHG%2Fx3nNg61WMKz9Qdu8HwoWBdvBkUgw94Bix5htGx3AXAOJNNZTyN8e5tT1V7QLOcfjRYZvlB5Sq1OOD5zxJY7UWmiTSQpYFCxQ9PbVXaRpeeKaZ104RoxNgPZAqegl1X9W5DYfz7lm8H0w67ty1Y56qhHHxo2wX9PO1ESpkldtO3zW0XOE9aC8SsVyKHBrA5DgDSof10Xg%2FSpcU6EBsz%2Fl2oxDRhc4kS%2FvInX94L%2BQMZ1dHAGC4h7Y4u0YfNL2uiNt7Arjel0wCoxugvAGxhOnnle9Yfz7hee%2BgY1hxpJ%2BvxZ4J4QWz6GM6dXSkK9cx%2BzWILUmFHHJnphZ7R0hNtXXnRt70U%2FbvMKyDg7oGOrABAmFGx7nFXbDuDs6Lqe5AHL1mIuaLQlQD6Fsbv9GQUh5BDSwt5kI%2F3dk2SMQdNnsPSMn5PGnYl%2BIGT7GEKfu3bpb4E7rmmZGZ6aqhWg0%2BZzEkGvvI1faJ%2Bid0QGsk19u%2BaRMU31Rvg%2BOjkIgFpD33buynCVmC51bzy9ZsyMTlXa1Z%2BptSngmGWOxezOudCjCwxmx72U6wF5%2B3kqSTCEQi7i%2FjliIV7aahBzaVXMLWE1U%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T180350Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYVYS5CDDA%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cf71eacc7b68c30a811df552a62951bbf70ee6d20ee42d34ab972388f5f572a7&hash=972c4f3333bf493177648466f20eff6a2aecbe0f9ac9ec985e6b7b1b7c47a5cd&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0165017307001361&tid=spdf-4f40e6d1-9861-4a59-a766-a694163e558d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060b58075a57&rr=8e6ad6a52b349583&cc=gb  	"The study aimed to model the anatomical and functional connectivity of a cortical column, focusing on decision-making processes and sensory
-behaviours."
-Briggman Kevin	2006	"C. elegans, Rat, Mouse, Drosophila
-melanogaster"	C. elegans	Not explicitly named	"- C. elegans: 106μm³
-- Drosophila: 108μm³
-- Mouse cortical column: 108μm³
-"	"C. elegans: 1,000,000μm³
-Drosophila: 100,000,000μm³
-Mouse cortical column: 100,000,000μm³
-
-"	400000000.0	"3nm×3nm×30nm for SBFSEM;
-50 nm for SSTEM slices"	27.0	not mentioned specifically, but range from 10 TB for C. elegans 	10.0	C. elegans: 15 years for manual tracing	not specified	"Serial Section Transmission Electron Microscopy (SSTEM), Serial Block-Face Scanning
-Electron Microscopy (SBFSEM), Serial Section Electron Tomography (SSET)."	Electron Microscopy	"C. elegans: 100% for the nervous system;
-others vary widely and are partial due to
-technical and computational limits."	https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438806X00909/1-s2.0-S0959438806001140/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJGMEQCIBUQlUwvqKn%2BwOQ5fozHh%2FnMXA6VGURu3MTpVHtBklxQAiAzs8KH62ep2shan%2FCqMPc1z4TcPypssbPVnXi5cExSMSq7BQjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIMVKip7FzcZ8PQtvd4Ko8FuThjYWYWXHN6RTiYA9jZ0x1wBeJw8pG%2Frmyk8tRfPdlpfYSryyG9T1GkQqiyLmnCN14bTHQenRTdlj%2B7LJyonhueU4FgBDasL9OqAj7wjdLuK1PMsjLzWz6Q2q5GnBeBzaCmgbVmBvecKsBYn53bpYXQf7xc0CPZFdN74GKVolL6F2TiuSDJwkJlUtqw5WfRhCJiWBwx2kBOJ44rEjJAbKZj6M2hLXaNt6zLpCkNneVWTH9kvho1vC%2BQb3z0mE1LcZ2vh95ZUynOzvpG7NIzWLrc0xdZLcFP1qlNCYX2vFF%2FF8bVV%2FS2ZgEmBZeKeCDWOeuF4jByNU1l1ICGKHON4PuTBZOEqbUnPAZ691Bo6eUC5uw0PzJUWeBF6vIB5vSspqQ23NctdRYvm7hc6fLEh1etY1pHWrQ0lF4u6fMYv16yz8dzhN6SF0UV5TI3%2BbeNyznPH4vZpOheGgb5FjTYXcaLziL9KqlnLpvaqk2Gmd9v1e%2BA5wBwycxTSCMEsU%2FPTMQJQFo%2FMAUZn%2FwwM8mEfDCvl0eCS1YcnetOx5waE3Gh2ANxtZrMpL%2BBUUPJ2dKeahWRLNnO4WI4owYsBJAGiyJxUJtKFSbesjfWKBXltUQ9bjts61xZWC49tdYqPE4BfT8PfadN8dQkk%2B00diHrQR7%2Bn3CGa91FQ08kvGaYCMd2j4SqLrmXbyiAzcXx9g8meZcjBum5VlzEzPAsa%2FESferjGuXt3zZJncEw7spWNFOXpyD4XZsMQKl9zcPFwLP11%2B6Furo6XU8z9BahTw4DRibtktgaRSbwyK6jj3NsEpVWp816qcrv7UWnkkUZQxFkZxy2%2FT0%2BGGUKn1EC%2B0yHuLIE%2BHDKpM9bp%2FYAZGbc1zDWpIO6BjqyAXRqYXqyrIsBIGvlRYiFZHLI0no9rvP6RL%2Bi7MgDVD7X5P4Xyd8xhdKn8zYh63vGIGoFZ%2FUdhEsN74nnFygmr1jX3VVyyNw1Q5GnSre51zE4%2FNSDxkeGBCdllGcyGDj0lgcOvsCYk1W9m%2FtO7RD5L0RcYhMxMDCpLv7fpzcWQDtKXst7d4APWBmMjQPlwMs5hs%2BC4o6WPmbiF70i%2FubGJXFAlpqwCO7Jc8BlwesfDsUZkU0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T201824Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY7VMLEIHI%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e67f7a0060a81030213e5f71f31ed98fb51738b5b06930fc60cec631def1ca77&hash=92c1312e7fe52a167b4ee593d226313be7d16022c63aeac654d3c0ab2d9ab507&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438806001140&tid=spdf-61f8abb8-72a0-40f7-95bb-4e2de64ce7af&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5505560c055707&rr=8e6b9bc8bb013697&cc=gb	"This study discusses the potential of modern volume EM techniques to reconstruct complete circuits, emphasizing automation to overcome historical
-limitations."
-Beth L. Chen	2006	C. elegans	C. elegans	Worm Atlas Wiring Diagram	not specified			approx 50−70nm. 	59.5	not mentioned		multiple years	not specifically given	"Analysis of wiring diagrams obtained from serial-section EM data combined with
-mathematical models of wiring optimization."	Wiring Diagram Analysis	100%	https://www.pnas.org/doi/epdf/10.1073/pnas.0506806103 	"The study demonstrated that neuronal positioning in C. elegans is optimized for wiring costs. Outliers in placement were linked to
-developmental and functional roles."
-T.E.J. Behrens	2003	Human	Human	not specified	not explicitly stated	Approx. 1.3×1012μm3 (whole brain)	1300000000000.0	1.7mm×1.7mm×2.3mm	1700000.0	not mentioned		Each scan lasted ~20 minutes;took several weeks	not specified	"Probabilistic tractography using diffusion tensor imaging (DTI) to map connections between
-thalamic nuclei and cortical regions"	Tractography	95%	https://scholar.google.com/scholar_lookup?hl=en&volume=6&publication_year=2003&pages=750-757&journal=Nat+Neurosci&author=TEJ+Behrens&author=H+Johansen%E2%80%90Berg&author=MW+Woolrich&author=SM+Smith&author=CAM+Wheeler%E2%80%90Kingshott&author=PA+Boulby&author=GJ+Barker&author=EL+Sillery&author=K+Sheehan&author=O+Ciccarelli&author=AJ+Thompson&author=JM+Brady&author=PM+Matthews&title=Non%E2%80%90invasive+mapping+of+connections+between+human+thalamus+and+cortex+using+diffusion+imaging	"This study provided the first connectivity-based segmentation of thalamic gray matter in humans, identifying pathways and connections reproducible
-across individuals."
-White G.J.	1986	C. elegans	C. elegans	not mentioned	0.0075mm³	7.5 x 10⁶	7500000.0	50	50.0					Serial section TEM	Electron Microscopy	100%	https://pubmed.ncbi.nlm.nih.gov/22462104/	"The Caenorhabditis elegans nervous system consists of 302 neurons arranged in an invariant structure across 118 classes, with highly localized
-connectivity and ~5000 chemical synapses, ~2000 neuromuscular junctions, and ~600 gap junctions. Neurons, with simple morphologies, form
-connections in defined process bundles, facilitating precise synaptic organization."
-Charlie R. Braekevelt	1983	Domestic pig	Other		"retinal regions: ~1mm²
-"	Approx. 1,000,000μm³ 	1000000.0	~10−50nm	2.5e-08	not mentioned		not mentioned	not specified	Ultrathin sectioning, transmission electron microscopy (TEM), manual tracing and analysis	Electron Microscopy	"Not mentioned specifically
-(partial completion)"	https://link.springer.com/article/10.1007/BF00231355 	"The study describes the ultrastructure of retinal rods and cones in pigs, revealing species-specific differences and advancing
-understanding of mammalian photoreceptor anatomy."
-John K. Stevens	1980	Rat	Rat	not specified	"∼150×150×50μm³
-"	1125000μm³ 	1125000.0	 ~50–100 nm	75.0	~0.1–0.2 TB	0.15	not specified	not specified	"Serial sectioning of retinal tissue, light and electron microscopy, manual tracing of ganglion
-cells for circuit reconstruction"	Neuronal Circuit Mapping	100%	https://www.jstor.org/stable/1684192?saml_data=eyJzYW1sVG9rZW4iOiI3NjAwODQwMy01N2YyLTRmMmYtYjRkNi0wNDgyMTI1OTBiZmIiLCJpbnN0aXR1dGlvbklkcyI6WyJjOTcyMDRmZC04ZGZhLTQ1MDMtODA4Yy0xMzc0OGUzNzJmYmIiXX0	"This study provided a foundational view of retinal ganglion cell connectivity, demonstrating early methodologies for functional
-architecture analysis in the visual system."
-Cyrus Levinthal	1972	"Rotifer (Asplanchna brightwelli) and Crustacean
-(Daphnia magna)"	Other	not explicitly named	"Rotifier- 100×50×40μm³;
-Daphnia: not specified"	"Rotifier: 200,000μm³
-Daphnia: larger but not specified"		10nm 	10.0	not mentioned but <1TB based on techniques available in 1970s	0.5	exactly days not specified (data acquisition spanned months)	not specified	"Serial-section electron microscopy (EM), manual alignment of sections, data
-recorded and visualized using custom computational tools"	Electron Microscopy	"Partial: small regions of neuropil
-reconstructed for both organisms"	https://www.nature.com/articles/236207a0	"The study introduced methods for aligning and reconstructing neural structures in 3D using EM, combined with early computational tools,
-paving the way for modern connectomics. "
+First Author	Year	Organism	Organism (cleaned)	Dataset name	Volume(as quoted)	Volume (μm³)	Volume (claude)	Resolution (nm)	Resolution (claude)	Dataset Size (TB)	Dataset Size (Claude)	Acquisition Time (days)	Scanning Costs ($)	Method	Method (claude)	Completion %	References	Notes	ref_id	supporting_refs	ref_note	confidence	validated_by
+Antonio Jimenez-Marin	2024	Human	Human	LEMON						n/a (given 40,000 healthy individuals)		not given	not given	fMRI, diffusion MRI	Tractography	not given	https://www.nature.com/articles/s41597-024-03060-2#Sec8				none	none
+Zing	2024	Mouse	Mouse	ALCEM	1 mm³	1x10⁹	1000000000.0	4 x 4 x 40	8000.0	2,500	2.5	200	6,000,000	ATUM-SEM	Electron Microscopy	100%	https://pmc.ncbi.nlm.nih.gov/articles/PMC10054929/ 	"Using the MICrONS dataset, this study reveals a universal ""like-to-like"" connectivity rule in the mouse visual cortex, where neurons				none	none
+with similar features preferentially connect. These principles, mirrored in artificial networks, highlight their role in sensory processing and learning."				none	none
+Nanfang Pan	2024	Human (College students)	Human	"Behavioral and neuroimaging data collected pre-pandemic and				none	none
+during the pandemic from a cohort of university students"				"Spatial: 3.0 Tesla fMRI with				none	none
+~2 mm³ voxel size;				none	none
+Temporal: TR = 2s"	2.0	not mentioned		"Neuroimaging data collected over multiple sessions pre-pandemic				none	none
+(October 2019–January 2020) and follow-up assessments during				none	none
+March–April 2021"	not given	"Resting-state functional MRI (rs-fMRI), Regularized Canonical Correlation Analysis				none	none
+(rCCA), nested cross-validation, machine learning pipeline (linear SVM)"	Neuronal Circuit Mapping	100%	https://www.nature.com/articles/s41398-024-02741-1 	"The study highlights functional connectivity patterns predictive of stress and anxiety during the COVID-19				none	none
+pandemic and suggests implications for targeted psychological interventions."				none	none
+Qiang Ma	2024	Human (Neonates)	Human	Developing Human Connectome Project (dHCP)	"Not explicitly quoted;				none	none
+dataset contains 879 neonatal brain scans"	"Not explicitly calculated;				none	none
+dataset includes the entire neonatal brain				none	none
+at isotropic 0.5mm3 resolution"		500,000nm3	500000.0	2-3 TB per cohort for neuroimaging data	2.5	"DL-based pipeline ~24 seconds per scan;				none	none
+original pipeline - 6.5 hours per scan"	"not specified				none	none
+(mentions high cost)"	"Deep Learning-based cortical surface reconstruction using GPU acceleration				none	none
+and multi-scale deformation networks"	Neuronal Circuit Mapping	90%	https://arxiv.org/pdf/2405.08783v2 	"The study introduced a GPU-accelerated pipeline for reconstructing neonatal brain surfaces, achieving 995x speed improvements				none	none
+over the original method with superior accuracy."				none	none
+Beets Isabel	2023	Caenorhabditis elegans	C. elegans	Peptide-GPCR Interaction Dataset	not given 	not applicable		not applicable		not given( includes sample size 55,384 peptide-GPCR pairs)		not given	not given	Reverse pharmacology, calcium mobilization assays	Cellular Imaging	87%	https://doi.org/10.1016/j.celrep.2023.113058	"Identified 461 peptide-GPCR pairs using a comprehensive screening of synthetic peptides. Found evolutionary conservation of 14 bilaterian				none	none
+peptidergic systems in C. elegans."				none	none
+Haocheng Dai,	2023	Human	Human	DWI dataset	not specified			DWI voxel scale (~1–2 mm³)		not specified		not applicable used earlier dataset of HCP	not given	"Diffusion-weighted imaging (DWI), geodesic tractography, Riemannian				none	none
+manifold modeling, CEDNN"	Tractography	100%	https://arxiv.org/pdf/2203.06122 	"Demonstrates the utility of convolutional encoder-decoder neural networks (CEDNN) for brain connectome modelling				none	none
+and improved alignment of fiber tracts."				none	none
+Shang Mu	2023	Mouse	Mouse	e2198 Dataset	0.3mm² ×23μm	103,500μm³ 	103500.0	16.5×16.5×23nm	19.33	approx 2-3 TB	2.5	several months	not specified	"Serial Block-Face Electron Microscopy (SBFSEM), automated and manual				none	none
+segmentation using Eyewire, convolutional neural network-based reconstruction"	Electron Microscopy	"Partial -199 starburst cells reconstructed				none	none
+and analyzed, but dataset boundary and				none	none
+incomplete nuclear layer reconstruction				none	none
+limit full completion"	"https://www.frontiersin.org/journals/ophthalmology/articles/10.3389				none	none
+/fopht.2023.1129463/full "	"The study identified novel perisomatic contacts between starburst amacrine cells, challenging prior assumptions about their				none	none
+stratification and connectivity."				none	none
+Fabian Svara	2022	Lavaral Zebrafish	Zebrafish	EM dataset of larval zebrafish brain	0.058 mm³ (approx)	58,000	58000.0	14 × 14 × 25 nm³	14.333333333333334	12.5	12.5	66	not given	Serial block-face scanning EM (SEBM)	Electron Microscopy	high accuracy mentioned	doi: 10.1038/s41592-022-01621-0	"Dense synaptic connectivity reconstruction using SBEM, paired with 2P calcium imaging. Synapse-level analysis was validated by				none	none
+SyConn, and a digital neuron address book was created for circuit mapping."				none	none
+Dorkenwald	2022	Mouse	Mouse	not specific	not mentioned			250 × 140 × 90 μm	148000.0	not given (it mentions that it's a big dataset)			1,000,000	Serial Section Electron Microscopy, Automated Image Analysis, Statistical Modeling	Electron Microscopy	not mentioned	https://pubmed.ncbi.nlm.nih.gov/36382887/ 	"This study maps L2/3 pyramidal cell connectivity in the mouse visual cortex using electron microscopy, revealing synapse size as a combination of				none	none
+binary and analogue variables. Binary variation aligns with uniform activity-dependent plasticity, while analogue variation reflects spontaneous				none	none
+fluctuations, supporting the hypothesis of bistable synaptic states in learning."				none	none
+Joan Rué-Queralt	2022	Human	Human	VEPCON Dataset	" 1,130 cm3 (estimated but not				none	none
+specified in the paper)"			"not specified (high-resolution				none	none
+stated)"		not mentioned		not mentioned	not specified	"Compressed sensing, connectome spectrum-based tomographic				none	none
+reconstruction of EEG sources; integration of fMRI, diffusion MRI,				none	none
+and graph signal processing"	Neuronal Circuit Mapping	100%	https://www.biorxiv.org/content/10.1101/2022.07.26.501544v1.full 	The study introduced Connectome Spectrum Electromagnetic Tomography (CSET) to enhance EEG source reconstruction by leveraging sparse representations of brain connectivity.				none	none
+Zhihui Yang	2021	Rats (Sprague–Dawley)	Rat	not mentioned	not specified			"fMRI spatial resolution 0.9 mm				none	none
+slice thickness (approx)				none	none
+functional resolution TR = 2s"	900000.0	just specifies a lower TB range of data	1.0	Longitudinal study with imaging at 2 days and 30 days post-injury	"$50,000–$150,000				none	none
+(approx)"	"Resting-state functional MRI (11.1 T), graph theory-based connectivity analysis,				none	none
+modularity analysis, Pearson correlation matrices"	Neuronal Circuit Mapping	100%	https://watermark.silverchair.com/fcab244.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA2QwggNgBgkqhkiG9w0BBwagggNRMIIDTQIBADCCA0YGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMue-7EFvGCFVGoHsHAgEQgIIDF1CdEKe95LG4pOVFNF5gErh4iv2BNpXhKAklW6lTS12BGqCCWlM_8kejdaIs7Lv0mpPI0EfldNqNw3S20AKLgs5yDtJ2x7l2-v03O6M7o2J44HMx-HgBNEnrUNI5XQk7OS-B0Abx7HsfrwyUCCFxEpxzUpw3_QS_NTl9_uN-aLIaYRqF3EhqPoapRGG52l04oxLmVPpXsuHjh7kILbDtLzXLHOZmZGZtKxAoQYYdKSorgj48YdcTmXO2tL0dQr6Jj5bOixucCSJxX94mlblCDo9BcLapTMnXINC3_9hyaY-oT0NsONvQ8GHxrTgFe6nAhNrZxgHPdIvcB6ZZAhuEl62XMFlFYxyBMUCryqr0uhHL3vSpPrW7Bs-7SFb7NkGBFCHkrZPLHIUq4eCLLwpoK5s4uHnnMIYhjy5xO83wq2f_yzKZLZ6G4qDU2vsXcELZrdlgqQf4KpeR9knl42W3zre9oEWQNoWxMB13f-r4XaniVSMSLKbp7SQ3W10FtxYhMOIiSSRw4wyQUKaPAoYLGU39i2WjHAerYyHLn3xQJyFMByc6BO1P1ilLa70rawAyV7mSeg4ld40bJiALO9jxw2nq4JFz22PWBWo2zHJIywm-wAqoXrKEydxk6Pall_wflz8DwbWX5COoLIKv3pmlyXRr-tR8lY8-DUw98s2C6MRfakk9rFMMLyXIl-Sct0biMEd02M4ep9xPCaSMGfiHF76IukrDZqiji5xLdxytRRAgv8tJ8aPq4NjURz6iaPOljHgFeVhU9sGRMddacrPF1kP5YG7JPkfZnL-4kLmHpVbO46qRqBhji0zU8m8x5Azk86S00t-Mop03UCoQWrXcA5c3STUyun4w7j9lfeJ1ISNBCjgzh6dxktWBantTXl91-kiFHBbFMSiUjrQzi4onxrAzet8Ve8akRwHF-dWGi2nrg_ahqDNdf_CS-ROPa957KGnrediF_7vmwQf2TQtGKOlO3_vpatE-5Pr7EgnKHf7RodY9NJCqpMQSvq-8L4efqMJk4JED62EX9isyqYlaf9wHoWNj4vkZ 	"The study demonstrates compensatory functional connectivity reorganization in response to controlled cortical impact. Graph-theory metrics				none	none
+were used to analyze connectivity patterns and recovery trends post-TBI."				none	none
+Sina Mansour	2021	Human	Human	Human Connectome Project (HCP)	not specified			1.25 mm 	1250.0	30TB	30.0	18–343 days for retest sessions; original acquisition took years	not specified	"Structural, functional, and diffusion-weighted MRI; probabilistic tractography;				none	none
+sparse matrix representations; high-resolution cortical maps and connectome computation"	Tractography	100%	https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811921X0002X/1-s2.0-S1053811920311800/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJHMEUCIQDVDNRk3JgBr59wMY8W4QelQrZY%2FKTuyPcj9UHGYeTxDQIgCDUhd%2Bthwpu6o1o3A%2Fe%2FXa0nzrjlkym3%2BNZLpmmI1%2BYqvAUI1f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDB4EQ9Rl%2B%2F%2FcUcjbSSqQBcBstVSuNMZ0IgccKTLYeXuae7zpFQKTKjCas8D8W1Z9xT8mA0B%2B891y7%2FQcyxuJEPaiFGMOJT4LcCsKlxgDRSUre59fhIP0oWMZjTI2jHd9JFLQW0AndQaFhgFloF1JWEyZ8zSgXn7M9w387YI3xTDh6SdSZQUTOVHNN6MGC%2BVmqcT6o%2F%2BPt9TL%2FwJRmRu4Lz3Uqrtm7fARWtqRWLTNpZ3aC9Yj86kXXS9wmL0ua9HqR0MAl4o8mPIdRTscFmhvuz66soEYn9nmWMg6LE9zBslwHphlRohtNFjShaO3YhTbp64eQTU0%2FW1G8cPwT4bvvcY%2FXCbNH%2Fvkidhrtwl7TGgTF4EfIo%2Fppd9tQvewh5kojtYKXZ7HGaXmztCB%2BWmfF58oqTo3Ta%2FS%2BNS8qzO%2BshUn9CPzPND2KoLbuGqmPdHK1BcTw%2FDPfOImKra4VFiRkKxK9teng8RYjbf5Lh4lAWxayFh6D%2F8WfIyhlEaWvQ0O5jUc5lpJD5qd0kNx98aA9zq5Nlsrje8G1VzMMEVq5OXl7H8AxhOGPfM0YCP%2BI2MBHj1v4VVliwsQLEH9dkHCP%2FRhazVP%2FsaamQPcVnDcrCMMCBidX4NvQ1ttz8biDZ9r0ajdTkzWEYiIGaicflmkYsjQeO6izB%2Bj4ssRMXH00vbIwpqF9foYK%2FGhPG2zcaegkWSOTME8qJrtWM23c3r7%2BF1247WU7JNaCTM1vNxYCyV3NQC6KI2hJJfNl7a6VBmLQIXsBXF0C5GQh2U1UL2JK8OaqWz8QSAxedgG0pVi74Q6R8uc8iZcO2jPFwpj%2BmVQVbZ6LF1wLj5xYggP0SN%2BTDz84uTZyN5zCi1GktEp0GUcgpvUtIR0yH4xNmBk3avzMIuLh7oGOrEB%2FVJZcvMMuiQ3J4fTsXWTjT4AoT7gVFRGf%2Brl0piiuDRXUjjLzJ6M7gDz77Ah%2B9kOKQKMlrT0l3Yn%2F%2BGSABb8UC%2BmKYQpPqKAISMhn8fUghS8SeqspLEr6FBCuqpIjea7Q6xY7cuDokpZMNBHOWFwdNFq2CDY6qRr8nB32bE3kYqw2OeX8Y81U3ilXGSO4cOHa3JiKSKLzTNei0gi4xiOxwNUnGNxYZaVSgXtWTxafVUo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241123T121537Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYU36RWRTV%2F20241123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=956d79856f1b0c8b042fe4363aaec22e4f52ac4ba18cd59aae58ae0fe5cae673&hash=ed7599726d5cefac9a2b71466c8c18d43033d064f42e7bdea8a732e936e1944c&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811920311800&tid=spdf-0abda4d5-3836-4ff0-ae87-532592adf11d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a54565e5b005f06&rr=8e7115f0c8c6cd11&cc=gb	"This study developed high-resolution connectomic methods to predict behaviour and identity, emphasizing individual				none	none
+differences in cortical and connectomic properties."				none	none
+Fang Xu	2021	Rhesus Monkey (Macaca mulatta)	Rhesus Monkey	Not explicitly named; data acquired using the SMART pipeline	80.5 to 97.6 cm3	Approx. 1.5×1015μm3	1500000000000000.0	1 × 1 × 2.5 µm³ voxel resolution	1000.0	750TB	750.0	3.9 days (94 hours of imaging time)	not specified	"Serial sectioning, PuClear tissue clearing, VISoR2 fluorescence microscopy, and				none	none
+semiautomated volume reconstruction using the SMART pipeline"	Neuronal Circuit Mapping	95%	https://www.nature.com/articles/s41587-021-00986-5	"This study established a scalable workflow for mesoscale mapping of the monkey brain, revealing cortical and thalamic projection pathways.				none	none
+Significant improvements in imaging speed and dataset handling were demonstrated."				none	none
+Fred Shen	2020	Mouse	Mouse	multichannel LM dataset	590 × 404 × 160 μm3	38,137,600	38137600.0	150 × 150 × 350 nm3	250.0	not given		18		Light microscopy with immunostaining and molecular specificity	Microscopy Techniques	100%	 https://www.nature.com/articles/s41467-020-18422-8	Uses a novel multiplexed antigen detection strategy involving multiple rounds of immunostaining, imaging, and stripping				none	none
+Wei Yin et al.	2020	Human	Human		1 mm³	1,000,000,000	1000000000.0	4 x 4 x 30	12000.0	150	150.0	90	~2,000,000	FIB-SEM	Electron Microscopy	85%	https://doi.org/10.1038/s41592-020-0935-4	First large-scale human tissue study				none	none
+Eviatar Yemini	2020	Caenorhabditis elegans	C. elegans	NeuroPAL				~10 nm	10.0			not given	not given	Confocal Microscopy	Microscopy Techniques	94%	https://doi.org/10.1101/676312	"Data acquisition time not mentioned- Individual experiments involved a 2-minute waiting period, followed by a 4-minute recording.				none	none
+Additional waiting times between stimuli and preparations are mentioned."				none	none
+Ons M’Saad	2020	HeLa cells and U-2OS cells (human cell lines)	Human	pan-ExM processed datasets (referred as this but no specific name)	not applicable	not applicable		~20–30 nm	25.0			not specifically mentioned, but a few minutes per participant over a few days	not given	Confocal Microscopy,Expansion microscopy (pan-ExM), fluorescence microscopy, and STED	Microscopy Techniques	100%	DOI: 10.1038/s41467-020-17523-8	"Developed pan-ExM, enabling 13- to 21-fold expansion of samples, retaining ultrastructure while achieving nanoscale resolution.				none	none
+Process compatible with immunolabeling and fluorescent dyes."				none	none
+Scheffer L.K.	2020	Drosophila	Drosophila	not mentioned	8 × 8 × 8 nm3	"5.12×10 −7				none	none
+ ."	5.12e-07	<10 nm	10.0	1,000,000	1.0	not specifically mentioned		FIB-SEM	Electron Microscopy	49.35	https://elifesciences.org/articles/57443#table2	"New methods, including advanced tissue preparation, high-resolution imaging, data alignment, automated segmentation,				none	none
+synapse detection, and proofreading tools, enabled the mapping of a large portion of the Drosophila melanogaster				none	none
+central brain. The publicly accessible dataset simplifies circuit analysis, linking neurons to genetic tools and offering				none	none
+insights into brain organization and evolutionary packing efficiency."				none	none
+Philip M. Hubbard	2020	Drosophila melanogaster	Drosophila	FlyEM Dataset	not explicitly stated			not mentioned (high resolution mention)		10 TB	10.0	not mentioned	not specified	"Electron microscopy (EM), semi-automated 3D segmentation,				none	none
+Neu3 software for proofreading"	Electron Microscopy	85%	https://www.biorxiv.org/content/10.1101/2020.01.17.909572v1.full 	"The study introduced Neu3, a tool combining 3D visualization and graph-based segmentation, to enhance proofreading workflows and				none	none
+scalability for large connectomic datasets."				none	none
+Louis K. Scheffer	2020	Drosophila melanogaster	Drosophila	FlyEM Connectome	Half-brain reconstruction	Approximately 100,000,000μm3	100000000.0	8 x 8 x 8 nm	8.0	20 TB raw data	20.0	Data collection and processing spanned 50+ person-years	not specified	"Serial-section electron microscopy (ssEM), automated segmentation with				none	none
+machine learning, manual proofreading"	Neuronal Circuit Mapping	95%	https://elifesciences.org/articles/62451 	"The study represents the largest and most detailed connectome reconstruction to date, revealing 25,000 neurons and 20 million synapses				none	none
+ in the fruit fly's central brain."				none	none
+Longyu Ma	2019	Rats	Rat	not mentioned	not mentioned			"not specific				none	none
+but low and high both				none	none
+resolution used"		Likely in gigabytes (GB) to low terabytes (TB)	0.001	9-12 days	"Estimated in the				none	none
+range of				none	none
+$50,000–$150,000."	"Longitudinal in vivo electrophysiological recording, chemogenomics,				none	none
+optogenetics, behavioral testing, BDNF overexpression"	Neuronal Circuit Mapping	100%	https://www.cell.com/action/showPdf?pii=S2211-1247%2819%2931295-1	"Findings- Persistent spontaneous pain disrupts vCA1-IL connectivity, which can be rescued via genetic interventions (BDNF overexpression,				none	none
+chemogenetics)."				none	none
+Alessandro Motta	2019	Mouse (C57BL/6 strain)	Mouse	L4dense Dataset 	61.8μm×94.8μm×92.6μm	541084μm³ 	541084.0	11.24×11.24×28nm	15.92	194 GB raw data; post processing not specified	0.194	Approximately 30–40 days	not specified	"Serial Block-Face Electron Microscopy (SBEM); AI-driven segmentation and manual				none	none
+proofing"	Electron Microscopy	97%	https://www.science.org/doi/10.1126/science.aay3134 	Achieved the largest dense reconstruction of cortical connectomes, introducing scalable annotation strategies. Provided insights into Hebbian plasticity and connectomic cell-type definitions.				none	none
+Jerome J. Maller	2019	Human	Human	CDCP Hippocampal Connectome (CDCP-HC)	not explicitly stated			"2 mm isotropic voxel size				none	none
+(300 µm super-resolution for specific analyses)"	2000000.0	1TB	1.0	Several Months (25 minutes per subject)	not specified	"1150-direction diffusion MRI, super-resolution track density imaging (TDI),				none	none
+connectomic analysis"	Tractography	100%	https://www.nature.com/articles/s41598-018-37905-9 	"The study mapped hippocampal connectivity using ultra-high angular resolution diffusion MRI, identifying six dominant pathways and				none	none
+quantifying age- and gender-related effects."				none	none
+Meng Kuan Lin	2019	Common Marmoset (Callithrix jacchus)	Common Marmoset	Not explicitly named; generated under the Brain/MINDS project	"8,222 mm³ (median brain volume				none	none
+across samples)"	Approx. 8.22×1012μm3	8220000000000.0	20,000 × 20,000 × 20,000 nm (20 μm slices)	20000.0	8TB per brain x 49 marmosets = 392 TB	392.0	14 days (processing and imaging for a single brain)= 720 days	"not specified				none	none
+(mentions high cost)"	"Integrated neuro histological pipeline using tracer injections, cryo-sectioning, histological				none	none
+staining (Nissl, myelin), and high-throughput computational processing"	Neuronal Circuit Mapping	50%	https://elifesciences.org/articles/40042	"This study established a systematic methodology for mesoscale mapping, integrating imaging, staining, and computational approaches to produce				none	none
+a connectivity matrix."				none	none
+Johan Winnubst	2019	Mouse	Mouse	MouseLight	1,300 × 2,000 × 600 µm³ per region	Approx. 1.56×109μm3 per region	1560000000.0	300 × 300 × 1,000 nm	300000.0	15 TB per brain, 20 mice = 15 x 20= 300 TB	300.0	7 days per brain, 20 mice = 7 x 20 = 140 days	"not specified				none	none
+(mentions high cost)"	"Viral labeling, two-photon block-face imaging, semi-automated reconstruction, and				none	none
+manual proofreading"	Neuronal Circuit Mapping	90%	https://www.cell.com/action/showPdf?pii=S0092-8674%2819%2930842-6	Generated a database of over 1,000 fully reconstructed neurons with detailed axonal projections, revealing new cell types and connectivity patterns.				none	none
+Zheng	2018	Drosophila	Drosophila	FAFB	1 mm³	1,000,000,000	1000000000.0	4 x 4 x 40	8000.0	100	100.0	60	~1,000,000	ssTEM	Electron Microscopy	95%	DOI: 10.1016/j.cell.2018.06.019	First complete fruit fly brain connectome				none	none
+Zheng Z	2018	Mouse	Mouse	MICrONS		1.2 x 10⁹	1200000000.0	3.58	3580.0	not given 		not given	not given	Serial section SEM	Electron Microscopy	100%	https://www.microns-explorer.org/cortical-mm3	"Zheng et al. mapped the mouse visual cortex using serial section electron microscopy, creating the				none	none
+largest mesoscale connectome, revealing connectivity patterns and neuronal circuits across cortical layers and regions."				none	none
+Robert S. C. Amaral	2018	Human	Human	OASIS (healthy aging) and ADNI (pathological aging) datasets	not explicitly stated			High-resolution MRI voxel size: 0.3 mm isotropic	300000.0	1 TB	1.0	several weeks	not specified	"Manual segmentation of fornix, fimbria, and alveus; 3T MRI acquisition;				none	none
+MAGeT-Brain automated labeling for analysis"	Manual Tracing	100%	https://www.sciencedirect.com/science/article/pii/S105381191630581X?via%3Dihub 	"The study provides detailed protocols for manual and automated segmentation of hippocampal white matter regions,				none	none
+emphasizing their role in healthy and pathological aging."				none	none
+D. C. Essen	2017	Human	Human	HCP datsets	not given	not given		MRI:3T, 7T		Processed- 63 , Unprocessed-15.2 , Both Analyzed- 81.2 	38.13	1906 days	not given	MRI, fMRI and MEG	Neuronal Circuit Mapping	100%	doi: 10.1016/j.neuroimage.2012.02.018	Recruitment Criteria-Age 22-35 years. Uses various NIH tools to see cognition, motor, emotional, sensory skills				none	none
+Klaus H. Maier-Hein	2017	Human	Human	Simulated Diffusion Phantom Dataset	not explicitly stated			2 mm	2000.0	mentions greater than 1TB	1.0	not mentioned	not specified	"Diffusion-weighted MRI (DWI), synthetic phantom data, tractography simulations				none	none
+ with 25 major tracts"	Tractography	85%	https://www.nature.com/articles/s41467-017-01285-x 	"The study highlighted challenges in tractography with phantom data, emphasizing false-positive connections and the need for methodological				none	none
+improvements in brain connectivity mapping."				none	none
+Katharina Eichler	2017	Drosophila melanogaster	Drosophila	not specified	Entire mushroom body of a first-instar larva	Approximately 1.5×106μm3	1500000.0	8 x 8 x 8 nm 	8.0	25 TB raw data	25.0	not mentioned	not specified	Serial-section electron microscopy, manual proofreading, and graph-based modeling	Electron Microscopy	100%	https://www.nature.com/articles/nature23455 	"This study mapped the entire mushroom body connectome at synaptic resolution, identifying 223 Kenyon cells, modulatory neurons, and extensive				none	none
+connectivity motifs."				none	none
+Jan Funke	2017	Drosophila melanogaster, mouse	Drosophila	CREMI, FIB-25, SEGEM	"CREMI: 1250×1250×125μm³				none	none
+ FIB-25: 520×520×520μm³				none	none
+SEGEM: 100×100×100μm³				none	none
+"	"CREMI: ~195,312,500μm3;				none	none
+FIB-25: ~140,608,000μm3;				none	none
+SEGEM: ~1,000,000μm3"	445640500.0	"CREMI: 4×4×40nm;				none	none
+FIB-25: 8×8×8nm;				none	none
+SEGEM: 11×11×26nm"	16.0	"CREMI: ~2 TB;				none	none
+FIB-25: ~10 TB;				none	none
+SEGEM: ~1 TB"	2.0	"CREMI: ~weeks;				none	none
+FIB-25: months;				none	none
+SEGEM: months"	not specified	"Serial Section Electron Microscopy (ssTEM), Focused Ion Beam Scanning Electron				none	none
+Microscopy (FIBSEM), Serial Block-Face Scanning Electron Microscopy (SBEM);				none	none
+automated segmentation using 3D U-NET with MALIS loss"	Electron Microscopy	85%	https://export.arxiv.org/pdf/1709.02974v3.pdf 	"This study improved automated connectome reconstruction by integrating deep structured learning with large-scale graph-based segmentation				none	none
+techniques."				none	none
+Y. Shi and A.W. Toga	2017	Human	Human	Human Connectome Project	not specified(spans whole brain)			"Multi-resolution diffusion imaging:				none	none
+ b-values (1000, 2000, 3000 s/mm²)"		2-3TB	2.5	not mentioned	"not specified				none	none
+(mentions high cost)"	Diffusion Magnetic Resonance Imaging (dMRI), multi-shell acquisition, tractography	Tractography	90%	https://www.nature.com/articles/mp201792	"Advances in multi-shell imaging improved angular, spatial, and temporal resolution, enabling the reconstruction of challenging brain				none	none
+pathways like retinofugal and brainstem."				none	none
+Antonios Makropoulos	2017	Human (Neonates)	Human	Developing Human Connectome Project (dHCP)	"not specified--				none	none
+453 neonatal brain scans covering 28-45				none	none
+weeks post-menstrual age (PMA)"	"Approx. 100mm3 per brain,				none	none
+or 100,000,000μm3 per subject"	100000000.0	800,000nm3 isotropic resolution	800000.0	3 TB approx	3.0	several weeks	"not specified				none	none
+(mentions high cost)"	"Multi-shell High Angular Resolution Diffusion Imaging (HARDI), Draw-EM				none	none
+segmentation, and cortical surface inflation modelling,structural and functional MRI"	Tractography	97%	https://www.biorxiv.org/content/10.1101/125526v1 	"The study introduced a neonatal brain MRI processing pipeline, addressing challenges in neonatal brain imaging, segmentation, and cortical surface				none	none
+ reconstruction."				none	none
+Kasthuri	2015	Mouse	Mouse	RCI	40 x 40 x 50 μm	80,000	80000.0	3 x 3 x 30	9.0	2	2.0	14	~250,000	ssTEM	Electron Microscopy	100%	DOI: 10.1016/j.cell.2015.06.054	Landmark cortical reconstruction				none	none
+Manuel Berning	2015	Mouse	Mouse	"Retina Dataset (ek563) and				none	none
+Cortex Dataset (2012-09-28_ex145_07x2)"	"Retina: 44×60×141μm³				none	none
+Cortex: 93×60×93μm³"	"Retina: 372,240μm³				none	none
+Cortex : 518,940 μm³"	445590.0	"Retina: 12×12×25nm				none	none
+Cortex:11.24×11.24×28nm"	17.12	"Retina: ~0.5 TB;				none	none
+Cortex: ~1 TB"	0.75	"Imaging: Retina ~30 days				none	none
+Cortex ~60 days"	not specified	"Serial Block-Face Electron Microscopy (SBEM), semi-automated SegEM segmentation				none	none
+workflow with convolutional neural networks (CNNs) for volume reconstruction"	Electron Microscopy	95%	https://www.cell.com/neuron/fulltext/S0896-6273(15)00760-6	"The study introduced SegEM, a workflow for efficient 3D connectomics. It achieved significant reductions in manual labour and accelerated				none	none
+reconstruction of neural circuits."				none	none
+Ulrika Roine	2015	Human (autistic)	Human	"data based on constrained spherical deconvolution (CSD)				none	none
+tractography"	not explicitly stated	"Not explicitly stated; approximate standard				none	none
+adult human brain volume 1.3×10^12μm³				none	none
+  "	1300000000000.0	1.875 mm × 1.875 mm × 3.0 mm	1875000.0	Not explicitly stated; estimated < 1 TB for processed data		20 minutes per session; took several weeks	not specified	"Constrained spherical deconvolution (CSD)-based whole-brain tractography, graph				none	none
+theoretical analysis of weighted and unweighted structural brain networks"	Tractography	95%	https://molecularautism.biomedcentral.com/articles/10.1186/s13229-015-0058-4 	"This study highlighted reduced global efficiency and increased normalized characteristic path length in subjects with autism spectrum				none	none
+disorder (ASD) compared to controls."				none	none
+Oh S.W.	2014	Mouse	Mouse		28 x 35 x 49 μm			"not specified				none	none
+(High Resolution)"						EGFP, Serial Two-Photon Tomography, Virtual Tractography	Neuronal Circuit Mapping		https://www.nature.com/articles/nature13186				none	none
+Plaza S.M.	2014	"Multiple (e.g., C. elegans, Drosophila				none	none
+melanogaster, Mouse, and Human)"	Multiple	FlyEM, C. elegans connectome and Drosophila medulla connectome	"- C. elegans: 0.0003 mm³				none	none
+- Drosophila medulla column: 0.0001 mm³				none	none
+- Mouse cortical column: ~1 mm³"	"- C. elegans: 300 μm³				none	none
+- Drosophila medulla column: 100 μm³				none	none
+- Mouse cortical column: 1,000,000 μm³"	133333.33	"Varies by dataset:				none	none
+- C. elegans: 5x5x70 nm				none	none
+- Drosophila medulla: ~8 nm				none	none
+- Mouse retina: 16x16x25 nm"	19.6	not specific		Ranges from weeks to months	"$50,000 to $500,000				none	none
+per dataset."	"Serial Electron Microscopy (sEM), FIB-SEM, and advanced reconstruction techniques				none	none
+involving automated segmentation and human proofreading."	Electron Microscopy	"- C. elegans: 100%				none	none
+- Drosophila medulla column: Near-complete				none	none
+- Mammalian cortical column and whole				none	none
+brain: Incomplete"	https://www.sciencedirect.com/science/article/pii/S095943881400035X 	"Highlights advances in imaging, segmentation, and connectome analysis but acknowledges challenges in scaling methods to				none	none
+larger brains like mouse and human."				none	none
+Helmstaedter M.	2013	Mouse	Mouse	e2006 dataset	"132×114×80 μm³				none	none
+"	1204800μm³	1204800.0	"16.5×16.5×25nm³				none	none
+"	19.5	not specific		"Not mentioned specifically; estimated to take several weeks to				none	none
+months for imaging and annotation"	"Not specified; costs				none	none
+likely exceeded				none	none
+$10 million				none	none
+"	"Serial Block-Face Electron Microscopy (SBEM), crowd-sourced manual annotation,				none	none
+machine learning-based segmentation, and convolutional neural networks for boundary				none	none
+detection"	Electron Microscopy	100%	https://www.nature.com/articles/nature12346 	"The study reconstructed 950 neurons in the IPL, characterized a new bipolar cell type, and identified circuit motifs predicting				none	none
+motion sensitivity. Data was validated with known circuits and is publicly accessible."				none	none
+"Nuno Maçarico da				none	none
+Costa"	2013	Monkey, Cats	Other	not specified	not specified	not specified		~20–50 nm voxel sizes	35.0	not mentioned		"~10 days per neuron for light microscopy reconstruction; months				none	none
+ for electron microscopy of smaller dendritic or axonal regions"	"not specified(high				none	none
+costs"	"Sparse reconstruction using light microscopy (LM) for large-scale dendritic/				none	none
+axonal arborization, electron microscopy (EM) for synaptic profiles, and computational				none	none
+modelling to link physiology and anatomy"	Neuronal Circuit Mapping	50%	https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811913X00151/1-s2.0-S1053811913004011/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJHMEUCIGVlYmSYhmPAJnvM24fdWG%2FF8DuRQcx8aJtAU0QazKkKAiEApEcuRiIULXh%2FLHk%2FURErIGHf70WCIbo%2FE1EiSvKHZoQqvAUIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDECO2Q7ah1PRYqyv1iqQBY96ESHAMlUWYODxH3xk%2FbWtHQkEECeF3ixcps5sbeuPW%2B4Ikgw27vyKTf7yLRzwgIhFE5RnXW2Kp1HC8FUUowE8Jf8jLwg5f6sNq9eG3ixJpVwN%2FzjeknGqrvqOZ64guhUOiC0DG698GPyybPhn6mlhTn8jXN0Q9dpXlqyrOz%2FZUkBJoOZb3ErX5FJDTfzjjCLztORulWgbU5mQ0nDTra9HvzlbzG%2FB74SeMcXb7qlKH6Nmn00v73Ieze9Mw9A2YtJtROk7EuBvxGIXWxsMMTfJcRHlwIbvSmhBzDBzHNogwWF6Gg1XRC%2BS4mS%2B3pufEwO0DRtUX9QAc0CabW9FVt17MtTyDTIwWjdgmMSUcvrqZoO3FJ23%2F5ueAKZFUuzRSgbt3G%2BZ20n0leu5CPOx24y0HdrBNBSOa%2B9vA0LngkVwdMfjdPcZq%2FK0CSMJpJzkNA6yUSHOeGmS6jLecjXgdgb4Zkv7B8zmfbCtpmguBRIB1dSI1ueJ9wwfW2VDEEOrNvcgHmsroJYH2qsvTyzfRkkeRjZajxnI%2BxZqgP8vPymTQ0XYCR1kG9YtaQx4qi1SRPDoAtm0Px8fdMhuyJD0XuKY832R0cexX3oeyjfFoQKva%2FUwG4fVRYTxkkqtOm%2Fh6uwfUiclqDZtPmBFLAz256iykypuozfPKuqUR7OdFbh8re0Ru9wanunolpchP4bWfl9laylpql1fPx%2FOgLqR05G7oAduXhLYHeCEkBh4rI%2BgXquvoQRTr83fNXcH2ysAO4vLb03Q%2F%2Bo2RUUXjc4%2BM2K%2FjUYmri2KEfN6%2BWsGObtFrtJwVKaMPqKcdXnDbfQ1IBL5woNq7CerSFr%2FB64r5kS6SUeosVKcI8E4XA12crKuMK2Sg7oGOrEBt7Vlg4zDf8HxHIeCppiTNxezDp55J0lFN2TpPvAL%2BCRC94zHf40GBNKnAc56jnoQaP%2BKpm%2BVyBA1%2BBWY6wB4IUpXyYF9h4ZvpBMa3u7VK1haFwRzMiPVzbxaYlenKTofqdoG9B65l3b7FplZ8hB3RMvOVbsgrsNDrGOAPtmZtuuDnxoTgqZuH1GSV6YlREDOOZd1WMD6JYIlYELZpvBkuTut8h4cS0kyCYAY50iVNSNN&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T181522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQDRA6VN6%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2c8c394d4fcb26b7ae15a1024788e8b7e499dacb52a0af49c68804835f4ead27&hash=0b48d3fff68b91ef53ab26b5107864689617293eb3131312775ed00845e97c0d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811913004011&tid=spdf-cfb17129-0a98-493b-92b8-af1d83fa1439&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060a595e5756&rr=8e6ae7883f429475&cc=gb	"The study emphasizes the limitations of current methods for large-scale connectomics and advocates for a sparse reconstruction strategy to				none	none
+address key questions about neural circuit organization and computation."				none	none
+Shin-ya Takemura	2013	Drosophila melanogaster	Drosophila	Medulla Connectome Reconstruction	"37×37×10μm³				none	none
+"	13960μm³	13960.0	"40nm (slice thickness),				none	none
+35,000× magnification for				none	none
+TEM imaging"	40.0	Not explicitly stated		took approximately 12,940 person-hours	not specified	"High-pressure freezing, transmission electron microscopy (TEM), semi-				none	none
+automated segmentation, manual proofreading, neuron classification via Golgi impregnation				none	none
+ and genetic labelling."	Microscopy Techniques	80%	https://www.nature.com/articles/nature12450 	"The study reconstructed a motion detection circuit, identifying key neurons (e.g., Mi1, Tm3, T4) involved in detecting directional motion in the fly				none	none
+visual system. Data includes dense synaptic connectivity for the medulla."				none	none
+Stephen M. Plaza	2012	"Drosophila melanogaster (larva, medulla, lobula)				none	none
+and mammalian retina"	Drosophila	Janelia FlyEM Dataset	not specified			4×4nm in X/Y, 50nm in Z	20.0	2–5 TB	3.5	not specified- required several months	not specified	"Electron Microscopy (EM), probabilistic segmentation graphs,				none	none
+GPR metric for evaluating segmentation quality, and manual correction prioritization."	Electron Microscopy	"Partial; segmentation of key regions reached				none	none
+ >90% adjusted Rand index (ARI) accuracy				none	none
+but did not fully reconstruct all regions due				none	none
+to manual correction limits."	"https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.				none	none
+0044448&type=printable "	"The study introduced GPR (Generalized Probabilistic Rand Index) to evaluate segmentation quality without ground truth,				none	none
+significantly reducing manual segmentation time while maintaining high accuracy in reconstructions."				none	none
+Leila Cammoun	2012	Human	Human	uses multi-resolution connectome mapping	"Approximately 1.2×10^12 μm³				none	none
+"	not specified		"approx				none	none
+2 mm isotropic;				none	none
+cortical regions subdivided to ~1.5 cm²"		~2 TB for raw data 	2.0	several weeks	not specified	"Diffusion Spectrum Imaging (DSI), high-resolution structural MRI, multi-scale cortical				none	none
+parcellations, and tractography algorithms"	Tractography	95%	https://www.sciencedirect.com/science/article/pii/S0165027011005991	"This study introduced a multi-scale, normalized approach to human connectome mapping, focusing on reproducibility and robustness across				none	none
+individuals and resolutions."				none	none
+Hai Li	2012	Human (children autistic)	Human	not specified	whole brain	Approx. 1.3×10^12μm³ per brain	1300000000000.0	1.875mm×1.875mm×3.0mm	1875000.0	<1TB	0.5	Each scan lasted ~20 minutes per participant; took several weeks	not specified	"Diffusion Tensor Imaging (DTI), fast marching algorithm for connectivity, graph				none	none
+theoretical analysis of weighted networks"	Tractography	95%	https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.22185 	"This study showed increased local connectivity in ASD, particularly in language and visual processing regions, correlating stronger connectivity				none	none
+with better language performance in ASD."				none	none
+Moritz Helmstaedter	2011	Rats, Mouse	Rat	E1088, E2006, K0563 datasets	"E1088: 45×39×60μm³				none	none
+E2006: 135×117×80μm³				none	none
+K0563: 50×65×145μm³"	"E1088: 105,300 μm³				none	none
+E2006: 1,263,000μm³				none	none
+K0563: 471,250μm³"	609850.0	"E1088: 22×22×30 nm³				none	none
+E2006: 16.5×16.5×25nm³				none	none
+K0563: 12×12×25 nm³"	24.17	2–4 TB	3.0	Estimated several months per dataset	Not explicitly stated	"Serial Block-Face Electron Microscopy (SBEM), KNOSSOS software,				none	none
+Redundant Skeleton Consensus Procedure (RESCOP)"	Electron Microscopy	"E1088: ~100% for a specified volume				none	none
+E2006: ongoing				none	none
+K0563: partial completion"	https://hal.science/hal-00658165/file/PEER_stage2_10.1038%252Fnn.2868.pdf  	"The study introduced RESCOP, enabling high-accuracy neurite reconstruction, and analyzed the challenges of annotating				none	none
+dense and complex neural tissue volumes."				none	none
+Ann-Shyn Chiang	2011	Drosophila melanogaster	Drosophila	Flycircuit	135×117×80μm³ (aprrox) per image	1,263,000 μm³	1263000.0	"				none	none
+0.32×0.32×1μm"	320.0	multiple years		not mentioned	not specified	"Genetic mosaic analysis with a repressible cell marker (MARCM), high-resolution				none	none
+confocal imaging, image stitching, 3D reconstruction, automated and semi-automated				none	none
+segmentation"	Microscopy Techniques	"~10–20% of the brain's ~100,000 neurons				none	none
+were fully reconstructed; coverage estimated				none	none
+as sufficient to approximate interregional				none	none
+connectivity patterns"	https://pdf.sciencedirectassets.com/272099/1-s2.0-S0960982210X00240/1-s2.0-S0960982210015228/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJIMEYCIQCI8F7ENsNEnlXPrDMSQmkXW3%2Bm%2FHiL55%2FXO%2FhtGwWIDwIhAIWq5a949ZOBCztTTh8CaM4UfiL0zgj6Z4XGOKcNBF66KrwFCMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgwAELHAY0ik52CqbLQqkAVDvocQkYKAsTxJppcHKxcJg%2FmNAV2WbmnQ5UHQct4T422juSu5i%2BRYK6sBZgNU21%2Fxv7JHQdGT%2Bz9HyigXkvVrZpsiOV4YP%2F8EONaAChld3zrEB1Vzxo4Vy8zEQPYO6kB2o8P3KYs3GqenSlpT0S1WRsDWP4L8ikPXIRH5xBuwh%2BEb4OPfGtLGfG1wLSCyNFa4M9m%2FSZ%2BiJE8qpc4G2vUOvWBUO0RcuVi4PgYG3uNV%2FPWZE8xUaUoJqNWoiWfk%2BhdpdxgWPdMOgReysjZVyJFASWj3S7Sj0r3EJ8G97wpzF9kdptR2yo1N4f%2FZvvBSuVvrdm06upHaL2r%2BZqr1BHAWthBNAe3k0pTw4TtxHK%2BjzQkeIDGotqfgqH91ZPY4agF4xdnZGFyBzf5YKHXGQdTqAHGg8WoQveN4BE3prHURnvE4oW7osXq2P1a2REZb09VJBpcQaxwEdE5JuCrmTEC6QL29y%2FWSN67YElcxb2sR4gafKPhd2MupCCDePCnKrS76Xy9oS4%2FDQaCWAKXUGyBVr9GGWiHIgtfWHv%2F%2BqCtgWOGeUPCzR8dMF%2FXBAiIu30uN0LfHmxZnpvNXtE6lvKCaDbtX9eRtT6Z6YQ6yf0l6%2Fz9TviyXObOVNw0N4qBYc7TZQ6EMhDzAK4oeZNpajwW0zZGmzNsG7BZPrhGuH3Pqgz37GnJw4RfkH8EE6n2elQJ0yvAjzCR%2B7YZWj%2Bp5RkLYk1Q5xw0OI0MH2X2EwxmG%2FQgv%2FyO59Ut0DW5utYhNP%2BpzgsyYNbMCfJtaSv6J4bXtbpewGITc8WYT6sHldRHUQlzHFOGNe7RwVwMkItJPy1CttZEhg5PTrMGtr8r4bUqNjEfvJ5fbDLg1ORRvIIwRJzDE3YK6BjqwAdtsKrxiiXL6dbsjdzT21v6WY%2Feffw38y9jC%2B7iM28ATkGh4n1RSyAW2jGNvLUqomBtOxis4kGVIUoLZtDUMRSKmxnXaBG%2FbxnKI8d0pK7dASQJIGbFcF36%2BIPcJ6EPq3FfO2HIrn1Bi51A062PwmtUHBJWUz%2FH3Hqtuj%2Fwk56pH9LuDWuq7rgt5c%2B3W0tpKPSKn%2BOP88k%2FXb41taLB3Jo1CSYnXksQ%2F%2BjKBcIqhlAAa&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T175543Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3LONXKIZ%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3f9895afd5f357dca68e951ffd1b496a6a044f71ee5a504829752aac6b231738&hash=1f514528df7909ba8784f8678d928004b9ae73be7c59863759b0d701d21b42c5&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0960982210015228&tid=spdf-ba3e033f-0e0f-4f36-a137-34de693beb53&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060c0f040900&rr=8e6acabfed569418&cc=gb	"The study introduced FlyCircuit, an open-access resource for neuron data, and developed a mesoscopic map of Drosophila brain circuits,				none	none
+laying the groundwork for understanding neural connectivity and information flow."				none	none
+Deepak Ropireddy	2011	Rat (Long–Evans strain)	Rat	based on NeuroMorpho.Org reconstructions	1212.89 x 300.72 x 1139.13 mm³ (approx)	"10^9μm³				none	none
+"	1000000000.0	"~16 μm for hippocampal				none	none
+reconstruction"	16000.0	1TB	1.0	several months	not specified	"High-resolution histological imaging, manual segmentation, and computational embedding				none	none
+of digital reconstructions to analyse potential synaptic connectivity."	Neuronal Circuit Mapping	80%	https://doi.org/10.3389/fninf.2011.00005	"This study developed a computational framework for estimating potential synaptic connectivity based on the proximity of axons and				none	none
+dendrites, providing insights into hippocampal circuits."				none	none
+Huei-Fang Yang	2011	Drosophila melanogaster, Zebrafish	Drosophila	not specified	"VNC: 512×512pixels				none	none
+Tectum: 631×539pixels				none	none
+"	"VNC: ~3.2×10^6μm³				none	none
+Tectum: ~ 6.4×10^6 μm³				none	none
+ "	5800000.0	"VNC: 4×4×50nm;				none	none
+Tectum: 10×10×30nm"	48.0	0.5 TB~1 TB	0.75	several months	not specified	"Serial Section Transmission Electron Microscopy (ssTEM), Serial Block-Face Scanning				none	none
+Electron Microscopy (SBFSEM); segmentation via graph cuts, interactive editing, and				none	none
+topology validation"	Electron Microscopy	85%	https://www.semanticscholar.org/paper/Reconstruction-of-3d-neuronal-structures-from-data-Choe-Yang/1c7a0174bfe049e7e57d389df3e582f6ced47dd9	"The study introduced algorithms for 3D neuronal structure reconstruction from EM data, focusing on segmentation, manual correction, and				none	none
+validation methods for topological accuracy."				none	none
+Markus Axer	2011	Human	Human	"Not explicitly named; dataset based on				none	none
+3D-PLI imaging of postmortem human brains"	"Whole brain with specific focus areas				none	none
+(2 mm × 2 mm × 1 mm for tract				none	none
+models, extended whole-brain slices)"	"Estimated ~10^9μm ³				none	none
+ "	1000000000.0	"Large-area polarimeter:100 μm voxel size;				none	none
+polarizing microscope: ~1.6 μm voxel size"	850.0	0.5–1 TB	0.75	several months	not specified	"3D Polarized Light Imaging (3D-PLI) using a large-area polarimeter with a tilting stage and a				none	none
+polarizing microscope for high-resolution imaging"	Microscopy Techniques	85%	"https://www.frontiersin.org/journals/neuroinformatics/articles/				none	none
+10.3389/fninf.2011.00034/full"	"The study pioneered 3D-PLI for mapping fibre orientations and connectivity. Introduced scalable workflows for cross-validating				none	none
+mesoscale and microscale connectomic datasets."				none	none
+Markus Axer	2011	Human	Human	3D-Polarized Light Imaging (3D-PLI) dataset	"5 mm × 5 mm × 1 mm for pons				none	none
+reconstruction"	25×10^6μm ³	25000000.0	100 μm	100000.0	1TB	1.0	several months	not specified	"3D-Polarized Light Imaging (3D-PLI), independent component analysis (ICA),				none	none
+Fourier analysis, high-resolution tractography pipeline"	Tractography	90%	https://www.sciencedirect.com/science/article/pii/S105381191001178X?via%3Dihub	"The study introduced 3D-PLI as a novel method for mapping white matter tracts in unprecedented detail, highlighting regions				none	none
+of fiber crossing and intermingling in the pons."				none	none
+Dmitri B. Chklovskii	2010	Drosophila melanogaster	Drosophila	Janelia FlyEM Project	90×90×80μm³ 	648,000μm³	648000.0	3×3×40nm³	45.0	Estimated 2–5 TB	3.5	Lamina: 22 days; Medulla: 65 days	not specified	"Serial-section Transmission Electron Microscopy (ssTEM),				none	none
+Semi-automated segmentation pipeline with Raveler for proofreading and annotation."	Electron Microscopy	"Partial; lamina cartridges reconstructed				none	none
+(1 column complete), medulla				none	none
+reconstruction in progress (~1 column				none	none
+complete, surrounding 6 columns ongoing)."	https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438810X0006X/1-s2.0-S0959438810001224/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJHMEUCIQCrdi2rUu%2Bjvp75oAOv3qYthpeYsj8ZiKF3%2FKUPaQWjewIgJfpLNHyIA%2FUUya8uvyL00TOvOBijBK%2F0IYJnaR2fyckquwUIwv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDIRGYLSmiHmJmoNhlCqPBVZ3qXJcTpFGQ79Otmsf%2BglOx6W5Mo9zY2mHDTrWWBqWGvUk84WCD6ZKQVX61nTW193%2FD4Bj3yf88vT4%2FlwCNaiXJ0Bnh8KqCPOrq%2FAqz5FJe7EpKqFOivXB49vT3gSiYZY2oBq1e6aybGganse2Dik3aa6tPWdEixVUFu8yxcO0002iw3ivnwzUHr48APDaoqjQLds7fj7nto%2FeMF3%2BNs6t5JJAYPRA8dkgLn%2Fm%2F7Yf44hk7eO3gTB3S2mjCDHJRHjPieg%2FsVSQvp8xo3msy4EsQiQvYDZkQ2Q1hWSC4iHGkto2olVoiC%2BAXQzYH0zj5lnzwOHj8knkg2pdAXKWkmPSS6BHGogR%2BqA3T6plHwkHQmmWRGc5y8UobNOJW3aH6Is2hMAwisQC73U8yeAa%2F7diK05mTrMn%2FrhnfZAX5vTfRIEDvWlYdJh5d%2B0cYWLJA1YuQJTlaMxncujfog5hTZZmuKp5j68klCfapfMokB6WhP88ffoUOW2rnl686wU2VxRMzSzfAFjS9Bx6kh7oQVgSwn6vDWwvy3kGBWnNEgmAwVTeOAyywoXVLIC081mYIqbLVxxvomiAfQ8oWAOsU9O7cBD5UU4Owe02BwGXfobJmowm6oxlG8i5OIwExZdBm1sQQ%2FlJm0SO6qYyvu4RxVa%2BiU0PBIAWnIJzKiLg2kyvvqGbXRWYuzNkTmopfMWCPBv%2FmrWOtqcJoEP0TcZGVhRnlt2wHW%2BeQ2mDlleHhHbLy%2Bb9iSJ3gnRwQ5mMeadxdZVo%2Fiyl4fV1UFnC0hTabR2qF13QUP%2BYeBTJVoc5VUc8SGDZN3qjuq%2FlnLhCYdL2Rb8bfe%2Bw%2FqNeMEYIny5ImWTojMX8L1X%2BnkIuei3mz58w0uuCugY6sQGAbJqLrgcZ6bFp1rWs0oMVPVPVM6SkNwukFrv5gxnXcGhiqASYtbXDxatwrlWfrP6k6hT0cLEMXdb8rZygGrbys3wFr5pj%2Ftzbv9dUTwiXRCudLk7PKnFlG2j5NqaG1GQ66q0VClc49Kxd703i4aqMI%2Fa13%2FP0gkGqCCmol0KkGmAZCaOHGAO075zEXVE4n0w08tuLuijJeEvwIsJ6zXI3WHBaSwcY3vayIn0B4LoNUDo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T183024Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQBFQ5KRM%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8338bbb5818e35b9c0295e421ee0fa04921d13d1849fbcfbb30fbd7279055ce2&hash=a394cf5f8d41f84b952ac45da83514de19b188d7133c25d0764adf0846302d18&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438810001224&tid=spdf-1eddc1ea-00aa-4b30-a171-4e86cb9e7590&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5506090a5e095d&rr=8e6afd8f8e9e772c&cc=gb	"The study developed a semi-automated pipeline for large-scale circuit reconstruction, demonstrating connectomics's				none	none
+ feasibility but highlighting scaling challenges."				none	none
+Yuriy Mishchenko	2010	C. elegans	C. elegans	GRASP-derived connectome data	100 x 100 x 1000 µm	10^7μm³ 	10000000.0	~500 nm 	500.0	not mentioned		1-7 days	not specified	"Fluorescent synaptic markers (GRASP), stochastically expressed with recombinase systems,				none	none
+combined with Compressive Sensing for neural connectivity reconstruction"	Neuronal Circuit Mapping	100%	https://www.semanticscholar.org/paper/Reconstruction-of-complete-connectivity-matrix-for-Mishchenko/8c48df1c84f94ff681f2a3fe6f28f3482d4ae3f1 	"Introduced GRASP and Compressive Sensing as tools for high-speed, low-cost reconstruction of neural connectivity; experimental work				none	none
+was simulated rather than executed."				none	none
+Jeff W. Lichtman	2008	Mouse	Mouse	Brainbow Dataset	"Neuromuscular Junction: Individual motor				none	none
+ unit maps; Hippocampus:				none	none
+Dentate gyrus section ~1mm^2"	"Neuromuscular junctions: ~				none	none
+10^4−10^6𝜇𝑚³				none	none
+ Dentate gyrus section: ~				none	none
+10^6𝜇𝑚³				none	none
+"	500000.0	~50−100nm	75.0	0.1-1TB	0.55	several months	not specified	"Multicolor fluorescent protein labeling (Brainbow), light microscopy, automated image				none	none
+analysis"	Microscopy Techniques	Partial	"https://www.researchgate.net/publication/5406603_A_technicolor_				none	none
+approach_to_the_connectome "	"Brainbow revolutionized neural circuit visualization by enabling multicolor labelling of neurons, improving resolution,				none	none
+and reducing ambiguity in dense tissue regions."				none	none
+Bo Huang	2008	Green monkey kidney epithelial cells (BS-C-1)	Other	not specified	~600 nm	"1,000μm ³				none	none
+"	1000.0	20–30 nm (lateral) and 50–60 nm (axial)	40.0	not mentioned		several months	not specified	"3D Stochastic Optical Reconstruction Microscopy (STORM), using photo-switchable				none	none
+fluorophores and iterative stochastic activation"	Microscopy Techniques	100%	"https://www.researchgate.net/publication/5676397_Three-Dimensional_				none	none
+Super-Resolution_Imaging_by_Stochastic_Optical_Reconstruction_				none	none
+Microscopy "	"Achieved sub-diffraction-limit resolution for 3D imaging, allowing detailed visualization of nanoscale cellular structures.				none	none
+Demonstrated applicability for structural biology."				none	none
+Moritz Helmstaedter	2007	Rat	Rat	"Not specified (derived from anatomical and functional recordings in				none	none
+vitro and in vivo)"	"the volume of cortical column 120,000μm				none	none
+cross-sectional area and ~2 mm height				none	none
+"	240000000 μm³	240000000.0	not specified		not specified		not specified	not specified	"Pair recordings, anatomical reconstructions, and in silico simulations of cortical				none	none
+column activity"	Neuronal Circuit Mapping	50%	https://pdf.sciencedirectassets.com/271081/1-s2.0-S0165017307X01401/1-s2.0-S0165017307001361/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLWVhc3QtMSJIMEYCIQC1sHm575u4vMt1fIHxXPVrvEV%2Fm%2FSTocMoyy39nJizKQIhAIdGRQjIv9%2BNc5q%2BP8QRsbszSQF22e1%2BTzi2TOe4ty%2FFKrsFCMP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgywYIf8xRKaIkNkZL0qjwWKlzsJfGu69vxYI0Bhx7s6hOJK6dNGXbIG%2Bqh6RXcqc3ynmHDWUgsGAsVtKst4ehd14v%2BLb6JRSDzVDhCTX3FjIS9e5z0nWCw4vi2cf0ogCet%2Futnvln4ruV%2FDz1KHP7LlDz3lToQO6xcMgVmD3h7lFQHShQMsBI9omAGf%2FsOwZ2dB1R5tGbXEL92i9XadgVzsXix0nXf82TI3C7zaA2vwgi2XxmPK8dpWO9u9UG2bwyo7tXNqA1u87YVK%2F%2Fs5nxW2bR90uzpCoUkhhSdAZIhwh07r3z%2BEcC%2B6YqZ9yK6U%2BKGjXClv%2B80KpbSRYGuHpJZatkBfJ1%2FJLNkszwPAu2cj4xkWzr8KN4mwGUF9Yi0rBy3tjOYJEAPz2xjNARP0qyK6Uoi6nTMZAdOvQCbpEWSivjR1tHnBDv1lzn2wxMoWnensGx8t1BTpi%2F9L387VzIwIPTuiG8Dn82g5w%2FSGBX%2FNdTYn%2B8Hla3RIzX%2BiP689P7ZSsLKuSqRM1aeA3dp4SEbzJlH0OymYHG%2Fx3nNg61WMKz9Qdu8HwoWBdvBkUgw94Bix5htGx3AXAOJNNZTyN8e5tT1V7QLOcfjRYZvlB5Sq1OOD5zxJY7UWmiTSQpYFCxQ9PbVXaRpeeKaZ104RoxNgPZAqegl1X9W5DYfz7lm8H0w67ty1Y56qhHHxo2wX9PO1ESpkldtO3zW0XOE9aC8SsVyKHBrA5DgDSof10Xg%2FSpcU6EBsz%2Fl2oxDRhc4kS%2FvInX94L%2BQMZ1dHAGC4h7Y4u0YfNL2uiNt7Arjel0wCoxugvAGxhOnnle9Yfz7hee%2BgY1hxpJ%2BvxZ4J4QWz6GM6dXSkK9cx%2BzWILUmFHHJnphZ7R0hNtXXnRt70U%2FbvMKyDg7oGOrABAmFGx7nFXbDuDs6Lqe5AHL1mIuaLQlQD6Fsbv9GQUh5BDSwt5kI%2F3dk2SMQdNnsPSMn5PGnYl%2BIGT7GEKfu3bpb4E7rmmZGZ6aqhWg0%2BZzEkGvvI1faJ%2Bid0QGsk19u%2BaRMU31Rvg%2BOjkIgFpD33buynCVmC51bzy9ZsyMTlXa1Z%2BptSngmGWOxezOudCjCwxmx72U6wF5%2B3kqSTCEQi7i%2FjliIV7aahBzaVXMLWE1U%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T180350Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYVYS5CDDA%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cf71eacc7b68c30a811df552a62951bbf70ee6d20ee42d34ab972388f5f572a7&hash=972c4f3333bf493177648466f20eff6a2aecbe0f9ac9ec985e6b7b1b7c47a5cd&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0165017307001361&tid=spdf-4f40e6d1-9861-4a59-a766-a694163e558d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060b58075a57&rr=8e6ad6a52b349583&cc=gb  	"The study aimed to model the anatomical and functional connectivity of a cortical column, focusing on decision-making processes and sensory				none	none
+behaviours."				none	none
+Briggman Kevin	2006	"C. elegans, Rat, Mouse, Drosophila				none	none
+melanogaster"	C. elegans	Not explicitly named	"- C. elegans: 106μm³				none	none
+- Drosophila: 108μm³				none	none
+- Mouse cortical column: 108μm³				none	none
+"	"C. elegans: 1,000,000μm³				none	none
+Drosophila: 100,000,000μm³				none	none
+Mouse cortical column: 100,000,000μm³				none	none
+"	400000000.0	"3nm×3nm×30nm for SBFSEM;				none	none
+50 nm for SSTEM slices"	27.0	not mentioned specifically, but range from 10 TB for C. elegans 	10.0	C. elegans: 15 years for manual tracing	not specified	"Serial Section Transmission Electron Microscopy (SSTEM), Serial Block-Face Scanning				none	none
+Electron Microscopy (SBFSEM), Serial Section Electron Tomography (SSET)."	Electron Microscopy	"C. elegans: 100% for the nervous system;				none	none
+others vary widely and are partial due to				none	none
+technical and computational limits."	https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438806X00909/1-s2.0-S0959438806001140/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJGMEQCIBUQlUwvqKn%2BwOQ5fozHh%2FnMXA6VGURu3MTpVHtBklxQAiAzs8KH62ep2shan%2FCqMPc1z4TcPypssbPVnXi5cExSMSq7BQjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIMVKip7FzcZ8PQtvd4Ko8FuThjYWYWXHN6RTiYA9jZ0x1wBeJw8pG%2Frmyk8tRfPdlpfYSryyG9T1GkQqiyLmnCN14bTHQenRTdlj%2B7LJyonhueU4FgBDasL9OqAj7wjdLuK1PMsjLzWz6Q2q5GnBeBzaCmgbVmBvecKsBYn53bpYXQf7xc0CPZFdN74GKVolL6F2TiuSDJwkJlUtqw5WfRhCJiWBwx2kBOJ44rEjJAbKZj6M2hLXaNt6zLpCkNneVWTH9kvho1vC%2BQb3z0mE1LcZ2vh95ZUynOzvpG7NIzWLrc0xdZLcFP1qlNCYX2vFF%2FF8bVV%2FS2ZgEmBZeKeCDWOeuF4jByNU1l1ICGKHON4PuTBZOEqbUnPAZ691Bo6eUC5uw0PzJUWeBF6vIB5vSspqQ23NctdRYvm7hc6fLEh1etY1pHWrQ0lF4u6fMYv16yz8dzhN6SF0UV5TI3%2BbeNyznPH4vZpOheGgb5FjTYXcaLziL9KqlnLpvaqk2Gmd9v1e%2BA5wBwycxTSCMEsU%2FPTMQJQFo%2FMAUZn%2FwwM8mEfDCvl0eCS1YcnetOx5waE3Gh2ANxtZrMpL%2BBUUPJ2dKeahWRLNnO4WI4owYsBJAGiyJxUJtKFSbesjfWKBXltUQ9bjts61xZWC49tdYqPE4BfT8PfadN8dQkk%2B00diHrQR7%2Bn3CGa91FQ08kvGaYCMd2j4SqLrmXbyiAzcXx9g8meZcjBum5VlzEzPAsa%2FESferjGuXt3zZJncEw7spWNFOXpyD4XZsMQKl9zcPFwLP11%2B6Furo6XU8z9BahTw4DRibtktgaRSbwyK6jj3NsEpVWp816qcrv7UWnkkUZQxFkZxy2%2FT0%2BGGUKn1EC%2B0yHuLIE%2BHDKpM9bp%2FYAZGbc1zDWpIO6BjqyAXRqYXqyrIsBIGvlRYiFZHLI0no9rvP6RL%2Bi7MgDVD7X5P4Xyd8xhdKn8zYh63vGIGoFZ%2FUdhEsN74nnFygmr1jX3VVyyNw1Q5GnSre51zE4%2FNSDxkeGBCdllGcyGDj0lgcOvsCYk1W9m%2FtO7RD5L0RcYhMxMDCpLv7fpzcWQDtKXst7d4APWBmMjQPlwMs5hs%2BC4o6WPmbiF70i%2FubGJXFAlpqwCO7Jc8BlwesfDsUZkU0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T201824Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY7VMLEIHI%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e67f7a0060a81030213e5f71f31ed98fb51738b5b06930fc60cec631def1ca77&hash=92c1312e7fe52a167b4ee593d226313be7d16022c63aeac654d3c0ab2d9ab507&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438806001140&tid=spdf-61f8abb8-72a0-40f7-95bb-4e2de64ce7af&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5505560c055707&rr=8e6b9bc8bb013697&cc=gb	"This study discusses the potential of modern volume EM techniques to reconstruct complete circuits, emphasizing automation to overcome historical				none	none
+limitations."				none	none
+Beth L. Chen	2006	C. elegans	C. elegans	Worm Atlas Wiring Diagram	not specified			approx 50−70nm. 	59.5	not mentioned		multiple years	not specifically given	"Analysis of wiring diagrams obtained from serial-section EM data combined with				none	none
+mathematical models of wiring optimization."	Wiring Diagram Analysis	100%	https://www.pnas.org/doi/epdf/10.1073/pnas.0506806103 	"The study demonstrated that neuronal positioning in C. elegans is optimized for wiring costs. Outliers in placement were linked to				none	none
+developmental and functional roles."				none	none
+T.E.J. Behrens	2003	Human	Human	not specified	not explicitly stated	Approx. 1.3×1012μm3 (whole brain)	1300000000000.0	1.7mm×1.7mm×2.3mm	1700000.0	not mentioned		Each scan lasted ~20 minutes;took several weeks	not specified	"Probabilistic tractography using diffusion tensor imaging (DTI) to map connections between				none	none
+thalamic nuclei and cortical regions"	Tractography	95%	https://scholar.google.com/scholar_lookup?hl=en&volume=6&publication_year=2003&pages=750-757&journal=Nat+Neurosci&author=TEJ+Behrens&author=H+Johansen%E2%80%90Berg&author=MW+Woolrich&author=SM+Smith&author=CAM+Wheeler%E2%80%90Kingshott&author=PA+Boulby&author=GJ+Barker&author=EL+Sillery&author=K+Sheehan&author=O+Ciccarelli&author=AJ+Thompson&author=JM+Brady&author=PM+Matthews&title=Non%E2%80%90invasive+mapping+of+connections+between+human+thalamus+and+cortex+using+diffusion+imaging	"This study provided the first connectivity-based segmentation of thalamic gray matter in humans, identifying pathways and connections reproducible				none	none
+across individuals."				none	none
+White G.J.	1986	C. elegans	C. elegans	not mentioned	0.0075mm³	7.5 x 10⁶	7500000.0	50	50.0					Serial section TEM	Electron Microscopy	100%	https://pubmed.ncbi.nlm.nih.gov/22462104/	"The Caenorhabditis elegans nervous system consists of 302 neurons arranged in an invariant structure across 118 classes, with highly localized				none	none
+connectivity and ~5000 chemical synapses, ~2000 neuromuscular junctions, and ~600 gap junctions. Neurons, with simple morphologies, form				none	none
+connections in defined process bundles, facilitating precise synaptic organization."				none	none
+Charlie R. Braekevelt	1983	Domestic pig	Other		"retinal regions: ~1mm²				none	none
+"	Approx. 1,000,000μm³ 	1000000.0	~10−50nm	2.5e-08	not mentioned		not mentioned	not specified	Ultrathin sectioning, transmission electron microscopy (TEM), manual tracing and analysis	Electron Microscopy	"Not mentioned specifically				none	none
+(partial completion)"	https://link.springer.com/article/10.1007/BF00231355 	"The study describes the ultrastructure of retinal rods and cones in pigs, revealing species-specific differences and advancing				none	none
+understanding of mammalian photoreceptor anatomy."				none	none
+John K. Stevens	1980	Rat	Rat	not specified	"∼150×150×50μm³				none	none
+"	1125000μm³ 	1125000.0	 ~50–100 nm	75.0	~0.1–0.2 TB	0.15	not specified	not specified	"Serial sectioning of retinal tissue, light and electron microscopy, manual tracing of ganglion				none	none
+cells for circuit reconstruction"	Neuronal Circuit Mapping	100%	https://www.jstor.org/stable/1684192?saml_data=eyJzYW1sVG9rZW4iOiI3NjAwODQwMy01N2YyLTRmMmYtYjRkNi0wNDgyMTI1OTBiZmIiLCJpbnN0aXR1dGlvbklkcyI6WyJjOTcyMDRmZC04ZGZhLTQ1MDMtODA4Yy0xMzc0OGUzNzJmYmIiXX0	"This study provided a foundational view of retinal ganglion cell connectivity, demonstrating early methodologies for functional				none	none
+architecture analysis in the visual system."				none	none
+Cyrus Levinthal	1972	"Rotifer (Asplanchna brightwelli) and Crustacean				none	none
+(Daphnia magna)"	Other	not explicitly named	"Rotifier- 100×50×40μm³;				none	none
+Daphnia: not specified"	"Rotifier: 200,000μm³				none	none
+Daphnia: larger but not specified"		10nm 	10.0	not mentioned but <1TB based on techniques available in 1970s	0.5	exactly days not specified (data acquisition spanned months)	not specified	"Serial-section electron microscopy (EM), manual alignment of sections, data				none	none
+recorded and visualized using custom computational tools"	Electron Microscopy	"Partial: small regions of neuropil				none	none
+reconstructed for both organisms"	https://www.nature.com/articles/236207a0	"The study introduced methods for aligning and reconstructing neural structures in 3D using EM, combined with early computational tools,				none	none
+paving the way for modern connectomics. "				none	none

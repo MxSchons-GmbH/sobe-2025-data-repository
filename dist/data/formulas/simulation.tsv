@@ -1,17 +1,17 @@
 id	formula	inputs	unit	section	description	ref_id	supporting_refs	ref_note	confidence	validated_by
-simulation_total_memory_bytes	storage_bytes_lower	storage_bytes_lower	bytes	simulation	Total memory footprint (using lower bound)				none	none
-simulation_total_memory_gb	simulation_total_memory_bytes / 1e9	simulation_total_memory_bytes	GB	simulation	Total memory in gigabytes				none	none
-simulation_flops_per_sec	flops_time_based_lower	flops_time_based_lower	FLOPS	simulation	FLOPS required per second (time-based, lower bound)				none	none
-simulation_gpus_for_memory	ceil(simulation_total_memory_gb / gpu_memory_gb)	simulation_total_memory_gb,gpu_memory_gb	count	simulation	GPUs needed for memory				none	none
-simulation_gpus_for_compute	ceil(simulation_flops_per_sec / (gpu_tflops * 1e12))	simulation_flops_per_sec,gpu_tflops	count	simulation	GPUs needed for compute				none	none
-simulation_total_gpus	max(simulation_gpus_for_memory, simulation_gpus_for_compute)	simulation_gpus_for_memory,simulation_gpus_for_compute	count	simulation	Total GPUs required				none	none
-simulation_runtime_cost	simulation_total_gpus * gpu_cost_per_hour * simulation_hours	simulation_total_gpus,gpu_cost_per_hour,simulation_hours	$	simulation	Simulation runtime cost				none	none
-simulation_training_infrastructure_cost	10000000		$	simulation	Training infrastructure cost (fixed)				none	none
-simulation_training_compute_cost	simulation_runtime_cost * 0.1	simulation_runtime_cost	$	simulation	Training compute cost (10% of simulation)				none	none
-simulation_validation_cost	simulation_runtime_cost * 0.05	simulation_runtime_cost	$	simulation	Validation cost (5% of simulation)				none	none
-simulation_total_cost_first	(simulation_runtime_cost + simulation_training_infrastructure_cost + simulation_training_compute_cost + simulation_validation_cost) * 1.2	simulation_runtime_cost,simulation_training_infrastructure_cost,simulation_training_compute_cost,simulation_validation_cost	$	simulation	Total first project cost with 20% buffer				none	none
-simulation_total_time_years_first	(simulation_hours / (24 * 365)) * 1.2	simulation_hours	years	simulation	Total first project time with buffer				none	none
-simulation_retraining_cost	simulation_training_compute_cost * 0.1	simulation_training_compute_cost	$	simulation	Marginal retraining cost (10%)				none	none
-simulation_finetuning_cost	simulation_validation_cost * 0.02	simulation_validation_cost	$	simulation	Marginal finetuning cost (2%)				none	none
-simulation_total_cost_marginal	simulation_runtime_cost + simulation_retraining_cost + simulation_finetuning_cost	simulation_runtime_cost,simulation_retraining_cost,simulation_finetuning_cost	$	simulation	Total marginal project cost				none	none
-simulation_total_time_years_marginal	simulation_hours / (24 * 365)	simulation_hours	years	simulation	Total marginal project time				none	none
+simulation_total_memory_bytes	storage_bytes_lower	storage_bytes_lower	bytes	simulation	Total memory footprint (using lower bound)	internal_methodology_2025		Direct input passthrough	derived	human
+simulation_total_memory_gb	simulation_total_memory_bytes / 1e9	simulation_total_memory_bytes	GB	simulation	Total memory in gigabytes	internal_methodology_2025		Unit conversion	derived	human
+simulation_flops_per_sec	flops_time_based_lower	flops_time_based_lower	FLOPS	simulation	FLOPS required per second (time-based, lower bound)	internal_methodology_2025		Direct input passthrough	derived	human
+simulation_gpus_for_memory	ceil(simulation_total_memory_gb / gpu_memory_gb)	simulation_total_memory_gb,gpu_memory_gb	count	simulation	GPUs needed for memory	internal_methodology_2025		Memory / per-GPU capacity	derived	human
+simulation_gpus_for_compute	ceil(simulation_flops_per_sec / (gpu_tflops * 1e12))	simulation_flops_per_sec,gpu_tflops	count	simulation	GPUs needed for compute	internal_methodology_2025		FLOPS / per-GPU performance	derived	human
+simulation_total_gpus	max(simulation_gpus_for_memory, simulation_gpus_for_compute)	simulation_gpus_for_memory,simulation_gpus_for_compute	count	simulation	Total GPUs required	internal_methodology_2025		Max of memory vs compute bound	derived	human
+simulation_runtime_cost	simulation_total_gpus * gpu_cost_per_hour * simulation_hours	simulation_total_gpus,gpu_cost_per_hour,simulation_hours	$	simulation	Simulation runtime cost	internal_methodology_2025		GPUs × rate × hours	derived	human
+simulation_training_infrastructure_cost	10000000		$	simulation	Training infrastructure cost (fixed)	internal_methodology_2025		Fixed infrastructure estimate	estimated	human
+simulation_training_compute_cost	simulation_runtime_cost * 0.1	simulation_runtime_cost	$	simulation	Training compute cost (10% of simulation)	internal_methodology_2025		Proportional estimate	estimated	human
+simulation_validation_cost	simulation_runtime_cost * 0.05	simulation_runtime_cost	$	simulation	Validation cost (5% of simulation)	internal_methodology_2025		Proportional estimate	estimated	human
+simulation_total_cost_first	(simulation_runtime_cost + simulation_training_infrastructure_cost + simulation_training_compute_cost + simulation_validation_cost) * 1.2	simulation_runtime_cost,simulation_training_infrastructure_cost,simulation_training_compute_cost,simulation_validation_cost	$	simulation	Total first project cost with 20% buffer	internal_methodology_2025		Sum × (1 + 20% buffer)	derived	human
+simulation_total_time_years_first	(simulation_hours / (24 * 365)) * 1.2	simulation_hours	years	simulation	Total first project time with buffer	internal_methodology_2025		Hours to years with 20% buffer	derived	human
+simulation_retraining_cost	simulation_training_compute_cost * 0.1	simulation_training_compute_cost	$	simulation	Marginal retraining cost (10%)	internal_methodology_2025		Learning curve discount	estimated	human
+simulation_finetuning_cost	simulation_validation_cost * 0.02	simulation_validation_cost	$	simulation	Marginal finetuning cost (2%)	internal_methodology_2025		Learning curve discount	estimated	human
+simulation_total_cost_marginal	simulation_runtime_cost + simulation_retraining_cost + simulation_finetuning_cost	simulation_runtime_cost,simulation_retraining_cost,simulation_finetuning_cost	$	simulation	Total marginal project cost	internal_methodology_2025		Sum without infrastructure	derived	human
+simulation_total_time_years_marginal	simulation_hours / (24 * 365)	simulation_hours	years	simulation	Total marginal project time	internal_methodology_2025		Hours to years	derived	human

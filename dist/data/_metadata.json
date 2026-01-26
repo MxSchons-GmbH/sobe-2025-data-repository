@@ -41,7 +41,12 @@
             "Hardware and Software",
             "Slowdown time (required for one biological second)",
             "Notes",
-            "Filter"
+            "Filter",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -63,7 +68,12 @@
             "Notes",
             "Link",
             "Category",
-            "Organism (random)"
+            "Organism (random)",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -88,7 +98,12 @@
             "Total voxels N",
             "sqrt(N)",
             "percent",
-            "Comment"
+            "Comment",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -105,7 +120,12 @@
             "Unnamed: 3",
             "Unnamed: 4",
             "Unnamed: 5",
-            "Unnamed: 6"
+            "Unnamed: 6",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -132,7 +152,12 @@
             "Number of neurons",
             "Volume dimensions",
             "Brain Volume in \u00b5m",
-            "Calculated information Value"
+            "Calculated information Value",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -173,7 +198,12 @@
             "date_float",
             "cutting_edge",
             "effective_temporal_resolution_hz",
-            "calculated_information_rate"
+            "calculated_information_rate",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -189,7 +219,12 @@
             "definition",
             "unit",
             "source",
-            "mouse_example"
+            "mouse_example",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -208,7 +243,12 @@
             "Source",
             "Publication",
             "Method Note",
-            "DOI"
+            "DOI",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -223,7 +263,12 @@
             "Total Neuron Count",
             "Maximum Neuron Firing Rate (Hz)",
             "Average Liftime in Minutes",
-            "Isotropic resolution Single Neuron recording in \u00b5m"
+            "Isotropic resolution Single Neuron recording in \u00b5m",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -248,7 +293,12 @@
             "Individuals studied",
             "Brain volume dimensions",
             "SNR",
-            "Perturbation"
+            "Perturbation",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -263,7 +313,12 @@
             "URL",
             "URL to Dataset",
             "Description",
-            "Tags"
+            "Tags",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -300,7 +355,12 @@
             "Method (claude)",
             "Completion %",
             "References",
-            "Notes"
+            "Notes",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -314,34 +374,32 @@
             "id",
             "year",
             "img_tech",
-            "Unnamed: 3",
             "vx_x",
             "vx_y",
             "vx_z",
             "vx_avg",
             "vx_vol",
-            "Unnamed: 9",
             "tgt_vx_size",
-            "Unnamed: 11",
             "exp_paper",
             "exp_eff",
-            "Unnamed: 14",
             "img_rate",
             "vol_rate",
-            "Unnamed: 17",
             "mouse_time",
             "human_time",
             "mouse_str",
             "human_str",
-            "Unnamed: 22",
             "mouse_scopes_1yr",
             "human_scopes_1yr",
             "mouse_scopes_1yr_str",
             "human_scopes_1yr_str",
-            "Unnamed: 27",
             "cost_scope",
             "cost_scopes_mouse_1yr",
-            "cost_scopes_human_1yr"
+            "cost_scopes_human_1yr",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -355,26 +413,20 @@
             "id",
             "year",
             "img_tech",
-            "Unnamed: 3",
             "vx_x",
             "vx_y",
             "vx_z",
             "vx_avg",
             "vx_vol",
-            "Unnamed: 9",
             "tgt_vx_size",
-            "Unnamed: 11",
             "exp_paper",
             "exp_eff",
-            "Unnamed: 14",
             "img_rate",
             "vol_rate",
-            "Unnamed: 17",
             "mouse_time",
             "human_time",
             "mouse_str",
             "human_str",
-            "Unnamed: 22",
             "mouse_scopes_1yr",
             "human_scopes_1yr",
             "human_scopes_1yr.1",
@@ -383,7 +435,12 @@
             "human_scopes_1yr_str.1",
             "cost_scope",
             "cost_scopes_mouse_1yr",
-            "cost_scopes_human_1yr"
+            "cost_scopes_human_1yr",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -397,34 +454,32 @@
             "id",
             "year",
             "img_tech",
-            "Unnamed: 3",
             "vx_x",
             "vx_y",
             "vx_z",
             "vx_avg",
             "vx_vol",
-            "Unnamed: 9",
             "tgt_vx_size",
-            "Unnamed: 11",
             "exp_paper",
             "exp_eff",
-            "Unnamed: 14",
             "img_rate",
             "vol_rate",
-            "Unnamed: 17",
             "mouse_time",
             "human_time",
             "mouse_str",
             "human_str",
-            "Unnamed: 22",
             "mouse_scopes_1yr",
             "human_scopes_1yr",
             "mouse_scopes_1yr_str",
             "human_scopes_1yr_str",
-            "Unnamed: 27",
             "cost_scope",
             "cost_scopes_mouse_1yr",
-            "cost_scopes_human_1yr"
+            "cost_scopes_human_1yr",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -438,34 +493,32 @@
             "id",
             "year",
             "img_tech",
-            "Unnamed: 3",
             "vx_x",
             "vx_y",
             "vx_z",
             "vx_avg",
             "vx_vol",
-            "Unnamed: 9",
             "tgt_vx_size",
-            "Unnamed: 11",
             "exp_paper",
             "exp_eff",
-            "Unnamed: 14",
             "img_rate",
             "vol_rate",
-            "Unnamed: 17",
             "mouse_time",
             "human_time",
             "mouse_str",
             "human_str",
-            "Unnamed: 22",
             "mouse_scopes_1yr",
             "human_scopes_1yr",
             "mouse_scopes_1yr_str",
             "human_scopes_1yr_str",
-            "Unnamed: 27",
             "cost_scope",
             "cost_scopes_mouse_1yr",
-            "cost_scopes_human_1yr"
+            "cost_scopes_human_1yr",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -479,7 +532,12 @@
             "Year Reported",
             "Method",
             "Source",
-            "Notes"
+            "Notes",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -513,7 +571,12 @@
             "Unnamed: 12",
             "synapse models",
             "alpha synapse",
-            "tsodyks-markram"
+            "tsodyks-markram",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -529,7 +592,12 @@
             "compute_pflops",
             "unit",
             "description",
-            "source"
+            "source",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -553,7 +621,12 @@
             "Memory-limit (neurons)",
             "Interconnect-limit (neurons)",
             "Max neurons (all limits)",
-            "Neurons per $"
+            "Neurons per $",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -592,7 +665,12 @@
             "storage_tb",
             "unit",
             "description",
-            "source"
+            "source",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -644,7 +722,12 @@
             "Reconstructed Neurons / 1 Million $",
             "Cost / Neuron",
             "Reference",
-            "Note"
+            "Note",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -662,7 +745,12 @@
             "Neuroscience funding ($M)",
             "funding within BRAIN ($M)",
             "status",
-            "ref"
+            "ref",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -677,7 +765,12 @@
             "cost ($B, 2024 dollars)",
             "field",
             "source",
-            "notes (mostly inflation adjustments)"
+            "notes (mostly inflation adjustments)",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -694,7 +787,12 @@
             "unit",
             "source",
             "current",
-            "improved_1000x"
+            "improved_1000x",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -720,71 +818,13 @@
             "em",
             "exm",
             "exm_molecular",
-            "wellcome"
+            "wellcome",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
-        }
-      ]
-    },
-    {
-      "id": "external",
-      "title": "External Data Sources",
-      "description": "Third-party datasets from external sources used in the report.",
-      "icon": "external-link",
-      "datasets": [
-        {
-          "id": "epoch-ai-models",
-          "title": "Epoch AI Notable AI Models",
-          "description": "Dataset of notable AI models with parameters, training compute, and other characteristics.",
-          "filename": "notable-ai-models.csv",
-          "path": "data/external/epoch-ai",
-          "rows": "8000+",
-          "columns": [
-            "Model",
-            "Organization",
-            "Publication date",
-            "Parameters",
-            "Training compute (FLOP)",
-            "Domain"
-          ],
-          "source": "https://epochai.org/data/notable-ai-models",
-          "license": "CC BY 4.0"
-        },
-        {
-          "id": "neuroimaging-speed",
-          "title": "Neuroimaging Speed Comparison",
-          "description": "Imaging technology capabilities over time: imaging speed (MHz), field of view (mm³), and dataset sizes (TB). Data supporting 'The road to a whole mouse brain connectome'.",
-          "filename": "neuroimaging-speed.tsv",
-          "path": "data/external/bosch-et-al",
-          "rows": "50+",
-          "columns": [
-            "mapName",
-            "mapID",
-            "released_year",
-            "map_comment",
-            "doi",
-            "img_tech",
-            "n_machines_involved",
-            "n_machines_parallel",
-            "species",
-            "dev",
-            "organ",
-            "region",
-            "fov_x_um",
-            "fov_y_um",
-            "fov_z_um",
-            "fov_mm3",
-            "vx_x_nm",
-            "vx_y_nm",
-            "vx_z_nm",
-            "vx_avg_nm",
-            "dsSize_nVx",
-            "dsSize_TB",
-            "DT",
-            "imagingRate",
-            "imagingRate_perMachine"
-          ],
-          "source": "https://github.com/cboschp/wtlandscape_mbc",
-          "license": "MIT"
         }
       ]
     },
@@ -807,7 +847,12 @@
             "Total Neuron Count",
             "Maximum Neuron Firing Rate (Hz)",
             "Average Liftime in Minutes",
-            "Isotropic resolution Single Neuron recording in \u00b5m"
+            "Isotropic resolution Single Neuron recording in \u00b5m",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -824,7 +869,12 @@
             "volume_mm3",
             "synapses",
             "source",
-            "icon"
+            "icon",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -858,7 +908,12 @@
             "Model Organism Studied (Simplified)",
             "References",
             "blurb",
-            "Related Keywords/Papers"
+            "Related Keywords/Papers",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         },
         {
@@ -877,7 +932,12 @@
             "CostPerYear_M",
             "StartYear",
             "EndYear",
-            "Years"
+            "Years",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]
@@ -1142,7 +1202,12 @@
             "cost_per_neuron_hour",
             "setup_cost",
             "imaging_gbps",
-            "description"
+            "description",
+            "ref_id",
+            "supporting_refs",
+            "ref_note",
+            "confidence",
+            "validated_by"
           ]
         }
       ]

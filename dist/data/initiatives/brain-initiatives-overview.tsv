@@ -1,371 +1,310 @@
-Project name	Category	Status	Start Year	Start Year (cleaned)	End Year	End Year (cleaned)	Budget (in million $)	Budget (in million $) (cleaned)	Ignore?	Funders	Model Organism Studied	Model Organism Studied (Simplified)	References	blurb	Related Keywords/Papers
-Allen Institute Brain Observatory	Academic	Active	2016	2016.0			600	600.0		Allen Institute 	Mouse/Human	Rodents,Human	https://alleninstitute.org/division/brain-science/ https://www.nbcnews.com/science/cosmic-log/billionaire-paul-allen-kicks-brain-observatory-effort-300-million-flna513473 	"The Allen Institute's brain connectome project maps
-neural connections in the mouse brain, providing a
-comprehensive resource for understanding brain
-function and disease mechanisms."	Allen Institute Brain Atlas
-Human Connectome Project (WU-Minn HCP)	Academic	Active	2010	2010.0	2017(major data release)		40	40.0	True	National Institute of Health(NIH)	Human	Human	https://www.humanconnectome.org/. https://www.sciencedirect.com/science/article/abs/pii/S1053811913005351?via%3Dihub	"Maps human brain connectivity using advanced
-imaging for understanding neural pathways in
-health/disease."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3555558/
-
-Keywords - brain mapping, connectome, human connectome"
-Developing Human Connectome	Commercial	Active	2013	2013.0			20	20.0		Wellcome Trust, EU	Human (neonatal)	Human	https://www.developingconnectome.org/project/#:~:text=Currently%2C%20the%20connectome%20of%20the%20mature%20adult%20brain%20is%20in%20progress.	"Focuses on mapping brain connectivity in infants to
-study neurodevelopment from fetal to neonatal stages."	"https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain?utm_source=chatgpt.com
-
-Keywords - developing HCP, dHCP, connectome"
-Adolescent Brain Development	Academic	Active	2016	2016.0			100	100.0	True	National Institute of Health(NIH)	Humans	Human	https://pmc.ncbi.nlm.nih.gov/articles/PMC6474358/	"Focuses on mapping brain connectivity in infants to
-study neurodevelopment from fetal to neonatal stages."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/
-
-Keywords - neuroimaging, adolescent brain development, brain imaging, brain mapping"
-Developing Children's Connectome Project	Academic	Active	2024	2024.0			not mentioned			Synergy Grant by the European Research Council (ERC)	Humans (children aged 5-10 yrs.) 	Human	https://www.developingconnectome.org/data-release/	"Maps neural development in children to examine
-early-life brain growth and function."	"
-https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/
-
-Keywords - brain mapping children, growth function, neurodevelopment"
-Janelia Research Campus	Academic	Active	2006	2006.0						"HHMI (Howard Hughes Medical Institute), Wellcome Trust,
-University of Cambridge, Google Research, and the
-MRC Laboratory of Molecular Biology."	Fruit fly	Insects	https://www.biorxiv.org/content/10.1101/2023.06.05.543407v2.full https://www.janelia.org/project-team/flyem/manc-connectome 	"Conducts advanced brain mapping, including
-high-resolution connectomics in flies and mice."	"https://www.science.org/doi/full/10.1126/science.abf4588?casa_token=1UzYh5rkD-cAAAAA%3AjRDF9WL8DJdNHaOsumk4
-_jGkevsaZMuaxjf8BoxaCeb3NSKX_uZ2LqfsCG-1go8ZMZGs8tmWjbIrRg
-
-Keywords - neuropixels, connectomics, fruitfly"
-Mouselight project (Janelia Research Campus)	Academic	Active	2017	2017.0			not mentioned			Intelligence Advanced Research Projects Activity (IARPA)	Mouse/Human	Rodents,Human	https://www.simonsfoundation.org/2021/03/22/the-connected-connectome-part-2-beyond-the-fly/.   https://www.cell.com/cell/fulltext/S0092-8674(19)30842-6	"Reconstructs neuron structures across the mouse
-brain for connectomic insights."	"https://www.hhmi.org/news/mouselight-project-maps-1000-neurons-and-counting-mouse-brain
-
-Keywords - Mouselight project, brain mapping, brain connectome "
-FlyWire Brain	Commercial,Academic	Active	2019	2019.0	2024	2024.0	"not mentioned
-"		True	"NIH, Wellcome Trust, EU, NSF, PNI,Seung lab,
- Allen Institute for Brain Science, IARPA,  Jefferis lab by MRC, Google Amazon"	Adult Fly	Insects	https://www.ukri.org/news/first-map-of-every-neuron-in-an-adult-fly-brain/	"Combines AI and crowdsourcing to create detailed
-synaptic maps of the fly brain. FlyWire focuses on
-segmenting and annotating synaptic connections to
-reveal neural circuits underlying specific behaviors.
-Researchers leverage high-resolution electron
-microscopy and advanced algorithms, allowing l
-arge-scale analysis of connectomic data."	"https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain
-
-Keywords- fruitfly, wiring, brain wiring, brain mapping, connectome"
-Harvard-Google 3D Human Brain Map Collaboration	Commercial	Active	2024	2024.0			not mentioned		True	NIH	Humans/Mouse	Human,Rodents	https://news.harvard.edu/gazette/story/2024/05/the-brain-as-weve-never-seen-it/	"Creates high-resolution 3D maps of the human brain
-tissues using AI and advanced imaging to identify
-cellular and synaptic organization in brain regions.
-for deeper understanding of cognition and disorders."	"https://www.nih.gov/news-events/nih-research-matters/study-reveals-unseen-details-human-brain-structure
-
-Keywords - Google-Harvard connectome project, neuro-cognition and disorders, 3D imaging"
-Neuralink	Commercial	Active	2016	2016.0			total 5 rounds= 680 	680.0		"Elon Musk, Founders Fund, Vy Capital, Google Ventures,
-DFJ Growth, Valor Equity Partners, Craft Ventures, Gigafund,
-Sam Altman, Fred Ehrsam, Kenneth Alan Howery, Blake Byers"	Human, pigs	Human,Pig	https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/ https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws/funding-and-investors#funding 	"Develops brain-computer interfaces (BCIs) for direct
-communication between the brain and external
-devices, aimed at treating neurological conditions and
-enhancing human cognitive abilities."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/
-
-Keywords - Neuralink, BCIs, brain-machine interface, sensory function, motor function, neurology"
-Synchron	Commercial	Active	2012	2012.0			total 145 	145.0		"DARPA, ARCH Venture Partners, Khosla Ventures,
-NeuroTechnology Investors, METIS, Forepont Capital Partners,
-ID8 Investments, Shanda Group, University of Melbourne,
-National Institutes of Health (NIH), Bill Gates, Jeff Bezos"	Human	Human	"https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/
-https://www.businesswire.com/news/home/20221213006045/en/Synchron-Raises-75M-Series-C-Led-by-ARCH-Venture-Partners-to-Advance-Endovascular-Brain-Computer-Interface
-"	"Design minimally invasive neural implants to restore
-communication in paralyzed patients by decoding
-neural signals for external device control."	"https://www.nature.com/articles/s41551-018-0321-z
-
-sheep motor cortex, focal stimulation, electrode array"
-SyNAPSE	Military	Concluded	2008	2008.0	2016	2016.0	76.5  (approx)	76.5		DARPA	Human	Human	https://en.wikipedia.org/wiki/SyNAPSE#Participants	"Develops neuromorphic chips that emulate brain-like
-architectures for energy-efficient artificial intelligence
-and computational systems."	"https://militaryembedded.com/ai/deep-learning/darpa-synapse-program-develops-low-power-brain-like-chip
-
-Keywords - DARPA, brain chip, computational system"
-The Chinese Human Brain Connectome Project	Academic	Active	2017	2017.0	"major data
-released
-(2024)"		1,600	1600.0		"Beijing Municipal Science & Technology Commission,
-Chinese Institute for Brain Research (Beijing),
-National Natural Science Foundation of China,
-Ministry of Science and Technology of China"	Human	Human	https://www.nature.com/articles/s41592-023-01796-0	"Maps the human brain connectome in Chinese
-populations to explore variations in brain connectivity
-and their implications for neuropsychiatric disorders
-and brain function."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10388803/
-https://academic.oup.com/nsr/article/4/2/258/3052681
-
-Keywords - China's brain initiative, brain imaging, connectome"
-Brain/MINDS	Academic,Government	Active	2014	2014.0			260	260.0		"Ministry of Education, Culture, Sports, Science, and Technology
-of Japan (MEXT) and the Japan Agency for Medical Research
-and Development (AMED)"	Small new world monkey	Non-human Primates	https://pmc.ncbi.nlm.nih.gov/articles/PMC4387516/#s8	"Maps marmoset brain connectivity to study complex
-brain functions relevant to human neurological and
-psychiatric disorders, emphasizing cross-species brain
-evolution insights."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4387516/
-
-Keywords - brain mapping by integrated neurotechnologies for disease studies, transgenic non-human primates,
-optogenetics, tissue clearing, super-resolution microscopy, neuropsychiatric and neurodegenerative diseases"
-Blue Brain Project	Academic	Active	2005	2005.0			22 per year	418.0		"Swiss Government, European Commission, EPLF and ETH
-fund group by Blue Brain Project"	Human	Human	https://www.epfl.ch/research/domains/bluebrain/frequently_asked_questions/#:~:text=The%20Blue%20Brain%20Project%20(BBP,around%20%2422%20million%20per%20year 	"Simulates a virtual brain through computational
-modelling of cortical microcircuits, offering insights into
-neural connectivity and dynamics."	"https://www.epfl.ch/research/domains/bluebrain/blue-brain/publications/
-
-Keywords - brain mapping, connectome"
-MICrONS Explorer	Academic,Government	Active	2016	2016.0			100	100.0		IARPA MICrONS programme	Mouse/Human	Rodents,Human	https://en.wikipedia.org/wiki/MICrONS	"Reverse-engineers neural circuits by mapping and
-analyzing synaptic connections in rodent brains to
-improve AI algorithms inspired by biological learning."	"https://www.nature.com/articles/d41586-024-01096-3
-
-Keywords - mouse brain mapping, brain stimulation, connectomics"
-The Center for C. elegans Anatomy (D.B.C and D.H.H)	Academic	Concluded	2006	2006.0	not known		not mentioned			"National Institute of Mental Health Grant, a Klingenstein Foundation
-Award and National Institutes of Health Grant."			https://pmc.ncbi.nlm.nih.gov/articles/PMC1550972/#ack1  https://www.pnas.org/doi/abs/10.1073/pnas.0506806103	"Produces detailed connectomic maps of the C. elegans
-the nervous system, providing a foundation for
-understanding the simplest neural circuits."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3033362/
-
-Keywords - C. elegan, neural network, reconstructed connectomes, connectomics"
-Korea Brain Initiative	Government	Active	2016	2016.0	2026	2026.0	not mentioned			Ministry of Science and ICT	Rodents, Humans	Rodents,Human	https://www.cell.com/neuron/fulltext/S0896-6273(16)30805-4	"Advances brain mapping and neurotechnologies to
-understand neural mechanisms and develop tools for
-clinical and AI applications."	"https://www.sciencedirect.com/science/article/pii/S0896627316308054
-
-Keywords - Korean brain initiative, brain imaging, connectome"
-Human Brain Project	Academic	Concluded	2013	2013.0	2023	2023.0	1000	1000.0		"European Commission and 113 other funders from EU and 12 other
-labs outside EU"	Rodents, Humans	Rodents,Human	https://www.humanbrainproject.eu/en/about-hbp/project-structure/human-brain-project-ec-grants/	"Integrates neuroscience data into computational
-platforms for brain simulations, enhancing
-understanding of brain disorders and supporting
-AI development."	"https://www.sciencedirect.com/science/article/pii/S0896627316307966
-
-Keywords- brain connectome, brain mapping, brain stimulations"
-Allen Mouse and Human Brain Atlases	Academic	Active	2003	2003.0			100	100.0		Allen Institute of Brain Science	Mouse and Humans	Rodents,Human	https://en.wikipedia.org/wiki/Allen_Brain_Atlas https://alleninstitute.org/news/paul-g-allen-commits-100-million-to-brain-research/ 	"Offers comprehensive brain maps for mice and humans,
-detailing cellular organization and gene expression to
-advance studies of neural structure and function."	"https://www.nature.com/articles/d41586-024-01096-3
-
-Keywords - mouse brain mapping, brain stimulation"
-Brain Genomics Superstruct Project (GSP)	Academic	Concluded	2011	2011.0	2016	2016.0	not publically available			National Institutes of Health (NIH), Universities	Human	Human	https://pubmed.ncbi.nlm.nih.gov/26175908/	"Explores genetic influences on brain structure and
-behaviour through large-scale imaging-genetics
-datasets, linking genomics to cognitive and neural traits."	"https://pubmed.ncbi.nlm.nih.gov/26175908/
-
-Keywords - genome, brain mapping, GSP project"
-Bioelectronic Medical (SetPoint Medical)	Commercial	Active	2007	2007.0			200	200.0		"NIH, GlaxoSmithKline, NEA, Topspin Partners, Covidien Ventures,
-Action Potential Venture Capital Limited,"	Human, Mouse	Human,Rodents	"https://setpointmedical.com/files/SetPoint_The_Evolution_Of_Bioelectronic_Medicine.pdf https://
-setpointmedical.com/setpoint-medical-secures-27-million-financing-adding-action-potential-
-venture-capitalgsk-boston-scientific-and-covidien-ventures-as-new-investors/#header-blog"	"Develops implantable bioelectronic devices to
-modulate nerve activity, offering therapeutic solutions
-for inflammatory and neurological disorders."	"https://www.nature.com/articles/d43747-020-00457-x
-
-Keyword - neuromodulation, nerve activity, bioelectronic devices"
-OpenWorm	Commercial	Active	2013	2013.0			14.8 by NIH 	14.8		NIH, Amazon Web Services, Neruolink (Crowdfunding)	C. elegans (Roundworm)	Worm	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4217485/. https://web.archive.org/web/20220205023344id_/
-https://repositum.tuwien.at/bitstream/20.500.12708/1945/2/Lung%20David%20-%202018%20-%20OpenWorm%20design%20and%20evaluation%20of
-%20neural%20circuits%20on%20the...pdf. https://www.caltech.edu/about/news/caltech-led-wormbase-project-awarded-148-million-nih-40250 https://royalsocietypublishing.org/doi/10.1098/rstb.2017.0382#d1e1706 "	"Digitally simulates the C. elegans nervous system to
-understand how neural circuits drive behaviour at a c
-ellular level."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4217485/
-
- Keywords - C. elegan, neural network, reconstructed connectomes, connectomics"
-Spaun (Semantic Pointer Architecture Unified Network)	Academic	Active	2021	2021.0			not mentioned			"University of Waterloo, Canada; Computational Neuroscience
-Research Group by Chris Eliasmith"	doesn't rely on biological organisms		https://compneuro.uwaterloo.ca/research/spa/semantic-pointer-architecture.html	"Models brain function through a computational
-cognitive architecture that simulates tasks such
- as memory, reasoning, and language."	"https://www.researchgate.net/publication/303527835_Neurotranslations_Interpreting_the_Human_Brain%27s_Attention_System/figures?lo=1
-
-Keywords - neurotranslations, computational neuroscience, stimulation,"
-BRAIN Initiative 1.0	Academic	Concluded	2013	2013.0	2022	2022.0	6000	6000.0		"NIH, DARPA, NSF, HHMI (Howard Hughes Medical Institute) and
-United States Congress."	Mice, Non-human Primates, Human	Rodents,Non-human Primates,Human	"https://braininitiative.nih.gov/funding/understanding-brain-initiative-budget
-https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures"	"Developed cutting-edge tools to map and understand
-brain circuits, emphasizing innovation in neuroimaging
-and electrophysiology."	"https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures#Heading5
-
-Keywords - brain 1.0, neuro circuits, brain stimulation"
-BRAIN Initiative 2.0	Academic	Active	2022	2022.0	2032	2032.0	5000	5000.0		NIH and United States Congress.	Mice, Non-human Primates, Human	Rodents,Non-human Primates,Human	"https://braininitiative.nih.gov/funding/understanding-brain-initiative-budget
-https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures"	"Builds on BRAIN 1.0 by focusing on translational
-neuroscience, integrating technologies for brain
-mapping into healthcare applications."	"https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures#Heading5
-
-Keywords - brain 2.0, neuro circuits, brain stimulation, neural activity"
-NeuroMetrology Lab (Neuromodulation)	Academic	Active	2016	2016.0	2020	2020.0	not mentioned			"National Institute for Health Research Oxford Biomedical Research
-Centre."	Humans	Human	10.1016/j.neurom.2022.04.035 https://www.medrxiv.org/content/10.1101/2020.10.07.20207704v1?utm_source=chatgpt.com 	"Explores novel brain stimulation techniques to study
-and modulate neural activity, advancing
-neuromodulation therapies for brain disorders."	"https://www.ndcn.ox.ac.uk/research
-
-Keywords - neurolab, neuroethology, neuromodulation for brain disorders"
-BRAIN CONNECTS	Academic,Commercial	Active	2013(approx)	2013.0			Initial 150	150.0		NIH, Google Inc.	Mouse 	Rodents	https://research.google/blog/google-research-embarks-on-effort-to-map-a-mouse-brain/	"Utilizes advanced neuroimaging to develop detailed
-maps of brain networks, enhancing understanding of
-connectivity in health and disease."	"https://braininitiative.nih.gov/taxonomy/term/235
-
-Keywords - brain connectivity, mapping brain-wide connectivity,barcoded connectomics"
-Australian Brain Initiative	Academic,Government	Proposed	2023	2023.0			not mentioned			"Australian Brain Alliance, Australian Academy of Science,
-the government of Australia"	Humans, Rodents	Human,Rodents	https://www.sciencedirect.com/science/article/pii/S0896627316307887	"Promotes national research efforts in brain mapping,
-development of neurotechnologies, and translation of
-discoveries into clinical practice."	"https://pubmed.ncbi.nlm.nih.gov/27810000/
-
-Australian Brain Alliance, brain initiative, brain-inspired computing, education, health, healthy brains, learning,
-machine learning, neurotechnology, new industries."
-Cerebellum Atlas Initiative	Academic	Concluded	2015	2015.0	2022	2022.0	18	18.0		BICAN, NIH	Humans, Rodents	Human,Rodents	"https://braininitiative.nih.gov/research/tools-and-technologies-brain-cells-and-circuits/brain-initiative-cell-atlas-network
-https://github.com/DiedrichsenLab/cerebellar_atlases
-https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain"	"The Cerebellum Atlas Initiative aims to create
-detailed maps of cerebellar cell types and connections,
-enhancing understanding of its role in brain function
-and disorders.  "	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11383303/
-
-Keywords- Cerebellum, atlas, neuroanatomy, image processing, computational neuroimaging, cerebellar cortex"
-Canadian Brain Research Stratergy	Academic	Concluded	2020	2020.0	2023	2023.0	80	80.0		 The Government of Canada(Health Canada) ,Canada Brain Research Fund (CBRF)	Humans 	Human	"https://canadianbrain.ca/ https://braincanada.ca/announcements/government-of-canada-supports-brain-canada/#:~:text=Budget%202024%20announced%
-20renewed%20funding,to%20advancing%20brain%20health%20research   https://braincanada.ca/research/program-partners/ "	"Novel transsynaptic labelling maps dopamine circuits,
-enabling precise genetic targeting of reward pathways."	"https://braincanada.ca/funded_grants/mapping-neuronal-circuits-using-a-novel-transsynaptic-labelling-approach/
-
-Keywords - brain initiatives in Canada, Brain mapping techniques."
-Neural Network Algorithms to Decode the Octopus Neural Network	Academic	Ongoing	2020	2020.0			not mentioned			"AI + Science initiative (University of Chicago Office of Research
-and National Laboratories, Center for Data and Computing)"	Octopus	Aquatic Invertibrates	https://sing.uchicago.edu/2022/08/16/to-map-the-human-brain-researchers-first-look-to-the-octopus/	"Developing neural network algorithms to decode
-octopus neural circuits, unravelling their unique
-decentralized brain and behaviour mechanisms."	"https://wellcome.org/reports/scaling-connectomics
-
-Keywords - neural networks in octopus, Ragsdale Lab, University of Chicago octopus mapping"
-Karolinska Institut - Lamprey Neural Circuit	Academic	Concluded	2010	2010.0	2015	2015.0	2.5	2.5		Swedish Research Council	Lamprey	Aquatic Invertibrates	"https://ki.se/en/research/research-areas-centres-and-networks/research-groups/circuits-controlling-action-and-their-evolution-sten-grillner-group
-https://ki.se/en/research/research-areas-centres-and-networks/research-groups/circuits-controlling-action-and-their-evolution-sten-grillner-group "	"The project mapped central pattern generators in
-lampreys, revealing key principles of vertebrate motor
-control and aiding spinal cord injury research."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10555824/
-
-Keywords - Karolinska Institute, Lamprey fish, Neural circuit mapping"
-The Green Brain Project	Academic	Concluded	2012	2012.0	not mentioned		600	600.0		Engineering and Physical Sciences Research Council (EPSRC)	Honeybee	Insects	https://www.sheffield.ac.uk/greenbrain/research	"a computational model of the honeybee brain to
-advance autonomous robotics and our understanding
-of animal cognition."	"https://www.nature.com/articles/d41586-023-02600-x
-
-Keywords - honeybee, neuromimetic model, animal cognition, brain mapping honeybee"
-EDGE CT: Developing transgenic and lineage tracing tools in planarians	Academic	Concluded	2020	2020.0	2022	2022.0	$500,001	0.5		National Science Foundation (NSF)	Planarian	Worm	https://www.nsf.gov/awardsearch/showAward?AWD_ID=1923534&HistoricalAwards=false&utm_source=chatgpt.com	"Its primary objective was to develop transgenic and
-lineage tracing tools in planarians to enhance the
-understanding of their neural circuits and regenerative
-capabilities."	"https://journals.biologists.com/bio/article/13/8/bio060480/361488/Neurophysiological-measurements-of-planarian-brain
-
-Keywords- Planarian Brain, brain mapping, NSF, EDGE CT planarian project, Planarian lineage tracing tools
-
-"
-Brain bow Project	Academic	Concluded	2007	2007.0	not mentioned					NIH and HHMI (Howard Hughes Medical Institute)	Mouse and Zebrafish	Rodents,Fish	https://news.harvard.edu/gazette/story/2007/11/scientists-image-vivid-brainbows/?utm_source=chatgpt.com	"Multicolor labeling to map individual neurons and
-neural circuits."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4317644/#ack1
-
-Keywords - Harvard University Brain bow Project, Fluorescent protein imaging, Brain bow Mice"
-Einstein Brain Project	Academic	Concluded	1995	1995.0	2001	2001.0	not mentioned			"National Science Foundation (NSF) and the National Institutes
-of Health (NIH)"	Human	Human	https://www.oboro.net/en/exhibition/the-madhouse-einsteins-brain-project/	"The project explores the notion of the brain as a real
-and metaphorical interface between bodies and worlds
-in motion"	"https://generativeart.com/on/cic/papersGA2006/66.htm
-
-Keywords - Alan Dunning, Paul Woodrow, The Madhouse"
-Fruit Fly Brain Observatory (FFBO)	Academic	Concluded	2015	2015.0	2017	2017.0	1.2	1.2		National Science Foundation (NSF)	Fruitfly	Insects	http://www.bionet.ee.columbia.edu/research/ffbo/ffbo 	"The objective was to create a platform that integrates
-all the research on fruit fly's brain."	"https://www.researchgate.net/publication/345167093_The_Fruit_Fly_Brain_Observatory_from_structure_to_
-function/figures?lo=1
-
-Keywords - Columbia University Fruitfly research, Fruit fly observatory, Bionet fruit fly observatory "
-Cephalopod Brain Map Project	Academic	Concluded	not mentioned		not mentioned		not mentioned			"Australian Research Council (ARC) (Australian Laureate Fellowship,
-Queensland State Government through the Queensland NMR
-Network, and the Australian Government through the National
-Collaborative Research Infrastructure Strategy (NCRIS)"	Cuttlefish, Octopus, and Squid	Aquatic Invertibrates	https://www.sciencedirect.com/science/article/pii/S2589004222021198?ssrnid=4138709&dgcid=SSRN_redirect_SD 	"Decoded cuttlefish brain, linking neural complexity to
-intelligence and camouflage."	"https://www.biorxiv.org/content/10.1101/2022.05.08.491098v1.full
-
-Keyword - Cuttlefish brain mapping"
-Centre for Computational Research- Human Brain Project	Academic,Commercial	Active	2022	2022.0			10	10.0		IIT Madras, Alumni of IIT Madra- Kris Gopalakrishnan and Sudha Gopalakrishnan and Infosys	Human	Human	https://ccbr.iitmadras.in/humanbrainproject 	"Mapping the human brain at cellular and connectivity
-levels to enhance our understanding of brain disorders"	"https://pubmed.ncbi.nlm.nih.gov/32845057/
-
-Keywords - Indian Brain Initiative, IIT Madra, Brain Atlas, "
-"The structural and functional connectome across Alzheimer's
- disease subtypes"	Academic	Concluded	2015	2015.0	2019	2019.0	$704,099		True	National Institute on Aging (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969574	"Exploring tau pathology and connectome variability
-in Alzheimer's subtypes using HCP and PET imaging."	"https://pubmed.ncbi.nlm.nih.gov/35609137/
-
-Keywords - Alzheimer's, APP gene, NIH connectome project for Alzheimer's"
-Human Connectomes for Low Vision, Blindness, and Sight Restoration	Academic	Concluded	2015	2015.0	2019	2019.0	$945,034		True	NATIONAL EYE INSTITUTE (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969581#details 	"Mapping retinal disease impacts on brain pathways to
-advance sight-restoration treatment outcomes."	"https://pubmed.ncbi.nlm.nih.gov/38082934/
-
-Keywords - Eye diseases NIH, BRAIN Mapping, NIH RePORT for rare eye diseases."
-Connectomes Related to Anxiety and Depression in Adolescents	Academic	Concluded	2015	2015.0	2019	2019.0	$1,188,189		True	National Institute of Mental Health (NIH)	Human 	Human	https://reporter.nih.gov/project-details/8968383 	"Mapping neural circuits in adolescent anxiety and
-depression using HCP-guided imaging and analysis."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11297143/
-
-Keywords - HCP, neural circuits, adolescent anxiety brain connectome"
-Human Connectome Project for Early Psychosis	Academic	Concluded	2016	2016.0	2020	2020.0	$1,431,972		True	National Institute of Mental Health (NIH)	Human	Human	https://reporter.nih.gov/project-details/9108511 	"Early psychosis disrupts brain connectivity;
-HCP data reveals structural, functional, and genetic
-insights."	"https://pubmed.ncbi.nlm.nih.gov/39036958/
-
-Keywords - Early psychosis, HCP, brain mapping"
-The Epilepsy Connectome Project	Academic	Concluded	2015	2015.0	2019	2019.0	$1,205,042		True	National Institute of Neurological Disorders and Stroke (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969005 	"Epilepsy Connectome Project links TLE connectivity
-abnormalities to seizures, cognitive decline, and
-treatment outcomes."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11298711/
-
-Keywords - Epilepsy Connectome Project"
-Mapping the Human Connectome: Structure, Function, and Heritability	Academic	Concluded	2010	2010.0	2015	2015.0	$6,784,111		True	"National Institute on Aging, Eunice Kennedy Shriver National
-Institute of Child Health and Human Development,
-National Institute of Mental Health"	Human	Human	https://reporter.nih.gov/project-details/7994562 	"Reveals heritable brain circuit variability, linking
-genetics, behaviour, and advanced multimodal
-neuroimaging findings."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10402126/
-
-Keywords - brain connectome, brain mapping"
-Connectomics of Brain Aging and Dementia	Academic	Concluded	2016	2016.0	2022	2022.0	$5,967,418		True	National Institute on Aging (NIH)	Human	Human	https://reporter.nih.gov/project-details/9109803 	"AD cognitive decline stems from combined
-Alzheimer’s
-pathology and vascular changes reducing brain
-compensation"	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10947965/
-
-Keywords - Alzheimer's Disease, HCP imaging protocols in Alzheimer's Disease"
-UNC/UMN Baby Connectome Project	Academic	Concluded	2016	2016.0	2020	2020.0	$1,060,130		True	"National Institute of Mental Health, National Institute of Neurological
-Disorders and Stroke (NIH)"	Human	Human	https://reporter.nih.gov/project-details/9136946 	"Baby Connectome Project mapped early brain
-development in babies, linking structural, functional,
-and behavioural growth trajectories from birth."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11025208/
-
-Keywords - Neonatal brain mapping, baby brain connectome, UNC,UMN baby brain connectome"
-Amish Connectome Project on Mental Illness	Academic	Concluded	2015	2015.0	2019	2019.0	$1,108,991		True	National Institute of Mental Health	Human	Human	https://reporter.nih.gov/project-details/8969367 	"Amish Connectome Project revealed genetic links to
-brain connectivity disruptions driving familial mental
-disorder patterns."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10483025/
-
-Keywords - Brain connectome in older Amish people"
-Connectomic imaging in familial and sporadic frontotemporal degeneration	Academic	Concluded	2016	2016.0	2020	2020.0	$1,253,197		True	National Institute on Aging	Human	Human	https://reporter.nih.gov/project-details/9110441 	"FTD connectomic analysis identified distinct tau and
-TDP network patterns in familial and sporadic
-frontotemporal degeneration."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11383468/
-
-Keywords - frontotemporal dementia, brain connectome in neurodegenerative disorders"
-The Connected Connectome Project	Commercial	Active	2015	2015.0			 5-12 (Approx)	8.5		Simons Foundation	Human, rodents, mouse and fruit fly	Human,Rodents,Insects	https://www.simonsfoundation.org/2021/02/25/the-connected-connectome/ 	"The Connected Connectome Project integrates
-multi-species neural data to create a unified brain
-connectivity map, advancing neuroscience, AI,
-and mental health research."	"
-https://en.wikipedia.org/wiki/Flatiron_Institute
-
-Keywords - Simons Foundation, Connectome Project, Flatiron Institute's CCN, brain mapping."
-International Brain Laboratory (IBL)	Commercial	Active	2017	2017.0			20	20.0		Simsons Foundation and Wellcome Trust	Mice	Rodents	https://www.internationalbrainlab.com/?utm_source=chatgpt.com 	"The International Brain Laboratory (IBL)studies
-decision-making by mapping neuronal activity in mice
-using Neuropixels probes, which are capable of
-recording 300–1,000 neurons simultaneously across
-brain regions."	"https://figshare.com/articles/online_resource/Spike_sorting_pipeline_for_the_International_Brain_Laboratory/19705522?file=49783080
-
-Keywords - IBL spiking rate, neuropixels, brain mapping of mouse"
-Scaling Up Connectomics: The Road to a Whole Mouse Brain Connectome	Commercial	Active	2023	2023.0			not specified			Wellcome Trust	Mouse	Rodents	https://wellcome.org/reports/scaling-connectomics	"Developing a comprehensive map of the mouse
-brain's neural connections"	"https://www.biorxiv.org/content/10.1101/2024.03.01.582884v1.full
-
-Keywords - neural connections, synaptic reconstruction, LICONN"
-The Connectome of Olfactory Memory Circuits in the Adult Fly	Commercial	Concluded	2016	2016.0	2019	2019.0	not specified			Wellcome Trust	Fruitfly	Insects	https://wellcome.org/grant-funding/people-and-projects/grants-awarded/the-connectome-olfactory-memory-circuits-adult-fly	"Creating a connection atlas of the adult fruit fly's
-memory centre maps neural circuits to understand
-brain function, aiding research on memory and
-neural circuit development."	"https://pubmed.ncbi.nlm.nih.gov/32619485/
-
-Keywords - Olfaction, neuroanatomy, Drosophila, memory, synapses"
-"Molecular Annotation of the Drosophila Connectome by Optimised
-Expansion Microscopy"	Commercial	Concluded	2017	2017.0	2020	2020.0	not specified			Wellcome Trust	Drosophila	Insects	https://wellcome.org/grant-funding/people-and-projects/grants-awarded/molecular-annotation-drosophila-connectome 	"Developed super-resolution techniques to
-localize signalling proteins in Drosophila
-neurons, enabling detailed molecular annotation
-of the connectome and accelerating research
-on neural circuit function and development."	"https://www.nature.com/articles/s41586-024-07686-5
-
-Keywords- Molecular annotation of a Drosophila, connectome, multi-connectome cell typing"
-"Mapping the energetic pathways of the brain: Ultra-high-field MRI of
-cerebral oxygen and glucose utilisation"	Commercial	Active	2020	2020.0			£1,551,810.00	1.98		Wellcome Trust	Human 	Human	"https://wellcome.org/grant-funding/people-and-projects/grants-awarded/mapping-energetic-pathways-brain-ultra-high-field
-
-"	"aims to develop non-invasive methods for mapping
-brain oxygen-to-glucose utilisation and tissue oxygen
-availability using ultra-high-field magnetic resonance
-imaging (MRI)."	"https://cu.converis.clarivate.com/converis/portal/detail/Project/122211577;jsessionid=zAIbucY63IFpcN98xLOy-wkpAdVaXDpogvrKqD_I.cu?lang=en_GB
-
-Keywords - Cardiff University non-invasive brain mapping, "
-Mapping the Brain: New Technique Poised to Untangle Complexity	Academic,Commercial	Concluded	"not specified
-(possibly late
-2000's)"		2011	2011.0	not specified			"Wellcome Trust, European Research Council, European Molecular
-Biology Organisation, Medical Research Council, Overseas Research
-Students Award Scheme, UCL"	Mouse	Rodents	https://wellcome.org/press-release/mapping-brain-new-technique-poised-untangle-complexity-brain 	"It's focused on the mouse's visual cortex to study
-neuronal functions and synaptic connections."	"https://pubmed.ncbi.nlm.nih.gov/21478872/
-
-Keywords - local synaptic connectivity, neocortical networks"
-Sainsbury Wellcome Centre for Neural Circuits and Behaviour	Academic,Commercial	Active	2016	2016.0	2025	2025.0	75	75.0		Wellcome Trust, Gatsby Charitable Foundation	Mouse, Zebrafish, 	Rodents,Fish	https://www.sainsburywellcome.org/web/research-news/swc-awarded-major-building-project-year?utm_source=chatgpt.com 	"Researchers focus on understanding the neural
-circuits underlying behaviour, with mice being ideal for
-studying genetics, neural activity, and behaviour in
-controlled experimental settings."	"https://www.cell.com/neuron/fulltext/S0896-6273(18)30144-2
-
-keywords - mouse primary visual cortex, basyesian approach, neuropixels dense silicon probe."
-"Controlling epileptic brain networks with computationally optimized weak
-electric fields"	Academic	Active	2020	2020.0	2026	2026.0	10.5	10.5		European Commission	Human	Human	https://cordis.europa.eu/project/id/855109 	"GALVANI is a research project aiming to optimize t
-transcranial current stimulation (tCS) for epilepsy
- treatment, focusing on personalized protocols,
-computational modelling, and seizure prevention in
-drug-resistant patients."	"https://www.sciencedirect.com/science/article/abs/pii/S138824572400230X?via%3Dihub
-
-Keywords- Epilepsy, transcranial stimulation, signal processing, stereoelectroencephalography recordings"
-Wellcome Centre For Integrative Neuroimaging	Commercial	Active	2017	2017.0			not specified			Wellcome Trust	Human	Human	https://www.ndcn.ox.ac.uk/divisions/fmrib 	"It advances neuroimaging techniques to translate
-insights from laboratory neuroscience into applications
- for understanding and treating human brain function
-and disorders."	"https://www.mrcbndu.ox.ac.uk/publications/stimulation-evoked-resonant-neural-activity-subthalamic-nucleus-modulated-sleep
-
-Keywords - neural activity, brain stimulation"
+Project name	Category	Status	Start Year	Start Year (cleaned)	End Year	End Year (cleaned)	Budget (in million $)	Budget (in million $) (cleaned)	Ignore?	Funders	Model Organism Studied	Model Organism Studied (Simplified)	References	blurb	Related Keywords/Papers	ref_id	supporting_refs	ref_note	confidence	validated_by
+Allen Institute Brain Observatory	Academic	Active	2016	2016.0			600	600.0		Allen Institute 	Mouse/Human	Rodents,Human	https://alleninstitute.org/division/brain-science/ https://www.nbcnews.com/science/cosmic-log/billionaire-paul-allen-kicks-brain-observatory-effort-300-million-flna513473 	"The Allen Institute's brain connectome project maps				none	none
+neural connections in the mouse brain, providing a				none	none
+comprehensive resource for understanding brain				none	none
+function and disease mechanisms."	Allen Institute Brain Atlas				none	none
+Human Connectome Project (WU-Minn HCP)	Academic	Active	2010	2010.0	2017(major data release)		40	40.0	True	National Institute of Health(NIH)	Human	Human	https://www.humanconnectome.org/. https://www.sciencedirect.com/science/article/abs/pii/S1053811913005351?via%3Dihub	"Maps human brain connectivity using advanced				none	none
+imaging for understanding neural pathways in				none	none
+health/disease."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3555558/				none	none
+Keywords - brain mapping, connectome, human connectome"				none	none
+Developing Human Connectome	Commercial	Active	2013	2013.0			20	20.0		Wellcome Trust, EU	Human (neonatal)	Human	https://www.developingconnectome.org/project/#:~:text=Currently%2C%20the%20connectome%20of%20the%20mature%20adult%20brain%20is%20in%20progress.	"Focuses on mapping brain connectivity in infants to				none	none
+study neurodevelopment from fetal to neonatal stages."	"https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain?utm_source=chatgpt.com				none	none
+Keywords - developing HCP, dHCP, connectome"				none	none
+Adolescent Brain Development	Academic	Active	2016	2016.0			100	100.0	True	National Institute of Health(NIH)	Humans	Human	https://pmc.ncbi.nlm.nih.gov/articles/PMC6474358/	"Focuses on mapping brain connectivity in infants to				none	none
+study neurodevelopment from fetal to neonatal stages."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none
+Keywords - neuroimaging, adolescent brain development, brain imaging, brain mapping"				none	none
+Developing Children's Connectome Project	Academic	Active	2024	2024.0			not mentioned			Synergy Grant by the European Research Council (ERC)	Humans (children aged 5-10 yrs.) 	Human	https://www.developingconnectome.org/data-release/	"Maps neural development in children to examine				none	none
+early-life brain growth and function."	"				none	none
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none
+Keywords - brain mapping children, growth function, neurodevelopment"				none	none
+Janelia Research Campus	Academic	Active	2006	2006.0						"HHMI (Howard Hughes Medical Institute), Wellcome Trust,				none	none
+University of Cambridge, Google Research, and the				none	none
+MRC Laboratory of Molecular Biology."	Fruit fly	Insects	https://www.biorxiv.org/content/10.1101/2023.06.05.543407v2.full https://www.janelia.org/project-team/flyem/manc-connectome 	"Conducts advanced brain mapping, including				none	none
+high-resolution connectomics in flies and mice."	"https://www.science.org/doi/full/10.1126/science.abf4588?casa_token=1UzYh5rkD-cAAAAA%3AjRDF9WL8DJdNHaOsumk4				none	none
+_jGkevsaZMuaxjf8BoxaCeb3NSKX_uZ2LqfsCG-1go8ZMZGs8tmWjbIrRg				none	none
+Keywords - neuropixels, connectomics, fruitfly"				none	none
+Mouselight project (Janelia Research Campus)	Academic	Active	2017	2017.0			not mentioned			Intelligence Advanced Research Projects Activity (IARPA)	Mouse/Human	Rodents,Human	https://www.simonsfoundation.org/2021/03/22/the-connected-connectome-part-2-beyond-the-fly/.   https://www.cell.com/cell/fulltext/S0092-8674(19)30842-6	"Reconstructs neuron structures across the mouse				none	none
+brain for connectomic insights."	"https://www.hhmi.org/news/mouselight-project-maps-1000-neurons-and-counting-mouse-brain				none	none
+Keywords - Mouselight project, brain mapping, brain connectome "				none	none
+FlyWire Brain	Commercial,Academic	Active	2019	2019.0	2024	2024.0	"not mentioned				none	none
+"		True	"NIH, Wellcome Trust, EU, NSF, PNI,Seung lab,				none	none
+ Allen Institute for Brain Science, IARPA,  Jefferis lab by MRC, Google Amazon"	Adult Fly	Insects	https://www.ukri.org/news/first-map-of-every-neuron-in-an-adult-fly-brain/	"Combines AI and crowdsourcing to create detailed				none	none
+synaptic maps of the fly brain. FlyWire focuses on				none	none
+segmenting and annotating synaptic connections to				none	none
+reveal neural circuits underlying specific behaviors.				none	none
+Researchers leverage high-resolution electron				none	none
+microscopy and advanced algorithms, allowing l				none	none
+arge-scale analysis of connectomic data."	"https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain				none	none
+Keywords- fruitfly, wiring, brain wiring, brain mapping, connectome"				none	none
+Harvard-Google 3D Human Brain Map Collaboration	Commercial	Active	2024	2024.0			not mentioned		True	NIH	Humans/Mouse	Human,Rodents	https://news.harvard.edu/gazette/story/2024/05/the-brain-as-weve-never-seen-it/	"Creates high-resolution 3D maps of the human brain				none	none
+tissues using AI and advanced imaging to identify				none	none
+cellular and synaptic organization in brain regions.				none	none
+for deeper understanding of cognition and disorders."	"https://www.nih.gov/news-events/nih-research-matters/study-reveals-unseen-details-human-brain-structure				none	none
+Keywords - Google-Harvard connectome project, neuro-cognition and disorders, 3D imaging"				none	none
+Neuralink	Commercial	Active	2016	2016.0			total 5 rounds= 680 	680.0		"Elon Musk, Founders Fund, Vy Capital, Google Ventures,				none	none
+DFJ Growth, Valor Equity Partners, Craft Ventures, Gigafund,				none	none
+Sam Altman, Fred Ehrsam, Kenneth Alan Howery, Blake Byers"	Human, pigs	Human,Pig	https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/ https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws/funding-and-investors#funding 	"Develops brain-computer interfaces (BCIs) for direct				none	none
+communication between the brain and external				none	none
+devices, aimed at treating neurological conditions and				none	none
+enhancing human cognitive abilities."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/				none	none
+Keywords - Neuralink, BCIs, brain-machine interface, sensory function, motor function, neurology"				none	none
+Synchron	Commercial	Active	2012	2012.0			total 145 	145.0		"DARPA, ARCH Venture Partners, Khosla Ventures,				none	none
+NeuroTechnology Investors, METIS, Forepont Capital Partners,				none	none
+ID8 Investments, Shanda Group, University of Melbourne,				none	none
+National Institutes of Health (NIH), Bill Gates, Jeff Bezos"	Human	Human	"https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/				none	none
+https://www.businesswire.com/news/home/20221213006045/en/Synchron-Raises-75M-Series-C-Led-by-ARCH-Venture-Partners-to-Advance-Endovascular-Brain-Computer-Interface				none	none
+"	"Design minimally invasive neural implants to restore				none	none
+communication in paralyzed patients by decoding				none	none
+neural signals for external device control."	"https://www.nature.com/articles/s41551-018-0321-z				none	none
+sheep motor cortex, focal stimulation, electrode array"				none	none
+SyNAPSE	Military	Concluded	2008	2008.0	2016	2016.0	76.5  (approx)	76.5		DARPA	Human	Human	https://en.wikipedia.org/wiki/SyNAPSE#Participants	"Develops neuromorphic chips that emulate brain-like				none	none
+architectures for energy-efficient artificial intelligence				none	none
+and computational systems."	"https://militaryembedded.com/ai/deep-learning/darpa-synapse-program-develops-low-power-brain-like-chip				none	none
+Keywords - DARPA, brain chip, computational system"				none	none
+The Chinese Human Brain Connectome Project	Academic	Active	2017	2017.0	"major data				none	none
+released				none	none
+(2024)"		1,600	1600.0		"Beijing Municipal Science & Technology Commission,				none	none
+Chinese Institute for Brain Research (Beijing),				none	none
+National Natural Science Foundation of China,				none	none
+Ministry of Science and Technology of China"	Human	Human	https://www.nature.com/articles/s41592-023-01796-0	"Maps the human brain connectome in Chinese				none	none
+populations to explore variations in brain connectivity				none	none
+and their implications for neuropsychiatric disorders				none	none
+and brain function."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10388803/				none	none
+https://academic.oup.com/nsr/article/4/2/258/3052681				none	none
+Keywords - China's brain initiative, brain imaging, connectome"				none	none
+Brain/MINDS	Academic,Government	Active	2014	2014.0			260	260.0		"Ministry of Education, Culture, Sports, Science, and Technology				none	none
+of Japan (MEXT) and the Japan Agency for Medical Research				none	none
+and Development (AMED)"	Small new world monkey	Non-human Primates	https://pmc.ncbi.nlm.nih.gov/articles/PMC4387516/#s8	"Maps marmoset brain connectivity to study complex				none	none
+brain functions relevant to human neurological and				none	none
+psychiatric disorders, emphasizing cross-species brain				none	none
+evolution insights."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4387516/				none	none
+Keywords - brain mapping by integrated neurotechnologies for disease studies, transgenic non-human primates,				none	none
+optogenetics, tissue clearing, super-resolution microscopy, neuropsychiatric and neurodegenerative diseases"				none	none
+Blue Brain Project	Academic	Active	2005	2005.0			22 per year	418.0		"Swiss Government, European Commission, EPLF and ETH				none	none
+fund group by Blue Brain Project"	Human	Human	https://www.epfl.ch/research/domains/bluebrain/frequently_asked_questions/#:~:text=The%20Blue%20Brain%20Project%20(BBP,around%20%2422%20million%20per%20year 	"Simulates a virtual brain through computational				none	none
+modelling of cortical microcircuits, offering insights into				none	none
+neural connectivity and dynamics."	"https://www.epfl.ch/research/domains/bluebrain/blue-brain/publications/				none	none
+Keywords - brain mapping, connectome"				none	none
+MICrONS Explorer	Academic,Government	Active	2016	2016.0			100	100.0		IARPA MICrONS programme	Mouse/Human	Rodents,Human	https://en.wikipedia.org/wiki/MICrONS	"Reverse-engineers neural circuits by mapping and				none	none
+analyzing synaptic connections in rodent brains to				none	none
+improve AI algorithms inspired by biological learning."	"https://www.nature.com/articles/d41586-024-01096-3				none	none
+Keywords - mouse brain mapping, brain stimulation, connectomics"				none	none
+The Center for C. elegans Anatomy (D.B.C and D.H.H)	Academic	Concluded	2006	2006.0	not known		not mentioned			"National Institute of Mental Health Grant, a Klingenstein Foundation				none	none
+Award and National Institutes of Health Grant."			https://pmc.ncbi.nlm.nih.gov/articles/PMC1550972/#ack1  https://www.pnas.org/doi/abs/10.1073/pnas.0506806103	"Produces detailed connectomic maps of the C. elegans				none	none
+the nervous system, providing a foundation for				none	none
+understanding the simplest neural circuits."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3033362/				none	none
+Keywords - C. elegan, neural network, reconstructed connectomes, connectomics"				none	none
+Korea Brain Initiative	Government	Active	2016	2016.0	2026	2026.0	not mentioned			Ministry of Science and ICT	Rodents, Humans	Rodents,Human	https://www.cell.com/neuron/fulltext/S0896-6273(16)30805-4	"Advances brain mapping and neurotechnologies to				none	none
+understand neural mechanisms and develop tools for				none	none
+clinical and AI applications."	"https://www.sciencedirect.com/science/article/pii/S0896627316308054				none	none
+Keywords - Korean brain initiative, brain imaging, connectome"				none	none
+Human Brain Project	Academic	Concluded	2013	2013.0	2023	2023.0	1000	1000.0		"European Commission and 113 other funders from EU and 12 other				none	none
+labs outside EU"	Rodents, Humans	Rodents,Human	https://www.humanbrainproject.eu/en/about-hbp/project-structure/human-brain-project-ec-grants/	"Integrates neuroscience data into computational				none	none
+platforms for brain simulations, enhancing				none	none
+understanding of brain disorders and supporting				none	none
+AI development."	"https://www.sciencedirect.com/science/article/pii/S0896627316307966				none	none
+Keywords- brain connectome, brain mapping, brain stimulations"				none	none
+Allen Mouse and Human Brain Atlases	Academic	Active	2003	2003.0			100	100.0		Allen Institute of Brain Science	Mouse and Humans	Rodents,Human	https://en.wikipedia.org/wiki/Allen_Brain_Atlas https://alleninstitute.org/news/paul-g-allen-commits-100-million-to-brain-research/ 	"Offers comprehensive brain maps for mice and humans,				none	none
+detailing cellular organization and gene expression to				none	none
+advance studies of neural structure and function."	"https://www.nature.com/articles/d41586-024-01096-3				none	none
+Keywords - mouse brain mapping, brain stimulation"				none	none
+Brain Genomics Superstruct Project (GSP)	Academic	Concluded	2011	2011.0	2016	2016.0	not publically available			National Institutes of Health (NIH), Universities	Human	Human	https://pubmed.ncbi.nlm.nih.gov/26175908/	"Explores genetic influences on brain structure and				none	none
+behaviour through large-scale imaging-genetics				none	none
+datasets, linking genomics to cognitive and neural traits."	"https://pubmed.ncbi.nlm.nih.gov/26175908/				none	none
+Keywords - genome, brain mapping, GSP project"				none	none
+Bioelectronic Medical (SetPoint Medical)	Commercial	Active	2007	2007.0			200	200.0		"NIH, GlaxoSmithKline, NEA, Topspin Partners, Covidien Ventures,				none	none
+Action Potential Venture Capital Limited,"	Human, Mouse	Human,Rodents	"https://setpointmedical.com/files/SetPoint_The_Evolution_Of_Bioelectronic_Medicine.pdf https://				none	none
+setpointmedical.com/setpoint-medical-secures-27-million-financing-adding-action-potential-				none	none
+venture-capitalgsk-boston-scientific-and-covidien-ventures-as-new-investors/#header-blog"	"Develops implantable bioelectronic devices to				none	none
+modulate nerve activity, offering therapeutic solutions				none	none
+for inflammatory and neurological disorders."	"https://www.nature.com/articles/d43747-020-00457-x				none	none
+Keyword - neuromodulation, nerve activity, bioelectronic devices"				none	none
+OpenWorm	Commercial	Active	2013	2013.0			14.8 by NIH 	14.8		NIH, Amazon Web Services, Neruolink (Crowdfunding)	C. elegans (Roundworm)	Worm	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4217485/. https://web.archive.org/web/20220205023344id_/				none	none
+https://repositum.tuwien.at/bitstream/20.500.12708/1945/2/Lung%20David%20-%202018%20-%20OpenWorm%20design%20and%20evaluation%20of				none	none
+%20neural%20circuits%20on%20the...pdf. https://www.caltech.edu/about/news/caltech-led-wormbase-project-awarded-148-million-nih-40250 https://royalsocietypublishing.org/doi/10.1098/rstb.2017.0382#d1e1706 "	"Digitally simulates the C. elegans nervous system to				none	none
+understand how neural circuits drive behaviour at a c				none	none
+ellular level."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4217485/				none	none
+ Keywords - C. elegan, neural network, reconstructed connectomes, connectomics"				none	none
+Spaun (Semantic Pointer Architecture Unified Network)	Academic	Active	2021	2021.0			not mentioned			"University of Waterloo, Canada; Computational Neuroscience				none	none
+Research Group by Chris Eliasmith"	doesn't rely on biological organisms		https://compneuro.uwaterloo.ca/research/spa/semantic-pointer-architecture.html	"Models brain function through a computational				none	none
+cognitive architecture that simulates tasks such				none	none
+ as memory, reasoning, and language."	"https://www.researchgate.net/publication/303527835_Neurotranslations_Interpreting_the_Human_Brain%27s_Attention_System/figures?lo=1				none	none
+Keywords - neurotranslations, computational neuroscience, stimulation,"				none	none
+BRAIN Initiative 1.0	Academic	Concluded	2013	2013.0	2022	2022.0	6000	6000.0		"NIH, DARPA, NSF, HHMI (Howard Hughes Medical Institute) and				none	none
+United States Congress."	Mice, Non-human Primates, Human	Rodents,Non-human Primates,Human	"https://braininitiative.nih.gov/funding/understanding-brain-initiative-budget				none	none
+https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures"	"Developed cutting-edge tools to map and understand				none	none
+brain circuits, emphasizing innovation in neuroimaging				none	none
+and electrophysiology."	"https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures#Heading5				none	none
+Keywords - brain 1.0, neuro circuits, brain stimulation"				none	none
+BRAIN Initiative 2.0	Academic	Active	2022	2022.0	2032	2032.0	5000	5000.0		NIH and United States Congress.	Mice, Non-human Primates, Human	Rodents,Non-human Primates,Human	"https://braininitiative.nih.gov/funding/understanding-brain-initiative-budget				none	none
+https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures"	"Builds on BRAIN 1.0 by focusing on translational				none	none
+neuroscience, integrating technologies for brain				none	none
+mapping into healthcare applications."	"https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures#Heading5				none	none
+Keywords - brain 2.0, neuro circuits, brain stimulation, neural activity"				none	none
+NeuroMetrology Lab (Neuromodulation)	Academic	Active	2016	2016.0	2020	2020.0	not mentioned			"National Institute for Health Research Oxford Biomedical Research				none	none
+Centre."	Humans	Human	10.1016/j.neurom.2022.04.035 https://www.medrxiv.org/content/10.1101/2020.10.07.20207704v1?utm_source=chatgpt.com 	"Explores novel brain stimulation techniques to study				none	none
+and modulate neural activity, advancing				none	none
+neuromodulation therapies for brain disorders."	"https://www.ndcn.ox.ac.uk/research				none	none
+Keywords - neurolab, neuroethology, neuromodulation for brain disorders"				none	none
+BRAIN CONNECTS	Academic,Commercial	Active	2013(approx)	2013.0			Initial 150	150.0		NIH, Google Inc.	Mouse 	Rodents	https://research.google/blog/google-research-embarks-on-effort-to-map-a-mouse-brain/	"Utilizes advanced neuroimaging to develop detailed				none	none
+maps of brain networks, enhancing understanding of				none	none
+connectivity in health and disease."	"https://braininitiative.nih.gov/taxonomy/term/235				none	none
+Keywords - brain connectivity, mapping brain-wide connectivity,barcoded connectomics"				none	none
+Australian Brain Initiative	Academic,Government	Proposed	2023	2023.0			not mentioned			"Australian Brain Alliance, Australian Academy of Science,				none	none
+the government of Australia"	Humans, Rodents	Human,Rodents	https://www.sciencedirect.com/science/article/pii/S0896627316307887	"Promotes national research efforts in brain mapping,				none	none
+development of neurotechnologies, and translation of				none	none
+discoveries into clinical practice."	"https://pubmed.ncbi.nlm.nih.gov/27810000/				none	none
+Australian Brain Alliance, brain initiative, brain-inspired computing, education, health, healthy brains, learning,				none	none
+machine learning, neurotechnology, new industries."				none	none
+Cerebellum Atlas Initiative	Academic	Concluded	2015	2015.0	2022	2022.0	18	18.0		BICAN, NIH	Humans, Rodents	Human,Rodents	"https://braininitiative.nih.gov/research/tools-and-technologies-brain-cells-and-circuits/brain-initiative-cell-atlas-network				none	none
+https://github.com/DiedrichsenLab/cerebellar_atlases				none	none
+https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain"	"The Cerebellum Atlas Initiative aims to create				none	none
+detailed maps of cerebellar cell types and connections,				none	none
+enhancing understanding of its role in brain function				none	none
+and disorders.  "	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11383303/				none	none
+Keywords- Cerebellum, atlas, neuroanatomy, image processing, computational neuroimaging, cerebellar cortex"				none	none
+Canadian Brain Research Stratergy	Academic	Concluded	2020	2020.0	2023	2023.0	80	80.0		 The Government of Canada(Health Canada) ,Canada Brain Research Fund (CBRF)	Humans 	Human	"https://canadianbrain.ca/ https://braincanada.ca/announcements/government-of-canada-supports-brain-canada/#:~:text=Budget%202024%20announced%				none	none
+20renewed%20funding,to%20advancing%20brain%20health%20research   https://braincanada.ca/research/program-partners/ "	"Novel transsynaptic labelling maps dopamine circuits,				none	none
+enabling precise genetic targeting of reward pathways."	"https://braincanada.ca/funded_grants/mapping-neuronal-circuits-using-a-novel-transsynaptic-labelling-approach/				none	none
+Keywords - brain initiatives in Canada, Brain mapping techniques."				none	none
+Neural Network Algorithms to Decode the Octopus Neural Network	Academic	Ongoing	2020	2020.0			not mentioned			"AI + Science initiative (University of Chicago Office of Research				none	none
+and National Laboratories, Center for Data and Computing)"	Octopus	Aquatic Invertibrates	https://sing.uchicago.edu/2022/08/16/to-map-the-human-brain-researchers-first-look-to-the-octopus/	"Developing neural network algorithms to decode				none	none
+octopus neural circuits, unravelling their unique				none	none
+decentralized brain and behaviour mechanisms."	"https://wellcome.org/reports/scaling-connectomics				none	none
+Keywords - neural networks in octopus, Ragsdale Lab, University of Chicago octopus mapping"				none	none
+Karolinska Institut - Lamprey Neural Circuit	Academic	Concluded	2010	2010.0	2015	2015.0	2.5	2.5		Swedish Research Council	Lamprey	Aquatic Invertibrates	"https://ki.se/en/research/research-areas-centres-and-networks/research-groups/circuits-controlling-action-and-their-evolution-sten-grillner-group				none	none
+https://ki.se/en/research/research-areas-centres-and-networks/research-groups/circuits-controlling-action-and-their-evolution-sten-grillner-group "	"The project mapped central pattern generators in				none	none
+lampreys, revealing key principles of vertebrate motor				none	none
+control and aiding spinal cord injury research."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10555824/				none	none
+Keywords - Karolinska Institute, Lamprey fish, Neural circuit mapping"				none	none
+The Green Brain Project	Academic	Concluded	2012	2012.0	not mentioned		600	600.0		Engineering and Physical Sciences Research Council (EPSRC)	Honeybee	Insects	https://www.sheffield.ac.uk/greenbrain/research	"a computational model of the honeybee brain to				none	none
+advance autonomous robotics and our understanding				none	none
+of animal cognition."	"https://www.nature.com/articles/d41586-023-02600-x				none	none
+Keywords - honeybee, neuromimetic model, animal cognition, brain mapping honeybee"				none	none
+EDGE CT: Developing transgenic and lineage tracing tools in planarians	Academic	Concluded	2020	2020.0	2022	2022.0	$500,001	0.5		National Science Foundation (NSF)	Planarian	Worm	https://www.nsf.gov/awardsearch/showAward?AWD_ID=1923534&HistoricalAwards=false&utm_source=chatgpt.com	"Its primary objective was to develop transgenic and				none	none
+lineage tracing tools in planarians to enhance the				none	none
+understanding of their neural circuits and regenerative				none	none
+capabilities."	"https://journals.biologists.com/bio/article/13/8/bio060480/361488/Neurophysiological-measurements-of-planarian-brain				none	none
+Keywords- Planarian Brain, brain mapping, NSF, EDGE CT planarian project, Planarian lineage tracing tools				none	none
+"				none	none
+Brain bow Project	Academic	Concluded	2007	2007.0	not mentioned					NIH and HHMI (Howard Hughes Medical Institute)	Mouse and Zebrafish	Rodents,Fish	https://news.harvard.edu/gazette/story/2007/11/scientists-image-vivid-brainbows/?utm_source=chatgpt.com	"Multicolor labeling to map individual neurons and				none	none
+neural circuits."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC4317644/#ack1				none	none
+Keywords - Harvard University Brain bow Project, Fluorescent protein imaging, Brain bow Mice"				none	none
+Einstein Brain Project	Academic	Concluded	1995	1995.0	2001	2001.0	not mentioned			"National Science Foundation (NSF) and the National Institutes				none	none
+of Health (NIH)"	Human	Human	https://www.oboro.net/en/exhibition/the-madhouse-einsteins-brain-project/	"The project explores the notion of the brain as a real				none	none
+and metaphorical interface between bodies and worlds				none	none
+in motion"	"https://generativeart.com/on/cic/papersGA2006/66.htm				none	none
+Keywords - Alan Dunning, Paul Woodrow, The Madhouse"				none	none
+Fruit Fly Brain Observatory (FFBO)	Academic	Concluded	2015	2015.0	2017	2017.0	1.2	1.2		National Science Foundation (NSF)	Fruitfly	Insects	http://www.bionet.ee.columbia.edu/research/ffbo/ffbo 	"The objective was to create a platform that integrates				none	none
+all the research on fruit fly's brain."	"https://www.researchgate.net/publication/345167093_The_Fruit_Fly_Brain_Observatory_from_structure_to_				none	none
+function/figures?lo=1				none	none
+Keywords - Columbia University Fruitfly research, Fruit fly observatory, Bionet fruit fly observatory "				none	none
+Cephalopod Brain Map Project	Academic	Concluded	not mentioned		not mentioned		not mentioned			"Australian Research Council (ARC) (Australian Laureate Fellowship,				none	none
+Queensland State Government through the Queensland NMR				none	none
+Network, and the Australian Government through the National				none	none
+Collaborative Research Infrastructure Strategy (NCRIS)"	Cuttlefish, Octopus, and Squid	Aquatic Invertibrates	https://www.sciencedirect.com/science/article/pii/S2589004222021198?ssrnid=4138709&dgcid=SSRN_redirect_SD 	"Decoded cuttlefish brain, linking neural complexity to				none	none
+intelligence and camouflage."	"https://www.biorxiv.org/content/10.1101/2022.05.08.491098v1.full				none	none
+Keyword - Cuttlefish brain mapping"				none	none
+Centre for Computational Research- Human Brain Project	Academic,Commercial	Active	2022	2022.0			10	10.0		IIT Madras, Alumni of IIT Madra- Kris Gopalakrishnan and Sudha Gopalakrishnan and Infosys	Human	Human	https://ccbr.iitmadras.in/humanbrainproject 	"Mapping the human brain at cellular and connectivity				none	none
+levels to enhance our understanding of brain disorders"	"https://pubmed.ncbi.nlm.nih.gov/32845057/				none	none
+Keywords - Indian Brain Initiative, IIT Madra, Brain Atlas, "				none	none
+"The structural and functional connectome across Alzheimer's				none	none
+ disease subtypes"	Academic	Concluded	2015	2015.0	2019	2019.0	$704,099		True	National Institute on Aging (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969574	"Exploring tau pathology and connectome variability				none	none
+in Alzheimer's subtypes using HCP and PET imaging."	"https://pubmed.ncbi.nlm.nih.gov/35609137/				none	none
+Keywords - Alzheimer's, APP gene, NIH connectome project for Alzheimer's"				none	none
+Human Connectomes for Low Vision, Blindness, and Sight Restoration	Academic	Concluded	2015	2015.0	2019	2019.0	$945,034		True	NATIONAL EYE INSTITUTE (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969581#details 	"Mapping retinal disease impacts on brain pathways to				none	none
+advance sight-restoration treatment outcomes."	"https://pubmed.ncbi.nlm.nih.gov/38082934/				none	none
+Keywords - Eye diseases NIH, BRAIN Mapping, NIH RePORT for rare eye diseases."				none	none
+Connectomes Related to Anxiety and Depression in Adolescents	Academic	Concluded	2015	2015.0	2019	2019.0	$1,188,189		True	National Institute of Mental Health (NIH)	Human 	Human	https://reporter.nih.gov/project-details/8968383 	"Mapping neural circuits in adolescent anxiety and				none	none
+depression using HCP-guided imaging and analysis."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11297143/				none	none
+Keywords - HCP, neural circuits, adolescent anxiety brain connectome"				none	none
+Human Connectome Project for Early Psychosis	Academic	Concluded	2016	2016.0	2020	2020.0	$1,431,972		True	National Institute of Mental Health (NIH)	Human	Human	https://reporter.nih.gov/project-details/9108511 	"Early psychosis disrupts brain connectivity;				none	none
+HCP data reveals structural, functional, and genetic				none	none
+insights."	"https://pubmed.ncbi.nlm.nih.gov/39036958/				none	none
+Keywords - Early psychosis, HCP, brain mapping"				none	none
+The Epilepsy Connectome Project	Academic	Concluded	2015	2015.0	2019	2019.0	$1,205,042		True	National Institute of Neurological Disorders and Stroke (NIH)	Human	Human	https://reporter.nih.gov/project-details/8969005 	"Epilepsy Connectome Project links TLE connectivity				none	none
+abnormalities to seizures, cognitive decline, and				none	none
+treatment outcomes."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11298711/				none	none
+Keywords - Epilepsy Connectome Project"				none	none
+Mapping the Human Connectome: Structure, Function, and Heritability	Academic	Concluded	2010	2010.0	2015	2015.0	$6,784,111		True	"National Institute on Aging, Eunice Kennedy Shriver National				none	none
+Institute of Child Health and Human Development,				none	none
+National Institute of Mental Health"	Human	Human	https://reporter.nih.gov/project-details/7994562 	"Reveals heritable brain circuit variability, linking				none	none
+genetics, behaviour, and advanced multimodal				none	none
+neuroimaging findings."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10402126/				none	none
+Keywords - brain connectome, brain mapping"				none	none
+Connectomics of Brain Aging and Dementia	Academic	Concluded	2016	2016.0	2022	2022.0	$5,967,418		True	National Institute on Aging (NIH)	Human	Human	https://reporter.nih.gov/project-details/9109803 	"AD cognitive decline stems from combined				none	none
+Alzheimer’s				none	none
+pathology and vascular changes reducing brain				none	none
+compensation"	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10947965/				none	none
+Keywords - Alzheimer's Disease, HCP imaging protocols in Alzheimer's Disease"				none	none
+UNC/UMN Baby Connectome Project	Academic	Concluded	2016	2016.0	2020	2020.0	$1,060,130		True	"National Institute of Mental Health, National Institute of Neurological				none	none
+Disorders and Stroke (NIH)"	Human	Human	https://reporter.nih.gov/project-details/9136946 	"Baby Connectome Project mapped early brain				none	none
+development in babies, linking structural, functional,				none	none
+and behavioural growth trajectories from birth."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11025208/				none	none
+Keywords - Neonatal brain mapping, baby brain connectome, UNC,UMN baby brain connectome"				none	none
+Amish Connectome Project on Mental Illness	Academic	Concluded	2015	2015.0	2019	2019.0	$1,108,991		True	National Institute of Mental Health	Human	Human	https://reporter.nih.gov/project-details/8969367 	"Amish Connectome Project revealed genetic links to				none	none
+brain connectivity disruptions driving familial mental				none	none
+disorder patterns."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC10483025/				none	none
+Keywords - Brain connectome in older Amish people"				none	none
+Connectomic imaging in familial and sporadic frontotemporal degeneration	Academic	Concluded	2016	2016.0	2020	2020.0	$1,253,197		True	National Institute on Aging	Human	Human	https://reporter.nih.gov/project-details/9110441 	"FTD connectomic analysis identified distinct tau and				none	none
+TDP network patterns in familial and sporadic				none	none
+frontotemporal degeneration."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC11383468/				none	none
+Keywords - frontotemporal dementia, brain connectome in neurodegenerative disorders"				none	none
+The Connected Connectome Project	Commercial	Active	2015	2015.0			 5-12 (Approx)	8.5		Simons Foundation	Human, rodents, mouse and fruit fly	Human,Rodents,Insects	https://www.simonsfoundation.org/2021/02/25/the-connected-connectome/ 	"The Connected Connectome Project integrates				none	none
+multi-species neural data to create a unified brain				none	none
+connectivity map, advancing neuroscience, AI,				none	none
+and mental health research."	"				none	none
+https://en.wikipedia.org/wiki/Flatiron_Institute				none	none
+Keywords - Simons Foundation, Connectome Project, Flatiron Institute's CCN, brain mapping."				none	none
+International Brain Laboratory (IBL)	Commercial	Active	2017	2017.0			20	20.0		Simsons Foundation and Wellcome Trust	Mice	Rodents	https://www.internationalbrainlab.com/?utm_source=chatgpt.com 	"The International Brain Laboratory (IBL)studies				none	none
+decision-making by mapping neuronal activity in mice				none	none
+using Neuropixels probes, which are capable of				none	none
+recording 300–1,000 neurons simultaneously across				none	none
+brain regions."	"https://figshare.com/articles/online_resource/Spike_sorting_pipeline_for_the_International_Brain_Laboratory/19705522?file=49783080				none	none
+Keywords - IBL spiking rate, neuropixels, brain mapping of mouse"				none	none
+Scaling Up Connectomics: The Road to a Whole Mouse Brain Connectome	Commercial	Active	2023	2023.0			not specified			Wellcome Trust	Mouse	Rodents	https://wellcome.org/reports/scaling-connectomics	"Developing a comprehensive map of the mouse				none	none
+brain's neural connections"	"https://www.biorxiv.org/content/10.1101/2024.03.01.582884v1.full				none	none
+Keywords - neural connections, synaptic reconstruction, LICONN"				none	none
+The Connectome of Olfactory Memory Circuits in the Adult Fly	Commercial	Concluded	2016	2016.0	2019	2019.0	not specified			Wellcome Trust	Fruitfly	Insects	https://wellcome.org/grant-funding/people-and-projects/grants-awarded/the-connectome-olfactory-memory-circuits-adult-fly	"Creating a connection atlas of the adult fruit fly's				none	none
+memory centre maps neural circuits to understand				none	none
+brain function, aiding research on memory and				none	none
+neural circuit development."	"https://pubmed.ncbi.nlm.nih.gov/32619485/				none	none
+Keywords - Olfaction, neuroanatomy, Drosophila, memory, synapses"				none	none
+"Molecular Annotation of the Drosophila Connectome by Optimised				none	none
+Expansion Microscopy"	Commercial	Concluded	2017	2017.0	2020	2020.0	not specified			Wellcome Trust	Drosophila	Insects	https://wellcome.org/grant-funding/people-and-projects/grants-awarded/molecular-annotation-drosophila-connectome 	"Developed super-resolution techniques to				none	none
+localize signalling proteins in Drosophila				none	none
+neurons, enabling detailed molecular annotation				none	none
+of the connectome and accelerating research				none	none
+on neural circuit function and development."	"https://www.nature.com/articles/s41586-024-07686-5				none	none
+Keywords- Molecular annotation of a Drosophila, connectome, multi-connectome cell typing"				none	none
+"Mapping the energetic pathways of the brain: Ultra-high-field MRI of				none	none
+cerebral oxygen and glucose utilisation"	Commercial	Active	2020	2020.0			£1,551,810.00	1.98		Wellcome Trust	Human 	Human	"https://wellcome.org/grant-funding/people-and-projects/grants-awarded/mapping-energetic-pathways-brain-ultra-high-field				none	none
+"	"aims to develop non-invasive methods for mapping				none	none
+brain oxygen-to-glucose utilisation and tissue oxygen				none	none
+availability using ultra-high-field magnetic resonance				none	none
+imaging (MRI)."	"https://cu.converis.clarivate.com/converis/portal/detail/Project/122211577;jsessionid=zAIbucY63IFpcN98xLOy-wkpAdVaXDpogvrKqD_I.cu?lang=en_GB				none	none
+Keywords - Cardiff University non-invasive brain mapping, "				none	none
+Mapping the Brain: New Technique Poised to Untangle Complexity	Academic,Commercial	Concluded	"not specified				none	none
+(possibly late				none	none
+2000's)"		2011	2011.0	not specified			"Wellcome Trust, European Research Council, European Molecular				none	none
+Biology Organisation, Medical Research Council, Overseas Research				none	none
+Students Award Scheme, UCL"	Mouse	Rodents	https://wellcome.org/press-release/mapping-brain-new-technique-poised-untangle-complexity-brain 	"It's focused on the mouse's visual cortex to study				none	none
+neuronal functions and synaptic connections."	"https://pubmed.ncbi.nlm.nih.gov/21478872/				none	none
+Keywords - local synaptic connectivity, neocortical networks"				none	none
+Sainsbury Wellcome Centre for Neural Circuits and Behaviour	Academic,Commercial	Active	2016	2016.0	2025	2025.0	75	75.0		Wellcome Trust, Gatsby Charitable Foundation	Mouse, Zebrafish, 	Rodents,Fish	https://www.sainsburywellcome.org/web/research-news/swc-awarded-major-building-project-year?utm_source=chatgpt.com 	"Researchers focus on understanding the neural				none	none
+circuits underlying behaviour, with mice being ideal for				none	none
+studying genetics, neural activity, and behaviour in				none	none
+controlled experimental settings."	"https://www.cell.com/neuron/fulltext/S0896-6273(18)30144-2				none	none
+keywords - mouse primary visual cortex, basyesian approach, neuropixels dense silicon probe."				none	none
+"Controlling epileptic brain networks with computationally optimized weak				none	none
+electric fields"	Academic	Active	2020	2020.0	2026	2026.0	10.5	10.5		European Commission	Human	Human	https://cordis.europa.eu/project/id/855109 	"GALVANI is a research project aiming to optimize t				none	none
+transcranial current stimulation (tCS) for epilepsy				none	none
+ treatment, focusing on personalized protocols,				none	none
+computational modelling, and seizure prevention in				none	none
+drug-resistant patients."	"https://www.sciencedirect.com/science/article/abs/pii/S138824572400230X?via%3Dihub				none	none
+Keywords- Epilepsy, transcranial stimulation, signal processing, stereoelectroencephalography recordings"				none	none
+Wellcome Centre For Integrative Neuroimaging	Commercial	Active	2017	2017.0			not specified			Wellcome Trust	Human	Human	https://www.ndcn.ox.ac.uk/divisions/fmrib 	"It advances neuroimaging techniques to translate				none	none
+insights from laboratory neuroscience into applications				none	none
+ for understanding and treating human brain function				none	none
+and disorders."	"https://www.mrcbndu.ox.ac.uk/publications/stimulation-evoked-resonant-neural-activity-subthalamic-nucleus-modulated-sleep				none	none
+Keywords - neural activity, brain stimulation"				none	none

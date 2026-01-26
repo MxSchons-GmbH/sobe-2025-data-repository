@@ -1,54 +1,54 @@
 id	name	definition	unit	value	ref_id	supporting_refs	ref_note	confidence	validated_by
-biological_volume	Volume (biological)	Physical brain volume to be mapped	mm³	500				none	none
-neuron_count	Number of neurons	Number of neurons in the given volume	count	70000000				none	none
-risk_buffer_first	Risk buffer first connectome	Budget and schedule contingency fraction	fraction	0.2				none	none
-risk_buffer_marginal	Risk buffer marginal connectomes	Budget and schedule contingency fraction	fraction	0.05				none	none
-years_until_start	Years until start	Years from now when initial purchases are made	years	0				none	none
-project_duration	Project duration	Time span for overall project	years	5				none	none
-microscope_budget	Microscope budget	Upfront investment in microscopes	$	50000000				none	none
-max_parallel_gpus	Max parallel GPUs	Number of GPUs dedicated during processing	count	1000				none	none
-facility_cost_per_year	Facility per year	Cleanroom, isolation, HVAC, racks	$/year	2000000				none	none
-avg_staff_salary	Average staff salary	Average salary with all overheads	$/year	150000				none	none
-project_mgmt_staff	Project management staff	Staff for project oversight	FTE	10				none	none
-technical_staff	Technical staff	Beyond sample and microscope operations	FTE	15				none	none
-misc_staff	Misc staff	Operations, assistants, PR, etc	FTE	10				none	none
-other_costs_per_connectome	Other costs per connectome	Shipping, permits, biosafety, IP, pubs	$	250000				none	none
-data_science_cost	Data science development	Pipelines, data mgmt, viewers, model training	$	2000000				none	none
-capital_base	Capital base	Scopes + facility + core SW + initial training	$	55000000				none	none
-peak_flops_gpu	Peak FLOPs/s GPU	Maximum FP16 FLOP/s for GPU	TFLOPs/s	1979				none	none
-gpu_utilization	GPU utilization	Continuous GPU usage across time	fraction	0.8				none	none
-gpu_cost_per_hour	GPU cost per hour	Costs for access to 1h of GPU	$/hour	2				none	none
-cost_drop_compute_per_year	Cost drop compute/year	Cost drop compute per year	fraction	0.1				none	none
-cost_drop_storage_per_year	Cost drop storage/year	Cost drop storage per year	fraction	0.05				none	none
-active_storage_cost_pb_month	Active storage cost	Storage for working files	$/PB-month	2625				none	none
-archive_storage_cost_pb_month	Archive storage cost	Storage for backup files	$/PB-month	2000				none	none
-bytes_per_voxel	Bytes per voxel	Assuming 8-bits per voxel	bytes	1				none	none
-lossless_compression	Lossless compression	Raw to lossless ratio	×	1.5				none	none
-lossy_compression	Lossy compression	Raw to lossy ratio	×	120				none	none
-label_overhead	Label overhead	Labels + meshes + skeletons + graphs	fraction	0.05				none	none
-replicas_active_first	Replicas active (first)	Hot copies lossless online first	count	3				none	none
-replicas_archive_first	Replicas archive (first)	Cold copies retained first	count	2				none	none
-replicas_active_marginal	Replicas active (marginal)	Hot copies lossless online marginal	count	1				none	none
-replicas_archive_marginal	Replicas archive (marginal)	Cold copies retained marginal	count	0				none	none
-active_retention_years	Active retention	How long active copies are kept	years	5				none	none
-archive_retention_years	Archive retention	How long archive copies are kept	years	10				none	none
-active_cost_pb_year	Active storage cost/PB-year	Online storage price	$/PB-year	31500				none	none
-archive_cost_pb_year	Archive storage cost/PB-year	Archive storage price	$/PB-year	24000				none	none
-flops_registration_per_tile	FLOPs registration/tile	FP32-equivalent per tile	TFLOP/tile	450				none	none
-segmentation_flops_per_voxel	Segmentation FLOPs/voxel	FP32-equivalent per voxel	TFLOP/voxel	2.4e-06				none	none
-registration_rate_pv_per_day	Registration rate	PV processed per day per GPU	PV/day/GPU	10				none	none
-segmentation_rate_pv_per_day	Segmentation rate	PV processed per day per GPU	PV/day/GPU	5				none	none
-sample_duration	Sample duration	Individual sample duration for recordings	seconds	0.1				none	none
-brain_area_repetitions	Brain area repetitions	How often experiments cover the same brain volume (different states)	count	1				none	none
-connectomics_scan_percentage	Connectomics scan percentage	Percent of recorded volume for aligned structural/functional datasets	fraction	0.1				none	none
-neurons_at_single_resolution	Neurons at single resolution	Number of individual neurons that can be recorded at single neuron resolution	count	5000				none	none
-experiment_cost	Experiment cost	Total costs per experiment	$	500000				none	none
-simulation_hours	Simulation hours	Total hours of simulation to run	hours	1000				none	none
-storage_bytes_lower	Storage bytes lower bound	Simulation memory requirement lower bound	bytes	1.08e12				none	none
-flops_time_based_lower	FLOPS time-based lower	FLOPS per second of sim lower bound	FLOPS	6.75e15				none	none
-gpu_memory_gb	GPU memory	Memory per GPU in gigabytes	GB	80				none	none
-gpu_tflops	GPU TFLOPs	GPU compute performance in TFLOPS	TFLOPS	310				none	none
-experiment_length	Experiment length	Total duration of recording across multiple sessions	hours	0.5				none	none
-brain_volume_coverage	Brain volume coverage	Percentage of total brain volume to record	fraction	1.0				none	none
-experiment_brain_volume	Experiment brain volume	Brain volume covered by recording	mm³	10				none	none
-experiment_data_volume	Experiment data volume	Uncompressed raw data generated by experiment	TB	0.09				none	none
+biological_volume	Volume (biological)	Physical brain volume to be mapped	mm³	500	sobe_2025		Complete mouse brain volume	derived	human
+neuron_count	Number of neurons	Number of neurons in the given volume	count	70000000	sobe_2025		Based on State of Brain Emulation report	derived	human
+risk_buffer_first	Risk buffer first connectome	Budget and schedule contingency fraction	fraction	0.2	internal_estimate_2025		Standard range of risk buffers (20%)	assumed	human
+risk_buffer_marginal	Risk buffer marginal connectomes	Budget and schedule contingency fraction	fraction	0.05	internal_estimate_2025		Standard range of risk buffers (5%)	assumed	human
+years_until_start	Years until start	Years from now when initial purchases are made	years	0	internal_estimate_2025		Planning assumption	assumed	human
+project_duration	Project duration	Time span for overall project	years	5	internal_estimate_2025		Planning assumption	assumed	human
+microscope_budget	Microscope budget	Upfront investment in microscopes	$	50000000	internal_estimate_2025		Planning assumption	assumed	human
+max_parallel_gpus	Max parallel GPUs	Number of GPUs dedicated during processing	count	1000	internal_estimate_2025		Planning assumption	assumed	human
+facility_cost_per_year	Facility per year	Cleanroom, isolation, HVAC, racks	$/year	2000000	internal_estimate_2025		Planning assumption	assumed	human
+avg_staff_salary	Average staff salary	Average salary with all overheads	$/year	150000	internal_estimate_2025		Planning assumption	assumed	human
+project_mgmt_staff	Project management staff	Staff for project oversight	FTE	10	internal_estimate_2025		Planning assumption	assumed	human
+technical_staff	Technical staff	Beyond sample and microscope operations	FTE	15	internal_estimate_2025		Planning assumption	assumed	human
+misc_staff	Misc staff	Operations, assistants, PR, etc	FTE	10	internal_estimate_2025		Planning assumption	assumed	human
+other_costs_per_connectome	Other costs per connectome	Shipping, permits, biosafety, IP, pubs	$	250000	internal_estimate_2025		Miscellaneous project costs	assumed	human
+data_science_cost	Data science development	Pipelines, data mgmt, viewers, model training	$	2000000	internal_estimate_2025	tavakoli2024	LICONN: 30d×32 V100s≈$10k; plus semantic classifier 16 V100s×38h; 10x multiplier for multiple models	estimated	human
+capital_base	Capital base	Scopes + facility + core SW + initial training	$	55000000	internal_estimate_2025		Calculation: scopes + facility + development	derived	human
+peak_flops_gpu	Peak FLOPs/s GPU	Maximum FP16 FLOP/s for GPU	TFLOPs/s	1979	nvidia_h100_2024		H100 FP16 1,979 TFLOPs; current connectomics uses FP32 but FP16 reasonable at scale	measured	human
+gpu_utilization	GPU utilization	Continuous GPU usage across time	fraction	0.8	internal_estimate_2025		Typical continuous utilization estimate	estimated	human
+gpu_cost_per_hour	GPU cost per hour	Costs for access to 1h of GPU	$/hour	2	internal_estimate_2025		At-scale pricing for cloud GPUs	estimated	human
+cost_drop_compute_per_year	Cost drop compute/year	Cost drop compute per year	fraction	0.1	internal_estimate_2025		Based on historical compute cost trends	estimated	human
+cost_drop_storage_per_year	Cost drop storage/year	Cost drop storage per year	fraction	0.05	internal_estimate_2025		Based on historical storage cost trends	estimated	human
+active_storage_cost_pb_month	Active storage cost	Storage for working files	$/PB-month	2625	aws_s3_pricing_2025		S3 Frequent Access $0.021/GB; on-prem assumed 8x cheaper at scale	derived	human
+archive_storage_cost_pb_month	Archive storage cost	Storage for backup files	$/PB-month	2000	aws_s3_pricing_2025		S3 Archive Instant $0.004/GB; on-prem assumed 2x cheaper	derived	human
+bytes_per_voxel	Bytes per voxel	Assuming 8-bits per voxel	bytes	1	internal_estimate_2025		Standard 8-bit grayscale	assumed	human
+lossless_compression	Lossless compression	Raw to lossless ratio	×	1.5	wellcome_connectomics_2024		Per Wellcome Trust Report; compression parallel to image acquisition	derived	human
+lossy_compression	Lossy compression	Raw to lossy ratio	×	120	internal_estimate_2025		120x compression demonstrated for EM data; parallel to image acquisition	estimated	human
+label_overhead	Label overhead	Labels + meshes + skeletons + graphs	fraction	0.05	internal_estimate_2025		Estimate for image overlays and annotations	estimated	human
+replicas_active_first	Replicas active (first)	Hot copies lossless online first	count	3	internal_estimate_2025		Data redundancy assumption	assumed	human
+replicas_archive_first	Replicas archive (first)	Cold copies retained first	count	2	internal_estimate_2025		Data redundancy assumption	assumed	human
+replicas_active_marginal	Replicas active (marginal)	Hot copies lossless online marginal	count	1	internal_estimate_2025		Data redundancy assumption	assumed	human
+replicas_archive_marginal	Replicas archive (marginal)	Cold copies retained marginal	count	0	internal_estimate_2025		Data redundancy assumption	assumed	human
+active_retention_years	Active retention	How long active copies are kept	years	5	internal_estimate_2025		Data lifecycle assumption	assumed	human
+archive_retention_years	Archive retention	How long archive copies are kept	years	10	internal_estimate_2025		Data lifecycle assumption	assumed	human
+active_cost_pb_year	Active storage cost/PB-year	Online storage price	$/PB-year	31500	aws_s3_pricing_2025		Calculated: $2625/PB-month × 12	derived	human
+archive_cost_pb_year	Archive storage cost/PB-year	Archive storage price	$/PB-year	24000	aws_s3_pricing_2025		Calculated: $2000/PB-month × 12	derived	human
+flops_registration_per_tile	FLOPs registration/tile	FP32-equivalent per tile	TFLOP/tile	450	microns_2021		MICrONS: 230h×1200 T4s (6.5 TFLOPS)=6.46B TFLOPs for 14.4M tiles≈450/tile	derived	human
+segmentation_flops_per_voxel	Segmentation FLOPs/voxel	FP32-equivalent per voxel	TFLOP/voxel	2.4e-06	januszewski2018	sheridan2022	LSDs: 2M FLOP/voxel (1/100 of FFN's 2.42×10⁸); see Nature Methods supplements	derived	human
+registration_rate_pv_per_day	Registration rate	PV processed per day per GPU	PV/day/GPU	10	internal_estimate_2025		Processing rate estimate	estimated	human
+segmentation_rate_pv_per_day	Segmentation rate	PV processed per day per GPU	PV/day/GPU	5	internal_estimate_2025		Processing rate estimate	estimated	human
+sample_duration	Sample duration	Individual sample duration for recordings	seconds	0.1	internal_estimate_2025		Recording protocol assumption	assumed	human
+brain_area_repetitions	Brain area repetitions	How often experiments cover the same brain volume (different states)	count	1	internal_estimate_2025		Recording protocol assumption	assumed	human
+connectomics_scan_percentage	Connectomics scan percentage	Percent of recorded volume for aligned structural/functional datasets	fraction	0.1	internal_estimate_2025		Protocol assumption	assumed	human
+neurons_at_single_resolution	Neurons at single resolution	Number of individual neurons that can be recorded at single neuron resolution	count	5000	internal_estimate_2025		Current technology capability	estimated	human
+experiment_cost	Experiment cost	Total costs per experiment	$	500000	internal_estimate_2025		Typical neuroscience experiment budget	estimated	human
+simulation_hours	Simulation hours	Total hours of simulation to run	hours	1000	internal_estimate_2025		Simulation run time assumption	assumed	human
+storage_bytes_lower	Storage bytes lower bound	Simulation memory requirement lower bound	bytes	1.08e12	internal_estimate_2025		Calculated from model parameters	derived	human
+flops_time_based_lower	FLOPS time-based lower	FLOPS per second of sim lower bound	FLOPS	6.75e15	internal_estimate_2025		Calculated from model parameters	derived	human
+gpu_memory_gb	GPU memory	Memory per GPU in gigabytes	GB	80	nvidia_h100_2024		H100 HBM3 memory capacity	measured	human
+gpu_tflops	GPU TFLOPs	GPU compute performance in TFLOPS	TFLOPS	310	nvidia_h100_2024		H100 FP32 tensor core performance	measured	human
+experiment_length	Experiment length	Total duration of recording across multiple sessions	hours	0.5	internal_estimate_2025		Recording protocol assumption	assumed	human
+brain_volume_coverage	Brain volume coverage	Percentage of total brain volume to record	fraction	1.0	internal_estimate_2025		Full brain coverage target	assumed	human
+experiment_brain_volume	Experiment brain volume	Brain volume covered by recording	mm³	10	internal_estimate_2025		Recording setup assumption	assumed	human
+experiment_data_volume	Experiment data volume	Uncompressed raw data generated by experiment	TB	0.09	internal_estimate_2025		Calculated from recording parameters	derived	human
