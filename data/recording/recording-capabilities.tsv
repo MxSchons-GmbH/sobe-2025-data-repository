@@ -1,0 +1,7 @@
+id	name	max_neurons	cost_per_neuron_hour	setup_cost	imaging_gbps	description
+c_elegans	C. elegans	150	0.01	10000	0.5	Whole-brain calcium imaging
+drosophila	Drosophila	2000	0.1	100000	2	Two-photon calcium imaging
+zebrafish_larva	Zebrafish larva	10000	0.05	50000	3	Light-sheet whole-brain imaging
+mouse	Mouse	5000	0.5	500000	5	Neuropixels + two-photon
+macaque	Macaque	2000	2	2000000	5	Utah arrays + two-photon
+human	Human	1000	10	5000000	2	Clinical microelectrode arrays

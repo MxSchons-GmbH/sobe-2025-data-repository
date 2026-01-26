@@ -137,7 +137,6 @@ async function bundle(): Promise<void> {
     },
     formulas,
     metadata: {
-      generatedAt: new Date().toISOString(),
       parameterCount: Object.keys(shared).length +
         modalityRows.length * modalityIds.length +
         organismRows.length +

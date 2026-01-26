@@ -1,0 +1,5 @@
+id	name	short_name	flops_per_sec	flops_per_event	bytes	description	ref_id	supporting_refs	ref_note	confidence	validated_by
+alpha	Alpha Synapse	Alpha	50000	20	8	Simple alpha-function conductance				none	none
+tsodyks_markram	Tsodyks-Markram	TM	80000	51	16	Short-term plasticity with depression and facilitation				none	none
+exponential	Double Exponential	Exp2Syn	60000	30	12	Rise and decay time constants				none	none
+stdp	STDP Plastic	STDP	120000	80	24	Spike-timing dependent plasticity				none	none

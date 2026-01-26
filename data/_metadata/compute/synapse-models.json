@@ -1,0 +1,8 @@
+{
+  "title": "Synapse Models",
+  "source": "State of Brain Emulation Report 2025",
+  "originalAuthor": "Zanichelli, Schons et al",
+  "contributors": [],
+  "license": "CC BY 4.0",
+  "description": "Computational synapse models with FLOPS requirements and memory footprint."
+}

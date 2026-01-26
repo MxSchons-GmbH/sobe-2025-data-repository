@@ -1,11 +1,11 @@
-id	formula	inputs	unit	section	row	description
-raw_bytes_per_mm3	voxels_per_mm3 * bytes_per_voxel	voxels_per_mm3,bytes_per_voxel	bytes/mm³	storage	109	Uncompressed bytes per cubic millimeter
-raw_pb_total	raw_bytes_per_mm3 * effective_volume / 1e15	raw_bytes_per_mm3,effective_volume	PB	storage	111	Total raw uncompressed data size
-active_pb	if(lossy_compression == 0, 0, (raw_pb_total / lossy_compression) + (raw_pb_total * label_overhead))	raw_pb_total,lossy_compression,label_overhead	PB	storage	112	Active storage size (lossy compressed + labels)
-archive_pb	if(lossless_compression == 0, 0, (raw_pb_total / lossless_compression) + (raw_pb_total * label_overhead))	raw_pb_total,lossless_compression,label_overhead	PB	storage	113	Archive storage size (lossless compressed + labels)
-active_storage_cost_first	active_pb * replicas_active_first * active_retention_years * active_cost_pb_year	active_pb,replicas_active_first,active_retention_years,active_cost_pb_year	$	storage	132	Active storage cost for first connectome
-archive_storage_cost_first	archive_pb * replicas_archive_first * archive_retention_years * archive_cost_pb_year	archive_pb,replicas_archive_first,archive_retention_years,archive_cost_pb_year	$	storage	133	Archive storage cost for first connectome
-total_storage_cost_first	active_storage_cost_first + archive_storage_cost_first	active_storage_cost_first,archive_storage_cost_first	$	storage	134	Total storage cost for first connectome
-active_storage_cost_marginal	active_pb * replicas_active_marginal * active_retention_years * active_cost_pb_year	active_pb,replicas_active_marginal,active_retention_years,active_cost_pb_year	$	storage	135	Active storage cost for marginal connectomes
-archive_storage_cost_marginal	archive_pb * replicas_archive_marginal * archive_retention_years * archive_cost_pb_year	archive_pb,replicas_archive_marginal,archive_retention_years,archive_cost_pb_year	$	storage	136	Archive storage cost for marginal connectomes
-total_storage_cost_marginal	active_storage_cost_marginal + archive_storage_cost_marginal	active_storage_cost_marginal,archive_storage_cost_marginal	$	storage	137	Total storage cost for marginal connectomes
+id	formula	inputs	unit	section	row	description	ref_id	supporting_refs	ref_note	confidence	validated_by
+raw_bytes_per_mm3	voxels_per_mm3 * bytes_per_voxel	voxels_per_mm3,bytes_per_voxel	bytes/mm³	storage	109	Uncompressed bytes per cubic millimeter				none	none
+raw_pb_total	raw_bytes_per_mm3 * effective_volume / 1e15	raw_bytes_per_mm3,effective_volume	PB	storage	111	Total raw uncompressed data size				none	none
+active_pb	if(lossy_compression == 0, 0, (raw_pb_total / lossy_compression) + (raw_pb_total * label_overhead))	raw_pb_total,lossy_compression,label_overhead	PB	storage	112	Active storage size (lossy compressed + labels)				none	none
+archive_pb	if(lossless_compression == 0, 0, (raw_pb_total / lossless_compression) + (raw_pb_total * label_overhead))	raw_pb_total,lossless_compression,label_overhead	PB	storage	113	Archive storage size (lossless compressed + labels)				none	none
+active_storage_cost_first	active_pb * replicas_active_first * active_retention_years * active_cost_pb_year	active_pb,replicas_active_first,active_retention_years,active_cost_pb_year	$	storage	132	Active storage cost for first connectome				none	none
+archive_storage_cost_first	archive_pb * replicas_archive_first * archive_retention_years * archive_cost_pb_year	archive_pb,replicas_archive_first,archive_retention_years,archive_cost_pb_year	$	storage	133	Archive storage cost for first connectome				none	none
+total_storage_cost_first	active_storage_cost_first + archive_storage_cost_first	active_storage_cost_first,archive_storage_cost_first	$	storage	134	Total storage cost for first connectome				none	none
+active_storage_cost_marginal	active_pb * replicas_active_marginal * active_retention_years * active_cost_pb_year	active_pb,replicas_active_marginal,active_retention_years,active_cost_pb_year	$	storage	135	Active storage cost for marginal connectomes				none	none
+archive_storage_cost_marginal	archive_pb * replicas_archive_marginal * archive_retention_years * archive_cost_pb_year	archive_pb,replicas_archive_marginal,archive_retention_years,archive_cost_pb_year	$	storage	136	Archive storage cost for marginal connectomes				none	none
+total_storage_cost_marginal	active_storage_cost_marginal + archive_storage_cost_marginal	active_storage_cost_marginal,archive_storage_cost_marginal	$	storage	137	Total storage cost for marginal connectomes				none	none

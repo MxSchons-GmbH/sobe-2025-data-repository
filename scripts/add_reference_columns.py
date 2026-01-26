@@ -33,6 +33,15 @@ TARGET_FILES = [
     DATA_DIR / "formulas" / "costs.tsv",
     DATA_DIR / "formulas" / "storage.tsv",
     DATA_DIR / "formulas" / "connectomics.tsv",
+    # Added for calculator integration
+    DATA_DIR / "compute" / "neuron-models.tsv",
+    DATA_DIR / "compute" / "synapse-models.tsv",
+    DATA_DIR / "parameters" / "recording-capabilities.tsv",
+    DATA_DIR / "parameters" / "recording-parameters.tsv",
+    DATA_DIR / "parameters" / "storage-presets.tsv",
+    DATA_DIR / "parameters" / "organism-defaults.tsv",
+    DATA_DIR / "formulas" / "recording.tsv",
+    DATA_DIR / "formulas" / "simulation.tsv",
 ]
 
 # New columns to add (in order)

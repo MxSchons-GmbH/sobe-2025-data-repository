@@ -934,6 +934,15 @@ REFERENCE_TRACKING_FILES = [
     paths.DATA_DIR / "formulas" / "costs.tsv",
     paths.DATA_DIR / "formulas" / "storage.tsv",
     paths.DATA_DIR / "formulas" / "connectomics.tsv",
+    # Added for calculator integration
+    paths.DATA_DIR / "compute" / "neuron-models.tsv",
+    paths.DATA_DIR / "compute" / "synapse-models.tsv",
+    paths.DATA_DIR / "parameters" / "recording-capabilities.tsv",
+    paths.DATA_DIR / "parameters" / "recording-parameters.tsv",
+    paths.DATA_DIR / "parameters" / "storage-presets.tsv",
+    paths.DATA_DIR / "parameters" / "organism-defaults.tsv",
+    paths.DATA_DIR / "formulas" / "recording.tsv",
+    paths.DATA_DIR / "formulas" / "simulation.tsv",
 ]
 
 

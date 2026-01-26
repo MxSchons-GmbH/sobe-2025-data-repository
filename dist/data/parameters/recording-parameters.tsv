@@ -1,0 +1,2 @@
+id	name	value	unit	definition	ref_id	supporting_refs	ref_note	confidence	validated_by
+experiment_duration_minutes	Experiment Duration	30	minutes	Standard recording session length				none	none
