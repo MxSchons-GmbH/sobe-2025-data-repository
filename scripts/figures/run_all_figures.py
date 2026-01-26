@@ -109,12 +109,16 @@ mpl.rcParams.update({
 # =============================================================================
 @figure("neuron-counts-organism-comparison", "Neuron simulation counts over time")
 def generate_num_neurons():
-    neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"], sep='\t')
+    neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"], sep='\t', on_bad_lines='skip')
     neurons_df['Year'] = neurons_df['Simulation/Initiative'].str.extract(r'(\d{4})').apply(pd.to_datetime)
+    neurons_df['# of Neurons'] = pd.to_numeric(neurons_df['# of Neurons'], errors='coerce')
+    # Rename column for cleaner legend
+    neurons_df = neurons_df.rename(columns={'Organism (random)': 'Organism'})
+    # Filter to valid data
+    neurons_df = neurons_df.dropna(subset=['Year', '# of Neurons'])
 
     min_year = neurons_df['Year'].min() - dt.timedelta(days=365)
     max_year = neurons_df['Year'].max() + dt.timedelta(days=365)
-    label_year = dt.datetime(year=1985, month=1, day=1)
 
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.scatterplot(
@@ -122,16 +126,24 @@ def generate_num_neurons():
         x='Year',
         y='# of Neurons',
         style='Category',
-        hue='Organism (random)',
+        hue='Organism',
         palette=EXTENDED_CATEGORICAL,
         s=60,
         alpha=0.8,
         ax=ax
     )
-    plot_species_hlines(ax, min_year, max_year, label_year)
-    place_legend(ax, fig, position='outside_right')
     ax.set_yscale('log')
     ax.set_xlim(min_year, max_year)
+
+    # Place species reference lines with labels INSIDE the plot, just right of the y-axis
+    from style import plot_reference_hlines, SPECIES_NEURONS
+    # Position labels slightly inside the left edge of the plot
+    label_x = min_year + dt.timedelta(days=400)
+    # All labels ABOVE their lines (va='bottom'), except Zebrafish below to avoid Drosophila overlap
+    va_overrides = {name: 'bottom' for name in SPECIES_NEURONS.keys()}
+    va_overrides['Zebrafish (larva)'] = 'top'  # Below its line to avoid overlapping Drosophila
+    plot_reference_hlines(ax, SPECIES_NEURONS, label_x, label_position='right', va_overrides=va_overrides)
+    place_legend(ax, fig, position='outside_right')
     ax.set_ylabel('Number of Neurons')
     ax.set_xlabel(None)
     ax.set_title('Neuron Simulations Over Time')
