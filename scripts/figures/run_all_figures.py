@@ -278,8 +278,31 @@ def generate_compute():
     ax.set_xlim(min_year, max_year)
     ax.set_ylim(1e-12, 1e6)  # From tiny models to beyond human brain
 
+    # Custom formatter for FLOPs with SI prefixes (values are in petaFLOP)
+    def pflops_formatter(x, pos):
+        # x is in petaFLOP (1e15 FLOP)
+        flops = x * 1e15  # Convert to raw FLOP
+        if flops >= 1e18:
+            return f'{flops/1e18:.0f} EFLOP'
+        elif flops >= 1e15:
+            return f'{flops/1e15:.0f} PFLOP'
+        elif flops >= 1e12:
+            return f'{flops/1e12:.0f} TFLOP'
+        elif flops >= 1e9:
+            return f'{flops/1e9:.0f} GFLOP'
+        elif flops >= 1e6:
+            return f'{flops/1e6:.0f} MFLOP'
+        elif flops >= 1e3:
+            return f'{flops/1e3:.0f} KFLOP'
+        else:
+            return f'{flops:.0f} FLOP'
+
+    from matplotlib.ticker import FuncFormatter, LogLocator
+    ax.yaxis.set_major_formatter(FuncFormatter(pflops_formatter))
+    ax.yaxis.set_major_locator(LogLocator(base=10, numticks=19))  # 10x steps
+
     ax.set_xlabel(None)
-    ax.set_ylabel('Inference FLOPs (petaFLOP per forward pass)')
+    ax.set_ylabel('Inference Compute (per forward pass)')
     ax.set_title('AI Inference Compute vs Brain Emulation Requirements')
 
     # Fix legend title
