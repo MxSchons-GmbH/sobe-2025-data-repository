@@ -223,9 +223,9 @@
     },
     {
       "id": "funding",
-      "title": "Brain Initiative Funding",
-      "description": "Overview of funding for major brain research initiatives worldwide.",
-      "filename": "brain-research-initiative-funding",
+      "title": "Brain vs Non-Brain Megaproject Funding",
+      "description": "Comparison of funding levels between neuroscience and other major megaprojects (military, energy, infrastructure).",
+      "filename": "megaproject-funding-brain-vs-other-comparison",
       "path": "figures/generated",
       "organism": [
         "all"
@@ -311,24 +311,10 @@
       ]
     },
     {
-      "id": "initiatives1",
-      "title": "Brain Initiatives Timeline",
-      "description": "Timeline showing major brain research initiatives and their duration.",
-      "filename": "brain-initiatives-timeline-overview",
-      "path": "figures/generated",
-      "organism": [
-        "all"
-      ],
-      "type": [
-        "initiatives",
-        "funding"
-      ]
-    },
-    {
       "id": "initiatives2",
-      "title": "Brain Initiatives Funding",
-      "description": "Funding comparison across major brain research initiatives.",
-      "filename": "brain-initiatives-funding-comparison",
+      "title": "Brain vs Non-Brain Megaproject Timeline",
+      "description": "Timeline showing brain research initiatives alongside other major megaprojects, with budget and duration.",
+      "filename": "megaproject-budgets-brain-vs-other-timeline",
       "path": "figures/generated",
       "organism": [
         "all"

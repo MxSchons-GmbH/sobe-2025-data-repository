@@ -109,12 +109,16 @@ mpl.rcParams.update({
 # =============================================================================
 @figure("neuron-counts-organism-comparison", "Neuron simulation counts over time")
 def generate_num_neurons():
-    neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"], sep='\t')
+    neurons_df = pd.read_csv(DATA_FILES["neuron_simulations"], sep='\t', on_bad_lines='skip')
     neurons_df['Year'] = neurons_df['Simulation/Initiative'].str.extract(r'(\d{4})').apply(pd.to_datetime)
+    neurons_df['# of Neurons'] = pd.to_numeric(neurons_df['# of Neurons'], errors='coerce')
+    # Rename column for cleaner legend
+    neurons_df = neurons_df.rename(columns={'Organism (random)': 'Organism'})
+    # Filter to valid data
+    neurons_df = neurons_df.dropna(subset=['Year', '# of Neurons'])
 
     min_year = neurons_df['Year'].min() - dt.timedelta(days=365)
     max_year = neurons_df['Year'].max() + dt.timedelta(days=365)
-    label_year = dt.datetime(year=1985, month=1, day=1)
 
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.scatterplot(
@@ -122,16 +126,24 @@ def generate_num_neurons():
         x='Year',
         y='# of Neurons',
         style='Category',
-        hue='Organism (random)',
+        hue='Organism',
         palette=EXTENDED_CATEGORICAL,
         s=60,
         alpha=0.8,
         ax=ax
     )
-    plot_species_hlines(ax, min_year, max_year, label_year)
-    place_legend(ax, fig, position='outside_right')
     ax.set_yscale('log')
     ax.set_xlim(min_year, max_year)
+
+    # Place species reference lines with labels INSIDE the plot, just right of the y-axis
+    from style import plot_reference_hlines, SPECIES_NEURONS
+    # Position labels slightly inside the left edge of the plot
+    label_x = min_year + dt.timedelta(days=400)
+    # All labels ABOVE their lines (va='bottom'), except Zebrafish below to avoid Drosophila overlap
+    va_overrides = {name: 'bottom' for name in SPECIES_NEURONS.keys()}
+    va_overrides['Zebrafish (larva)'] = 'top'  # Below its line to avoid overlapping Drosophila
+    plot_reference_hlines(ax, SPECIES_NEURONS, label_x, label_position='right', va_overrides=va_overrides)
+    place_legend(ax, fig, position='outside_right')
     ax.set_ylabel('Number of Neurons')
     ax.set_xlabel(None)
     ax.set_title('Neuron Simulations Over Time')
@@ -846,7 +858,7 @@ def generate_cost_per_neuron():
 # =============================================================================
 # Figure 10: Initiatives
 # =============================================================================
-@figure("initiatives", "Megaproject budgets and distributions")
+@figure("initiatives", "Brain vs other megaproject timelines and budgets")
 def generate_initiatives():
     from matplotlib.patches import Patch
 
@@ -888,19 +900,6 @@ def generate_initiatives():
                      'Start Year (cleaned)': 'StartYear', 'End Year (cleaned)': 'EndYear'}),
     ], ignore_index=True)
 
-    # Scatter plot
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sns.scatterplot(all_proj_df, x='StartYear', y='Budget_M', hue='Category',
-                    palette=EXTENDED_CATEGORICAL, s=80, alpha=0.8, ax=ax)
-    place_legend(ax, fig, position='outside_right')
-    ax.set_yscale('log')
-    ax.set_ylabel('Budget (Million $)')
-    ax.set_xlabel(None)
-    ax.set_title('Megaproject Budgets by Start Year')
-    plt.tight_layout()
-    save_figure(fig, 'brain-initiatives-timeline-overview')
-    plt.close()
-
     # Compute project durations and midpoints for initiatives2, 4, 5
     proj_durations = all_proj_df['EndYear'] - all_proj_df['StartYear']
     proj_midpoints = all_proj_df['StartYear'] + proj_durations / 2
@@ -910,8 +909,8 @@ def generate_initiatives():
     category_colormap = dict(zip(proj_categories, category_colors))
     proj_colors = [category_colormap[cat] for cat in all_proj_df['Category']]
 
-    # initiatives2 - Megaproject Budgets and Durations
-    fig, ax = plt.subplots(figsize=(10, 5))
+    # initiatives2 - Megaproject Budgets and Durations (brain vs other megaprojects)
+    fig, ax = plt.subplots(figsize=(14, 8))
     for i in range(len(all_proj_df)):
         ax.errorbar(
             [proj_midpoints[i]],
@@ -930,13 +929,84 @@ def generate_initiatives():
         Patch(facecolor=color, edgecolor=COLORS['border'], label=category)
         for category, color in zip(proj_categories, category_colors)
     ]
-    for i, proj in all_proj_df.head(6).iterrows():
-        ax.text(proj_midpoints[i], 1e6 * proj['Budget_M'], proj['Name'],
-                ha='center', va='bottom', fontsize=9, color=COLORS['text'])
+
+    # Name shortening map for cleaner labels
+    name_map = {
+        'Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/MINDS) project': 'Brain/MINDS',
+        'Brain Research Through Advancing Innovative Neurotechnologies (BRAIN) Initiative': 'BRAIN Initiative',
+        'Chinese Human Connectome Project (CHCP)': 'Chinese Human Connectome',
+        'Bioelectronic Medical (SetPoint Medical)': 'SetPoint Medical',
+        'Allen Institute Brain Observatory': 'Allen Brain Observatory',
+        'The Green Brain Project': 'Green Brain Project',
+    }
+
+    def shorten_name(name):
+        if name in name_map:
+            return name_map[name]
+        if len(name) > 25:
+            return name[:22] + '...'
+        return name
+
+    # Select projects strategically to avoid overlap
+    # For brain: pick ones at different budget levels with space
+    brain_projects = all_proj_df[all_proj_df['Category'] == 'Brain'].nlargest(15, 'Budget_M')
+    # For non-brain: pick top few that have clear visual space (earlier dates, higher budgets)
+    other_projects = all_proj_df[all_proj_df['Category'] != 'Brain'].nlargest(6, 'Budget_M')
+
+    # Track labeled y-positions to avoid overlap (in log space)
+    labeled_positions = []
+
+    def can_place_label(y_pos, min_gap_factor=1.8):
+        """Check if label can be placed without overlapping (in log space)"""
+        import math
+        log_y = math.log10(y_pos)
+        for labeled_log_y in labeled_positions:
+            if abs(log_y - labeled_log_y) < math.log10(min_gap_factor):
+                return False
+        return True
+
+    # Label non-brain projects first (they're generally higher budget, top of chart)
+    for idx in other_projects.index:
+        proj = all_proj_df.loc[idx]
+        end_date = proj['EndYear']
+        budget_y = 1e6 * proj['Budget_M']
+        if can_place_label(budget_y, 1.5):
+            name = shorten_name(proj['Name'])
+            ax.text(end_date + pd.Timedelta(days=200), budget_y, name,
+                    fontsize=7, color=COLORS['text'], ha='left', va='center')
+            import math
+            labeled_positions.append(math.log10(budget_y))
+
+    # Label brain projects, being selective about overlap
+    for idx in brain_projects.index:
+        proj = all_proj_df.loc[idx]
+        end_date = proj['EndYear']
+        budget_y = 1e6 * proj['Budget_M']
+        if can_place_label(budget_y, 1.6):
+            name = shorten_name(proj['Name'])
+            ax.text(end_date + pd.Timedelta(days=200), budget_y, name,
+                    fontsize=7, color=COLORS['text'], ha='left', va='center')
+            import math
+            labeled_positions.append(math.log10(budget_y))
+
+    # Also label the earliest projects (like Manhattan Project in 1940s)
+    earliest_projects = all_proj_df.nsmallest(3, 'StartYear')
+    for idx in earliest_projects.index:
+        proj = all_proj_df.loc[idx]
+        end_date = proj['EndYear']
+        budget_y = 1e6 * proj['Budget_M']
+        if can_place_label(budget_y, 1.4):
+            name = shorten_name(proj['Name'])
+            ax.text(end_date + pd.Timedelta(days=200), budget_y, name,
+                    fontsize=7, color=COLORS['text'], ha='left', va='center')
+            import math
+            labeled_positions.append(math.log10(budget_y))
+
+    # Place legend outside the plot on the right
     place_legend(ax, fig, position='outside_right', handles=legend_handles, title="Category")
-    ax.set_title('Megaproject Budgets and Durations')
+    ax.set_title('Brain vs Non-Brain Megaproject Budgets and Durations')
     plt.tight_layout()
-    save_figure(fig, 'brain-initiatives-funding-comparison')
+    save_figure(fig, 'megaproject-budgets-brain-vs-other-timeline')
     plt.close()
 
     # initiatives3 - Budget Distributions by Category Over Time
@@ -1986,28 +2056,23 @@ def generate_all_sim_rec():
 # =============================================================================
 # Figure 16: Funding figure
 # =============================================================================
-@figure("brain-research-initiative-funding", "Megaproject budgets comparison")
+@figure("brain-research-initiative-funding", "Brain vs non-brain megaproject funding comparison")
 def generate_funding():
-    # Load funding data from new data structure
+    # Load brain initiatives from the same source as the timeline figure
     neuro_proj_df = pd.read_csv(
-        DATA_FILES["costs_neuro_megaprojects"], sep='\t'
+        DATA_FILES["initiatives_overview"], sep='\t'
     )
-    other_proj_df = pd.read_csv(
-        DATA_FILES["costs_non_neuro_megaprojects"], sep='\t'
-    )
-
-    # Clean neuroscience projects data
     neuro_proj_df = neuro_proj_df.rename(columns={
-        'project name': 'Name',
-        'Neuroscience funding ($M)': 'Budget_M',
-        'start year': 'StartYear',
-        'end year': 'EndYear',
+        'Project name': 'Name',
+        'Budget (in million $) (cleaned)': 'Budget_M',
     })
     neuro_proj_df['Category'] = 'Neuroscience'
     neuro_proj_df['Budget_M'] = pd.to_numeric(neuro_proj_df['Budget_M'], errors='coerce')
-    neuro_proj_df['StartYear'] = pd.to_numeric(neuro_proj_df['StartYear'], errors='coerce')
 
-    # Clean other projects data
+    # Load non-neuro megaprojects
+    other_proj_df = pd.read_csv(
+        DATA_FILES["costs_non_neuro_megaprojects"], sep='\t'
+    )
     other_proj_df = other_proj_df.rename(columns={
         'project': 'Name',
         'cost ($B, 2024 dollars)': 'Budget_B',
@@ -2022,30 +2087,61 @@ def generate_funding():
     all_funding = pd.concat([neuro_clean, other_clean], ignore_index=True)
 
     if len(all_funding) > 0:
-        fig, ax = plt.subplots(figsize=(10, 6))
+        fig, ax = plt.subplots(figsize=(12, 10))
 
-        # Sort by budget for better visualization
-        all_funding_sorted = all_funding.sort_values('Budget_M', ascending=True).tail(20)
+        # Get top neuroscience projects and top non-neuroscience projects
+        top_neuro = neuro_clean.nlargest(15, 'Budget_M')
+        top_other = other_clean.nlargest(15, 'Budget_M')
 
-        colors = [GOLD if cat == 'Neuroscience' else COLORS['caption']
-                  for cat in all_funding_sorted['Category']]
+        # Combine and sort by budget
+        combined = pd.concat([top_neuro, top_other]).sort_values('Budget_M', ascending=True)
 
-        bars = ax.barh(all_funding_sorted['Name'], all_funding_sorted['Budget_M'], color=colors, alpha=0.8)
+        # Shorten long project names to prevent wide figure
+        name_map = {
+            'Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/MINDS) project': 'Brain/MINDS',
+            'Brain Research Through Advancing Innovative Neurotechnologies (BRAIN) Initiative': 'BRAIN Initiative',
+            'Chinese Human Connectome Project (CHCP)': 'Chinese Human Connectome',
+            'President\'s Emergency Plan for AIDS Relief': 'PEPFAR',
+            'Bioelectronic Medical (SetPoint Medical)': 'SetPoint Medical',
+            'Allen Institute Brain Observatory': 'Allen Brain Observatory',
+        }
+        combined['Name'] = combined['Name'].apply(lambda x: name_map.get(x, x))
+
+        # Simple two-color scheme: GOLD for neuroscience, gray for everything else
+        colors = [GOLD if cat == 'Neuroscience' else COLORS['caption'] for cat in combined['Category']]
+
+        bars = ax.barh(combined['Name'], combined['Budget_M'], color=colors, alpha=0.85)
 
         ax.set_xscale('log')
-        ax.set_xlabel('Budget (Million $)')
-        ax.set_title('Megaproject Budgets Comparison')
 
-        # Add legend
+        # Human-readable x-axis labels (e.g., "$1B", "$10B", "$100B")
+        def format_dollars(x, pos):
+            if x >= 1e6:
+                return f'${x/1e6:.0f}T'
+            elif x >= 1e3:
+                return f'${x/1e3:.0f}B'
+            elif x >= 1:
+                return f'${x:.0f}M'
+            else:
+                return f'${x*1e3:.0f}K'
+
+        from matplotlib.ticker import FuncFormatter
+        ax.xaxis.set_major_formatter(FuncFormatter(format_dollars))
+
+        ax.set_xlabel('Budget (2024 dollars)')
+        ax.set_title('Neuroscience vs Major Non-Brain Megaproject Funding')
+
+        # Simple two-category legend
         from matplotlib.patches import Patch
         legend_elements = [
-            Patch(facecolor=GOLD, label='Neuroscience'),
-            Patch(facecolor=COLORS['caption'], label='Other')
+            Patch(facecolor=GOLD, label='Neuroscience', edgecolor=COLORS['border']),
+            Patch(facecolor=COLORS['caption'], label='Other Megaprojects', edgecolor=COLORS['border'])
         ]
-        ax.legend(handles=legend_elements, loc='lower right', frameon=True)
+
+        ax.legend(handles=legend_elements, loc='lower right', frameon=True, fontsize=10)
 
         plt.tight_layout()
-        save_figure(fig, 'brain-research-initiative-funding')
+        save_figure(fig, 'megaproject-funding-brain-vs-other-comparison')
         plt.close()
     else:
         logger.info("  Skipped - no valid data")
