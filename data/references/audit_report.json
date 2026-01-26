@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-26T02:14:42.662659",
+  "generated_at": "2026-01-26T02:55:29.793068",
   "summary": {
     "total_files": 46,
     "total_rows": 2612,
@@ -10,8 +10,8 @@
     "non_canonical_dois": 0,
     "bracketed_refs": 0,
     "files_with_structured_cols": 12,
-    "ref_id_filled": 8,
-    "ref_id_empty": 158
+    "ref_id_filled": 147,
+    "ref_id_empty": 19
   },
   "by_category": {
     "compute": {
@@ -94,36 +94,6 @@
   },
   "priority_issues": [
     {
-      "file": "connectomics.tsv",
-      "category": "formulas",
-      "issue": "20 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
-      "file": "costs.tsv",
-      "category": "formulas",
-      "issue": "19 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
-      "file": "recording.tsv",
-      "category": "formulas",
-      "issue": "21 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
-      "file": "simulation.tsv",
-      "category": "formulas",
-      "issue": "16 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
-      "file": "storage.tsv",
-      "category": "formulas",
-      "issue": "10 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
       "file": "organism-defaults.tsv",
       "category": "parameters",
       "issue": "9 rows with empty ref_id",
@@ -139,12 +109,6 @@
       "file": "recording-parameters.tsv",
       "category": "parameters",
       "issue": "1 rows with empty ref_id",
-      "priority": "high"
-    },
-    {
-      "file": "shared.tsv",
-      "category": "parameters",
-      "issue": "53 rows with empty ref_id",
       "priority": "high"
     },
     {
@@ -602,12 +566,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 20,
-      "confidence_none": 20,
-      "validated_none": 20,
+      "ref_id_filled": 20,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "20 rows with empty ref_id",
         "No reference columns found"
       ]
     },
@@ -632,12 +595,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 19,
-      "confidence_none": 19,
-      "validated_none": 19,
+      "ref_id_filled": 19,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "19 rows with empty ref_id",
         "No reference columns found"
       ]
     },
@@ -662,12 +624,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 21,
-      "confidence_none": 21,
-      "validated_none": 21,
+      "ref_id_filled": 21,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "21 rows with empty ref_id",
         "No reference columns found"
       ]
     },
@@ -692,12 +653,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 16,
-      "confidence_none": 16,
-      "validated_none": 16,
+      "ref_id_filled": 16,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "16 rows with empty ref_id",
         "No reference columns found"
       ]
     },
@@ -722,12 +682,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 10,
-      "confidence_none": 10,
-      "validated_none": 10,
+      "ref_id_filled": 10,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "10 rows with empty ref_id",
         "No reference columns found"
       ]
     },
@@ -982,12 +941,11 @@
       "bracketed_refs": 0,
       "urls_only": 0,
       "text_only": 0,
-      "ref_id_filled": 0,
-      "ref_id_empty": 53,
-      "confidence_none": 53,
-      "validated_none": 53,
+      "ref_id_filled": 53,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
       "issues": [
-        "53 rows with empty ref_id",
         "No reference columns found"
       ]
     },
