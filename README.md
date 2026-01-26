@@ -124,7 +124,7 @@ The pipeline produces 38+ figures across categories:
 
 **Computational**
 - `compute` - Hardware trends
-- `storage-costs` - Data storage costs
+- `gpu-memory` - Single GPU memory vs brain emulation requirements
 - `emulation-compute-*` - Compute requirements for emulation
 - `emulation-storage-requirements` - Storage needs
 

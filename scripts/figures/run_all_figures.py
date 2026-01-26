@@ -310,13 +310,11 @@ def generate_gpu_memory_brain_emulation():
 
     ax.set_yscale('log')
     ax.set_xlim(1995, 2030)
-    ax.set_ylim(1e7, 1e19)  # 10 MB to 10 EB range
+    ax.set_ylim(1e7, 1e17)  # 10 MB to 100 PB range
 
     # Custom formatter for bytes with SI prefixes
     def bytes_formatter(x, pos):
-        if x >= 1e18:
-            return f'{x/1e18:.0f} EB'
-        elif x >= 1e15:
+        if x >= 1e15:
             return f'{x/1e15:.0f} PB'
         elif x >= 1e12:
             return f'{x/1e12:.0f} TB'
@@ -327,8 +325,9 @@ def generate_gpu_memory_brain_emulation():
         else:
             return f'{x:.0f} B'
 
-    from matplotlib.ticker import FuncFormatter
+    from matplotlib.ticker import FuncFormatter, LogLocator
     ax.yaxis.set_major_formatter(FuncFormatter(bytes_formatter))
+    ax.yaxis.set_major_locator(LogLocator(base=10, numticks=11))  # 10x steps from 10 MB to 100 PB
 
     ax.set_ylabel('Single GPU Memory')
     ax.set_xlabel(None)

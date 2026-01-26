@@ -44,7 +44,7 @@ GENERATED_MAPPING = {
     # Technology figures
     "imaging-speed": "neuroimaging-speed-comparison",
     "compute": "compute-hardware-trends-brain-emulation",
-    "storage-costs": "storage-cost-trends-brain-data",
+    "gpu-memory": "gpu-memory-brain-emulation",
     "compute-storage-parallel": "compute-storage-trends-parallel",
     "hardware-scaling": "gpu-memory-interconnect-scaling",
     "bandwidth-scaling": "brain-imaging-bandwidth-requirements",
