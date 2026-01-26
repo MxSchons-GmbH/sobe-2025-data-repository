@@ -144,7 +144,13 @@ class BibliographyBuilder:
         return found
 
     def extract_doi_from_url(self, url: str) -> Optional[str]:
-        """Extract DOI from a URL if present."""
+        """Extract DOI from a URL if present.
+
+        Handles:
+        - Direct doi.org URLs
+        - Publisher URLs with embedded DOIs (Nature, Science, PNAS, bioRxiv, etc.)
+        - Bare DOIs
+        """
         # DOIs can contain parentheses, brackets, and various characters
         # Pattern needs to match balanced parentheses in DOIs like 10.1016/0014-4886(69)90086-7
         # DOI spec: prefix/suffix where suffix can contain most printable chars
@@ -179,7 +185,158 @@ class BibliographyBuilder:
                         if doi.endswith(')'):
                             doi = doi[:-1]
                 return doi
+
+        # Try publisher-specific URL patterns
+        doi = self._extract_doi_from_publisher_url(url)
+        if doi:
+            return doi
+
         return None
+
+    def _extract_doi_from_publisher_url(self, url: str) -> Optional[str]:
+        """Extract DOI from publisher-specific URL patterns.
+
+        Many publishers embed DOIs in their URLs without using doi.org format.
+        This method extracts DOIs from these URLs.
+        """
+        url_lower = url.lower()
+
+        # Nature: nature.com/articles/s41586-024-07763-9 -> 10.1038/s41586-024-07763-9
+        if 'nature.com/articles/' in url_lower:
+            match = re.search(r'nature\.com/articles/([a-z0-9\-]+)', url, re.IGNORECASE)
+            if match:
+                article_id = match.group(1)
+                # Nature article IDs map to DOIs: s41586-024-07763-9 -> 10.1038/s41586-024-07763-9
+                return f"10.1038/{article_id}"
+
+        # Science/AAAS: science.org/doi/10.1126/science.xxx
+        if 'science.org/doi/' in url_lower:
+            match = re.search(r'science\.org/doi/(?:full/|abs/)?(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # PNAS: pnas.org/doi/full/10.1073/pnas.xxx or pnas.org/content/xxx/xxx/xxx
+        if 'pnas.org/doi/' in url_lower:
+            match = re.search(r'pnas\.org/doi/(?:full/|abs/)?(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # bioRxiv/medRxiv: biorxiv.org/content/10.1101/xxx
+        if 'biorxiv.org/content/' in url_lower or 'medrxiv.org/content/' in url_lower:
+            match = re.search(r'(?:bio|med)rxiv\.org/content/(10\.\d+/[^\s?#/]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Frontiers: frontiersin.org/.../10.3389/xxx
+        if 'frontiersin.org' in url_lower and '10.3389' in url:
+            match = re.search(r'(10\.3389/[a-z]+\.\d+\.\d+)', url, re.IGNORECASE)
+            if match:
+                return match.group(1)
+
+        # PLoS: journals.plos.org/plosone/article?id=10.1371/journal.pone.xxx
+        if 'plos.org' in url_lower:
+            match = re.search(r'(10\.1371/journal\.[a-z]+\.\d+)', url, re.IGNORECASE)
+            if match:
+                return match.group(1)
+
+        # Cell Press (Cell, Neuron, etc.): cell.com/*/fulltext/S0092-8674(00)81828-0
+        # These use PII, not DOI - need to use the DOI from URL if present
+        if 'cell.com' in url_lower:
+            match = re.search(r'(10\.1016/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Wiley: onlinelibrary.wiley.com/doi/xxx
+        if 'wiley.com/doi/' in url_lower:
+            match = re.search(r'wiley\.com/doi/(?:full/|abs/)?(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Springer/BMC: link.springer.com/article/10.xxx or bmcneurosci.biomedcentral.com/articles/10.xxx
+        if 'springer.com/article/' in url_lower or 'biomedcentral.com/articles/' in url_lower:
+            match = re.search(r'/(?:article|articles)/(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Royal Society: royalsocietypublishing.org/doi/10.1098/xxx
+        if 'royalsocietypublishing.org/doi/' in url_lower:
+            match = re.search(r'royalsocietypublishing\.org/doi/(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Oxford Academic: academic.oup.com/xxx/article/doi/10.xxx
+        if 'oup.com' in url_lower:
+            match = re.search(r'(10\.1093/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # APS (Physical Review): journals.aps.org/xxx/abstract/10.xxx
+        if 'aps.org' in url_lower:
+            match = re.search(r'(10\.1103/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # IEEE: ieeexplore.ieee.org - DOI often in URL or need to extract from document ID
+        if 'ieeexplore.ieee.org' in url_lower:
+            match = re.search(r'(10\.1109/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # ScienceDirect: sciencedirect.com/science/article/pii/xxx - PII based, try DOI pattern
+        if 'sciencedirect.com' in url_lower:
+            match = re.search(r'(10\.1016/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Taylor & Francis: tandfonline.com/doi/xxx
+        if 'tandfonline.com/doi/' in url_lower:
+            match = re.search(r'tandfonline\.com/doi/(?:full/|abs/)?(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # MDPI: mdpi.com/xxx/xxx/xxx (article ID) - DOIs are 10.3390/xxx
+        if 'mdpi.com' in url_lower:
+            match = re.search(r'(10\.3390/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # eLife: elifesciences.org/articles/xxxxx
+        if 'elifesciences.org/articles/' in url_lower:
+            match = re.search(r'elifesciences\.org/articles/(\d+)', url, re.IGNORECASE)
+            if match:
+                article_id = match.group(1)
+                return f"10.7554/eLife.{article_id}"
+
+        # Annual Reviews: annualreviews.org/doi/xxx
+        if 'annualreviews.org/doi/' in url_lower:
+            match = re.search(r'annualreviews\.org/doi/(10\.\d+/[^\s?#]+)', url, re.IGNORECASE)
+            if match:
+                return self._clean_doi(match.group(1))
+
+        # Generic fallback: look for any DOI pattern in the URL
+        generic_match = re.search(r'(10\.\d{4,}/[^\s?#&]+)', url)
+        if generic_match:
+            return self._clean_doi(generic_match.group(1))
+
+        return None
+
+    def _clean_doi(self, doi: str) -> str:
+        """Clean up extracted DOI by removing trailing punctuation and artifacts."""
+        # Remove trailing punctuation
+        doi = re.sub(r'[.,;:\'\"]+$', '', doi)
+        # Remove trailing HTML artifacts
+        doi = re.sub(r'\.full$', '', doi)
+        doi = re.sub(r'\.pdf$', '', doi)
+        doi = re.sub(r'\.abstract$', '', doi)
+        # Handle balanced parentheses
+        suffix = doi.split('/', 1)[1] if '/' in doi else doi
+        open_parens = suffix.count('(')
+        close_parens = suffix.count(')')
+        if close_parens > open_parens:
+            for _ in range(close_parens - open_parens):
+                if doi.endswith(')'):
+                    doi = doi[:-1]
+        return doi
 
     def extract_urls_from_text(self, text: str) -> list[str]:
         """Extract all URLs from a text string."""

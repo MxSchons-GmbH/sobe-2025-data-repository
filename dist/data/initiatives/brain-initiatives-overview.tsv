@@ -1,67 +1,67 @@
 Project name	Category	Status	Start Year	Start Year (cleaned)	End Year	End Year (cleaned)	Budget (in million $)	Budget (in million $) (cleaned)	Ignore?	Funders	Model Organism Studied	Model Organism Studied (Simplified)	References	blurb	Related Keywords/Papers	ref_id	supporting_refs	ref_note	confidence	validated_by
-Allen Institute Brain Observatory	Academic	Active	2016	2016.0			600	600.0		Allen Institute 	Mouse/Human	Rodents,Human	https://alleninstitute.org/division/brain-science/ https://www.nbcnews.com/science/cosmic-log/billionaire-paul-allen-kicks-brain-observatory-effort-300-million-flna513473 	"The Allen Institute's brain connectome project maps				none	none
-neural connections in the mouse brain, providing a				none	none
-comprehensive resource for understanding brain				none	none
-function and disease mechanisms."	Allen Institute Brain Atlas				none	none
-Human Connectome Project (WU-Minn HCP)	Academic	Active	2010	2010.0	2017(major data release)		40	40.0	True	National Institute of Health(NIH)	Human	Human	https://www.humanconnectome.org/. https://www.sciencedirect.com/science/article/abs/pii/S1053811913005351?via%3Dihub	"Maps human brain connectivity using advanced				none	none
-imaging for understanding neural pathways in				none	none
-health/disease."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3555558/				none	none
-Keywords - brain mapping, connectome, human connectome"				none	none
-Developing Human Connectome	Commercial	Active	2013	2013.0			20	20.0		Wellcome Trust, EU	Human (neonatal)	Human	https://www.developingconnectome.org/project/#:~:text=Currently%2C%20the%20connectome%20of%20the%20mature%20adult%20brain%20is%20in%20progress.	"Focuses on mapping brain connectivity in infants to				none	none
-study neurodevelopment from fetal to neonatal stages."	"https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain?utm_source=chatgpt.com				none	none
-Keywords - developing HCP, dHCP, connectome"				none	none
-Adolescent Brain Development	Academic	Active	2016	2016.0			100	100.0	True	National Institute of Health(NIH)	Humans	Human	https://pmc.ncbi.nlm.nih.gov/articles/PMC6474358/	"Focuses on mapping brain connectivity in infants to				none	none
-study neurodevelopment from fetal to neonatal stages."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none
-Keywords - neuroimaging, adolescent brain development, brain imaging, brain mapping"				none	none
-Developing Children's Connectome Project	Academic	Active	2024	2024.0			not mentioned			Synergy Grant by the European Research Council (ERC)	Humans (children aged 5-10 yrs.) 	Human	https://www.developingconnectome.org/data-release/	"Maps neural development in children to examine				none	none
-early-life brain growth and function."	"				none	none
-https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none
-Keywords - brain mapping children, growth function, neurodevelopment"				none	none
-Janelia Research Campus	Academic	Active	2006	2006.0						"HHMI (Howard Hughes Medical Institute), Wellcome Trust,				none	none
-University of Cambridge, Google Research, and the				none	none
-MRC Laboratory of Molecular Biology."	Fruit fly	Insects	https://www.biorxiv.org/content/10.1101/2023.06.05.543407v2.full https://www.janelia.org/project-team/flyem/manc-connectome 	"Conducts advanced brain mapping, including				none	none
-high-resolution connectomics in flies and mice."	"https://www.science.org/doi/full/10.1126/science.abf4588?casa_token=1UzYh5rkD-cAAAAA%3AjRDF9WL8DJdNHaOsumk4				none	none
-_jGkevsaZMuaxjf8BoxaCeb3NSKX_uZ2LqfsCG-1go8ZMZGs8tmWjbIrRg				none	none
-Keywords - neuropixels, connectomics, fruitfly"				none	none
-Mouselight project (Janelia Research Campus)	Academic	Active	2017	2017.0			not mentioned			Intelligence Advanced Research Projects Activity (IARPA)	Mouse/Human	Rodents,Human	https://www.simonsfoundation.org/2021/03/22/the-connected-connectome-part-2-beyond-the-fly/.   https://www.cell.com/cell/fulltext/S0092-8674(19)30842-6	"Reconstructs neuron structures across the mouse				none	none
-brain for connectomic insights."	"https://www.hhmi.org/news/mouselight-project-maps-1000-neurons-and-counting-mouse-brain				none	none
-Keywords - Mouselight project, brain mapping, brain connectome "				none	none
-FlyWire Brain	Commercial,Academic	Active	2019	2019.0	2024	2024.0	"not mentioned				none	none
-"		True	"NIH, Wellcome Trust, EU, NSF, PNI,Seung lab,				none	none
- Allen Institute for Brain Science, IARPA,  Jefferis lab by MRC, Google Amazon"	Adult Fly	Insects	https://www.ukri.org/news/first-map-of-every-neuron-in-an-adult-fly-brain/	"Combines AI and crowdsourcing to create detailed				none	none
-synaptic maps of the fly brain. FlyWire focuses on				none	none
-segmenting and annotating synaptic connections to				none	none
-reveal neural circuits underlying specific behaviors.				none	none
-Researchers leverage high-resolution electron				none	none
-microscopy and advanced algorithms, allowing l				none	none
-arge-scale analysis of connectomic data."	"https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain				none	none
-Keywords- fruitfly, wiring, brain wiring, brain mapping, connectome"				none	none
-Harvard-Google 3D Human Brain Map Collaboration	Commercial	Active	2024	2024.0			not mentioned		True	NIH	Humans/Mouse	Human,Rodents	https://news.harvard.edu/gazette/story/2024/05/the-brain-as-weve-never-seen-it/	"Creates high-resolution 3D maps of the human brain				none	none
-tissues using AI and advanced imaging to identify				none	none
-cellular and synaptic organization in brain regions.				none	none
-for deeper understanding of cognition and disorders."	"https://www.nih.gov/news-events/nih-research-matters/study-reveals-unseen-details-human-brain-structure				none	none
-Keywords - Google-Harvard connectome project, neuro-cognition and disorders, 3D imaging"				none	none
-Neuralink	Commercial	Active	2016	2016.0			total 5 rounds= 680 	680.0		"Elon Musk, Founders Fund, Vy Capital, Google Ventures,				none	none
-DFJ Growth, Valor Equity Partners, Craft Ventures, Gigafund,				none	none
-Sam Altman, Fred Ehrsam, Kenneth Alan Howery, Blake Byers"	Human, pigs	Human,Pig	https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/ https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws/funding-and-investors#funding 	"Develops brain-computer interfaces (BCIs) for direct				none	none
-communication between the brain and external				none	none
-devices, aimed at treating neurological conditions and				none	none
-enhancing human cognitive abilities."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/				none	none
-Keywords - Neuralink, BCIs, brain-machine interface, sensory function, motor function, neurology"				none	none
-Synchron	Commercial	Active	2012	2012.0			total 145 	145.0		"DARPA, ARCH Venture Partners, Khosla Ventures,				none	none
-NeuroTechnology Investors, METIS, Forepont Capital Partners,				none	none
-ID8 Investments, Shanda Group, University of Melbourne,				none	none
-National Institutes of Health (NIH), Bill Gates, Jeff Bezos"	Human	Human	"https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/				none	none
-https://www.businesswire.com/news/home/20221213006045/en/Synchron-Raises-75M-Series-C-Led-by-ARCH-Venture-Partners-to-Advance-Endovascular-Brain-Computer-Interface				none	none
-"	"Design minimally invasive neural implants to restore				none	none
-communication in paralyzed patients by decoding				none	none
-neural signals for external device control."	"https://www.nature.com/articles/s41551-018-0321-z				none	none
-sheep motor cortex, focal stimulation, electrode array"				none	none
-SyNAPSE	Military	Concluded	2008	2008.0	2016	2016.0	76.5  (approx)	76.5		DARPA	Human	Human	https://en.wikipedia.org/wiki/SyNAPSE#Participants	"Develops neuromorphic chips that emulate brain-like				none	none
-architectures for energy-efficient artificial intelligence				none	none
+Allen Institute Brain Observatory	Academic	Active	2016	2016.0			600	600.0		Allen Institute 	Mouse/Human	Rodents,Human	https://alleninstitute.org/division/brain-science/ https://www.nbcnews.com/science/cosmic-log/billionaire-paul-allen-kicks-brain-observatory-effort-300-million-flna513473 	"The Allen Institute's brain connectome project maps		alleninstitute_brain_science_2026	nbcnews_billionaire_paul_allen_kicks_b_2026	none	none
+neural connections in the mouse brain, providing a				none	none											humanconnectome_page_2026	sciencedirect_s1053811913005351_2026
+comprehensive resource for understanding brain				none	none											developingconnectome_project_2026
+function and disease mechanisms."	Allen Institute Brain Atlas				none	none										pmc_pmc6474358_2026
+Human Connectome Project (WU-Minn HCP)	Academic	Active	2010	2010.0	2017(major data release)		40	40.0	True	National Institute of Health(NIH)	Human	Human	https://www.humanconnectome.org/. https://www.sciencedirect.com/science/article/abs/pii/S1053811913005351?via%3Dihub	"Maps human brain connectivity using advanced		developingconnectome_data_release_2026		none	none
+imaging for understanding neural pathways in				none	none											biorxiv_2023_06_05_543407v2_full_2026	janelia_manc_connectome_2026
+health/disease."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC3555558/				none	none										simonsfoundation_the_connected_connectome_part_2026	cell_s0092_8674_19_30842_6_2026
+Keywords - brain mapping, connectome, human connectome"				none	none											ukri_first_map_of_every_neuron_in_a_2026
+Developing Human Connectome	Commercial	Active	2013	2013.0			20	20.0		Wellcome Trust, EU	Human (neonatal)	Human	https://www.developingconnectome.org/project/#:~:text=Currently%2C%20the%20connectome%20of%20the%20mature%20adult%20brain%20is%20in%20progress.	"Focuses on mapping brain connectivity in infants to		news_the_brain_as_weve_never_seen_i_2026		none	none
+study neurodevelopment from fetal to neonatal stages."	"https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain?utm_source=chatgpt.com				none	none										pmc_pmc6914248_2026	tracxn_funding_and_investors_2026a
+Keywords - developing HCP, dHCP, connectome"				none	none											globalventuring_darpa_helps_implant_10m_in_syn_2026	businesswire_synchron_raises_75m_series_c_l_2026
+Adolescent Brain Development	Academic	Active	2016	2016.0			100	100.0	True	National Institute of Health(NIH)	Humans	Human	https://pmc.ncbi.nlm.nih.gov/articles/PMC6474358/	"Focuses on mapping brain connectivity in infants to		en_synapse_2026		none	none
+study neurodevelopment from fetal to neonatal stages."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none										vogt2023
+Keywords - neuroimaging, adolescent brain development, brain imaging, brain mapping"				none	none											pmc_pmc4387516_2026
+Developing Children's Connectome Project	Academic	Active	2024	2024.0			not mentioned			Synergy Grant by the European Research Council (ERC)	Humans (children aged 5-10 yrs.) 	Human	https://www.developingconnectome.org/data-release/	"Maps neural development in children to examine		epfl_frequently_asked_questions_2026a		none	none
+early-life brain growth and function."	"				none	none										en_microns_2026
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2892678/				none	none											pmc_pmc1550972_2026	chen2006
+Keywords - brain mapping children, growth function, neurodevelopment"				none	none											cell_s0896_6273_16_30805_4_2026
+Janelia Research Campus	Academic	Active	2006	2006.0						"HHMI (Howard Hughes Medical Institute), Wellcome Trust,				none	none	humanbrainproject_human_brain_project_ec_grants_2026
+University of Cambridge, Google Research, and the				none	none											en_allen_brain_atlas_2026	alleninstitute_paul_g_allen_commits_100_milli_2026
+MRC Laboratory of Molecular Biology."	Fruit fly	Insects	https://www.biorxiv.org/content/10.1101/2023.06.05.543407v2.full https://www.janelia.org/project-team/flyem/manc-connectome 	"Conducts advanced brain mapping, including				none	none							pubmed_26175908_2026
+high-resolution connectomics in flies and mice."	"https://www.science.org/doi/full/10.1126/science.abf4588?casa_token=1UzYh5rkD-cAAAAA%3AjRDF9WL8DJdNHaOsumk4				none	none										setpointmedical_setpoint_the_evolution_of_bioe_2026
+_jGkevsaZMuaxjf8BoxaCeb3NSKX_uZ2LqfsCG-1go8ZMZGs8tmWjbIrRg				none	none											pmc_pmc4217485_2026	web_20220205023344id_2026;repositum_lung_20david_20_202018_20_20_2026;caltech_caltech_led_wormbase_project_a_2026;sarma2018
+Keywords - neuropixels, connectomics, fruitfly"				none	none											compneuro_semantic_pointer_architecture_2026
+Mouselight project (Janelia Research Campus)	Academic	Active	2017	2017.0			not mentioned			Intelligence Advanced Research Projects Activity (IARPA)	Mouse/Human	Rodents,Human	https://www.simonsfoundation.org/2021/03/22/the-connected-connectome-part-2-beyond-the-fly/.   https://www.cell.com/cell/fulltext/S0092-8674(19)30842-6	"Reconstructs neuron structures across the mouse		braininitiative_understanding_brain_initiative_2026	braininitiative_brain_20_report_cells_circuits_2026	none	none
+brain for connectomic insights."	"https://www.hhmi.org/news/mouselight-project-maps-1000-neurons-and-counting-mouse-brain				none	none										braininitiative_understanding_brain_initiative_2026	braininitiative_brain_20_report_cells_circuits_2026
+Keywords - Mouselight project, brain mapping, brain connectome "				none	none											medrxiv_2020_10_07_20207704v1_2026
+FlyWire Brain	Commercial,Academic	Active	2019	2019.0	2024	2024.0	"not mentioned				none	none				research_google_research_embarks_on_eff_2026
+"		True	"NIH, Wellcome Trust, EU, NSF, PNI,Seung lab,				none	none								sciencedirect_s0896627316307887_2026
+ Allen Institute for Brain Science, IARPA,  Jefferis lab by MRC, Google Amazon"	Adult Fly	Insects	https://www.ukri.org/news/first-map-of-every-neuron-in-an-adult-fly-brain/	"Combines AI and crowdsourcing to create detailed				none	none							braininitiative_brain_initiative_cell_atlas_ne_2026	github_cerebellar_atlases_2026;nih_scientists_build_largest_maps_2026
+synaptic maps of the fly brain. FlyWire focuses on				none	none											canadianbrain_page_2026	braincanada_government_of_canada_supports_2026;braincanada_program_partners_2026
+segmenting and annotating synaptic connections to				none	none											sing_to_map_the_human_brain_researc_2026
+reveal neural circuits underlying specific behaviors.				none	none											ki_circuits_controlling_action_an_2026	ki_circuits_controlling_action_an_2026
+Researchers leverage high-resolution electron				none	none											sheffield_research_2026
+microscopy and advanced algorithms, allowing l				none	none											nsf_showaward_2026a
+arge-scale analysis of connectomic data."	"https://www.nih.gov/news-events/nih-research-matters/complete-wiring-map-adult-fruit-fly-brain				none	none										news_scientists_image_vivid_brainbo_2026
+Keywords- fruitfly, wiring, brain wiring, brain mapping, connectome"				none	none											oboro_the_madhouse_einsteins_brain_p_2026
+Harvard-Google 3D Human Brain Map Collaboration	Commercial	Active	2024	2024.0			not mentioned		True	NIH	Humans/Mouse	Human,Rodents	https://news.harvard.edu/gazette/story/2024/05/the-brain-as-weve-never-seen-it/	"Creates high-resolution 3D maps of the human brain		bionet_ffbo_2026		none	none
+tissues using AI and advanced imaging to identify				none	none											sciencedirect_s2589004222021198_2026
+cellular and synaptic organization in brain regions.				none	none											ccbr_humanbrainproject_2026
+for deeper understanding of cognition and disorders."	"https://www.nih.gov/news-events/nih-research-matters/study-reveals-unseen-details-human-brain-structure				none	none										reporter_8969574_2026
+Keywords - Google-Harvard connectome project, neuro-cognition and disorders, 3D imaging"				none	none											reporter_8969581_2026
+Neuralink	Commercial	Active	2016	2016.0			total 5 rounds= 680 	680.0		"Elon Musk, Founders Fund, Vy Capital, Google Ventures,				none	none	reporter_8968383_2026
+DFJ Growth, Valor Equity Partners, Craft Ventures, Gigafund,				none	none											reporter_9108511_2026
+Sam Altman, Fred Ehrsam, Kenneth Alan Howery, Blake Byers"	Human, pigs	Human,Pig	https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/ https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws/funding-and-investors#funding 	"Develops brain-computer interfaces (BCIs) for direct				none	none							reporter_8969005_2026
+communication between the brain and external				none	none											reporter_7994562_2026
+devices, aimed at treating neurological conditions and				none	none											reporter_9109803_2026
+enhancing human cognitive abilities."	"https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/				none	none										reporter_9136946_2026
+Keywords - Neuralink, BCIs, brain-machine interface, sensory function, motor function, neurology"				none	none											reporter_8969367_2026
+Synchron	Commercial	Active	2012	2012.0			total 145 	145.0		"DARPA, ARCH Venture Partners, Khosla Ventures,				none	none	reporter_9110441_2026
+NeuroTechnology Investors, METIS, Forepont Capital Partners,				none	none											simonsfoundation_the_connected_connectome_2026
+ID8 Investments, Shanda Group, University of Melbourne,				none	none											internationalbrainlab_page_2026
+National Institutes of Health (NIH), Bill Gates, Jeff Bezos"	Human	Human	"https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/				none	none								wellcome_scaling_connectomics_2026
+https://www.businesswire.com/news/home/20221213006045/en/Synchron-Raises-75M-Series-C-Led-by-ARCH-Venture-Partners-to-Advance-Endovascular-Brain-Computer-Interface				none	none											wellcome_the_connectome_olfactory_memor_2026
+"	"Design minimally invasive neural implants to restore				none	none										wellcome_molecular_annotation_drosophil_2026
+communication in paralyzed patients by decoding				none	none											wellcome_mapping_energetic_pathways_bra_2026
+neural signals for external device control."	"https://www.nature.com/articles/s41551-018-0321-z				none	none										wellcome_mapping_brain_new_technique_po_2026
+sheep motor cortex, focal stimulation, electrode array"				none	none											sainsburywellcome_swc_awarded_major_building_pro_2026
+SyNAPSE	Military	Concluded	2008	2008.0	2016	2016.0	76.5  (approx)	76.5		DARPA	Human	Human	https://en.wikipedia.org/wiki/SyNAPSE#Participants	"Develops neuromorphic chips that emulate brain-like		cordis_855109_2026		none	none
+architectures for energy-efficient artificial intelligence				none	none											ndcn_fmrib_2026
 and computational systems."	"https://militaryembedded.com/ai/deep-learning/darpa-synapse-program-develops-low-power-brain-like-chip				none	none
 Keywords - DARPA, brain chip, computational system"				none	none
-The Chinese Human Brain Connectome Project	Academic	Active	2017	2017.0	"major data				none	none
+Chinese Human Connectome Project (CHCP)	Academic	Active	2017	2017.0	"major data				none	none
 released				none	none
 (2024)"		1,600	1600.0		"Beijing Municipal Science & Technology Commission,				none	none
 Chinese Institute for Brain Research (Beijing),				none	none
