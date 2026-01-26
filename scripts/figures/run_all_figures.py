@@ -495,7 +495,8 @@ def generate_neuro_recordings():
 
     # Adjust layout to leave room for right-side labels
     plt.subplots_adjust(right=0.82)
-    save_figure(fig, 'neural-recording-timeline-overview', attribution_position='axes')
+    save_figure(fig, 'neural-recording-timeline-overview', attribution_position='axes',
+                credit='Data: Urai et al. (github.com/anne-urai/largescale_recordings)')
     plt.close()
 
 # =============================================================================
@@ -534,7 +535,8 @@ def generate_scanned_brain_tissue():
 
     place_legend(axes[2], fig, position='outside_right')
     plt.tight_layout()
-    save_figure(fig, 'connectomics-tissue-scanning-progress')
+    save_figure(fig, 'connectomics-tissue-scanning-progress',
+                credit='Data: Bosch et al. (github.com/cboschp/wtlandscape_mbc)')
     plt.close()
 
 # =============================================================================

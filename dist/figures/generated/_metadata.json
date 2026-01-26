@@ -113,7 +113,11 @@
       "type": [
         "recording",
         "overview"
-      ]
+      ],
+      "dataSource": {
+        "name": "Urai et al.",
+        "url": "https://github.com/anne-urai/largescale_recordings"
+      }
     },
     {
       "id": "scanned-brain-tissue",
@@ -127,7 +131,11 @@
       "type": [
         "connectomics",
         "imaging"
-      ]
+      ],
+      "dataSource": {
+        "name": "Bosch et al.",
+        "url": "https://github.com/cboschp/wtlandscape_mbc"
+      }
     },
     {
       "id": "recording-modalities",
