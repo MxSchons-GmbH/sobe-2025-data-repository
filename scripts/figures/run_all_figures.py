@@ -194,7 +194,8 @@ def generate_imaging_speed():
     axes[2].set_ylabel(None)
 
     plt.tight_layout()
-    save_figure(fig, 'neuroimaging-speed-comparison')
+    save_figure(fig, 'neuroimaging-speed-comparison',
+                credit='Data: Bosch et al. (github.com/cboschp/wtlandscape_mbc)')
     plt.close()
 
 # =============================================================================
@@ -313,7 +314,8 @@ def generate_compute():
     legend.get_title().set_fontsize(9)
 
     plt.subplots_adjust(right=0.82)
-    save_figure(fig, 'compute-hardware-trends-brain-emulation', attribution_position='axes')
+    save_figure(fig, 'compute-hardware-trends-brain-emulation', attribution_position='axes',
+                credit='Data: Epoch AI (epochai.org)')
     plt.close()
 
 # =============================================================================
@@ -417,7 +419,8 @@ def generate_gpu_memory_brain_emulation():
     ax.legend(frameon=True, loc='upper left')
 
     plt.subplots_adjust(right=0.82)
-    save_figure(fig, 'gpu-memory-brain-emulation', attribution_position='axes')
+    save_figure(fig, 'gpu-memory-brain-emulation', attribution_position='axes',
+                credit='Data: dbgpu (github.com/painebenjamin/dbgpu)')
     plt.close()
 
 # =============================================================================

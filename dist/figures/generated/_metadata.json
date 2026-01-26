@@ -42,7 +42,11 @@
       "type": [
         "technology",
         "imaging"
-      ]
+      ],
+      "dataSource": {
+        "name": "Bosch et al.",
+        "url": "https://github.com/cboschp/wtlandscape_mbc"
+      }
     },
     {
       "id": "compute",
@@ -57,7 +61,11 @@
         "technology",
         "compute",
         "emulation"
-      ]
+      ],
+      "dataSource": {
+        "name": "Epoch AI",
+        "url": "https://epochai.org/data"
+      }
     },
     {
       "id": "gpu-memory",
@@ -72,7 +80,11 @@
         "technology",
         "compute",
         "emulation"
-      ]
+      ],
+      "dataSource": {
+        "name": "dbgpu",
+        "url": "https://github.com/painebenjamin/dbgpu"
+      }
     },
     {
       "id": "compute-storage-parallel",

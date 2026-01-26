@@ -204,7 +204,7 @@ EXPORT = {
 ATTRIBUTION = "Zanichelli & Schons et al., State of Brain Emulation Report 2025"
 
 
-def add_attribution(fig=None, position='figure'):
+def add_attribution(fig=None, position='figure', credit=None):
     """
     Add attribution text to bottom right of figure.
 
@@ -215,9 +215,17 @@ def add_attribution(fig=None, position='figure'):
     position : str
         'figure' - position relative to full figure (default)
         'axes' - position relative to the last axes (better for multi-panel figures)
+    credit : str, optional
+        Additional credit line to display below main attribution.
+        Pass the full string, e.g., "Data: Epoch AI" or "Adapted from: Smith et al."
     """
     if fig is None:
         fig = plt.gcf()
+
+    # Build attribution text with optional credit line
+    text = ATTRIBUTION
+    if credit:
+        text += f"\n{credit}"
 
     if position == 'axes' and fig.axes:
         # Position relative to the rightmost axis to avoid extending figure bounds
@@ -226,7 +234,7 @@ def add_attribution(fig=None, position='figure'):
         ax_pos = rightmost_ax.get_position()
         # Place below the rightmost axes with padding
         fig.text(
-            ax_pos.x1, -0.02, ATTRIBUTION,
+            ax_pos.x1, -0.02, text,
             ha='right', va='top',
             fontsize=7, color=COLORS['caption'],
             style='italic',
@@ -235,7 +243,7 @@ def add_attribution(fig=None, position='figure'):
     else:
         # Default: position relative to figure, below the content
         fig.text(
-            0.99, -0.02, ATTRIBUTION,
+            0.99, -0.02, text,
             ha='right', va='top',
             fontsize=7, color=COLORS['caption'],
             style='italic',
@@ -542,7 +550,7 @@ def annotate_point(ax, text, xy, xytext, **kwargs):
     return ax.annotate(text, xy=xy, xytext=xytext, **default_kwargs)
 
 
-def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=True, attribution_position='figure'):
+def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=True, attribution_position='figure', credit=None):
     """
     Save figure in multiple formats with attribution.
 
@@ -564,6 +572,9 @@ def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=Tru
         'figure' - position attribution relative to full figure (default)
         'axes' - position attribution relative to the rightmost axes
                  (better for figures where bbox_inches='tight' would extend bounds)
+    credit : str, optional
+        Additional credit line to display below main attribution.
+        Pass the full string, e.g., "Data: Epoch AI" or "Adapted from: Smith et al."
     """
     from pathlib import Path
     from PIL import Image
@@ -572,7 +583,7 @@ def save_figure(fig, name, output_dir=None, print_quality=False, web_formats=Tru
         output_dir = OUTPUT_FIGURES
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    add_attribution(fig, position=attribution_position)
+    add_attribution(fig, position=attribution_position, credit=credit)
 
     save_kwargs = {
         'bbox_inches': EXPORT['bbox_inches'],
