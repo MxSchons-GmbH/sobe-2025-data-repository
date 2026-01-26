@@ -171,7 +171,7 @@ export interface ImagingModalityParams {
 /**
  * Available imaging modality IDs
  */
-export type ModalityId = 'em' | 'exm' | 'exm_molecular' | 'wellcome';
+export type ModalityId = 'em' | 'exm' | 'exm_molecular' | 'wellcome' | 'ref_id' | 'supporting_refs' | 'ref_note' | 'confidence' | 'validated_by';
 
 /**
  * All imaging modalities indexed by ID

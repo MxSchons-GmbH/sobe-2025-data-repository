@@ -69,31 +69,31 @@ Project-level parameters that apply across all calculations.
 
 Parameters specific to each imaging technology.
 
-| Parameter | Unit | EM | EXM | EXM_MOLECULAR | WELLCOME |
-|-----------|------|---|---|---|---|
-| Microscope capital cost | $/scope | 500.0K | 500.0K | 500.0K | 5.0M |
-| Depreciation horizon | years | 10 | 5 | 5 | 10 |
-| Sustained imaging rate | Mvox/s | 225 | 1.1K | 1.1K | 250 |
-| Parallel channels | count | 1 | 3 | 8 | 1 |
-| Total channels | count | 1 | 1 | 800 | 1 |
-| Annual service | $/scope/year | 50.0K | 15.0K | 15.0K | 250.0K |
-| Technician salary | $/year | 120.0K | 120.0K | 120.0K | 120.0K |
-| Technician ratio | count | 2 | 5 | 5 | 0.50 |
-| Microscope uptime | fraction | 1 | 1 | 1 | 1 |
-| Reacquisition rate | fraction | 0 | 0 | 0 | 0 |
-| Sample yield | fraction | 1 | 1 | 1 | 1 |
-| Expansion factor | × | 1 | 16 | 16 | 1 |
-| Consumables per mm³ | $/mm³ | 100.0K | 2 | 2 | 200.0K |
-| Antibody cost per mm³ | $/mm³ | 2 | 2 | 2 | 2 |
-| Labor cost per mm³ | $/mm³ | 2.9K | 2.9K | 2.9K | 2.9K |
-| Initial preparation days | days | 15 | 15 | 15 | 15 |
-| Voxel size X | nm | 15 | 250 | 250 | 10 |
-| Voxel size Y | nm | 15 | 250 | 250 | 10 |
-| Voxel size Z | nm | 15 | 400 | 400 | 10 |
-| Sample depth | count | 1 | 10.0K | 10.0K | 1 |
-| Tile width | pixels | 6.0K | 2.0K | 5.0K | 6.0K |
-| Tile height | pixels | 6.0K | 2.0K | 5.0K | 6.0K |
-| Tile overlap | fraction | 0.10 | 0.10 | 0.10 | 0.10 |
+| Parameter | Unit | EM | EXM | EXM_MOLECULAR | WELLCOME | REF_ID | SUPPORTING_REFS | REF_NOTE | CONFIDENCE | VALIDATED_BY |
+|-----------|------|---|---|---|---|---|---|---|---|---|
+| Microscope capital cost | $/scope | 500.0K | 500.0K | 500.0K | 5.0M | 0 | 0 | 0 | none | none |
+| Depreciation horizon | years | 10 | 5 | 5 | 10 | 0 | 0 | 0 | none | none |
+| Sustained imaging rate | Mvox/s | 225 | 1.1K | 1.1K | 250 | 0 | 0 | 0 | none | none |
+| Parallel channels | count | 1 | 3 | 8 | 1 | 0 | 0 | 0 | none | none |
+| Total channels | count | 1 | 1 | 800 | 1 | 0 | 0 | 0 | none | none |
+| Annual service | $/scope/year | 50.0K | 15.0K | 15.0K | 250.0K | 0 | 0 | 0 | none | none |
+| Technician salary | $/year | 120.0K | 120.0K | 120.0K | 120.0K | 0 | 0 | 0 | none | none |
+| Technician ratio | count | 2 | 5 | 5 | 0.50 | 0 | 0 | 0 | none | none |
+| Microscope uptime | fraction | 1 | 1 | 1 | 1 | 0 | 0 | 0 | none | none |
+| Reacquisition rate | fraction | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | none |
+| Sample yield | fraction | 1 | 1 | 1 | 1 | 0 | 0 | 0 | none | none |
+| Expansion factor | × | 1 | 16 | 16 | 1 | 0 | 0 | 0 | none | none |
+| Consumables per mm³ | $/mm³ | 100.0K | 2 | 2 | 200.0K | 0 | 0 | 0 | none | none |
+| Antibody cost per mm³ | $/mm³ | 2 | 2 | 2 | 2 | 0 | 0 | 0 | none | none |
+| Labor cost per mm³ | $/mm³ | 2.9K | 2.9K | 2.9K | 2.9K | 0 | 0 | 0 | none | none |
+| Initial preparation days | days | 15 | 15 | 15 | 15 | 0 | 0 | 0 | none | none |
+| Voxel size X | nm | 15 | 250 | 250 | 10 | 0 | 0 | 0 | none | none |
+| Voxel size Y | nm | 15 | 250 | 250 | 10 | 0 | 0 | 0 | none | none |
+| Voxel size Z | nm | 15 | 400 | 400 | 10 | 0 | 0 | 0 | none | none |
+| Sample depth | count | 1 | 10.0K | 10.0K | 1 | 0 | 0 | 0 | none | none |
+| Tile width | pixels | 6.0K | 2.0K | 5.0K | 6.0K | 0 | 0 | 0 | none | none |
+| Tile height | pixels | 6.0K | 2.0K | 5.0K | 6.0K | 0 | 0 | 0 | none | none |
+| Tile overlap | fraction | 0.10 | 0.10 | 0.10 | 0.10 | 0 | 0 | 0 | none | none |
 
 ## Organisms
 

@@ -47,8 +47,10 @@ async function bundle(): Promise<void> {
 
   // Load imaging modalities and pivot to modality -> params structure
   const modalityRows = readTSV<ParameterRow>(join(IMAGING_DIR, 'imaging-modalities.tsv'));
+  // Filter out metadata columns to get just modality IDs (em, exm, etc.)
+  const metadataColumns = ['id', 'name', 'definition', 'unit', 'source', 'ref_id', 'supporting_refs', 'ref_note', 'confidence', 'validated_by'];
   const modalityIds = Object.keys(modalityRows[0] || {}).filter(
-    k => !['id', 'name', 'definition', 'unit', 'source'].includes(k)
+    k => !metadataColumns.includes(k)
   );
 
   const modalities: Record<string, Record<string, number>> = {};
