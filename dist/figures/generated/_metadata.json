@@ -60,8 +60,8 @@
     },
     {
       "id": "gpu-memory",
-      "title": "GPU Memory vs Brain Emulation Requirements",
-      "description": "Historical GPU memory capacity compared to the memory requirements for brain emulation across different organisms.",
+      "title": "Single GPU Memory vs Brain Emulation Requirements",
+      "description": "Historical single GPU memory capacity compared to the memory requirements for brain emulation across different organisms.",
       "filename": "gpu-memory-brain-emulation",
       "path": "figures/generated",
       "organism": [

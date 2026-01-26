@@ -308,9 +308,9 @@ def generate_gpu_memory_brain_emulation():
     ax.set_yscale('log')
     ax.set_xlim(1995, 2030)
     ax.set_ylim(0.01, 1e7)  # 10 MB to 10 PB range
-    ax.set_ylabel('GPU Memory (GB)')
+    ax.set_ylabel('Single GPU Memory (GB)')
     ax.set_xlabel(None)
-    ax.set_title('GPU Memory vs Brain Emulation Requirements')
+    ax.set_title('Single GPU Memory vs Brain Emulation Requirements')
     ax.legend(frameon=True, loc='upper left')
 
     plt.subplots_adjust(right=0.82)
