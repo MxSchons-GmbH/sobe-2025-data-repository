@@ -935,7 +935,7 @@ def generate_initiatives():
     name_map = {
         'Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/MINDS) project': 'Brain/MINDS',
         'Brain Research Through Advancing Innovative Neurotechnologies (BRAIN) Initiative': 'BRAIN Initiative',
-        'The Chinese Human Brain Connectome Project': 'Chinese Brain Connectome',
+        'Chinese Human Connectome Project (CHCP)': 'Chinese Human Connectome',
         'Bioelectronic Medical (SetPoint Medical)': 'SetPoint Medical',
         'Allen Institute Brain Observatory': 'Allen Brain Observatory',
         'The Green Brain Project': 'Green Brain Project',
@@ -2106,7 +2106,7 @@ def generate_funding():
         name_map = {
             'Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/MINDS) project': 'Brain/MINDS',
             'Brain Research Through Advancing Innovative Neurotechnologies (BRAIN) Initiative': 'BRAIN Initiative',
-            'The Chinese Human Brain Connectome Project': 'Chinese Brain Connectome',
+            'Chinese Human Connectome Project (CHCP)': 'Chinese Human Connectome',
             'President\'s Emergency Plan for AIDS Relief': 'PEPFAR',
             'Bioelectronic Medical (SetPoint Medical)': 'SetPoint Medical',
             'Allen Institute Brain Observatory': 'Allen Brain Observatory',
