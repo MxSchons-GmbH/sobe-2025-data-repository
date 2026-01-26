@@ -1,0 +1,6598 @@
+{
+  "_generated": "2026-01-26T12:53:14.691940",
+  "_description": "Orphaned bibliography entries for investigation",
+  "_note": "These entries are in bibliography.json but may not be actively referenced",
+  "summary": {
+    "total_bibliography_entries": 1063,
+    "used_via_ref_id_column": 69,
+    "used_via_source_doi_column_only": 433,
+    "truly_orphaned": 562
+  },
+  "truly_orphaned": [
+    "alleninstitute_brain_science_2026",
+    "alleninstitute_paul_g_allen_commits_100_milli_2026",
+    "apple_mac_studio_2026",
+    "apple_specs_2026",
+    "archive_ftyvn_2026",
+    "archive_gmxhy_2026",
+    "arxiv_2203_06122_2026",
+    "arxiv_2405_08783v2_2026",
+    "bartolo2019",
+    "bennett2023",
+    "biorxiv_125526v1_2026",
+    "biorxiv_2020_01_17_909572v1_full_2026",
+    "biorxiv_2022_07_26_501544v1_full_2026",
+    "biorxiv_2023_06_05_543407v2_full_2026",
+    "bondy2024",
+    "braincanada_government_of_canada_supports_2026",
+    "braincanada_program_partners_2026",
+    "braininitiative_brain_20_report_cells_circuits_2026",
+    "braininitiative_brain_initiative_cell_atlas_ne_2026",
+    "businesswire_synchron_raises_75m_series_c_l_2026",
+    "caltech_caltech_led_wormbase_project_a_2026",
+    "canadianbrain_page_2026",
+    "cell_s0092_8674_19_30842_6_2026",
+    "cell_s0896_6273_15_00760_6_2026",
+    "cell_showpdf_2026",
+    "cell_showpdf_2026a",
+    "childmind_child_mind_institute_receives_2026",
+    "compneuro_semantic_pointer_architecture_2026",
+    "cpu_monkey_igpu_apple_m2_ultra_76_core_2026",
+    "cpu_monkey_igpu_apple_m4_pro_16_core_2026",
+    "developingconnectome_project_2026",
+    "dl_1978542_1978559_2026",
+    "doi_sici_1098_1063_1996_6_2_3c149_2026",
+    "elifesciences_40042_2026",
+    "elifesciences_57443_2026",
+    "elifesciences_62451_2026",
+    "en_1996_summer_olympics_2026",
+    "en_allen_brain_atlas_2026",
+    "en_lockheed_martin_f_22_raptor_2026",
+    "epfl_frequently_asked_questions_2026",
+    "epfl_frequently_asked_questions_2026a",
+    "export_1709_02974v3_pdf_2026",
+    "fahey2019",
+    "frontiersin_10_3389_2026",
+    "frontiersin_articles_2026",
+    "gardner2021",
+    "giovannucci2017",
+    "github_cerebellar_atlases_2026",
+    "globalventuring_darpa_helps_implant_10m_in_syn_2026",
+    "hal_peer_stage2_10_1038_252fnn_286_2026",
+    "han2018",
+    "humanbrainproject_human_brain_project_ec_grants_2026",
+    "humanconnectome_page_2026",
+    "ieeexplore_6055294_2026",
+    "janelia_manc_connectome_2026",
+    "jiang2024",
+    "journals_file_2026",
+    "jstor_1684192_2026",
+    "kanter2024",
+    "ki_circuits_controlling_action_an_2026",
+    "kobayashi2018",
+    "lasers_faqs_2026",
+    "link_bf00231355_2026",
+    "liu2020",
+    "liu2021",
+    "macdowell2023",
+    "manley2024",
+    "medrxiv_2020_10_07_20207704v1_2026",
+    "melin2023",
+    "molecularautism_s13229_015_0058_4_2026",
+    "musk2019",
+    "nature_236207a0_2026",
+    "nature_d41586_024_03044_7_2026",
+    "nature_mp201792_2026",
+    "nature_nature12450_2026",
+    "nature_nature13186_2026",
+    "nature_s41398_024_02741_1_2026",
+    "nature_s41467_017_01285_x_2026",
+    "nature_s41587_021_00986_5_2026",
+    "nature_s41592_023_01796_0_2026",
+    "nature_s41598_018_37905_9_2026",
+    "nbauer2023",
+    "nih_scientists_build_largest_maps_2026",
+    "oboro_the_madhouse_einsteins_brain_p_2026",
+    "onlinelibrary_hbm_22185_2026",
+    "pachitariu2017",
+    "pdf_main_pdf_2026",
+    "pdf_main_pdf_2026a",
+    "pdf_main_pdf_2026b",
+    "pdf_main_pdf_2026c",
+    "pdf_main_pdf_2026d",
+    "pdf_main_pdf_2026e",
+    "pmc_pmc1550972_2026",
+    "pmc_pmc4217485_2026",
+    "pmc_pmc4387516_2026",
+    "pmc_pmc6914248_2026",
+    "pnas_pnas_0506806103_2026",
+    "pnas_pnas_0506806103_2026a",
+    "reporter_7994562_2026",
+    "reporter_9136946_2026",
+    "reporter_projects_2026",
+    "repositum_lung_20david_20_202018_20_20_2026",
+    "researchgate_5406603_a_technicolor_2026",
+    "researchgate_5676397_three_dimensional_2026",
+    "ropireddy2011",
+    "royalsocietypublishing_rstb_2017_0382_2026",
+    "scholar_scholar_lookup_2026",
+    "sciencedirect_s0165027011005991_2026",
+    "sciencedirect_s0896627316307887_2026",
+    "sciencedirect_s095943881400035x_2026",
+    "sciencedirect_s105381191001178x_2026",
+    "sciencedirect_s1053811913005351_2026",
+    "sciencedirect_s105381191630581x_2026",
+    "sciencedirect_s2095927323001214_2026",
+    "sciencedirect_s2589004222021198_2026",
+    "scmp_rare_public_row_erupts_over_fu_2026",
+    "semanticscholar_1c7a0174bfe049e7e57d389df3e582_2026",
+    "semanticscholar_8c48df1c84f94ff681f2a3fe6f28f3_2026",
+    "setpointmedical_setpoint_the_evolution_of_bioe_2026",
+    "simonsfoundation_the_connected_connectome_part_2026",
+    "sing_to_map_the_human_brain_researc_2026",
+    "sinz2018",
+    "stringer2019a",
+    "stringer2023",
+    "tether_tether_takes_strategic_stake_i_2026",
+    "text_044b803b",
+    "text_073b0531",
+    "text_11c535fc",
+    "text_11c535fca",
+    "text_13704b07",
+    "text_1417074a",
+    "text_1417074aa",
+    "text_1417074ab",
+    "text_1417074ac",
+    "text_1417074ad",
+    "text_1417074ae",
+    "text_1417074af",
+    "text_1417074ag",
+    "text_143c74c6",
+    "text_143c74c6a",
+    "text_14dd5b55",
+    "text_19c4f945",
+    "text_1bbd4878",
+    "text_36c7ab80",
+    "text_36c7ab80a",
+    "text_399423ff",
+    "text_399423ffa",
+    "text_3b4837cc",
+    "text_3b4837cca",
+    "text_3c2929d8",
+    "text_3c2929d8a",
+    "text_3c2929d8b",
+    "text_3c2929d8c",
+    "text_3c311fbd",
+    "text_3c311fbda",
+    "text_3c311fbdb",
+    "text_3c311fbdc",
+    "text_3e9d7b9a",
+    "text_3e9d7b9aa",
+    "text_3e9d7b9ab",
+    "text_3f80f71d",
+    "text_46f0c2b1",
+    "text_4bd6a42f",
+    "text_4c411947",
+    "text_4c53ef2a",
+    "text_4c53ef2aa",
+    "text_4c53ef2ab",
+    "text_4c53ef2ac",
+    "text_4c53ef2ad",
+    "text_4c53ef2ae",
+    "text_4c53ef2af",
+    "text_4c53ef2ag",
+    "text_4c53ef2ah",
+    "text_4c53ef2ai",
+    "text_4d8487f8",
+    "text_4e98d67a",
+    "text_51d270ed",
+    "text_5c04e0e0",
+    "text_5c067fe5",
+    "text_669f6d4f",
+    "text_7493ff89",
+    "text_7493ff89a",
+    "text_755accab",
+    "text_755accab100",
+    "text_755accab101",
+    "text_755accab102",
+    "text_755accab103",
+    "text_755accab104",
+    "text_755accab105",
+    "text_755accab106",
+    "text_755accab107",
+    "text_755accab108",
+    "text_755accab109",
+    "text_755accab110",
+    "text_755accab111",
+    "text_755accab112",
+    "text_755accab113",
+    "text_755accab114",
+    "text_755accab115",
+    "text_755accab116",
+    "text_755accab117",
+    "text_755accab118",
+    "text_755accab119",
+    "text_755accab120",
+    "text_755accab121",
+    "text_755accab122",
+    "text_755accab123",
+    "text_755accab124",
+    "text_755accab125",
+    "text_755accab126",
+    "text_755accab127",
+    "text_755accab128",
+    "text_755accab129",
+    "text_755accab130",
+    "text_755accab131",
+    "text_755accab132",
+    "text_755accab133",
+    "text_755accab134",
+    "text_755accab135",
+    "text_755accab136",
+    "text_755accab137",
+    "text_755accab138",
+    "text_755accab139",
+    "text_755accab140",
+    "text_755accab141",
+    "text_755accab142",
+    "text_755accab143",
+    "text_755accab144",
+    "text_755accab145",
+    "text_755accab146",
+    "text_755accab147",
+    "text_755accab148",
+    "text_755accab149",
+    "text_755accab150",
+    "text_755accab151",
+    "text_755accab152",
+    "text_755accab153",
+    "text_755accab154",
+    "text_755accab155",
+    "text_755accab156",
+    "text_755accab157",
+    "text_755accab158",
+    "text_755accab159",
+    "text_755accab160",
+    "text_755accab161",
+    "text_755accab162",
+    "text_755accab163",
+    "text_755accab164",
+    "text_755accab165",
+    "text_755accab166",
+    "text_755accab167",
+    "text_755accab168",
+    "text_755accab169",
+    "text_755accab170",
+    "text_755accab171",
+    "text_755accab172",
+    "text_755accab173",
+    "text_755accab174",
+    "text_755accab175",
+    "text_755accab26",
+    "text_755accab27",
+    "text_755accab28",
+    "text_755accab29",
+    "text_755accab30",
+    "text_755accab31",
+    "text_755accab32",
+    "text_755accab33",
+    "text_755accab34",
+    "text_755accab35",
+    "text_755accab36",
+    "text_755accab37",
+    "text_755accab38",
+    "text_755accab39",
+    "text_755accab40",
+    "text_755accab41",
+    "text_755accab42",
+    "text_755accab43",
+    "text_755accab44",
+    "text_755accab45",
+    "text_755accab46",
+    "text_755accab47",
+    "text_755accab48",
+    "text_755accab49",
+    "text_755accab50",
+    "text_755accab51",
+    "text_755accab52",
+    "text_755accab53",
+    "text_755accab54",
+    "text_755accab55",
+    "text_755accab56",
+    "text_755accab57",
+    "text_755accab58",
+    "text_755accab59",
+    "text_755accab60",
+    "text_755accab61",
+    "text_755accab62",
+    "text_755accab63",
+    "text_755accab64",
+    "text_755accab65",
+    "text_755accab66",
+    "text_755accab67",
+    "text_755accab68",
+    "text_755accab69",
+    "text_755accab70",
+    "text_755accab71",
+    "text_755accab72",
+    "text_755accab73",
+    "text_755accab74",
+    "text_755accab75",
+    "text_755accab76",
+    "text_755accab77",
+    "text_755accab78",
+    "text_755accab79",
+    "text_755accab80",
+    "text_755accab81",
+    "text_755accab82",
+    "text_755accab83",
+    "text_755accab84",
+    "text_755accab85",
+    "text_755accab86",
+    "text_755accab87",
+    "text_755accab88",
+    "text_755accab89",
+    "text_755accab90",
+    "text_755accab91",
+    "text_755accab92",
+    "text_755accab93",
+    "text_755accab94",
+    "text_755accab95",
+    "text_755accab96",
+    "text_755accab97",
+    "text_755accab98",
+    "text_755accab99",
+    "text_755accaba",
+    "text_755accabb",
+    "text_755accabc",
+    "text_755accabd",
+    "text_755accabe",
+    "text_755accabf",
+    "text_755accabg",
+    "text_755accabh",
+    "text_755accabi",
+    "text_755accabj",
+    "text_755accabk",
+    "text_755accabl",
+    "text_755accabm",
+    "text_755accabn",
+    "text_755accabo",
+    "text_755accabp",
+    "text_755accabq",
+    "text_755accabr",
+    "text_755accabs",
+    "text_755accabt",
+    "text_755accabu",
+    "text_755accabv",
+    "text_755accabw",
+    "text_755accabx",
+    "text_755accaby",
+    "text_767e5044",
+    "text_78976fa8",
+    "text_7ecd6ceb",
+    "text_7ecd6ceba",
+    "text_7ecd6cebb",
+    "text_8c8fb173",
+    "text_8d15c66e",
+    "text_8f874121",
+    "text_917008b3",
+    "text_95fbeb54",
+    "text_98e4812b",
+    "text_9c505ee3",
+    "text_9ef1a763",
+    "text_ab78fc43",
+    "text_abd82250",
+    "text_b12c16ec",
+    "text_b12c16eca",
+    "text_b12c16ecb",
+    "text_b12c16ecc",
+    "text_b12c16ecd",
+    "text_b12c16ece",
+    "text_b12c16ecf",
+    "text_b12c16ecg",
+    "text_b12c16ech",
+    "text_b12c16eci",
+    "text_b12c16ecj",
+    "text_b12c16eck",
+    "text_b12c16ecl",
+    "text_b12c16ecm",
+    "text_b12c16ecn",
+    "text_b12c16eco",
+    "text_b12c16ecp",
+    "text_b12c16ecq",
+    "text_b12c16ecr",
+    "text_b12c16ecs",
+    "text_b12c16ect",
+    "text_b12c16ecu",
+    "text_b12c16ecv",
+    "text_b12c16ecw",
+    "text_b12c16ecx",
+    "text_b23111cd",
+    "text_c5240d58",
+    "text_c5240d58a",
+    "text_c5240d58b",
+    "text_c5240d58c",
+    "text_c5240d58d",
+    "text_d148e7f9",
+    "text_d2f9b2bf",
+    "text_d788fe57",
+    "text_d7e084ae",
+    "text_dde7f09b",
+    "text_e0cb0342",
+    "text_e0cb034226",
+    "text_e0cb034227",
+    "text_e0cb034228",
+    "text_e0cb034229",
+    "text_e0cb034230",
+    "text_e0cb034231",
+    "text_e0cb034232",
+    "text_e0cb0342a",
+    "text_e0cb0342b",
+    "text_e0cb0342c",
+    "text_e0cb0342d",
+    "text_e0cb0342e",
+    "text_e0cb0342f",
+    "text_e0cb0342g",
+    "text_e0cb0342h",
+    "text_e0cb0342i",
+    "text_e0cb0342j",
+    "text_e0cb0342k",
+    "text_e0cb0342l",
+    "text_e0cb0342m",
+    "text_e0cb0342n",
+    "text_e0cb0342o",
+    "text_e0cb0342p",
+    "text_e0cb0342q",
+    "text_e0cb0342r",
+    "text_e0cb0342s",
+    "text_e0cb0342t",
+    "text_e0cb0342u",
+    "text_e0cb0342v",
+    "text_e0cb0342w",
+    "text_e0cb0342x",
+    "text_e0cb0342y",
+    "text_e68961eb",
+    "text_e68961eba",
+    "text_e68961ebb",
+    "text_e68961ebc",
+    "text_ee1d096b",
+    "text_ee1d096b26",
+    "text_ee1d096b27",
+    "text_ee1d096b28",
+    "text_ee1d096b29",
+    "text_ee1d096b30",
+    "text_ee1d096b31",
+    "text_ee1d096b32",
+    "text_ee1d096b33",
+    "text_ee1d096b34",
+    "text_ee1d096b35",
+    "text_ee1d096b36",
+    "text_ee1d096b37",
+    "text_ee1d096b38",
+    "text_ee1d096b39",
+    "text_ee1d096b40",
+    "text_ee1d096b41",
+    "text_ee1d096b42",
+    "text_ee1d096b43",
+    "text_ee1d096b44",
+    "text_ee1d096b45",
+    "text_ee1d096b46",
+    "text_ee1d096b47",
+    "text_ee1d096b48",
+    "text_ee1d096b49",
+    "text_ee1d096b50",
+    "text_ee1d096b51",
+    "text_ee1d096b52",
+    "text_ee1d096b53",
+    "text_ee1d096b54",
+    "text_ee1d096b55",
+    "text_ee1d096b56",
+    "text_ee1d096b57",
+    "text_ee1d096b58",
+    "text_ee1d096b59",
+    "text_ee1d096b60",
+    "text_ee1d096b61",
+    "text_ee1d096b62",
+    "text_ee1d096b63",
+    "text_ee1d096b64",
+    "text_ee1d096b65",
+    "text_ee1d096b66",
+    "text_ee1d096b67",
+    "text_ee1d096b68",
+    "text_ee1d096b69",
+    "text_ee1d096b70",
+    "text_ee1d096b71",
+    "text_ee1d096b72",
+    "text_ee1d096b73",
+    "text_ee1d096b74",
+    "text_ee1d096b75",
+    "text_ee1d096b76",
+    "text_ee1d096b77",
+    "text_ee1d096b78",
+    "text_ee1d096b79",
+    "text_ee1d096b80",
+    "text_ee1d096b81",
+    "text_ee1d096b82",
+    "text_ee1d096b83",
+    "text_ee1d096b84",
+    "text_ee1d096ba",
+    "text_ee1d096bb",
+    "text_ee1d096bc",
+    "text_ee1d096bd",
+    "text_ee1d096be",
+    "text_ee1d096bf",
+    "text_ee1d096bg",
+    "text_ee1d096bh",
+    "text_ee1d096bi",
+    "text_ee1d096bj",
+    "text_ee1d096bk",
+    "text_ee1d096bl",
+    "text_ee1d096bm",
+    "text_ee1d096bn",
+    "text_ee1d096bo",
+    "text_ee1d096bp",
+    "text_ee1d096bq",
+    "text_ee1d096br",
+    "text_ee1d096bs",
+    "text_ee1d096bt",
+    "text_ee1d096bu",
+    "text_ee1d096bv",
+    "text_ee1d096bw",
+    "text_ee1d096bx",
+    "text_ee1d096by",
+    "text_f1506b63",
+    "text_f1506b63a",
+    "text_f1506b63b",
+    "text_f1506b63c",
+    "text_f76590dc",
+    "text_f8414d83",
+    "text_f8414d83a",
+    "text_f8414d83b",
+    "text_f8414d83c",
+    "text_f8414d83d",
+    "text_f8414d83e",
+    "text_f8414d83f",
+    "text_f8414d83g",
+    "text_f9510fcd",
+    "text_f9510fcda",
+    "text_f9510fcdb",
+    "text_f9510fcdc",
+    "text_f9510fcdd",
+    "text_f9510fcde",
+    "text_fd3074fc",
+    "text_ff4999bf",
+    "tracxn_funding_and_investors_2026a",
+    "trautmann2023",
+    "ukbiobank_uk_biobank_funding_details_sum_2026",
+    "ukri_first_map_of_every_neuron_in_a_2026",
+    "watermark_fcab244_pdf_2026",
+    "web_20220205023344id_2026",
+    "wellcome_mapping_brain_new_technique_po_2026",
+    "wellcome_mapping_energetic_pathways_bra_2026",
+    "zhong2024",
+    "zong2021"
+  ],
+  "referenced_via_source_only": [
+    "abeles1977",
+    "abeles1988",
+    "abeles1993",
+    "academic_398560_2026",
+    "academic_7779257_2026",
+    "academic_7779257_2026a",
+    "academic_7826014_2026",
+    "afgsc_the_icbm_turns_60_2026",
+    "aggarwal2013",
+    "ahissar1990",
+    "ahissar1992",
+    "ahissar1992a",
+    "ahrens2013",
+    "aiple1988",
+    "amassian1959",
+    "amassian1961",
+    "americanmachinist_pratt_whitney_cuts_forecast_fo_2026",
+    "aria_precision_neurotechnologies_2026",
+    "arxiv_1611_00421_2026",
+    "bansal2012",
+    "barbieri2005",
+    "barth2004",
+    "bartolo2020",
+    "bartolo2020a",
+    "beets2023",
+    "bekolay2014",
+    "berning2015",
+    "bernyi2014",
+    "bionet_ffbo_2026",
+    "biorxiv_2023_03_14_532674v4_full_2026",
+    "biorxiv_2023_03_21_533548v1_2026",
+    "biorxiv_2023_05_17_541167v2_full_2026",
+    "biorxiv_2024_02_13_580186_full_pdf_2026",
+    "biorxiv_605634_full_pdf_2026",
+    "blanche2005",
+    "bloomberg_how_the_cost_of_remaking_the_s_2026",
+    "bloomberg_singapore_clears_20_billion_po_2026",
+    "brain_gwm_largescalecortex_01_pdf_2026",
+    "brain_ncs_bluggene_report_07nov04_pd_2026",
+    "braincanada_what_we_do_2026",
+    "braininitiative_understanding_brain_initiative_2026",
+    "braitenberg1965",
+    "brown1998",
+    "bumbarger2013",
+    "burak2009",
+    "businesswire_convergent_research_announces_2026",
+    "buzski1989",
+    "carmena2003",
+    "cawaterlibrary_part_two_b3_the_califonia_wate_2026",
+    "ccbr_humanbrainproject_2026",
+    "cell_s0092_8674_15_00824_7_2026",
+    "cell_s0092_8674_15_01191_5_2026",
+    "cell_s0896_6273_16_30805_4_2026",
+    "cell_s0896_6273_20_30067_2_2026",
+    "cerquera2011",
+    "chang1996",
+    "chang1997",
+    "chang2000",
+    "chanzuckerberg_neuroscience_2026",
+    "chapin1999",
+    "chapin1999a",
+    "chen2013",
+    "chen2018",
+    "cheng2011",
+    "chung2018",
+    "churchland2012",
+    "cnbc_paradromics_gears_up_to_test_i_2026",
+    "cong2017",
+    "construction_physics_how_to_build_a_20_billion_semi_2026",
+    "constructiondive_625430_2026",
+    "constructiondive_625884_2026",
+    "constructiondive_722620_2026",
+    "constructiondive_735097_2026",
+    "cordis_855109_2026",
+    "cotton2013",
+    "cse_paper_pdf_2026",
+    "csicsvari2003",
+    "dazn_njseve2ipd4t1skh8632hyclk_2026",
+    "demas2021",
+    "developer_announcing_nvidia_dgx_gh200_fi_2026",
+    "developingconnectome_data_release_2026",
+    "diba2014",
+    "dickey2009",
+    "dickson1974",
+    "direct_a_multichip_neuromorphic_syste_2026",
+    "direct_imposing_biological_constraint_2026",
+    "diva_portal_fulltext01_pdf_2026",
+    "docs_authors_html_2026",
+    "dombeck2010",
+    "dorkenwald2017",
+    "drake1988",
+    "durelli1978",
+    "dw_a_60124995_2026",
+    "dx_10_1016_2fj_jneumeth_2017_07_0_2026",
+    "eckhorn1988",
+    "edition_index_html_2026",
+    "eggermont1991",
+    "en_cost_of_the_olympic_games_2026",
+    "en_international_brain_laboratory_2026",
+    "en_microns_2026",
+    "en_northrop_b_2_spirit_2026",
+    "en_orion_spacecraft_2026",
+    "en_space_launch_system_2026",
+    "en_superconducting_super_collider_2026",
+    "en_synapse_2026",
+    "en_tat_8_2026",
+    "en_tianqiao_and_chrissy_chen_inst_2026",
+    "en_vogtle_electric_generating_pla_2026",
+    "enigmaproject_page_2026",
+    "espinosa1988",
+    "evarts1965",
+    "fitzsimmons2009",
+    "fraser2012",
+    "frontiersin_epub_2026",
+    "frontiersin_full_2026",
+    "frontiersin_full_2026a",
+    "frontiersin_full_2026b",
+    "frontiersin_full_2026c",
+    "frostig1983",
+    "frostig1984",
+    "gama2017",
+    "ganguly2009",
+    "gao_716924_pdf_2026",
+    "gao_gao_09_692t_pdf_2026",
+    "gao_gao_15_342sp_pdf_2026",
+    "gao_gao_22_105387_pdf_2026",
+    "gao_masad_82_7_pdf_2026",
+    "gardner1981",
+    "gerstein1964",
+    "gerstein1972",
+    "gertler2008",
+    "ghoshdastidar2009",
+    "giszter2001",
+    "goris2014",
+    "gothard1996",
+    "gray1995",
+    "griffith1963",
+    "hamed2007",
+    "harris2003",
+    "hatsopoulos2004",
+    "hatsopoulos2007",
+    "hernndez2008",
+    "hhmi_new_silicon_probes_record_acti_2026",
+    "higuchi2022",
+    "hilgen2017",
+    "hochberg2006",
+    "huang2019",
+    "hubel1962",
+    "huber2012",
+    "humanbrainproject_human_brain_project_ebrains_2026",
+    "humphrey1970",
+    "humphrey1970a",
+    "ieeexplore_1198953_2026",
+    "ieeexplore_1198953_2026a",
+    "ieeexplore_1243704_2026",
+    "ieeexplore_1592757_2026",
+    "ieeexplore_509875_2026",
+    "ieeexplore_5471736_2026",
+    "ieeexplore_5536970_2026",
+    "ieeexplore_7526444_2026",
+    "ieeexplore_stamp_jsp_2026",
+    "ifft2013",
+    "infoscience_297317_2026",
+    "insightcruises_panamacanaldetails_nl2_pdf_2026",
+    "internationalbrainlab_page_2026",
+    "isaacs2000",
+    "ito2014",
+    "izhikevich2008",
+    "izhikevich_blue_brain_htm_2026",
+    "jdpecon_wfnewyork1939_html_2026",
+    "joglekar2018",
+    "journals_jim_0b013e3182025955_2026",
+    "journals_jn_00641_2003_2026",
+    "journals_jn_00983_2004_2026",
+    "jstor_2990196_2026",
+    "jun2017",
+    "kay1999",
+    "kelly2010",
+    "kerlin2010",
+    "kff_the_u_s_presidents_emergency_p_2026",
+    "kim2006",
+    "kim2008",
+    "kim2011",
+    "kim2016",
+    "komiyama2010",
+    "krger1981",
+    "krger1982",
+    "kristan1970",
+    "kubie1984",
+    "kuperstein1981",
+    "kuperstein1985",
+    "kuperstein1986",
+    "lambacher2010",
+    "laubach2000",
+    "laubach2004",
+    "lebedev2005",
+    "lecoq2014",
+    "lee2016",
+    "legendy1985",
+    "legndy1984",
+    "lenovopress_lp2226_thinksystem_nvidia_b200_2026",
+    "lightwaveonline_tat_14_undersea_cable_system_c_2026",
+    "lin2006",
+    "lindsey1987",
+    "lindsey1989",
+    "lindsey1994",
+    "link_978_3_540_74466_5_71_2026",
+    "link_978_3_540_78293_3_18_2026",
+    "link_s00422_006_0132_2_2026",
+    "link_s10827_007_0038_6_2026",
+    "liu2024",
+    "localshapedescriptors_page_2026",
+    "loeb1977",
+    "long2010",
+    "lou1986",
+    "lu2024",
+    "maccione2014",
+    "marder2011",
+    "marre2012",
+    "mchugh1996",
+    "mcnaughton1983",
+    "meister1991",
+    "michalski1983",
+    "microns_explorer_cortical_mm3_2026",
+    "mioche1988",
+    "modha_towards_real_time_mouse_scale_2026",
+    "mountcastle1957",
+    "mountcastle1991",
+    "nationalinterest_120000000000_ford_class_aircra_2026",
+    "nationalinterest_navys_132000000000_columbia_cl_2026",
+    "nature_d41586_019_00292_w_2026",
+    "nature_d41586_023_03954_y_2026",
+    "nature_nature12346_2026",
+    "nature_nature23455_2026",
+    "nature_nn_4290_2026",
+    "nature_nrn1848_2026",
+    "nature_s41467_020_18422_8_2026",
+    "nature_s41586_024_07451_8_2026",
+    "nature_s41586_024_07763_9_2026",
+    "nature_s41586_024_07939_3_2026",
+    "nature_s41586_024_07982_0_2026",
+    "nature_s41592_018_0049_4_2026",
+    "nature_s41592_022_01711_z_2026",
+    "nature_s41592_024_02226_5_2026",
+    "nature_s41593_024_01784_3_2026",
+    "nature_s41597_024_03060_2_2026",
+    "nature_s42003_022_04213_y_2026",
+    "nature_s43588_024_00738_w_2026",
+    "nbcnews_billionaire_paul_allen_kicks_b_2026",
+    "ncbi_14287709_2026",
+    "ndcn_fmrib_2026",
+    "news_scientists_image_vivid_brainbo_2026",
+    "news_the_brain_as_weve_never_seen_i_2026",
+    "nextbigfuture_darpa_synapse_project_status_h_2026",
+    "nicolelis1993",
+    "nicolelis1995",
+    "nicolelis1997",
+    "nicolelis1998",
+    "nicolelis2003",
+    "ninds_nih_brain_initiative_launches_2026",
+    "nini1995",
+    "noda1970",
+    "nordhausen1996",
+    "normann1999",
+    "normann2001",
+    "npr_amid_data_controversy_nsa_buil_2026",
+    "nsf_showaward_2026",
+    "nsf_showaward_2026a",
+    "ntrs_19950002358_pdf_2026",
+    "nuding2009",
+    "nvidia_nvidia_a100_datasheet_nvidia_u_2026",
+    "obaid2020",
+    "oconnor2010",
+    "odoherty2011",
+    "ohki2005",
+    "ohyama2015",
+    "okeefe1969",
+    "onlinelibrary_risa_13665_2026",
+    "openreview_forum_2026",
+    "ota2020",
+    "pachitariu2016",
+    "pandaily_brain_machine_interface_firm_b_2026",
+    "paninski2004",
+    "patil2004",
+    "peron2015",
+    "petreanu2012",
+    "peyrache2012",
+    "physoc_jphysiol_1992_sp019184_2026",
+    "pitchbook_471975_49_2026",
+    "pitchbook_489944_26_2026",
+    "pmc_pmc10054929_2026",
+    "pmc_pmc3546938_2026",
+    "pmc_pmc3546938_sa_d_source_editors_2026",
+    "pmc_pmc5100684_2026",
+    "pmc_pmc5806122_2026",
+    "pmc_pmc6474358_2026",
+    "pmc_pmc6758326_2026",
+    "pmc_pmc8643430_2026",
+    "pmc_pmc8940715_2026",
+    "pnas_pnas_0712231105_2026",
+    "pnas_pnas_0807744105_2026",
+    "pnas_pnas_0909881106_2026",
+    "pny_h100_nvl_datasheet_pdf_2026",
+    "porada2000",
+    "prevedel2016",
+    "prut1998",
+    "pubmed_22462104_2026",
+    "pubmed_26175908_2026",
+    "pubmed_30201845_2026",
+    "pubmed_36382887_2026",
+    "qiu2020",
+    "quinn2010",
+    "qz_how_much_more_money_can_spacex_2026",
+    "rajangam2016",
+    "randel2014",
+    "reitbck1983",
+    "report_categorical_spending_2026",
+    "reporter_8968383_2026",
+    "reporter_8969005_2026",
+    "reporter_8969367_2026",
+    "reporter_8969574_2026",
+    "reporter_8969581_2026",
+    "reporter_9108511_2026",
+    "reporter_9109803_2026",
+    "reporter_9110441_2026",
+    "research_google_research_embarks_on_eff_2026",
+    "researchgate_compass_a_scalable_simulator_f_2026",
+    "riken_index_html_2026",
+    "rodieck1967",
+    "rousche1998",
+    "royalsocietypublishing_rsta_2019_0160_2026",
+    "rumyantsev2020",
+    "rutishauser2018",
+    "ryan2016",
+    "sahasrabuddhe2020",
+    "sainsburywellcome_swc_awarded_major_building_pro_2026",
+    "saleh2012",
+    "sanchez2004",
+    "santucci2005",
+    "schmidt1976",
+    "schmidt1976a",
+    "schmidt1977",
+    "schmidt1978",
+    "schmidt2017",
+    "schnupp2010",
+    "schwarz2014",
+    "science_science_1254642_2026",
+    "science_science_7079735_2026",
+    "science_science_aay3134_2026",
+    "science_science_abb4534_2026",
+    "science_science_adk4858_2026",
+    "science_why_australia_needs_brain_init_2026",
+    "sciencedirect_s0301421513010926_2026",
+    "sciencedirect_s0301421513010927_2026",
+    "sciencedirect_s0301421513010928_2026",
+    "sciencedirect_s0301421513010929_2026",
+    "sciencedirect_s0301421513010930_2026",
+    "sciencedirect_s0301421513010931_2026",
+    "sciencedirect_s0301421513010933_2026",
+    "sciencedirect_s0301421513010934_2026",
+    "sciencedirect_s0301421513010935_2026",
+    "sciencedirect_s0301421513010936_2026",
+    "sciencedirect_s0301421513010937_2026",
+    "sciencedirect_s0301421513010938_2026",
+    "sciencedirect_s0301421513010939_2026",
+    "sciencedirect_s0301421513010940_2026",
+    "sciencedirect_s0301421513010941_2026",
+    "sciencedirect_s0378595517303477_2026",
+    "sciencedirect_s0893608097000166_2026",
+    "sciencedirect_s0925231200002770_2026",
+    "sciencedirect_s1877050911006806_2026",
+    "seidemann1996",
+    "shaw1993",
+    "sheffield_research_2026",
+    "shobe2015",
+    "shs_journal_revue_internationale_d_2026",
+    "silver2010",
+    "simen2011",
+    "simonsfoundation_the_connected_connectome_2026",
+    "skaggs1996",
+    "sofroniew2016",
+    "song2017",
+    "stafford2009",
+    "stein2004",
+    "stein2004a",
+    "steinmetz2019",
+    "stimson_current_defense_plans_require_2026",
+    "stosiek2003",
+    "stringer2018",
+    "stringer2019",
+    "suminski2010",
+    "svoboda1997",
+    "tandfonline_09548980600774619_2026",
+    "tandfonline_14678802_2023_2257137_2026",
+    "taylor2002",
+    "taylor2009",
+    "techpowerup_tesla_c870_c1542_2026",
+    "theregister_intel_foundry_vision_2026",
+    "thiagarajan2010",
+    "tracxn_ef8jht4ldblpu1pdu3lwcprzf177_2026",
+    "tracxn_funding_and_investors_2026",
+    "tracxn_ouvi98zbdmlzga1lgbrb3ogjjbxj_2026",
+    "tracxn_rssigvedmx41lbwmdvlef1d54fw_2026",
+    "tracxn_z4shnx_dbchmw_jgz7qgvn85zzpo_2026",
+    "transportgeography_aircraft_development_costs_2026",
+    "truccolo2011",
+    "unknown2021",
+    "vaadia1995",
+    "vargasirwin2010",
+    "velliste2008",
+    "villa1999",
+    "vonbaumgarten1957",
+    "voronin1975",
+    "washingtonpost_nasa_budget_mars_artemis_2026",
+    "weber2007",
+    "weigel2021",
+    "weisenburger2019",
+    "wellcome_molecular_annotation_drosophil_2026",
+    "wellcome_scaling_connectomics_2026",
+    "wellcome_the_connectome_olfactory_memor_2026",
+    "wessberg2000",
+    "wheeler1982",
+    "williams1999",
+    "wilson1993",
+    "wilson1994",
+    "world_nuclear_news_edf_announces_hinkley_point_c_2026",
+    "worldscientific_s012906572450045x_2026",
+    "yamazaki2021",
+    "yang2022",
+    "yemini2019",
+    "zacksenhouse2007",
+    "zerlaut2017",
+    "ziv2013"
+  ],
+  "entries": {
+    "alleninstitute_brain_science_2026": {
+      "id": "alleninstitute_brain_science_2026",
+      "type": "webpage",
+      "title": "Brain Science",
+      "URL": "https://alleninstitute.org/division/brain-science/",
+      "author": [
+        {
+          "literal": "alleninstitute.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "alleninstitute_paul_g_allen_commits_100_milli_2026": {
+      "id": "alleninstitute_paul_g_allen_commits_100_milli_2026",
+      "type": "webpage",
+      "title": "Paul G Allen Commits 100 Million To Brain Research",
+      "URL": "https://alleninstitute.org/news/paul-g-allen-commits-100-million-to-brain-research/",
+      "author": [
+        {
+          "literal": "alleninstitute.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "apple_mac_studio_2026": {
+      "id": "apple_mac_studio_2026",
+      "type": "webpage",
+      "title": "Mac Studio",
+      "URL": "https://www.apple.com/shop/buy-mac/mac-studio/",
+      "author": [
+        {
+          "literal": "apple.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "apple_specs_2026": {
+      "id": "apple_specs_2026",
+      "type": "webpage",
+      "title": "Specs",
+      "URL": "https://www.apple.com/macbook-pro/specs/",
+      "author": [
+        {
+          "literal": "apple.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "archive_ftyvn_2026": {
+      "id": "archive_ftyvn_2026",
+      "type": "webpage",
+      "title": "Ftyvn",
+      "URL": "https://archive.ph/fTyVn",
+      "author": [
+        {
+          "literal": "archive.ph"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "archive_gmxhy_2026": {
+      "id": "archive_gmxhy_2026",
+      "type": "webpage",
+      "title": "Gmxhy",
+      "URL": "https://archive.ph/gMXHy",
+      "author": [
+        {
+          "literal": "archive.ph"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      },
+      "note": "initial investment"
+    },
+    "arxiv_2203_06122_2026": {
+      "id": "arxiv_2203_06122_2026",
+      "type": "webpage",
+      "title": "2203.06122",
+      "URL": "https://arxiv.org/pdf/2203.06122",
+      "author": [
+        {
+          "literal": "arxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "arxiv_2405_08783v2_2026": {
+      "id": "arxiv_2405_08783v2_2026",
+      "type": "webpage",
+      "title": "2405.08783V2",
+      "URL": "https://arxiv.org/pdf/2405.08783v2",
+      "author": [
+        {
+          "literal": "arxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "bartolo2019": {
+      "id": "bartolo2019",
+      "type": "article",
+      "title": "Dimensionality, information and learning in prefrontal cortex",
+      "URL": "https://doi.org/10.1101/823377",
+      "DOI": "10.1101/823377",
+      "author": [
+        {
+          "family": "Bartolo",
+          "given": "Ramon"
+        },
+        {
+          "family": "Saunders",
+          "given": "Richard C."
+        },
+        {
+          "family": "Mitz",
+          "given": "Andrew"
+        },
+        {
+          "family": "Averbeck",
+          "given": "Bruno B."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            29
+          ]
+        ]
+      }
+    },
+    "bennett2023": {
+      "id": "bennett2023",
+      "type": "article",
+      "title": "SHIELD: Skull-shaped hemispheric implants enabling large-scale electrophysiology datasets in the mouse brain",
+      "URL": "https://doi.org/10.1101/2023.11.12.566771",
+      "DOI": "10.1101/2023.11.12.566771",
+      "author": [
+        {
+          "family": "Bennett",
+          "given": "Corbett"
+        },
+        {
+          "family": "Ouellette",
+          "given": "Ben"
+        },
+        {
+          "family": "Ramirez",
+          "given": "Tamina"
+        },
+        {
+          "family": "Cahoon",
+          "given": "Alex"
+        },
+        {
+          "family": "Cabasco",
+          "given": "Hannah"
+        },
+        {
+          "family": "Browning",
+          "given": "Yoni"
+        },
+        {
+          "family": "Lakunina",
+          "given": "Anna"
+        },
+        {
+          "family": "Lynch",
+          "given": "Galen F."
+        },
+        {
+          "family": "McBride",
+          "given": "Ethan"
+        },
+        {
+          "family": "Belski",
+          "given": "Hannah"
+        },
+        {
+          "family": "Gillis",
+          "given": "Ryan"
+        },
+        {
+          "family": "Grasso",
+          "given": "Conor"
+        },
+        {
+          "family": "Howard",
+          "given": "Robert"
+        },
+        {
+          "family": "Johnson",
+          "given": "Tye"
+        },
+        {
+          "family": "Loeffler",
+          "given": "Henry"
+        },
+        {
+          "family": "Smith",
+          "given": "Heston"
+        },
+        {
+          "family": "Sullivan",
+          "given": "David"
+        },
+        {
+          "family": "Williford",
+          "given": "Allison"
+        },
+        {
+          "family": "Caldejon",
+          "given": "Shiella"
+        },
+        {
+          "family": "Durand",
+          "given": "Severine"
+        },
+        {
+          "family": "Gale",
+          "given": "Samuel"
+        },
+        {
+          "family": "Guthrie",
+          "given": "Alan"
+        },
+        {
+          "family": "Ha",
+          "given": "Vivian"
+        },
+        {
+          "family": "Han",
+          "given": "Warren"
+        },
+        {
+          "family": "Hardcastle",
+          "given": "Ben"
+        },
+        {
+          "family": "Mochizuki",
+          "given": "Chris"
+        },
+        {
+          "family": "Sridhar",
+          "given": "Arjun"
+        },
+        {
+          "family": "Suarez",
+          "given": "Lucas"
+        },
+        {
+          "family": "Swapp",
+          "given": "Jackie"
+        },
+        {
+          "family": "Wilkes",
+          "given": "Joshua"
+        },
+        {
+          "family": "Siegle",
+          "given": "Joshua H."
+        },
+        {
+          "family": "Farrell",
+          "given": "Colin"
+        },
+        {
+          "family": "Groblewski",
+          "given": "Peter A."
+        },
+        {
+          "family": "Olsen",
+          "given": "Shawn R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            14
+          ]
+        ]
+      }
+    },
+    "biorxiv_125526v1_2026": {
+      "id": "biorxiv_125526v1_2026",
+      "type": "webpage",
+      "title": "125526V1",
+      "URL": "https://www.biorxiv.org/content/10.1101/125526v1",
+      "author": [
+        {
+          "literal": "biorxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "biorxiv_2020_01_17_909572v1_full_2026": {
+      "id": "biorxiv_2020_01_17_909572v1_full_2026",
+      "type": "webpage",
+      "title": "2020.01.17.909572V1.Full",
+      "URL": "https://www.biorxiv.org/content/10.1101/2020.01.17.909572v1.full",
+      "author": [
+        {
+          "literal": "biorxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "biorxiv_2022_07_26_501544v1_full_2026": {
+      "id": "biorxiv_2022_07_26_501544v1_full_2026",
+      "type": "webpage",
+      "title": "2022.07.26.501544V1.Full",
+      "URL": "https://www.biorxiv.org/content/10.1101/2022.07.26.501544v1.full",
+      "author": [
+        {
+          "literal": "biorxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "biorxiv_2023_06_05_543407v2_full_2026": {
+      "id": "biorxiv_2023_06_05_543407v2_full_2026",
+      "type": "webpage",
+      "title": "2023.06.05.543407V2.Full",
+      "URL": "https://www.biorxiv.org/content/10.1101/2023.06.05.543407v2.full",
+      "author": [
+        {
+          "literal": "biorxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "bondy2024": {
+      "id": "bondy2024",
+      "type": "article",
+      "title": "Brain-wide coordination of internal signals during decision-making",
+      "URL": "https://doi.org/10.1101/2024.08.21.609044",
+      "DOI": "10.1101/2024.08.21.609044",
+      "author": [
+        {
+          "family": "Bondy",
+          "given": "Adrian G"
+        },
+        {
+          "family": "Charlton",
+          "given": "Julie A"
+        },
+        {
+          "family": "Luo",
+          "given": "Thomas Zhihao"
+        },
+        {
+          "family": "Kopec",
+          "given": "Charles D"
+        },
+        {
+          "family": "Stagnaro",
+          "given": "Wynne M"
+        },
+        {
+          "family": "Venditto",
+          "given": "Sarah Jo C"
+        },
+        {
+          "family": "Lynch",
+          "given": "Laura"
+        },
+        {
+          "family": "Janarthanan",
+          "given": "Sanjeev"
+        },
+        {
+          "family": "Oline",
+          "given": "Stefan N"
+        },
+        {
+          "family": "Harris",
+          "given": "Timothy D"
+        },
+        {
+          "family": "Brody",
+          "given": "Carlos D"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            22
+          ]
+        ]
+      }
+    },
+    "braincanada_government_of_canada_supports_2026": {
+      "id": "braincanada_government_of_canada_supports_2026",
+      "type": "webpage",
+      "title": "Government Of Canada Supports Brain Canada",
+      "URL": "https://braincanada.ca/announcements/government-of-canada-supports-brain-canada/#:~:text=Budget%202024%20announced%",
+      "author": [
+        {
+          "literal": "braincanada.ca"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "braincanada_program_partners_2026": {
+      "id": "braincanada_program_partners_2026",
+      "type": "webpage",
+      "title": "Program Partners",
+      "URL": "https://braincanada.ca/research/program-partners/",
+      "author": [
+        {
+          "literal": "braincanada.ca"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "braininitiative_brain_20_report_cells_circuits_2026": {
+      "id": "braininitiative_brain_20_report_cells_circuits_2026",
+      "type": "webpage",
+      "title": "Brain 20 Report Cells Circuits Toward Cures",
+      "URL": "https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-report-cells-circuits-toward-cures",
+      "author": [
+        {
+          "literal": "braininitiative.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "braininitiative_brain_initiative_cell_atlas_ne_2026": {
+      "id": "braininitiative_brain_initiative_cell_atlas_ne_2026",
+      "type": "webpage",
+      "title": "Brain Initiative Cell Atlas Network",
+      "URL": "https://braininitiative.nih.gov/research/tools-and-technologies-brain-cells-and-circuits/brain-initiative-cell-atlas-network",
+      "author": [
+        {
+          "literal": "braininitiative.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "businesswire_synchron_raises_75m_series_c_l_2026": {
+      "id": "businesswire_synchron_raises_75m_series_c_l_2026",
+      "type": "webpage",
+      "title": "Synchron Raises 75M Series C Led By Arch Venture Partners To Advance Endovascular Brain Computer Interface",
+      "URL": "https://www.businesswire.com/news/home/20221213006045/en/Synchron-Raises-75M-Series-C-Led-by-ARCH-Venture-Partners-to-Advance-Endovascular-Brain-Computer-Interface",
+      "author": [
+        {
+          "literal": "businesswire.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "caltech_caltech_led_wormbase_project_a_2026": {
+      "id": "caltech_caltech_led_wormbase_project_a_2026",
+      "type": "webpage",
+      "title": "Caltech Led Wormbase Project Awarded 148 Million Nih 40250",
+      "URL": "https://www.caltech.edu/about/news/caltech-led-wormbase-project-awarded-148-million-nih-40250",
+      "author": [
+        {
+          "literal": "caltech.edu"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "canadianbrain_page_2026": {
+      "id": "canadianbrain_page_2026",
+      "type": "webpage",
+      "title": "canadianbrain.ca",
+      "URL": "https://canadianbrain.ca/",
+      "author": [
+        {
+          "literal": "canadianbrain.ca"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cell_s0092_8674_19_30842_6_2026": {
+      "id": "cell_s0092_8674_19_30842_6_2026",
+      "type": "webpage",
+      "title": "S0092 8674(19)30842 6",
+      "URL": "https://www.cell.com/cell/fulltext/S0092-8674(19)30842-6",
+      "author": [
+        {
+          "literal": "cell.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cell_s0896_6273_15_00760_6_2026": {
+      "id": "cell_s0896_6273_15_00760_6_2026",
+      "type": "webpage",
+      "title": "S0896 6273(15)00760 6",
+      "URL": "https://www.cell.com/neuron/fulltext/S0896-6273(15)00760-6",
+      "author": [
+        {
+          "literal": "cell.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cell_showpdf_2026": {
+      "id": "cell_showpdf_2026",
+      "type": "webpage",
+      "title": "Showpdf",
+      "URL": "https://www.cell.com/action/showPdf?pii=S2211-1247%2819%2931295-1",
+      "author": [
+        {
+          "literal": "cell.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cell_showpdf_2026a": {
+      "id": "cell_showpdf_2026a",
+      "type": "webpage",
+      "title": "Showpdf",
+      "URL": "https://www.cell.com/action/showPdf?pii=S0092-8674%2819%2930842-6",
+      "author": [
+        {
+          "literal": "cell.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "childmind_child_mind_institute_receives_2026": {
+      "id": "childmind_child_mind_institute_receives_2026",
+      "type": "webpage",
+      "title": "Child Mind Institute Receives 55 Million Stavros Niarchos Foundation Grant For Global Childrens Mental Health",
+      "URL": "https://childmind.org/blog/child-mind-institute-receives-55-million-stavros-niarchos-foundation-grant-for-global-childrens-mental-health/",
+      "author": [
+        {
+          "literal": "childmind.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "compneuro_semantic_pointer_architecture_2026": {
+      "id": "compneuro_semantic_pointer_architecture_2026",
+      "type": "webpage",
+      "title": "Semantic Pointer Architecture.Html",
+      "URL": "https://compneuro.uwaterloo.ca/research/spa/semantic-pointer-architecture.html",
+      "author": [
+        {
+          "literal": "compneuro.uwaterloo.ca"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cpu_monkey_igpu_apple_m2_ultra_76_core_2026": {
+      "id": "cpu_monkey_igpu_apple_m2_ultra_76_core_2026",
+      "type": "webpage",
+      "title": "Igpu Apple M2 Ultra 76 Core",
+      "URL": "https://www.cpu-monkey.com/en/igpu-apple_m2_ultra_76_core",
+      "author": [
+        {
+          "literal": "cpu-monkey.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "cpu_monkey_igpu_apple_m4_pro_16_core_2026": {
+      "id": "cpu_monkey_igpu_apple_m4_pro_16_core_2026",
+      "type": "webpage",
+      "title": "Igpu Apple M4 Pro 16 Core",
+      "URL": "https://www.cpu-monkey.com/en/igpu-apple_m4_pro_16_core",
+      "author": [
+        {
+          "literal": "cpu-monkey.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "developingconnectome_project_2026": {
+      "id": "developingconnectome_project_2026",
+      "type": "webpage",
+      "title": "Project",
+      "URL": "https://www.developingconnectome.org/project/#:~:text=Currently%2C%20the%20connectome%20of%20the%20mature%20adult%20brain%20is%20in%20progress",
+      "author": [
+        {
+          "literal": "developingconnectome.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "dl_1978542_1978559_2026": {
+      "id": "dl_1978542_1978559_2026",
+      "type": "webpage",
+      "title": "1978542.1978559",
+      "URL": "https://dl.acm.org/doi/abs/10.1145/1978542.1978559",
+      "author": [
+        {
+          "literal": "dl.acm.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "doi_sici_1098_1063_1996_6_2_3c149_2026": {
+      "id": "doi_sici_1098_1063_1996_6_2_3c149_2026",
+      "type": "webpage",
+      "title": "(Sici)1098 1063(1996)6:2%3C149::Aid Hipo6%3E3.0.Co",
+      "URL": "https://doi.org/10.1002/(SICI)1098-1063(1996)6:2%3C149::AID-HIPO6%3E3.0.CO",
+      "DOI": "10.1002/(SICI)1098-1063(1996)6:2%3C149::AID-HIPO6%3E3.0.CO",
+      "author": [
+        {
+          "literal": "doi.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "elifesciences_40042_2026": {
+      "id": "elifesciences_40042_2026",
+      "type": "webpage",
+      "title": "40042",
+      "URL": "https://elifesciences.org/articles/40042",
+      "author": [
+        {
+          "literal": "elifesciences.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "elifesciences_57443_2026": {
+      "id": "elifesciences_57443_2026",
+      "type": "webpage",
+      "title": "57443",
+      "URL": "https://elifesciences.org/articles/57443#table2",
+      "author": [
+        {
+          "literal": "elifesciences.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "elifesciences_62451_2026": {
+      "id": "elifesciences_62451_2026",
+      "type": "webpage",
+      "title": "62451",
+      "URL": "https://elifesciences.org/articles/62451",
+      "author": [
+        {
+          "literal": "elifesciences.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "en_1996_summer_olympics_2026": {
+      "id": "en_1996_summer_olympics_2026",
+      "type": "webpage",
+      "title": "1996 Summer Olympics",
+      "URL": "https://en.wikipedia.org/wiki/1996_Summer_Olympics#:~:text=Development%20and%20preparation-",
+      "author": [
+        {
+          "literal": "en.wikipedia.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "en_allen_brain_atlas_2026": {
+      "id": "en_allen_brain_atlas_2026",
+      "type": "webpage",
+      "title": "Allen Brain Atlas",
+      "URL": "https://en.wikipedia.org/wiki/Allen_Brain_Atlas",
+      "author": [
+        {
+          "literal": "en.wikipedia.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "en_lockheed_martin_f_22_raptor_2026": {
+      "id": "en_lockheed_martin_f_22_raptor_2026",
+      "type": "webpage",
+      "title": "Lockheed Martin F 22 Raptor",
+      "URL": "https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#:~:text=As%20production%20wound%20down%20in",
+      "author": [
+        {
+          "literal": "en.wikipedia.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "epfl_frequently_asked_questions_2026": {
+      "id": "epfl_frequently_asked_questions_2026",
+      "type": "webpage",
+      "title": "Frequently Asked Questions",
+      "URL": "https://www.epfl.ch/research/domains/bluebrain/frequently_asked_questions/",
+      "author": [
+        {
+          "literal": "epfl.ch"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      },
+      "note": "no. 8, not counting HBP-sourced funding"
+    },
+    "epfl_frequently_asked_questions_2026a": {
+      "id": "epfl_frequently_asked_questions_2026a",
+      "type": "webpage",
+      "title": "Frequently Asked Questions",
+      "URL": "https://www.epfl.ch/research/domains/bluebrain/frequently_asked_questions/#:~:text=The%20Blue%20Brain%20Project%20(BBP",
+      "author": [
+        {
+          "literal": "epfl.ch"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "export_1709_02974v3_pdf_2026": {
+      "id": "export_1709_02974v3_pdf_2026",
+      "type": "webpage",
+      "title": "1709.02974V3.Pdf",
+      "URL": "https://export.arxiv.org/pdf/1709.02974v3.pdf",
+      "author": [
+        {
+          "literal": "export.arxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "fahey2019": {
+      "id": "fahey2019",
+      "type": "article",
+      "title": "A global map of orientation tuning in mouse visual cortex",
+      "URL": "https://doi.org/10.1101/745323",
+      "DOI": "10.1101/745323",
+      "author": [
+        {
+          "family": "Fahey",
+          "given": "Paul G."
+        },
+        {
+          "family": "Muhammad",
+          "given": "Taliah"
+        },
+        {
+          "family": "Smith",
+          "given": "Cameron"
+        },
+        {
+          "family": "Froudarakis",
+          "given": "Emmanouil"
+        },
+        {
+          "family": "Cobos",
+          "given": "Erick"
+        },
+        {
+          "family": "Fu",
+          "given": "Jiakun"
+        },
+        {
+          "family": "Walker",
+          "given": "Edgar Y."
+        },
+        {
+          "family": "Yatsenko",
+          "given": "Dimitri"
+        },
+        {
+          "family": "Sinz",
+          "given": "Fabian H."
+        },
+        {
+          "family": "Reimer",
+          "given": "Jacob"
+        },
+        {
+          "family": "Tolias",
+          "given": "Andreas S."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            23
+          ]
+        ]
+      }
+    },
+    "frontiersin_10_3389_2026": {
+      "id": "frontiersin_10_3389_2026",
+      "type": "webpage",
+      "title": "10.3389",
+      "URL": "https://www.frontiersin.org/journals/ophthalmology/articles/10.3389",
+      "author": [
+        {
+          "literal": "frontiersin.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "frontiersin_articles_2026": {
+      "id": "frontiersin_articles_2026",
+      "type": "webpage",
+      "title": "Articles",
+      "URL": "https://www.frontiersin.org/journals/neuroinformatics/articles/",
+      "author": [
+        {
+          "literal": "frontiersin.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "gardner2021": {
+      "id": "gardner2021",
+      "type": "article",
+      "title": "Toroidal topology of population activity in grid cells",
+      "URL": "https://doi.org/10.1101/2021.02.25.432776",
+      "DOI": "10.1101/2021.02.25.432776",
+      "author": [
+        {
+          "family": "Gardner",
+          "given": "Richard J."
+        },
+        {
+          "family": "Hermansen",
+          "given": "Erik"
+        },
+        {
+          "family": "Pachitariu",
+          "given": "Marius"
+        },
+        {
+          "family": "Burak",
+          "given": "Yoram"
+        },
+        {
+          "family": "Baas",
+          "given": "Nils A."
+        },
+        {
+          "family": "Dunn",
+          "given": "Benjamin A."
+        },
+        {
+          "family": "Moser",
+          "given": "May-Britt"
+        },
+        {
+          "family": "Moser",
+          "given": "Edvard I."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    "giovannucci2017": {
+      "id": "giovannucci2017",
+      "type": "article",
+      "title": "OnACID: Online Analysis of Calcium Imaging Data in Real Time*",
+      "URL": "https://doi.org/10.1101/193383",
+      "DOI": "10.1101/193383",
+      "author": [
+        {
+          "family": "Giovannucci",
+          "given": "Andrea"
+        },
+        {
+          "family": "Friedrich",
+          "given": "Johannes"
+        },
+        {
+          "family": "Kaufman",
+          "given": "Matt"
+        },
+        {
+          "family": "Churchland",
+          "given": "Anne"
+        },
+        {
+          "family": "Chklovskii",
+          "given": "Dmitri"
+        },
+        {
+          "family": "Paninski",
+          "given": "Liam"
+        },
+        {
+          "family": "Pnevmatikakis",
+          "given": "Eftychios A."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            2
+          ]
+        ]
+      }
+    },
+    "github_cerebellar_atlases_2026": {
+      "id": "github_cerebellar_atlases_2026",
+      "type": "webpage",
+      "title": "Cerebellar Atlases",
+      "URL": "https://github.com/DiedrichsenLab/cerebellar_atlases",
+      "author": [
+        {
+          "literal": "github.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "globalventuring_darpa_helps_implant_10m_in_syn_2026": {
+      "id": "globalventuring_darpa_helps_implant_10m_in_syn_2026",
+      "type": "webpage",
+      "title": "Darpa Helps Implant 10M In Synchron",
+      "URL": "https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/",
+      "author": [
+        {
+          "literal": "globalventuring.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "hal_peer_stage2_10_1038_252fnn_286_2026": {
+      "id": "hal_peer_stage2_10_1038_252fnn_286_2026",
+      "type": "webpage",
+      "title": "Peer Stage2 10.1038%252Fnn.2868.Pdf",
+      "URL": "https://hal.science/hal-00658165/file/PEER_stage2_10.1038%252Fnn.2868.pdf",
+      "author": [
+        {
+          "literal": "hal.science"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "han2018": {
+      "id": "han2018",
+      "type": "article",
+      "title": "Cellular organization of visual information processing channels in the mouse visual cortex",
+      "URL": "https://doi.org/10.1101/441014",
+      "DOI": "10.1101/441014",
+      "author": [
+        {
+          "family": "Han",
+          "given": "Xu"
+        },
+        {
+          "family": "Vermaercke",
+          "given": "Ben"
+        },
+        {
+          "family": "Bonin",
+          "given": "Vincent"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            12
+          ]
+        ]
+      }
+    },
+    "humanbrainproject_human_brain_project_ec_grants_2026": {
+      "id": "humanbrainproject_human_brain_project_ec_grants_2026",
+      "type": "webpage",
+      "title": "Human Brain Project Ec Grants",
+      "URL": "https://www.humanbrainproject.eu/en/about-hbp/project-structure/human-brain-project-ec-grants/",
+      "author": [
+        {
+          "literal": "humanbrainproject.eu"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "humanconnectome_page_2026": {
+      "id": "humanconnectome_page_2026",
+      "type": "webpage",
+      "title": "humanconnectome.org",
+      "URL": "https://www.humanconnectome.org/",
+      "author": [
+        {
+          "literal": "humanconnectome.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "ieeexplore_6055294_2026": {
+      "id": "ieeexplore_6055294_2026",
+      "type": "webpage",
+      "title": "6055294",
+      "URL": "https://ieeexplore.ieee.org/document/6055294",
+      "author": [
+        {
+          "literal": "ieeexplore.ieee.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "janelia_manc_connectome_2026": {
+      "id": "janelia_manc_connectome_2026",
+      "type": "webpage",
+      "title": "Manc Connectome",
+      "URL": "https://www.janelia.org/project-team/flyem/manc-connectome",
+      "author": [
+        {
+          "literal": "janelia.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "jiang2024": {
+      "id": "jiang2024",
+      "type": "article",
+      "title": "ActSort: An active-learning accelerated cell sorting algorithm for large-scale calcium imaging datasets",
+      "URL": "https://doi.org/10.1101/2024.08.21.609011",
+      "DOI": "10.1101/2024.08.21.609011",
+      "author": [
+        {
+          "family": "Jiang",
+          "given": "Yiqi"
+        },
+        {
+          "family": "Akengin",
+          "given": "Hakki O."
+        },
+        {
+          "family": "Zhou",
+          "given": "Ji"
+        },
+        {
+          "family": "Aslihak",
+          "given": "Mehmet A."
+        },
+        {
+          "family": "Li",
+          "given": "Yang"
+        },
+        {
+          "family": "Hernandez",
+          "given": "Oscar"
+        },
+        {
+          "family": "Ebrahimi",
+          "given": "Sadegh"
+        },
+        {
+          "family": "Zhang",
+          "given": "Yanping"
+        },
+        {
+          "family": "Inan",
+          "given": "Hakan"
+        },
+        {
+          "family": "Jaidar",
+          "given": "Omar"
+        },
+        {
+          "family": "Miranda",
+          "given": "Christopher"
+        },
+        {
+          "family": "Dinc",
+          "given": "Fatih"
+        },
+        {
+          "family": "Blanco-Pozo",
+          "given": "Marta"
+        },
+        {
+          "family": "Schnitzer",
+          "given": "Mark J."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            22
+          ]
+        ]
+      }
+    },
+    "journals_file_2026": {
+      "id": "journals_file_2026",
+      "type": "webpage",
+      "title": "File",
+      "URL": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone",
+      "author": [
+        {
+          "literal": "journals.plos.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "jstor_1684192_2026": {
+      "id": "jstor_1684192_2026",
+      "type": "webpage",
+      "title": "1684192",
+      "URL": "https://www.jstor.org/stable/1684192?saml_data=eyJzYW1sVG9rZW4iOiI3NjAwODQwMy01N2YyLTRmMmYtYjRkNi0wNDgyMTI1OTBiZmIiLCJpbnN0aXR1dGlvbklkcyI6WyJjOTcyMDRmZC04ZGZhLTQ1MDMtODA4Yy0xMzc0OGUzNzJmYmIiXX0",
+      "author": [
+        {
+          "literal": "jstor.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "kanter2024": {
+      "id": "kanter2024",
+      "type": "article",
+      "title": "Event structure sculpts neural population dynamics in the lateral entorhinal cortex",
+      "URL": "https://doi.org/10.1101/2024.06.17.599402",
+      "DOI": "10.1101/2024.06.17.599402",
+      "author": [
+        {
+          "family": "Kanter",
+          "given": "Benjamin R."
+        },
+        {
+          "family": "Lykken",
+          "given": "Christine M."
+        },
+        {
+          "family": "Moser",
+          "given": "May-Britt"
+        },
+        {
+          "family": "Moser",
+          "given": "Edvard I."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            18
+          ]
+        ]
+      }
+    },
+    "ki_circuits_controlling_action_an_2026": {
+      "id": "ki_circuits_controlling_action_an_2026",
+      "type": "webpage",
+      "title": "Circuits Controlling Action And Their Evolution Sten Grillner Group",
+      "URL": "https://ki.se/en/research/research-areas-centres-and-networks/research-groups/circuits-controlling-action-and-their-evolution-sten-grillner-group",
+      "author": [
+        {
+          "literal": "ki.se"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "kobayashi2018": {
+      "id": "kobayashi2018",
+      "type": "article",
+      "title": "Wide and Deep Imaging of Neuronal Activities by a Wearable NeuroImager Reveals Premotor Activity in the Whole Motor Cortex",
+      "URL": "https://doi.org/10.1101/434035",
+      "DOI": "10.1101/434035",
+      "author": [
+        {
+          "family": "Kobayashi",
+          "given": "Takuma"
+        },
+        {
+          "family": "Islam",
+          "given": "Tanvir"
+        },
+        {
+          "family": "Sato",
+          "given": "Masaaki"
+        },
+        {
+          "family": "Ohkura",
+          "given": "Masamichi"
+        },
+        {
+          "family": "Nakai",
+          "given": "Junichi"
+        },
+        {
+          "family": "Hayashi",
+          "given": "Yasunori"
+        },
+        {
+          "family": "Okamoto",
+          "given": "Hitoshi"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            3
+          ]
+        ]
+      }
+    },
+    "lasers_faqs_2026": {
+      "id": "lasers_faqs_2026",
+      "type": "webpage",
+      "title": "Faqs",
+      "URL": "https://lasers.llnl.gov/about/faqs#:~:text=and%20economic%20competitiveness.-",
+      "author": [
+        {
+          "literal": "lasers.llnl.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "link_bf00231355_2026": {
+      "id": "link_bf00231355_2026",
+      "type": "webpage",
+      "title": "Bf00231355",
+      "URL": "https://link.springer.com/article/10.1007/BF00231355",
+      "author": [
+        {
+          "literal": "link.springer.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "liu2020": {
+      "id": "liu2020",
+      "type": "article",
+      "title": "Accurate localization of linear probe electrodes across multiple brains",
+      "URL": "https://doi.org/10.1101/2020.02.25.965210",
+      "DOI": "10.1101/2020.02.25.965210",
+      "author": [
+        {
+          "family": "Liu",
+          "given": "Liu D"
+        },
+        {
+          "family": "Chen",
+          "given": "Susu"
+        },
+        {
+          "family": "Economo",
+          "given": "Michael N"
+        },
+        {
+          "family": "Li",
+          "given": "Nuo"
+        },
+        {
+          "family": "Svoboda",
+          "given": "Karel"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            26
+          ]
+        ]
+      }
+    },
+    "liu2021": {
+      "id": "liu2021",
+      "type": "article",
+      "title": "Single neuron firing cascades underlie global spontaneous brain events",
+      "URL": "https://doi.org/10.1101/2021.01.22.427798",
+      "DOI": "10.1101/2021.01.22.427798",
+      "author": [
+        {
+          "family": "Liu",
+          "given": "Xiao"
+        },
+        {
+          "family": "Leopold",
+          "given": "David A."
+        },
+        {
+          "family": "Yang",
+          "given": "Yifan"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            24
+          ]
+        ]
+      }
+    },
+    "macdowell2023": {
+      "id": "macdowell2023",
+      "type": "article",
+      "title": "Multiplexed Subspaces Route Neural Activity Across Brain-wide Networks",
+      "URL": "https://doi.org/10.1101/2023.02.08.527772",
+      "DOI": "10.1101/2023.02.08.527772",
+      "author": [
+        {
+          "family": "MacDowell",
+          "given": "Camden J."
+        },
+        {
+          "family": "Libby",
+          "given": "Alexandra"
+        },
+        {
+          "family": "Jahn",
+          "given": "Caroline I."
+        },
+        {
+          "family": "Tafazoli",
+          "given": "Sina"
+        },
+        {
+          "family": "Buschman",
+          "given": "Timothy J."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    "manley2024": {
+      "id": "manley2024",
+      "type": "article",
+      "title": "Simultaneous, cortex-wide and cellular-resolution neuronal population dynamics reveal an unbounded scaling of dimensionality with neuron number",
+      "URL": "https://doi.org/10.1101/2024.01.15.575721",
+      "DOI": "10.1101/2024.01.15.575721",
+      "author": [
+        {
+          "family": "Manley",
+          "given": "Jason"
+        },
+        {
+          "family": "Demas",
+          "given": "Jeffrey"
+        },
+        {
+          "family": "Kim",
+          "given": "Hyewon"
+        },
+        {
+          "family": "Martínez Traub",
+          "given": "Francisca"
+        },
+        {
+          "family": "Vaziri",
+          "given": "Alipasha"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            16
+          ]
+        ]
+      }
+    },
+    "medrxiv_2020_10_07_20207704v1_2026": {
+      "id": "medrxiv_2020_10_07_20207704v1_2026",
+      "type": "webpage",
+      "title": "2020.10.07.20207704V1",
+      "URL": "https://www.medrxiv.org/content/10.1101/2020.10.07.20207704v1?utm_source=chatgpt.com",
+      "author": [
+        {
+          "literal": "medrxiv.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "melin2023": {
+      "id": "melin2023",
+      "type": "article",
+      "title": "Large scale, simultaneous, chronic neural recordings from multiple brain areas",
+      "URL": "https://doi.org/10.1101/2023.12.22.572441",
+      "DOI": "10.1101/2023.12.22.572441",
+      "author": [
+        {
+          "family": "Melin",
+          "given": "Maxwell D"
+        },
+        {
+          "family": "Khanal",
+          "given": "Anup"
+        },
+        {
+          "family": "Vasquez",
+          "given": "Marvin"
+        },
+        {
+          "family": "Ryan",
+          "given": "Michael B"
+        },
+        {
+          "family": "Churchland",
+          "given": "Anne K"
+        },
+        {
+          "family": "Couto",
+          "given": "Joao"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            23
+          ]
+        ]
+      }
+    },
+    "molecularautism_s13229_015_0058_4_2026": {
+      "id": "molecularautism_s13229_015_0058_4_2026",
+      "type": "webpage",
+      "title": "S13229 015 0058 4",
+      "URL": "https://molecularautism.biomedcentral.com/articles/10.1186/s13229-015-0058-4",
+      "author": [
+        {
+          "literal": "molecularautism.biomedcentral.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "musk2019": {
+      "id": "musk2019",
+      "type": "article",
+      "title": "An integrated brain-machine interface platform with thousands of channels",
+      "URL": "https://doi.org/10.1101/703801",
+      "DOI": "10.1101/703801",
+      "author": [
+        {
+          "family": "Musk",
+          "given": "Elon"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      }
+    },
+    "nature_236207a0_2026": {
+      "id": "nature_236207a0_2026",
+      "type": "webpage",
+      "title": "236207A0",
+      "URL": "https://www.nature.com/articles/236207a0",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_d41586_024_03044_7_2026": {
+      "id": "nature_d41586_024_03044_7_2026",
+      "type": "webpage",
+      "title": "D41586 024 03044 7",
+      "URL": "https://www.nature.com/articles/d41586-024-03044-7",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_mp201792_2026": {
+      "id": "nature_mp201792_2026",
+      "type": "webpage",
+      "title": "Mp201792",
+      "URL": "https://www.nature.com/articles/mp201792",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_nature12450_2026": {
+      "id": "nature_nature12450_2026",
+      "type": "webpage",
+      "title": "Nature12450",
+      "URL": "https://www.nature.com/articles/nature12450",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_nature13186_2026": {
+      "id": "nature_nature13186_2026",
+      "type": "webpage",
+      "title": "Nature13186",
+      "URL": "https://www.nature.com/articles/nature13186",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_s41398_024_02741_1_2026": {
+      "id": "nature_s41398_024_02741_1_2026",
+      "type": "webpage",
+      "title": "S41398 024 02741 1",
+      "URL": "https://www.nature.com/articles/s41398-024-02741-1",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_s41467_017_01285_x_2026": {
+      "id": "nature_s41467_017_01285_x_2026",
+      "type": "webpage",
+      "title": "S41467 017 01285 X",
+      "URL": "https://www.nature.com/articles/s41467-017-01285-x",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_s41587_021_00986_5_2026": {
+      "id": "nature_s41587_021_00986_5_2026",
+      "type": "webpage",
+      "title": "S41587 021 00986 5",
+      "URL": "https://www.nature.com/articles/s41587-021-00986-5",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_s41592_023_01796_0_2026": {
+      "id": "nature_s41592_023_01796_0_2026",
+      "type": "webpage",
+      "title": "S41592 023 01796 0",
+      "URL": "https://www.nature.com/articles/s41592-023-01796-0",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nature_s41598_018_37905_9_2026": {
+      "id": "nature_s41598_018_37905_9_2026",
+      "type": "webpage",
+      "title": "S41598 018 37905 9",
+      "URL": "https://www.nature.com/articles/s41598-018-37905-9",
+      "author": [
+        {
+          "literal": "nature.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "nbauer2023": {
+      "id": "nbauer2023",
+      "type": "article",
+      "title": "Mesoscale volumetric light field (MesoLF) imaging of neuroactivity across cortical areas at 18 Hz",
+      "URL": "https://doi.org/10.1101/2023.03.20.533476",
+      "DOI": "10.1101/2023.03.20.533476",
+      "author": [
+        {
+          "family": "Nöbauer",
+          "given": "Tobias"
+        },
+        {
+          "family": "Zhang",
+          "given": "Yuanlong"
+        },
+        {
+          "family": "Kim",
+          "given": "Hyewon"
+        },
+        {
+          "family": "Vaziri",
+          "given": "Alipasha"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            21
+          ]
+        ]
+      }
+    },
+    "nih_scientists_build_largest_maps_2026": {
+      "id": "nih_scientists_build_largest_maps_2026",
+      "type": "webpage",
+      "title": "Scientists Build Largest Maps Date Cells Human Brain",
+      "URL": "https://www.nih.gov/news-events/nih-research-matters/scientists-build-largest-maps-date-cells-human-brain",
+      "author": [
+        {
+          "literal": "nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "oboro_the_madhouse_einsteins_brain_p_2026": {
+      "id": "oboro_the_madhouse_einsteins_brain_p_2026",
+      "type": "webpage",
+      "title": "The Madhouse Einsteins Brain Project",
+      "URL": "https://www.oboro.net/en/exhibition/the-madhouse-einsteins-brain-project/",
+      "author": [
+        {
+          "literal": "oboro.net"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "onlinelibrary_hbm_22185_2026": {
+      "id": "onlinelibrary_hbm_22185_2026",
+      "type": "webpage",
+      "title": "Hbm.22185",
+      "URL": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.22185",
+      "author": [
+        {
+          "literal": "onlinelibrary.wiley.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pachitariu2017": {
+      "id": "pachitariu2017",
+      "type": "article",
+      "title": "Robustness of spike deconvolution for calcium imaging of neural spiking",
+      "URL": "https://doi.org/10.1101/156786",
+      "DOI": "10.1101/156786",
+      "author": [
+        {
+          "family": "Pachitariu",
+          "given": "Marius"
+        },
+        {
+          "family": "Stringer",
+          "given": "Carsen"
+        },
+        {
+          "family": "Harris",
+          "given": "Kenneth D."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            27
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026": {
+      "id": "pdf_main_pdf_2026",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811921X0002X/1-s2.0-S1053811920311800/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJHMEUCIQDVDNRk3JgBr59wMY8W4QelQrZY%2FKTuyPcj9UHGYeTxDQIgCDUhd%2Bthwpu6o1o3A%2Fe%2FXa0nzrjlkym3%2BNZLpmmI1%2BYqvAUI1f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDB4EQ9Rl%2B%2F%2FcUcjbSSqQBcBstVSuNMZ0IgccKTLYeXuae7zpFQKTKjCas8D8W1Z9xT8mA0B%2B891y7%2FQcyxuJEPaiFGMOJT4LcCsKlxgDRSUre59fhIP0oWMZjTI2jHd9JFLQW0AndQaFhgFloF1JWEyZ8zSgXn7M9w387YI3xTDh6SdSZQUTOVHNN6MGC%2BVmqcT6o%2F%2BPt9TL%2FwJRmRu4Lz3Uqrtm7fARWtqRWLTNpZ3aC9Yj86kXXS9wmL0ua9HqR0MAl4o8mPIdRTscFmhvuz66soEYn9nmWMg6LE9zBslwHphlRohtNFjShaO3YhTbp64eQTU0%2FW1G8cPwT4bvvcY%2FXCbNH%2Fvkidhrtwl7TGgTF4EfIo%2Fppd9tQvewh5kojtYKXZ7HGaXmztCB%2BWmfF58oqTo3Ta%2FS%2BNS8qzO%2BshUn9CPzPND2KoLbuGqmPdHK1BcTw%2FDPfOImKra4VFiRkKxK9teng8RYjbf5Lh4lAWxayFh6D%2F8WfIyhlEaWvQ0O5jUc5lpJD5qd0kNx98aA9zq5Nlsrje8G1VzMMEVq5OXl7H8AxhOGPfM0YCP%2BI2MBHj1v4VVliwsQLEH9dkHCP%2FRhazVP%2FsaamQPcVnDcrCMMCBidX4NvQ1ttz8biDZ9r0ajdTkzWEYiIGaicflmkYsjQeO6izB%2Bj4ssRMXH00vbIwpqF9foYK%2FGhPG2zcaegkWSOTME8qJrtWM23c3r7%2BF1247WU7JNaCTM1vNxYCyV3NQC6KI2hJJfNl7a6VBmLQIXsBXF0C5GQh2U1UL2JK8OaqWz8QSAxedgG0pVi74Q6R8uc8iZcO2jPFwpj%2BmVQVbZ6LF1wLj5xYggP0SN%2BTDz84uTZyN5zCi1GktEp0GUcgpvUtIR0yH4xNmBk3avzMIuLh7oGOrEB%2FVJZcvMMuiQ3J4fTsXWTjT4AoT7gVFRGf%2Brl0piiuDRXUjjLzJ6M7gDz77Ah%2B9kOKQKMlrT0l3Yn%2F%2BGSABb8UC%2BmKYQpPqKAISMhn8fUghS8SeqspLEr6FBCuqpIjea7Q6xY7cuDokpZMNBHOWFwdNFq2CDY6qRr8nB32bE3kYqw2OeX8Y81U3ilXGSO4cOHa3JiKSKLzTNei0gi4xiOxwNUnGNxYZaVSgXtWTxafVUo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241123T121537Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYU36RWRTV%2F20241123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=956d79856f1b0c8b042fe4363aaec22e4f52ac4ba18cd59aae58ae0fe5cae673&hash=ed7599726d5cefac9a2b71466c8c18d43033d064f42e7bdea8a732e936e1944c&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811920311800&tid=spdf-0abda4d5-3836-4ff0-ae87-532592adf11d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a54565e5b005f06&rr=8e7115f0c8c6cd11&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026a": {
+      "id": "pdf_main_pdf_2026a",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/272508/1-s2.0-S1053811913X00151/1-s2.0-S1053811913004011/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJHMEUCIGVlYmSYhmPAJnvM24fdWG%2FF8DuRQcx8aJtAU0QazKkKAiEApEcuRiIULXh%2FLHk%2FURErIGHf70WCIbo%2FE1EiSvKHZoQqvAUIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDECO2Q7ah1PRYqyv1iqQBY96ESHAMlUWYODxH3xk%2FbWtHQkEECeF3ixcps5sbeuPW%2B4Ikgw27vyKTf7yLRzwgIhFE5RnXW2Kp1HC8FUUowE8Jf8jLwg5f6sNq9eG3ixJpVwN%2FzjeknGqrvqOZ64guhUOiC0DG698GPyybPhn6mlhTn8jXN0Q9dpXlqyrOz%2FZUkBJoOZb3ErX5FJDTfzjjCLztORulWgbU5mQ0nDTra9HvzlbzG%2FB74SeMcXb7qlKH6Nmn00v73Ieze9Mw9A2YtJtROk7EuBvxGIXWxsMMTfJcRHlwIbvSmhBzDBzHNogwWF6Gg1XRC%2BS4mS%2B3pufEwO0DRtUX9QAc0CabW9FVt17MtTyDTIwWjdgmMSUcvrqZoO3FJ23%2F5ueAKZFUuzRSgbt3G%2BZ20n0leu5CPOx24y0HdrBNBSOa%2B9vA0LngkVwdMfjdPcZq%2FK0CSMJpJzkNA6yUSHOeGmS6jLecjXgdgb4Zkv7B8zmfbCtpmguBRIB1dSI1ueJ9wwfW2VDEEOrNvcgHmsroJYH2qsvTyzfRkkeRjZajxnI%2BxZqgP8vPymTQ0XYCR1kG9YtaQx4qi1SRPDoAtm0Px8fdMhuyJD0XuKY832R0cexX3oeyjfFoQKva%2FUwG4fVRYTxkkqtOm%2Fh6uwfUiclqDZtPmBFLAz256iykypuozfPKuqUR7OdFbh8re0Ru9wanunolpchP4bWfl9laylpql1fPx%2FOgLqR05G7oAduXhLYHeCEkBh4rI%2BgXquvoQRTr83fNXcH2ysAO4vLb03Q%2F%2Bo2RUUXjc4%2BM2K%2FjUYmri2KEfN6%2BWsGObtFrtJwVKaMPqKcdXnDbfQ1IBL5woNq7CerSFr%2FB64r5kS6SUeosVKcI8E4XA12crKuMK2Sg7oGOrEBt7Vlg4zDf8HxHIeCppiTNxezDp55J0lFN2TpPvAL%2BCRC94zHf40GBNKnAc56jnoQaP%2BKpm%2BVyBA1%2BBWY6wB4IUpXyYF9h4ZvpBMa3u7VK1haFwRzMiPVzbxaYlenKTofqdoG9B65l3b7FplZ8hB3RMvOVbsgrsNDrGOAPtmZtuuDnxoTgqZuH1GSV6YlREDOOZd1WMD6JYIlYELZpvBkuTut8h4cS0kyCYAY50iVNSNN&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T181522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQDRA6VN6%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2c8c394d4fcb26b7ae15a1024788e8b7e499dacb52a0af49c68804835f4ead27&hash=0b48d3fff68b91ef53ab26b5107864689617293eb3131312775ed00845e97c0d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1053811913004011&tid=spdf-cfb17129-0a98-493b-92b8-af1d83fa1439&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060a595e5756&rr=8e6ae7883f429475&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026b": {
+      "id": "pdf_main_pdf_2026b",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/272099/1-s2.0-S0960982210X00240/1-s2.0-S0960982210015228/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJIMEYCIQCI8F7ENsNEnlXPrDMSQmkXW3%2Bm%2FHiL55%2FXO%2FhtGwWIDwIhAIWq5a949ZOBCztTTh8CaM4UfiL0zgj6Z4XGOKcNBF66KrwFCMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgwAELHAY0ik52CqbLQqkAVDvocQkYKAsTxJppcHKxcJg%2FmNAV2WbmnQ5UHQct4T422juSu5i%2BRYK6sBZgNU21%2Fxv7JHQdGT%2Bz9HyigXkvVrZpsiOV4YP%2F8EONaAChld3zrEB1Vzxo4Vy8zEQPYO6kB2o8P3KYs3GqenSlpT0S1WRsDWP4L8ikPXIRH5xBuwh%2BEb4OPfGtLGfG1wLSCyNFa4M9m%2FSZ%2BiJE8qpc4G2vUOvWBUO0RcuVi4PgYG3uNV%2FPWZE8xUaUoJqNWoiWfk%2BhdpdxgWPdMOgReysjZVyJFASWj3S7Sj0r3EJ8G97wpzF9kdptR2yo1N4f%2FZvvBSuVvrdm06upHaL2r%2BZqr1BHAWthBNAe3k0pTw4TtxHK%2BjzQkeIDGotqfgqH91ZPY4agF4xdnZGFyBzf5YKHXGQdTqAHGg8WoQveN4BE3prHURnvE4oW7osXq2P1a2REZb09VJBpcQaxwEdE5JuCrmTEC6QL29y%2FWSN67YElcxb2sR4gafKPhd2MupCCDePCnKrS76Xy9oS4%2FDQaCWAKXUGyBVr9GGWiHIgtfWHv%2F%2BqCtgWOGeUPCzR8dMF%2FXBAiIu30uN0LfHmxZnpvNXtE6lvKCaDbtX9eRtT6Z6YQ6yf0l6%2Fz9TviyXObOVNw0N4qBYc7TZQ6EMhDzAK4oeZNpajwW0zZGmzNsG7BZPrhGuH3Pqgz37GnJw4RfkH8EE6n2elQJ0yvAjzCR%2B7YZWj%2Bp5RkLYk1Q5xw0OI0MH2X2EwxmG%2FQgv%2FyO59Ut0DW5utYhNP%2BpzgsyYNbMCfJtaSv6J4bXtbpewGITc8WYT6sHldRHUQlzHFOGNe7RwVwMkItJPy1CttZEhg5PTrMGtr8r4bUqNjEfvJ5fbDLg1ORRvIIwRJzDE3YK6BjqwAdtsKrxiiXL6dbsjdzT21v6WY%2Feffw38y9jC%2B7iM28ATkGh4n1RSyAW2jGNvLUqomBtOxis4kGVIUoLZtDUMRSKmxnXaBG%2FbxnKI8d0pK7dASQJIGbFcF36%2BIPcJ6EPq3FfO2HIrn1Bi51A062PwmtUHBJWUz%2FH3Hqtuj%2Fwk56pH9LuDWuq7rgt5c%2B3W0tpKPSKn%2BOP88k%2FXb41taLB3Jo1CSYnXksQ%2F%2BjKBcIqhlAAa&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T175543Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3LONXKIZ%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3f9895afd5f357dca68e951ffd1b496a6a044f71ee5a504829752aac6b231738&hash=1f514528df7909ba8784f8678d928004b9ae73be7c59863759b0d701d21b42c5&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0960982210015228&tid=spdf-ba3e033f-0e0f-4f36-a137-34de693beb53&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060c0f040900&rr=8e6acabfed569418&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026c": {
+      "id": "pdf_main_pdf_2026c",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438810X0006X/1-s2.0-S0959438810001224/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECkaCXVzLWVhc3QtMSJHMEUCIQCrdi2rUu%2Bjvp75oAOv3qYthpeYsj8ZiKF3%2FKUPaQWjewIgJfpLNHyIA%2FUUya8uvyL00TOvOBijBK%2F0IYJnaR2fyckquwUIwv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDIRGYLSmiHmJmoNhlCqPBVZ3qXJcTpFGQ79Otmsf%2BglOx6W5Mo9zY2mHDTrWWBqWGvUk84WCD6ZKQVX61nTW193%2FD4Bj3yf88vT4%2FlwCNaiXJ0Bnh8KqCPOrq%2FAqz5FJe7EpKqFOivXB49vT3gSiYZY2oBq1e6aybGganse2Dik3aa6tPWdEixVUFu8yxcO0002iw3ivnwzUHr48APDaoqjQLds7fj7nto%2FeMF3%2BNs6t5JJAYPRA8dkgLn%2Fm%2F7Yf44hk7eO3gTB3S2mjCDHJRHjPieg%2FsVSQvp8xo3msy4EsQiQvYDZkQ2Q1hWSC4iHGkto2olVoiC%2BAXQzYH0zj5lnzwOHj8knkg2pdAXKWkmPSS6BHGogR%2BqA3T6plHwkHQmmWRGc5y8UobNOJW3aH6Is2hMAwisQC73U8yeAa%2F7diK05mTrMn%2FrhnfZAX5vTfRIEDvWlYdJh5d%2B0cYWLJA1YuQJTlaMxncujfog5hTZZmuKp5j68klCfapfMokB6WhP88ffoUOW2rnl686wU2VxRMzSzfAFjS9Bx6kh7oQVgSwn6vDWwvy3kGBWnNEgmAwVTeOAyywoXVLIC081mYIqbLVxxvomiAfQ8oWAOsU9O7cBD5UU4Owe02BwGXfobJmowm6oxlG8i5OIwExZdBm1sQQ%2FlJm0SO6qYyvu4RxVa%2BiU0PBIAWnIJzKiLg2kyvvqGbXRWYuzNkTmopfMWCPBv%2FmrWOtqcJoEP0TcZGVhRnlt2wHW%2BeQ2mDlleHhHbLy%2Bb9iSJ3gnRwQ5mMeadxdZVo%2Fiyl4fV1UFnC0hTabR2qF13QUP%2BYeBTJVoc5VUc8SGDZN3qjuq%2FlnLhCYdL2Rb8bfe%2Bw%2FqNeMEYIny5ImWTojMX8L1X%2BnkIuei3mz58w0uuCugY6sQGAbJqLrgcZ6bFp1rWs0oMVPVPVM6SkNwukFrv5gxnXcGhiqASYtbXDxatwrlWfrP6k6hT0cLEMXdb8rZygGrbys3wFr5pj%2Ftzbv9dUTwiXRCudLk7PKnFlG2j5NqaG1GQ66q0VClc49Kxd703i4aqMI%2Fa13%2FP0gkGqCCmol0KkGmAZCaOHGAO075zEXVE4n0w08tuLuijJeEvwIsJ6zXI3WHBaSwcY3vayIn0B4LoNUDo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T183024Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQBFQ5KRM%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8338bbb5818e35b9c0295e421ee0fa04921d13d1849fbcfbb30fbd7279055ce2&hash=a394cf5f8d41f84b952ac45da83514de19b188d7133c25d0764adf0846302d18&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438810001224&tid=spdf-1eddc1ea-00aa-4b30-a171-4e86cb9e7590&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5506090a5e095d&rr=8e6afd8f8e9e772c&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026d": {
+      "id": "pdf_main_pdf_2026d",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/271081/1-s2.0-S0165017307X01401/1-s2.0-S0165017307001361/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLWVhc3QtMSJIMEYCIQC1sHm575u4vMt1fIHxXPVrvEV%2Fm%2FSTocMoyy39nJizKQIhAIdGRQjIv9%2BNc5q%2BP8QRsbszSQF22e1%2BTzi2TOe4ty%2FFKrsFCMP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgywYIf8xRKaIkNkZL0qjwWKlzsJfGu69vxYI0Bhx7s6hOJK6dNGXbIG%2Bqh6RXcqc3ynmHDWUgsGAsVtKst4ehd14v%2BLb6JRSDzVDhCTX3FjIS9e5z0nWCw4vi2cf0ogCet%2Futnvln4ruV%2FDz1KHP7LlDz3lToQO6xcMgVmD3h7lFQHShQMsBI9omAGf%2FsOwZ2dB1R5tGbXEL92i9XadgVzsXix0nXf82TI3C7zaA2vwgi2XxmPK8dpWO9u9UG2bwyo7tXNqA1u87YVK%2F%2Fs5nxW2bR90uzpCoUkhhSdAZIhwh07r3z%2BEcC%2B6YqZ9yK6U%2BKGjXClv%2B80KpbSRYGuHpJZatkBfJ1%2FJLNkszwPAu2cj4xkWzr8KN4mwGUF9Yi0rBy3tjOYJEAPz2xjNARP0qyK6Uoi6nTMZAdOvQCbpEWSivjR1tHnBDv1lzn2wxMoWnensGx8t1BTpi%2F9L387VzIwIPTuiG8Dn82g5w%2FSGBX%2FNdTYn%2B8Hla3RIzX%2BiP689P7ZSsLKuSqRM1aeA3dp4SEbzJlH0OymYHG%2Fx3nNg61WMKz9Qdu8HwoWBdvBkUgw94Bix5htGx3AXAOJNNZTyN8e5tT1V7QLOcfjRYZvlB5Sq1OOD5zxJY7UWmiTSQpYFCxQ9PbVXaRpeeKaZ104RoxNgPZAqegl1X9W5DYfz7lm8H0w67ty1Y56qhHHxo2wX9PO1ESpkldtO3zW0XOE9aC8SsVyKHBrA5DgDSof10Xg%2FSpcU6EBsz%2Fl2oxDRhc4kS%2FvInX94L%2BQMZ1dHAGC4h7Y4u0YfNL2uiNt7Arjel0wCoxugvAGxhOnnle9Yfz7hee%2BgY1hxpJ%2BvxZ4J4QWz6GM6dXSkK9cx%2BzWILUmFHHJnphZ7R0hNtXXnRt70U%2FbvMKyDg7oGOrABAmFGx7nFXbDuDs6Lqe5AHL1mIuaLQlQD6Fsbv9GQUh5BDSwt5kI%2F3dk2SMQdNnsPSMn5PGnYl%2BIGT7GEKfu3bpb4E7rmmZGZ6aqhWg0%2BZzEkGvvI1faJ%2Bid0QGsk19u%2BaRMU31Rvg%2BOjkIgFpD33buynCVmC51bzy9ZsyMTlXa1Z%2BptSngmGWOxezOudCjCwxmx72U6wF5%2B3kqSTCEQi7i%2FjliIV7aahBzaVXMLWE1U%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T180350Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYVYS5CDDA%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cf71eacc7b68c30a811df552a62951bbf70ee6d20ee42d34ab972388f5f572a7&hash=972c4f3333bf493177648466f20eff6a2aecbe0f9ac9ec985e6b7b1b7c47a5cd&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0165017307001361&tid=spdf-4f40e6d1-9861-4a59-a766-a694163e558d&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a55060b58075a57&rr=8e6ad6a52b349583&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pdf_main_pdf_2026e": {
+      "id": "pdf_main_pdf_2026e",
+      "type": "webpage",
+      "title": "Main.Pdf",
+      "URL": "https://pdf.sciencedirectassets.com/272014/1-s2.0-S0959438806X00909/1-s2.0-S0959438806001140/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLWVhc3QtMSJGMEQCIBUQlUwvqKn%2BwOQ5fozHh%2FnMXA6VGURu3MTpVHtBklxQAiAzs8KH62ep2shan%2FCqMPc1z4TcPypssbPVnXi5cExSMSq7BQjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIMVKip7FzcZ8PQtvd4Ko8FuThjYWYWXHN6RTiYA9jZ0x1wBeJw8pG%2Frmyk8tRfPdlpfYSryyG9T1GkQqiyLmnCN14bTHQenRTdlj%2B7LJyonhueU4FgBDasL9OqAj7wjdLuK1PMsjLzWz6Q2q5GnBeBzaCmgbVmBvecKsBYn53bpYXQf7xc0CPZFdN74GKVolL6F2TiuSDJwkJlUtqw5WfRhCJiWBwx2kBOJ44rEjJAbKZj6M2hLXaNt6zLpCkNneVWTH9kvho1vC%2BQb3z0mE1LcZ2vh95ZUynOzvpG7NIzWLrc0xdZLcFP1qlNCYX2vFF%2FF8bVV%2FS2ZgEmBZeKeCDWOeuF4jByNU1l1ICGKHON4PuTBZOEqbUnPAZ691Bo6eUC5uw0PzJUWeBF6vIB5vSspqQ23NctdRYvm7hc6fLEh1etY1pHWrQ0lF4u6fMYv16yz8dzhN6SF0UV5TI3%2BbeNyznPH4vZpOheGgb5FjTYXcaLziL9KqlnLpvaqk2Gmd9v1e%2BA5wBwycxTSCMEsU%2FPTMQJQFo%2FMAUZn%2FwwM8mEfDCvl0eCS1YcnetOx5waE3Gh2ANxtZrMpL%2BBUUPJ2dKeahWRLNnO4WI4owYsBJAGiyJxUJtKFSbesjfWKBXltUQ9bjts61xZWC49tdYqPE4BfT8PfadN8dQkk%2B00diHrQR7%2Bn3CGa91FQ08kvGaYCMd2j4SqLrmXbyiAzcXx9g8meZcjBum5VlzEzPAsa%2FESferjGuXt3zZJncEw7spWNFOXpyD4XZsMQKl9zcPFwLP11%2B6Furo6XU8z9BahTw4DRibtktgaRSbwyK6jj3NsEpVWp816qcrv7UWnkkUZQxFkZxy2%2FT0%2BGGUKn1EC%2B0yHuLIE%2BHDKpM9bp%2FYAZGbc1zDWpIO6BjqyAXRqYXqyrIsBIGvlRYiFZHLI0no9rvP6RL%2Bi7MgDVD7X5P4Xyd8xhdKn8zYh63vGIGoFZ%2FUdhEsN74nnFygmr1jX3VVyyNw1Q5GnSre51zE4%2FNSDxkeGBCdllGcyGDj0lgcOvsCYk1W9m%2FtO7RD5L0RcYhMxMDCpLv7fpzcWQDtKXst7d4APWBmMjQPlwMs5hs%2BC4o6WPmbiF70i%2FubGJXFAlpqwCO7Jc8BlwesfDsUZkU0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T201824Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY7VMLEIHI%2F20241122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e67f7a0060a81030213e5f71f31ed98fb51738b5b06930fc60cec631def1ca77&hash=92c1312e7fe52a167b4ee593d226313be7d16022c63aeac654d3c0ab2d9ab507&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0959438806001140&tid=spdf-61f8abb8-72a0-40f7-95bb-4e2de64ce7af&sid=87a096c983b3e5453c68b2d37e36f6fc7f40gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1d045d0a5505560c055707&rr=8e6b9bc8bb013697&cc=gb",
+      "author": [
+        {
+          "literal": "pdf.sciencedirectassets.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pmc_pmc1550972_2026": {
+      "id": "pmc_pmc1550972_2026",
+      "type": "webpage",
+      "title": "Pmc1550972",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1550972/#ack1",
+      "author": [
+        {
+          "literal": "pmc.ncbi.nlm.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pmc_pmc4217485_2026": {
+      "id": "pmc_pmc4217485_2026",
+      "type": "webpage",
+      "title": "Pmc4217485",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217485/",
+      "author": [
+        {
+          "literal": "pmc.ncbi.nlm.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pmc_pmc4387516_2026": {
+      "id": "pmc_pmc4387516_2026",
+      "type": "webpage",
+      "title": "Pmc4387516",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387516/#s8",
+      "author": [
+        {
+          "literal": "pmc.ncbi.nlm.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pmc_pmc6914248_2026": {
+      "id": "pmc_pmc6914248_2026",
+      "type": "webpage",
+      "title": "Pmc6914248",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6914248/",
+      "author": [
+        {
+          "literal": "pmc.ncbi.nlm.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pnas_pnas_0506806103_2026": {
+      "id": "pnas_pnas_0506806103_2026",
+      "type": "webpage",
+      "title": "Pnas.0506806103",
+      "URL": "https://www.pnas.org/doi/epdf/10.1073/pnas.0506806103",
+      "author": [
+        {
+          "literal": "pnas.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "pnas_pnas_0506806103_2026a": {
+      "id": "pnas_pnas_0506806103_2026a",
+      "type": "webpage",
+      "title": "Pnas.0506806103",
+      "URL": "https://www.pnas.org/doi/abs/10.1073/pnas.0506806103",
+      "author": [
+        {
+          "literal": "pnas.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "reporter_7994562_2026": {
+      "id": "reporter_7994562_2026",
+      "type": "webpage",
+      "title": "7994562",
+      "URL": "https://reporter.nih.gov/project-details/7994562",
+      "author": [
+        {
+          "literal": "reporter.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "reporter_9136946_2026": {
+      "id": "reporter_9136946_2026",
+      "type": "webpage",
+      "title": "9136946",
+      "URL": "https://reporter.nih.gov/project-details/9136946",
+      "author": [
+        {
+          "literal": "reporter.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "reporter_projects_2026": {
+      "id": "reporter_projects_2026",
+      "type": "webpage",
+      "title": "Projects",
+      "URL": "https://reporter.nih.gov/search/BACA3Kafx0Cc0ByVH3VkkA/projects?sort_field=fiscal_year&sort_order=desc#",
+      "author": [
+        {
+          "literal": "reporter.nih.gov"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "repositum_lung_20david_20_202018_20_20_2026": {
+      "id": "repositum_lung_20david_20_202018_20_20_2026",
+      "type": "webpage",
+      "title": "Lung%20David%20 %202018%20 %20Openworm%20Design%20And%20Evaluation%20Of",
+      "URL": "https://repositum.tuwien.at/bitstream/20.500.12708/1945/2/Lung%20David%20-%202018%20-%20OpenWorm%20design%20and%20evaluation%20of",
+      "author": [
+        {
+          "literal": "repositum.tuwien.at"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "researchgate_5406603_a_technicolor_2026": {
+      "id": "researchgate_5406603_a_technicolor_2026",
+      "type": "webpage",
+      "title": "5406603 A Technicolor ",
+      "URL": "https://www.researchgate.net/publication/5406603_A_technicolor_",
+      "author": [
+        {
+          "literal": "researchgate.net"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "researchgate_5676397_three_dimensional_2026": {
+      "id": "researchgate_5676397_three_dimensional_2026",
+      "type": "webpage",
+      "title": "5676397 Three Dimensional ",
+      "URL": "https://www.researchgate.net/publication/5676397_Three-Dimensional_",
+      "author": [
+        {
+          "literal": "researchgate.net"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "ropireddy2011": {
+      "id": "ropireddy2011",
+      "type": "article-journal",
+      "title": "Potential Synaptic Connectivity of Different Neurons onto Pyramidal Cells in a 3D Reconstruction of the Rat Hippocampus",
+      "URL": "https://doi.org/10.3389/fninf.2011.00005",
+      "DOI": "10.3389/fninf.2011.00005",
+      "author": [
+        {
+          "family": "Ropireddy",
+          "given": "Deepak"
+        },
+        {
+          "family": "Ascoli",
+          "given": "Giorgio A."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "container-title": "Frontiers in Neuroinformatics",
+      "volume": "5"
+    },
+    "royalsocietypublishing_rstb_2017_0382_2026": {
+      "id": "royalsocietypublishing_rstb_2017_0382_2026",
+      "type": "webpage",
+      "title": "Rstb.2017.0382",
+      "URL": "https://royalsocietypublishing.org/doi/10.1098/rstb.2017.0382#d1e1706",
+      "author": [
+        {
+          "literal": "royalsocietypublishing.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "scholar_scholar_lookup_2026": {
+      "id": "scholar_scholar_lookup_2026",
+      "type": "webpage",
+      "title": "Scholar Lookup",
+      "URL": "https://scholar.google.com/scholar_lookup?hl=en&volume=6&publication_year=2003&pages=750-757&journal=Nat+Neurosci&author=TEJ+Behrens&author=H+Johansen%E2%80%90Berg&author=MW+Woolrich&author=SM+Smith&author=CAM+Wheeler%E2%80%90Kingshott&author=PA+Boulby&author=GJ+Barker&author=EL+Sillery&author=K+Sheehan&author=O+Ciccarelli&author=AJ+Thompson&author=JM+Brady&author=PM+Matthews&title=Non%E2%80%90invasive+mapping+of+connections+between+human+thalamus+and+cortex+using+diffusion+imaging",
+      "author": [
+        {
+          "literal": "scholar.google.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s0165027011005991_2026": {
+      "id": "sciencedirect_s0165027011005991_2026",
+      "type": "webpage",
+      "title": "S0165027011005991",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S0165027011005991",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s0896627316307887_2026": {
+      "id": "sciencedirect_s0896627316307887_2026",
+      "type": "webpage",
+      "title": "S0896627316307887",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S0896627316307887",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s095943881400035x_2026": {
+      "id": "sciencedirect_s095943881400035x_2026",
+      "type": "webpage",
+      "title": "S095943881400035X",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S095943881400035X",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s105381191001178x_2026": {
+      "id": "sciencedirect_s105381191001178x_2026",
+      "type": "webpage",
+      "title": "S105381191001178X",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S105381191001178X?via%3Dihub",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s1053811913005351_2026": {
+      "id": "sciencedirect_s1053811913005351_2026",
+      "type": "webpage",
+      "title": "S1053811913005351",
+      "URL": "https://www.sciencedirect.com/science/article/abs/pii/S1053811913005351?via%3Dihub",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s105381191630581x_2026": {
+      "id": "sciencedirect_s105381191630581x_2026",
+      "type": "webpage",
+      "title": "S105381191630581X",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S105381191630581X?via%3Dihub",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s2095927323001214_2026": {
+      "id": "sciencedirect_s2095927323001214_2026",
+      "type": "webpage",
+      "title": "S2095927323001214",
+      "URL": "https://www.sciencedirect.com/science/article/abs/pii/S2095927323001214?via=ihub",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sciencedirect_s2589004222021198_2026": {
+      "id": "sciencedirect_s2589004222021198_2026",
+      "type": "webpage",
+      "title": "S2589004222021198",
+      "URL": "https://www.sciencedirect.com/science/article/pii/S2589004222021198?ssrnid=4138709&dgcid=SSRN_redirect_SD",
+      "author": [
+        {
+          "literal": "sciencedirect.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "scmp_rare_public_row_erupts_over_fu_2026": {
+      "id": "scmp_rare_public_row_erupts_over_fu_2026",
+      "type": "webpage",
+      "title": "Rare Public Row Erupts Over Funding Us16 Billion China Brain",
+      "URL": "https://www.scmp.com/news/china/science/article/3164585/rare-public-row-erupts-over-funding-us16-billion-china-brain",
+      "author": [
+        {
+          "literal": "scmp.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "semanticscholar_1c7a0174bfe049e7e57d389df3e582_2026": {
+      "id": "semanticscholar_1c7a0174bfe049e7e57d389df3e582_2026",
+      "type": "webpage",
+      "title": "1C7A0174Bfe049E7E57D389Df3E582F6Ced47Dd9",
+      "URL": "https://www.semanticscholar.org/paper/Reconstruction-of-3d-neuronal-structures-from-data-Choe-Yang/1c7a0174bfe049e7e57d389df3e582f6ced47dd9",
+      "author": [
+        {
+          "literal": "semanticscholar.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "semanticscholar_8c48df1c84f94ff681f2a3fe6f28f3_2026": {
+      "id": "semanticscholar_8c48df1c84f94ff681f2a3fe6f28f3_2026",
+      "type": "webpage",
+      "title": "8C48Df1C84F94Ff681F2A3Fe6F28F3482D4Ae3F1",
+      "URL": "https://www.semanticscholar.org/paper/Reconstruction-of-complete-connectivity-matrix-for-Mishchenko/8c48df1c84f94ff681f2a3fe6f28f3482d4ae3f1",
+      "author": [
+        {
+          "literal": "semanticscholar.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "setpointmedical_setpoint_the_evolution_of_bioe_2026": {
+      "id": "setpointmedical_setpoint_the_evolution_of_bioe_2026",
+      "type": "webpage",
+      "title": "Setpoint The Evolution Of Bioelectronic Medicine.Pdf",
+      "URL": "https://setpointmedical.com/files/SetPoint_The_Evolution_Of_Bioelectronic_Medicine.pdf",
+      "author": [
+        {
+          "literal": "setpointmedical.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "simonsfoundation_the_connected_connectome_part_2026": {
+      "id": "simonsfoundation_the_connected_connectome_part_2026",
+      "type": "webpage",
+      "title": "The Connected Connectome Part 2 Beyond The Fly",
+      "URL": "https://www.simonsfoundation.org/2021/03/22/the-connected-connectome-part-2-beyond-the-fly/",
+      "author": [
+        {
+          "literal": "simonsfoundation.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sing_to_map_the_human_brain_researc_2026": {
+      "id": "sing_to_map_the_human_brain_researc_2026",
+      "type": "webpage",
+      "title": "To Map The Human Brain Researchers First Look To The Octopus",
+      "URL": "https://sing.uchicago.edu/2022/08/16/to-map-the-human-brain-researchers-first-look-to-the-octopus/",
+      "author": [
+        {
+          "literal": "sing.uchicago.edu"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "sinz2018": {
+      "id": "sinz2018",
+      "type": "article",
+      "title": "Stimulus domain transfer in recurrent models for large scale cortical population prediction on video",
+      "URL": "https://doi.org/10.1101/452672",
+      "DOI": "10.1101/452672",
+      "author": [
+        {
+          "family": "Sinz",
+          "given": "Fabian H."
+        },
+        {
+          "family": "Ecker",
+          "given": "Alexander S."
+        },
+        {
+          "family": "Fahey",
+          "given": "Paul G."
+        },
+        {
+          "family": "Walker",
+          "given": "Edgar Y."
+        },
+        {
+          "family": "Cobos",
+          "given": "Erick"
+        },
+        {
+          "family": "Froudarakis",
+          "given": "Emmanouil"
+        },
+        {
+          "family": "Yatsenko",
+          "given": "Dimitri"
+        },
+        {
+          "family": "Pitkow",
+          "given": "Xaq"
+        },
+        {
+          "family": "Reimer",
+          "given": "Jacob"
+        },
+        {
+          "family": "Tolias",
+          "given": "Andreas S."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            25
+          ]
+        ]
+      }
+    },
+    "stringer2019a": {
+      "id": "stringer2019a",
+      "type": "article",
+      "title": "High precision coding in visual cortex",
+      "URL": "https://doi.org/10.1101/679324",
+      "DOI": "10.1101/679324",
+      "author": [
+        {
+          "family": "Stringer",
+          "given": "Carsen"
+        },
+        {
+          "family": "Michaelos",
+          "given": "Michalis"
+        },
+        {
+          "family": "Pachitariu",
+          "given": "Marius"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    "stringer2023": {
+      "id": "stringer2023",
+      "type": "article",
+      "title": "Rastermap: a discovery method for neural population recordings",
+      "URL": "https://doi.org/10.1101/2023.07.25.550571",
+      "DOI": "10.1101/2023.07.25.550571",
+      "author": [
+        {
+          "family": "Stringer",
+          "given": "Carsen"
+        },
+        {
+          "family": "Zhong",
+          "given": "Lin"
+        },
+        {
+          "family": "Syeda",
+          "given": "Atika"
+        },
+        {
+          "family": "Du",
+          "given": "Fengtong"
+        },
+        {
+          "family": "Kesa",
+          "given": "Maria"
+        },
+        {
+          "family": "Pachitariu",
+          "given": "Marius"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            28
+          ]
+        ]
+      }
+    },
+    "tether_tether_takes_strategic_stake_i_2026": {
+      "id": "tether_tether_takes_strategic_stake_i_2026",
+      "type": "webpage",
+      "title": "Tether Takes Strategic Stake In Leading Brain Computer Interface Company Blackrock Neurotech",
+      "URL": "https://tether.io/news/tether-takes-strategic-stake-in-leading-brain-computer-interface-company-blackrock-neurotech/",
+      "author": [
+        {
+          "literal": "tether.io"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      },
+      "note": "+50M funding before that"
+    },
+    "text_044b803b": {
+      "id": "text_044b803b",
+      "type": "personal_communication",
+      "title": "DOI: 10.7554/eLife.24838"
+    },
+    "text_073b0531": {
+      "id": "text_073b0531",
+      "type": "personal_communication",
+      "title": "And at least some of the mouse papers are not simulation papers. I think I left some detailed commen...",
+      "note": "And at least some of the mouse papers are not simulation papers. I think I left some detailed comments on that previously, maybe in an earlier version of the doc or in the poster? Please try to find them – I remember looking carefully into these papers and finding some issues that needed to be addressed. One example that I do remember is that Rodarie et al. is not a simulation paper."
+    },
+    "text_11c535fc": {
+      "id": "text_11c535fc",
+      "type": "personal_communication",
+      "title": "user input"
+    },
+    "text_11c535fca": {
+      "id": "text_11c535fca",
+      "type": "personal_communication",
+      "title": "user input"
+    },
+    "text_13704b07": {
+      "id": "text_13704b07",
+      "type": "personal_communication",
+      "title": "checking the work from the lab of Xiao-Jing Wang"
+    },
+    "text_1417074a": {
+      "id": "text_1417074a",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074aa": {
+      "id": "text_1417074aa",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074ab": {
+      "id": "text_1417074ab",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074ac": {
+      "id": "text_1417074ac",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074ad": {
+      "id": "text_1417074ad",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074ae": {
+      "id": "text_1417074ae",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074af": {
+      "id": "text_1417074af",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_1417074ag": {
+      "id": "text_1417074ag",
+      "type": "personal_communication",
+      "title": "Computational demands analysis"
+    },
+    "text_143c74c6": {
+      "id": "text_143c74c6",
+      "type": "personal_communication",
+      "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy"
+    },
+    "text_143c74c6a": {
+      "id": "text_143c74c6a",
+      "type": "personal_communication",
+      "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy"
+    },
+    "text_14dd5b55": {
+      "id": "text_14dd5b55",
+      "type": "personal_communication",
+      "title": "On a similar note, “Connectivity Accuracy” is scored at 2 for all human papers except the first two....",
+      "note": "On a similar note, “Connectivity Accuracy” is scored at 2 for all human papers except the first two. However, the connectivity accuracy of all these studies is, of course, by far less than what we did for the mouse in Billeh et al. (these data are simply not available for human), and yet the score is the same. I would recommend lowering it for all the human papers. And it’s probably best to do the same for Functional Accuracy too!"
+    },
+    "text_19c4f945": {
+      "id": "text_19c4f945",
+      "type": "personal_communication",
+      "title": "Calculated from data rate × duration"
+    },
+    "text_1bbd4878": {
+      "id": "text_1bbd4878",
+      "type": "personal_communication",
+      "title": "Kasabov, 2014 – wrong link. Is it this paper? Where does it do a simulation of a piece of human brai...",
+      "note": "Kasabov, 2014 – wrong link. Is it this paper? Where does it do a simulation of a piece of human brain?"
+    },
+    "text_36c7ab80": {
+      "id": "text_36c7ab80",
+      "type": "personal_communication",
+      "title": "Literature estimates"
+    },
+    "text_36c7ab80a": {
+      "id": "text_36c7ab80a",
+      "type": "personal_communication",
+      "title": "Literature estimates"
+    },
+    "text_399423ff": {
+      "id": "text_399423ff",
+      "type": "personal_communication",
+      "title": "Charles"
+    },
+    "text_399423ffa": {
+      "id": "text_399423ffa",
+      "type": "personal_communication",
+      "title": "Charles"
+    },
+    "text_3b4837cc": {
+      "id": "text_3b4837cc",
+      "type": "personal_communication",
+      "title": "Model complexity scaling"
+    },
+    "text_3b4837cca": {
+      "id": "text_3b4837cca",
+      "type": "personal_communication",
+      "title": "Model complexity scaling"
+    },
+    "text_3c2929d8": {
+      "id": "text_3c2929d8",
+      "type": "personal_communication",
+      "title": "user input or calculated"
+    },
+    "text_3c2929d8a": {
+      "id": "text_3c2929d8a",
+      "type": "personal_communication",
+      "title": "user input or calculated"
+    },
+    "text_3c2929d8b": {
+      "id": "text_3c2929d8b",
+      "type": "personal_communication",
+      "title": "user input or calculated"
+    },
+    "text_3c2929d8c": {
+      "id": "text_3c2929d8c",
+      "type": "personal_communication",
+      "title": "user input or calculated"
+    },
+    "text_3c311fbd": {
+      "id": "text_3c311fbd",
+      "type": "personal_communication",
+      "title": "Estimated"
+    },
+    "text_3c311fbda": {
+      "id": "text_3c311fbda",
+      "type": "personal_communication",
+      "title": "Estimated"
+    },
+    "text_3c311fbdb": {
+      "id": "text_3c311fbdb",
+      "type": "personal_communication",
+      "title": "Estimated"
+    },
+    "text_3c311fbdc": {
+      "id": "text_3c311fbdc",
+      "type": "personal_communication",
+      "title": "Estimated"
+    },
+    "text_3e9d7b9a": {
+      "id": "text_3e9d7b9a",
+      "type": "personal_communication",
+      "title": "Rupprecht"
+    },
+    "text_3e9d7b9aa": {
+      "id": "text_3e9d7b9aa",
+      "type": "personal_communication",
+      "title": "Rupprecht"
+    },
+    "text_3e9d7b9ab": {
+      "id": "text_3e9d7b9ab",
+      "type": "personal_communication",
+      "title": "Rupprecht"
+    },
+    "text_3f80f71d": {
+      "id": "text_3f80f71d",
+      "type": "personal_communication",
+      "title": "Scaled by data criticality"
+    },
+    "text_46f0c2b1": {
+      "id": "text_46f0c2b1",
+      "type": "personal_communication",
+      "title": "DOI: 10.1016/j.cell.2018.06.019"
+    },
+    "text_4bd6a42f": {
+      "id": "text_4bd6a42f",
+      "type": "personal_communication",
+      "title": "doi:/10.1038/nature13240"
+    },
+    "text_4c411947": {
+      "id": "text_4c411947",
+      "type": "personal_communication",
+      "title": "Estimate: 4 FTEs at $20k / year for 10 years with 50% institutional overhead and $250k in EM costs =...",
+      "note": "Estimate: 4 FTEs at $20k / year for 10 years with 50% institutional overhead and $250k in EM costs = $1.45M"
+    },
+    "text_4c53ef2a": {
+      "id": "text_4c53ef2a",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2aa": {
+      "id": "text_4c53ef2aa",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ab": {
+      "id": "text_4c53ef2ab",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ac": {
+      "id": "text_4c53ef2ac",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ad": {
+      "id": "text_4c53ef2ad",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ae": {
+      "id": "text_4c53ef2ae",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2af": {
+      "id": "text_4c53ef2af",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ag": {
+      "id": "text_4c53ef2ag",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ah": {
+      "id": "text_4c53ef2ah",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4c53ef2ai": {
+      "id": "text_4c53ef2ai",
+      "type": "personal_communication",
+      "title": "Meijer"
+    },
+    "text_4d8487f8": {
+      "id": "text_4d8487f8",
+      "type": "personal_communication",
+      "title": "www.pnas.org/cgi/doi/10.1073/pnas.1509820112"
+    },
+    "text_4e98d67a": {
+      "id": "text_4e98d67a",
+      "type": "personal_communication",
+      "title": "DOI: 10.1038/s41467-020-17523-8"
+    },
+    "text_51d270ed": {
+      "id": "text_51d270ed",
+      "type": "personal_communication",
+      "title": "Estimated from field of view"
+    },
+    "text_5c04e0e0": {
+      "id": "text_5c04e0e0",
+      "type": "personal_communication",
+      "title": "EM for small, ExM for large"
+    },
+    "text_5c067fe5": {
+      "id": "text_5c067fe5",
+      "type": "personal_communication",
+      "title": "doi: 10.1016/j.neuroimage.2012.02.018"
+    },
+    "text_669f6d4f": {
+      "id": "text_669f6d4f",
+      "type": "personal_communication",
+      "title": "doi: 10.1038/s41592-022-01621-0"
+    },
+    "text_7493ff89": {
+      "id": "text_7493ff89",
+      "type": "personal_communication",
+      "title": "DOI: 10.1038/s41467-017-02560-7"
+    },
+    "text_7493ff89a": {
+      "id": "text_7493ff89a",
+      "type": "personal_communication",
+      "title": "DOI: 10.1038/s41467-017-02560-7"
+    },
+    "text_755accab": {
+      "id": "text_755accab",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab100": {
+      "id": "text_755accab100",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab101": {
+      "id": "text_755accab101",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab102": {
+      "id": "text_755accab102",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab103": {
+      "id": "text_755accab103",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab104": {
+      "id": "text_755accab104",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab105": {
+      "id": "text_755accab105",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab106": {
+      "id": "text_755accab106",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab107": {
+      "id": "text_755accab107",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab108": {
+      "id": "text_755accab108",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab109": {
+      "id": "text_755accab109",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab110": {
+      "id": "text_755accab110",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab111": {
+      "id": "text_755accab111",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab112": {
+      "id": "text_755accab112",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab113": {
+      "id": "text_755accab113",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab114": {
+      "id": "text_755accab114",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab115": {
+      "id": "text_755accab115",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab116": {
+      "id": "text_755accab116",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab117": {
+      "id": "text_755accab117",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab118": {
+      "id": "text_755accab118",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab119": {
+      "id": "text_755accab119",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab120": {
+      "id": "text_755accab120",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab121": {
+      "id": "text_755accab121",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab122": {
+      "id": "text_755accab122",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab123": {
+      "id": "text_755accab123",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab124": {
+      "id": "text_755accab124",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab125": {
+      "id": "text_755accab125",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab126": {
+      "id": "text_755accab126",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab127": {
+      "id": "text_755accab127",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab128": {
+      "id": "text_755accab128",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab129": {
+      "id": "text_755accab129",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab130": {
+      "id": "text_755accab130",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab131": {
+      "id": "text_755accab131",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab132": {
+      "id": "text_755accab132",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab133": {
+      "id": "text_755accab133",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab134": {
+      "id": "text_755accab134",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab135": {
+      "id": "text_755accab135",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab136": {
+      "id": "text_755accab136",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab137": {
+      "id": "text_755accab137",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab138": {
+      "id": "text_755accab138",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab139": {
+      "id": "text_755accab139",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab140": {
+      "id": "text_755accab140",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab141": {
+      "id": "text_755accab141",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab142": {
+      "id": "text_755accab142",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab143": {
+      "id": "text_755accab143",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab144": {
+      "id": "text_755accab144",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab145": {
+      "id": "text_755accab145",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab146": {
+      "id": "text_755accab146",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab147": {
+      "id": "text_755accab147",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab148": {
+      "id": "text_755accab148",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab149": {
+      "id": "text_755accab149",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab150": {
+      "id": "text_755accab150",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab151": {
+      "id": "text_755accab151",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab152": {
+      "id": "text_755accab152",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab153": {
+      "id": "text_755accab153",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab154": {
+      "id": "text_755accab154",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab155": {
+      "id": "text_755accab155",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab156": {
+      "id": "text_755accab156",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab157": {
+      "id": "text_755accab157",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab158": {
+      "id": "text_755accab158",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab159": {
+      "id": "text_755accab159",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab160": {
+      "id": "text_755accab160",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab161": {
+      "id": "text_755accab161",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab162": {
+      "id": "text_755accab162",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab163": {
+      "id": "text_755accab163",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab164": {
+      "id": "text_755accab164",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab165": {
+      "id": "text_755accab165",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab166": {
+      "id": "text_755accab166",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab167": {
+      "id": "text_755accab167",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab168": {
+      "id": "text_755accab168",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab169": {
+      "id": "text_755accab169",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab170": {
+      "id": "text_755accab170",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab171": {
+      "id": "text_755accab171",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab172": {
+      "id": "text_755accab172",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab173": {
+      "id": "text_755accab173",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab174": {
+      "id": "text_755accab174",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab175": {
+      "id": "text_755accab175",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab26": {
+      "id": "text_755accab26",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab27": {
+      "id": "text_755accab27",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab28": {
+      "id": "text_755accab28",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab29": {
+      "id": "text_755accab29",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab30": {
+      "id": "text_755accab30",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab31": {
+      "id": "text_755accab31",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab32": {
+      "id": "text_755accab32",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab33": {
+      "id": "text_755accab33",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab34": {
+      "id": "text_755accab34",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab35": {
+      "id": "text_755accab35",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab36": {
+      "id": "text_755accab36",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab37": {
+      "id": "text_755accab37",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab38": {
+      "id": "text_755accab38",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab39": {
+      "id": "text_755accab39",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab40": {
+      "id": "text_755accab40",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab41": {
+      "id": "text_755accab41",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab42": {
+      "id": "text_755accab42",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab43": {
+      "id": "text_755accab43",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab44": {
+      "id": "text_755accab44",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab45": {
+      "id": "text_755accab45",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab46": {
+      "id": "text_755accab46",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab47": {
+      "id": "text_755accab47",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab48": {
+      "id": "text_755accab48",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab49": {
+      "id": "text_755accab49",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab50": {
+      "id": "text_755accab50",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab51": {
+      "id": "text_755accab51",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab52": {
+      "id": "text_755accab52",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab53": {
+      "id": "text_755accab53",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab54": {
+      "id": "text_755accab54",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab55": {
+      "id": "text_755accab55",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab56": {
+      "id": "text_755accab56",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab57": {
+      "id": "text_755accab57",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab58": {
+      "id": "text_755accab58",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab59": {
+      "id": "text_755accab59",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab60": {
+      "id": "text_755accab60",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab61": {
+      "id": "text_755accab61",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab62": {
+      "id": "text_755accab62",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab63": {
+      "id": "text_755accab63",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab64": {
+      "id": "text_755accab64",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab65": {
+      "id": "text_755accab65",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab66": {
+      "id": "text_755accab66",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab67": {
+      "id": "text_755accab67",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab68": {
+      "id": "text_755accab68",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab69": {
+      "id": "text_755accab69",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab70": {
+      "id": "text_755accab70",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab71": {
+      "id": "text_755accab71",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab72": {
+      "id": "text_755accab72",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab73": {
+      "id": "text_755accab73",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab74": {
+      "id": "text_755accab74",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab75": {
+      "id": "text_755accab75",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab76": {
+      "id": "text_755accab76",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab77": {
+      "id": "text_755accab77",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab78": {
+      "id": "text_755accab78",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab79": {
+      "id": "text_755accab79",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab80": {
+      "id": "text_755accab80",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab81": {
+      "id": "text_755accab81",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab82": {
+      "id": "text_755accab82",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab83": {
+      "id": "text_755accab83",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab84": {
+      "id": "text_755accab84",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab85": {
+      "id": "text_755accab85",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab86": {
+      "id": "text_755accab86",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab87": {
+      "id": "text_755accab87",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab88": {
+      "id": "text_755accab88",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab89": {
+      "id": "text_755accab89",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab90": {
+      "id": "text_755accab90",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab91": {
+      "id": "text_755accab91",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab92": {
+      "id": "text_755accab92",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab93": {
+      "id": "text_755accab93",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab94": {
+      "id": "text_755accab94",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab95": {
+      "id": "text_755accab95",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab96": {
+      "id": "text_755accab96",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab97": {
+      "id": "text_755accab97",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab98": {
+      "id": "text_755accab98",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accab99": {
+      "id": "text_755accab99",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accaba": {
+      "id": "text_755accaba",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabb": {
+      "id": "text_755accabb",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabc": {
+      "id": "text_755accabc",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabd": {
+      "id": "text_755accabd",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabe": {
+      "id": "text_755accabe",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabf": {
+      "id": "text_755accabf",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabg": {
+      "id": "text_755accabg",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabh": {
+      "id": "text_755accabh",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabi": {
+      "id": "text_755accabi",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabj": {
+      "id": "text_755accabj",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabk": {
+      "id": "text_755accabk",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabl": {
+      "id": "text_755accabl",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabm": {
+      "id": "text_755accabm",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabn": {
+      "id": "text_755accabn",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabo": {
+      "id": "text_755accabo",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabp": {
+      "id": "text_755accabp",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabq": {
+      "id": "text_755accabq",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabr": {
+      "id": "text_755accabr",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabs": {
+      "id": "text_755accabs",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabt": {
+      "id": "text_755accabt",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabu": {
+      "id": "text_755accabu",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabv": {
+      "id": "text_755accabv",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabw": {
+      "id": "text_755accabw",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accabx": {
+      "id": "text_755accabx",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_755accaby": {
+      "id": "text_755accaby",
+      "type": "personal_communication",
+      "title": "Stevenson"
+    },
+    "text_767e5044": {
+      "id": "text_767e5044",
+      "type": "personal_communication",
+      "title": "Conversation with authors"
+    },
+    "text_78976fa8": {
+      "id": "text_78976fa8",
+      "type": "personal_communication",
+      "title": "DOI: 10.1126/science.aaz5357"
+    },
+    "text_7ecd6ceb": {
+      "id": "text_7ecd6ceb",
+      "type": "personal_communication",
+      "title": "Estimates"
+    },
+    "text_7ecd6ceba": {
+      "id": "text_7ecd6ceba",
+      "type": "personal_communication",
+      "title": "Estimates"
+    },
+    "text_7ecd6cebb": {
+      "id": "text_7ecd6cebb",
+      "type": "personal_communication",
+      "title": "Estimates"
+    },
+    "text_8c8fb173": {
+      "id": "text_8c8fb173",
+      "type": "personal_communication",
+      "title": "using convergent's Form 990 data (2M/year for E11 Bio) and assuming a 5 year FRO duration"
+    },
+    "text_8d15c66e": {
+      "id": "text_8d15c66e",
+      "type": "personal_communication",
+      "title": "Scaled by data volume"
+    },
+    "text_8f874121": {
+      "id": "text_8f874121",
+      "type": "personal_communication",
+      "title": "Scaled by synapse count"
+    },
+    "text_917008b3": {
+      "id": "text_917008b3",
+      "type": "personal_communication",
+      "title": "Verhulst et al., 2018 – wrong link. Is it this paper? But it seems to be simulating auditory process...",
+      "note": "Verhulst et al., 2018 – wrong link. Is it this paper? But it seems to be simulating auditory processing outside of the brain proper."
+    },
+    "text_95fbeb54": {
+      "id": "text_95fbeb54",
+      "type": "personal_communication",
+      "title": "DOI: 10.1016/j.cell.2015.06.054"
+    },
+    "text_98e4812b": {
+      "id": "text_98e4812b",
+      "type": "personal_communication",
+      "title": "Scaled by brain volume"
+    },
+    "text_9c505ee3": {
+      "id": "text_9c505ee3",
+      "type": "personal_communication",
+      "title": "FlyWire"
+    },
+    "text_9ef1a763": {
+      "id": "text_9ef1a763",
+      "type": "personal_communication",
+      "title": "Estimated from literature"
+    },
+    "text_ab78fc43": {
+      "id": "text_ab78fc43",
+      "type": "personal_communication",
+      "title": "Vish 24"
+    },
+    "text_abd82250": {
+      "id": "text_abd82250",
+      "type": "personal_communication",
+      "title": "BRAIN Connects Initiative funding"
+    },
+    "text_b12c16ec": {
+      "id": "text_b12c16ec",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16eca": {
+      "id": "text_b12c16eca",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecb": {
+      "id": "text_b12c16ecb",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecc": {
+      "id": "text_b12c16ecc",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecd": {
+      "id": "text_b12c16ecd",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ece": {
+      "id": "text_b12c16ece",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecf": {
+      "id": "text_b12c16ecf",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecg": {
+      "id": "text_b12c16ecg",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ech": {
+      "id": "text_b12c16ech",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16eci": {
+      "id": "text_b12c16eci",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecj": {
+      "id": "text_b12c16ecj",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16eck": {
+      "id": "text_b12c16eck",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecl": {
+      "id": "text_b12c16ecl",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecm": {
+      "id": "text_b12c16ecm",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecn": {
+      "id": "text_b12c16ecn",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16eco": {
+      "id": "text_b12c16eco",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecp": {
+      "id": "text_b12c16ecp",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecq": {
+      "id": "text_b12c16ecq",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecr": {
+      "id": "text_b12c16ecr",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecs": {
+      "id": "text_b12c16ecs",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ect": {
+      "id": "text_b12c16ect",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecu": {
+      "id": "text_b12c16ecu",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecv": {
+      "id": "text_b12c16ecv",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecw": {
+      "id": "text_b12c16ecw",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b12c16ecx": {
+      "id": "text_b12c16ecx",
+      "type": "personal_communication",
+      "title": "Mineault"
+    },
+    "text_b23111cd": {
+      "id": "text_b23111cd",
+      "type": "personal_communication",
+      "title": "10.1002/(SICI)1098-1063(1996)6:2%3C149::AID-HIPO6%3E3.0.CO;2-K"
+    },
+    "text_c5240d58": {
+      "id": "text_c5240d58",
+      "type": "personal_communication",
+      "title": "from here"
+    },
+    "text_c5240d58a": {
+      "id": "text_c5240d58a",
+      "type": "personal_communication",
+      "title": "from here"
+    },
+    "text_c5240d58b": {
+      "id": "text_c5240d58b",
+      "type": "personal_communication",
+      "title": "from here"
+    },
+    "text_c5240d58c": {
+      "id": "text_c5240d58c",
+      "type": "personal_communication",
+      "title": "from here"
+    },
+    "text_c5240d58d": {
+      "id": "text_c5240d58d",
+      "type": "personal_communication",
+      "title": "from here"
+    },
+    "text_d148e7f9": {
+      "id": "text_d148e7f9",
+      "type": "personal_communication",
+      "title": "Practical limits"
+    },
+    "text_d2f9b2bf": {
+      "id": "text_d2f9b2bf",
+      "type": "personal_communication",
+      "title": "Dumoulin & Wandell, 2008 – that is not a simulation paper, is it? I think they are just analyzing ex...",
+      "note": "Dumoulin & Wandell, 2008 – that is not a simulation paper, is it? I think they are just analyzing experimental data there."
+    },
+    "text_d788fe57": {
+      "id": "text_d788fe57",
+      "type": "personal_communication",
+      "title": "WormAtlas"
+    },
+    "text_d7e084ae": {
+      "id": "text_d7e084ae",
+      "type": "personal_communication",
+      "title": "Typical calcium imaging"
+    },
+    "text_dde7f09b": {
+      "id": "text_dde7f09b",
+      "type": "personal_communication",
+      "title": "Estimate based on conversations with experts and authors."
+    },
+    "text_e0cb0342": {
+      "id": "text_e0cb0342",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034226": {
+      "id": "text_e0cb034226",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034227": {
+      "id": "text_e0cb034227",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034228": {
+      "id": "text_e0cb034228",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034229": {
+      "id": "text_e0cb034229",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034230": {
+      "id": "text_e0cb034230",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034231": {
+      "id": "text_e0cb034231",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb034232": {
+      "id": "text_e0cb034232",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342a": {
+      "id": "text_e0cb0342a",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342b": {
+      "id": "text_e0cb0342b",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342c": {
+      "id": "text_e0cb0342c",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342d": {
+      "id": "text_e0cb0342d",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342e": {
+      "id": "text_e0cb0342e",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342f": {
+      "id": "text_e0cb0342f",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342g": {
+      "id": "text_e0cb0342g",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342h": {
+      "id": "text_e0cb0342h",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342i": {
+      "id": "text_e0cb0342i",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342j": {
+      "id": "text_e0cb0342j",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342k": {
+      "id": "text_e0cb0342k",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342l": {
+      "id": "text_e0cb0342l",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342m": {
+      "id": "text_e0cb0342m",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342n": {
+      "id": "text_e0cb0342n",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342o": {
+      "id": "text_e0cb0342o",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342p": {
+      "id": "text_e0cb0342p",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342q": {
+      "id": "text_e0cb0342q",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342r": {
+      "id": "text_e0cb0342r",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342s": {
+      "id": "text_e0cb0342s",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342t": {
+      "id": "text_e0cb0342t",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342u": {
+      "id": "text_e0cb0342u",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342v": {
+      "id": "text_e0cb0342v",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342w": {
+      "id": "text_e0cb0342w",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342x": {
+      "id": "text_e0cb0342x",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e0cb0342y": {
+      "id": "text_e0cb0342y",
+      "type": "personal_communication",
+      "title": "Urai"
+    },
+    "text_e68961eb": {
+      "id": "text_e68961eb",
+      "type": "personal_communication",
+      "title": "FlyWire estimates, assumptions"
+    },
+    "text_e68961eba": {
+      "id": "text_e68961eba",
+      "type": "personal_communication",
+      "title": "FlyWire estimates, assumptions"
+    },
+    "text_e68961ebb": {
+      "id": "text_e68961ebb",
+      "type": "personal_communication",
+      "title": "FlyWire estimates, assumptions"
+    },
+    "text_e68961ebc": {
+      "id": "text_e68961ebc",
+      "type": "personal_communication",
+      "title": "FlyWire estimates, assumptions"
+    },
+    "text_ee1d096b": {
+      "id": "text_ee1d096b",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b26": {
+      "id": "text_ee1d096b26",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b27": {
+      "id": "text_ee1d096b27",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b28": {
+      "id": "text_ee1d096b28",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b29": {
+      "id": "text_ee1d096b29",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b30": {
+      "id": "text_ee1d096b30",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b31": {
+      "id": "text_ee1d096b31",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b32": {
+      "id": "text_ee1d096b32",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b33": {
+      "id": "text_ee1d096b33",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b34": {
+      "id": "text_ee1d096b34",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b35": {
+      "id": "text_ee1d096b35",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b36": {
+      "id": "text_ee1d096b36",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b37": {
+      "id": "text_ee1d096b37",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b38": {
+      "id": "text_ee1d096b38",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b39": {
+      "id": "text_ee1d096b39",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b40": {
+      "id": "text_ee1d096b40",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b41": {
+      "id": "text_ee1d096b41",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b42": {
+      "id": "text_ee1d096b42",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b43": {
+      "id": "text_ee1d096b43",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b44": {
+      "id": "text_ee1d096b44",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b45": {
+      "id": "text_ee1d096b45",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b46": {
+      "id": "text_ee1d096b46",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b47": {
+      "id": "text_ee1d096b47",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b48": {
+      "id": "text_ee1d096b48",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b49": {
+      "id": "text_ee1d096b49",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b50": {
+      "id": "text_ee1d096b50",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b51": {
+      "id": "text_ee1d096b51",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b52": {
+      "id": "text_ee1d096b52",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b53": {
+      "id": "text_ee1d096b53",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b54": {
+      "id": "text_ee1d096b54",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b55": {
+      "id": "text_ee1d096b55",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b56": {
+      "id": "text_ee1d096b56",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b57": {
+      "id": "text_ee1d096b57",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b58": {
+      "id": "text_ee1d096b58",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b59": {
+      "id": "text_ee1d096b59",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b60": {
+      "id": "text_ee1d096b60",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b61": {
+      "id": "text_ee1d096b61",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b62": {
+      "id": "text_ee1d096b62",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b63": {
+      "id": "text_ee1d096b63",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b64": {
+      "id": "text_ee1d096b64",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b65": {
+      "id": "text_ee1d096b65",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b66": {
+      "id": "text_ee1d096b66",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b67": {
+      "id": "text_ee1d096b67",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b68": {
+      "id": "text_ee1d096b68",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b69": {
+      "id": "text_ee1d096b69",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b70": {
+      "id": "text_ee1d096b70",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b71": {
+      "id": "text_ee1d096b71",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b72": {
+      "id": "text_ee1d096b72",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b73": {
+      "id": "text_ee1d096b73",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b74": {
+      "id": "text_ee1d096b74",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b75": {
+      "id": "text_ee1d096b75",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b76": {
+      "id": "text_ee1d096b76",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b77": {
+      "id": "text_ee1d096b77",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b78": {
+      "id": "text_ee1d096b78",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b79": {
+      "id": "text_ee1d096b79",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b80": {
+      "id": "text_ee1d096b80",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b81": {
+      "id": "text_ee1d096b81",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b82": {
+      "id": "text_ee1d096b82",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b83": {
+      "id": "text_ee1d096b83",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096b84": {
+      "id": "text_ee1d096b84",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096ba": {
+      "id": "text_ee1d096ba",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bb": {
+      "id": "text_ee1d096bb",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bc": {
+      "id": "text_ee1d096bc",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bd": {
+      "id": "text_ee1d096bd",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096be": {
+      "id": "text_ee1d096be",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bf": {
+      "id": "text_ee1d096bf",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bg": {
+      "id": "text_ee1d096bg",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bh": {
+      "id": "text_ee1d096bh",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bi": {
+      "id": "text_ee1d096bi",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bj": {
+      "id": "text_ee1d096bj",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bk": {
+      "id": "text_ee1d096bk",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bl": {
+      "id": "text_ee1d096bl",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bm": {
+      "id": "text_ee1d096bm",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bn": {
+      "id": "text_ee1d096bn",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bo": {
+      "id": "text_ee1d096bo",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bp": {
+      "id": "text_ee1d096bp",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bq": {
+      "id": "text_ee1d096bq",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096br": {
+      "id": "text_ee1d096br",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bs": {
+      "id": "text_ee1d096bs",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bt": {
+      "id": "text_ee1d096bt",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bu": {
+      "id": "text_ee1d096bu",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bv": {
+      "id": "text_ee1d096bv",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bw": {
+      "id": "text_ee1d096bw",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096bx": {
+      "id": "text_ee1d096bx",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_ee1d096by": {
+      "id": "text_ee1d096by",
+      "type": "personal_communication",
+      "title": "S&K"
+    },
+    "text_f1506b63": {
+      "id": "text_f1506b63",
+      "type": "personal_communication",
+      "title": "Literature"
+    },
+    "text_f1506b63a": {
+      "id": "text_f1506b63a",
+      "type": "personal_communication",
+      "title": "Literature"
+    },
+    "text_f1506b63b": {
+      "id": "text_f1506b63b",
+      "type": "personal_communication",
+      "title": "Literature"
+    },
+    "text_f1506b63c": {
+      "id": "text_f1506b63c",
+      "type": "personal_communication",
+      "title": "Literature"
+    },
+    "text_f76590dc": {
+      "id": "text_f76590dc",
+      "type": "personal_communication",
+      "title": "Standard protocol"
+    },
+    "text_f8414d83": {
+      "id": "text_f8414d83",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83a": {
+      "id": "text_f8414d83a",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83b": {
+      "id": "text_f8414d83b",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83c": {
+      "id": "text_f8414d83c",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83d": {
+      "id": "text_f8414d83d",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83e": {
+      "id": "text_f8414d83e",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83f": {
+      "id": "text_f8414d83f",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f8414d83g": {
+      "id": "text_f8414d83g",
+      "type": "personal_communication",
+      "title": "Svoboda"
+    },
+    "text_f9510fcd": {
+      "id": "text_f9510fcd",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_f9510fcda": {
+      "id": "text_f9510fcda",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_f9510fcdb": {
+      "id": "text_f9510fcdb",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_f9510fcdc": {
+      "id": "text_f9510fcdc",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_f9510fcdd": {
+      "id": "text_f9510fcdd",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_f9510fcde": {
+      "id": "text_f9510fcde",
+      "type": "personal_communication",
+      "title": "misc. organism specifications"
+    },
+    "text_fd3074fc": {
+      "id": "text_fd3074fc",
+      "type": "personal_communication",
+      "title": "Lytton, 2008 – wrong link. And which paper are you thinking about here? Is it this one? That is a re...",
+      "note": "Lytton, 2008 – wrong link. And which paper are you thinking about here? Is it this one? That is a review article, and not original research. Does it really have results from a simulation of a piece of human brain that gets such high scores on the various aspects in your table?"
+    },
+    "text_ff4999bf": {
+      "id": "text_ff4999bf",
+      "type": "personal_communication",
+      "title": "Pronold et al, 2024 – if I recall correctly, they simulate 3.5 million neurons, which is 0.004% of n...",
+      "note": "Pronold et al, 2024 – if I recall correctly, they simulate 3.5 million neurons, which is 0.004% of neurons in the human brain. That is minuscule compared to what Yamazaki et al. and Lu et al. did (complete or near-complete coverage of all the brain’s neurons), and yet the “Percentage of Neurons” are scored at 2 for all these papers. It certainly should be 1 for Pronold et al."
+    },
+    "tracxn_funding_and_investors_2026a": {
+      "id": "tracxn_funding_and_investors_2026a",
+      "type": "webpage",
+      "title": "Funding And Investors",
+      "URL": "https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws/funding-and-investors#funding",
+      "author": [
+        {
+          "literal": "tracxn.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "trautmann2023": {
+      "id": "trautmann2023",
+      "type": "article",
+      "title": "Large-scale high-density brain-wide neural recording in nonhuman primates",
+      "URL": "https://doi.org/10.1101/2023.02.01.526664",
+      "DOI": "10.1101/2023.02.01.526664",
+      "author": [
+        {
+          "family": "Trautmann",
+          "given": "Eric M."
+        },
+        {
+          "family": "Hesse",
+          "given": "Janis K."
+        },
+        {
+          "family": "Stine",
+          "given": "Gabriel M."
+        },
+        {
+          "family": "Xia",
+          "given": "Ruobing"
+        },
+        {
+          "family": "Zhu",
+          "given": "Shude"
+        },
+        {
+          "family": "O’Shea",
+          "given": "Daniel J."
+        },
+        {
+          "family": "Karsh",
+          "given": "Bill"
+        },
+        {
+          "family": "Colonell",
+          "given": "Jennifer"
+        },
+        {
+          "family": "Lanfranchi",
+          "given": "Frank F."
+        },
+        {
+          "family": "Vyas",
+          "given": "Saurabh"
+        },
+        {
+          "family": "Zimnik",
+          "given": "Andrew"
+        },
+        {
+          "family": "Steinmann",
+          "given": "Natalie A."
+        },
+        {
+          "family": "Wagenaar",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Andrei",
+          "given": "Alexandru"
+        },
+        {
+          "family": "Lopez",
+          "given": "Carolina Mora"
+        },
+        {
+          "family": "O’Callaghan",
+          "given": "John"
+        },
+        {
+          "family": "Putzeys",
+          "given": "Jan"
+        },
+        {
+          "family": "Raducanu",
+          "given": "Bogdan C."
+        },
+        {
+          "family": "Welkenhuysen",
+          "given": "Marleen"
+        },
+        {
+          "family": "Churchland",
+          "given": "Mark"
+        },
+        {
+          "family": "Moore",
+          "given": "Tirin"
+        },
+        {
+          "family": "Shadlen",
+          "given": "Michael"
+        },
+        {
+          "family": "Shenoy",
+          "given": "Krishna"
+        },
+        {
+          "family": "Tsao",
+          "given": "Doris"
+        },
+        {
+          "family": "Dutta",
+          "given": "Barundeb"
+        },
+        {
+          "family": "Harris",
+          "given": "Timothy"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    "ukbiobank_uk_biobank_funding_details_sum_2026": {
+      "id": "ukbiobank_uk_biobank_funding_details_sum_2026",
+      "type": "webpage",
+      "title": "Uk Biobank Funding Details Summary.Pdf",
+      "URL": "https://www.ukbiobank.ac.uk/media/wgsfd0qg/uk-biobank-funding-details-summary.pdf",
+      "author": [
+        {
+          "literal": "ukbiobank.ac.uk"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      },
+      "note": "counting imaging only"
+    },
+    "ukri_first_map_of_every_neuron_in_a_2026": {
+      "id": "ukri_first_map_of_every_neuron_in_a_2026",
+      "type": "webpage",
+      "title": "First Map Of Every Neuron In An Adult Fly Brain",
+      "URL": "https://www.ukri.org/news/first-map-of-every-neuron-in-an-adult-fly-brain/",
+      "author": [
+        {
+          "literal": "ukri.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "watermark_fcab244_pdf_2026": {
+      "id": "watermark_fcab244_pdf_2026",
+      "type": "webpage",
+      "title": "Fcab244.Pdf",
+      "URL": "https://watermark.silverchair.com/fcab244.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA2QwggNgBgkqhkiG9w0BBwagggNRMIIDTQIBADCCA0YGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMue-7EFvGCFVGoHsHAgEQgIIDF1CdEKe95LG4pOVFNF5gErh4iv2BNpXhKAklW6lTS12BGqCCWlM_8kejdaIs7Lv0mpPI0EfldNqNw3S20AKLgs5yDtJ2x7l2-v03O6M7o2J44HMx-HgBNEnrUNI5XQk7OS-B0Abx7HsfrwyUCCFxEpxzUpw3_QS_NTl9_uN-aLIaYRqF3EhqPoapRGG52l04oxLmVPpXsuHjh7kILbDtLzXLHOZmZGZtKxAoQYYdKSorgj48YdcTmXO2tL0dQr6Jj5bOixucCSJxX94mlblCDo9BcLapTMnXINC3_9hyaY-oT0NsONvQ8GHxrTgFe6nAhNrZxgHPdIvcB6ZZAhuEl62XMFlFYxyBMUCryqr0uhHL3vSpPrW7Bs-7SFb7NkGBFCHkrZPLHIUq4eCLLwpoK5s4uHnnMIYhjy5xO83wq2f_yzKZLZ6G4qDU2vsXcELZrdlgqQf4KpeR9knl42W3zre9oEWQNoWxMB13f-r4XaniVSMSLKbp7SQ3W10FtxYhMOIiSSRw4wyQUKaPAoYLGU39i2WjHAerYyHLn3xQJyFMByc6BO1P1ilLa70rawAyV7mSeg4ld40bJiALO9jxw2nq4JFz22PWBWo2zHJIywm-wAqoXrKEydxk6Pall_wflz8DwbWX5COoLIKv3pmlyXRr-tR8lY8-DUw98s2C6MRfakk9rFMMLyXIl-Sct0biMEd02M4ep9xPCaSMGfiHF76IukrDZqiji5xLdxytRRAgv8tJ8aPq4NjURz6iaPOljHgFeVhU9sGRMddacrPF1kP5YG7JPkfZnL-4kLmHpVbO46qRqBhji0zU8m8x5Azk86S00t-Mop03UCoQWrXcA5c3STUyun4w7j9lfeJ1ISNBCjgzh6dxktWBantTXl91-kiFHBbFMSiUjrQzi4onxrAzet8Ve8akRwHF-dWGi2nrg_ahqDNdf_CS-ROPa957KGnrediF_7vmwQf2TQtGKOlO3_vpatE-5Pr7EgnKHf7RodY9NJCqpMQSvq-8L4efqMJk4JED62EX9isyqYlaf9wHoWNj4vkZ",
+      "author": [
+        {
+          "literal": "watermark.silverchair.com"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "web_20220205023344id_2026": {
+      "id": "web_20220205023344id_2026",
+      "type": "webpage",
+      "title": "20220205023344Id ",
+      "URL": "https://web.archive.org/web/20220205023344id_/",
+      "author": [
+        {
+          "literal": "web.archive.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "wellcome_mapping_brain_new_technique_po_2026": {
+      "id": "wellcome_mapping_brain_new_technique_po_2026",
+      "type": "webpage",
+      "title": "Mapping Brain New Technique Poised Untangle Complexity Brain",
+      "URL": "https://wellcome.org/press-release/mapping-brain-new-technique-poised-untangle-complexity-brain",
+      "author": [
+        {
+          "literal": "wellcome.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "wellcome_mapping_energetic_pathways_bra_2026": {
+      "id": "wellcome_mapping_energetic_pathways_bra_2026",
+      "type": "webpage",
+      "title": "Mapping Energetic Pathways Brain Ultra High Field",
+      "URL": "https://wellcome.org/grant-funding/people-and-projects/grants-awarded/mapping-energetic-pathways-brain-ultra-high-field",
+      "author": [
+        {
+          "literal": "wellcome.org"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            26
+          ]
+        ]
+      }
+    },
+    "zhong2024": {
+      "id": "zhong2024",
+      "type": "article",
+      "title": "Distinct streams for supervised and unsupervised learning in the visual cortex",
+      "URL": "https://doi.org/10.1101/2024.02.25.581990",
+      "DOI": "10.1101/2024.02.25.581990",
+      "author": [
+        {
+          "family": "Zhong",
+          "given": "Lin"
+        },
+        {
+          "family": "Baptista",
+          "given": "Scott"
+        },
+        {
+          "family": "Gattoni",
+          "given": "Rachel"
+        },
+        {
+          "family": "Arnold",
+          "given": "Jon"
+        },
+        {
+          "family": "Flickinger",
+          "given": "Daniel"
+        },
+        {
+          "family": "Stringer",
+          "given": "Carsen"
+        },
+        {
+          "family": "Pachitariu",
+          "given": "Marius"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            27
+          ]
+        ]
+      }
+    },
+    "zong2021": {
+      "id": "zong2021",
+      "type": "article",
+      "title": "Large-scale two-photon calcium imaging in freely moving mice",
+      "URL": "https://doi.org/10.1101/2021.09.20.461015",
+      "DOI": "10.1101/2021.09.20.461015",
+      "author": [
+        {
+          "family": "Zong",
+          "given": "Weijian"
+        },
+        {
+          "family": "Obenhaus",
+          "given": "Horst A."
+        },
+        {
+          "family": "Skytøen",
+          "given": "Emilie R."
+        },
+        {
+          "family": "Eneqvist",
+          "given": "Hanna"
+        },
+        {
+          "family": "de Jong",
+          "given": "Nienke L."
+        },
+        {
+          "family": "Jorge",
+          "given": "Marina R."
+        },
+        {
+          "family": "Moser",
+          "given": "May-Britt"
+        },
+        {
+          "family": "Moser",
+          "given": "Edvard I."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            21
+          ]
+        ]
+      }
+    }
+  }
+}

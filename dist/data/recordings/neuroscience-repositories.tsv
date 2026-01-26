@@ -6,7 +6,7 @@ Spatial Atlas	https://www.spatial-atlas.net/Brain/	https://zenodo.org/records/83
 OpenDatasets	https://imaging.mrc-cbu.cam.ac.uk/methods/OpenDatasets		Good meta-repository; includes good description, e.g. giant unification study	ca2+,fMRI,fNIRS,multimodal				none	none
 MICRONS Explorer	https://www.microns-explorer.org/phase1	https://zenodo.org/records/7510511	mouse EM dataset				none	none
 Natural Scenes Dataset	https://naturalscenesdataset.org/	Must fill out form for access: https://docs.google.com/forms/d/e/1FAIpQLSduTPeZo54uEMKD-ihXmRhx0hBDdLHNsVyeo_kCb8qbyAkXuQ/viewform	(used by MedARC and 2023 Algonauts Challenge)				none	none
-NeuroTechX dataset curation	https://github.com/NeuroTechX/awesome-bci#brain-databases				none	none
+NeuroTechX dataset curation	https://github.com/NeuroTechX/awesome-bci#brain-databases					none	
 Brain Image Library	https://api.brainimagelibrary.org/web/	https://submit.brainimagelibrary.org/search	brain CONNECTS dataset in the US				none	none
 Open Ephys	https://github.com/openlists/ElectrophysiologyData	Most repositories listed are repeats, direct data is listed below		cell ephys				none	none
 Open EEG	https://github.com/meagmohit/EEG-Datasets			EEG				none	none
@@ -32,7 +32,7 @@ StudyForrest	https://www.studyforrest.org/data.html	https://openneuro.org/datase
 USC Multimodal Connectivity Database	https://umcd.humanconnectomeproject.org/umcd/default/browse	https://umcd.humanconnectomeproject.org/umcd/default/browse	Web-based repository and analysis site for connectivity matrices that have been derived from de-identified neuroimaging data	MRI,fMRI,multimodal				none	none
 CCF	https://www.humanconnectome.org/study/hcp-young-adult/document/500-subjects-data-release/	Requires account: https://db.humanconnectome.org/app/template/Login.vm	Behavioral and 3T MR imaging data from over 500 healthy adult participants	MRI,fMRI				none	none
 OASIS	https://www.oasis-brains.org/	"OASIS 1: OASIS 1 Link				none	none
-OASIS 2: OASIS 2 Link				none	none
+OASIS 2: OASIS 2 Link				none			
 OASIS 3 and 4: Require account"	Neuroimaging and processed imaging data across a broad demographic, cognitive, and genetic spectrum. There are four different OASIS datasets that require different methods of access. The primary modality is MRI, but each dataset states that it comes with fMRI as well. Also housed on XNAT	CT,MRI,PET,fMRI,multimodal				none	none
 XNAT	https://central.xnat.org/	https://central.xnat.org/app/template/Index.vm	Contains 396 projects, 7078 subjects, and 16612 imaging sessions. Mainly involves MR, PET, and CT	MRI,PET,fMRI,multimodal,ultrasound				none	none
 Open NeuroData	https://registry.opendata.aws/open-neurodata/	https://registry.opendata.aws/open-neurodata/	Click on type of modality at top to see datasets        Multiple neuroimaging datasets (as Neuroglancer Precomputed Volumes) across multiple modalities and scales, ranging from nanoscale (electron microscopy), to microscale (cleared lightsheet microscopy and array tomography), and mesoscale (structural and functional magnetic resonance imaging)	MRI,electron microscopy,multimodal				none	none
@@ -47,7 +47,7 @@ NDA NIMH	https://nda.nih.gov/general-query.html?q=query=featured-datasets:HCP%20
 Radboud Repository	https://repository.ubn.ru.nl/handle/2066/148787/browse?authority=18d54e1539fbf8c32dc7241c9ecf402d&type=authorganizationcode		Holds all datsets from Radboud University, can filter to get cognitive neuroscience and neuroscience datasets	EEG,MRI,fMRI				none	none
 Knowledge Space	https://knowledge-space.org/	https://knowledge-space.org/search?q=mouse	Thousands of datasets indexed from the world's leading neuroscience data repositories, including OpenNeuro, ModelDB, NeuroMorpho, etc. Can be filtered to look through individual repositories or all at once	EEG,MRI,PET,ca2+,cell ephys,electron microscopy,fMRI,multimodal,ultrasound				none	none
 Zenodo	https://zenodo.org/		General data repository, can search for e.g. “fMRI”	everything				none	none
-Brain Cell Data	https://www.braincelldata.org/				none	none
+Brain Cell Data	https://www.braincelldata.org/					none	
 Alzheimer’s Disease Neuroimaging Initiative	https://adni.loni.usc.edu/	Contained in the IDA	MRI and PET images, genetics, cognitive tests, CSF and blood biomarkers as predictors of Alzheimer’s disease	MRI,PET				none	none
 BIRN fMRI and MRI Data	https://www.nitrc.org/frs/?group_id=64	https://www.nitrc.org/frs/?group_id=64	fMRI, MRI scans and atlases for human and mouse brains	MRI,fMRI				none	none
-Brede Database				none	none
+Brede Database				none			

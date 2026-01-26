@@ -1,6 +1,6 @@
 {
   "$schema": "https://resource.citationstyles.org/schema/v1.0/input/json/csl-data.json",
-  "_generated": "2026-01-26T04:29:58.880717",
+  "_generated": "2026-01-26T12:53:05.467514",
   "_generator": "build_bibliography.py",
   "references": [
     {
@@ -22949,6 +22949,200 @@
           ]
         ]
       }
+    },
+    {
+      "id": "sobe_2025",
+      "type": "report",
+      "title": "State of Brain Emulation Report 2025",
+      "author": [
+        {
+          "family": "Zanichelli",
+          "given": "N."
+        },
+        {
+          "family": "Schons",
+          "given": "M."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "URL": "https://brainemulation.org"
+    },
+    {
+      "id": "nvidia_h100_2024",
+      "type": "webpage",
+      "title": "NVIDIA H100 Tensor Core GPU",
+      "author": [
+        {
+          "literal": "NVIDIA"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://www.nvidia.com/en-us/data-center/h100/"
+    },
+    {
+      "id": "aws_s3_pricing_2025",
+      "type": "webpage",
+      "title": "Amazon S3 Pricing",
+      "author": [
+        {
+          "literal": "Amazon Web Services"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "URL": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "id": "wellcome_connectomics_2024",
+      "type": "webpage",
+      "title": "Wellcome Connectomics Initiative",
+      "author": [
+        {
+          "literal": "Wellcome Trust"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://wellcome.org/what-we-do/our-work/wellcome-connectomics"
+    },
+    {
+      "id": "microns_2021",
+      "type": "article-journal",
+      "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+      "author": [
+        {
+          "literal": "MICrONS Consortium"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "DOI": "10.1101/2021.07.28.454025",
+      "URL": "https://www.microns-explorer.org/"
+    },
+    {
+      "id": "januszewski2018",
+      "type": "article-journal",
+      "title": "High-precision automated reconstruction of neurons with flood-filling networks",
+      "author": [
+        {
+          "family": "Januszewski",
+          "given": "Michał"
+        },
+        {
+          "family": "Kornfeld",
+          "given": "Jörgen"
+        },
+        {
+          "family": "Li",
+          "given": "Peter H."
+        },
+        {
+          "family": "Pope",
+          "given": "Art"
+        },
+        {
+          "family": "Blakely",
+          "given": "Tim"
+        },
+        {
+          "family": "Lindsey",
+          "given": "Larry"
+        },
+        {
+          "family": "Maitin-Shepard",
+          "given": "Jeremy"
+        },
+        {
+          "family": "Tyka",
+          "given": "Mike"
+        },
+        {
+          "family": "Denk",
+          "given": "Winfried"
+        },
+        {
+          "family": "Jain",
+          "given": "Viren"
+        }
+      ],
+      "container-title": "Nature Methods",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "volume": "15",
+      "page": "605-610",
+      "DOI": "10.1038/s41592-018-0049-4"
+    },
+    {
+      "id": "schwartz2018",
+      "type": "article-journal",
+      "title": "High-throughput, high-resolution neuroimaging with multibeam scanning electron microscopy",
+      "author": [
+        {
+          "family": "Schwartz",
+          "given": "A."
+        }
+      ],
+      "container-title": "bioRxiv",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "DOI": "10.1101/386250"
+    },
+    {
+      "id": "chen2020",
+      "type": "article-journal",
+      "title": "An interactive framework for whole-brain maps at cellular resolution",
+      "author": [
+        {
+          "family": "Chen",
+          "given": "X."
+        }
+      ],
+      "container-title": "Nature Neuroscience",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "DOI": "10.1038/s41593-020-0633-2"
     }
   ]
 }
