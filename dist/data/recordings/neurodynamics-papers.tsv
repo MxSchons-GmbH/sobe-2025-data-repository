@@ -1,15 +1,15 @@
 First author	Year	DOI/Link	Organism	Fixated / moving	Method	Number of neurons	Temporal resolution: Hz	Duration single session min	Duration total repeated sessions min	Resolution in µm isotropic	Individuals studied	Brain volume dimensions	SNR	Perturbation
-Kato	2015	[10]	C. elegans	fixated	Calcium	127	1.0	15.0	120.0	1	12.0
-Nichols	2017	[12]	C. elegans	fixated	Calcium	108	1.0	15.0	120.0	1	44.0
-Skora	2018	[15]	C. elegans	fixated	Calcium	129	1.0	15.0	120.0	1	12.0
-Kaplan	2020	[9]	C. elegans	fixated	Calcium	114	1.0	15.0	120.0	1	19.0
-Yemini	2021	 [37]	C. elegans	fixated	Calcium	125	1.0	15.0	120.0	1	49.0
-Uzel	2022	[18]	C. elegans	fixated	Calcium	138	1.0	15.0	120.0	1	6.0
-Dag	2023	[13]	C. elegans	fixated	Calcium	143	1.0	15.0	120.0	1	7.0
-Atanas	2023	 [5]	C. elegans	moving	Calcium	136	1.0	15.0	120.0	1	42.0
-Leifer	2023	[14]	C. elegans	fixated	Calcium	122	1.0	15.0	120.0	1	103.0
-Lin	2023	 [11]	C. elegans	fixated	Calcium	8	1.0	15.0	120.0	1	577.0
-Venkatachalam	2024	[32]	C. elegans	moving	Calcium	187	1.0	15.0	120.0	1	22.0
+Kato	2015	https://doi.org/10.1016/j.cell.2015.09.034	C. elegans	fixated	Calcium	127	1.0	15.0	120.0	1	12.0
+Nichols	2017	https://doi.org/10.1126/science.aam6851	C. elegans	fixated	Calcium	108	1.0	15.0	120.0	1	44.0
+Skora	2018	https://doi.org/10.1016/j.celrep.2017.12.091	C. elegans	fixated	Calcium	129	1.0	15.0	120.0	1	12.0
+Kaplan	2020	https://doi.org/10.1016/j.neuron.2019.10.037	C. elegans	fixated	Calcium	114	1.0	15.0	120.0	1	19.0
+Yemini	2021	https://doi.org/10.1016/j.cell.2020.12.012	C. elegans	fixated	Calcium	125	1.0	15.0	120.0	1	49.0
+Uzel	2022	https://doi.org/10.1016/j.cub.2022.06.039	C. elegans	fixated	Calcium	138	1.0	15.0	120.0	1	6.0
+Dag	2023	https://doi.org/10.1016/j.cell.2023.04.023	C. elegans	fixated	Calcium	143	1.0	15.0	120.0	1	7.0
+Atanas	2023	https://doi.org/10.1016/j.cell.2023.07.035	C. elegans	moving	Calcium	136	1.0	15.0	120.0	1	42.0
+Leifer	2023	https://doi.org/10.1038/s41586-023-06683-4	C. elegans	fixated	Calcium	122	1.0	15.0	120.0	1	103.0
+Lin	2023	https://doi.org/10.1126/sciadv.ade1249	C. elegans	fixated	Calcium	8	1.0	15.0	120.0	1	577.0
+Venkatachalam	2016	https://doi.org/10.1073/pnas.1507109113	C. elegans	moving	Calcium	187	1.0	15.0	120.0	1	22.0
 Ahrens	2013	https://doi.org/10.1038/nmeth.2434	Zebrafish Larvae	fixiated	Calcium	80000	1.0	25.0	150.0	1
 Favre-Bulle	2018	https://doi.org/10.1016/j.cub.2018.09.060	Zebrafish Larvae	fixated	Calcium	80000	4.0	25.0	150.0	1
 Yang	2022	https://doi.org/10.1038/s41592-022-01417-2	Zebrafish Larvae	fixated	Calcium	40000	3.3	25.0	150.0	1

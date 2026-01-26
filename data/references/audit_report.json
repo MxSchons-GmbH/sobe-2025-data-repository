@@ -1,0 +1,1305 @@
+{
+  "generated_at": "2026-01-26T02:14:42.662659",
+  "summary": {
+    "total_files": 46,
+    "total_rows": 2612,
+    "rows_with_refs": 1035,
+    "rows_without_refs": 1577,
+    "overall_coverage_pct": 39.6,
+    "canonical_dois": 518,
+    "non_canonical_dois": 0,
+    "bracketed_refs": 0,
+    "files_with_structured_cols": 12,
+    "ref_id_filled": 8,
+    "ref_id_empty": 158
+  },
+  "by_category": {
+    "compute": {
+      "files": 7,
+      "rows": 947,
+      "with_refs": 27,
+      "without_refs": 920,
+      "coverage_pct": 2.9
+    },
+    "connectomics": {
+      "files": 6,
+      "rows": 326,
+      "with_refs": 93,
+      "without_refs": 233,
+      "coverage_pct": 28.5
+    },
+    "costs": {
+      "files": 5,
+      "rows": 237,
+      "with_refs": 176,
+      "without_refs": 61,
+      "coverage_pct": 74.3
+    },
+    "formulas": {
+      "files": 5,
+      "rows": 86,
+      "with_refs": 0,
+      "without_refs": 86,
+      "coverage_pct": 0.0
+    },
+    "imaging": {
+      "files": 2,
+      "rows": 90,
+      "with_refs": 66,
+      "without_refs": 24,
+      "coverage_pct": 73.3
+    },
+    "initiatives": {
+      "files": 2,
+      "rows": 81,
+      "with_refs": 60,
+      "without_refs": 21,
+      "coverage_pct": 74.1
+    },
+    "organisms": {
+      "files": 2,
+      "rows": 11,
+      "with_refs": 6,
+      "without_refs": 5,
+      "coverage_pct": 54.5
+    },
+    "parameters": {
+      "files": 5,
+      "rows": 72,
+      "with_refs": 15,
+      "without_refs": 57,
+      "coverage_pct": 20.8
+    },
+    "recording": {
+      "files": 1,
+      "rows": 6,
+      "with_refs": 0,
+      "without_refs": 6,
+      "coverage_pct": 0.0
+    },
+    "recordings": {
+      "files": 9,
+      "rows": 563,
+      "with_refs": 472,
+      "without_refs": 91,
+      "coverage_pct": 83.8
+    },
+    "simulations": {
+      "files": 2,
+      "rows": 193,
+      "with_refs": 120,
+      "without_refs": 73,
+      "coverage_pct": 62.2
+    }
+  },
+  "priority_issues": [
+    {
+      "file": "connectomics.tsv",
+      "category": "formulas",
+      "issue": "20 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "costs.tsv",
+      "category": "formulas",
+      "issue": "19 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "recording.tsv",
+      "category": "formulas",
+      "issue": "21 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "simulation.tsv",
+      "category": "formulas",
+      "issue": "16 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "storage.tsv",
+      "category": "formulas",
+      "issue": "10 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "category": "parameters",
+      "issue": "9 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "category": "parameters",
+      "issue": "6 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "recording-parameters.tsv",
+      "category": "parameters",
+      "issue": "1 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "shared.tsv",
+      "category": "parameters",
+      "issue": "53 rows with empty ref_id",
+      "priority": "high"
+    },
+    {
+      "file": "storage-presets.tsv",
+      "category": "parameters",
+      "issue": "3 rows with empty ref_id",
+      "priority": "high"
+    }
+  ],
+  "files": [
+    {
+      "file_path": "compute/ai-training-computation.tsv",
+      "file_name": "ai-training-computation.tsv",
+      "category": "compute",
+      "total_rows": 904,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 904,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "compute/computational-demands-organisms.tsv",
+      "file_name": "computational-demands-organisms.tsv",
+      "category": "compute",
+      "total_rows": 16,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 16,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "compute/compute-requirements.tsv",
+      "file_name": "compute-requirements.tsv",
+      "category": "compute",
+      "total_rows": 6,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 6,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "compute/hardware-characteristics.tsv",
+      "file_name": "hardware-characteristics.tsv",
+      "category": "compute",
+      "total_rows": 7,
+      "ref_columns": [
+        "References"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 7,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 7,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "compute/neuron-models.tsv",
+      "file_name": "neuron-models.tsv",
+      "category": "compute",
+      "total_rows": 4,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 4,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 4,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 4,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "compute/storage-requirements.tsv",
+      "file_name": "storage-requirements.tsv",
+      "category": "compute",
+      "total_rows": 6,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 6,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "compute/synapse-models.tsv",
+      "file_name": "synapse-models.tsv",
+      "category": "compute",
+      "total_rows": 4,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 4,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 4,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 4,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "connectomics/brain-scans.tsv",
+      "file_name": "brain-scans.tsv",
+      "category": "connectomics",
+      "total_rows": 63,
+      "ref_columns": [
+        "References"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 63,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 4,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 54,
+      "text_only": 5,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "connectomics/connectomics-10nm.tsv",
+      "file_name": "connectomics-10nm.tsv",
+      "category": "connectomics",
+      "total_rows": 73,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 73,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "connectomics/connectomics-25nm.tsv",
+      "file_name": "connectomics-25nm.tsv",
+      "category": "connectomics",
+      "total_rows": 16,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 16,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "connectomics/connectomics-2nm.tsv",
+      "file_name": "connectomics-2nm.tsv",
+      "category": "connectomics",
+      "total_rows": 72,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 72,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "connectomics/connectomics-50nm.tsv",
+      "file_name": "connectomics-50nm.tsv",
+      "category": "connectomics",
+      "total_rows": 72,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 72,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "connectomics/tracing-trends-references.tsv",
+      "file_name": "tracing-trends-references.tsv",
+      "category": "connectomics",
+      "total_rows": 30,
+      "ref_columns": [
+        "Source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 30,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 28,
+      "text_only": 2,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "costs/neuron-reconstruction-estimates.tsv",
+      "file_name": "neuron-reconstruction-estimates.tsv",
+      "category": "costs",
+      "total_rows": 9,
+      "ref_columns": [
+        "Reference"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 9,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 9,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "costs/neuroscience-megaprojects.tsv",
+      "file_name": "neuroscience-megaprojects.tsv",
+      "category": "costs",
+      "total_rows": 42,
+      "ref_columns": [
+        "ref"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 40,
+      "rows_without_refs": 2,
+      "coverage_pct": 95.23809523809523,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 34,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "costs/non-neuroscience-megaprojects.tsv",
+      "file_name": "non-neuroscience-megaprojects.tsv",
+      "category": "costs",
+      "total_rows": 123,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 123,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 123,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "costs/proofreading.tsv",
+      "file_name": "proofreading.tsv",
+      "category": "costs",
+      "total_rows": 4,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 4,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 4,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "costs/storage-historical.tsv",
+      "file_name": "storage-historical.tsv",
+      "category": "costs",
+      "total_rows": 59,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 59,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "formulas/connectomics.tsv",
+      "file_name": "connectomics.tsv",
+      "category": "formulas",
+      "total_rows": 20,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 20,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 20,
+      "confidence_none": 20,
+      "validated_none": 20,
+      "issues": [
+        "20 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "formulas/costs.tsv",
+      "file_name": "costs.tsv",
+      "category": "formulas",
+      "total_rows": 19,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 19,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 19,
+      "confidence_none": 19,
+      "validated_none": 19,
+      "issues": [
+        "19 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "formulas/recording.tsv",
+      "file_name": "recording.tsv",
+      "category": "formulas",
+      "total_rows": 21,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 21,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 21,
+      "confidence_none": 21,
+      "validated_none": 21,
+      "issues": [
+        "21 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "formulas/simulation.tsv",
+      "file_name": "simulation.tsv",
+      "category": "formulas",
+      "total_rows": 16,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 16,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 16,
+      "confidence_none": 16,
+      "validated_none": 16,
+      "issues": [
+        "16 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "formulas/storage.tsv",
+      "file_name": "storage.tsv",
+      "category": "formulas",
+      "total_rows": 10,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 10,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 10,
+      "confidence_none": 10,
+      "validated_none": 10,
+      "issues": [
+        "10 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "imaging/imaging-modalities.tsv",
+      "file_name": "imaging-modalities.tsv",
+      "category": "imaging",
+      "total_rows": 23,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 23,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "imaging/neuroimaging-speed.tsv",
+      "file_name": "neuroimaging-speed.tsv",
+      "category": "imaging",
+      "total_rows": 67,
+      "ref_columns": [
+        "doi"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 66,
+      "rows_without_refs": 1,
+      "coverage_pct": 98.50746268656717,
+      "canonical_dois": 55,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 5,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "initiatives/brain-initiatives-overview.tsv",
+      "file_name": "brain-initiatives-overview.tsv",
+      "category": "initiatives",
+      "total_rows": 60,
+      "ref_columns": [
+        "References"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 60,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 59,
+      "text_only": 1,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "initiatives/digital-human-intelligence-costs.tsv",
+      "file_name": "digital-human-intelligence-costs.tsv",
+      "category": "initiatives",
+      "total_rows": 21,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 21,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "organisms/organism-characteristics.tsv",
+      "file_name": "organism-characteristics.tsv",
+      "category": "organisms",
+      "total_rows": 5,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 5,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "organisms/organisms.tsv",
+      "file_name": "organisms.tsv",
+      "category": "organisms",
+      "total_rows": 6,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 6,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "parameters/organism-defaults.tsv",
+      "file_name": "organism-defaults.tsv",
+      "category": "parameters",
+      "total_rows": 9,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 9,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 9,
+      "ref_id_filled": 0,
+      "ref_id_empty": 9,
+      "confidence_none": 9,
+      "validated_none": 9,
+      "issues": [
+        "9 rows with empty ref_id"
+      ]
+    },
+    {
+      "file_path": "parameters/recording-capabilities.tsv",
+      "file_name": "recording-capabilities.tsv",
+      "category": "parameters",
+      "total_rows": 6,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 6,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 6,
+      "ref_id_filled": 0,
+      "ref_id_empty": 6,
+      "confidence_none": 6,
+      "validated_none": 6,
+      "issues": [
+        "6 rows with empty ref_id"
+      ]
+    },
+    {
+      "file_path": "parameters/recording-parameters.tsv",
+      "file_name": "recording-parameters.tsv",
+      "category": "parameters",
+      "total_rows": 1,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 1,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 1,
+      "confidence_none": 1,
+      "validated_none": 1,
+      "issues": [
+        "1 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "parameters/shared.tsv",
+      "file_name": "shared.tsv",
+      "category": "parameters",
+      "total_rows": 53,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 53,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 53,
+      "confidence_none": 53,
+      "validated_none": 53,
+      "issues": [
+        "53 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "parameters/storage-presets.tsv",
+      "file_name": "storage-presets.tsv",
+      "category": "parameters",
+      "total_rows": 3,
+      "ref_columns": [],
+      "structured_columns": [
+        "ref_id",
+        "supporting_refs",
+        "ref_note",
+        "confidence",
+        "validated_by"
+      ],
+      "rows_with_refs": 0,
+      "rows_without_refs": 3,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 3,
+      "confidence_none": 3,
+      "validated_none": 3,
+      "issues": [
+        "3 rows with empty ref_id",
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "recording/recording-capabilities.tsv",
+      "file_name": "recording-capabilities.tsv",
+      "category": "recording",
+      "total_rows": 6,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 6,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "recordings/comparison-methods-volumes.tsv",
+      "file_name": "comparison-methods-volumes.tsv",
+      "category": "recordings",
+      "total_rows": 15,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 15,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "recordings/comparison-recordings.tsv",
+      "file_name": "comparison-recordings.tsv",
+      "category": "recordings",
+      "total_rows": 21,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 21,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "recordings/neural-dynamics-references.tsv",
+      "file_name": "neural-dynamics-references.tsv",
+      "category": "recordings",
+      "total_rows": 86,
+      "ref_columns": [
+        "DOI/Link"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 86,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 64,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 22,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "recordings/neural-information-rate.tsv",
+      "file_name": "neural-information-rate.tsv",
+      "category": "recordings",
+      "total_rows": 151,
+      "ref_columns": [
+        "source",
+        "doi"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 151,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 150,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 1,
+      "text_only": 151,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "recordings/neural-recording.tsv",
+      "file_name": "neural-recording.tsv",
+      "category": "recordings",
+      "total_rows": 12,
+      "ref_columns": [
+        "source"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 12,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 12,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "recordings/neural-recordings.tsv",
+      "file_name": "neural-recordings.tsv",
+      "category": "recordings",
+      "total_rows": 191,
+      "ref_columns": [
+        "Source",
+        "DOI"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 191,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 190,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 1,
+      "text_only": 191,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "recordings/neurodynamics-organisms.tsv",
+      "file_name": "neurodynamics-organisms.tsv",
+      "category": "recordings",
+      "total_rows": 5,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 5,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "recordings/neurodynamics-papers.tsv",
+      "file_name": "neurodynamics-papers.tsv",
+      "category": "recordings",
+      "total_rows": 32,
+      "ref_columns": [
+        "DOI/Link"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 32,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 28,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 4,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "recordings/neuroscience-repositories.tsv",
+      "file_name": "neuroscience-repositories.tsv",
+      "category": "recordings",
+      "total_rows": 50,
+      "ref_columns": [],
+      "structured_columns": [],
+      "rows_with_refs": 0,
+      "rows_without_refs": 50,
+      "coverage_pct": 0.0,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 0,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "No reference columns found"
+      ]
+    },
+    {
+      "file_path": "simulations/computational-models.tsv",
+      "file_name": "computational-models.tsv",
+      "category": "simulations",
+      "total_rows": 84,
+      "ref_columns": [
+        "Link"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 84,
+      "rows_without_refs": 0,
+      "coverage_pct": 100.0,
+      "canonical_dois": 19,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 56,
+      "text_only": 9,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": []
+    },
+    {
+      "file_path": "simulations/neuron-simulations.tsv",
+      "file_name": "neuron-simulations.tsv",
+      "category": "simulations",
+      "total_rows": 109,
+      "ref_columns": [
+        "Link"
+      ],
+      "structured_columns": [],
+      "rows_with_refs": 36,
+      "rows_without_refs": 73,
+      "coverage_pct": 33.02752293577982,
+      "canonical_dois": 0,
+      "non_canonical_dois": 0,
+      "bracketed_refs": 0,
+      "urls_only": 36,
+      "text_only": 0,
+      "ref_id_filled": 0,
+      "ref_id_empty": 0,
+      "confidence_none": 0,
+      "validated_none": 0,
+      "issues": [
+        "Low coverage: 33.0%"
+      ]
+    }
+  ]
+}

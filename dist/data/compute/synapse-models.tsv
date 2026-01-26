@@ -1,5 +1,5 @@
-id	name	short_name	flops_per_sec	flops_per_event	bytes	description	ref_id	supporting_refs	ref_note	confidence	validated_by
-alpha	Alpha Synapse	Alpha	50000	20	8	Simple alpha-function conductance				none	none
-tsodyks_markram	Tsodyks-Markram	TM	80000	51	16	Short-term plasticity with depression and facilitation				none	none
-exponential	Double Exponential	Exp2Syn	60000	30	12	Rise and decay time constants				none	none
-stdp	STDP Plastic	STDP	120000	80	24	Spike-timing dependent plasticity				none	none
+id	name	short_name	flops_per_sec	flops_per_event	bytes	description	source	ref_id	supporting_refs	ref_note	confidence	validated_by
+alpha	Alpha Synapse	Alpha	50000	20	8	Simple alpha-function conductance	https://doi.org/10.1152/jn.1967.30.5.1138	rall1967		Eq. for alpha function	derived	ai
+tsodyks_markram	Tsodyks-Markram	TM	80000	51	16	Short-term plasticity with depression and facilitation	https://doi.org/10.1073/pnas.94.2.719	tsodyks1997		Model equations	measured	ai
+exponential	Double Exponential	Exp2Syn	60000	30	12	Rise and decay time constants	https://doi.org/10.1007/BF00961734	destexhe1994		Kinetic synapse models	derived	ai
+stdp	STDP Plastic	STDP	120000	80	24	Spike-timing dependent plasticity	https://doi.org/10.1523/JNEUROSCI.18-24-10464.1998	bi1998		STDP learning rule	measured	ai

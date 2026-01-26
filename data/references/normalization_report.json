@@ -1,0 +1,1484 @@
+{
+  "generated_at": "2026-01-26T01:54:22.111960",
+  "total_normalizations": 184,
+  "by_type": {
+    "bare_doi": 161,
+    "doi_prefix": 19,
+    "dx_to_canonical": 3,
+    "format_fix": 1
+  },
+  "changes": [
+    {
+      "file": "brain-scans.tsv",
+      "row": 16,
+      "column": "References",
+      "original": "10.1038/s41592-020-0935-4",
+      "normalized": "https://doi.org/10.1038/s41592-020-0935-4",
+      "type": "bare_doi"
+    },
+    {
+      "file": "brain-scans.tsv",
+      "row": 49,
+      "column": "References",
+      "original": "10.3389/fninf.2011.00005 ",
+      "normalized": "https://doi.org/10.3389/fninf.2011.00005",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 5,
+      "column": "doi",
+      "original": "doi:10.1038/nn.2868",
+      "normalized": "https://doi.org/10.1038/nn.2868",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 6,
+      "column": "doi",
+      "original": "doi:10.1038/nn.2868",
+      "normalized": "https://doi.org/10.1038/nn.2868",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 7,
+      "column": "doi",
+      "original": "doi:10.1038/nn.2868",
+      "normalized": "https://doi.org/10.1038/nn.2868",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 8,
+      "column": "doi",
+      "original": "doi:10.1038/nature09802",
+      "normalized": "https://doi.org/10.1038/nature09802",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 9,
+      "column": "doi",
+      "original": "10.1038/ncomms8923",
+      "normalized": "https://doi.org/10.1038/ncomms8923",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 10,
+      "column": "doi",
+      "original": "doi:10.1038/nature18609",
+      "normalized": "https://doi.org/10.1038/nature18609",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 11,
+      "column": "doi",
+      "original": "doi:10.1038/nn.4290",
+      "normalized": "https://doi.org/10.1038/nn.4290",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 12,
+      "column": "doi",
+      "original": "doi:10.1038/nn.4290",
+      "normalized": "https://doi.org/10.1038/nn.4290",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 13,
+      "column": "doi",
+      "original": "doi:10.1038/nature17192",
+      "normalized": "https://doi.org/10.1038/nature17192",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 14,
+      "column": "doi",
+      "original": "doi:10.1038/nature14297",
+      "normalized": "https://doi.org/10.1038/nature14297",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 15,
+      "column": "doi",
+      "original": "doi:10.1038/nature14297",
+      "normalized": "https://doi.org/10.1038/nature14297",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 17,
+      "column": "doi",
+      "original": "http://dx.doi.org/10.1016/j.neuron.2015.09.003",
+      "normalized": "https://doi.org/10.1016/j.neuron.2015.09.003",
+      "type": "dx_to_canonical"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 18,
+      "column": "doi",
+      "original": "http://dx.doi.org/10.1016/j.cell.2015.06.054",
+      "normalized": "https://doi.org/10.1016/j.cell.2015.06.054",
+      "type": "dx_to_canonical"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 19,
+      "column": "doi",
+      "original": "doi:10.1038/nature22356",
+      "normalized": "https://doi.org/10.1038/nature22356",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 20,
+      "column": "doi",
+      "original": "doi:10.1038/nature22356",
+      "normalized": "https://doi.org/10.1038/nature22356",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 21,
+      "column": "doi",
+      "original": "doi:10.7554/eLife.26975",
+      "normalized": "https://doi.org/10.7554/eLife.26975",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 23,
+      "column": "doi",
+      "original": "doi:10.1038/nature12450",
+      "normalized": "https://doi.org/10.1038/nature12450",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 25,
+      "column": "doi",
+      "original": "http://dx.doi.org/10.1016/j.cell.2012.12.013",
+      "normalized": "https://doi.org/10.1016/j.cell.2012.12.013",
+      "type": "dx_to_canonical"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 63,
+      "column": "doi",
+      "original": "doi:10.7554/eLife.16962",
+      "normalized": "https://doi.org/10.7554/eLife.16962",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 64,
+      "column": "doi",
+      "original": "doi:10.7554/eLife.02730",
+      "normalized": "https://doi.org/10.7554/eLife.02730",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 65,
+      "column": "doi",
+      "original": "doi:10.7554/eLife.24364",
+      "normalized": "https://doi.org/10.7554/eLife.24364",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 66,
+      "column": "doi",
+      "original": "doi:10.1038/nmeth.4206",
+      "normalized": "https://doi.org/10.1038/nmeth.4206",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neuroimaging-speed.tsv",
+      "row": 68,
+      "column": "doi",
+      "original": "doi:10.1016/j.celrep.2018.05.023",
+      "normalized": "https://doi.org/10.1016/j.celrep.2018.05.023",
+      "type": "doi_prefix"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 12,
+      "column": "DOI/Link",
+      "original": "10.1038/s41592-018-0112-1",
+      "normalized": "https://doi.org/10.1038/s41592-018-0112-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 13,
+      "column": "DOI/Link",
+      "original": "10.1038/s41598-023-38213-7",
+      "normalized": "https://doi.org/10.1038/s41598-023-38213-7",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 14,
+      "column": "DOI/Link",
+      "original": "10.1038/s42003-022-03206-1",
+      "normalized": "https://doi.org/10.1038/s42003-022-03206-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 15,
+      "column": "DOI/Link",
+      "original": "10.1038/sdata.2017.156",
+      "normalized": "https://doi.org/10.1038/sdata.2017.156",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 16,
+      "column": "DOI/Link",
+      "original": "10.1186/s12915-022-01471-4",
+      "normalized": "https://doi.org/10.1186/s12915-022-01471-4",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 17,
+      "column": "DOI/Link",
+      "original": "10.7554/eLife.26652",
+      "normalized": "https://doi.org/10.7554/eLife.26652",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 34,
+      "column": "DOI/Link",
+      "original": "10.1038/s41593-023-01332-5",
+      "normalized": "https://doi.org/10.1038/s41593-023-01332-5",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-dynamics-references.tsv",
+      "row": 35,
+      "column": "DOI/Link",
+      "original": "10.1038/s41598-023-48109-1",
+      "normalized": "https://doi.org/10.1038/s41598-023-48109-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 2,
+      "column": "doi",
+      "original": "10.1101/2021.02.21.432164",
+      "normalized": "https://doi.org/10.1101/2021.02.21.432164",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 3,
+      "column": "doi",
+      "original": "10.1113/jphysiol.2013.262840",
+      "normalized": "https://doi.org/10.1113/jphysiol.2013.262840",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 4,
+      "column": "doi",
+      "original": "10.1101/306019",
+      "normalized": "https://doi.org/10.1101/306019",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 5,
+      "column": "doi",
+      "original": "10.1016/j.celrep.2017.02.038",
+      "normalized": "https://doi.org/10.1016/j.celrep.2017.02.038",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 6,
+      "column": "doi",
+      "original": "10.1038/s41586-019-1787-x",
+      "normalized": "https://doi.org/10.1038/s41586-019-1787-x",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 7,
+      "column": "doi",
+      "original": "10.1101/061507",
+      "normalized": "https://doi.org/10.1101/061507",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 8,
+      "column": "doi",
+      "original": "10.1371/journal.pcbi.1007514",
+      "normalized": "https://doi.org/10.1371/journal.pcbi.1007514",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 9,
+      "column": "doi",
+      "original": "10.1523/JNEUROSCI.2072-19.2019",
+      "normalized": "https://doi.org/10.1523/JNEUROSCI.2072-19.2019",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 10,
+      "column": "doi",
+      "original": "10.1016/j.jneumeth.2017.01.016",
+      "normalized": "https://doi.org/10.1016/j.jneumeth.2017.01.016",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 11,
+      "column": "doi",
+      "original": "10.1016/j.neuron.2018.09.042",
+      "normalized": "https://doi.org/10.1016/j.neuron.2018.09.042",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 12,
+      "column": "doi",
+      "original": "10.1101/2020.07.17.209403",
+      "normalized": "https://doi.org/10.1101/2020.07.17.209403",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 13,
+      "column": "doi",
+      "original": "10.1016/j.neuron.2009.09.021",
+      "normalized": "https://doi.org/10.1016/j.neuron.2009.09.021",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 14,
+      "column": "doi",
+      "original": "10.1038/nature24636",
+      "normalized": "https://doi.org/10.1038/nature24636",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 15,
+      "column": "doi",
+      "original": "10.7554/eLife.28158",
+      "normalized": "https://doi.org/10.7554/eLife.28158",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 16,
+      "column": "doi",
+      "original": "10.1038/nmeth.2936",
+      "normalized": "https://doi.org/10.1038/nmeth.2936",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 17,
+      "column": "doi",
+      "original": "10.1126/scitranslmed.3006159",
+      "normalized": "https://doi.org/10.1126/scitranslmed.3006159",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 18,
+      "column": "doi",
+      "original": "10.1152/jn.00464.2015",
+      "normalized": "https://doi.org/10.1152/jn.00464.2015",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 19,
+      "column": "doi",
+      "original": "10.1101/242693",
+      "normalized": "https://doi.org/10.1101/242693",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 20,
+      "column": "doi",
+      "original": "10.3389/neuro.07.003.2009",
+      "normalized": "https://doi.org/10.3389/neuro.07.003.2009",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 21,
+      "column": "doi",
+      "original": "10.1038/nmeth.2434",
+      "normalized": "https://doi.org/10.1038/nmeth.2434",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 22,
+      "column": "doi",
+      "original": "10.1371/journal.pone.0105324",
+      "normalized": "https://doi.org/10.1371/journal.pone.0105324",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 23,
+      "column": "doi",
+      "original": "10.1016/j.jneumeth.2005.12.032",
+      "normalized": "https://doi.org/10.1016/j.jneumeth.2005.12.032",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 24,
+      "column": "doi",
+      "original": "10.1152/jn.00781.2011",
+      "normalized": "https://doi.org/10.1152/jn.00781.2011",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 25,
+      "column": "doi",
+      "original": "10.1073/pnas.1934665100",
+      "normalized": "https://doi.org/10.1073/pnas.1934665100",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 26,
+      "column": "doi",
+      "original": "10.1523/JNEUROSCI.0723-12.2012",
+      "normalized": "https://doi.org/10.1523/JNEUROSCI.0723-12.2012",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 27,
+      "column": "doi",
+      "original": "10.1038/nature11129",
+      "normalized": "https://doi.org/10.1038/nature11129",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 28,
+      "column": "doi",
+      "original": "10.1038/nature10489",
+      "normalized": "https://doi.org/10.1038/nature10489",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 29,
+      "column": "doi",
+      "original": "10.1088/1741-2560/3/2/009",
+      "normalized": "https://doi.org/10.1088/1741-2560/3/2/009",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 30,
+      "column": "doi",
+      "original": "10.1109/TBME.2004.827061",
+      "normalized": "https://doi.org/10.1109/TBME.2004.827061",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 31,
+      "column": "doi",
+      "original": "10.1371/journal.pone.0000619",
+      "normalized": "https://doi.org/10.1371/journal.pone.0000619",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 32,
+      "column": "doi",
+      "original": "10.1088/1741-2560/5/4/010",
+      "normalized": "https://doi.org/10.1088/1741-2560/5/4/010",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 33,
+      "column": "doi",
+      "original": "10.1523/JNEUROSCI.4088-04.2005",
+      "normalized": "https://doi.org/10.1523/JNEUROSCI.4088-04.2005",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 34,
+      "column": "doi",
+      "original": "10.1126/science.aav7893",
+      "normalized": "https://doi.org/10.1126/science.aav7893",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 35,
+      "column": "doi",
+      "original": "10.1152/jn.90920.2008",
+      "normalized": "https://doi.org/10.1152/jn.90920.2008",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 36,
+      "column": "doi",
+      "original": "10.1038/nn.2782",
+      "normalized": "https://doi.org/10.1038/nn.2782",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 37,
+      "column": "doi",
+      "original": "10.1126/science.8351520",
+      "normalized": "https://doi.org/10.1126/science.8351520",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 38,
+      "column": "doi",
+      "original": "10.1111/j.1460-9568.2005.04320.x",
+      "normalized": "https://doi.org/10.1111/j.1460-9568.2005.04320.x",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 39,
+      "column": "doi",
+      "original": "10.1152/jn.01245.2003",
+      "normalized": "https://doi.org/10.1152/jn.01245.2003",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 40,
+      "column": "doi",
+      "original": "10.1152/jn.00760.2006",
+      "normalized": "https://doi.org/10.1152/jn.00760.2006",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 41,
+      "column": "doi",
+      "original": "10.1038/2855",
+      "normalized": "https://doi.org/10.1038/2855",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 42,
+      "column": "doi",
+      "original": "10.1101/2020.07.14.201699",
+      "normalized": "https://doi.org/10.1101/2020.07.14.201699",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 44,
+      "column": "doi",
+      "original": "10.1152/jn.01023.2004",
+      "normalized": "https://doi.org/10.1152/jn.01023.2004",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 45,
+      "column": "doi",
+      "original": "10.1038/35042582",
+      "normalized": "https://doi.org/10.1038/35042582",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 46,
+      "column": "doi",
+      "original": "10.1016/S0896-6273(00)80295-0",
+      "normalized": "https://doi.org/10.1016/S0896-6273(00)80295-0",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 47,
+      "column": "doi",
+      "original": "10.1152/jn.00116.2003",
+      "normalized": "https://doi.org/10.1152/jn.00116.2003",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 48,
+      "column": "doi",
+      "original": "10.1113/jphysiol.2004.068668",
+      "normalized": "https://doi.org/10.1113/jphysiol.2004.068668",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 49,
+      "column": "doi",
+      "original": "10.1371/journal.pbio.0000042",
+      "normalized": "https://doi.org/10.1371/journal.pbio.0000042",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 50,
+      "column": "doi",
+      "original": "10.1126/science.2035024",
+      "normalized": "https://doi.org/10.1126/science.2035024",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 51,
+      "column": "doi",
+      "original": "10.1038/nmeth.4226",
+      "normalized": "https://doi.org/10.1038/nmeth.4226",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 52,
+      "column": "doi",
+      "original": "10.7554/eLife.14472",
+      "normalized": "https://doi.org/10.7554/eLife.14472",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 53,
+      "column": "doi",
+      "original": "10.1126/science.8036517",
+      "normalized": "https://doi.org/10.1126/science.8036517",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 54,
+      "column": "doi",
+      "original": "10.1038/nature01834",
+      "normalized": "https://doi.org/10.1038/nature01834",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 55,
+      "column": "doi",
+      "original": "10.1016/S0042-6989(99)00040-1",
+      "normalized": "https://doi.org/10.1016/S0042-6989(99)00040-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 56,
+      "column": "doi",
+      "original": "10.1126/science.1070291",
+      "normalized": "https://doi.org/10.1126/science.1070291",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 57,
+      "column": "doi",
+      "original": "10.1016/S1385-299X(99)00034-3",
+      "normalized": "https://doi.org/10.1016/S1385-299X(99)00034-3",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 58,
+      "column": "doi",
+      "original": "10.1126/science.271.5257.1870",
+      "normalized": "https://doi.org/10.1126/science.271.5257.1870",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 59,
+      "column": "doi",
+      "original": "10.1016/S0165-0270(99)00139-9",
+      "normalized": "https://doi.org/10.1016/S0165-0270(99)00139-9",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 60,
+      "column": "doi",
+      "original": "10.1016/0006-8993(96)00321-6",
+      "normalized": "https://doi.org/10.1016/0006-8993(96)00321-6",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 61,
+      "column": "doi",
+      "original": "10.1126/science.7761855",
+      "normalized": "https://doi.org/10.1126/science.7761855",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 62,
+      "column": "doi",
+      "original": "10.1038/10223",
+      "normalized": "https://doi.org/10.1038/10223",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 63,
+      "column": "doi",
+      "original": "10.1038/nmeth.4040",
+      "normalized": "https://doi.org/10.1038/nmeth.4040",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 64,
+      "column": "doi",
+      "original": "10.1523/JNEUROSCI.18-18-07411.1998",
+      "normalized": "https://doi.org/10.1523/JNEUROSCI.18-18-07411.1998",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 65,
+      "column": "doi",
+      "original": "10.1016/S0006-8993(97)00012-7",
+      "normalized": "https://doi.org/10.1016/S0006-8993(97)00012-7",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 66,
+      "column": "doi",
+      "original": "10.1080/01616412.1993.11740106",
+      "normalized": "https://doi.org/10.1080/01616412.1993.11740106",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 67,
+      "column": "doi",
+      "original": "10.1016/S0092-8674(00)81828-0",
+      "normalized": "https://doi.org/10.1016/S0092-8674(00)81828-0",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 68,
+      "column": "doi",
+      "original": "10.1007/BF00248509",
+      "normalized": "https://doi.org/10.1007/BF00248509",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 69,
+      "column": "doi",
+      "original": "10.1523/JNEUROSCI.16-02-00823.1996",
+      "normalized": "https://doi.org/10.1523/JNEUROSCI.16-02-00823.1996",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 70,
+      "column": "doi",
+      "original": "10.1073/pnas.90.6.2212",
+      "normalized": "https://doi.org/10.1073/pnas.90.6.2212",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 71,
+      "column": "doi",
+      "original": "10.1007/BF00202899",
+      "normalized": "https://doi.org/10.1007/BF00202899",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 72,
+      "column": "doi",
+      "original": "10.1016/0306-4522(85)90072-7",
+      "normalized": "https://doi.org/10.1016/0306-4522(85)90072-7",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 73,
+      "column": "doi",
+      "original": "10.1007/BF00236609",
+      "normalized": "https://doi.org/10.1007/BF00236609",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 74,
+      "column": "doi",
+      "original": "10.1038/373515a0",
+      "normalized": "https://doi.org/10.1038/373515a0",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 75,
+      "column": "doi",
+      "original": "10.1016/0006-8993(88)91542-9",
+      "normalized": "https://doi.org/10.1016/0006-8993(88)91542-9",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 76,
+      "column": "doi",
+      "original": "10.1016/0165-0270(89)90038-1",
+      "normalized": "https://doi.org/10.1016/0165-0270(89)90038-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 77,
+      "column": "doi",
+      "original": "10.1007/BF00239532",
+      "normalized": "https://doi.org/10.1007/BF00239532",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 78,
+      "column": "doi",
+      "original": "10.1016/0014-4886(76)90220-X",
+      "normalized": "https://doi.org/10.1016/0014-4886(76)90220-X",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 79,
+      "column": "doi",
+      "original": "10.1073/pnas.87.22.8935",
+      "normalized": "https://doi.org/10.1073/pnas.87.22.8935",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 80,
+      "column": "doi",
+      "original": "10.1016/0165-0270(91)90140-U",
+      "normalized": "https://doi.org/10.1016/0165-0270(91)90140-U",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 81,
+      "column": "doi",
+      "original": "10.1016/0031-9384(84)90080-5",
+      "normalized": "https://doi.org/10.1016/0031-9384(84)90080-5",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 82,
+      "column": "doi",
+      "original": "10.1016/0006-8993(89)90183-2",
+      "normalized": "https://doi.org/10.1016/0006-8993(89)90183-2",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 83,
+      "column": "doi",
+      "original": "10.1016/0165-0270(88)90131-8",
+      "normalized": "https://doi.org/10.1016/0165-0270(88)90131-8",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 84,
+      "column": "doi",
+      "original": "10.1109/10.7273",
+      "normalized": "https://doi.org/10.1109/10.7273",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 85,
+      "column": "doi",
+      "original": "10.1152/jn.1987.57.4.1101",
+      "normalized": "https://doi.org/10.1152/jn.1987.57.4.1101",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 86,
+      "column": "doi",
+      "original": "10.1126/science.170.3959.758",
+      "normalized": "https://doi.org/10.1126/science.170.3959.758",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 87,
+      "column": "doi",
+      "original": "10.1152/jn.1985.53.4.926",
+      "normalized": "https://doi.org/10.1152/jn.1985.53.4.926",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 88,
+      "column": "doi",
+      "original": "10.1007/BF01955338",
+      "normalized": "https://doi.org/10.1007/BF01955338",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 89,
+      "column": "doi",
+      "original": "10.1016/0014-4886(78)90270-4",
+      "normalized": "https://doi.org/10.1016/0014-4886(78)90270-4",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 90,
+      "column": "doi",
+      "original": "10.1016/0006-8993(83)90567-X",
+      "normalized": "https://doi.org/10.1016/0006-8993(83)90567-X",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 91,
+      "column": "doi",
+      "original": "10.1016/0165-0270(82)90035-8",
+      "normalized": "https://doi.org/10.1016/0165-0270(82)90035-8",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 92,
+      "column": "doi",
+      "original": "10.1109/PROC.1977.10559",
+      "normalized": "https://doi.org/10.1109/PROC.1977.10559",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 93,
+      "column": "doi",
+      "original": "10.1007/BF00236807",
+      "normalized": "https://doi.org/10.1007/BF00236807",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 94,
+      "column": "doi",
+      "original": "10.1109/TBME.1982.324870",
+      "normalized": "https://doi.org/10.1109/TBME.1982.324870",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 95,
+      "column": "doi",
+      "original": "10.1109/TBME.1981.324702",
+      "normalized": "https://doi.org/10.1109/TBME.1981.324702",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 96,
+      "column": "doi",
+      "original": "10.1016/0006-8993(75)90324-8",
+      "normalized": "https://doi.org/10.1016/0006-8993(75)90324-8",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 97,
+      "column": "doi",
+      "original": "10.1016/0013-4694(70)90105-7",
+      "normalized": "https://doi.org/10.1016/0013-4694(70)90105-7",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 98,
+      "column": "doi",
+      "original": "10.1016/0014-4886(76)90217-X",
+      "normalized": "https://doi.org/10.1016/0014-4886(76)90217-X",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 99,
+      "column": "doi",
+      "original": "10.1152/jn.1974.37.6.1239",
+      "normalized": "https://doi.org/10.1152/jn.1974.37.6.1239",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 100,
+      "column": "doi",
+      "original": "10.1016/S0006-3495(72)86097-1",
+      "normalized": "https://doi.org/10.1016/S0006-3495(72)86097-1",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 101,
+      "column": "doi",
+      "original": "10.1126/science.169.3952.1336",
+      "normalized": "https://doi.org/10.1126/science.169.3952.1336",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 102,
+      "column": "doi",
+      "original": "10.1126/science.143.3612.1325",
+      "normalized": "https://doi.org/10.1126/science.143.3612.1325",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 103,
+      "column": "doi",
+      "original": "10.1113/jphysiol.1962.sp006837",
+      "normalized": "https://doi.org/10.1113/jphysiol.1962.sp006837",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 104,
+      "column": "doi",
+      "original": "10.1111/j.2164-0947.1959.tb01676.x",
+      "normalized": "https://doi.org/10.1111/j.2164-0947.1959.tb01676.x",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 105,
+      "column": "doi",
+      "original": "10.1016/0014-4886(69)90086-7",
+      "normalized": "https://doi.org/10.1016/0014-4886(69)90086-7",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 106,
+      "column": "doi",
+      "original": "10.1152/jn.1967.30.5.1043",
+      "normalized": "https://doi.org/10.1152/jn.1967.30.5.1043",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 108,
+      "column": "doi",
+      "original": "10.1152/jn.1965.28.2.216",
+      "normalized": "https://doi.org/10.1152/jn.1965.28.2.216",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 109,
+      "column": "doi",
+      "original": "10.1007/BF00306415",
+      "normalized": "https://doi.org/10.1007/BF00306415",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 110,
+      "column": "doi",
+      "original": "10.1038/199876a0",
+      "normalized": "https://doi.org/10.1038/199876a0",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 111,
+      "column": "doi",
+      "original": "10.1111/j.1749-6632.1961.tb20184.x",
+      "normalized": "https://doi.org/10.1111/j.1749-6632.1961.tb20184.x",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 112,
+      "column": "doi",
+      "original": "10.1007/BF00595651",
+      "normalized": "https://doi.org/10.1007/BF00595651",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 113,
+      "column": "doi",
+      "original": "10.1016/j.cell.2019.03.011",
+      "normalized": "https://doi.org/10.1016/j.cell.2019.03.011",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 114,
+      "column": "doi",
+      "original": "10.1016/j.celrep.2016.12.004",
+      "normalized": "https://doi.org/10.1016/j.celrep.2016.12.004",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 115,
+      "column": "doi",
+      "original": "10.1016/j.neuron.2015.03.027",
+      "normalized": "https://doi.org/10.1016/j.neuron.2015.03.027",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 116,
+      "column": "doi",
+      "original": "10.1038/nn.3867",
+      "normalized": "https://doi.org/10.1038/nn.3867",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 117,
+      "column": "doi",
+      "original": "10.1038/nn.3329",
+      "normalized": "https://doi.org/10.1038/nn.3329",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 118,
+      "column": "doi",
+      "original": "10.3389/fncir.2013.00151",
+      "normalized": "https://doi.org/10.3389/fncir.2013.00151",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 119,
+      "column": "doi",
+      "original": "10.1038/nature11039",
+      "normalized": "https://doi.org/10.1038/nature11039",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 120,
+      "column": "doi",
+      "original": "10.1038/nature11321",
+      "normalized": "https://doi.org/10.1038/nature11321",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 121,
+      "column": "doi",
+      "original": "10.1038/nmeth.1552",
+      "normalized": "https://doi.org/10.1038/nmeth.1552",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 122,
+      "column": "doi",
+      "original": "10.1038/nature08897",
+      "normalized": "https://doi.org/10.1038/nature08897",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 123,
+      "column": "doi",
+      "original": "10.1016/j.neuron.2010.08.002",
+      "normalized": "https://doi.org/10.1016/j.neuron.2010.08.002",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 124,
+      "column": "doi",
+      "original": "10.1016/j.neuron.2010.08.026",
+      "normalized": "https://doi.org/10.1016/j.neuron.2010.08.026",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 125,
+      "column": "doi",
+      "original": "10.1038/nn.2648",
+      "normalized": "https://doi.org/10.1038/nn.2648",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 126,
+      "column": "doi",
+      "original": "10.1038/nature03274",
+      "normalized": "https://doi.org/10.1038/nature03274",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 127,
+      "column": "doi",
+      "original": "10.1073/pnas.1232232100",
+      "normalized": "https://doi.org/10.1073/pnas.1232232100",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 128,
+      "column": "doi",
+      "original": "10.1101/156786",
+      "normalized": "https://doi.org/10.1101/156786",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 129,
+      "column": "doi",
+      "original": "10.1101/193383",
+      "normalized": "https://doi.org/10.1101/193383",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 130,
+      "column": "doi",
+      "original": "10.1101/434035",
+      "normalized": "https://doi.org/10.1101/434035",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 131,
+      "column": "doi",
+      "original": "10.1101/441014",
+      "normalized": "https://doi.org/10.1101/441014",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 132,
+      "column": "doi",
+      "original": "10.1101/452672",
+      "normalized": "https://doi.org/10.1101/452672",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 133,
+      "column": "doi",
+      "original": "10.1101/679324",
+      "normalized": "https://doi.org/10.1101/679324",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 134,
+      "column": "doi",
+      "original": "10.1101/745323",
+      "normalized": "https://doi.org/10.1101/745323",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 135,
+      "column": "doi",
+      "original": "10.1101/2021.07.28.454025",
+      "normalized": "https://doi.org/10.1101/2021.07.28.454025",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 136,
+      "column": "doi",
+      "original": "10.1101/2021.09.20.461015",
+      "normalized": "https://doi.org/10.1101/2021.09.20.461015",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 137,
+      "column": "doi",
+      "original": "10.1101/2023.03.20.533476",
+      "normalized": "https://doi.org/10.1101/2023.03.20.533476",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 138,
+      "column": "doi",
+      "original": "10.1101/2023.07.25.550571",
+      "normalized": "https://doi.org/10.1101/2023.07.25.550571",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 139,
+      "column": "doi",
+      "original": "10.1101/2024.01.15.575721",
+      "normalized": "https://doi.org/10.1101/2024.01.15.575721",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 140,
+      "column": "doi",
+      "original": "10.1101/2024.02.25.581990",
+      "normalized": "https://doi.org/10.1101/2024.02.25.581990",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 141,
+      "column": "doi",
+      "original": "10.1101/2024.08.21.609011",
+      "normalized": "https://doi.org/10.1101/2024.08.21.609011",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 142,
+      "column": "doi",
+      "original": "10.1101/703801",
+      "normalized": "https://doi.org/10.1101/703801",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 143,
+      "column": "doi",
+      "original": "10.1101/823377",
+      "normalized": "https://doi.org/10.1101/823377",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 144,
+      "column": "doi",
+      "original": "10.1101/2020.02.25.965210",
+      "normalized": "https://doi.org/10.1101/2020.02.25.965210",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 145,
+      "column": "doi",
+      "original": "10.1101/2021.01.22.427798",
+      "normalized": "https://doi.org/10.1101/2021.01.22.427798",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 146,
+      "column": "doi",
+      "original": "10.1101/2021.02.25.432776",
+      "normalized": "https://doi.org/10.1101/2021.02.25.432776",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 147,
+      "column": "doi",
+      "original": "10.1101/2023.02.01.526664",
+      "normalized": "https://doi.org/10.1101/2023.02.01.526664",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 148,
+      "column": "doi",
+      "original": "10.1101/2023.02.08.527772",
+      "normalized": "https://doi.org/10.1101/2023.02.08.527772",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 149,
+      "column": "doi",
+      "original": "10.1101/2023.11.12.566771",
+      "normalized": "https://doi.org/10.1101/2023.11.12.566771",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 150,
+      "column": "doi",
+      "original": "10.1101/2023.12.22.572441",
+      "normalized": "https://doi.org/10.1101/2023.12.22.572441",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 151,
+      "column": "doi",
+      "original": "10.1101/2024.06.17.599402",
+      "normalized": "https://doi.org/10.1101/2024.06.17.599402",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-information-rate.tsv",
+      "row": 152,
+      "column": "doi",
+      "original": "10.1101/2024.08.21.609044",
+      "normalized": "https://doi.org/10.1101/2024.08.21.609044",
+      "type": "bare_doi"
+    },
+    {
+      "file": "neural-recordings.tsv",
+      "row": 58,
+      "column": "DOI",
+      "original": "http://doi.org/10.1126/science.1529342",
+      "normalized": "https://doi.org/10.1126/science.1529342",
+      "type": "format_fix"
+    },
+    {
+      "file": "computational-models.tsv",
+      "row": 84,
+      "column": "Link",
+      "original": "10.1073/pnas.0712231105",
+      "normalized": "https://doi.org/10.1073/pnas.0712231105",
+      "type": "bare_doi"
+    }
+  ]
+}

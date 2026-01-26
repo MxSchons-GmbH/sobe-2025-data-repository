@@ -53,7 +53,7 @@ Fang Xu	2021	Rhesus Monkey (Macaca mulatta)	Rhesus Monkey	Not explicitly named; 
 semiautomated volume reconstruction using the SMART pipeline"	Neuronal Circuit Mapping	95%	https://www.nature.com/articles/s41587-021-00986-5	"This study established a scalable workflow for mesoscale mapping of the monkey brain, revealing cortical and thalamic projection pathways.
 Significant improvements in imaging speed and dataset handling were demonstrated."
 Fred Shen	2020	Mouse	Mouse	multichannel LM dataset	590 × 404 × 160 μm3	38,137,600	38137600.0	150 × 150 × 350 nm3	250.0	not given		18		Light microscopy with immunostaining and molecular specificity	Microscopy Techniques	100%	 https://www.nature.com/articles/s41467-020-18422-8	Uses a novel multiplexed antigen detection strategy involving multiple rounds of immunostaining, imaging, and stripping
-Wei Yin et al.	2020	Human	Human		1 mm³	1,000,000,000	1000000000.0	4 x 4 x 30	12000.0	150	150.0	90	~2,000,000	FIB-SEM	Electron Microscopy	85%	10.1038/s41592-020-0935-4	First large-scale human tissue study
+Wei Yin et al.	2020	Human	Human		1 mm³	1,000,000,000	1000000000.0	4 x 4 x 30	12000.0	150	150.0	90	~2,000,000	FIB-SEM	Electron Microscopy	85%	https://doi.org/10.1038/s41592-020-0935-4	First large-scale human tissue study
 Eviatar Yemini	2020	Caenorhabditis elegans	C. elegans	NeuroPAL				~10 nm	10.0			not given	not given	Confocal Microscopy	Microscopy Techniques	94%	https://doi.org/10.1101/676312	"Data acquisition time not mentioned- Individual experiments involved a 2-minute waiting period, followed by a 4-minute recording.
 Additional waiting times between stimuli and preparations are mentioned."
 Ons M’Saad	2020	HeLa cells and U-2OS cells (human cell lines)	Human	pan-ExM processed datasets (referred as this but no specific name)	not applicable	not applicable		~20–30 nm	25.0			not specifically mentioned, but a few minutes per participant over a few days	not given	Confocal Microscopy,Expansion microscopy (pan-ExM), fluorescence microscopy, and STED	Microscopy Techniques	100%	DOI: 10.1038/s41467-020-17523-8	"Developed pan-ExM, enabling 13- to 21-fold expansion of samples, retaining ultrastructure while achieving nanoscale resolution.
@@ -235,7 +235,7 @@ Deepak Ropireddy	2011	Rat (Long–Evans strain)	Rat	based on NeuroMorpho.Org rec
 
 "	1000000000.0	"~16 μm for hippocampal
 reconstruction"	16000.0	1TB	1.0	several months	not specified	"High-resolution histological imaging, manual segmentation, and computational embedding
-of digital reconstructions to analyse potential synaptic connectivity."	Neuronal Circuit Mapping	80%	10.3389/fninf.2011.00005 	"This study developed a computational framework for estimating potential synaptic connectivity based on the proximity of axons and
+of digital reconstructions to analyse potential synaptic connectivity."	Neuronal Circuit Mapping	80%	https://doi.org/10.3389/fninf.2011.00005	"This study developed a computational framework for estimating potential synaptic connectivity based on the proximity of axons and
 dendrites, providing insights into hippocampal circuits."
 Huei-Fang Yang	2011	Drosophila melanogaster, Zebrafish	Drosophila	not specified	"VNC: 512×512pixels
 

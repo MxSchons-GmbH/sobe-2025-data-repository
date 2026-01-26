@@ -1,20 +1,20 @@
 {
-  "extraction_date": "2026-01-25T10:39:34.191573",
-  "files_processed": 17,
-  "total_extractions": 1265,
-  "unique_references": 1130,
+  "extraction_date": "2026-01-26T01:55:41.152597",
+  "files_processed": 21,
+  "total_extractions": 1288,
+  "unique_references": 1024,
   "by_type": {
-    "text": 584,
+    "text": 427,
     "url": 437,
-    "doi": 244
+    "doi": 424
   },
   "by_method": {
-    "text_label": 388,
+    "text_label": 403,
     "url_parse": 322,
-    "crossref_api": 223,
-    "text_hash": 196,
+    "crossref_api": 274,
+    "text_hash": 24,
     "cached_url": 115,
-    "cached_doi": 20,
+    "cached_doi": 149,
     "url_parse_doi_failed": 1
   },
   "extractions": [
@@ -169,6 +169,46 @@
       "method": "url_parse"
     },
     {
+      "file": "neuron-models.tsv",
+      "row": 2,
+      "column": "source",
+      "original": "https://doi.org/10.1017/CBO9780511815706",
+      "type": "doi",
+      "value": "10.1017/CBO9780511815706",
+      "ref_id": "gerstner2002",
+      "method": "crossref_api"
+    },
+    {
+      "file": "neuron-models.tsv",
+      "row": 3,
+      "column": "source",
+      "original": "https://doi.org/10.1113/jphysiol.1952.sp004764",
+      "type": "doi",
+      "value": "10.1113/jphysiol.1952.sp004764",
+      "ref_id": "hodgkin1952",
+      "method": "crossref_api"
+    },
+    {
+      "file": "neuron-models.tsv",
+      "row": 4,
+      "column": "source",
+      "original": "https://doi.org/10.1109/TNN.2003.820440",
+      "type": "doi",
+      "value": "10.1109/TNN.2003.820440",
+      "ref_id": "izhikevich2003",
+      "method": "crossref_api"
+    },
+    {
+      "file": "neuron-models.tsv",
+      "row": 5,
+      "column": "source",
+      "original": "https://doi.org/10.1152/jn.00686.2005",
+      "type": "doi",
+      "value": "10.1152/jn.00686.2005",
+      "ref_id": "brette2005",
+      "method": "crossref_api"
+    },
+    {
       "file": "storage-requirements.tsv",
       "row": 2,
       "column": "source",
@@ -227,6 +267,46 @@
       "value": "Computational demands analysis",
       "ref_id": "text_1417074ag",
       "method": "text_label"
+    },
+    {
+      "file": "synapse-models.tsv",
+      "row": 2,
+      "column": "source",
+      "original": "https://doi.org/10.1152/jn.1967.30.5.1138",
+      "type": "doi",
+      "value": "10.1152/jn.1967.30.5.1138",
+      "ref_id": "rall1967",
+      "method": "crossref_api"
+    },
+    {
+      "file": "synapse-models.tsv",
+      "row": 3,
+      "column": "source",
+      "original": "https://doi.org/10.1073/pnas.94.2.719",
+      "type": "doi",
+      "value": "10.1073/pnas.94.2.719",
+      "ref_id": "tsodyks1997",
+      "method": "crossref_api"
+    },
+    {
+      "file": "synapse-models.tsv",
+      "row": 4,
+      "column": "source",
+      "original": "https://doi.org/10.1007/BF00961734",
+      "type": "doi",
+      "value": "10.1007/BF00961734",
+      "ref_id": "destexhe1994",
+      "method": "crossref_api"
+    },
+    {
+      "file": "synapse-models.tsv",
+      "row": 5,
+      "column": "source",
+      "original": "https://doi.org/10.1523/JNEUROSCI.18-24-10464.1998",
+      "type": "doi",
+      "value": "10.1523/JNEUROSCI.18-24-10464.1998",
+      "ref_id": "bi1998",
+      "method": "crossref_api"
     },
     {
       "file": "brain-scans.tsv",
@@ -372,11 +452,11 @@
       "file": "brain-scans.tsv",
       "row": 16,
       "column": "References",
-      "original": "10.1038/s41592-020-0935-4",
-      "type": "text",
+      "original": "https://doi.org/10.1038/s41592-020-0935-4",
+      "type": "doi",
       "value": "10.1038/s41592-020-0935-4",
-      "ref_id": "text_cdd2f56d",
-      "method": "text_hash"
+      "ref_id": "qiu2020",
+      "method": "crossref_api"
     },
     {
       "file": "brain-scans.tsv",
@@ -702,11 +782,11 @@
       "file": "brain-scans.tsv",
       "row": 49,
       "column": "References",
-      "original": "10.3389/fninf.2011.00005",
-      "type": "text",
+      "original": "https://doi.org/10.3389/fninf.2011.00005",
+      "type": "doi",
       "value": "10.3389/fninf.2011.00005",
-      "ref_id": "text_4831e152",
-      "method": "text_hash"
+      "ref_id": "ropireddy2011",
+      "method": "crossref_api"
     },
     {
       "file": "brain-scans.tsv",
@@ -2992,111 +3072,111 @@
       "file": "neuroimaging-speed.tsv",
       "row": 5,
       "column": "doi",
-      "original": "doi:10.1038/nn.2868",
-      "type": "text",
-      "value": "doi:10.1038/nn.2868",
-      "ref_id": "text_4cdad7b1",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nn.2868",
+      "type": "doi",
+      "value": "10.1038/nn.2868",
+      "ref_id": "helmstaedter2011",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 6,
       "column": "doi",
-      "original": "doi:10.1038/nn.2868",
-      "type": "text",
-      "value": "doi:10.1038/nn.2868",
-      "ref_id": "text_4cdad7b1a",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nn.2868",
+      "type": "doi",
+      "value": "10.1038/nn.2868",
+      "ref_id": "helmstaedter2011",
+      "method": "cached_doi"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 7,
       "column": "doi",
-      "original": "doi:10.1038/nn.2868",
-      "type": "text",
-      "value": "doi:10.1038/nn.2868",
-      "ref_id": "text_4cdad7b1b",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nn.2868",
+      "type": "doi",
+      "value": "10.1038/nn.2868",
+      "ref_id": "helmstaedter2011",
+      "method": "cached_doi"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 8,
       "column": "doi",
-      "original": "doi:10.1038/nature09802",
-      "type": "text",
-      "value": "doi:10.1038/nature09802",
-      "ref_id": "text_fb47403e",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature09802",
+      "type": "doi",
+      "value": "10.1038/nature09802",
+      "ref_id": "bock2011",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 9,
       "column": "doi",
-      "original": "10.1038/ncomms8923",
-      "type": "text",
+      "original": "https://doi.org/10.1038/ncomms8923",
+      "type": "doi",
       "value": "10.1038/ncomms8923",
-      "ref_id": "text_87c0d86e",
-      "method": "text_hash"
+      "ref_id": "hua2015",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 10,
       "column": "doi",
-      "original": "doi:10.1038/nature18609",
-      "type": "text",
-      "value": "doi:10.1038/nature18609",
-      "ref_id": "text_b21b9d3d",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature18609",
+      "type": "doi",
+      "value": "10.1038/nature18609",
+      "ref_id": "ding2016",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 11,
       "column": "doi",
-      "original": "doi:10.1038/nn.4290",
-      "type": "text",
-      "value": "doi:10.1038/nn.4290",
-      "ref_id": "text_7e430923",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nn.4290",
+      "type": "doi",
+      "value": "10.1038/nn.4290",
+      "ref_id": "wanner2016",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 12,
       "column": "doi",
-      "original": "doi:10.1038/nn.4290",
-      "type": "text",
-      "value": "doi:10.1038/nn.4290",
-      "ref_id": "text_7e430923a",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nn.4290",
+      "type": "doi",
+      "value": "10.1038/nn.4290",
+      "ref_id": "wanner2016",
+      "method": "cached_doi"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 13,
       "column": "doi",
-      "original": "doi:10.1038/nature17192",
-      "type": "text",
-      "value": "doi:10.1038/nature17192",
-      "ref_id": "text_dd5611ef",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature17192",
+      "type": "doi",
+      "value": "10.1038/nature17192",
+      "ref_id": "lee2016",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 14,
       "column": "doi",
-      "original": "doi:10.1038/nature14297",
-      "type": "text",
-      "value": "doi:10.1038/nature14297",
-      "ref_id": "text_9be9058b",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature14297",
+      "type": "doi",
+      "value": "10.1038/nature14297",
+      "ref_id": "ohyama2015",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 15,
       "column": "doi",
-      "original": "doi:10.1038/nature14297",
-      "type": "text",
-      "value": "doi:10.1038/nature14297",
-      "ref_id": "text_9be9058ba",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature14297",
+      "type": "doi",
+      "value": "10.1038/nature14297",
+      "ref_id": "ohyama2015",
+      "method": "cached_doi"
     },
     {
       "file": "neuroimaging-speed.tsv",
@@ -3112,7 +3192,7 @@
       "file": "neuroimaging-speed.tsv",
       "row": 17,
       "column": "doi",
-      "original": "http://dx.doi.org/10.1016/j.neuron.2015.09.003",
+      "original": "https://doi.org/10.1016/j.neuron.2015.09.003",
       "type": "doi",
       "value": "10.1016/j.neuron.2015.09.003",
       "ref_id": "berning2015",
@@ -3122,7 +3202,7 @@
       "file": "neuroimaging-speed.tsv",
       "row": 18,
       "column": "doi",
-      "original": "http://dx.doi.org/10.1016/j.cell.2015.06.054",
+      "original": "https://doi.org/10.1016/j.cell.2015.06.054",
       "type": "doi",
       "value": "10.1016/j.cell.2015.06.054",
       "ref_id": "kasthuri2015",
@@ -3132,31 +3212,31 @@
       "file": "neuroimaging-speed.tsv",
       "row": 19,
       "column": "doi",
-      "original": "doi:10.1038/nature22356",
-      "type": "text",
-      "value": "doi:10.1038/nature22356",
-      "ref_id": "text_0c91a9d1",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature22356",
+      "type": "doi",
+      "value": "10.1038/nature22356",
+      "ref_id": "hildebrand2017",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 20,
       "column": "doi",
-      "original": "doi:10.1038/nature22356",
-      "type": "text",
-      "value": "doi:10.1038/nature22356",
-      "ref_id": "text_0c91a9d1a",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature22356",
+      "type": "doi",
+      "value": "10.1038/nature22356",
+      "ref_id": "hildebrand2017",
+      "method": "cached_doi"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 21,
       "column": "doi",
-      "original": "doi:10.7554/eLife.26975",
-      "type": "text",
-      "value": "doi:10.7554/eLife.26975",
-      "ref_id": "text_48510c34",
-      "method": "text_hash"
+      "original": "https://doi.org/10.7554/eLife.26975",
+      "type": "doi",
+      "value": "10.7554/eLife.26975",
+      "ref_id": "takemura2017",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
@@ -3172,11 +3252,11 @@
       "file": "neuroimaging-speed.tsv",
       "row": 23,
       "column": "doi",
-      "original": "doi:10.1038/nature12450",
-      "type": "text",
-      "value": "doi:10.1038/nature12450",
-      "ref_id": "text_6e2128da",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nature12450",
+      "type": "doi",
+      "value": "10.1038/nature12450",
+      "ref_id": "takemura2013",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
@@ -3192,7 +3272,7 @@
       "file": "neuroimaging-speed.tsv",
       "row": 25,
       "column": "doi",
-      "original": "http://dx.doi.org/10.1016/j.cell.2012.12.013",
+      "original": "https://doi.org/10.1016/j.cell.2012.12.013",
       "type": "doi",
       "value": "10.1016/j.cell.2012.12.013",
       "ref_id": "bumbarger2013",
@@ -3572,41 +3652,41 @@
       "file": "neuroimaging-speed.tsv",
       "row": 63,
       "column": "doi",
-      "original": "doi:10.7554/eLife.16962",
-      "type": "text",
-      "value": "doi:10.7554/eLife.16962",
-      "ref_id": "text_744e00d5",
-      "method": "text_hash"
+      "original": "https://doi.org/10.7554/eLife.16962",
+      "type": "doi",
+      "value": "10.7554/eLife.16962",
+      "ref_id": "ryan2016",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 64,
       "column": "doi",
-      "original": "doi:10.7554/eLife.02730",
-      "type": "text",
-      "value": "doi:10.7554/eLife.02730",
-      "ref_id": "text_819bbbec",
-      "method": "text_hash"
+      "original": "https://doi.org/10.7554/eLife.02730",
+      "type": "doi",
+      "value": "10.7554/eLife.02730",
+      "ref_id": "randel2014",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 65,
       "column": "doi",
-      "original": "doi:10.7554/eLife.24364",
-      "type": "text",
-      "value": "doi:10.7554/eLife.24364",
-      "ref_id": "text_89f95aa4",
-      "method": "text_hash"
+      "original": "https://doi.org/10.7554/eLife.24364",
+      "type": "doi",
+      "value": "10.7554/eLife.24364",
+      "ref_id": "kornfeld2017",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
       "row": 66,
       "column": "doi",
-      "original": "doi:10.1038/nmeth.4206",
-      "type": "text",
-      "value": "doi:10.1038/nmeth.4206",
-      "ref_id": "text_609cab8c",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1038/nmeth.4206",
+      "type": "doi",
+      "value": "10.1038/nmeth.4206",
+      "ref_id": "dorkenwald2017",
+      "method": "crossref_api"
     },
     {
       "file": "neuroimaging-speed.tsv",
@@ -3622,11 +3702,11 @@
       "file": "neuroimaging-speed.tsv",
       "row": 68,
       "column": "doi",
-      "original": "doi:10.1016/j.celrep.2018.05.023",
-      "type": "text",
-      "value": "doi:10.1016/j.celrep.2018.05.023",
-      "ref_id": "text_0edb35e3",
-      "method": "text_hash"
+      "original": "https://doi.org/10.1016/j.celrep.2018.05.023",
+      "type": "doi",
+      "value": "10.1016/j.celrep.2018.05.023",
+      "ref_id": "svara2018",
+      "method": "crossref_api"
     },
     {
       "file": "brain-initiatives-overview.tsv",
@@ -4476,6 +4556,156 @@
       "type": "text",
       "value": "Literature",
       "ref_id": "text_f1506b63c",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 2,
+      "column": "source",
+      "original": "Estimated from literature",
+      "type": "text",
+      "value": "Estimated from literature",
+      "ref_id": "text_9ef1a763",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 3,
+      "column": "source",
+      "original": "Practical limits",
+      "type": "text",
+      "value": "Practical limits",
+      "ref_id": "text_d148e7f9",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 4,
+      "column": "source",
+      "original": "Scaled by brain volume",
+      "type": "text",
+      "value": "Scaled by brain volume",
+      "ref_id": "text_98e4812b",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 5,
+      "column": "source",
+      "original": "Scaled by data volume",
+      "type": "text",
+      "value": "Scaled by data volume",
+      "ref_id": "text_8d15c66e",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 6,
+      "column": "source",
+      "original": "Scaled by synapse count",
+      "type": "text",
+      "value": "Scaled by synapse count",
+      "ref_id": "text_8f874121",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 7,
+      "column": "source",
+      "original": "Model complexity scaling",
+      "type": "text",
+      "value": "Model complexity scaling",
+      "ref_id": "text_3b4837cc",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 8,
+      "column": "source",
+      "original": "Model complexity scaling",
+      "type": "text",
+      "value": "Model complexity scaling",
+      "ref_id": "text_3b4837cca",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 9,
+      "column": "source",
+      "original": "EM for small, ExM for large",
+      "type": "text",
+      "value": "EM for small, ExM for large",
+      "ref_id": "text_5c04e0e0",
+      "method": "text_label"
+    },
+    {
+      "file": "organism-defaults.tsv",
+      "row": 10,
+      "column": "source",
+      "original": "Scaled by data criticality",
+      "type": "text",
+      "value": "Scaled by data criticality",
+      "ref_id": "text_3f80f71d",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 2,
+      "column": "source",
+      "original": "Standard protocol",
+      "type": "text",
+      "value": "Standard protocol",
+      "ref_id": "text_f76590dc",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 3,
+      "column": "source",
+      "original": "Literature estimates",
+      "type": "text",
+      "value": "Literature estimates",
+      "ref_id": "text_36c7ab80",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 4,
+      "column": "source",
+      "original": "Typical calcium imaging",
+      "type": "text",
+      "value": "Typical calcium imaging",
+      "ref_id": "text_d7e084ae",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 5,
+      "column": "source",
+      "original": "Literature estimates",
+      "type": "text",
+      "value": "Literature estimates",
+      "ref_id": "text_36c7ab80a",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 6,
+      "column": "source",
+      "original": "Estimated from field of view",
+      "type": "text",
+      "value": "Estimated from field of view",
+      "ref_id": "text_51d270ed",
+      "method": "text_label"
+    },
+    {
+      "file": "recording-capabilities.tsv",
+      "row": 7,
+      "column": "source",
+      "original": "Calculated from data rate × duration",
+      "type": "text",
+      "value": "Calculated from data rate × duration",
+      "ref_id": "text_19c4f945",
       "method": "text_label"
     },
     {
@@ -5992,411 +6222,411 @@
       "file": "neural-information-rate.tsv",
       "row": 2,
       "column": "doi",
-      "original": "10.1101/2021.02.21.432164",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2021.02.21.432164",
+      "type": "doi",
       "value": "10.1101/2021.02.21.432164",
-      "ref_id": "text_43906476",
-      "method": "text_hash"
+      "ref_id": "demas2021",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 3,
       "column": "doi",
-      "original": "10.1113/jphysiol.2013.262840",
-      "type": "text",
+      "original": "https://doi.org/10.1113/jphysiol.2013.262840",
+      "type": "doi",
       "value": "10.1113/jphysiol.2013.262840",
-      "ref_id": "text_a740b17a",
-      "method": "text_hash"
+      "ref_id": "maccione2014",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 4,
       "column": "doi",
-      "original": "10.1101/306019",
-      "type": "text",
+      "original": "https://doi.org/10.1101/306019",
+      "type": "doi",
       "value": "10.1101/306019",
-      "ref_id": "text_5dbd9340",
-      "method": "text_hash"
+      "ref_id": "stringer2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 5,
       "column": "doi",
-      "original": "10.1016/j.celrep.2017.02.038",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.celrep.2017.02.038",
+      "type": "doi",
       "value": "10.1016/j.celrep.2017.02.038",
-      "ref_id": "text_c890de87",
-      "method": "text_hash"
+      "ref_id": "hilgen2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 6,
       "column": "doi",
-      "original": "10.1038/s41586-019-1787-x",
-      "type": "text",
+      "original": "https://doi.org/10.1038/s41586-019-1787-x",
+      "type": "doi",
       "value": "10.1038/s41586-019-1787-x",
-      "ref_id": "text_4cdb1dd8",
-      "method": "text_hash"
+      "ref_id": "steinmetz2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 7,
       "column": "doi",
-      "original": "10.1101/061507",
-      "type": "text",
+      "original": "https://doi.org/10.1101/061507",
+      "type": "doi",
       "value": "10.1101/061507",
-      "ref_id": "text_734a29ff",
-      "method": "text_hash"
+      "ref_id": "pachitariu2016",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 8,
       "column": "doi",
-      "original": "10.1371/journal.pcbi.1007514",
-      "type": "text",
+      "original": "https://doi.org/10.1371/journal.pcbi.1007514",
+      "type": "doi",
       "value": "10.1371/journal.pcbi.1007514",
-      "ref_id": "text_bb665722",
-      "method": "text_hash"
+      "ref_id": "bartolo2020",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 9,
       "column": "doi",
-      "original": "10.1523/JNEUROSCI.2072-19.2019",
-      "type": "text",
+      "original": "https://doi.org/10.1523/JNEUROSCI.2072-19.2019",
+      "type": "doi",
       "value": "10.1523/JNEUROSCI.2072-19.2019",
-      "ref_id": "text_b8bd6bb9",
-      "method": "text_hash"
+      "ref_id": "bartolo2020a",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 10,
       "column": "doi",
-      "original": "10.1016/j.jneumeth.2017.01.016",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.jneumeth.2017.01.016",
+      "type": "doi",
       "value": "10.1016/j.jneumeth.2017.01.016",
-      "ref_id": "text_1be84e2b",
-      "method": "text_hash"
+      "ref_id": "gama2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 11,
       "column": "doi",
-      "original": "10.1016/j.neuron.2018.09.042",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.neuron.2018.09.042",
+      "type": "doi",
       "value": "10.1016/j.neuron.2018.09.042",
-      "ref_id": "text_221235e6",
-      "method": "text_hash"
+      "ref_id": "chen2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 12,
       "column": "doi",
-      "original": "10.1101/2020.07.17.209403",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2020.07.17.209403",
+      "type": "doi",
       "value": "10.1101/2020.07.17.209403",
-      "ref_id": "text_be38da03",
-      "method": "text_hash"
+      "ref_id": "sahasrabuddhe2020",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 13,
       "column": "doi",
-      "original": "10.1016/j.neuron.2009.09.021",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.neuron.2009.09.021",
+      "type": "doi",
       "value": "10.1016/j.neuron.2009.09.021",
-      "ref_id": "text_ad99c4b4",
-      "method": "text_hash"
+      "ref_id": "stafford2009",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 14,
       "column": "doi",
-      "original": "10.1038/nature24636",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature24636",
+      "type": "doi",
       "value": "10.1038/nature24636",
-      "ref_id": "text_2dce6676",
-      "method": "text_hash"
+      "ref_id": "jun2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 15,
       "column": "doi",
-      "original": "10.7554/eLife.28158",
-      "type": "text",
+      "original": "https://doi.org/10.7554/eLife.28158",
+      "type": "doi",
       "value": "10.7554/eLife.28158",
-      "ref_id": "text_93108bd0",
-      "method": "text_hash"
+      "ref_id": "cong2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 16,
       "column": "doi",
-      "original": "10.1038/nmeth.2936",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nmeth.2936",
+      "type": "doi",
       "value": "10.1038/nmeth.2936",
-      "ref_id": "text_db080dc0",
-      "method": "text_hash"
+      "ref_id": "schwarz2014",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 17,
       "column": "doi",
-      "original": "10.1126/scitranslmed.3006159",
-      "type": "text",
+      "original": "https://doi.org/10.1126/scitranslmed.3006159",
+      "type": "doi",
       "value": "10.1126/scitranslmed.3006159",
-      "ref_id": "text_a6bee897",
-      "method": "text_hash"
+      "ref_id": "ifft2013",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 18,
       "column": "doi",
-      "original": "10.1152/jn.00464.2015",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.00464.2015",
+      "type": "doi",
       "value": "10.1152/jn.00464.2015",
-      "ref_id": "text_578ced99",
-      "method": "text_hash"
+      "ref_id": "shobe2015",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 19,
       "column": "doi",
-      "original": "10.1101/242693",
-      "type": "text",
+      "original": "https://doi.org/10.1101/242693",
+      "type": "doi",
       "value": "10.1101/242693",
-      "ref_id": "text_d24e5b49",
-      "method": "text_hash"
+      "ref_id": "chung2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 20,
       "column": "doi",
-      "original": "10.3389/neuro.07.003.2009",
-      "type": "text",
+      "original": "https://doi.org/10.3389/neuro.07.003.2009",
+      "type": "doi",
       "value": "10.3389/neuro.07.003.2009",
-      "ref_id": "text_dbb72abf",
-      "method": "text_hash"
+      "ref_id": "fitzsimmons2009",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 21,
       "column": "doi",
-      "original": "10.1038/nmeth.2434",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nmeth.2434",
+      "type": "doi",
       "value": "10.1038/nmeth.2434",
-      "ref_id": "text_18210a64",
-      "method": "text_hash"
+      "ref_id": "ahrens2013",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 22,
       "column": "doi",
-      "original": "10.1371/journal.pone.0105324",
-      "type": "text",
+      "original": "https://doi.org/10.1371/journal.pone.0105324",
+      "type": "doi",
       "value": "10.1371/journal.pone.0105324",
-      "ref_id": "text_89415d8e",
-      "method": "text_hash"
+      "ref_id": "ito2014",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 23,
       "column": "doi",
-      "original": "10.1016/j.jneumeth.2005.12.032",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.jneumeth.2005.12.032",
+      "type": "doi",
       "value": "10.1016/j.jneumeth.2005.12.032",
-      "ref_id": "text_947459e8",
-      "method": "text_hash"
+      "ref_id": "lin2006",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 24,
       "column": "doi",
-      "original": "10.1152/jn.00781.2011",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.00781.2011",
+      "type": "doi",
       "value": "10.1152/jn.00781.2011",
-      "ref_id": "text_70d0d1c2",
-      "method": "text_hash"
+      "ref_id": "bansal2012",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 25,
       "column": "doi",
-      "original": "10.1073/pnas.1934665100",
-      "type": "text",
+      "original": "https://doi.org/10.1073/pnas.1934665100",
+      "type": "doi",
       "value": "10.1073/pnas.1934665100",
-      "ref_id": "text_7f0a95ca",
-      "method": "text_hash"
+      "ref_id": "nicolelis2003",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 26,
       "column": "doi",
-      "original": "10.1523/JNEUROSCI.0723-12.2012",
-      "type": "text",
+      "original": "https://doi.org/10.1523/JNEUROSCI.0723-12.2012",
+      "type": "doi",
       "value": "10.1523/JNEUROSCI.0723-12.2012",
-      "ref_id": "text_0ecf9f68",
-      "method": "text_hash"
+      "ref_id": "marre2012",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 27,
       "column": "doi",
-      "original": "10.1038/nature11129",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature11129",
+      "type": "doi",
       "value": "10.1038/nature11129",
-      "ref_id": "text_da5c95f7",
-      "method": "text_hash"
+      "ref_id": "churchland2012",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 28,
       "column": "doi",
-      "original": "10.1038/nature10489",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature10489",
+      "type": "doi",
       "value": "10.1038/nature10489",
-      "ref_id": "text_b1d66eb7",
-      "method": "text_hash"
+      "ref_id": "odoherty2011",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 29,
       "column": "doi",
-      "original": "10.1088/1741-2560/3/2/009",
-      "type": "text",
+      "original": "https://doi.org/10.1088/1741-2560/3/2/009",
+      "type": "doi",
       "value": "10.1088/1741-2560/3/2/009",
-      "ref_id": "text_d073c5f6",
-      "method": "text_hash"
+      "ref_id": "kim2006",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 30,
       "column": "doi",
-      "original": "10.1109/TBME.2004.827061",
-      "type": "text",
+      "original": "https://doi.org/10.1109/TBME.2004.827061",
+      "type": "doi",
       "value": "10.1109/TBME.2004.827061",
-      "ref_id": "text_8fb6b7d6",
-      "method": "text_hash"
+      "ref_id": "sanchez2004",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 31,
       "column": "doi",
-      "original": "10.1371/journal.pone.0000619",
-      "type": "text",
+      "original": "https://doi.org/10.1371/journal.pone.0000619",
+      "type": "doi",
       "value": "10.1371/journal.pone.0000619",
-      "ref_id": "text_2ebb0772",
-      "method": "text_hash"
+      "ref_id": "zacksenhouse2007",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 32,
       "column": "doi",
-      "original": "10.1088/1741-2560/5/4/010",
-      "type": "text",
+      "original": "https://doi.org/10.1088/1741-2560/5/4/010",
+      "type": "doi",
       "value": "10.1088/1741-2560/5/4/010",
-      "ref_id": "text_3f724d02",
-      "method": "text_hash"
+      "ref_id": "kim2008",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 33,
       "column": "doi",
-      "original": "10.1523/JNEUROSCI.4088-04.2005",
-      "type": "text",
+      "original": "https://doi.org/10.1523/JNEUROSCI.4088-04.2005",
+      "type": "doi",
       "value": "10.1523/JNEUROSCI.4088-04.2005",
-      "ref_id": "text_14e7aca5",
-      "method": "text_hash"
+      "ref_id": "lebedev2005",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 34,
       "column": "doi",
-      "original": "10.1126/science.aav7893",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.aav7893",
+      "type": "doi",
       "value": "10.1126/science.aav7893",
-      "ref_id": "text_6df12d13",
-      "method": "text_hash"
+      "ref_id": "stringer2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 35,
       "column": "doi",
-      "original": "10.1152/jn.90920.2008",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.90920.2008",
+      "type": "doi",
       "value": "10.1152/jn.90920.2008",
-      "ref_id": "text_43f79d14",
-      "method": "text_hash"
+      "ref_id": "dickey2009",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 36,
       "column": "doi",
-      "original": "10.1038/nn.2782",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nn.2782",
+      "type": "doi",
       "value": "10.1038/nn.2782",
-      "ref_id": "text_d143bd35",
-      "method": "text_hash"
+      "ref_id": "truccolo2011",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 37,
       "column": "doi",
-      "original": "10.1126/science.8351520",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.8351520",
+      "type": "doi",
       "value": "10.1126/science.8351520",
-      "ref_id": "text_ceb776e2",
-      "method": "text_hash"
+      "ref_id": "wilson1993",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 38,
       "column": "doi",
-      "original": "10.1111/j.1460-9568.2005.04320.x",
-      "type": "text",
+      "original": "https://doi.org/10.1111/j.1460-9568.2005.04320.x",
+      "type": "doi",
       "value": "10.1111/j.1460-9568.2005.04320.x",
-      "ref_id": "text_d03f5519",
-      "method": "text_hash"
+      "ref_id": "santucci2005",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 39,
       "column": "doi",
-      "original": "10.1152/jn.01245.2003",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.01245.2003",
+      "type": "doi",
       "value": "10.1152/jn.01245.2003",
-      "ref_id": "text_69e204b4",
-      "method": "text_hash"
+      "ref_id": "hatsopoulos2004",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 40,
       "column": "doi",
-      "original": "10.1152/jn.00760.2006",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.00760.2006",
+      "type": "doi",
       "value": "10.1152/jn.00760.2006",
-      "ref_id": "text_a58719a6",
-      "method": "text_hash"
+      "ref_id": "hamed2007",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 41,
       "column": "doi",
-      "original": "10.1038/2855",
-      "type": "text",
+      "original": "https://doi.org/10.1038/2855",
+      "type": "doi",
       "value": "10.1038/2855",
-      "ref_id": "text_d41d7f19",
-      "method": "text_hash"
+      "ref_id": "nicolelis1998",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 42,
       "column": "doi",
-      "original": "10.1101/2020.07.14.201699",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2020.07.14.201699",
+      "type": "doi",
       "value": "10.1101/2020.07.14.201699",
-      "ref_id": "text_cbf7ed52",
-      "method": "text_hash"
+      "ref_id": "ota2020",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
@@ -6412,631 +6642,631 @@
       "file": "neural-information-rate.tsv",
       "row": 44,
       "column": "doi",
-      "original": "10.1152/jn.01023.2004",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.01023.2004",
+      "type": "doi",
       "value": "10.1152/jn.01023.2004",
-      "ref_id": "text_576afb87",
-      "method": "text_hash"
+      "ref_id": "blanche2005",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 45,
       "column": "doi",
-      "original": "10.1038/35042582",
-      "type": "text",
+      "original": "https://doi.org/10.1038/35042582",
+      "type": "doi",
       "value": "10.1038/35042582",
-      "ref_id": "text_b8ca85e7",
-      "method": "text_hash"
+      "ref_id": "wessberg2000",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 46,
       "column": "doi",
-      "original": "10.1016/S0896-6273(00)80295-0",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0896-6273(00)80295-0",
+      "type": "doi",
       "value": "10.1016/S0896-6273(00)80295-0",
-      "ref_id": "text_c06b6602",
-      "method": "text_hash"
+      "ref_id": "nicolelis1997",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 47,
       "column": "doi",
-      "original": "10.1152/jn.00116.2003",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.00116.2003",
+      "type": "doi",
       "value": "10.1152/jn.00116.2003",
-      "ref_id": "text_adcf2221",
-      "method": "text_hash"
+      "ref_id": "csicsvari2003",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 48,
       "column": "doi",
-      "original": "10.1113/jphysiol.2004.068668",
-      "type": "text",
+      "original": "https://doi.org/10.1113/jphysiol.2004.068668",
+      "type": "doi",
       "value": "10.1113/jphysiol.2004.068668",
-      "ref_id": "text_bc05be33",
-      "method": "text_hash"
+      "ref_id": "stein2004",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 49,
       "column": "doi",
-      "original": "10.1371/journal.pbio.0000042",
-      "type": "text",
+      "original": "https://doi.org/10.1371/journal.pbio.0000042",
+      "type": "doi",
       "value": "10.1371/journal.pbio.0000042",
-      "ref_id": "text_ec295bc3",
-      "method": "text_hash"
+      "ref_id": "carmena2003",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 50,
       "column": "doi",
-      "original": "10.1126/science.2035024",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.2035024",
+      "type": "doi",
       "value": "10.1126/science.2035024",
-      "ref_id": "text_0e364d1d",
-      "method": "text_hash"
+      "ref_id": "meister1991",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 51,
       "column": "doi",
-      "original": "10.1038/nmeth.4226",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nmeth.4226",
+      "type": "doi",
       "value": "10.1038/nmeth.4226",
-      "ref_id": "text_3aae3c83",
-      "method": "text_hash"
+      "ref_id": "song2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 52,
       "column": "doi",
-      "original": "10.7554/eLife.14472",
-      "type": "text",
+      "original": "https://doi.org/10.7554/eLife.14472",
+      "type": "doi",
       "value": "10.7554/eLife.14472",
-      "ref_id": "text_4a19eea4",
-      "method": "text_hash"
+      "ref_id": "sofroniew2016",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 53,
       "column": "doi",
-      "original": "10.1126/science.8036517",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.8036517",
+      "type": "doi",
       "value": "10.1126/science.8036517",
-      "ref_id": "text_9e67d043",
-      "method": "text_hash"
+      "ref_id": "wilson1994",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 54,
       "column": "doi",
-      "original": "10.1038/nature01834",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature01834",
+      "type": "doi",
       "value": "10.1038/nature01834",
-      "ref_id": "text_65c9e9a7",
-      "method": "text_hash"
+      "ref_id": "harris2003",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 55,
       "column": "doi",
-      "original": "10.1016/S0042-6989(99)00040-1",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0042-6989(99)00040-1",
+      "type": "doi",
       "value": "10.1016/S0042-6989(99)00040-1",
-      "ref_id": "text_34739a7c",
-      "method": "text_hash"
+      "ref_id": "normann1999",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 56,
       "column": "doi",
-      "original": "10.1126/science.1070291",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.1070291",
+      "type": "doi",
       "value": "10.1126/science.1070291",
-      "ref_id": "text_5f2d529c",
-      "method": "text_hash"
+      "ref_id": "taylor2002",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 57,
       "column": "doi",
-      "original": "10.1016/S1385-299X(99)00034-3",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S1385-299X(99)00034-3",
+      "type": "doi",
       "value": "10.1016/S1385-299X(99)00034-3",
-      "ref_id": "text_37ae8f12",
-      "method": "text_hash"
+      "ref_id": "williams1999",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 58,
       "column": "doi",
-      "original": "10.1126/science.271.5257.1870",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.271.5257.1870",
+      "type": "doi",
       "value": "10.1126/science.271.5257.1870",
-      "ref_id": "text_6689e9cd",
-      "method": "text_hash"
+      "ref_id": "skaggs1996",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 59,
       "column": "doi",
-      "original": "10.1016/S0165-0270(99)00139-9",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0165-0270(99)00139-9",
+      "type": "doi",
       "value": "10.1016/S0165-0270(99)00139-9",
-      "ref_id": "text_7d0e7526",
-      "method": "text_hash"
+      "ref_id": "porada2000",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 60,
       "column": "doi",
-      "original": "10.1016/0006-8993(96)00321-6",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0006-8993(96)00321-6",
+      "type": "doi",
       "value": "10.1016/0006-8993(96)00321-6",
-      "ref_id": "text_77b38a21",
-      "method": "text_hash"
+      "ref_id": "nordhausen1996",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 61,
       "column": "doi",
-      "original": "10.1126/science.7761855",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.7761855",
+      "type": "doi",
       "value": "10.1126/science.7761855",
-      "ref_id": "text_2bdf66c6",
-      "method": "text_hash"
+      "ref_id": "nicolelis1995",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 62,
       "column": "doi",
-      "original": "10.1038/10223",
-      "type": "text",
+      "original": "https://doi.org/10.1038/10223",
+      "type": "doi",
       "value": "10.1038/10223",
-      "ref_id": "text_e9efacf2",
-      "method": "text_hash"
+      "ref_id": "chapin1999",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 63,
       "column": "doi",
-      "original": "10.1038/nmeth.4040",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nmeth.4040",
+      "type": "doi",
       "value": "10.1038/nmeth.4040",
-      "ref_id": "text_d355380f",
-      "method": "text_hash"
+      "ref_id": "prevedel2016",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 64,
       "column": "doi",
-      "original": "10.1523/JNEUROSCI.18-18-07411.1998",
-      "type": "text",
+      "original": "https://doi.org/10.1523/JNEUROSCI.18-18-07411.1998",
+      "type": "doi",
       "value": "10.1523/JNEUROSCI.18-18-07411.1998",
-      "ref_id": "text_21b254c4",
-      "method": "text_hash"
+      "ref_id": "brown1998",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 65,
       "column": "doi",
-      "original": "10.1016/S0006-8993(97)00012-7",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0006-8993(97)00012-7",
+      "type": "doi",
       "value": "10.1016/S0006-8993(97)00012-7",
-      "ref_id": "text_9a507877",
-      "method": "text_hash"
+      "ref_id": "chang1997",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 66,
       "column": "doi",
-      "original": "10.1080/01616412.1993.11740106",
-      "type": "text",
+      "original": "https://doi.org/10.1080/01616412.1993.11740106",
+      "type": "doi",
       "value": "10.1080/01616412.1993.11740106",
-      "ref_id": "text_8fd59131",
-      "method": "text_hash"
+      "ref_id": "shaw1993",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 67,
       "column": "doi",
-      "original": "10.1016/S0092-8674(00)81828-0",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0092-8674(00)81828-0",
+      "type": "doi",
       "value": "10.1016/S0092-8674(00)81828-0",
-      "ref_id": "text_a2486c0f",
-      "method": "text_hash"
+      "ref_id": "mchugh1996",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 68,
       "column": "doi",
-      "original": "10.1007/BF00248509",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00248509",
+      "type": "doi",
       "value": "10.1007/BF00248509",
-      "ref_id": "text_6773c0ea",
-      "method": "text_hash"
+      "ref_id": "aiple1988",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 69,
       "column": "doi",
-      "original": "10.1523/JNEUROSCI.16-02-00823.1996",
-      "type": "text",
+      "original": "https://doi.org/10.1523/JNEUROSCI.16-02-00823.1996",
+      "type": "doi",
       "value": "10.1523/JNEUROSCI.16-02-00823.1996",
-      "ref_id": "text_fb4ca510",
-      "method": "text_hash"
+      "ref_id": "gothard1996",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 70,
       "column": "doi",
-      "original": "10.1073/pnas.90.6.2212",
-      "type": "text",
+      "original": "https://doi.org/10.1073/pnas.90.6.2212",
+      "type": "doi",
       "value": "10.1073/pnas.90.6.2212",
-      "ref_id": "text_ceaae748",
-      "method": "text_hash"
+      "ref_id": "nicolelis1993",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 71,
       "column": "doi",
-      "original": "10.1007/BF00202899",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00202899",
+      "type": "doi",
       "value": "10.1007/BF00202899",
-      "ref_id": "text_05a30d1a",
-      "method": "text_hash"
+      "ref_id": "eckhorn1988",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 72,
       "column": "doi",
-      "original": "10.1016/0306-4522(85)90072-7",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0306-4522(85)90072-7",
+      "type": "doi",
       "value": "10.1016/0306-4522(85)90072-7",
-      "ref_id": "text_a3a5513c",
-      "method": "text_hash"
+      "ref_id": "kuperstein1985",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 73,
       "column": "doi",
-      "original": "10.1007/BF00236609",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00236609",
+      "type": "doi",
       "value": "10.1007/BF00236609",
-      "ref_id": "text_3bfa1d10",
-      "method": "text_hash"
+      "ref_id": "krger1981",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 74,
       "column": "doi",
-      "original": "10.1038/373515a0",
-      "type": "text",
+      "original": "https://doi.org/10.1038/373515a0",
+      "type": "doi",
       "value": "10.1038/373515a0",
-      "ref_id": "text_d288bcae",
-      "method": "text_hash"
+      "ref_id": "vaadia1995",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 75,
       "column": "doi",
-      "original": "10.1016/0006-8993(88)91542-9",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0006-8993(88)91542-9",
+      "type": "doi",
       "value": "10.1016/0006-8993(88)91542-9",
-      "ref_id": "text_e48ac0e0",
-      "method": "text_hash"
+      "ref_id": "espinosa1988",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 76,
       "column": "doi",
-      "original": "10.1016/0165-0270(89)90038-1",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0165-0270(89)90038-1",
+      "type": "doi",
       "value": "10.1016/0165-0270(89)90038-1",
-      "ref_id": "text_f5e59e5e",
-      "method": "text_hash"
+      "ref_id": "buzski1989",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 77,
       "column": "doi",
-      "original": "10.1007/BF00239532",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00239532",
+      "type": "doi",
       "value": "10.1007/BF00239532",
-      "ref_id": "text_e5662ae7",
-      "method": "text_hash"
+      "ref_id": "kuperstein1986",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 78,
       "column": "doi",
-      "original": "10.1016/0014-4886(76)90220-X",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0014-4886(76)90220-X",
+      "type": "doi",
       "value": "10.1016/0014-4886(76)90220-X",
-      "ref_id": "text_5886c64e",
-      "method": "text_hash"
+      "ref_id": "schmidt1976",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 79,
       "column": "doi",
-      "original": "10.1073/pnas.87.22.8935",
-      "type": "text",
+      "original": "https://doi.org/10.1073/pnas.87.22.8935",
+      "type": "doi",
       "value": "10.1073/pnas.87.22.8935",
-      "ref_id": "text_fbd8be53",
-      "method": "text_hash"
+      "ref_id": "ahissar1990",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 80,
       "column": "doi",
-      "original": "10.1016/0165-0270(91)90140-U",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0165-0270(91)90140-U",
+      "type": "doi",
       "value": "10.1016/0165-0270(91)90140-U",
-      "ref_id": "text_08a4f61a",
-      "method": "text_hash"
+      "ref_id": "mountcastle1991",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 81,
       "column": "doi",
-      "original": "10.1016/0031-9384(84)90080-5",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0031-9384(84)90080-5",
+      "type": "doi",
       "value": "10.1016/0031-9384(84)90080-5",
-      "ref_id": "text_f1f035d7",
-      "method": "text_hash"
+      "ref_id": "kubie1984",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 82,
       "column": "doi",
-      "original": "10.1016/0006-8993(89)90183-2",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0006-8993(89)90183-2",
+      "type": "doi",
       "value": "10.1016/0006-8993(89)90183-2",
-      "ref_id": "text_895c45f5",
-      "method": "text_hash"
+      "ref_id": "lindsey1989",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 83,
       "column": "doi",
-      "original": "10.1016/0165-0270(88)90131-8",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0165-0270(88)90131-8",
+      "type": "doi",
       "value": "10.1016/0165-0270(88)90131-8",
-      "ref_id": "text_0dc53999",
-      "method": "text_hash"
+      "ref_id": "mioche1988",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 84,
       "column": "doi",
-      "original": "10.1109/10.7273",
-      "type": "text",
+      "original": "https://doi.org/10.1109/10.7273",
+      "type": "doi",
       "value": "10.1109/10.7273",
-      "ref_id": "text_dc3cbd70",
-      "method": "text_hash"
+      "ref_id": "drake1988",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 85,
       "column": "doi",
-      "original": "10.1152/jn.1987.57.4.1101",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.1987.57.4.1101",
+      "type": "doi",
       "value": "10.1152/jn.1987.57.4.1101",
-      "ref_id": "text_1d840290",
-      "method": "text_hash"
+      "ref_id": "lindsey1987",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 86,
       "column": "doi",
-      "original": "10.1126/science.170.3959.758",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.170.3959.758",
+      "type": "doi",
       "value": "10.1126/science.170.3959.758",
-      "ref_id": "text_d44d3835",
-      "method": "text_hash"
+      "ref_id": "humphrey1970",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 87,
       "column": "doi",
-      "original": "10.1152/jn.1985.53.4.926",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.1985.53.4.926",
+      "type": "doi",
       "value": "10.1152/jn.1985.53.4.926",
-      "ref_id": "text_3151c6fb",
-      "method": "text_hash"
+      "ref_id": "legendy1985",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 88,
       "column": "doi",
-      "original": "10.1007/BF01955338",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF01955338",
+      "type": "doi",
       "value": "10.1007/BF01955338",
-      "ref_id": "text_c9fa9776",
-      "method": "text_hash"
+      "ref_id": "reitbck1983",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 89,
       "column": "doi",
-      "original": "10.1016/0014-4886(78)90270-4",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0014-4886(78)90270-4",
+      "type": "doi",
       "value": "10.1016/0014-4886(78)90270-4",
-      "ref_id": "text_6ad1c236",
-      "method": "text_hash"
+      "ref_id": "durelli1978",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 90,
       "column": "doi",
-      "original": "10.1016/0006-8993(83)90567-X",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0006-8993(83)90567-X",
+      "type": "doi",
       "value": "10.1016/0006-8993(83)90567-X",
-      "ref_id": "text_9c1266e3",
-      "method": "text_hash"
+      "ref_id": "frostig1983",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 91,
       "column": "doi",
-      "original": "10.1016/0165-0270(82)90035-8",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0165-0270(82)90035-8",
+      "type": "doi",
       "value": "10.1016/0165-0270(82)90035-8",
-      "ref_id": "text_c98f5130",
-      "method": "text_hash"
+      "ref_id": "krger1982",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 92,
       "column": "doi",
-      "original": "10.1109/PROC.1977.10559",
-      "type": "text",
+      "original": "https://doi.org/10.1109/PROC.1977.10559",
+      "type": "doi",
       "value": "10.1109/PROC.1977.10559",
-      "ref_id": "text_46988014",
-      "method": "text_hash"
+      "ref_id": "abeles1977",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 93,
       "column": "doi",
-      "original": "10.1007/BF00236807",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00236807",
+      "type": "doi",
       "value": "10.1007/BF00236807",
-      "ref_id": "text_60548e2d",
-      "method": "text_hash"
+      "ref_id": "michalski1983",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 94,
       "column": "doi",
-      "original": "10.1109/TBME.1982.324870",
-      "type": "text",
+      "original": "https://doi.org/10.1109/TBME.1982.324870",
+      "type": "doi",
       "value": "10.1109/TBME.1982.324870",
-      "ref_id": "text_67cffaca",
-      "method": "text_hash"
+      "ref_id": "wheeler1982",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 95,
       "column": "doi",
-      "original": "10.1109/TBME.1981.324702",
-      "type": "text",
+      "original": "https://doi.org/10.1109/TBME.1981.324702",
+      "type": "doi",
       "value": "10.1109/TBME.1981.324702",
-      "ref_id": "text_981201b5",
-      "method": "text_hash"
+      "ref_id": "kuperstein1981",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 96,
       "column": "doi",
-      "original": "10.1016/0006-8993(75)90324-8",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0006-8993(75)90324-8",
+      "type": "doi",
       "value": "10.1016/0006-8993(75)90324-8",
-      "ref_id": "text_3d23e8cb",
-      "method": "text_hash"
+      "ref_id": "voronin1975",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 97,
       "column": "doi",
-      "original": "10.1016/0013-4694(70)90105-7",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0013-4694(70)90105-7",
+      "type": "doi",
       "value": "10.1016/0013-4694(70)90105-7",
-      "ref_id": "text_44b438db",
-      "method": "text_hash"
+      "ref_id": "humphrey1970a",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 98,
       "column": "doi",
-      "original": "10.1016/0014-4886(76)90217-X",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0014-4886(76)90217-X",
+      "type": "doi",
       "value": "10.1016/0014-4886(76)90217-X",
-      "ref_id": "text_ff35c7a5",
-      "method": "text_hash"
+      "ref_id": "schmidt1976a",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 99,
       "column": "doi",
-      "original": "10.1152/jn.1974.37.6.1239",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.1974.37.6.1239",
+      "type": "doi",
       "value": "10.1152/jn.1974.37.6.1239",
-      "ref_id": "text_bdb3b428",
-      "method": "text_hash"
+      "ref_id": "dickson1974",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 100,
       "column": "doi",
-      "original": "10.1016/S0006-3495(72)86097-1",
-      "type": "text",
+      "original": "https://doi.org/10.1016/S0006-3495(72)86097-1",
+      "type": "doi",
       "value": "10.1016/S0006-3495(72)86097-1",
-      "ref_id": "text_0bed63d5",
-      "method": "text_hash"
+      "ref_id": "gerstein1972",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 101,
       "column": "doi",
-      "original": "10.1126/science.169.3952.1336",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.169.3952.1336",
+      "type": "doi",
       "value": "10.1126/science.169.3952.1336",
-      "ref_id": "text_bdc50acd",
-      "method": "text_hash"
+      "ref_id": "kristan1970",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 102,
       "column": "doi",
-      "original": "10.1126/science.143.3612.1325",
-      "type": "text",
+      "original": "https://doi.org/10.1126/science.143.3612.1325",
+      "type": "doi",
       "value": "10.1126/science.143.3612.1325",
-      "ref_id": "text_73ecd52a",
-      "method": "text_hash"
+      "ref_id": "gerstein1964",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 103,
       "column": "doi",
-      "original": "10.1113/jphysiol.1962.sp006837",
-      "type": "text",
+      "original": "https://doi.org/10.1113/jphysiol.1962.sp006837",
+      "type": "doi",
       "value": "10.1113/jphysiol.1962.sp006837",
-      "ref_id": "text_46829404",
-      "method": "text_hash"
+      "ref_id": "hubel1962",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 104,
       "column": "doi",
-      "original": "10.1111/j.2164-0947.1959.tb01676.x",
-      "type": "text",
+      "original": "https://doi.org/10.1111/j.2164-0947.1959.tb01676.x",
+      "type": "doi",
       "value": "10.1111/j.2164-0947.1959.tb01676.x",
-      "ref_id": "text_201e2702",
-      "method": "text_hash"
+      "ref_id": "amassian1959",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 105,
       "column": "doi",
-      "original": "10.1016/0014-4886(69)90086-7",
-      "type": "text",
+      "original": "https://doi.org/10.1016/0014-4886(69)90086-7",
+      "type": "doi",
       "value": "10.1016/0014-4886(69)90086-7",
-      "ref_id": "text_5488d34a",
-      "method": "text_hash"
+      "ref_id": "okeefe1969",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 106,
       "column": "doi",
-      "original": "10.1152/jn.1967.30.5.1043",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.1967.30.5.1043",
+      "type": "doi",
       "value": "10.1152/jn.1967.30.5.1043",
-      "ref_id": "text_2680589d",
-      "method": "text_hash"
+      "ref_id": "rodieck1967",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
@@ -7052,451 +7282,451 @@
       "file": "neural-information-rate.tsv",
       "row": 108,
       "column": "doi",
-      "original": "10.1152/jn.1965.28.2.216",
-      "type": "text",
+      "original": "https://doi.org/10.1152/jn.1965.28.2.216",
+      "type": "doi",
       "value": "10.1152/jn.1965.28.2.216",
-      "ref_id": "text_30aa198c",
-      "method": "text_hash"
+      "ref_id": "evarts1965",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 109,
       "column": "doi",
-      "original": "10.1007/BF00306415",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00306415",
+      "type": "doi",
       "value": "10.1007/BF00306415",
-      "ref_id": "text_c6ae14c1",
-      "method": "text_hash"
+      "ref_id": "braitenberg1965",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 110,
       "column": "doi",
-      "original": "10.1038/199876a0",
-      "type": "text",
+      "original": "https://doi.org/10.1038/199876a0",
+      "type": "doi",
       "value": "10.1038/199876a0",
-      "ref_id": "text_69068fad",
-      "method": "text_hash"
+      "ref_id": "griffith1963",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 111,
       "column": "doi",
-      "original": "10.1111/j.1749-6632.1961.tb20184.x",
-      "type": "text",
+      "original": "https://doi.org/10.1111/j.1749-6632.1961.tb20184.x",
+      "type": "doi",
       "value": "10.1111/j.1749-6632.1961.tb20184.x",
-      "ref_id": "text_266b7fb2",
-      "method": "text_hash"
+      "ref_id": "amassian1961",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 112,
       "column": "doi",
-      "original": "10.1007/BF00595651",
-      "type": "text",
+      "original": "https://doi.org/10.1007/BF00595651",
+      "type": "doi",
       "value": "10.1007/BF00595651",
-      "ref_id": "text_46208b52",
-      "method": "text_hash"
+      "ref_id": "vonbaumgarten1957",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 113,
       "column": "doi",
-      "original": "10.1016/j.cell.2019.03.011",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.cell.2019.03.011",
+      "type": "doi",
       "value": "10.1016/j.cell.2019.03.011",
-      "ref_id": "text_388a875c",
-      "method": "text_hash"
+      "ref_id": "weisenburger2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 114,
       "column": "doi",
-      "original": "10.1016/j.celrep.2016.12.004",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.celrep.2016.12.004",
+      "type": "doi",
       "value": "10.1016/j.celrep.2016.12.004",
-      "ref_id": "text_5de9d128",
-      "method": "text_hash"
+      "ref_id": "kim2016",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 115,
       "column": "doi",
-      "original": "10.1016/j.neuron.2015.03.027",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.neuron.2015.03.027",
+      "type": "doi",
       "value": "10.1016/j.neuron.2015.03.027",
-      "ref_id": "text_3c394cba",
-      "method": "text_hash"
+      "ref_id": "peron2015",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 116,
       "column": "doi",
-      "original": "10.1038/nn.3867",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nn.3867",
+      "type": "doi",
       "value": "10.1038/nn.3867",
-      "ref_id": "text_ed3a71ef",
-      "method": "text_hash"
+      "ref_id": "lecoq2014",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 117,
       "column": "doi",
-      "original": "10.1038/nn.3329",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nn.3329",
+      "type": "doi",
       "value": "10.1038/nn.3329",
-      "ref_id": "text_1951b321",
-      "method": "text_hash"
+      "ref_id": "ziv2013",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 118,
       "column": "doi",
-      "original": "10.3389/fncir.2013.00151",
-      "type": "text",
+      "original": "https://doi.org/10.3389/fncir.2013.00151",
+      "type": "doi",
       "value": "10.3389/fncir.2013.00151",
-      "ref_id": "text_eb334578",
-      "method": "text_hash"
+      "ref_id": "cotton2013",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 119,
       "column": "doi",
-      "original": "10.1038/nature11039",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature11039",
+      "type": "doi",
       "value": "10.1038/nature11039",
-      "ref_id": "text_b73d8cc4",
-      "method": "text_hash"
+      "ref_id": "huber2012",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 120,
       "column": "doi",
-      "original": "10.1038/nature11321",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature11321",
+      "type": "doi",
       "value": "10.1038/nature11321",
-      "ref_id": "text_d84e1c88",
-      "method": "text_hash"
+      "ref_id": "petreanu2012",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 121,
       "column": "doi",
-      "original": "10.1038/nmeth.1552",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nmeth.1552",
+      "type": "doi",
       "value": "10.1038/nmeth.1552",
-      "ref_id": "text_b0a137dd",
-      "method": "text_hash"
+      "ref_id": "cheng2011",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 122,
       "column": "doi",
-      "original": "10.1038/nature08897",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature08897",
+      "type": "doi",
       "value": "10.1038/nature08897",
-      "ref_id": "text_f7dc538f",
-      "method": "text_hash"
+      "ref_id": "komiyama2010",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 123,
       "column": "doi",
-      "original": "10.1016/j.neuron.2010.08.002",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.neuron.2010.08.002",
+      "type": "doi",
       "value": "10.1016/j.neuron.2010.08.002",
-      "ref_id": "text_d6a8e17c",
-      "method": "text_hash"
+      "ref_id": "kerlin2010",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 124,
       "column": "doi",
-      "original": "10.1016/j.neuron.2010.08.026",
-      "type": "text",
+      "original": "https://doi.org/10.1016/j.neuron.2010.08.026",
+      "type": "doi",
       "value": "10.1016/j.neuron.2010.08.026",
-      "ref_id": "text_0efed71c",
-      "method": "text_hash"
+      "ref_id": "oconnor2010",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 125,
       "column": "doi",
-      "original": "10.1038/nn.2648",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nn.2648",
+      "type": "doi",
       "value": "10.1038/nn.2648",
-      "ref_id": "text_6108aa9e",
-      "method": "text_hash"
+      "ref_id": "dombeck2010",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 126,
       "column": "doi",
-      "original": "10.1038/nature03274",
-      "type": "text",
+      "original": "https://doi.org/10.1038/nature03274",
+      "type": "doi",
       "value": "10.1038/nature03274",
-      "ref_id": "text_af084d21",
-      "method": "text_hash"
+      "ref_id": "ohki2005",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 127,
       "column": "doi",
-      "original": "10.1073/pnas.1232232100",
-      "type": "text",
+      "original": "https://doi.org/10.1073/pnas.1232232100",
+      "type": "doi",
       "value": "10.1073/pnas.1232232100",
-      "ref_id": "text_48ef076d",
-      "method": "text_hash"
+      "ref_id": "stosiek2003",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 128,
       "column": "doi",
-      "original": "10.1101/156786",
-      "type": "text",
+      "original": "https://doi.org/10.1101/156786",
+      "type": "doi",
       "value": "10.1101/156786",
-      "ref_id": "text_7e3689d0",
-      "method": "text_hash"
+      "ref_id": "pachitariu2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 129,
       "column": "doi",
-      "original": "10.1101/193383",
-      "type": "text",
+      "original": "https://doi.org/10.1101/193383",
+      "type": "doi",
       "value": "10.1101/193383",
-      "ref_id": "text_c2d4d7c3",
-      "method": "text_hash"
+      "ref_id": "giovannucci2017",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 130,
       "column": "doi",
-      "original": "10.1101/434035",
-      "type": "text",
+      "original": "https://doi.org/10.1101/434035",
+      "type": "doi",
       "value": "10.1101/434035",
-      "ref_id": "text_801f612c",
-      "method": "text_hash"
+      "ref_id": "kobayashi2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 131,
       "column": "doi",
-      "original": "10.1101/441014",
-      "type": "text",
+      "original": "https://doi.org/10.1101/441014",
+      "type": "doi",
       "value": "10.1101/441014",
-      "ref_id": "text_c35c08d6",
-      "method": "text_hash"
+      "ref_id": "han2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 132,
       "column": "doi",
-      "original": "10.1101/452672",
-      "type": "text",
+      "original": "https://doi.org/10.1101/452672",
+      "type": "doi",
       "value": "10.1101/452672",
-      "ref_id": "text_2e1f4055",
-      "method": "text_hash"
+      "ref_id": "sinz2018",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 133,
       "column": "doi",
-      "original": "10.1101/679324",
-      "type": "text",
+      "original": "https://doi.org/10.1101/679324",
+      "type": "doi",
       "value": "10.1101/679324",
-      "ref_id": "text_3fd2e06d",
-      "method": "text_hash"
+      "ref_id": "stringer2019a",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 134,
       "column": "doi",
-      "original": "10.1101/745323",
-      "type": "text",
+      "original": "https://doi.org/10.1101/745323",
+      "type": "doi",
       "value": "10.1101/745323",
-      "ref_id": "text_04018079",
-      "method": "text_hash"
+      "ref_id": "fahey2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 135,
       "column": "doi",
-      "original": "10.1101/2021.07.28.454025",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2021.07.28.454025",
+      "type": "doi",
       "value": "10.1101/2021.07.28.454025",
-      "ref_id": "text_78e52d00",
-      "method": "text_hash"
+      "ref_id": "unknown2021",
+      "method": "cached_doi"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 136,
       "column": "doi",
-      "original": "10.1101/2021.09.20.461015",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2021.09.20.461015",
+      "type": "doi",
       "value": "10.1101/2021.09.20.461015",
-      "ref_id": "text_59897f8b",
-      "method": "text_hash"
+      "ref_id": "zong2021",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 137,
       "column": "doi",
-      "original": "10.1101/2023.03.20.533476",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.03.20.533476",
+      "type": "doi",
       "value": "10.1101/2023.03.20.533476",
-      "ref_id": "text_f7f7b820",
-      "method": "text_hash"
+      "ref_id": "nbauer2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 138,
       "column": "doi",
-      "original": "10.1101/2023.07.25.550571",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.07.25.550571",
+      "type": "doi",
       "value": "10.1101/2023.07.25.550571",
-      "ref_id": "text_f9e3f3c8",
-      "method": "text_hash"
+      "ref_id": "stringer2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 139,
       "column": "doi",
-      "original": "10.1101/2024.01.15.575721",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2024.01.15.575721",
+      "type": "doi",
       "value": "10.1101/2024.01.15.575721",
-      "ref_id": "text_d3f777bf",
-      "method": "text_hash"
+      "ref_id": "manley2024",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 140,
       "column": "doi",
-      "original": "10.1101/2024.02.25.581990",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2024.02.25.581990",
+      "type": "doi",
       "value": "10.1101/2024.02.25.581990",
-      "ref_id": "text_a5554a24",
-      "method": "text_hash"
+      "ref_id": "zhong2024",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 141,
       "column": "doi",
-      "original": "10.1101/2024.08.21.609011",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2024.08.21.609011",
+      "type": "doi",
       "value": "10.1101/2024.08.21.609011",
-      "ref_id": "text_90c1bfb8",
-      "method": "text_hash"
+      "ref_id": "jiang2024",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 142,
       "column": "doi",
-      "original": "10.1101/703801",
-      "type": "text",
+      "original": "https://doi.org/10.1101/703801",
+      "type": "doi",
       "value": "10.1101/703801",
-      "ref_id": "text_c65c71c5",
-      "method": "text_hash"
+      "ref_id": "musk2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 143,
       "column": "doi",
-      "original": "10.1101/823377",
-      "type": "text",
+      "original": "https://doi.org/10.1101/823377",
+      "type": "doi",
       "value": "10.1101/823377",
-      "ref_id": "text_c0199db5",
-      "method": "text_hash"
+      "ref_id": "bartolo2019",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 144,
       "column": "doi",
-      "original": "10.1101/2020.02.25.965210",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2020.02.25.965210",
+      "type": "doi",
       "value": "10.1101/2020.02.25.965210",
-      "ref_id": "text_40f2e93e",
-      "method": "text_hash"
+      "ref_id": "liu2020",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 145,
       "column": "doi",
-      "original": "10.1101/2021.01.22.427798",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2021.01.22.427798",
+      "type": "doi",
       "value": "10.1101/2021.01.22.427798",
-      "ref_id": "text_da6bcca2",
-      "method": "text_hash"
+      "ref_id": "liu2021",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 146,
       "column": "doi",
-      "original": "10.1101/2021.02.25.432776",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2021.02.25.432776",
+      "type": "doi",
       "value": "10.1101/2021.02.25.432776",
-      "ref_id": "text_e026b64a",
-      "method": "text_hash"
+      "ref_id": "gardner2021",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 147,
       "column": "doi",
-      "original": "10.1101/2023.02.01.526664",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.02.01.526664",
+      "type": "doi",
       "value": "10.1101/2023.02.01.526664",
-      "ref_id": "text_c820776a",
-      "method": "text_hash"
+      "ref_id": "trautmann2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 148,
       "column": "doi",
-      "original": "10.1101/2023.02.08.527772",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.02.08.527772",
+      "type": "doi",
       "value": "10.1101/2023.02.08.527772",
-      "ref_id": "text_385cab53",
-      "method": "text_hash"
+      "ref_id": "macdowell2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 149,
       "column": "doi",
-      "original": "10.1101/2023.11.12.566771",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.11.12.566771",
+      "type": "doi",
       "value": "10.1101/2023.11.12.566771",
-      "ref_id": "text_097027bb",
-      "method": "text_hash"
+      "ref_id": "bennett2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 150,
       "column": "doi",
-      "original": "10.1101/2023.12.22.572441",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2023.12.22.572441",
+      "type": "doi",
       "value": "10.1101/2023.12.22.572441",
-      "ref_id": "text_9b5b409f",
-      "method": "text_hash"
+      "ref_id": "melin2023",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 151,
       "column": "doi",
-      "original": "10.1101/2024.06.17.599402",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2024.06.17.599402",
+      "type": "doi",
       "value": "10.1101/2024.06.17.599402",
-      "ref_id": "text_0a93b55a",
-      "method": "text_hash"
+      "ref_id": "kanter2024",
+      "method": "crossref_api"
     },
     {
       "file": "neural-information-rate.tsv",
       "row": 152,
       "column": "doi",
-      "original": "10.1101/2024.08.21.609044",
-      "type": "text",
+      "original": "https://doi.org/10.1101/2024.08.21.609044",
+      "type": "doi",
       "value": "10.1101/2024.08.21.609044",
-      "ref_id": "text_7606a7a0",
-      "method": "text_hash"
+      "ref_id": "bondy2024",
+      "method": "crossref_api"
     },
     {
       "file": "neural-recording.tsv",
@@ -9546,7 +9776,7 @@
       "type": "doi",
       "value": "10.1007/BF00595651",
       "ref_id": "vonbaumgarten1957",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9556,7 +9786,7 @@
       "type": "doi",
       "value": "10.1111/j.2164-0947.1959.tb01676.x",
       "ref_id": "amassian1959",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9566,7 +9796,7 @@
       "type": "doi",
       "value": "10.1111/j.1749-6632.1961.tb20184.x",
       "ref_id": "amassian1961",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9576,7 +9806,7 @@
       "type": "doi",
       "value": "10.1113/jphysiol.1962.sp006837",
       "ref_id": "hubel1962",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9586,7 +9816,7 @@
       "type": "doi",
       "value": "10.1038/199876a0",
       "ref_id": "griffith1963",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9596,7 +9826,7 @@
       "type": "doi",
       "value": "10.1126/science.143.3612.1325",
       "ref_id": "gerstein1964",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9606,7 +9836,7 @@
       "type": "doi",
       "value": "10.1007/BF00306415",
       "ref_id": "braitenberg1965",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9626,7 +9856,7 @@
       "type": "doi",
       "value": "10.1152/jn.1965.28.2.216",
       "ref_id": "evarts1965",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9636,7 +9866,7 @@
       "type": "doi",
       "value": "10.1152/jn.1967.30.5.1043",
       "ref_id": "rodieck1967",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9646,7 +9876,7 @@
       "type": "doi",
       "value": "10.1016/0014-4886(69)90086-7",
       "ref_id": "okeefe1969",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9656,7 +9886,7 @@
       "type": "doi",
       "value": "10.1126/science.169.3952.1336",
       "ref_id": "kristan1970",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9676,7 +9906,7 @@
       "type": "doi",
       "value": "10.1126/science.170.3959.758",
       "ref_id": "humphrey1970",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9686,7 +9916,7 @@
       "type": "doi",
       "value": "10.1016/0013-4694(70)90105-7",
       "ref_id": "humphrey1970a",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9696,7 +9926,7 @@
       "type": "doi",
       "value": "10.1016/S0006-3495(72)86097-1",
       "ref_id": "gerstein1972",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9706,7 +9936,7 @@
       "type": "doi",
       "value": "10.1152/jn.1974.37.6.1239",
       "ref_id": "dickson1974",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9716,7 +9946,7 @@
       "type": "doi",
       "value": "10.1016/0006-8993(75)90324-8",
       "ref_id": "voronin1975",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9726,7 +9956,7 @@
       "type": "doi",
       "value": "10.1016/0014-4886(76)90220-X",
       "ref_id": "schmidt1976",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9736,7 +9966,7 @@
       "type": "doi",
       "value": "10.1016/0014-4886(76)90217-X",
       "ref_id": "schmidt1976a",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9756,7 +9986,7 @@
       "type": "doi",
       "value": "10.1109/PROC.1977.10559",
       "ref_id": "abeles1977",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9776,7 +10006,7 @@
       "type": "doi",
       "value": "10.1016/0014-4886(78)90270-4",
       "ref_id": "durelli1978",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9806,7 +10036,7 @@
       "type": "doi",
       "value": "10.1007/BF00236609",
       "ref_id": "krger1981",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9816,7 +10046,7 @@
       "type": "doi",
       "value": "10.1109/TBME.1981.324702",
       "ref_id": "kuperstein1981",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9826,7 +10056,7 @@
       "type": "doi",
       "value": "10.1016/0165-0270(82)90035-8",
       "ref_id": "krger1982",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9836,7 +10066,7 @@
       "type": "doi",
       "value": "10.1007/BF01955338",
       "ref_id": "reitbck1983",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9846,7 +10076,7 @@
       "type": "doi",
       "value": "10.1109/TBME.1982.324870",
       "ref_id": "wheeler1982",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9856,7 +10086,7 @@
       "type": "doi",
       "value": "10.1007/BF00236807",
       "ref_id": "michalski1983",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9866,7 +10096,7 @@
       "type": "doi",
       "value": "10.1016/0006-8993(83)90567-X",
       "ref_id": "frostig1983",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9886,7 +10116,7 @@
       "type": "doi",
       "value": "10.1016/0031-9384(84)90080-5",
       "ref_id": "kubie1984",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9916,7 +10146,7 @@
       "type": "doi",
       "value": "10.1152/jn.1985.53.4.926",
       "ref_id": "legendy1985",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9926,7 +10156,7 @@
       "type": "doi",
       "value": "10.1016/0306-4522(85)90072-7",
       "ref_id": "kuperstein1985",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9936,7 +10166,7 @@
       "type": "doi",
       "value": "10.1007/BF00239532",
       "ref_id": "kuperstein1986",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9956,7 +10186,7 @@
       "type": "doi",
       "value": "10.1152/jn.1987.57.4.1101",
       "ref_id": "lindsey1987",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9966,7 +10196,7 @@
       "type": "doi",
       "value": "10.1016/0006-8993(88)91542-9",
       "ref_id": "espinosa1988",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9976,7 +10206,7 @@
       "type": "doi",
       "value": "10.1016/0165-0270(88)90131-8",
       "ref_id": "mioche1988",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9986,7 +10216,7 @@
       "type": "doi",
       "value": "10.1007/BF00202899",
       "ref_id": "eckhorn1988",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -9996,7 +10226,7 @@
       "type": "doi",
       "value": "10.1007/BF00248509",
       "ref_id": "aiple1988",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10016,7 +10246,7 @@
       "type": "doi",
       "value": "10.1109/10.7273",
       "ref_id": "drake1988",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10026,7 +10256,7 @@
       "type": "doi",
       "value": "10.1016/0006-8993(89)90183-2",
       "ref_id": "lindsey1989",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10036,7 +10266,7 @@
       "type": "doi",
       "value": "10.1016/0165-0270(89)90038-1",
       "ref_id": "buzski1989",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10046,7 +10276,7 @@
       "type": "doi",
       "value": "10.1073/pnas.87.22.8935",
       "ref_id": "ahissar1990",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10056,7 +10286,7 @@
       "type": "doi",
       "value": "10.1016/0165-0270(91)90140-U",
       "ref_id": "mountcastle1991",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10066,7 +10296,7 @@
       "type": "doi",
       "value": "10.1126/science.2035024",
       "ref_id": "meister1991",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10092,7 +10322,7 @@
       "file": "neural-recordings.tsv",
       "row": 58,
       "column": "DOI",
-      "original": "http://doi.org/10.1126/science.1529342",
+      "original": "https://doi.org/10.1126/science.1529342",
       "type": "doi",
       "value": "10.1126/science.1529342",
       "ref_id": "ahissar1992a",
@@ -10106,7 +10336,7 @@
       "type": "doi",
       "value": "10.1080/01616412.1993.11740106",
       "ref_id": "shaw1993",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10116,7 +10346,7 @@
       "type": "doi",
       "value": "10.1073/pnas.90.6.2212",
       "ref_id": "nicolelis1993",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10126,7 +10356,7 @@
       "type": "doi",
       "value": "10.1126/science.8351520",
       "ref_id": "wilson1993",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10146,7 +10376,7 @@
       "type": "doi",
       "value": "10.1126/science.8036517",
       "ref_id": "wilson1994",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10166,7 +10396,7 @@
       "type": "doi",
       "value": "10.1038/373515a0",
       "ref_id": "vaadia1995",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10176,7 +10406,7 @@
       "type": "doi",
       "value": "10.1126/science.7761855",
       "ref_id": "nicolelis1995",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10206,7 +10436,7 @@
       "type": "doi",
       "value": "10.1523/JNEUROSCI.16-02-00823.1996",
       "ref_id": "gothard1996",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10236,7 +10466,7 @@
       "type": "doi",
       "value": "10.1126/science.271.5257.1870",
       "ref_id": "skaggs1996",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10246,7 +10476,7 @@
       "type": "doi",
       "value": "10.1016/0006-8993(96)00321-6",
       "ref_id": "nordhausen1996",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10266,7 +10496,7 @@
       "type": "doi",
       "value": "10.1016/S0092-8674(00)81828-0",
       "ref_id": "mchugh1996",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10276,7 +10506,7 @@
       "type": "doi",
       "value": "10.1016/S0006-8993(97)00012-7",
       "ref_id": "chang1997",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10286,7 +10516,7 @@
       "type": "doi",
       "value": "10.1016/S0896-6273(00)80295-0",
       "ref_id": "nicolelis1997",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10326,7 +10556,7 @@
       "type": "doi",
       "value": "10.1523/JNEUROSCI.18-18-07411.1998",
       "ref_id": "brown1998",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10336,7 +10566,7 @@
       "type": "doi",
       "value": "10.1038/2855",
       "ref_id": "nicolelis1998",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10356,7 +10586,7 @@
       "type": "doi",
       "value": "10.1038/10223",
       "ref_id": "chapin1999",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10366,7 +10596,7 @@
       "type": "doi",
       "value": "10.1016/S0042-6989(99)00040-1",
       "ref_id": "normann1999",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10396,7 +10626,7 @@
       "type": "doi",
       "value": "10.1016/S1385-299X(99)00034-3",
       "ref_id": "williams1999",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10406,7 +10636,7 @@
       "type": "doi",
       "value": "10.1016/S0165-0270(99)00139-9",
       "ref_id": "porada2000",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10446,7 +10676,7 @@
       "type": "doi",
       "value": "10.1038/35042582",
       "ref_id": "wessberg2000",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10476,7 +10706,7 @@
       "type": "doi",
       "value": "10.1126/science.1070291",
       "ref_id": "taylor2002",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10486,7 +10716,7 @@
       "type": "doi",
       "value": "10.1038/nature01834",
       "ref_id": "harris2003",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10496,7 +10726,7 @@
       "type": "doi",
       "value": "10.1073/pnas.1934665100",
       "ref_id": "nicolelis2003",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10506,7 +10736,7 @@
       "type": "doi",
       "value": "10.1152/jn.00116.2003",
       "ref_id": "csicsvari2003",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10516,7 +10746,7 @@
       "type": "doi",
       "value": "10.1371/journal.pbio.0000042",
       "ref_id": "carmena2003",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10526,7 +10756,7 @@
       "type": "doi",
       "value": "10.1073/pnas.1232232100",
       "ref_id": "stosiek2003",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10556,7 +10786,7 @@
       "type": "doi",
       "value": "10.1152/jn.01245.2003",
       "ref_id": "hatsopoulos2004",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10566,7 +10796,7 @@
       "type": "doi",
       "value": "10.1109/TBME.2004.827061",
       "ref_id": "sanchez2004",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10585,7 +10815,7 @@
       "original": "https://doi.org/10.1139/y04-075",
       "type": "doi",
       "value": "10.1139/y04-075",
-      "ref_id": "stein2004",
+      "ref_id": "stein2004a",
       "method": "crossref_api"
     },
     {
@@ -10605,8 +10835,8 @@
       "original": "https://doi.org/10.1113/jphysiol.2004.068668",
       "type": "doi",
       "value": "10.1113/jphysiol.2004.068668",
-      "ref_id": "stein2004a",
-      "method": "crossref_api"
+      "ref_id": "stein2004",
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10616,7 +10846,7 @@
       "type": "doi",
       "value": "10.1523/JNEUROSCI.4088-04.2005",
       "ref_id": "lebedev2005",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10626,7 +10856,7 @@
       "type": "doi",
       "value": "10.1152/jn.01023.2004",
       "ref_id": "blanche2005",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10646,7 +10876,7 @@
       "type": "doi",
       "value": "10.1111/j.1460-9568.2005.04320.x",
       "ref_id": "santucci2005",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10656,7 +10886,7 @@
       "type": "doi",
       "value": "10.1038/nature03274",
       "ref_id": "ohki2005",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10666,7 +10896,7 @@
       "type": "doi",
       "value": "10.1088/1741-2560/3/2/009",
       "ref_id": "kim2006",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10686,7 +10916,7 @@
       "type": "doi",
       "value": "10.1016/j.jneumeth.2005.12.032",
       "ref_id": "lin2006",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10706,7 +10936,7 @@
       "type": "doi",
       "value": "10.1371/journal.pone.0000619",
       "ref_id": "zacksenhouse2007",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10726,7 +10956,7 @@
       "type": "doi",
       "value": "10.1152/jn.00760.2006",
       "ref_id": "hamed2007",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10756,7 +10986,7 @@
       "type": "doi",
       "value": "10.1088/1741-2560/5/4/010",
       "ref_id": "kim2008",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10766,7 +10996,7 @@
       "type": "doi",
       "value": "10.3389/neuro.07.003.2009",
       "ref_id": "fitzsimmons2009",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10796,7 +11026,7 @@
       "type": "doi",
       "value": "10.1152/jn.90920.2008",
       "ref_id": "dickey2009",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10806,7 +11036,7 @@
       "type": "doi",
       "value": "10.1016/j.neuron.2009.09.021",
       "ref_id": "stafford2009",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10866,7 +11096,7 @@
       "type": "doi",
       "value": "10.1016/j.neuron.2010.08.002",
       "ref_id": "kerlin2010",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10876,7 +11106,7 @@
       "type": "doi",
       "value": "10.1038/nn.2648",
       "ref_id": "dombeck2010",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10886,7 +11116,7 @@
       "type": "doi",
       "value": "10.1016/j.neuron.2010.08.026",
       "ref_id": "oconnor2010",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10896,7 +11126,7 @@
       "type": "doi",
       "value": "10.1038/nature08897",
       "ref_id": "komiyama2010",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10936,7 +11166,7 @@
       "type": "doi",
       "value": "10.1038/nn.2782",
       "ref_id": "truccolo2011",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10956,7 +11186,7 @@
       "type": "doi",
       "value": "10.1038/nature10489",
       "ref_id": "odoherty2011",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10966,7 +11196,7 @@
       "type": "doi",
       "value": "10.1038/nmeth.1552",
       "ref_id": "cheng2011",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -10996,7 +11226,7 @@
       "type": "doi",
       "value": "10.1152/jn.00781.2011",
       "ref_id": "bansal2012",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11016,7 +11246,7 @@
       "type": "doi",
       "value": "10.1038/nature11129",
       "ref_id": "churchland2012",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11026,7 +11256,7 @@
       "type": "doi",
       "value": "10.1523/JNEUROSCI.0723-12.2012",
       "ref_id": "marre2012",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11036,7 +11266,7 @@
       "type": "doi",
       "value": "10.1038/nature11039",
       "ref_id": "huber2012",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11046,7 +11276,7 @@
       "type": "doi",
       "value": "10.1038/nature11321",
       "ref_id": "petreanu2012",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11066,7 +11296,7 @@
       "type": "doi",
       "value": "10.1126/scitranslmed.3006159",
       "ref_id": "ifft2013",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11076,7 +11306,7 @@
       "type": "doi",
       "value": "10.1038/nmeth.2434",
       "ref_id": "ahrens2013",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11086,7 +11316,7 @@
       "type": "doi",
       "value": "10.1038/nn.3329",
       "ref_id": "ziv2013",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11106,7 +11336,7 @@
       "type": "doi",
       "value": "10.3389/fncir.2013.00151",
       "ref_id": "cotton2013",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11116,7 +11346,7 @@
       "type": "doi",
       "value": "10.1113/jphysiol.2013.262840",
       "ref_id": "maccione2014",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11146,7 +11376,7 @@
       "type": "doi",
       "value": "10.1038/nmeth.2936",
       "ref_id": "schwarz2014",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11156,7 +11386,7 @@
       "type": "doi",
       "value": "10.1371/journal.pone.0105324",
       "ref_id": "ito2014",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11176,7 +11406,7 @@
       "type": "doi",
       "value": "10.1038/nn.3867",
       "ref_id": "lecoq2014",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11186,7 +11416,7 @@
       "type": "doi",
       "value": "10.1152/jn.00464.2015",
       "ref_id": "shobe2015",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11196,7 +11426,7 @@
       "type": "doi",
       "value": "10.1016/j.neuron.2015.03.027",
       "ref_id": "peron2015",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11216,7 +11446,7 @@
       "type": "doi",
       "value": "10.1016/j.celrep.2016.12.004",
       "ref_id": "kim2016",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11226,7 +11456,7 @@
       "type": "doi",
       "value": "10.7554/eLife.14472",
       "ref_id": "sofroniew2016",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11236,7 +11466,7 @@
       "type": "doi",
       "value": "10.1038/nmeth.4040",
       "ref_id": "prevedel2016",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11246,7 +11476,7 @@
       "type": "doi",
       "value": "10.1016/j.celrep.2017.02.038",
       "ref_id": "hilgen2017",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11266,7 +11496,7 @@
       "type": "doi",
       "value": "10.1038/nature24636",
       "ref_id": "jun2017",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11276,7 +11506,7 @@
       "type": "doi",
       "value": "10.7554/eLife.28158",
       "ref_id": "cong2017",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11286,7 +11516,7 @@
       "type": "doi",
       "value": "10.1038/nmeth.4226",
       "ref_id": "song2017",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11296,7 +11526,7 @@
       "type": "doi",
       "value": "10.1101/061507",
       "ref_id": "pachitariu2016",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11316,7 +11546,7 @@
       "type": "doi",
       "value": "10.1101/242693",
       "ref_id": "chung2018",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11326,7 +11556,7 @@
       "type": "doi",
       "value": "10.1016/j.neuron.2018.09.042",
       "ref_id": "chen2018",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11336,7 +11566,7 @@
       "type": "doi",
       "value": "10.1101/306019",
       "ref_id": "stringer2018",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11346,7 +11576,7 @@
       "type": "doi",
       "value": "10.1371/journal.pcbi.1007514",
       "ref_id": "bartolo2020",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11356,7 +11586,7 @@
       "type": "doi",
       "value": "10.1038/s41586-019-1787-x",
       "ref_id": "steinmetz2019",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11366,7 +11596,7 @@
       "type": "doi",
       "value": "10.1126/science.aav7893",
       "ref_id": "stringer2019",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11376,7 +11606,7 @@
       "type": "doi",
       "value": "10.1016/j.cell.2019.03.011",
       "ref_id": "weisenburger2019",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11386,7 +11616,7 @@
       "type": "doi",
       "value": "10.1523/JNEUROSCI.2072-19.2019",
       "ref_id": "bartolo2020a",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11416,7 +11646,7 @@
       "type": "doi",
       "value": "10.1101/2020.07.14.201699",
       "ref_id": "ota2020",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11426,7 +11656,7 @@
       "type": "doi",
       "value": "10.1101/2020.07.17.209403",
       "ref_id": "sahasrabuddhe2020",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "neural-recordings.tsv",
@@ -11436,7 +11666,7 @@
       "type": "doi",
       "value": "10.1101/2021.02.21.432164",
       "ref_id": "demas2021",
-      "method": "crossref_api"
+      "method": "cached_doi"
     },
     {
       "file": "computational-models.tsv",
@@ -12262,11 +12492,11 @@
       "file": "computational-models.tsv",
       "row": 84,
       "column": "Link",
-      "original": "10.1073/pnas.0712231105",
-      "type": "text",
+      "original": "https://doi.org/10.1073/pnas.0712231105",
+      "type": "doi",
       "value": "10.1073/pnas.0712231105",
-      "ref_id": "text_4feff810",
-      "method": "text_hash"
+      "ref_id": "izhikevich2008",
+      "method": "crossref_api"
     },
     {
       "file": "computational-models.tsv",

@@ -1,5 +1,5 @@
-id	name	short_name	flops_per_sec	flops_per_spike	bytes	description	ref_id	supporting_refs	ref_note	confidence	validated_by
-lif	Leaky Integrate-and-Fire	LIF	40000	15	4	Simple point neuron with exponential leak				none	none
-hh5	5-Compartment Hodgkin-Huxley	5-comp HH	3450000	0	80	Biophysically detailed with soma, dendrites, and axon				none	none
-izhikevich	Izhikevich	Izhikevich	130000	25	16	Efficient spiking model capturing many firing patterns				none	none
-adex	Adaptive Exponential	AdEx	200000	30	24	Two-variable model with adaptation and exponential spike				none	none
+id	name	short_name	flops_per_sec	flops_per_spike	bytes	description	source	ref_id	supporting_refs	ref_note	confidence	validated_by
+lif	Leaky Integrate-and-Fire	LIF	40000	15	4	Simple point neuron with exponential leak	https://doi.org/10.1017/CBO9780511815706	gerstner2002		Chapter 4.1	derived	ai
+hh5	5-Compartment Hodgkin-Huxley	5-comp HH	3450000	0	80	Biophysically detailed with soma, dendrites, and axon	https://doi.org/10.1113/jphysiol.1952.sp004764	hodgkin1952		Original model equations	measured	ai
+izhikevich	Izhikevich	Izhikevich	130000	25	16	Efficient spiking model capturing many firing patterns	https://doi.org/10.1109/TNN.2003.820440	izhikevich2003		Section II	measured	ai
+adex	Adaptive Exponential	AdEx	200000	30	24	Two-variable model with adaptation and exponential spike	https://doi.org/10.1152/jn.00686.2005	brette2005		Model equations	measured	ai

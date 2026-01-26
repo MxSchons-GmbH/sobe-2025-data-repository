@@ -1,20 +1,20 @@
 First author	Year	DOI/Link	Organism	Notes	Subexperiment Index	Individuals studied	Fixated / moving	Method	Temporal resolution: Hz	Duration single session min per Individual	Duration total repeated sessions per individual min	Resolution in µm isotropic	Number of neurons	Volume dimensions	Brain Volume in µm	Calculated information Value
-Lin	2023.0	 [11]	C. elegans		1	577	fixated	Calcium					8.0			#DIV/0!
-Atanas	2023.0	 [5]	C. elegans		1	42	moving	Calcium	1.7	8.0	16.0	0.5	136.0			7398.4
-Kato	2015.0	[10]	C. elegans		1	12	fixated	Calcium					127.0			#DIV/0!
-Nichols	2017.0	[12]	C. elegans		1	44	fixated	Calcium					108.0			#DIV/0!
-Dag	2023.0	[13]	C. elegans		1	7	fixated	Calcium					143.0			#DIV/0!
-Leifer	2023.0	[14]	C. elegans		1	103	fixated	Calcium					122.0			#DIV/0!
-Skora	2018.0	[15]	C. elegans		1	12	fixated	Calcium					129.0			#DIV/0!
-Uzel	2022.0	[18]	C. elegans		1	6	fixated	Calcium					138.0			#DIV/0!
-Venkatachalam	2024.0	[32]	C. elegans		1	22	moving	Calcium					187.0			#DIV/0!
-Kaplan	2020.0	[9]	C. elegans		1	19	fixated	Calcium					114.0			#DIV/0!
-Javer		10.1038/s41592-018-0112-1	C. elegans		1	14,874 single-worm tracking experiments representing 386 genotypes (building on 9,203 experiments and 305 genotypes in a previous publication2) and includes data from several larval stages as well as data from ageing experiments consisting of over 2,700 videos of animals tracked daily from the L4 stage to death (see Life Sciences Reporting Summary
-Deserno		10.1038/s41598-023-38213-7	C. elegans		1	56 videos with a length of 1.5 minutes
-Barlow		10.1038/s42003-022-03206-1	C. elegans		1
-Chew		10.1038/sdata.2017.156	C. elegans		1	~300 video recordings representing the locomotor behaviour of animals carrying single-cell ablations of 5 different motorneurons
-Preusser		10.1186/s12915-022-01471-4	C. elegans		1
-Churgin		10.7554/eLife.26652	C. elegans		1
+Lin	2023.0	https://doi.org/10.1126/sciadv.ade1249	C. elegans		1	577	fixated	Calcium					8.0			#DIV/0!
+Atanas	2023.0	https://doi.org/10.1016/j.cell.2023.07.035	C. elegans		1	42	moving	Calcium	1.7	8.0	16.0	0.5	136.0			7398.4
+Kato	2015.0	https://doi.org/10.1016/j.cell.2015.09.034	C. elegans		1	12	fixated	Calcium					127.0			#DIV/0!
+Nichols	2017.0	https://doi.org/10.1126/science.aam6851	C. elegans		1	44	fixated	Calcium					108.0			#DIV/0!
+Dag	2023.0	https://doi.org/10.1016/j.cell.2023.04.023	C. elegans		1	7	fixated	Calcium					143.0			#DIV/0!
+Leifer	2023.0	https://doi.org/10.1038/s41586-023-06683-4	C. elegans		1	103	fixated	Calcium					122.0			#DIV/0!
+Skora	2018.0	https://doi.org/10.1016/j.celrep.2017.12.091	C. elegans		1	12	fixated	Calcium					129.0			#DIV/0!
+Uzel	2022.0	https://doi.org/10.1016/j.cub.2022.06.039	C. elegans		1	6	fixated	Calcium					138.0			#DIV/0!
+Venkatachalam	2016.0	https://doi.org/10.1073/pnas.1507109113	C. elegans		1	22	moving	Calcium					187.0			#DIV/0!
+Kaplan	2020.0	https://doi.org/10.1016/j.neuron.2019.10.037	C. elegans		1	19	fixated	Calcium					114.0			#DIV/0!
+Javer		https://doi.org/10.1038/s41592-018-0112-1	C. elegans		1	14,874 single-worm tracking experiments representing 386 genotypes (building on 9,203 experiments and 305 genotypes in a previous publication2) and includes data from several larval stages as well as data from ageing experiments consisting of over 2,700 videos of animals tracked daily from the L4 stage to death (see Life Sciences Reporting Summary
+Deserno		https://doi.org/10.1038/s41598-023-38213-7	C. elegans		1	56 videos with a length of 1.5 minutes
+Barlow		https://doi.org/10.1038/s42003-022-03206-1	C. elegans		1
+Chew		https://doi.org/10.1038/sdata.2017.156	C. elegans		1	~300 video recordings representing the locomotor behaviour of animals carrying single-cell ablations of 5 different motorneurons
+Preusser		https://doi.org/10.1186/s12915-022-01471-4	C. elegans		1
+Churgin		https://doi.org/10.7554/eLife.26652	C. elegans		1
 Perni		https://doi.org/10.1016/j.jneumeth.2018.02.005	C. elegans		1
 López-Cruz		https://doi.org/10.1016/j.neuron.2019.01.053	C. elegans		1	114 worms; 45 minutes
 Tokunaga	2024.0	https://doi.org/10.1038/s42003-024-06778-2	C. elegans		1	100	fixated	Voltage	250.0	1.0	1.0		1.0			#DIV/0!
@@ -31,8 +31,8 @@ Schrödel		https://www.nature.com/articles/nmeth.2637	C. elegans		1	5
 Nguyen		https://www.pnas.org/doi/full/10.1073/pnas.1507110112	C. elegans	we recorded the neural activity and behavior of four individual worms (strain AML14) crawling freely on agarose pads for up to 5 min.	1	4
 Nichols		https://www.science.org/doi/10.1126/science.aam6851	C. elegans		1	44
 Yemini	2021.0	https://www.sciencedirect.com/science/article/pii/S0092867420316822	C. elegans		1	49	fixated	Calcium					125.0			#DIV/0!
-Cury		10.1038/s41593-023-01332-5	Drosophila		1	Large
-Oliveira-Ferreira		10.1038/s41598-023-48109-1	Drosophila		1
+Cury		https://doi.org/10.1038/s41593-023-01332-5	Drosophila		1	Large
+Oliveira-Ferreira		https://doi.org/10.1038/s41598-023-48109-1	Drosophila		1
 Robie		https://doi.org/10.1016/j.cell.2017.06.032	Drosophila		1	We measured effects of activating 2,204 genetically targeted neuronal populations; 400,000 flies
 Schnell	2017.0	https://doi.org/10.1016/j.cub.2017.03.004	Drosophila		1		fixated	Calcium					10.0			#DIV/0!
 Li Guo		https://doi.org/10.1016/j.cub.2021.12.055	Drosophila		1	Medium
