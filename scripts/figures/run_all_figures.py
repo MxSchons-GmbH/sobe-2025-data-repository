@@ -284,51 +284,78 @@ def generate_storage_costs():
     plt.close()
 
 # =============================================================================
-# Figure 5: Neural Recordings
+# Figure 5: Neural Recording Information Rate
 # =============================================================================
-@figure("neural-recording-timeline-overview", "Neural recording capacity over time")
+@figure("neural-recording-timeline-overview", "Neural recording information rate over time")
 def generate_neuro_recordings():
-    import statsmodels.formula.api as smf
+    """
+    Generate the neural recording information rate figure.
 
-    neuro_df = pd.read_csv(DATA_FILES["neural_recordings"], sep='\t')
+    Information rate = neurons × temporal resolution (capped at 200 Hz).
+    This captures both the number of simultaneously recorded neurons and
+    the sampling rate of the recording technology.
+    """
+    # Load information rate data
+    info_df = pd.read_csv(DATA_FILES["neural_information_rate"], sep='\t')
 
-    # Fit models
-    ephys_fit = smf.rlm('np.log(Neurons) ~ Year', data=neuro_df.query('Method == "Ephys"')).fit()
-    imag_fit = smf.rlm('np.log(Neurons) ~ Year', data=neuro_df.query('Method == "Imaging"')).fit()
+    # Filter to rows with valid information rate
+    info_df = info_df[info_df['calculated_information_rate'].notna()]
+    info_df = info_df[info_df['calculated_information_rate'] > 0]
 
-    min_year = neuro_df['Year'].min()
-    max_year = neuro_df['Year'].max()
-    x_lin = np.linspace(min_year, max_year, 2)
-    y_lin_ephys = np.exp(ephys_fit.params['Intercept'] + ephys_fit.params['Year'] * x_lin)
-    y_lin_imag = np.exp(imag_fit.params['Intercept'] + imag_fit.params['Year'] * x_lin)
+    # Separate by method
+    ephys_df = info_df[info_df['Method'] == 'Ephys'].copy()
+    imaging_df = info_df[info_df['Method'] == 'Imaging'].copy()
 
-    # Rename methods
-    neuro_df.loc[neuro_df['Method'] == 'Ephys', 'Method'] = 'Electrophysiology'
-    neuro_df.loc[neuro_df['Method'] == 'Imaging', 'Method'] = 'Fluorescence imaging'
+    # Get year range
+    min_year = info_df['Year'].min()
+    max_year = info_df['Year'].max()
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    # Rename methods for display
+    info_df_display = info_df.copy()
+    info_df_display.loc[info_df_display['Method'] == 'Ephys', 'Method'] = 'Electrophysiology'
+    info_df_display.loc[info_df_display['Method'] == 'Imaging', 'Method'] = 'Fluorescence imaging'
+
+    fig, ax = plt.subplots(figsize=(12, 5))
+
+    # Plot scatter points
     sns.scatterplot(
-        neuro_df, x='Year', y='Neurons', hue='Method',
+        info_df_display, x='Year', y='calculated_information_rate', hue='Method',
         palette=[TEAL, GOLD], s=60, alpha=0.8, ax=ax
     )
 
-    # Regression lines with labels for legend
-    ax.plot(x_lin, y_lin_ephys, color=COLORS['text'], ls=(0, (5, 7)), lw=2)
-    ax.plot(x_lin, y_lin_imag, color=COLORS['text'], ls=(0, (5, 7)), lw=2)
-    ax.plot(x_lin, y_lin_ephys, color=TEAL, ls=(6, (5, 7)), lw=2, label='Electrophysiology trend')
-    ax.plot(x_lin, y_lin_imag, color=GOLD, ls=(6, (5, 7)), lw=2, label='Imaging trend')
-
     ax.set_yscale('log')
-    plot_species_hlines(ax, min_year, max_year, 1958)
-    ax.set_ylabel('Simultaneously Recorded Neurons')
+
+    # Add organism reference lines for information rate targets
+    # Information rate target = neurons × 200 Hz (max temporal resolution cap)
+    TEMPORAL_RES_CAP = 200  # Hz
+    organism_info_rates = {
+        'C. elegans (body)': 302 * TEMPORAL_RES_CAP,
+        'Fly (brain)': 135000 * TEMPORAL_RES_CAP,
+        'Mouse (cortex)': 14000000 * TEMPORAL_RES_CAP,  # ~14M cortical neurons
+        'Mouse (brain)': 70000000 * TEMPORAL_RES_CAP,
+    }
+
+    for name, info_rate in organism_info_rates.items():
+        ax.axhline(y=info_rate, color=COLORS['caption'], ls=':', lw=1, alpha=0.7)
+        ax.text(
+            2030 + 0.5, info_rate, f' {name}',
+            va='center', fontsize=FONT_SIZES['annotation'] - 1,
+            color=COLORS['caption'], clip_on=False
+        )
+
+    ax.set_ylabel('Information Rate (Neurons × Hz, capped at 200 Hz)')
     ax.set_xlabel(None)
-    ax.set_ylim(0.2, 1e12)
-    ax.set_title('Neural Recording Capacity Over Time')
-    # Get existing handles and labels, then add our trend lines
+    ax.set_xlim(min_year - 2, 2030)
+    ax.set_ylim(1e2, 2e11)
+    ax.set_title('Neural Recording Information Rate Over Time')
+
+    # Get existing handles and labels
     handles, labels = ax.get_legend_handles_labels()
-    ax.legend(handles=handles, labels=labels, frameon=True)
-    plt.tight_layout()
-    save_figure(fig, 'neural-recording-timeline-overview')
+    ax.legend(handles=handles, labels=labels, frameon=True, loc='upper left')
+
+    # Adjust layout to leave room for right-side labels
+    plt.subplots_adjust(right=0.82)
+    save_figure(fig, 'neural-recording-timeline-overview', attribution_position='axes')
     plt.close()
 
 # =============================================================================
