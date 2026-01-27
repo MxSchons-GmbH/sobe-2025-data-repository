@@ -1,8 +1,6 @@
 # State of Brain Emulation Report 2025
 
-**📱 Phone Display Test - January 19, 2026 at 13:08 UTC**
-
-Data visualization pipeline and interactive figure library for the State of Brain Emulation Report 2025.
+Data repository and visualization pipeline for the State of Brain Emulation Report 2025.
 
 ## Overview
 
@@ -14,12 +12,36 @@ This repository generates publication-quality figures tracking progress in brain
 - **Computational Requirements** - Hardware and storage needs for brain emulation
 - **Funding & Initiatives** - Global brain research programs and their budgets
 
+## Citation
+
+If you use this data or figures in your work, please cite:
+
+> Zanichelli, N., Schons, M., Shiu, P., Freeman, I., & Arkhipov, A. (2026). State of Brain Emulation Report 2025 (Version 1). Zenodo. https://doi.org/10.5281/zenodo.18377594
+
+**BibTeX:**
+
+```bibtex
+@software{zanichelli2026sobe,
+  author       = {Zanichelli, Nicola and Schons, Maximilian and Shiu, Patrick and Freeman, Ian and Arkhipov, Anton},
+  title        = {State of Brain Emulation Report 2025},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {1},
+  doi          = {10.5281/zenodo.18377594},
+  url          = {https://doi.org/10.5281/zenodo.18377594}
+}
+```
+
+## Data Quality Notice
+
+This repository contains data that has been recently transferred and consolidated from multiple sources. Quality control and validation is ongoing, with completion expected in Q1 2026. If you notice any discrepancies or errors, please [open an issue](https://github.com/MxSchons-GmbH/sobe-2025-data-repository/issues).
+
 ## Quick Start
 
 ```bash
 # Clone and setup
-git clone <repository-url>
-cd sobe25-scripts
+git clone https://github.com/MxSchons-GmbH/sobe-2025-data-repository.git
+cd sobe-2025-data-repository
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -154,16 +176,6 @@ The `dist/` directory provides assets for the main website:
 | Datasets | `data/` | TSV |
 | Dataset metadata | `data/_metadata.json` | JSON |
 | Bulk downloads | `downloads/` | ZIP |
-
-### How the Website Uses This Data
-
-The main website repository reads the metadata JSON files and renders the UI natively.
-When you add new figures or datasets:
-
-1. Add the actual files (TSV, PNG, SVG)
-2. Update the relevant metadata JSON
-3. Regenerate ZIP archives if needed
-4. The website will automatically display the new content
 
 ## Datasets
 

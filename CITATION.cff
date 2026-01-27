@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: State of Brain Emulation Report 2025
+message: >-
+  If you use this data or figures in your work, please cite
+  it using the metadata from this file.
+type: dataset
+authors:
+  - family-names: Zanichelli
+    given-names: Nicola
+  - family-names: Schons
+    given-names: Maximilian
+  - family-names: Shiu
+    given-names: Patrick
+  - family-names: Freeman
+    given-names: Ian
+  - family-names: Arkhipov
+    given-names: Anton
+repository-code: >-
+  https://github.com/MxSchons-GmbH/sobe-2025-data-repository
+url: https://doi.org/10.5281/zenodo.18377594
+abstract: >-
+  Data repository and visualization pipeline for the State
+  of Brain Emulation Report 2025. Includes 24+ datasets
+  across neural simulations, recordings, connectomics, and
+  computational requirements, plus 38+ publication-quality
+  figures tracking progress in brain emulation research.
+keywords:
+  - brain emulation
+  - neural simulation
+  - connectomics
+  - neuroscience
+  - whole brain emulation
+  - computational neuroscience
+license: CC-BY-4.0
+version: '1'
+doi: 10.5281/zenodo.18377594
+date-released: '2026-01-27'
